@@ -1,0 +1,41 @@
+
+
+.bannerSection {
+  margin-top: 100px;
+}
+
+.imageWrapper {
+  text-align: center;
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+.bannerWrapper {
+  display: flex;
+}
+
+.bannerMobile {
+  display: none;
+}
+
+@media (width <=991px) {
+  .bannerWrapper {
+    display: none;
+  }
+.bannerSection {
+  margin-top: 80px;
+}
+  .bannerMobile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+}

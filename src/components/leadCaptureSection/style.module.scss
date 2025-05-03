@@ -1,0 +1,202 @@
+
+
+.leadCaptureSection {
+  padding-top: 37px;
+  padding-bottom: 93px;
+
+  h1 {
+    font-weight: 700;
+    font-style: italic;
+    font-size: 80px;
+    line-height: 90px;
+    letter-spacing: 0%;
+  }
+
+  .tag {
+    margin: 17px 0 37px;
+
+    span {
+      background: #fff;
+      color: rgba(0, 0, 0, 1);
+      padding: 9px 12px;
+      border-radius: 50px;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 100%;
+      letter-spacing: 0%;
+      text-align: center;
+      border: 1px solid rgba(255, 255, 255, 1);
+      display: inline-block;
+    }
+  }
+
+  p {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: 0%;
+    max-width: 600px;
+  }
+
+  .btnAction {
+    display: flex;
+    margin-top: 51px;
+    gap: 20px;
+
+    .btnRed {
+      width: 266px;
+    }
+
+    .btnWhite {
+      width: 266px;
+    }
+  }
+
+  .formBox {
+    border-radius: 16px;
+    position: relative;
+    z-index: 1;
+    width: 413px;
+    padding: 30px;
+
+    &::before {
+      background: rgb(255, 255, 255);
+      border: 2px solid rgb(0, 0, 0);
+      border-radius: 16px;
+      content: "";
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      right: 0;
+      bottom: 0;
+      transform-origin: top right;
+      z-index: 1;
+      width: 413px;
+    }
+
+    &::after {
+      background: rgb(255, 255, 255);
+      border: 2px solid rgb(0, 0, 0);
+      border-radius: 16px;
+      content: "";
+      position: absolute;
+      top: -9px;
+      left: -9px;
+      right: 0;
+      bottom: 0;
+      transform: rotate(-2.09deg);
+      transform-origin: top right;
+      width: 413px;
+      height: 99.99%;
+    }
+
+    h3 {
+      position: relative;
+      z-index: 1;
+      font-family: Poppins;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 100%;
+      letter-spacing: 0%;
+      margin-bottom: 24px;
+      color: rgba(15, 11, 49, 1);
+
+    }
+
+    form {
+      position: relative;
+      z-index: 1;
+    }
+  }
+
+  .phoneCodefield {
+    .phoneCode {
+      border-right: none;
+
+      select {
+        border-radius: 8px 0 0 8px;
+        min-width: fit-content !important;
+        border-right: none !important;
+        width: auto;
+        max-width: fit-content !important;
+      }
+
+    }
+
+    input {
+      border-radius: 0 8px 8px 0;
+      border-left: none !important;
+    }
+  }
+
+
+  .form-control,
+  .form-select {
+    border-radius: 0 8px 8px 0;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+  .leadCaptureSection {
+    h1 {
+      font-size: 60px;
+      line-height: normal;
+    }
+
+    .formBox {
+      width: 313px;
+      margin: 0 auto;
+
+      &::before,
+      &::after {
+        width: 313px;
+      }
+       .formRadio {
+    flex-wrap: wrap !important;
+    &>label {
+      width: 100%;
+      display: flex;
+    }
+  }
+    }
+  }
+ 
+
+}
+
+@media (width <=992px) {
+   .leadCaptureSection {
+    padding-top: 60px;
+    padding-bottom: 40px;
+
+    h1 {
+      font-size: 32px;
+      line-height: 39px;
+      text-align: center;
+    }
+
+    .tag {
+      margin: 17px 0 24px;
+      display: flex;
+      justify-content: center;
+    }
+
+    p {
+      font-size: 12px;
+      line-height: 19px;
+      max-width: 307px;
+      text-align: center;
+      margin: 0 auto;
+    }
+
+    .btnAction {
+      margin-top: 40px;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  .formBox {
+    display: none;
+  }
+}

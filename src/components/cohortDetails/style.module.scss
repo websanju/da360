@@ -1,0 +1,284 @@
+
+
+.cohortDetailsSection {
+  margin-bottom: 118px;
+
+  .container {
+    max-width: 1180px;
+  }
+
+  h2 {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 44px;
+    letter-spacing: 0%;
+    margin-bottom: 24px;
+  }
+
+  .cohortCardbody {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .cohortCard {
+    background: rgba(255, 242, 229, 1);
+    border: 2px solid rgba(0, 0, 0, 1);
+    box-shadow: 5px 5px 0px 0px rgba(0, 0, 0, 1);
+    border-radius: 10px;
+    margin-bottom: 22px;
+    max-width: 863px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    .cohortCardDetail {
+      display: flex;
+      padding: 20px 50px;
+      justify-content: space-between;
+      gap: 30px;
+      width: 100%;
+
+      .cardItem {
+        display: flex;
+        flex-direction: column;
+
+        .cardDate {
+          font-weight: 800;
+          font-size: 20px;
+          line-height: 32px;
+          letter-spacing: 0%;
+        }
+
+        .cardDatelabel {
+          font-weight: 600;
+          font-size: 20px;
+          line-height: 33px;
+          color: rgb(0, 0, 0);
+        }
+
+        label {
+          font-weight: 600;
+          font-size: 20px;
+          line-height: 33px;
+          letter-spacing: 0%;
+          color: rgba(0, 0, 0, 1);
+          margin-bottom: 4px;
+        }
+
+        span {
+          font-weight: 400;
+          font-size: 18px;
+          line-height: 32px;
+          letter-spacing: 0%;
+        }
+
+        .cardMode {
+          background: rgba(254, 230, 82, 1);
+          color: rgba(0, 0, 0, 1);
+          border: 0.5px solid rgba(0, 0, 0, 1);
+          border-radius: 50px;
+          font-size: 12px;
+          font-weight: 600;
+          padding: 5px 10px;
+          line-height: 100%;
+        }
+
+      }
+    }
+  }
+
+  .enrollBtn {
+    border-left: 2px dotted rgba(0, 0, 0, 1);
+    min-width: 216px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .accredited {
+    background: rgba(255, 255, 255, 1);
+    padding: 16px 14px;
+    border: 1px solid rgba(0, 0, 0, 1);
+    border-radius: 6px;
+    width: 195px;
+    height: 188px;
+    gap: 20px;
+
+    label {
+      font-weight: 500;
+      font-size: 13px;
+      line-height: 16px;
+      letter-spacing: 5%;
+      text-transform: uppercase;
+      color: rgba(0, 0, 0, 1);
+      margin-bottom: 8px;
+    }
+
+    p {
+      color: #000;
+      font-size: 14px;
+      margin-bottom: 20px;
+    }
+
+    .accreditedImg {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
+
+}
+
+@media (width <=991px) {
+  .cohortDetailsSection {
+    margin-bottom: 40px;
+
+    .mobileCohorts {
+      width: 100%;
+      justify-content: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    h2 {
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 150%;
+      letter-spacing: 0%;
+      text-align: center;
+      max-width: 285px;
+      margin: 0 auto 24px;
+    }
+
+
+    .accredited {
+      padding: 16px 24px;
+      width: 100%;
+      height: auto;
+      gap: 20px;
+      justify-content: space-between;
+      align-items: center;
+      display: flex;
+      margin-top: 60px;
+
+      label {
+        font-weight: 500;
+        font-size: 11px;
+        line-height: 13px;
+        letter-spacing: 5%;
+        text-transform: uppercase;
+      }
+
+      p {
+        color: #000;
+        font-size: 14px;
+        margin-bottom: 0;
+      }
+
+      .accreditedImg {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 60%;
+      }
+    }
+
+    .cohortCard {
+      border: 2px solid rgba(0, 0, 0, 1);
+      box-shadow: none;
+      margin-bottom: 16px;
+      width: 100%;
+      max-width: 100%;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      .cohortCardDetail {
+        display: flex;
+        padding: 16px 30px;
+        justify-content: space-between;
+        gap: 22px;
+        width: 100%;
+        flex-direction: column;
+
+        .cardItemsTop {
+          display: flex;
+          gap: 10px;
+          justify-content: space-between;
+        }
+
+        .cardItemsBottom {
+          display: flex;
+          gap: 10px;
+          justify-content: space-between;
+        }
+
+        .cardItem {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+
+          .cardDate {
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 20px;
+            letter-spacing: 0%;
+            text-align: center;
+
+          }
+
+          .cardDatelabel {
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 20px;
+            letter-spacing: 0%;
+            text-align: center;
+            color: rgb(0, 0, 0);
+          }
+
+          label {
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 20px;
+            letter-spacing: 0%;
+            text-align: center;
+          }
+
+          span {
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 20px;
+
+          }
+
+          .cardMode {
+            background: rgba(254, 230, 82, 1);
+            color: rgba(0, 0, 0, 1);
+            border: 0.5px solid rgba(0, 0, 0, 1);
+            border-radius: 50px;
+            font-size: 12px;
+            font-weight: 600;
+            padding: 5px 10px;
+            line-height: 100%;
+          }
+
+        }
+      }
+    }
+
+    .enrollBtn {
+      border-left: none;
+      min-width: auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+  }
+
+
+
+}

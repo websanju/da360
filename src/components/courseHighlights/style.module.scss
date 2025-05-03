@@ -1,0 +1,91 @@
+
+
+.highlightWrapper {
+  background-color: #000;
+  border-radius: 24px;
+  padding: 52px 74px;
+  margin-bottom: 80px;
+
+  h2 {
+    font-weight: 700;
+    font-style: italic;
+    font-size: 52px;
+    line-height: 60px;
+    letter-spacing: 0%;
+    color: rgba(245, 245, 245, 1);
+    margin-bottom: 53px;
+  }
+
+  .rowWrapper {
+    --bs-gutter-x: 20px;
+    --bs-gutter-y: 20px;
+  }
+
+}
+
+.highlightCard {
+  background: #fff;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+  overflow: hidden;
+  padding: 20px;
+  display: flex;
+  gap: 20px;
+
+  &:hover {
+    box-shadow: 0px 6px 15px rgba(255, 255, 255, 0.2);
+  }
+
+  img {
+    max-height: 40px;
+  }
+
+  .highlightItem {
+    p {
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 120%;
+      letter-spacing: 0%;
+    }
+
+    h6 {
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 120%;
+      letter-spacing: 0%;
+    }
+  }
+}
+
+@media (width <= 992px) {
+  .highlightWrapper {
+    margin-bottom: 40px;
+    padding: 24px;
+
+    h2 {
+      font-size: 24px;
+      line-height: 100%;
+      margin-bottom: 24px;
+    }
+
+    .rowWrapper {
+      --bs-gutter-x: 11px;
+      --bs-gutter-y: 11px;
+    }
+  }
+
+  .highlightCard {
+    padding: 20px 16px;
+    gap: 10px;
+
+    .highlightItem {
+      p {
+        font-size: 14px;
+      }
+
+      h6 {
+        font-size: 12px;
+      }
+    }
+  }
+}

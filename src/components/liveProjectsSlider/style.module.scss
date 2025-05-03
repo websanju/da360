@@ -1,0 +1,456 @@
+
+
+.liveProjectsSlider {
+  margin-top: 140px;
+
+  .sectionHeader {
+    h2 {
+      font-weight: 700;
+      font-style: italic;
+      font-size: 48px;
+      line-height: 60px;
+      letter-spacing: 0%;
+      text-align: center;
+      color: #000000;
+      max-width: 556px;
+      margin: 0 auto 33px;
+    }
+  }
+}
+
+.projectCard {
+  border: 2px solid #000000;
+  position: relative;
+  border-radius: 20px;
+  background-image: url("/images/live-project-bg.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: var(--bg-solidcolor);
+  overflow: hidden;
+  padding: 54px 14px 54px 54px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: var(--bg-color);
+
+    z-index: 0;
+    opacity: 1;
+    pointer-events: none;
+  }
+
+  >* {
+    position: relative;
+    z-index: 1;
+    min-height: 500px;
+  }
+}
+
+.floatingCard {
+  position: relative;
+  margin-top: 30px;
+
+  .projectIcon {
+    position: absolute;
+    right: 60px;
+    top: -50px;
+  }
+
+  ul {
+    max-width: 350px;
+    margin: 60px 0 0 20px;
+    display: flex;
+    gap: 12px;
+    flex-direction: column;
+     padding-top: 60px;
+    li {
+      text-align: left;
+      display: flex;
+      align-items: flex-start;
+
+      span {
+        padding-left: 10px;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: 0%;
+        color: #0F0B31;
+
+      }
+
+      svg {
+        margin-top: 5px;
+      }
+    }
+  }
+
+  p {
+    color: #FF1D21;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 23px;
+    letter-spacing: 0%;
+    max-width: 260px;
+    margin: 40px auto 0;
+  }
+
+  >* {
+    position: relative;
+    z-index: 1;
+  }
+
+  &::after {
+    background: #FFFFFF;
+    border: 2px solid #000000;
+    box-shadow: 5px 5px 0px 0px #000000;
+    transform: rotate(-7.47deg);
+    width: 388px;
+    height: 388px;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
+
+.tabButtons {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 60px;
+
+  button {
+    border-radius: 30px;
+    padding: 0 20px;
+    min-height: 40px;
+    background: #FFFFFF;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 37px;
+    letter-spacing: 2%;
+
+    &.activeTab {
+      color: white;
+      border: 2px solid #D55730;
+      color: #D55730;
+      background: #FFFFFF;
+      font-weight: 700;
+      font-style: italic;
+      font-size: 14px;
+      line-height: 37px;
+      letter-spacing: 2%;
+
+    }
+
+    &:hover {
+      color: white;
+      border: 1px solid #D55730;
+      color: #D55730;
+      background: #FFFFFF;
+      font-weight: 700;
+      font-style: italic;
+      font-size: 14px;
+      line-height: 37px;
+      letter-spacing: 2%;
+    }
+  }
+}
+
+.projectDetils {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.projectId {
+  background-color: #000000;
+  display: block;
+  width: max-content;
+  color: #fff;
+  font-family: Poppins;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 100%;
+  text-align: center;
+  padding: 6px 16px;
+  border-radius: 5px;
+  margin-bottom: 6px;
+}
+
+.projectTitle {
+  font-weight: 700;
+  font-style: italic;
+  font-size: 28px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.duration {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+
+  label {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #000;
+    margin-bottom: 3px;
+  }
+
+  span {
+    font-weight: 600;
+    font-style: italic;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #000;
+  }
+}
+
+.logos {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 60px;
+
+  img {
+    height: auto;
+    width: auto;
+  }
+}
+
+.heading {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+  letter-spacing: 0%;
+  color: #0F0B31;
+  margin-bottom: 20px;
+}
+
+.details {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0%;
+  color: #0F0B31;
+  margin-left: 20px;
+
+  li {
+    list-style: disc;
+    margin-left: auto;
+    padding: 4px 0;
+  }
+}
+
+.btnAction {
+  margin-top: 40px;
+
+  button,
+  a {
+    box-shadow: none;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 25px;
+    letter-spacing: 0%;
+    text-align: center;
+    min-height: 57px;
+    padding: 0 32px;
+    border: 2px solid #000000;
+
+    &:hover {
+      svg path {
+        fill: #fff;
+        stroke: #fff;
+      }
+
+      border: 2px solid #FF1D21;
+    }
+  }
+}
+
+.mobileLogos {
+  display: none;
+}
+
+.logosDesktop {
+  display: flex;
+}
+
+.sliderWrapper {
+  position: relative;
+
+  &:hover {
+    .sliderNavigation {
+      position: absolute;
+      opacity: 1;
+    }
+  }
+
+  .sliderNavigation {
+    position: absolute;
+    opacity: 0;
+    top: calc(60% - 50px);
+    width: 100%;
+    transition: 0.2s ease-in-out;
+
+    button {
+      width: 50px;
+      height: 50px;
+      right: 25px;
+      border-radius: 50px;
+      box-shadow: none;
+      border: none;
+    }
+  }
+}
+
+@media (width <=1200px) {
+
+  .tabButtons {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 60px;
+  overflow-y: auto;
+    margin-bottom: 40px;
+  button {
+    border-radius: 30px;
+    padding: 0 20px;
+    min-height: 40px;
+    background: #FFFFFF;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 37px;
+    letter-spacing: 2%;
+    min-width: max-content;
+
+    &.activeTab {
+      color: white;
+      border: 2px solid #D55730;
+      color: #D55730;
+      background: #FFFFFF;
+      font-weight: 700;
+      font-style: italic;
+      font-size: 14px;
+      line-height: 37px;
+      letter-spacing: 2%;
+
+    }
+
+    &:hover {
+      color: white;
+      border: 1px solid #D55730;
+      color: #D55730;
+      background: #FFFFFF;
+      font-weight: 700;
+      font-style: italic;
+      font-size: 14px;
+      line-height: 37px;
+      letter-spacing: 2%;
+    }
+  }
+}
+
+.logosDesktop {
+  display: none;
+}
+  .projectCard {
+    padding: 20px;
+  }
+
+  .mobileLogos {
+    display: flex;
+    margin-top: 30px;
+    justify-content: center;
+
+    img {
+      min-height: 40px;
+    }
+  }
+
+  .floatingCard {
+    background: #FFFFFF;
+    border: 2px solid #000000;
+    box-shadow: 5px 5px 0px 0px #000000;
+    padding-bottom: 22px;
+  
+    .projectIcon {
+      display: none;
+    }
+
+    ul {
+      max-width: 350px;
+      margin: 20px;
+      display: flex;
+      gap: 8px;
+      flex-direction: column;
+           padding-top: 0px;
+      li {
+      
+
+        span {
+          padding-left: 10px;
+          font-size: 12px;
+          color: #0F0B31;
+        }
+
+        svg {
+          margin-top: 5px;
+        }
+      }
+    }
+
+    p {
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 20px;
+      letter-spacing: 0%;
+      max-width: inherit;
+      padding: 0 20px;
+      margin-top: 20px;
+    }
+
+    >* {
+      position: relative;
+      z-index: 1;
+    }
+
+    &::after {
+      display: none;
+    }
+  }
+}
+
+@media (width <=991px) {
+ .liveProjectsSlider {
+  margin-top: 80px;
+
+  .sectionHeader {
+    h2 {
+      font-weight: 700;
+      font-style: italic;
+      font-size: 24px;
+      line-height: 32px;
+      letter-spacing: 0%;
+      text-align: center;
+      color: #000000;
+      max-width: 556px;
+      margin: 0 auto 33px;
+    }
+  }
+}
+}
+
+@media (width <=640px) {
+  .tabButtons { 
+    justify-content: flex-start;
+    margin-bottom: 40px;
+  } 
+  }

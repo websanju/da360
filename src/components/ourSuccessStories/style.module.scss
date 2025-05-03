@@ -1,0 +1,316 @@
+
+
+.successSection {
+  margin-bottom: 100px;
+}
+.successWrapper {
+  border: 2px solid rgba(0, 0, 0, 1);
+  border-radius: 24px;
+  padding: 60px 0 40px 105px;
+  background-image: url("/images/successStories.svg");
+}
+
+.storiesHeader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 30px;
+
+  h2 {
+    font-weight: 700;
+    font-style: italic;
+    font-size: 52px;
+    line-height: 49px;
+    letter-spacing: 0%;
+    margin-bottom: 16px;
+  }
+
+  p {
+    max-width: 484px;
+    margin: 0 auto;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 120%;
+    letter-spacing: 2%;
+    text-align: center;
+    color: rgba(0, 0, 0, 1);
+    margin-bottom: 24px;
+  }
+}
+
+.usersimg {
+  display: flex;
+  align-items: center;
+
+  .userImgItems {
+    width: 50px;
+    height: 50px;
+    border: 2px solid rgba(255, 255, 255, 1);
+    border-radius: 50px;
+    overflow: hidden;
+    position: relative;
+    margin-left: -12px;
+    position: relative;
+  }
+
+  .userItemNumber {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(0 0 0 / 50%);
+
+    span {
+      color: rgba(255, 255, 255, 1);
+      font-weight: 600;
+      font-size: 10px;
+      line-height: 100%;
+      letter-spacing: 2%;
+    }
+  }
+}
+
+.storyCard {
+  border-radius: 16px;
+  overflow: hidden;
+  border: 2px solid rgba(0, 0, 0, 1);
+  box-shadow: 4px 4px 0px 0px rgba(0, 0, 0, 1);
+  background: rgba(255, 255, 255, 1);
+
+  .packageLPA {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 15px 19px;
+    border-top: 0.7px solid rgba(0, 0, 0, 0.1);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 120%;
+    letter-spacing: 0%;
+    text-align: center;
+
+    span {
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 120%;
+      letter-spacing: 0%;
+      text-align: center;
+      padding-left: 4px;
+    }
+  }
+
+  .studentPic {
+    overflow: hidden;
+    width: 100%;
+    height: 234px;
+
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      object-position: top;
+    }
+  }
+
+  .studentInfo {
+    text-align: center;
+    padding: 15px 15px 38px;
+
+    h5 {
+      font-weight: 600;
+      font-size: 22px;
+      line-height: 100%;
+      letter-spacing: 0%;
+      text-align: center;
+      color: rgba(0, 0, 0, 1);
+      margin-bottom: 13px;
+    }
+
+    .companyLogo {
+      margin-bottom: 26px;
+    }
+
+    .jobRole {
+      display: flex;
+      gap: 12px;
+      justify-content: center;
+      align-items: center;
+
+      .iconRole {
+        width: 26px;
+        height: 26px;
+        min-width: 26px;
+        border: 1px solid rgba(0, 0, 0, 1);
+        border-radius: 50px;
+      }
+
+      .previousRole {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 100%;
+        letter-spacing: 0%;
+        text-align: right;
+        color: rgba(0, 0, 0, 1);
+      }
+
+      .newRole {
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 100%;
+        letter-spacing: 0%;
+        text-align: center;
+        color: rgba(0, 0, 0, 1);
+        text-align: left;
+      }
+    }
+
+
+
+  }
+
+  .companyLogo {
+    img {
+      width: max-content;
+      height: auto;
+    }
+  }
+}
+
+.downloadBtnAction {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  gap: 10px;
+
+  .downloadBtn {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+}
+
+.sliderWrapper {
+  position: relative;
+
+  &:hover {
+    .sliderNavigation {
+      position: absolute;
+      opacity: 1;
+    }
+  }
+
+  .sliderNavigation {
+    position: absolute;
+    opacity: 0;
+    top: calc(60% - 50px);
+    width: 100%;
+    transition: 0.2s ease-in-out;
+
+    button {
+      width: 50px;
+      height: 50px;
+      right: 25px;
+      border-radius: 50px;
+      box-shadow: none;
+      border: none;
+    }
+  }
+}
+
+@media (width <=1024px) {
+  .successWrapper {
+    border-radius: 20px;
+    padding: 24px 0 40px 16px;
+  }
+}
+
+@media (width <= 992px) {
+  .successSection {
+    margin-bottom: 60px;
+  }
+  .successWrapper {
+    border-radius: 20px;
+    padding: 24px 0 40px 16px;
+    background-position: center center;
+  }
+
+  .storyCard {
+    .studentPic {
+      height: 191px;
+
+      img {
+        object-fit: cover;
+        object-position: top;
+      }
+    }
+
+    .studentInfo {
+      padding: 15px 15px 16px;
+
+      h5 {
+        margin-bottom: 8px;
+        font-size: 18px;
+        line-height: normal;
+      }
+
+      .companyLogo {
+        margin-bottom: 16px;
+      }
+
+      .jobRole {
+        gap: 12px;
+
+        .iconRole {
+          width: 26px;
+          height: 26px;
+          min-width: 26px;
+        }
+
+        .previousRole {
+          font-size: 12px;
+        }
+
+        .newRole {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+
+  .storiesHeader {
+    margin-bottom: 30px;
+
+    h2 {
+      font-size: 24px;
+      line-height: 100%;
+      margin-bottom: 6px;
+    }
+
+    p {
+      max-width: 270px;
+      font-size: 12px;
+      margin-bottom: 0;
+    }
+  }
+
+  .downloadBtnAction {
+    margin-top: 40px;
+    gap: 10px;
+
+    .downloadBtn {
+      gap: 10px;
+      font-size: 14px;
+      padding: 16px;
+    }
+  }
+
+  .usersimg {
+    display: none;
+  }
+}

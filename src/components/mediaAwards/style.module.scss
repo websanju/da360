@@ -1,0 +1,39 @@
+
+
+
+.mediaAwardsSection {
+  margin-top: 140px;
+
+  .mediaAwardsContainer {
+    max-width: 1193px;
+  }
+
+  .medialogo {
+    text-align: center;
+  }
+}
+
+.title {
+  font-weight: 700;
+  font-style: italic;
+  font-size: 48px;
+  line-height: 60px;
+  letter-spacing: 0%;
+  text-align: center;
+  color: rgba(0, 0, 0, 1);
+  margin-bottom: 50px;
+
+}
+
+@media (width <=768px) {
+  .mediaAwardsSection {
+  margin-top: 60px;
+
+}
+
+  .title {
+    font-size: 24px;
+    margin-bottom: 24px;
+    line-height: 100%;
+  }
+}

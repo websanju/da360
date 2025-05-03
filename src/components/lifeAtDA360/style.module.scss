@@ -1,0 +1,131 @@
+
+
+
+.lifeAtDA360Section {
+  margin-bottom: 140px;
+
+  .plaYbtn {
+    background-color: transparent;
+    border: none;
+  }
+}
+
+.lifeAtDA360Header {
+  margin-bottom: 60px;
+
+  h2 {
+    font-weight: 700;
+    font-style: italic;
+    font-size: 48px;
+    line-height: 60px;
+    letter-spacing: 0%;
+    margin-bottom: 24px;
+    color: rgba(0, 0, 0, 1);
+    text-align: center;
+  }
+
+  p {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0%;
+    color: rgba(15, 11, 49, 1);
+    max-width: 703px;
+    margin: 0 auto;
+    text-align: center;
+
+  }
+}
+
+.sliderWrapper {
+  position: relative;
+
+  &:hover {
+    .sliderNavigation {
+      position: absolute;
+      opacity: 1;
+    }
+  }
+
+  .sliderNavigation {
+    position: absolute;
+    opacity: 0;
+    top: calc(60% - 50px);
+    width: 100%;
+    transition: 0.2s ease-in-out;
+
+    button {
+      width: 50px;
+      height: 50px;
+      right: 25px;
+      border-radius: 50px;
+      box-shadow: none;
+      border: none;
+    }
+  }
+}
+
+.videoBoxBlock {
+   border-radius: 10px !important;
+}
+
+@media (width <=1366px) {
+  .videoBoxBlock {
+    border-radius: 16px !important;
+    overflow: hidden;
+  }
+}
+
+@media (width <=1200px) {
+  .lifeAtDA360Section {
+    margin-bottom: 60px;
+  }
+}
+
+@media (width <=991px) {
+  .lifeAtDA360Section {
+    margin-bottom: 60px;
+  }
+
+  .lifeAtDA360Header {
+    margin-bottom: 32px;
+
+    h2 {
+      font-weight: 700;
+      font-style: italic;
+      font-size: 24px;
+      line-height: 100%;
+      text-align: center;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 18px;
+      letter-spacing: 0%;
+      text-align: center;
+
+      color: rgba(15, 11, 49, 1);
+      max-width: 303px;
+      margin: 0 auto;
+    }
+  }
+
+  .videoBox {
+    min-height: 207px !important;
+
+    iframe {
+      min-height: 207px !important;
+    }
+  }
+
+  .videoImgBox {
+    border-radius: 16px;
+    overflow: hidden;
+
+    img {
+      height: 207px !important;
+    }
+  }
+}

@@ -1,0 +1,193 @@
+
+
+.peopleSliderSection {
+  margin-top: 140px;
+
+  .sectionheader {
+    margin-bottom: 60px;
+    text-align: center;
+
+    h2 {
+      font-weight: 700;
+      font-style: italic;
+      font-size: 48px;
+      line-height: 60px;
+      letter-spacing: 0%;
+      text-align: center;
+      color: rgba(0, 0, 0, 1);
+      max-width: 434px;
+      margin: 0 auto 13px;
+    }
+
+    p {
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 24px;
+      letter-spacing: 0%;
+      color: rgba(15, 11, 49, 1);
+      text-align: center;
+
+    }
+  }
+
+  .peopleItem {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: flex-end;
+    height: 100%;
+    cursor: pointer;
+
+    img {
+      height: auto;
+      width: 100%;
+    }
+  }
+}
+
+.btnClose {
+  position: absolute;
+  right: 0;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 11;
+  color: #fff;
+}
+
+.modalbody {
+  border-radius: 12px;
+  padding: 0;
+  overflow: hidden;
+  border: none;
+}
+
+.modalContent {
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.modalFooter {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+
+  .modaldesignation {
+    strong {
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 20px;
+      letter-spacing: 1%;
+      color: #FFFFFF;
+    }
+
+    p {
+      font-weight: 400;
+      font-size: 10px;
+      line-height: 100%;
+      letter-spacing: 0%;
+      color: #FFFFFF;
+    }
+  }
+}
+
+.modalTextbody {
+  padding: 40px;
+  border: 2px solid #FFFFFF;
+  overflow: hidden;
+  border-radius: 12px;
+
+  .modalImg {
+    background-color: #fff;
+    width: 52;
+    min-width: 52px;
+    min-height: 52px;
+    height: 52;
+    overflow: hidden;
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    img {
+      width: 40px;
+    }
+  }
+
+  .modalText {
+    margin-bottom: 24px;
+
+    p {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 26px;
+      letter-spacing: 1%;
+      color: #FFFFFF;
+
+    }
+  }
+
+}
+
+.sliderWrapper {
+  position: relative;
+
+  &:hover {
+    .sliderNavigation {
+      position: absolute;
+      opacity: 1;
+    }
+  }
+}
+
+.sliderNavigation {
+  position: absolute;
+  opacity: 0;
+  top: calc(60% - 50px);
+  width: 100%;
+  transition: 0.2s ease-in-out;
+
+  button {
+    width: 50px;
+    height: 50px;
+    right: 25px;
+    border-radius: 50px;
+    box-shadow: none;
+    border: none;
+  }
+}
+
+@media (width <=991px) {
+  
+.peopleSliderSection {
+  margin-top: 80px;
+  .sectionheader {
+    margin-bottom: 40px;
+    text-align: center;
+
+    h2 {
+font-weight: 700;
+font-style: italic;
+font-size: 24px;
+line-height: 32px;
+letter-spacing: 0%;
+text-align: center;
+
+    }
+
+    p {
+font-weight: 500;
+font-size: 12px;
+line-height: 24px;
+letter-spacing: 0%;
+
+      color: rgba(15, 11, 49, 1);
+      text-align: center;
+
+    }
+  }
+
+}
+}

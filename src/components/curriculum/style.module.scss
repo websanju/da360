@@ -1,0 +1,416 @@
+
+
+.curriculumSection {
+  margin-bottom: 140px;
+
+  h2 {
+    font-weight: 700;
+    font-style: italic;
+    font-size: 48px;
+    line-height: 60px;
+    letter-spacing: 0%;
+    max-width: 800px;
+    margin-bottom: 24px;
+    color: rgba(0, 0, 0, 1);
+  }
+
+  p {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0%;
+    color: rgba(15, 11, 49, 1);
+    max-width: 564px;
+    margin-bottom: 24px;
+  }
+
+  .info-line {
+    color: #fff;
+    border-top: 1px solid rgba(0, 0, 0, 1);
+    border-bottom: 1px solid #fff;
+    text-align: center;
+    max-width: 813px;
+    display: flex;
+    gap: 30px;
+    padding-top: 20px;
+    padding-bottom: 60px;
+
+    .Learning {
+      text-align: left;
+
+      label {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 100%;
+        letter-spacing: 0%;
+        color: rgba(0, 0, 0, 1);
+      }
+
+      p {
+        font-weight: 600;
+        font-style: italic;
+        font-size: 14px;
+        line-height: 100%;
+        letter-spacing: 0%;
+        margin: 0;
+        max-width: 800px !important;
+      }
+    }
+
+    .timings {
+      text-align: left;
+
+      label {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 100%;
+        letter-spacing: 0%;
+        color: rgba(0, 0, 0, 1);
+      }
+
+      p {
+        font-weight: 600;
+        font-style: italic;
+        font-size: 14px;
+        line-height: 100%;
+        letter-spacing: 0%;
+        margin: 0;
+        max-width: 800px !important;
+      }
+    }
+  }
+
+  .module {
+    border: 1px solid rgba(0, 0, 0, 1);
+    box-shadow: 2px 2px 0px 0px rgba(0, 0, 0, 1);
+    background: rgba(255, 255, 255, 1);
+    overflow: hidden;
+    transition: 0.3s ease;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    padding: 30px 50px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    &.active {
+      background: rgba(229, 218, 255, 1);
+    }
+
+    .module-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      cursor: pointer;
+
+      .module-left {
+        display: flex;
+        align-items: flex-start;
+        gap: 60px;
+
+        .module-number {
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-start;
+          align-items: flex-start;
+
+          label {
+            font-weight: 500;
+            font-style: italic;
+            font-size: 20px;
+            line-height: 100%;
+            color: rgba(0, 0, 0, 1);
+          }
+
+          span {
+            font-weight: 700;
+            font-style: italic;
+            font-size: 48px;
+            line-height: 0;
+            color: rgb(124, 33, 224);
+            top: 25px;
+            position: relative;
+            color: rgba(124, 33, 224, 1);
+          }
+        }
+
+        .module-title {
+          font-weight: 600;
+          font-size: 18px;
+          line-height: 100%;
+          letter-spacing: 0%;
+          color: rgba(0, 0, 0, 1);
+        }
+      }
+
+      .toggle-icon-mobile {
+        display: none;
+      }
+
+      .toggle-icon {
+        font-size: 2rem;
+        font-weight: bold;
+        color: rgba(0, 0, 0, 1);
+        display: block;
+      }
+    }
+
+    .module-content {
+      display: flex;
+      margin-top: 32px;
+
+      .contentLeft {
+        min-width: 134px;
+      }
+
+      ul {
+        list-style: none;
+        column-count: 2;
+        gap: 25px;
+
+        li {
+          position: relative;
+          font-weight: 500;
+          font-size: 14px;
+          line-height: 31px;
+          letter-spacing: 0%;
+          padding-left: 25px;
+
+          &::before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #000;
+            font-weight: bold;
+          }
+        }
+      }
+    }
+
+    .badges {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 14px;
+
+      .badge-item {
+        background: #fff;
+        border: 1px solid rgba(0, 0, 0, 1);
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 100%;
+        letter-spacing: 0%;
+        padding: 6px 19px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        color: rgba(0, 0, 0, 1);
+        border-radius: 50px;
+        min-width: 175px;
+      }
+    }
+  }
+}
+
+@media (width <=992px) {
+  .curriculumSection {
+    margin-top: 40px;
+    margin-bottom: 40px;
+
+    h2 {
+      font-weight: 700;
+      font-style: italic;
+      font-size: 24px;
+      line-height: 32px;
+      letter-spacing: 0%;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 18px;
+      letter-spacing: 0%;
+      color: rgba(15, 11, 49, 1);
+      max-width: 564px;
+      margin-bottom: 20px;
+    }
+
+    .info-line {
+      color: #fff;
+      display: flex;
+      gap: 16px;
+      padding-top: 20px;
+      padding-bottom: 24px;
+      flex-direction: column;
+
+      .Learning {
+        text-align: left;
+
+        label {
+          font-size: 12px;
+        }
+
+        p {
+
+          font-size: 12px;
+
+        }
+      }
+
+      .batchTimings {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+      }
+
+      .timings {
+        text-align: left;
+
+        label {
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 100%;
+          letter-spacing: 0%;
+          color: rgba(0, 0, 0, 1);
+        }
+
+        p {
+          font-weight: 600;
+          font-style: italic;
+          font-size: 14px;
+          line-height: 100%;
+          letter-spacing: 0%;
+          margin: 0;
+          max-width: 800px !important;
+        }
+      }
+    }
+
+    .module {
+      padding: 10px 16px 24px;
+
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      &.active {
+        background: rgba(229, 218, 255, 1);
+      }
+
+      .module-header {
+        .module-left {
+          flex-direction: column;
+          gap: 16px;
+          justify-content: flex-start;
+          width: 100%;
+          .module-number {
+            display: flex;
+            flex-direction: row;
+
+            label {
+              font-weight: 500;
+              font-style: italic;
+              font-size: 20px;
+              line-height: 100%;
+              color: rgba(0, 0, 0, 1);
+            }
+
+            span {
+              font-weight: 700;
+              font-style: italic;
+              font-size: 20px;
+              line-height: 0;
+              color: rgb(124, 33, 224);
+              top: 10px;
+              left: 10px;
+              position: relative;
+              color: rgba(124, 33, 224, 1);
+            }
+          }
+
+          .module-title {
+            font-size: 13px;
+            line-height: normal;
+            color: rgba(0, 0, 0, 1);
+          }
+        }
+
+        .toggle-icon-mobile {
+          display: block;
+          svg {
+            width: 16px;
+          }
+        }
+
+        .toggle-icon {
+          display: none;
+        }
+      }
+
+      .module-content {
+        display: flex;
+        margin-top: 16px;
+
+        .contentLeft {
+          display: none;
+        }
+
+        ul {
+          list-style: none;
+          column-count: 1;
+          gap: 0px;
+
+          li {
+            position: relative;
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 18px;
+            letter-spacing: 0%;
+            padding-left: 20px;
+
+            &::before {
+              content: "✓";
+              position: absolute;
+              left: 0;
+              color: #000;
+              font-weight: bold;
+            }
+          }
+        }
+      }
+
+      .badges {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 6px;
+        margin-top: 14px;
+
+        .badge-item {
+        
+          font-size: 10px;
+          line-height: 100%;
+          letter-spacing: 0%;
+          padding: 6px 8px;
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          color: rgba(0, 0, 0, 1);
+          border-radius: 50px;
+          min-width:auto;
+        }
+      }
+    }
+
+
+  }
+
+  .moduleHeader {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+  }
+}

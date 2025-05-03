@@ -1,0 +1,173 @@
+
+
+.rewardGridSection {
+  margin: 140px 0;
+
+  .rewardGridBox {
+    background-color: #000;
+    padding: 60px 40px;
+    border-radius: 23px;
+
+    .header {
+      margin-bottom: 40px;
+
+      h2 {
+        font-weight: 700;
+        font-style: italic;
+        font-size: 48px;
+        line-height: 60px;
+        text-align: center;
+        color: #fff;
+        margin-bottom: 12px;
+      }
+
+      p {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        text-align: center;
+        color: #fff;
+        max-width: 493px;
+        margin: 0 auto;
+      }
+    }
+
+    .rewardItems {
+      width: 100%;
+      height: 100%;
+
+      img {
+        width: 100%;
+        height: 100%;
+        max-height: 190px;
+        object-fit: cover;
+      }
+    }
+  }
+}
+
+.gridWapper {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: repeat(12, 1fr);
+  grid-auto-rows: 100px;
+
+  div {
+    overflow: hidden;
+    border-radius: 12px;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 12px;
+    }
+  }
+
+  .item1 {
+    grid-column: span 5;
+    grid-row: span 2;
+  }
+
+  .item2 {
+    grid-column: span 3;
+    grid-row: span 2;
+  }
+
+  .item3 {
+    grid-column: span 2;
+    grid-row: span 5;
+  }
+
+  .item4 {
+    grid-column: span 2;
+    grid-row: span 5;
+  }
+
+  .item5 {
+    grid-column: span 3;
+    grid-row: span 3;
+  }
+
+  .item6 {
+    grid-column: span 5;
+    grid-row: span 3;
+  }
+}
+
+.desktopblock {
+  display: grid;
+}
+
+.mobileblock {
+  display: none;
+}
+
+.lastRow {
+  display: flex;
+  gap: 16px;
+  margin-top: 16px;
+
+  div {
+    flex: auto;
+    min-width: 0;
+
+    img {
+      border-radius: 12px;
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  .desktopblock {
+    display: none;
+  }
+
+  .rewardGridSection {
+    .rewardGridBox {
+      padding: 32px 24px;
+
+      .header {
+        margin-bottom: 24px;
+
+        h2 {
+          font-size: 24px;
+          line-height: 32px;
+          margin-bottom: 8px;
+        }
+
+        p {
+          font-weight: 400;
+          font-size: 12px;
+          line-height: 16px;
+        }
+      }
+    }
+  }
+
+  .mobileblock {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+
+    .item1 {
+      flex: 1 1 calc(50% - 16px);
+      box-sizing: border-box;
+
+      img {
+        width: 100%;
+        height: auto;
+        display: block;
+      }
+    }
+  }
+
+  .gridWapper div img {
+    border-radius: 4px;
+  }
+}
