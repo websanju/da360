@@ -111,12 +111,13 @@ export default function CaseStudiesSlider() {
               0: {
                 slidesPerView: 1.2,
                 spaceBetween: 16,
-                // slidesOffsetBefore: 0,
+                slidesOffsetBefore: 16,
                 // slidesOffsetAfter: 30,
               },
               768: {
                 slidesPerView: 2.5,
                 spaceBetween: 16,
+                slidesOffsetBefore: 16,
                 // slidesOffsetBefore: 0,
                 // slidesOffsetAfter: 30,
               },

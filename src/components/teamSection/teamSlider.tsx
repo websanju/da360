@@ -98,7 +98,7 @@ const TeamSlider = ({ members }: TeamSliderProps) => {
                       height={300}
                       className="img-fluid"
                     />
-                    {member.iconImg && (
+                    {/* {member.iconImg && (
                       <div
                         className={`${styles.icon} ${
                           member.iconPosition === "right"
@@ -114,7 +114,7 @@ const TeamSlider = ({ members }: TeamSliderProps) => {
                           className="img-fluid"
                         />
                       </div>
-                    )}
+                    )} */}
                   </div>
                   <div className={styles.cardContent}>
                     <h5

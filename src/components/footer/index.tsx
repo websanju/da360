@@ -12,34 +12,16 @@ const Footer = () => {
           <div className={`${styles.row} row gy-4`}>
             {/* Logo & Social */}
             <div className="col-lg-4 col-md-6">
-              <Image
-                src="/images/footer-logo.svg"
-                alt="Digital Academy 360"
-                width={180}
-                height={50}
-                className="mb-3"
-              />
-              <div className={styles.followUs}>
-                <h6>Follow us</h6>
-                <div className="d-flex gap-3 mb-3">
-                  {/* Add social media links */}
-                  <Link href="#">
-                    <i className="bi bi-facebook fs-5"></i>
-                  </Link>
-                  <Link href="#">
-                    <i className="bi bi-twitter fs-5"></i>
-                  </Link>
-                  <Link href="#">
-                    <i className="bi bi-linkedin fs-5"></i>
-                  </Link>
-                  <Link href="#">
-                    <i className="bi bi-instagram fs-5"></i>
-                  </Link>
-                  <Link href="#">
-                    <i className="bi bi-youtube fs-5"></i>
-                  </Link>
-                </div>
+              <div className={styles.footerLogo}>
+                <Image
+                  src="/images/footer-logo.svg"
+                  alt="Digital Academy 360"
+                  width={180}
+                  height={50}
+                  className="mb-lg-3"
+                />
               </div>
+
               <div className={styles.signUp}>
                 <p>
                   Sign Up to get notified about our programs, offers & discounts
@@ -104,17 +86,32 @@ const Footer = () => {
                 <ul>
                   <li>
                     <Link href="#" className="text-white text-decoration-none">
-                      Leadership in Digital Marketing, AI & Entrepreneurship
+                      PG Programme in Digital Marketing with AI
                     </Link>
                   </li>
                   <li>
                     <Link href="#" className="text-white text-decoration-none">
-                      PGCP in Digital Marketing & Social Content Creator
+                      PG Programme in UI/UX & Design Thinking
                     </Link>
                   </li>
                   <li>
                     <Link href="#" className="text-white text-decoration-none">
-                      Skill Diploma in Digital Marketing & Analytics
+                      PG Programme in Full Stack Development
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="#" className="text-white text-decoration-none">
+                      Skill Diploma in Digital Marketing Program
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="#" className="text-white text-decoration-none">
+                      Skill Diploma in UI/UX & Design Thinking
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="#" className="text-white text-decoration-none">
+                      Skill Diploma in Content Writing
                     </Link>
                   </li>
                 </ul>
@@ -154,20 +151,43 @@ const Footer = () => {
         <div className={styles.footerBottom}>
           <div className={`${styles.row} row`}>
             <div className="col-lg-6">
-              <p>2024 © Digital Academy 360 Pvt. Ltd. All rights reserved.</p>
+              <p>© 2025 Digitalacademy360 Inc. All rights reserved.</p>
             </div>
             <div className="col-lg-6 ">
               <div
                 className={`${styles.footerLink} d-flex align-items-center justify-content-lg-end`}
               >
                 <Link href="#" className=" text-decoration-none">
-                  Privacy Policy
+                  <Image
+                    src="/images/fb.svg"
+                    alt="facebook"
+                    width={28}
+                    height={28}
+                  />
                 </Link>
                 <Link href="#" className=" text-decoration-none">
-                  T & C
+                  <Image
+                    src="/images/twitter.svg"
+                    alt="facebook"
+                    width={28}
+                    height={28}
+                  />
                 </Link>
                 <Link href="#" className=" text-decoration-none">
-                  Sitemap
+                  <Image
+                    src="/images/instagram.svg"
+                    alt="instagram"
+                    width={28}
+                    height={28}
+                  />
+                </Link>
+                <Link href="#" className=" text-decoration-none">
+                  <Image
+                    src="/images/linkedin.svg"
+                    alt="instagram"
+                    width={28}
+                    height={28}
+                  />
                 </Link>
               </div>
             </div>

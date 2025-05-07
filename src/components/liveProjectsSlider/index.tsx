@@ -185,7 +185,7 @@ export default function LiveProjectsSlider() {
               slidesPerView: 1.2,
               spaceBetween: 20,
               centeredSlides: false, // Mobile
-              slidesOffsetBefore: 15,
+              slidesOffsetBefore: 16,
               slidesOffsetAfter: 30,
             },
             768: {
@@ -193,7 +193,7 @@ export default function LiveProjectsSlider() {
               spaceBetween: 20,
               centeredSlides: false, // Tablet
               slidesOffsetAfter: 140,
-              slidesOffsetBefore: 15,
+              slidesOffsetBefore: 16,
             },
             992: {
               slidesPerView: 1.2,

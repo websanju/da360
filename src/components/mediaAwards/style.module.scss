@@ -1,6 +1,3 @@
-
-
-
 .mediaAwardsSection {
   margin-top: 140px;
 
@@ -27,13 +24,17 @@
 
 @media (width <=768px) {
   .mediaAwardsSection {
-  margin-top: 60px;
+    margin-top: 60px;
 
-}
+    .mediaAwardsContainer {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
 
   .title {
     font-size: 24px;
-    margin-bottom: 24px;
+    margin-bottom: 40px;
     line-height: 100%;
   }
 }

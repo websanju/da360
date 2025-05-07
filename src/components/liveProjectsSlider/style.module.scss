@@ -1,5 +1,3 @@
-
-
 .liveProjectsSlider {
   margin-top: 140px;
 
@@ -64,7 +62,8 @@
     display: flex;
     gap: 12px;
     flex-direction: column;
-     padding-top: 60px;
+    padding-top: 60px;
+
     li {
       text-align: left;
       display: flex;
@@ -315,52 +314,60 @@
 @media (width <=1200px) {
 
   .tabButtons {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 60px;
-  overflow-y: auto;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 60px;
+    overflow-y: auto;
     margin-bottom: 40px;
-  button {
-    border-radius: 30px;
-    padding: 0 20px;
-    min-height: 40px;
-    background: #FFFFFF;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 37px;
-    letter-spacing: 2%;
-    min-width: max-content;
+     scrollbar-width: none; /* For Firefox */
+  -ms-overflow-style: none; /* For Internet Explorer and Edge */
 
-    &.activeTab {
-      color: white;
-      border: 2px solid #D55730;
-      color: #D55730;
+  &::-webkit-scrollbar {
+    display: none; /* For Chrome, Safari, and Opera */
+  }
+
+    button {
+      border-radius: 30px;
+      padding: 0 20px;
+      min-height: 40px;
       background: #FFFFFF;
-      font-weight: 700;
-      font-style: italic;
+      font-weight: 500;
       font-size: 14px;
       line-height: 37px;
       letter-spacing: 2%;
+      min-width: max-content;
 
-    }
+      &.activeTab {
+        color: white;
+        border: 2px solid #D55730;
+        color: #D55730;
+        background: #FFFFFF;
+        font-weight: 700;
+        font-style: italic;
+        font-size: 14px;
+        line-height: 37px;
+        letter-spacing: 2%;
 
-    &:hover {
-      color: white;
-      border: 1px solid #D55730;
-      color: #D55730;
-      background: #FFFFFF;
-      font-weight: 700;
-      font-style: italic;
-      font-size: 14px;
-      line-height: 37px;
-      letter-spacing: 2%;
+      }
+
+      &:hover {
+        color: white;
+        border: 1px solid #D55730;
+        color: #D55730;
+        background: #FFFFFF;
+        font-weight: 700;
+        font-style: italic;
+        font-size: 14px;
+        line-height: 37px;
+        letter-spacing: 2%;
+      }
     }
   }
-}
 
-.logosDesktop {
-  display: none;
-}
+  .logosDesktop {
+    display: none;
+  }
+
   .projectCard {
     padding: 20px;
   }
@@ -371,7 +378,7 @@
     justify-content: center;
 
     img {
-      min-height: 40px;
+      min-height: 24px;
     }
   }
 
@@ -380,7 +387,7 @@
     border: 2px solid #000000;
     box-shadow: 5px 5px 0px 0px #000000;
     padding-bottom: 22px;
-  
+
     .projectIcon {
       display: none;
     }
@@ -391,9 +398,10 @@
       display: flex;
       gap: 8px;
       flex-direction: column;
-           padding-top: 0px;
+      padding-top: 0px;
+
       li {
-      
+
 
         span {
           padding-left: 10px;
@@ -429,28 +437,41 @@
 }
 
 @media (width <=991px) {
- .liveProjectsSlider {
-  margin-top: 80px;
+.projectTitle {
+font-weight: 700;
+font-style: italic;
+font-size: 20px;
+line-height: 100%;
+letter-spacing: 0%;
+text-align: left;
+  margin-top: 8px;
+  margin-bottom: 16px;
+}
+.projectCard { 
+  background-image: none;
+}
+  .liveProjectsSlider {
+    margin-top: 60px;
 
-  .sectionHeader {
-    h2 {
-      font-weight: 700;
-      font-style: italic;
-      font-size: 24px;
-      line-height: 32px;
-      letter-spacing: 0%;
-      text-align: center;
-      color: #000000;
-      max-width: 556px;
-      margin: 0 auto 33px;
+    .sectionHeader {
+      h2 {
+        font-weight: 700;
+        font-style: italic;
+        font-size: 24px;
+        line-height: 32px;
+        letter-spacing: 0%;
+        text-align: center;
+        color: #000000;
+        max-width: 556px;
+        margin: 0 auto 40px;
+      }
     }
   }
 }
-}
 
 @media (width <=640px) {
-  .tabButtons { 
+  .tabButtons {
     justify-content: flex-start;
     margin-bottom: 40px;
-  } 
   }
+}

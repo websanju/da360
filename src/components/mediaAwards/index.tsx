@@ -38,6 +38,24 @@ const MediaAwards = () => {
             slidesPerView={2}
             centeredSlides={false}
             loop={false}
+            breakpoints={{
+              320: {
+                slidesPerView: 2.5,
+                slidesOffsetBefore: 16,
+                slidesOffsetAfter: 16,
+              },
+              480: {
+                slidesPerView: 2.5,
+                slidesOffsetBefore: 16,
+                slidesOffsetAfter: 16,
+              },
+              768: {
+                slidesPerView: 3,
+              },
+              1024: {
+                slidesPerView: 4,
+              },
+            }}
           >
             {mediaLogos.map((logo, index) => (
               <SwiperSlide key={index}>

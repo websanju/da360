@@ -457,7 +457,7 @@
 @media (width <=991px) {
 
   .peopleSliderSection {
-    margin-top: 80px;
+    margin-top: 60px;
 
     .sectionheader {
       margin-bottom: 40px;
@@ -470,7 +470,8 @@
         line-height: 32px;
         letter-spacing: 0%;
         text-align: center;
-
+        max-width: 260px;
+        margin-bottom: 8px;
       }
 
       p {

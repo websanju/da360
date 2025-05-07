@@ -142,15 +142,16 @@
 
 @media (width <=991px) {
   .alumniSection {
-    margin-top: 80px;
+    margin-top: 60px;
 
     .sectionheader {
-      margin-bottom: 24px;
+      margin-bottom: 40px;
 
       h2 {
         font-size: 24px;
         text-align: center;
         color: rgba(0, 0, 0, 1);
+        line-height: normal;
       }
     }
 
