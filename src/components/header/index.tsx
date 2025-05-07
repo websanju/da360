@@ -6,7 +6,6 @@ import styles from "./style.module.scss";
 import DownArrow from "@components/Ui/svg/downArrow";
 
 export default function Header() {
-  const [isOpen, setIsOpen] = useState(false);
   const [isCoursesOpen, setIsCoursesOpen] = useState(false);
   const toggleCourses = () => {
     setIsCoursesOpen(!isCoursesOpen);
@@ -103,11 +102,7 @@ export default function Header() {
                   </li>
                 </ul>
               </nav>
-              <div
-                className={styles.dropdownWrapper}
-                onMouseEnter={() => setIsOpen(true)}
-                onMouseLeave={() => setIsOpen(false)}
-              >
+              <div className={styles.dropdownWrapper}>
                 <div className={styles.hamburgerMenu}>
                   <Image
                     src="/images/hamburger.svg"
@@ -117,11 +112,7 @@ export default function Header() {
                   />
                 </div>
 
-                <div
-                  className={`${styles.dropdownMenu} ${
-                    isOpen ? styles.show : ""
-                  }`}
-                >
+                <div className={`${styles.dropdownMenu} `}>
                   <ul>
                     <li>
                       <Link href="/">Refer &amp; Earn</Link>

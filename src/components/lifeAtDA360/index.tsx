@@ -154,7 +154,7 @@ const LifeAtDA360 = () => {
                       >
                         <button className={styles.plaYbtn} onClick={handleBack}>
                           <Image
-                            src={"/images/icons/play-btn.svg"}
+                            src={"/images/push-btn.svg"}
                             alt={"slide.title"}
                             width={72}
                             height={72}
@@ -180,7 +180,7 @@ const LifeAtDA360 = () => {
                           onClick={() => handlePlay(index)}
                         >
                           <Image
-                            src={"/images/icons/play-btn.svg"}
+                            src={"/images/play-btn.svg"}
                             alt={"slide.title"}
                             width={72}
                             height={72}

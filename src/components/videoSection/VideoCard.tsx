@@ -69,10 +69,10 @@ const VideoCard = ({
             >
               <button className={styles.plaYbtn} onClick={handleBack}>
                 <Image
-                  src="/images/play-button.svg"
-                  alt="Back"
-                  width={70}
-                  height={70}
+                  alt="play icon"
+                  width={20}
+                  height={20}
+                  src="images/push-btn.svg"
                 />
               </button>
             </div>
@@ -94,10 +94,10 @@ const VideoCard = ({
           >
             <button className={styles.plaYbtn}>
               <Image
-                src="/images/play-button.svg"
-                alt="Play"
-                width={70}
-                height={70}
+                alt="play icon"
+                width={24}
+                height={28}
+                src="images/play-btn.svg"
               />
             </button>
           </div>
