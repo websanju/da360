@@ -9,16 +9,16 @@
     border-radius: 20px;
     padding: 100px 20px 80px;
     position: relative;
-  }
-
-  .dashedLine {
-    position: absolute;
+    overflow: hidden;
   }
 
   .dashedLine {
     position: absolute;
     top: 0;
     left: 0;
+    img {
+      max-width: 100%;
+    }
   }
 
   .roadmapContent {
