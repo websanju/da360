@@ -1,7 +1,8 @@
 "use client";
-import React, { useRef, useState, useEffect } from "react";
+import React, { useRef } from "react";
+// import React, { useRef, useState, useEffect } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Scrollbar } from "swiper/modules";
+import { Scrollbar, Navigation } from "swiper/modules";
 import Image from "next/image";
 import "swiper/css";
 import "swiper/css/scrollbar";
@@ -26,22 +27,24 @@ interface TeamSliderProps {
 
 const TeamSlider = ({ members }: TeamSliderProps) => {
   const containerRef = useRef<HTMLDivElement>(null);
-  const [containerPaddingLeft, setContainerPaddingLeft] = useState(20);
+  // const [containerPaddingLeft, setContainerPaddingLeft] = useState(20);
 
-  useEffect(() => {
-    function updatePadding() {
-      if (containerRef.current) {
-        const rect = containerRef.current.getBoundingClientRect();
-        setContainerPaddingLeft(rect.left);
-      }
-    }
-    updatePadding();
-    window.addEventListener("resize", updatePadding);
-    return () => window.removeEventListener("resize", updatePadding);
-  }, []);
+  // useEffect(() => {
+  //   function updatePadding() {
+  //     if (containerRef.current) {
+  //       const rect = containerRef.current.getBoundingClientRect();
+  //       setContainerPaddingLeft(rect.left);
+  //     }
+  //   }
+  //   updatePadding();
+  //   window.addEventListener("resize", updatePadding);
+  //   return () => window.removeEventListener("resize", updatePadding);
+  // }, []);
 
   if (members.length === 0) {
-    return <p>No team members available.</p>;
+    return (
+      <div className={styles.teamnoavailable}>No team members available.</div>
+    );
   }
 
   return (
@@ -54,25 +57,33 @@ const TeamSlider = ({ members }: TeamSliderProps) => {
         <div className="col-md-12">
           <div
             className={styles.sliderInnerWrapper}
-            style={{
-              width: "100vw",
-              marginLeft: `-${containerPaddingLeft}px`,
-              paddingLeft: containerPaddingLeft,
-              boxSizing: "border-box",
-            }}
+            // style={{
+            //   width: "100vw",
+            //   marginLeft: `-${containerPaddingLeft}px`,
+            //   paddingLeft: containerPaddingLeft,
+            //   boxSizing: "border-box",
+            // }}
           >
+            <div className={styles.sliderNavigation}>
+              <button className="swiper-button-prev" id="customPrev9"></button>
+              <button className="swiper-button-next" id="customNext9"></button>
+            </div>
             <Swiper
               slidesPerView={1.5}
               spaceBetween={10}
               scrollbar={{ draggable: true, el: "#customScrollbar" }}
-              modules={[Scrollbar]}
-              slidesOffsetBefore={0}
+              modules={[Navigation, Scrollbar]}
+              slidesOffsetBefore={20}
               slidesOffsetAfter={50}
+              navigation={{
+                prevEl: "#customPrev9",
+                nextEl: "#customNext9",
+              }}
               breakpoints={{
                 768: { slidesPerView: 2.3, spaceBetween: 20 },
                 992: { slidesPerView: 3.5, spaceBetween: 20 },
                 1440: { slidesPerView: 3.5, spaceBetween: 20 },
-                1840: { slidesPerView: 4.5, spaceBetween: 20 },
+                1840: { slidesPerView: 5.5, spaceBetween: 20 },
               }}
             >
               {members.map((member, index) => (

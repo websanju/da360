@@ -92,3 +92,49 @@
     }
   }
 }
+
+
+
+.slider {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  margin: 30px 0;
+}
+
+.slideTrack {
+  display: flex;
+  width: calc(210px * 20); // adjust based on image width * (number of logos * 2)
+}
+
+.slide {
+  width: 210px;
+  flex-shrink: 0;
+  padding: 10px;
+}
+
+.rightToLeft {
+  animation: scrollRightToLeft 30s linear infinite;
+}
+
+.leftToRight {
+  animation: scrollLeftToRight 30s linear infinite;
+}
+
+@keyframes scrollRightToLeft {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes scrollLeftToRight {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}

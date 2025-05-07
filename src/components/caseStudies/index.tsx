@@ -1,5 +1,6 @@
 "use client";
-import React, { useRef, useState, useEffect } from "react";
+import React from "react";
+// import React, { useRef, useState, useEffect } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Scrollbar } from "swiper/modules";
 import "swiper/css";
@@ -53,20 +54,20 @@ const caseStudies = [
 ];
 
 export default function CaseStudiesSlider() {
-  const containerRef = useRef<HTMLDivElement>(null);
-  const [containerPaddingLeft, setContainerPaddingLeft] = useState(20);
+  // const containerRef = useRef<HTMLDivElement>(null);
+  // const [containerPaddingLeft, setContainerPaddingLeft] = useState(20);
 
-  useEffect(() => {
-    function updatePadding() {
-      if (containerRef.current) {
-        const rect = containerRef.current.getBoundingClientRect();
-        setContainerPaddingLeft(rect.left);
-      }
-    }
-    updatePadding();
-    window.addEventListener("resize", updatePadding);
-    return () => window.removeEventListener("resize", updatePadding);
-  }, []);
+  // useEffect(() => {
+  //   function updatePadding() {
+  //     if (containerRef.current) {
+  //       const rect = containerRef.current.getBoundingClientRect();
+  //       setContainerPaddingLeft(rect.left);
+  //     }
+  //   }
+  //   updatePadding();
+  //   window.addEventListener("resize", updatePadding);
+  //   return () => window.removeEventListener("resize", updatePadding);
+  // }, []);
 
   return (
     <section className={styles.caseStudiessection}>
@@ -79,102 +80,102 @@ export default function CaseStudiesSlider() {
             </div>
           </div>
         </div>
-        <div className={styles.sliderWrapper}>
-          <div className={styles.sliderNavigation}>
-            <button className="swiper-button-prev" id="customPrev5"></button>
-            <button className="swiper-button-next" id="customNext5"></button>
-          </div>
-          <div
-            className={styles.sliderInnerc}
-            style={{
-              width: "100vw",
-              marginLeft: `-${containerPaddingLeft}px`,
-              paddingLeft: containerPaddingLeft,
-              boxSizing: "border-box",
+      </div>
+      <div className={styles.sliderWrapper}>
+        <div className={styles.sliderNavigation}>
+          <button className="swiper-button-prev" id="customPrev5"></button>
+          <button className="swiper-button-next" id="customNext5"></button>
+        </div>
+        <div
+          className={styles.sliderInnerc}
+          // style={{
+          //   width: "100vw",
+          //   marginLeft: `-${containerPaddingLeft}px`,
+          //   paddingLeft: containerPaddingLeft,
+          //   boxSizing: "border-box",
+          // }}
+        >
+          <Swiper
+            modules={[Navigation, Scrollbar]}
+            spaceBetween={20}
+            slidesPerView={2.5}
+            scrollbar={{ draggable: true, el: "#customScrollbar5" }}
+            navigation={{
+              prevEl: "#customPrev5",
+              nextEl: "#customNext5",
             }}
+            pagination={{ clickable: false }}
+            slidesOffsetBefore={40}
+            slidesOffsetAfter={40}
+            breakpoints={{
+              0: {
+                slidesPerView: 1.2,
+                spaceBetween: 16,
+                // slidesOffsetBefore: 0,
+                // slidesOffsetAfter: 30,
+              },
+              768: {
+                slidesPerView: 2.5,
+                spaceBetween: 16,
+                // slidesOffsetBefore: 0,
+                // slidesOffsetAfter: 30,
+              },
+              992: {
+                slidesPerView: 2.5,
+                spaceBetween: 16,
+                // slidesOffsetBefore: 5,
+                // slidesOffsetAfter: 60,
+              },
+              1440: {
+                slidesPerView: 3.3,
+                spaceBetween: 40,
+                // slidesOffsetBefore: 0,
+                // slidesOffsetAfter: 30,
+              },
+              1840: {
+                slidesPerView: 3.3,
+                spaceBetween: 40,
+              },
+            }}
+            className={styles.swiper}
           >
-            <Swiper
-              modules={[Navigation, Scrollbar]}
-              spaceBetween={40}
-              slidesPerView={2.5}
-              scrollbar={{ draggable: true, el: "#customScrollbar5" }}
-              navigation={{
-                prevEl: "#customPrev5",
-                nextEl: "#customNext5",
-              }}
-              pagination={{ clickable: false }}
-              slidesOffsetBefore={0}
-              slidesOffsetAfter={350}
-              breakpoints={{
-                0: {
-                  slidesPerView: 1.2,
-                  spaceBetween: 16,
-                  slidesOffsetBefore: 0,
-                  slidesOffsetAfter: 30,
-                },
-                768: {
-                  slidesPerView: 2.5,
-                  spaceBetween: 16,
-                  slidesOffsetBefore: 0,
-                  slidesOffsetAfter: 30,
-                },
-                992: {
-                  slidesPerView: 2.5,
-                  spaceBetween: 16,
-                  slidesOffsetBefore: 5,
-                  slidesOffsetAfter: 60,
-                },
-                1440: {
-                  slidesPerView: 3.3,
-                  spaceBetween: 40,
-                  slidesOffsetBefore: 0,
-                  slidesOffsetAfter: 30,
-                },
-                1840: {
-                  slidesPerView: 3.3,
-                  spaceBetween: 40,
-                },
-              }}
-              className={styles.swiper}
-            >
-              {caseStudies.map((study) => (
-                <SwiperSlide key={study.id}>
-                  <div className={styles.card}>
-                    <div className={styles.cardImg}>
-                      <Image
-                        src={study.logo}
-                        alt={study.title}
-                        width={82}
-                        height={62}
-                        className={styles.logo}
-                      />
-                    </div>
-                    <div className={styles.cardDescription}>
-                      <h3>{study.title}</h3>
-                      <p className={styles.desc}>
-                        {study.description} <a href="#">Know More</a>
-                      </p>
-                    </div>
-                    <div className={styles.separator}></div>
-                    <div className={styles.skills}>
-                      <span className={styles.skillsLable}>Skills Learned</span>
-                      <div className={styles.tags}>
-                        {study.tags.map((tag, idx) => (
-                          <span key={idx} className={styles.tag}>
-                            {tag}
-                          </span>
-                        ))}
-                      </div>
+            {caseStudies.map((study) => (
+              <SwiperSlide key={study.id}>
+                <div className={styles.card}>
+                  <div className={styles.cardImg}>
+                    <Image
+                      src={study.logo}
+                      alt={study.title}
+                      width={82}
+                      height={62}
+                      className={styles.logo}
+                    />
+                  </div>
+                  <div className={styles.cardDescription}>
+                    <h3>{study.title}</h3>
+                    <p className={styles.desc}>
+                      {study.description} <a href="#">Know More</a>
+                    </p>
+                  </div>
+                  <div className={styles.separator}></div>
+                  <div className={styles.skills}>
+                    <span className={styles.skillsLable}>Skills Learned</span>
+                    <div className={styles.tags}>
+                      {study.tags.map((tag, idx) => (
+                        <span key={idx} className={styles.tag}>
+                          {tag}
+                        </span>
+                      ))}
                     </div>
                   </div>
-                </SwiperSlide>
-              ))}
-            </Swiper>
-          </div>
+                </div>
+              </SwiperSlide>
+            ))}
+          </Swiper>
         </div>
-        {/* Custom scrollbar */}
-        <div id="customScrollbar5" className="swiper-scrollbar"></div>
       </div>
+      {/* Custom scrollbar */}
+      <div id="customScrollbar5" className="swiper-scrollbar"></div>
     </section>
   );
 }

@@ -162,8 +162,8 @@ const TeamSection = () => {
             </div>
           </div>
         </div>
-        <TeamSlider members={filteredMembers} />
       </div>
+      <TeamSlider members={filteredMembers} />
     </section>
   );
 };

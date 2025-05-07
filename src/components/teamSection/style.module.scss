@@ -126,8 +126,34 @@
 .sliderWrapper {
   width: 100%;
   position: relative;
-}
+   &:hover {
+    .sliderNavigation {
+      position: absolute;
+      opacity: 1;
+    }
+  }
+ .sliderNavigation {
+    position: absolute;
+    opacity: 0;
+    top: calc(60% - 50px);
+    width: 100%;
+    transition: 0.2s ease-in-out;
 
+    button {
+      width: 50px;
+      height: 50px;
+      right: 25px;
+      border-radius: 50px;
+      box-shadow: none;
+      border: none;
+    }
+  }
+}
+.teamnoavailable {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .swiper {
   width: 100%;
 }

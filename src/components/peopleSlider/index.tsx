@@ -1,5 +1,6 @@
 "use client";
-import React, { useRef, useState, useEffect } from "react";
+// import React, { useRef, useState, useEffect } from "react";
+import React, { useState, useRef } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Scrollbar } from "swiper/modules";
 import "swiper/css";
@@ -18,6 +19,7 @@ type Person = {
   modalHTML?: string;
   videoUrl?: string;
   bgColor: string;
+  textColor?: string;
 };
 
 type SlideContent = Person[];
@@ -27,10 +29,11 @@ const slides: SlideContent[] = [
     {
       id: 1,
       name: "Nishank Koushak",
-      image: "/images/Ambitious/video-1.png",
+      image: "/images/nishank.png",
+      designation: "Digital Marketing Trainer",
       type: "video",
       videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
-      bgColor: "#000",
+      bgColor: "#E9492D",
     },
     {
       id: 2,
@@ -44,16 +47,19 @@ const slides: SlideContent[] = [
         Lorem Ipsum has been the industry's standard dummy text ever since the 1500s...</p>
       `,
       bgColor: "#4b896a",
+      textColor: "#fff",
     },
   ],
   [
     {
       id: 3,
       name: "Nishank Koushak",
-      image: "/images/Ambitious/video-2.png",
+      image: "/images/nishank1.png",
+      designation: "Digital Marketing Trainer",
       type: "video",
       videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
-      bgColor: "#000",
+      bgColor: "#9554CA",
+      textColor: "#fff",
     },
   ],
   [
@@ -69,16 +75,19 @@ const slides: SlideContent[] = [
         Lorem Ipsum has been the industry's standard dummy text ever since the 1500s...</p>
       `,
       bgColor: "#F6B39F",
+      textColor: "#000",
     },
   ],
   [
     {
       id: 5,
       name: "Nishank Koushak",
-      image: "/images/Ambitious/video-3.png",
+      image: "/images/nishank2.png",
       type: "video",
       videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
-      bgColor: "#000",
+      designation: "Digital Marketing Trainer",
+      bgColor: "#3ACFAF",
+      textColor: "#fff",
     },
   ],
   [
@@ -94,6 +103,7 @@ const slides: SlideContent[] = [
         Lorem Ipsum has been the industry's standard dummy text ever since the 1500s...</p>
       `,
       bgColor: "#063F2E",
+      textColor: "#fff",
     },
     {
       id: 7,
@@ -107,16 +117,19 @@ const slides: SlideContent[] = [
         Lorem Ipsum has been the industry's standard dummy text ever since the 1500s...</p>
       `,
       bgColor: "#8588E6",
+      textColor: "#fff",
     },
   ],
   [
     {
       id: 1,
       name: "Nishank Koushak",
-      image: "/images/Ambitious/video-1.png",
+      image: "/images/nishank.png",
       type: "video",
       videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
-      bgColor: "#000",
+      bgColor: "#8588E6",
+      designation: "Digital Marketing Trainer",
+      textColor: "#fff",
     },
     {
       id: 2,
@@ -130,16 +143,19 @@ const slides: SlideContent[] = [
         Lorem Ipsum has been the industry's standard dummy text ever since the 1500s...</p>
       `,
       bgColor: "#4b896a",
+      textColor: "#fff",
     },
   ],
   [
     {
       id: 5,
       name: "Nishank Koushak",
-      image: "/images/Ambitious/video-3.png",
+      image: "/images/nishank1.png",
+      designation: "Digital Marketing Trainer",
       type: "video",
       videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
-      bgColor: "#000",
+      bgColor: "#F6B39F",
+      textColor: "#fff",
     },
   ],
 ];
@@ -147,19 +163,19 @@ const slides: SlideContent[] = [
 const PeopleSlider = () => {
   const [selected, setSelected] = useState<Person | null>(null);
   const containerRef = useRef<HTMLDivElement>(null);
-  const [containerPaddingLeft, setContainerPaddingLeft] = useState(20);
+  // const [containerPaddingLeft, setContainerPaddingLeft] = useState(20);
 
-  useEffect(() => {
-    function updatePadding() {
-      if (containerRef.current) {
-        const rect = containerRef.current.getBoundingClientRect();
-        setContainerPaddingLeft(rect.left);
-      }
-    }
-    updatePadding();
-    window.addEventListener("resize", updatePadding);
-    return () => window.removeEventListener("resize", updatePadding);
-  }, []);
+  // useEffect(() => {
+  //   function updatePadding() {
+  //     if (containerRef.current) {
+  //       const rect = containerRef.current.getBoundingClientRect();
+  //       setContainerPaddingLeft(rect.left);
+  //     }
+  //   }
+  //   updatePadding();
+  //   window.addEventListener("resize", updatePadding);
+  //   return () => window.removeEventListener("resize", updatePadding);
+  // }, []);
 
   return (
     <>
@@ -173,75 +189,154 @@ const PeopleSlider = () => {
               </div>
             </div>
           </div>
-          <div className={styles.sliderWrapper}>
-            <div className={styles.sliderNavigation}>
-              <button className="swiper-button-prev" id="customPrev6"></button>
-              <button className="swiper-button-next" id="customNext6"></button>
-            </div>
-            <div
-              ref={containerRef}
-              className={`${styles.sliderInnerWrapper} peoplesliderWrapper`}
-              style={{
-                width: "100vw",
-                marginLeft: `-${containerPaddingLeft}px`,
-                paddingLeft: containerPaddingLeft,
-                boxSizing: "border-box",
+        </div>
+        <div className={styles.sliderWrapper}>
+          <div className={styles.sliderNavigation}>
+            <button className="swiper-button-prev" id="customPrev6"></button>
+            <button className="swiper-button-next" id="customNext6"></button>
+          </div>
+          <div
+            ref={containerRef}
+            className={`${styles.sliderInnerWrapper} peoplesliderWrapper`}
+            // style={{
+            //   width: "100vw",
+            //   marginLeft: `-${containerPaddingLeft}px`,
+            //   paddingLeft: containerPaddingLeft,
+            //   boxSizing: "border-box",
+            // }}
+          >
+            <Swiper
+              modules={[Navigation, Scrollbar]}
+              scrollbar={{ draggable: true, el: "#customScrollbar6" }}
+              spaceBetween={20}
+              slidesPerView={5.5}
+              className={styles.slider}
+              slidesOffsetBefore={20}
+              slidesOffsetAfter={20}
+              // slidesOffsetAfter={250}
+              navigation={{
+                prevEl: "#customPrev6",
+                nextEl: "#customNext6",
+              }}
+              breakpoints={{
+                0: {
+                  slidesPerView: 1.2,
+                  spaceBetween: 20,
+                  // slidesOffsetBefore: 0,
+                  // slidesOffsetAfter: 40,
+                },
+                768: {
+                  slidesPerView: 1.5,
+                  spaceBetween: 20,
+                  // slidesOffsetBefore: 0,
+                  // slidesOffsetAfter: 40,
+                },
+                992: {
+                  slidesPerView: 2.5,
+                  spaceBetween: 20,
+                  // slidesOffsetBefore: 0,
+                  // slidesOffsetAfter: 40,
+                },
+                1440: {
+                  slidesPerView: 4.5,
+                  spaceBetween: 20,
+                  // slidesOffsetBefore: 0,
+                  // slidesOffsetAfter: 40,
+                },
+                1840: {
+                  slidesPerView: 5.5,
+                  spaceBetween: 20,
+                  // slidesOffsetBefore: 0,
+                  // slidesOffsetAfter: 40,
+                },
               }}
             >
-              <Swiper
-                modules={[Navigation, Scrollbar]}
-                scrollbar={{ draggable: true, el: "#customScrollbar6" }}
-                spaceBetween={20}
-                slidesPerView={5.5}
-                className={styles.slider}
-                slidesOffsetBefore={0}
-                slidesOffsetAfter={250}
-                navigation={{
-                  prevEl: "#customPrev6",
-                  nextEl: "#customNext6",
-                }}
-                breakpoints={{
-                  0: {
-                    slidesPerView: 1.2,
-                    spaceBetween: 20,
-                    slidesOffsetBefore: 0,
-                    slidesOffsetAfter: 40,
-                  },
-                  768: {
-                    slidesPerView: 1.5,
-                    spaceBetween: 20,
-                    slidesOffsetBefore: 0,
-                    slidesOffsetAfter: 40,
-                  },
-                  992: {
-                    slidesPerView: 2.5,
-                    spaceBetween: 20,
-                    slidesOffsetBefore: 0,
-                    slidesOffsetAfter: 40,
-                  },
-                  1440: {
-                    slidesPerView: 4.5,
-                    spaceBetween: 20,
-                    slidesOffsetBefore: 0,
-                    slidesOffsetAfter: 40,
-                  },
-                  1840: {
-                    slidesPerView: 5.5,
-                    spaceBetween: 20,
-                    slidesOffsetBefore: 0,
-                    slidesOffsetAfter: 40,
-                  },
-                }}
-              >
-                {slides.map((group, index) => (
-                  <SwiperSlide key={index}>
-                    <div className={styles.peopleItem}>
-                      {group.map((person) => (
-                        <div
-                          key={person.id}
-                          className={styles.card}
-                          onClick={() => setSelected(person)}
-                        >
+              {slides.map((group, index) => (
+                <SwiperSlide key={index}>
+                  <div className={styles.peopleItem}>
+                    {group.map((person) => (
+                      <div
+                        key={person.id}
+                        className={styles.card}
+                        onClick={() => setSelected(person)}
+                      >
+                        {person.type === "video" ? (
+                          <div
+                            style={{ backgroundColor: person.bgColor }}
+                            className={styles.videoContainer}
+                          >
+                            <div className={styles.videoItem}>
+                              <div className={styles.videoImg}>
+                                <Image
+                                  src={person.image}
+                                  width={243}
+                                  height={193}
+                                  alt={person.name}
+                                  className={styles.image}
+                                />
+                                <div className={styles.videoIConBox}>
+                                  <div className={styles.videoIcon}>
+                                    <Image
+                                      alt="play icon"
+                                      width={22}
+                                      height={22}
+                                      src="images/play-btn.svg"
+                                    />
+                                  </div>
+                                </div>
+                              </div>
+                              <div className={styles.videoDetails}>
+                                <strong>{person.name}</strong>
+                                <p>{person.designation}</p>
+                              </div>
+                            </div>
+                            {/* <iframe
+                              src={person.videoUrl}
+                              title={person.name}
+                              allowFullScreen
+                              style={{
+                                width: "100%",
+                                height: "100%",
+                                border: "none",
+                              }}
+                            /> */}
+                          </div>
+                        ) : person.type === "text" ? (
+                          <div
+                            className={styles.textContainer}
+                            style={{ backgroundColor: person.bgColor }}
+                          >
+                            <div className={styles.profileInfo}>
+                              <div className={styles.modalImg}>
+                                <Image
+                                  src={
+                                    person.profileImage ||
+                                    "/images/Ambitious/default-avatar.svg"
+                                  }
+                                  alt={person.name}
+                                  width={40}
+                                  height={40}
+                                  className={styles.profileImage}
+                                />
+                              </div>
+                              <div className={styles.profileDetails}>
+                                <strong style={{ color: person.textColor }}>
+                                  {person.name}
+                                </strong>
+                                <p style={{ color: person.textColor }}>
+                                  {person.designation}
+                                </p>
+                              </div>
+                            </div>
+                            <div
+                              style={{ color: person.textColor }}
+                              className={styles.textContent}
+                              dangerouslySetInnerHTML={{
+                                __html: person.modalHTML as string,
+                              }}
+                            />
+                          </div>
+                        ) : (
                           <Image
                             src={person.image}
                             width={243}
@@ -249,16 +344,16 @@ const PeopleSlider = () => {
                             alt={person.name}
                             className={styles.image}
                           />
-                        </div>
-                      ))}
-                    </div>
-                  </SwiperSlide>
-                ))}
-              </Swiper>
-            </div>
+                        )}
+                      </div>
+                    ))}
+                  </div>
+                </SwiperSlide>
+              ))}
+            </Swiper>
           </div>
-          <div id="customScrollbar6" className="swiper-scrollbar"></div>
         </div>
+        <div id="customScrollbar6" className="swiper-scrollbar"></div>
       </section>
 
       {/* Modal */}
@@ -271,7 +366,11 @@ const PeopleSlider = () => {
           <div className="modal-dialog modal-dialog-centered">
             <div
               className={`${styles.modalContent} modal-content`}
-              style={{ backgroundColor: selected.bgColor }}
+              style={
+                selected.type === "text"
+                  ? { backgroundColor: selected.bgColor }
+                  : {}
+              }
             >
               <button
                 type="button"
@@ -282,6 +381,7 @@ const PeopleSlider = () => {
                 {selected.type === "text" && selected.modalHTML && (
                   <div className={styles.modalTextbody}>
                     <div
+                      style={{ color: selected.textColor }}
                       className={styles.modalText}
                       dangerouslySetInnerHTML={{ __html: selected.modalHTML }}
                     />

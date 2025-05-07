@@ -112,8 +112,8 @@ const SuccessStories: React.FC = () => {
               scrollbar={{ draggable: true, el: "#customScrollbar3" }}
               spaceBetween={20}
               slidesPerView={1.2}
-              slidesOffsetBefore={0}
-              slidesOffsetAfter={50}
+              slidesOffsetBefore={15}
+              slidesOffsetAfter={20}
               navigation={{
                 prevEl: "#customPrev7",
                 nextEl: "#customNext7",

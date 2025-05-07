@@ -6,7 +6,7 @@
 .successWrapper {
   border: 2px solid rgba(0, 0, 0, 1);
   border-radius: 24px;
-  padding: 60px 0 40px 105px;
+  padding: 60px 0 40px 0px;
   background-image: url("/images/successStories.svg");
 }
 
@@ -226,7 +226,7 @@
 @media (width <=1024px) {
   .successWrapper {
     border-radius: 20px;
-    padding: 24px 0 40px 16px;
+    padding: 24px 0 40px 0px;
   }
 }
 
@@ -236,7 +236,7 @@
   }
   .successWrapper {
     border-radius: 20px;
-    padding: 24px 0 40px 16px;
+    padding: 24px 0 40px 0px;
     background-position: center center;
   }
 

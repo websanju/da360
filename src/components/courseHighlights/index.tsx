@@ -79,13 +79,14 @@ const CourseHighlights: React.FC = () => {
           {highlights.map((item, index) => (
             <div key={index} className="col-6 col-md-4 col-lg-3">
               <div className={`${styles.highlightCard} h-100`}>
-                <Image
-                  src={item.icon}
-                  alt={item.title}
-                  className="mb-3"
-                  height={40}
-                  width={40}
-                />
+                <span>
+                  <Image
+                    src={item.icon}
+                    alt={item.title}
+                    height={40}
+                    width={40}
+                  />
+                </span>
                 <div className={styles.highlightItem}>
                   <h6 className="mb-1 fw-bold">{item.title}</h6>
                   <p className="mb-0">{item.value}</p>

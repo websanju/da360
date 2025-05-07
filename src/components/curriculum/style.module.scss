@@ -178,11 +178,15 @@
           padding-left: 25px;
 
           &::before {
-            content: "✓";
-            position: absolute;
-            left: 0;
-            color: #000;
-            font-weight: bold;
+            content: "";
+              position: absolute;
+              left: 0;
+              width: 15px;
+              height: 15px;
+              top: 10px;
+              background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 15 15' fill='none'><path d='M4 7.5L7 10L11 5' stroke='black'/></svg>");
+              background-size: contain;
+              background-repeat: no-repeat;
           }
         }
       }
