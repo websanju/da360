@@ -60,16 +60,13 @@ const VideoCard = ({
             />
           )}
           {hovering && (
-            <div
-              className="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center"
-              style={{ backgroundColor: "rgba(0, 0, 0, 0.3)" }}
-            >
+            <div className="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center">
               <button className={styles.playBtn} onClick={handleBack}>
                 <Image
-                  src="/images/play-button.svg"
-                  alt="Back"
-                  width={70}
-                  height={70}
+                  alt="play icon"
+                  width={24}
+                  height={28}
+                  src="images/push-btn.svg"
                 />
               </button>
             </div>
@@ -90,10 +87,10 @@ const VideoCard = ({
           >
             <button className={styles.playBtn}>
               <Image
-                src="/images/play-button.svg"
-                alt="Play"
-                width={70}
-                height={70}
+                alt="play icon"
+                width={20}
+                height={20}
+                src="images/play-btn.svg"
               />
             </button>
           </div>
