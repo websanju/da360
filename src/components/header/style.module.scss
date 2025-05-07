@@ -284,7 +284,7 @@
 @media (width <=768px) {
   .courseDropdown {
     position: static;
-    margin-left: 20px;
+    margin-left: 0px;
 
     .dropdownToggle {
       cursor: pointer;
@@ -338,7 +338,7 @@
   .header {
     .logoBlock {
       align-items: center;
-      gap: 24px;
+      gap: 12px;
 
       img {
         width: 127px;
