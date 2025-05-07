@@ -3,14 +3,6 @@
   --foreground: #171717;
   --transition0: cubic-bezier(0.47, 0.01, 0.17, 1);
 }
-
-@media (prefers-color-scheme: light) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: rgba(245, 245, 245, 1);
-  }
-}
-
 main {
   overflow-x: hidden;
 }
@@ -457,12 +449,6 @@ select {
     border-radius: 5px;
     background: #555555;
     cursor: pointer;
-  }
-}
-
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
   }
 }
 
