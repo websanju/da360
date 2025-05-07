@@ -79,8 +79,13 @@
   }
 
   .highlightCard {
-    padding: 20px 16px;
+    padding: 17px 11px;
     gap: 10px;
+
+    img {
+      max-width: 28px;
+      height: auto;
+    }
    
     .highlightItem {
       p {
