@@ -363,14 +363,14 @@ select {
   margin: 20px auto 0;
   /* 👈 center horizontally */
   height: 6px;
-  background: #eee;
+  background: #E5E5E5;
   /* light background for scrollbar track */
   border-radius: 5px;
   position: relative;
 
   .swiper-scrollbar-drag {
     border-radius: 5px;
-    background: rgba(85, 85, 85, 1);
+    background: #555555;
     cursor: pointer;
   }
 }
@@ -380,14 +380,14 @@ select {
   margin: 20px auto 0;
   /* 👈 center horizontally */
   height: 6px;
-  background: #eee;
+  background: #E5E5E5;
   /* light background for scrollbar track */
   border-radius: 5px;
   position: relative;
 
   .swiper-scrollbar-drag {
     border-radius: 5px;
-    background: rgba(85, 85, 85, 1);
+    background: #555555;
     cursor: pointer;
   }
 }
@@ -397,46 +397,48 @@ select {
   margin: 20px auto 0;
   /* 👈 center horizontally */
   height: 6px;
-  background: #eee;
+  background: #E5E5E5;
   /* light background for scrollbar track */
   border-radius: 5px;
   position: relative;
 
   .swiper-scrollbar-drag {
     border-radius: 5px;
-    background: rgba(85, 85, 85, 1);
+    background: #555555;
     cursor: pointer;
   }
 }
+
 #customScrollbar6 {
   width: 400px;
   margin: 20px auto 0;
   /* 👈 center horizontally */
   height: 6px;
-  background: #eee;
+  background: #E5E5E5;
   /* light background for scrollbar track */
   border-radius: 5px;
   position: relative;
 
   .swiper-scrollbar-drag {
     border-radius: 5px;
-    background: rgba(85, 85, 85, 1);
+    background: #555555;
     cursor: pointer;
   }
 }
+
 #customScrollbar2 {
   width: 400px;
   margin: 20px auto 0;
   /* 👈 center horizontally */
   height: 6px;
-  background: #eee;
+  background: #E5E5E5;
   /* light background for scrollbar track */
   border-radius: 5px;
   position: relative;
 
   .swiper-scrollbar-drag {
     border-radius: 5px;
-    background: rgba(85, 85, 85, 1);
+    background: #555555;
     cursor: pointer;
   }
 }
@@ -446,14 +448,14 @@ select {
   margin: 20px auto 0;
   /* 👈 center horizontally */
   height: 6px;
-  background: #eee;
+  background: #E5E5E5;
   /* light background for scrollbar track */
   border-radius: 5px;
   position: relative;
 
   .swiper-scrollbar-drag {
     border-radius: 5px;
-    background: rgba(85, 85, 85, 1);
+    background: #555555;
     cursor: pointer;
   }
 }
@@ -470,51 +472,60 @@ select {
   background-color: rgba(240, 9, 13, 1) !important;
   font-size: 20px !important;
 }
-.swiper-button-prev:after, .swiper-button-next:after {
-   font-size: 24px !important;
+
+.swiper-button-prev:after,
+.swiper-button-next:after {
+  font-size: 24px !important;
 }
-.sliderAlumniSlider  {
+
+.sliderAlumniSlider {
   .swiper-pagination {
-     max-width: 38%;
+    max-width: 38%;
     right: 0;
     left: auto !important;
     text-align: left;
+
     .swiper-pagination-bullet {
-      background:  rgba(255, 255, 255, 1);
+      background: rgba(255, 255, 255, 1);
       opacity: 0.6;
       transition: background 0.3s ease, opacity 0.3s ease, width 0.3s ease;
     }
+
     .swiper-pagination-bullet-active {
-       background: rgba(244, 205, 50, 1);
-         opacity: 1;
-         width: 20px;
-         border-radius: 10px;
-             bottom: -7px !important;
+      background: rgba(244, 205, 50, 1);
+      opacity: 1;
+      width: 20px;
+      border-radius: 10px;
+      bottom: -7px !important;
     }
   }
+
   .swiper-button-prev,
-    .swiper-button-next {
-     color: rgb(255, 255, 255) !important;
-      background-color: transparent !important;
-      font-size: 16px !important;
-      border: solid 1px rgb(255, 255, 255) !important;
-      width: 44px;
-      height: 44px;
-      border-radius: 100px;
-      position: absolute;
-      right: 0;
-      left: unset;
-      bottom: 0;
-      top: auto;
-      margin-top: auto;
-          z-index: 11;
-    }
-    .swiper-button-prev:after, .swiper-button-next:after {
-      font-size: 16px !important;
-    }
-    .swiper-button-prev {
-         margin-right: 60px;
-    }
+  .swiper-button-next {
+    color: rgb(255, 255, 255) !important;
+    background-color: transparent !important;
+    font-size: 16px !important;
+    border: solid 1px rgb(255, 255, 255) !important;
+    width: 44px;
+    height: 44px;
+    border-radius: 100px;
+    position: absolute;
+    right: 0;
+    left: unset;
+    bottom: 0;
+    top: auto;
+    margin-top: auto;
+    z-index: 11;
+  }
+
+  .swiper-button-prev:after,
+  .swiper-button-next:after {
+    font-size: 16px !important;
+  }
+
+  .swiper-button-prev {
+    margin-right: 60px;
+  }
 }
 
 .peoplesliderWrapper {
@@ -524,42 +535,47 @@ select {
 }
 
 .btn-close2 {
-  --bs-btn-close-bg:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath d='M.293.293a1 1 0 0 1 1.414 0L8 6.586 14.293.293a1 1 0 1 1 1.414 1.414L9.414 8l6.293 6.293a1 1 0 0 1-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 0 1-1.414-1.414L6.586 8 .293 1.707a1 1 0 0 1 0-1.414'/%3e%3c/svg%3e");
-    opacity: 1;
+  --bs-btn-close-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath d='M.293.293a1 1 0 0 1 1.414 0L8 6.586 14.293.293a1 1 0 1 1 1.414 1.414L9.414 8l6.293 6.293a1 1 0 0 1-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 0 1-1.414-1.414L6.586 8 .293 1.707a1 1 0 0 1 0-1.414'/%3e%3c/svg%3e");
+  opacity: 1;
 }
 
 // responisve 
-@media (width <=991px) { 
-  .sliderAlumniSlider .swiper-button-prev, .sliderAlumniSlider .swiper-button-next {
-   bottom: 00px;
+@media (width <=991px) {
+
+  .sliderAlumniSlider .swiper-button-prev,
+  .sliderAlumniSlider .swiper-button-next {
+    bottom: 00px;
   }
+
   .sliderAlumniSlider .swiper-pagination {
     right: 0;
     left: 0 !important;
     text-align: left;
+  }
 }
-}
+
 @media (width <=768px) {
   #customScrollbar {
-     width:200px;
+    width: 200px;
   }
 
   #customScrollbar2 {
-    width:200px;
+    width: 200px;
   }
 
   #customScrollbar3 {
-    width:200px;
+    width: 200px;
   }
 
   #customScrollbar4 {
-    width:200px;
+    width: 200px;
   }
 
   #customScrollbar5 {
-    width:200px;
+    width: 200px;
   }
+
   #customScrollbar6 {
- width:200px;
+    width: 200px;
   }
 }
