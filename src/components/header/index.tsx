@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import styles from "./style.module.scss";
@@ -7,11 +7,31 @@ import DownArrow from "@components/Ui/svg/downArrow";
 
 export default function Header() {
   const [isCoursesOpen, setIsCoursesOpen] = useState(false);
+  const [isSticky, setIsSticky] = useState(false);
+
   const toggleCourses = () => {
     setIsCoursesOpen(!isCoursesOpen);
   };
+
+  // Check scroll position to toggle sticky class
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 0) {
+        setIsSticky(true); // Add sticky class when scrolling
+      } else {
+        setIsSticky(false); // Remove sticky class when at top
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
-    <header className={styles.header}>
+    <header className={`${styles.header} ${isSticky ? styles.sticky : ""}`}>
       <div className="container">
         <div className="row">
           <div className="col-lg-5 col-md-9 col-9 d-flex align-items-center">

@@ -1,7 +1,19 @@
 .header {
-  margin-top: 24px;
-  margin-bottom: 24px;
-  position: relative;
+   padding-top: 24px;
+  padding-bottom: 24px;
+  position: sticky;
+  top: 0;
+  z-index: 11;
+  width: 100%;
+    box-shadow: none; /* Optional, you can add a shadow to the sticky header */
+
+  &.sticky {
+    position: sticky;
+    top: 0;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a shadow when sticky */
+  }
+
   .logoBlock {
     display: flex;
     gap: 32px;
@@ -29,7 +41,8 @@
     display: flex;
     align-items: center;
     gap: 32px;
-  position: relative;
+    position: relative;
+
     ul {
       display: flex;
       gap: 32px;
@@ -84,12 +97,14 @@
     align-items: center;
     justify-content: center;
     gap: 5px;
+
     &.open {
       background-color: #E10F33;
       border: 1px solid #E10F33;
       color: #fff;
+
       svg path {
-        fill:#fff;
+        fill: #fff;
       }
     }
   }
@@ -178,7 +193,7 @@
     border: 1px solid #e33c59;
     border-radius: 50%;
     transition: all 0.3s ease;
-   
+
   }
 
   .dropdownMenu {
@@ -187,6 +202,7 @@
     right: 0;
     padding-top: 40px;
     display: none;
+
     ul {
       list-style: none;
       display: flex;
@@ -194,13 +210,13 @@
       gap: 10px;
       margin: 0;
       padding: 0;
-       background: white;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    min-width: 15rem;
-    padding: 1rem 1.2rem;
-    z-index: 1000;
-    transition: transform 0.2s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.2s ease-in-out;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      min-width: 15rem;
+      padding: 1rem 1.2rem;
+      z-index: 1000;
+      transition: transform 0.2s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.2s ease-in-out;
 
       li {
         display: flex;
@@ -252,17 +268,19 @@
     }
   }
 }
+
 @media (width <=430px) {
-    .courseDropdown {
- .dropdownMenu {
-    top: 100%;
-    left: 30px !important;
-    right: 30px;
-    flex-direction: column;
-    min-width:80%;
+  .courseDropdown {
+    .dropdownMenu {
+      top: 100%;
+      left: 30px !important;
+      right: 30px;
+      flex-direction: column;
+      min-width: 80%;
+    }
   }
 }
-}
+
 @media (width <=768px) {
   .courseDropdown {
     position: static;
@@ -286,13 +304,15 @@
       justify-content: center;
       gap: 5px;
     }
+
     .dropdownMenu {
-    top: 100%;
-    left: 30px;
-    right: 30px;
-    flex-direction: column;
-    min-width:80%;
-  }
+      top: 100%;
+      left: 30px;
+      right: 30px;
+      flex-direction: column;
+      min-width: 80%;
+    }
+
     .arrow {
       transition: transform 0.3s ease;
     }
