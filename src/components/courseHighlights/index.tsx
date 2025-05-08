@@ -72,9 +72,14 @@ const highlights: Highlight[] = [
 
 const CourseHighlights: React.FC = () => {
   return (
-    <div className="container">
+    <section className="container">
       <div className={`${styles.highlightWrapper} `}>
-        <h2>Course Highlights</h2>
+        <div className={`${styles.sectionHeader} `}>
+          <h2>Course Highlights</h2>
+          <p>
+            A brief look at the major highlights and value this course provides.
+          </p>
+        </div>
         <div className={`${styles.rowWrapper} row g-4`}>
           {highlights.map((item, index) => (
             <div key={index} className="col-6 col-md-4 col-lg-3">
@@ -96,7 +101,7 @@ const CourseHighlights: React.FC = () => {
           ))}
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

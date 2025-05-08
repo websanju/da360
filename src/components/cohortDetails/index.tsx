@@ -10,6 +10,7 @@ interface Cohort {
   mode: "Offline Courses" | "Online Courses";
   weekday: string;
   capacity: string;
+  campus: string;
 }
 
 const cohorts: Cohort[] = [
@@ -18,12 +19,14 @@ const cohorts: Cohort[] = [
     mode: "Offline Courses",
     weekday: "(Mon-Fri)",
     capacity: "30 Seats",
+    campus: "Bengaluru",
   },
   {
     date: "Mar 31",
     mode: "Online Courses",
     weekday: "(Mon-Fri)",
     capacity: "30 Seats",
+    campus: "Bengaluru",
   },
 ];
 
@@ -44,14 +47,9 @@ export default function CohortDetails() {
   return (
     <section className={styles.cohortDetailsSection}>
       <div className={`${styles.container} container`}>
-        <div className="row">
-          <div className="col-lg-12">
+        <div className="row d-flex justify-content-center">
+          <div className="col-lg-10">
             <h2>PG in Digital Marketing 2025 Cohort Details</h2>
-          </div>
-        </div>
-
-        <div className="row">
-          <div className="col-lg-9">
             {/* Cohort Cards */}
             {isMobile ? (
               <div className={styles.mobileCohorts}>
@@ -80,12 +78,20 @@ export default function CohortDetails() {
 
                         <div className={styles.cardItemsBottom}>
                           <div className={styles.cardItem}>
+                            <label>Campus</label>
+                            <span>{cohort.campus}</span>
+                          </div>
+                          <div className={styles.cardItem}>
                             <label>Mode:</label>
                             <span className={styles.cardMode}>
                               {cohort.mode}
                             </span>
                           </div>
-                          <div className={styles.enrollBtn}>
+                        </div>
+                        <div
+                          className={`${styles.cardItemsBottom} d-flex justify-content-center`}
+                        >
+                          <div className={`${styles.enrollBtn} `}>
                             <Link href="#" className="btn btn-danger">
                               Enroll Now
                             </Link>
@@ -122,6 +128,10 @@ export default function CohortDetails() {
                           <label>Capacity</label>
                           <span>{cohort.capacity}</span>
                         </div>
+                        <div className={styles.cardItem}>
+                          <label>Campus</label>
+                          <span>{cohort.campus}</span>
+                        </div>
                       </div>
                       <div className={styles.enrollBtn}>
                         <Link href="#" className="btn btn-danger">
@@ -136,7 +146,7 @@ export default function CohortDetails() {
           </div>
 
           {/* Accreditation Section */}
-          <div className="col-lg-3 d-flex justify-content-end">
+          <div className="col-lg-12 d-flex justify-content-center">
             <div className={styles.accredited}>
               <div>
                 <label>

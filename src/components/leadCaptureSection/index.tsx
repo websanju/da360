@@ -15,11 +15,12 @@ export default function LeadCaptureSection() {
             </h1>
             <div className={`${styles.tag}`}>
               <span>6 Months Program</span>
+              <span>AI Driven Curriculum</span>
+              <span>1 Month Internship in Agency</span>
             </div>
             <p>
-              Our PGCP Program will help you to fast track your career in AI
-              powered Digital Marketing. Next-gen marketers demand next-gen
-              strategies.
+              Fast-Track Your Success in AI-Powered Digital Marketing, Next-Gen
+              AI Skills for Next-Gen AI Marketers
             </p>
             <div className={`${styles.btnAction}`}>
               <button className={`${styles.btnRed} btnRed`}>Apply Now</button>

@@ -4,15 +4,28 @@
   padding: 52px 74px;
   margin-bottom: 80px;
 
-  h2 {
-    font-weight: 700;
-    font-style: italic;
-    font-size: 52px;
-    line-height: 60px;
-    letter-spacing: 0%;
-    color: rgba(245, 245, 245, 1);
-    margin-bottom: 53px;
+  .sectionHeader {
+    margin-bottom: 40px;
+
+    h2 {
+      font-weight: 700;
+      font-style: italic;
+      font-size: 52px;
+      line-height: 60px;
+      letter-spacing: 0%;
+      color: rgba(245, 245, 245, 1);
+      margin-bottom: 16px;
+    }
+    p {
+      font-weight: 500;
+      font-style: italic;
+      font-size: 20px;
+      line-height: 38px;
+      color: #F5F5F5;
+      letter-spacing: 0%;
+    }
   }
+
 
   .rowWrapper {
     --bs-gutter-x: 20px;
@@ -61,6 +74,7 @@
     }
   }
 }
+
 @media (width <=1200px) {
   .highlightCard {
     padding: 17px 11px;
@@ -82,6 +96,7 @@
     }
   }
 }
+
 @media (width <=992px) {
   .highlightWrapper {
     margin-bottom: 40px;
