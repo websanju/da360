@@ -64,9 +64,9 @@ const LifeAtDA360 = () => {
             <div className={styles.lifeAtDA360Header}>
               <h2>Life @DA360</h2>
               <p>
-                Experience the best of education with our exclusive competitions
-                on Top Adcopy Writer, Digital Marketing Strategist, Blogger,
-                Social Media Ninja & Much More
+                Experience next-level education through dynamic contests for Top
+                Ad Copywriters, Digital Marketing planners, Reels Expert,
+                Bloggers, Social Media Ninjas, and beyond.
               </p>
             </div>
           </div>
@@ -108,12 +108,12 @@ const LifeAtDA360 = () => {
                 slidesOffsetAfter: 20,
               },
               1440: {
-                slidesPerView: 3.5,
+                slidesPerView: 2.9,
                 spaceBetween: 20,
                 slidesOffsetAfter: 20,
               },
               1840: {
-                slidesPerView: 3.5,
+                slidesPerView: 2.9,
                 spaceBetween: 20,
                 slidesOffsetAfter: 20,
               },
@@ -121,7 +121,7 @@ const LifeAtDA360 = () => {
             modules={[Scrollbar, Navigation]}
           >
             {slides.map((slide, index) => (
-              <SwiperSlide key={index}>
+              <SwiperSlide key={index} className={styles.customSlide}>
                 <div
                   className={`${styles.videoBoxBlock} position-relative overflow-hidden`}
                 >

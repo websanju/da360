@@ -106,7 +106,7 @@
     line-height: 24px;
     letter-spacing: 0%;
     color: rgba(15, 11, 49, 1);
-    max-width: 703px;
+        max-width: 863px;
     margin: 0 auto;
     text-align: center;
 
@@ -144,6 +144,10 @@
 
 .videoBoxBlock {
    border-radius: 10px !important;
+}
+
+.customSlide {
+  max-width: 600px;
 }
 
 @media (width <=1366px) {
