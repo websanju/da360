@@ -8,6 +8,7 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import styles from "./style.module.scss";
 import Image from "next/image";
+import { auto } from "@popperjs/core";
 // import LeftArrow from "@components/Ui/svg/leftArrow";
 
 const caseStudies = [
@@ -82,9 +83,11 @@ export default function CaseStudiesSlider() {
         </div>
       </div>
       <div className={styles.sliderWrapper}>
-        <div className={styles.sliderNavigation}>
-          <button className="swiper-button-prev" id="customPrev5"></button>
-          <button className="swiper-button-next" id="customNext5"></button>
+        <div className="container position-relative">
+          <div className={styles.sliderNavigation}>
+            <button className="swiper-button-prev" id="customPrev5"></button>
+            <button className="swiper-button-next" id="customNext5"></button>
+          </div>
         </div>
         <div
           className={styles.sliderInnerc}
@@ -98,50 +101,50 @@ export default function CaseStudiesSlider() {
           <Swiper
             modules={[Navigation, Scrollbar]}
             spaceBetween={20}
-            slidesPerView={2.5}
+            slidesPerView={auto}
             scrollbar={{ draggable: true, el: "#customScrollbar5" }}
             navigation={{
               prevEl: "#customPrev5",
               nextEl: "#customNext5",
             }}
             pagination={{ clickable: false }}
-            slidesOffsetBefore={40}
-            slidesOffsetAfter={40}
+            slidesOffsetBefore={16}
+            slidesOffsetAfter={16}
             breakpoints={{
               0: {
-                slidesPerView: 1.2,
+                // slidesPerView: 1.2,
                 spaceBetween: 16,
                 slidesOffsetBefore: 16,
                 // slidesOffsetAfter: 30,
               },
               768: {
-                slidesPerView: 2.5,
+                // slidesPerView: 2.5,
                 spaceBetween: 16,
                 slidesOffsetBefore: 16,
                 // slidesOffsetBefore: 0,
                 // slidesOffsetAfter: 30,
               },
               992: {
-                slidesPerView: 2.5,
+                // slidesPerView: 2.5,
                 spaceBetween: 16,
                 // slidesOffsetBefore: 5,
                 // slidesOffsetAfter: 60,
               },
               1440: {
-                slidesPerView: 3.3,
+                // slidesPerView: 3.3,
                 spaceBetween: 40,
                 // slidesOffsetBefore: 0,
                 // slidesOffsetAfter: 30,
               },
               1840: {
-                slidesPerView: 3.3,
+                // slidesPerView: 3.3,
                 spaceBetween: 40,
               },
             }}
             className={styles.swiper}
           >
             {caseStudies.map((study) => (
-              <SwiperSlide key={study.id}>
+              <SwiperSlide key={study.id} className={styles.customSlide}>
                 <div className={styles.card}>
                   <div className={styles.cardImg}>
                     <Image

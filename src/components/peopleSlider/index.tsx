@@ -8,6 +8,7 @@ import "swiper/css/navigation";
 import "swiper/css/scrollbar";
 import styles from "./style.module.scss";
 import Image from "next/image";
+import { auto } from "@popperjs/core";
 
 type Person = {
   id: number;
@@ -92,6 +93,18 @@ const slides: SlideContent[] = [
   ],
   [
     {
+      id: 5,
+      name: "Nishank Koushak",
+      image: "/images/nishank2.png",
+      type: "video",
+      videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+      designation: "Digital Marketing Trainer",
+      bgColor: "#3ACFAF",
+      textColor: "#fff",
+    },
+  ],
+  [
+    {
       id: 6,
       name: "Sonal Lal",
       designation: "SEO Analyst",
@@ -158,6 +171,18 @@ const slides: SlideContent[] = [
       textColor: "#fff",
     },
   ],
+  [
+    {
+      id: 5,
+      name: "Nishank Koushak",
+      image: "/images/nishank1.png",
+      designation: "Digital Marketing Trainer",
+      type: "video",
+      videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+      bgColor: "#F6B39F",
+      textColor: "#fff",
+    },
+  ],
 ];
 
 const PeopleSlider = () => {
@@ -191,9 +216,11 @@ const PeopleSlider = () => {
           </div>
         </div>
         <div className={styles.sliderWrapper}>
-          <div className={styles.sliderNavigation}>
-            <button className="swiper-button-prev" id="customPrev6"></button>
-            <button className="swiper-button-next" id="customNext6"></button>
+          <div className={styles.sliderNavigationRow}>
+            <div className={styles.sliderNavigation}>
+              <button className="swiper-button-prev" id="customPrev6"></button>
+              <button className="swiper-button-next" id="customNext6"></button>
+            </div>
           </div>
           <div
             ref={containerRef}
@@ -209,7 +236,7 @@ const PeopleSlider = () => {
               modules={[Navigation, Scrollbar]}
               scrollbar={{ draggable: true, el: "#customScrollbar6" }}
               spaceBetween={20}
-              slidesPerView={5.5}
+              slidesPerView={auto}
               className={styles.slider}
               slidesOffsetBefore={20}
               slidesOffsetAfter={20}
@@ -220,31 +247,31 @@ const PeopleSlider = () => {
               }}
               breakpoints={{
                 0: {
-                  slidesPerView: 1.2,
+                  // slidesPerView: 1.2,
                   spaceBetween: 20,
                   // slidesOffsetBefore: 0,
                   // slidesOffsetAfter: 40,
                 },
                 768: {
-                  slidesPerView: 1.5,
+                  // slidesPerView: 1.5,
                   spaceBetween: 20,
                   // slidesOffsetBefore: 0,
                   // slidesOffsetAfter: 40,
                 },
                 992: {
-                  slidesPerView: 2.5,
+                  // slidesPerView: 2.5,
                   spaceBetween: 20,
                   // slidesOffsetBefore: 0,
                   // slidesOffsetAfter: 40,
                 },
                 1440: {
-                  slidesPerView: 4.5,
+                  // slidesPerView: 4.5,
                   spaceBetween: 20,
                   // slidesOffsetBefore: 0,
                   // slidesOffsetAfter: 40,
                 },
                 1840: {
-                  slidesPerView: 5.5,
+                  // slidesPerView: 5.5,
                   spaceBetween: 20,
                   // slidesOffsetBefore: 0,
                   // slidesOffsetAfter: 40,
@@ -252,7 +279,7 @@ const PeopleSlider = () => {
               }}
             >
               {slides.map((group, index) => (
-                <SwiperSlide key={index}>
+                <SwiperSlide key={index} className={styles.customSlide}>
                   <div className={styles.peopleItem}>
                     {group.map((person) => (
                       <div

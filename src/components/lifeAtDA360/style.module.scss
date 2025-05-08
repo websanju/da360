@@ -150,6 +150,22 @@
   max-width: 600px;
 }
 
+.sliderNavigation {
+   display: flex;
+  justify-content: center;
+  gap: 15px; /* Optional: Adjust the space between buttons */
+  position: absolute !important;
+  top: 270px !important;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+}
+.swiperPrev {
+  left: 0px !important;
+}
+.swiperNext {
+  right: 0px !important;
+}
 @media (width <=1366px) {
   .videoBoxBlock {
     border-radius: 16px !important;
@@ -164,7 +180,9 @@
 }
 
 @media (width <=991px) {
-
+.customSlide {
+  max-width: 285px;
+}
 
   .plaYbtn {
  

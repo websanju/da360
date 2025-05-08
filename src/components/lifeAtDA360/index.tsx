@@ -8,6 +8,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import styles from "./style.module.scss";
+import { auto } from "@popperjs/core";
 
 const LifeAtDA360 = () => {
   const [playingIndex, setPlayingIndex] = useState<number | null>(null);
@@ -73,9 +74,17 @@ const LifeAtDA360 = () => {
         </div>
       </div>
       <div className={styles.sliderWrapper}>
-        <div className={styles.sliderNavigation}>
-          <button className="swiper-button-prev" id="customPrev8"></button>
-          <button className="swiper-button-next" id="customNext8"></button>
+        <div className="container position-relative">
+          <div className={styles.sliderNavigation}>
+            <button
+              className={`${styles.swiperPrev} swiper-button-prev`}
+              id="customPrev8"
+            ></button>
+            <button
+              className={`${styles.swiperNext} swiper-button-next`}
+              id="customNext8"
+            ></button>
+          </div>
         </div>
         <div
           className={styles.sliderInnerWrapper}
@@ -87,10 +96,10 @@ const LifeAtDA360 = () => {
           // }}
         >
           <Swiper
-            slidesPerView={1.4}
+            slidesPerView={auto}
             spaceBetween={20}
             scrollbar={{ draggable: true, el: "#customScrollbar2" }}
-            slidesOffsetBefore={20}
+            slidesOffsetBefore={16}
             slidesOffsetAfter={20}
             navigation={{
               prevEl: "#customPrev8",
@@ -98,22 +107,22 @@ const LifeAtDA360 = () => {
             }}
             breakpoints={{
               768: {
-                slidesPerView: 2,
+                // slidesPerView: 2,
                 spaceBetween: 20,
                 slidesOffsetAfter: 20,
               },
               992: {
-                slidesPerView: 3,
+                // slidesPerView: 3,
                 spaceBetween: 20,
                 slidesOffsetAfter: 20,
               },
               1440: {
-                slidesPerView: 2.9,
+                // slidesPerView: 2.9,
                 spaceBetween: 20,
                 slidesOffsetAfter: 20,
               },
               1840: {
-                slidesPerView: 2.9,
+                // slidesPerView: auto,
                 spaceBetween: 20,
                 slidesOffsetAfter: 20,
               },
@@ -195,7 +204,13 @@ const LifeAtDA360 = () => {
           </Swiper>
         </div>
       </div>
-      <div id="customScrollbar2" className="swiper-scrollbar"></div>
+      <div className="container">
+        <div className="row">
+          <div className="col-lg-12">
+            <div id="customScrollbar2" className="swiper-scrollbar"></div>
+          </div>
+        </div>
+      </div>
     </section>
   );
 };

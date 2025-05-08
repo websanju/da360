@@ -7,6 +7,7 @@ import "swiper/css";
 import "swiper/css/scrollbar";
 import VideoCard from "./VideoCard";
 import styles from "./style.module.scss"; // optional for button custom styling
+import { auto } from "@popperjs/core";
 
 export default function VideoSection() {
   const videoData = [
@@ -74,14 +75,20 @@ export default function VideoSection() {
       <div className="container">
         <div className={`${styles.sectionHeader} row`}>
           <div className="col-md-12">
-            <h2>Glimse of our classroom</h2>
+            <h2>Live Sessions Short Clips.</h2>
+            <p>
+              Sneak Peeks into Our Expert-Led Digital Marketing Training
+              Sessions
+            </p>
           </div>
         </div>
       </div>
       <div className={styles.sliderWrapper}>
-        <div className={styles.sliderNavigation}>
-          <button className="swiper-button-prev" id="customPrev8"></button>
-          <button className="swiper-button-next" id="customNext8"></button>
+        <div className="container position-relative">
+          <div className={styles.sliderNavigation}>
+            <button className="swiper-button-prev" id="customPrev8"></button>
+            <button className="swiper-button-next" id="customNext8"></button>
+          </div>
         </div>
         <div
           className={styles.sliderInnerWrapper}
@@ -95,7 +102,7 @@ export default function VideoSection() {
           <Swiper
             modules={[Navigation, Scrollbar]}
             spaceBetween={20}
-            slidesPerView={1.2}
+            slidesPerView={auto}
             centeredSlides={false}
             slidesOffsetBefore={20}
             slidesOffsetAfter={20}
@@ -107,22 +114,22 @@ export default function VideoSection() {
             scrollbar={{ draggable: true, el: "#customScrollbar4" }}
             breakpoints={{
               768: {
-                slidesPerView: 2.5,
+                // slidesPerView: 2.5,
                 spaceBetween: 20,
                 // slidesOffsetAfter: 40,
               },
               992: {
-                slidesPerView: 2.8,
+                // slidesPerView: 2.8,
                 spaceBetween: 20,
                 // slidesOffsetAfter: 60,
               },
               1440: {
-                slidesPerView: 3.8,
+                // slidesPerView: 3.8,
                 spaceBetween: 20,
                 // slidesOffsetAfter: 340,
               },
               1840: {
-                slidesPerView: 4.5,
+                // slidesPerView: 4.5,
                 // slidesPerView: 4.8,
                 spaceBetween: 20,
                 // slidesOffsetAfter: 440,
@@ -130,7 +137,7 @@ export default function VideoSection() {
             }}
           >
             {videoData.map((video, index) => (
-              <SwiperSlide key={index}>
+              <SwiperSlide key={index} className={styles.customSlide}>
                 <VideoCard
                   thumbnail={video.thumbnail}
                   videoUrl={video.videoUrl}

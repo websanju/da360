@@ -7,6 +7,7 @@ import Image from "next/image";
 import "swiper/css";
 import "swiper/css/scrollbar";
 import styles from "./style.module.scss";
+import { auto } from "@popperjs/core";
 
 interface Member {
   name: string;
@@ -58,12 +59,14 @@ const TeamSlider = ({ members }: TeamSliderProps) => {
         //   boxSizing: "border-box",
         // }}
       >
-        <div className={styles.sliderNavigation}>
-          <button className="swiper-button-prev" id="customPrev9"></button>
-          <button className="swiper-button-next" id="customNext9"></button>
+        <div className="container position-relative">
+          <div className={styles.sliderNavigation}>
+            <button className="swiper-button-prev" id="customPrev9"></button>
+            <button className="swiper-button-next" id="customNext9"></button>
+          </div>
         </div>
         <Swiper
-          slidesPerView={1.5}
+          slidesPerView={auto}
           spaceBetween={10}
           scrollbar={{ draggable: true, el: "#customScrollbar" }}
           modules={[Navigation, Scrollbar]}
@@ -74,14 +77,14 @@ const TeamSlider = ({ members }: TeamSliderProps) => {
             nextEl: "#customNext9",
           }}
           breakpoints={{
-            768: { slidesPerView: 2.3, spaceBetween: 20 },
-            992: { slidesPerView: 3.5, spaceBetween: 20 },
-            1440: { slidesPerView: 3.5, spaceBetween: 20 },
-            1840: { slidesPerView: 5.5, spaceBetween: 20 },
+            768: { slidesPerView: auto, spaceBetween: 20 },
+            992: { slidesPerView: auto, spaceBetween: 20 },
+            1440: { slidesPerView: auto, spaceBetween: 20 },
+            1840: { slidesPerView: auto, spaceBetween: 20 },
           }}
         >
           {members.map((member, index) => (
-            <SwiperSlide key={index}>
+            <SwiperSlide key={index} className={styles.customSlide}>
               {member.design === "new" ? (
                 // 🆕 NEW DESIGN LAYOUT
                 <div

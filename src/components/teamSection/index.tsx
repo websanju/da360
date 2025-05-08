@@ -144,7 +144,7 @@ const TeamSection = () => {
         <div className="row">
           <div className="col-lg-12">
             <div className={styles.sectionHeader}>
-              <h2>Meet the Team That Drives Your Success</h2>
+              <h2>Your Success, Our People Meet the Team</h2>
             </div>
             {/* Tabs */}
             <div className={styles.tabs}>

@@ -85,7 +85,7 @@ const VideoCard = ({
             alt="Video Thumbnail"
             width={420}
             height={570}
-            className="w-100"
+            className={`${styles.videoThumbnail} w-100`}
             style={{ objectFit: "cover", height: "570px" }}
           />
           {/* Play button centered */}
