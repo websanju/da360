@@ -114,16 +114,26 @@
     align-items: center;
     justify-content: center;
     gap: 5px;
-
+    transition: all 1s cubic-bezier(0.23, 1, 0.32, 1);
+    
+  
     &.open {
       background-color: #fff;
       border: 1px solid #000000;
       color: #000000;
       position: relative;
       z-index: 1111;
-
-      svg path {
-        fill: #000000;
+      &::after {
+        content: "";
+        display: inline-block;
+        width: 20px;
+        height: 15px;
+        background-image: url('data:image/svg+xml,%3Csvg width="20" height="15" viewBox="0 0 20 15" fill="none" xmlns="http://www.w3.org/2000/svg"%3E%3Cpath d="M1.00009 15H19.0001C19.1823 14.9994 19.361 14.9492 19.5168 14.8546C19.6726 14.7601 19.7996 14.6248 19.8843 14.4634C19.9689 14.3021 20.008 14.1206 19.9972 13.9387C19.9864 13.7568 19.9262 13.5813 19.8231 13.431L10.8231 0.430999C10.4501 -0.108001 9.55209 -0.108001 9.17809 0.430999L0.178085 13.431C0.0739103 13.5809 0.0128196 13.7566 0.00145064 13.9388C-0.00991832 14.121 0.0288693 14.3029 0.113599 14.4646C0.198329 14.6263 0.325761 14.7618 0.48205 14.8561C0.638338 14.9505 0.817505 15.0003 1.00009 15Z" fill="%23F4F4F4"/%3E%3C/svg%3E');
+        background-size: contain;
+        background-repeat: no-repeat;
+        transition: transform 0.3s ease;
+        position: absolute;
+        bottom: -26px;
       }
     }
   }
@@ -138,7 +148,7 @@
 
   .dropdownContainer {
     position: absolute;
-    top: 93px;
+    top: 100px;
     left: 50%;
     z-index: 1000;
     width: 100%;
@@ -152,7 +162,7 @@
     pointer-events: none;
     transform: translate(-50%, 0%);
     transition: all 1s cubic-bezier(0.23, 1, 0.32, 1);
-
+    translate: 0 -40px;
     &.open {
       translate: 0 0;
       transition: all 1s cubic-bezier(.23, 1, .32, 1);
