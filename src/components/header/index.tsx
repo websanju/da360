@@ -61,32 +61,104 @@ export default function Header() {
                     <DownArrow />
                   </span>
                 </div>
+                <div
+                  className={`${styles.navbarDropdownOverlay} ${
+                    isCoursesOpen ? styles.open : ""
+                  }`}
+                ></div>
+                <div
+                  className={`${styles.dropdownContainer} ${
+                    isCoursesOpen ? styles.open : ""
+                  }`}
+                >
+                  <div className={styles.dropdownContainerHeader}>
+                    <h3>Digital Marketing Programs & Skills To Master</h3>
+                  </div>
+                  <div className={styles.dropdownColumnGroup}>
+                    <div
+                      className={`${styles.navbarDropdownColumn} ${styles.active}`}
+                    >
+                      <h4>Leadership & AI Course</h4>
+                      <span className={styles.dropdownTag}>9 Months</span>
+                      <div className={styles.navbarDropdownList}>
+                        <span className={styles.navbarTitle}>
+                          Leadership in Digital Marketing, <br /> AI &
+                          Entrepreneurship
+                        </span>
+                        <ul>
+                          <li>
+                            <Link href={"#"}> Masters Level Certification</Link>
+                          </li>
+                          <li>
+                            <Link href={"#"}> 10 Advanced Specialisations</Link>
+                          </li>
+                          <li>
+                            <Link href={"#"}> 30 Courses in 1 Program</Link>
+                          </li>
+                          <li>
+                            <Link href={"#"}>15+ Projects & Case Studies</Link>
+                          </li>
+                          <li>
+                            <Link href={"#"}>22+ Certifications</Link>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
 
-                {isCoursesOpen && (
-                  <div className={styles.dropdownMenu}>
-                    <div className={styles.dropdownColumn}>
-                      <h5>Digital Business Program</h5>
-                      <Link href="#">
-                        Bachelors/UG in Digital Business & Entrepreneurship
-                      </Link>
+                    <div className={`${styles.navbarDropdownColumn}`}>
+                      <h4>PGCP Course</h4>
+                      <span className={styles.dropdownTag}>9 Months</span>
+                      <div className={styles.navbarDropdownList}>
+                        <span className={styles.navbarTitle}>
+                          PGCP In Digital Marketing & <br /> E-Commerce
+                        </span>
+                        <ul>
+                          <li>
+                            <Link href={"#"}> Masters Level Certification</Link>
+                          </li>
+                          <li>
+                            <Link href={"#"}> 10 Advanced Specialisations</Link>
+                          </li>
+                          <li>
+                            <Link href={"#"}> 30 Courses in 1 Program</Link>
+                          </li>
+                          <li>
+                            <Link href={"#"}>15+ Projects & Case Studies</Link>
+                          </li>
+                          <li>
+                            <Link href={"#"}>22+ Certifications</Link>
+                          </li>
+                        </ul>
+                      </div>
                     </div>
-                    <hr />
-                    <div className={styles.dropdownColumn}>
-                      <h5>Digital Marketing Courses</h5>
-                      <Link href="#">MBA-Level Post Graduation Program</Link>
-                      <Link href="#">Online Digital Marketing Course</Link>
-                    </div>
-                    <hr />
-                    <div className={styles.dropdownColumn}>
-                      <h5>Free Masterclass</h5>
-                      <Link href="#">Recorded Masterclass</Link>
-                      <Link href="#">Live Masterclass</Link>
-                    </div>
-                    <div className={styles.findCourse}>
-                      <Link href="#">Find A Course ↗</Link>
+                    <div className={`${styles.navbarDropdownColumn}`}>
+                      <h4>SDCP Course</h4>
+                      <span className={styles.dropdownTag}>9 Months</span>
+                      <div className={styles.navbarDropdownList}>
+                        <span className={styles.navbarTitle}>
+                          Skill Diploma in Digital Marketing <br /> & Analytics
+                        </span>
+                        <ul>
+                          <li>
+                            <Link href={"#"}> Masters Level Certification</Link>
+                          </li>
+                          <li>
+                            <Link href={"#"}> 10 Advanced Specialisations</Link>
+                          </li>
+                          <li>
+                            <Link href={"#"}> 30 Courses in 1 Program</Link>
+                          </li>
+                          <li>
+                            <Link href={"#"}>15+ Projects & Case Studies</Link>
+                          </li>
+                          <li>
+                            <Link href={"#"}>22+ Certifications</Link>
+                          </li>
+                        </ul>
+                      </div>
                     </div>
                   </div>
-                )}
+                </div>
               </div>
               {/* End Courses Dropdown */}
             </div>
