@@ -4,6 +4,7 @@ import "@styles/globals.scss";
 import BootstrapClient from "@components/BootstrapClient";
 import Topbar from "@/components/topbar";
 import Header from "@/components/header";
+import ContactButtonsSticky from "@/components/widgets/contactButtonsSticky";
 import Footer from "@/components/footer";
 import LenisScroll from "@/components/LenisScroll"; // Import the new LenisScroll
 import { Poppins } from "next/font/google";
@@ -32,6 +33,7 @@ export default function RootLayout({
         <BootstrapClient />
         <Topbar />
         <Header />
+        <ContactButtonsSticky />
         <main>{children}</main>
         <Footer />
       </body>
