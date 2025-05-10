@@ -187,21 +187,21 @@ export default function LiveProjectsSlider() {
             0: {
               // slidesPerView: 1.2,
               spaceBetween: 20,
-              centeredSlides: false, // Mobile
+              // centeredSlides: false, // Mobile
               slidesOffsetBefore: 16,
               slidesOffsetAfter: 30,
             },
             768: {
               // slidesPerView: 1.3,
               spaceBetween: 20,
-              centeredSlides: false, // Tablet
+              // centeredSlides: false, // Tablet
               // slidesOffsetAfter: 140,
               slidesOffsetBefore: 16,
             },
             992: {
               // slidesPerView: 1.2,
               spaceBetween: 20,
-              centeredSlides: false, // Tablet
+              // centeredSlides: false, // Tablet
               // slidesOffsetAfter: 140,
               slidesOffsetBefore: 30,
             },

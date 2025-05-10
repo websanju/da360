@@ -383,6 +383,7 @@
 
     img {
       min-height: 24px;
+      max-height: 23px;
     }
   }
 
@@ -441,6 +442,9 @@
 }
 
 @media (width <=991px) {
+  .swiperSlide {
+    max-width: 325px;
+  }
 .projectTitle {
 font-weight: 700;
 font-style: italic;
