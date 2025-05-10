@@ -8,20 +8,19 @@ const ContactButtons = () => {
   const [isVisible, setIsVisible] = useState(false);
   const [lastScrollY, setLastScrollY] = useState(0);
 
-  useEffect(() => {
-    const handleScroll = () => {
-      if (window.scrollY > 100) {
-        if (window.scrollY > lastScrollY) {
-          setIsVisible(true);
-        } else {
-          setIsVisible(false);
-        }
-      } else {
-        setIsVisible(false);
-      }
-      setLastScrollY(window.scrollY);
-    };
+  const handleScroll = () => {
+    const currentScrollY = window.scrollY;
 
+    if (currentScrollY > 100) {
+      setIsVisible(true);
+    } else {
+      setIsVisible(false);
+    }
+
+    setLastScrollY(currentScrollY);
+  };
+
+  useEffect(() => {
     window.addEventListener("scroll", handleScroll);
     return () => {
       window.removeEventListener("scroll", handleScroll);
