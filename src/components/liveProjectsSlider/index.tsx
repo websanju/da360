@@ -11,6 +11,7 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import TickBlack from "@components/Ui/svg/tickBlack";
 import ArrowUp from "@components/Ui/svg/arrowUp";
+import { auto } from "@popperjs/core";
 
 interface Project {
   id: number;
@@ -164,8 +165,10 @@ export default function LiveProjectsSlider() {
         </div>
         <Swiper
           modules={[Navigation, Pagination]}
-          slidesPerView={1.8}
+          slidesPerView={auto}
           centeredSlides={true}
+          slidesOffsetAfter={20}
+          slidesOffsetBefore={20}
           spaceBetween={20}
           initialSlide={1}
           onSwiper={(swiper) => (swiperRef.current = swiper)}
@@ -182,41 +185,44 @@ export default function LiveProjectsSlider() {
           }}
           breakpoints={{
             0: {
-              slidesPerView: 1.2,
+              // slidesPerView: 1.2,
               spaceBetween: 20,
               centeredSlides: false, // Mobile
               slidesOffsetBefore: 16,
               slidesOffsetAfter: 30,
             },
             768: {
-              slidesPerView: 1.3,
+              // slidesPerView: 1.3,
               spaceBetween: 20,
               centeredSlides: false, // Tablet
-              slidesOffsetAfter: 140,
+              // slidesOffsetAfter: 140,
               slidesOffsetBefore: 16,
             },
             992: {
-              slidesPerView: 1.2,
+              // slidesPerView: 1.2,
               spaceBetween: 20,
               centeredSlides: false, // Tablet
-              slidesOffsetAfter: 140,
+              // slidesOffsetAfter: 140,
               slidesOffsetBefore: 30,
             },
             1440: {
-              slidesPerView: 1.4,
+              // slidesPerView: 1.4,
               spaceBetween: 20,
-              slidesOffsetAfter: 340,
+              // slidesOffsetAfter: 340,
             },
             1840: {
-              slidesPerView: 1.8,
+              // slidesPerView: 1.8,
               spaceBetween: 20,
-              slidesOffsetAfter: 340,
+              // slidesOffsetAfter: 340,
             },
           }}
           className={styles.slider}
         >
           {projects.map((project, index) => (
-            <SwiperSlide key={`project-${index}`}>
+            <SwiperSlide
+              key={`project-${index}`}
+              className={styles.swiperSlide}
+            >
               <div
                 className={`card ${styles.projectCard}`}
                 style={{

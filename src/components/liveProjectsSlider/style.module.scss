@@ -10,7 +10,7 @@
       letter-spacing: 0%;
       text-align: center;
       color: #000000;
-      max-width: 556px;
+      max-width: 526px;
       margin: 0 auto 33px;
     }
   }
@@ -309,6 +309,10 @@
       border: none;
     }
   }
+}
+
+.swiperSlide {
+  max-width: 1000px;
 }
 
 @media (width <=1200px) {
