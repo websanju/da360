@@ -1,6 +1,7 @@
 "use client";
 
 import styles from "./style.module.scss";
+import Image from "next/image";
 
 export default function LeadCaptureSection() {
   return (
@@ -10,7 +11,16 @@ export default function LeadCaptureSection() {
           {/* Left Content */}
           <div className="col-lg-7">
             <h1>
-              PGCP In AI <br />
+              PGCP In AI{" "}
+              <span className={styles.gifAniamtion}>
+                <Image
+                  src={`/images/face.gif`}
+                  alt="logo"
+                  height={50}
+                  width={120}
+                />{" "}
+              </span>
+              <br />
               Digital Marketing <br />& E-Commerce
             </h1>
             <div className={`${styles.tag}`}>

@@ -316,7 +316,9 @@
 }
 
 @media (width <=1200px) {
-
+  .swiperSlide {
+    max-width: 900px;
+  }
   .tabButtons {
     display: flex;
     justify-content: center;
