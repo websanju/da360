@@ -11,7 +11,7 @@ const ContactButtons = () => {
   const handleScroll = () => {
     const currentScrollY = window.scrollY;
 
-    if (currentScrollY > 100) {
+    if (currentScrollY > 50) {
       setIsVisible(true);
     } else {
       setIsVisible(false);
