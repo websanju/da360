@@ -1,6 +1,3 @@
-
-
-
 .lifeAtDA360Section {
   margin-bottom: 140px;
 
@@ -16,8 +13,10 @@
   width: 32px;
   height: 32px;
   border-radius: 50%;
-      border: none;
-  &::before, &::after {
+  border: none;
+
+  &::before,
+  &::after {
     content: "";
     position: absolute;
     z-index: 0;
@@ -70,6 +69,7 @@
     transform: translate(-50%, -50%) scale(1);
     opacity: 1;
   }
+
   100% {
     transform: translate(-50%, -50%) scale(1.5);
     opacity: 0;
@@ -80,6 +80,7 @@
   0% {
     transform: scale(0.5);
   }
+
   100% {
     transform: scale(1);
   }
@@ -106,7 +107,7 @@
     line-height: 24px;
     letter-spacing: 0%;
     color: rgba(15, 11, 49, 1);
-        max-width: 863px;
+    max-width: 863px;
     margin: 0 auto;
     text-align: center;
 
@@ -149,21 +150,29 @@
 }
 
 .sliderNavigation {
-   display: flex;
+  display: flex;
   justify-content: center;
-  gap: 15px; /* Optional: Adjust the space between buttons */
+  gap: 15px;
+  /* Optional: Adjust the space between buttons */
   position: absolute !important;
   top: 270px !important;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 10;
 }
+
 .swiperPrev {
   left: 0px !important;
 }
+
 .swiperNext {
   right: 0px !important;
 }
+
+.videoBoxBlock {
+  border-radius: 16px !important;
+}
+
 @media (width <=1366px) {
   .videoBoxBlock {
     border-radius: 16px !important;
@@ -178,25 +187,27 @@
 }
 
 @media (width <=991px) {
-.customSlide {
-  max-width: 285px;
-}
+  .customSlide {
+    max-width: 285px;
+  }
 
   .plaYbtn {
- 
-  &::before, &::after {
-    
-    width: 48px;
-    height: 48px;
-  }
-  img {
-   
-    width: 15px;
-    height: 19px;
-  }
+
+    &::before,
+    &::after {
+
+      width: 48px;
+      height: 48px;
+    }
+
+    img {
+
+      width: 15px;
+      height: 19px;
+    }
 
 
-}
+  }
 
   .lifeAtDA360Section {
     margin-bottom: 60px;
@@ -234,9 +245,11 @@
       min-height: 207px !important;
     }
   }
+
   .videoBoxBlock {
     border-radius: 10px !important;
- }
+  }
+
   .videoImgBox {
     border-radius: 10px;
     overflow: hidden;
