@@ -235,7 +235,7 @@ const PeopleSlider = () => {
             <Swiper
               modules={[Navigation, Scrollbar]}
               scrollbar={{ draggable: true, el: "#customScrollbar6" }}
-              spaceBetween={20}
+              spaceBetween={16}
               slidesPerView={auto}
               className={styles.slider}
               slidesOffsetBefore={20}
@@ -248,13 +248,13 @@ const PeopleSlider = () => {
               breakpoints={{
                 0: {
                   // slidesPerView: 1.2,
-                  spaceBetween: 20,
+                  spaceBetween: 16,
                   // slidesOffsetBefore: 0,
                   // slidesOffsetAfter: 40,
                 },
                 768: {
                   // slidesPerView: 1.5,
-                  spaceBetween: 20,
+                  spaceBetween: 16,
                   // slidesOffsetBefore: 0,
                   // slidesOffsetAfter: 40,
                 },

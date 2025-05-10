@@ -101,7 +101,7 @@ export default function VideoSection() {
         >
           <Swiper
             modules={[Navigation, Scrollbar]}
-            spaceBetween={20}
+            spaceBetween={16}
             slidesPerView={auto}
             centeredSlides={false}
             slidesOffsetBefore={20}

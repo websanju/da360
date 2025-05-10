@@ -1,8 +1,7 @@
-
-
 .successSection {
   margin-bottom: 100px;
 }
+
 .successWrapper {
   border: 2px solid rgba(0, 0, 0, 1);
   border-radius: 24px;
@@ -230,10 +229,11 @@
   }
 }
 
-@media (width <= 992px) {
+@media (width <=992px) {
   .successSection {
     margin-bottom: 60px;
   }
+
   .successWrapper {
     border-radius: 20px;
     padding: 24px 0 40px 0px;
@@ -241,6 +241,8 @@
   }
 
   .storyCard {
+    border-radius: 10px;
+
     .studentPic {
       height: 191px;
 
@@ -293,9 +295,10 @@
     }
 
     p {
-      max-width: 270px;
+      max-width: 260px;
       font-size: 12px;
       margin-bottom: 0;
+      line-height: normal;
     }
   }
 

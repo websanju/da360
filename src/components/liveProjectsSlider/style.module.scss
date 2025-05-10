@@ -449,11 +449,13 @@ text-align: left;
 }
 .projectCard { 
   background-image: none;
+  border-radius: 10px;
 }
   .liveProjectsSlider {
     margin-top: 60px;
 
     .sectionHeader {
+      margin-bottom: 0px;
       h2 {
         font-weight: 700;
         font-style: italic;
@@ -463,7 +465,7 @@ text-align: left;
         text-align: center;
         color: #000000;
          max-width: 227px;
-        margin: 0 auto 40px;
+        margin: 0 auto 20px;
       }
     }
   }

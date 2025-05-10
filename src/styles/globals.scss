@@ -325,27 +325,20 @@ select {
 // slider
 .swiper-container {
   width: 100vw;
-  /* Make the swiper FULL SCREEN */
   margin-left: calc((100vw - 1280px) / 2);
-  /* Push it right so left side stays at container */
 }
 
 .swiper-scrollbar {
   height: 6px !important;
-  /* Set height */
   background: #e0e0e0;
-  /* Background track color */
   border-radius: 6px !important;
-  /* Rounded corners */
   margin-top: 40px !important;
-  /* Space between slides and scrollbar */
   position: relative !important;
   overflow: hidden;
 }
 
 .swiper-scrollbar-drag {
   background: #333;
-  /* Scrollbar thumb color */
   border-radius: 6px;
   height: 100%;
 }
@@ -353,10 +346,8 @@ select {
 #customScrollbar3 {
   width: 400px;
   margin: 20px auto 0;
-  /* 👈 center horizontally */
   height: 6px;
   background: #E5E5E5;
-  /* light background for scrollbar track */
   border-radius: 5px;
   position: relative;
 
@@ -370,13 +361,11 @@ select {
 #customScrollbar5 {
   width: 400px;
   margin: 20px auto 0;
-  /* 👈 center horizontally */
   height: 6px;
   background: #E5E5E5;
-  /* light background for scrollbar track */
   border-radius: 5px;
   position: relative;
-
+  z-index: 1;
   .swiper-scrollbar-drag {
     border-radius: 5px;
     background: #555555;
@@ -387,13 +376,11 @@ select {
 #customScrollbar4 {
   width: 400px;
   margin: 20px auto 0;
-  /* 👈 center horizontally */
   height: 6px;
   background: #E5E5E5;
-  /* light background for scrollbar track */
   border-radius: 5px;
   position: relative;
-
+   z-index: 1;
   .swiper-scrollbar-drag {
     border-radius: 5px;
     background: #555555;
@@ -537,6 +524,11 @@ select {
     right: 0;
     left: 0 !important;
     text-align: left;
+  }
+
+  .swiper-scrollbar {
+    /* Rounded corners */
+    margin-top: 20px !important;
   }
 }
 

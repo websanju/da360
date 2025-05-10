@@ -142,9 +142,7 @@
   }
 }
 
-.videoBoxBlock {
-   border-radius: 10px !important;
-}
+
 
 .customSlide {
   max-width: 600px;
@@ -236,9 +234,11 @@
       min-height: 207px !important;
     }
   }
-
+  .videoBoxBlock {
+    border-radius: 10px !important;
+ }
   .videoImgBox {
-    border-radius: 16px;
+    border-radius: 10px;
     overflow: hidden;
 
     img {

@@ -243,13 +243,20 @@
         letter-spacing: 0%;
         text-align: center;
       }
+      p {
+        font-weight: 500;
+        font-size: 12px;
+        line-height: normal;
+        text-align: center;
+        text-transform: capitalize;
+      }
     }
   }
 
   .videoCard {
     position: relative;
     overflow: hidden;
-    border-radius: 20px;
+    border-radius: 10px;
     min-height: 455px !important;
     .videoBtn {
       position: relative;

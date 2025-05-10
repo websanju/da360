@@ -23,39 +23,38 @@ export default function BrandLogos() {
           Our Learners Working <br />
           In 1,000+ Global Brands
         </h2>
-
-        {/* Row 1: Right to Left */}
-        <div className={styles.slider}>
-          <div className={`${styles.slideTrack} ${styles.rightToLeft}`}>
-            {[...logos, ...logos].map((logo, index) => (
-              <div key={`rtl-${index}`} className={styles.slide}>
-                <Image
-                  src={logo.src}
-                  alt={logo.alt}
-                  width={210}
-                  height={100}
-                  className="img-fluid"
-                />
-              </div>
-            ))}
-          </div>
+      </div>
+      {/* Row 1: Right to Left */}
+      <div className={styles.slider}>
+        <div className={`${styles.slideTrack} ${styles.rightToLeft}`}>
+          {[...logos, ...logos].map((logo, index) => (
+            <div key={`rtl-${index}`} className={styles.slide}>
+              <Image
+                src={logo.src}
+                alt={logo.alt}
+                width={210}
+                height={100}
+                className="img-fluid"
+              />
+            </div>
+          ))}
         </div>
+      </div>
 
-        {/* Row 2: Left to Right */}
-        <div className={styles.slider}>
-          <div className={`${styles.slideTrack} ${styles.leftToRight}`}>
-            {[...logos, ...logos].map((logo, index) => (
-              <div key={`ltr-${index}`} className={styles.slide}>
-                <Image
-                  src={logo.src}
-                  alt={logo.alt}
-                  width={210}
-                  height={100}
-                  className="img-fluid"
-                />
-              </div>
-            ))}
-          </div>
+      {/* Row 2: Left to Right */}
+      <div className={styles.slider}>
+        <div className={`${styles.slideTrack} ${styles.leftToRight}`}>
+          {[...logos, ...logos].map((logo, index) => (
+            <div key={`ltr-${index}`} className={styles.slide}>
+              <Image
+                src={logo.src}
+                alt={logo.alt}
+                width={210}
+                height={100}
+                className="img-fluid"
+              />
+            </div>
+          ))}
         </div>
       </div>
     </section>

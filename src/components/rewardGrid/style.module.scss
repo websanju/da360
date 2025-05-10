@@ -134,7 +134,7 @@
     margin-top: 60px;
     .rewardGridBox {
       padding: 32px 24px;
-
+      border-radius: 10px;
       .header {
         margin-bottom: 24px;
 
@@ -157,10 +157,11 @@
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
-
+      
     .item1 {
       flex: 1 1 calc(50% - 16px);
       box-sizing: border-box;
+      border-radius: 4px;
 
       img {
         width: 100%;
