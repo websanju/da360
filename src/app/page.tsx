@@ -1,3 +1,11 @@
+import OurSuccessStories from "@components/ourSuccessStories";
+import TrustedByLearners from "@components/trustedByLearners";
+import Comparison from "@components/comparison";
+import LifeAtDA360 from "@components/lifeAtDA360";
+import LatestBlogPosts from "@components/latestBlogPosts";
+import MediaAwards from "@components/mediaAwards";
+import PaddingWrapper from "@components/widgets/PaddingWrapper";
+
 export const metadata = {
   title: "#1 Top Ranked Digital Marketing Training Institute in Asia",
   description:
@@ -34,7 +42,14 @@ export const metadata = {
 export default function HomePage() {
   return (
     <main>
-      <h1>Welcome to Digital Academy 360</h1>
+      <OurSuccessStories />
+      <TrustedByLearners />
+      <Comparison />
+      <LifeAtDA360 />
+      <LatestBlogPosts />
+      <PaddingWrapper desktopPaddingBottom="130px">
+        <MediaAwards />
+      </PaddingWrapper>
     </main>
   );
 }
