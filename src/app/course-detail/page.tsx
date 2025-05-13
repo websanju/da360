@@ -19,6 +19,7 @@ import Banner from "@components/banner";
 import AlumniSlider from "@components/alumniSlider";
 import PeopleSlider from "@components/peopleSlider";
 import LiveProjectsSlider from "@components/liveProjectsSlider";
+import ContactButtonsSticky from "@/components/widgets/contactButtonsSticky";
 export const metadata = {
   title: "#1 Top Ranked Digital Marketing Training Institute in Asia",
   description:
@@ -55,6 +56,7 @@ export const metadata = {
 export default function courseDetail() {
   return (
     <main>
+      <ContactButtonsSticky />
       <LeadCaptureSection />
       <CohortDetails />
       <CourseHighlights />
