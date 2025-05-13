@@ -63,11 +63,6 @@ const highlights: Highlight[] = [
     title: "Domain Specialist Trainers",
     value: "07",
   },
-  {
-    icon: "/images/icons/specialisation.png",
-    title: "Specialisation",
-    value: "4",
-  },
 ];
 
 const CourseHighlights: React.FC = () => {
