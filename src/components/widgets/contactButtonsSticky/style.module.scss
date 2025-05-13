@@ -7,7 +7,6 @@
     z-index: 111;
     transition: transform 0.4s ease, opacity 0.4s ease;
   
-    // Animation classes for show and hide
     &.show {
       transform: translateY(0);
       opacity: 1;
@@ -76,4 +75,30 @@
       }
     }
   }
-  
+  @media (width <=991px) { 
+    .contactContainer { 
+      bottom: 6px;
+      .contactButtons {
+         height: auto;
+         padding: 6px 8px;
+         gap: 8px;
+         width: max-content;
+         .applyButton { 
+          height: 32px;
+          line-height: normal;
+          min-width: 120px;
+          font-size: 12px;
+         }
+      }
+      .iconWrapper { 
+        .phoneIcon {
+          height: 32px;
+          width: 32px;
+         }
+         .whatsappIcon {
+          height: 32px;
+          width: 32px;
+         }
+      }
+    }
+  }
