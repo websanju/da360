@@ -7,7 +7,7 @@ import styles from "./style.module.scss";
 
 interface Cohort {
   date: string;
-  mode: "Offline Courses" | "Online Courses";
+  mode: "Offline" | "Online";
   weekday: string;
   capacity: string;
   campus: string;
@@ -16,14 +16,14 @@ interface Cohort {
 const cohorts: Cohort[] = [
   {
     date: "Mar 28",
-    mode: "Offline Courses",
+    mode: "Offline",
     weekday: "(Mon-Fri)",
     capacity: "30 Seats",
     campus: "Bengaluru",
   },
   {
     date: "Mar 31",
-    mode: "Online Courses",
+    mode: "Online",
     weekday: "(Mon-Fri)",
     capacity: "30 Seats",
     campus: "Bengaluru",
@@ -74,29 +74,28 @@ export default function CohortDetails() {
                             <label>Capacity</label>
                             <span>{cohort.capacity}</span>
                           </div>
-                        </div>
-
-                        <div className={styles.cardItemsBottom}>
                           <div className={styles.cardItem}>
                             <label>Campus</label>
                             <span>{cohort.campus}</span>
                           </div>
+                        </div>
+
+                        <div className={styles.cardItemsBottom}>
                           <div className={styles.cardItem}>
                             <label>Mode:</label>
                             <span className={styles.cardMode}>
                               {cohort.mode}
                             </span>
                           </div>
-                        </div>
-                        <div
-                          className={`${styles.cardItemsBottom} d-flex justify-content-center`}
-                        >
                           <div className={`${styles.enrollBtn} `}>
                             <Link href="#" className="btn btn-danger">
                               Enroll Now
                             </Link>
                           </div>
                         </div>
+                        {/* <div
+                          className={`${styles.cardItemsBottom} d-flex justify-content-center`}
+                        ></div> */}
                       </div>
                     </div>
                   </div>
