@@ -1,3 +1,4 @@
+import SelfPacedPrograms from "@components/selfPacedPrograms";
 import OurSuccessStories from "@components/ourSuccessStories";
 import TrustedByLearners from "@components/trustedByLearners";
 import Comparison from "@components/comparison";
@@ -42,6 +43,7 @@ export const metadata = {
 export default function HomePage() {
   return (
     <main>
+      <SelfPacedPrograms />
       <OurSuccessStories />
       <TrustedByLearners />
       <Comparison />

@@ -1,0 +1,102 @@
+.selfPacedProgramsSection {
+    padding-bottom: 140px;
+
+    .sectionHeader {
+        margin-bottom: 60px;
+
+        h2 {
+            font-weight: 700;
+            font-style: italic;
+            font-size: 48px;
+            line-height: 60px;
+            text-align: center;
+            color: #201116;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 100%;
+            color: #000000;
+            text-align: center;
+        }
+    }
+}
+
+.sliderWrapper {
+    position: relative;
+
+    &:hover {
+        .sliderNavigation {
+            position: absolute;
+            opacity: 1;
+        }
+    }
+
+    .sliderNavigation {
+        position: absolute;
+        opacity: 0;
+        top: calc(60% - 50px);
+        width: 100%;
+        transition: 0.2s ease-in-out;
+
+        button {
+            width: 50px;
+            height: 50px;
+            right: 25px;
+            border-radius: 50px;
+            box-shadow: none;
+            border: none;
+        }
+    }
+}
+
+.sliderNavigation {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    /* Optional: Adjust the space between buttons */
+    position: absolute !important;
+    top: 270px !important;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+}
+
+.swiperPrev {
+    left: 0px !important;
+}
+
+.swiperNext {
+    right: 0px !important;
+}
+
+.customSlide {
+    max-width: 350px;
+}
+
+@media (width <=991px) {
+    .selfPacedProgramsSection {
+        padding-bottom: 60px;
+
+        .sectionHeader {
+            margin-bottom: 40px;
+
+            h2 {
+
+                font-size: 24px;
+                line-height: 32px;
+                margin-bottom: 16px;
+            }
+
+            p {
+                font-size: 12px;
+            }
+        }
+    }
+
+    .customSlide {
+        max-width: 300px;
+    }
+}
