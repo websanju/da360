@@ -1,5 +1,6 @@
 import HeroSection from "@components/heroSection";
 import LearnersSection from "@components/learnersSection";
+import Accreditation from "@components/widgets/accreditationSection/accreditation";
 import BrandLogos from "@components/brandLogos";
 import ProgramsShowcase from "@components/programsShowcase";
 import SelfPacedPrograms from "@components/selfPacedPrograms";
@@ -49,6 +50,7 @@ export default function HomePage() {
     <main>
       <HeroSection />
       <LearnersSection />
+      <Accreditation />
       <BrandLogos />
       <ProgramsShowcase />
       <SelfPacedPrograms />
