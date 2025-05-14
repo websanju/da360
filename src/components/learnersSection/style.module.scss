@@ -294,9 +294,16 @@
 
 }
 
-
+.accreditationSection {
+  display: none;
+}
 
 @media (width <=992px) {
+  .accreditationSection {
+    display: block;
+    margin-bottom: 40px;
+    margin-top: 0;
+  }
   .learnersSection {
     border-radius: 0;
 

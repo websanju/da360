@@ -9,7 +9,7 @@ import "aos/dist/aos.css";
 
 import UpArrow from "@components/Ui/svg/arrowUp";
 import StudentArrow from "@components/Ui/svg/studentArrow";
-
+import AccreditationSection from "@components/widgets/accreditationSection";
 import LearnSlider from "@components/learnSlider";
 
 // Font configuration for Sora
@@ -117,7 +117,9 @@ export default function LearnersSection() {
   return (
     <section className={`${styles.learnersSection}`}>
       {/* Image Container */}
-
+      <div className={styles.accreditationSection}>
+        <AccreditationSection />
+      </div>
       <LearnSlider />
 
       <div className={styles.imageContainer}>
