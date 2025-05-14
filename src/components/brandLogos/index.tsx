@@ -18,7 +18,7 @@ const logos = [
 export default function BrandLogos() {
   return (
     <section className={styles.brandSection}>
-      <div className="container text-center">
+      <div className="container text-center d-flex justify-content-center">
         <h2>
           Our Learners Working <br />
           In 1,000+ Global Brands

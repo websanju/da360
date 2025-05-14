@@ -1,3 +1,5 @@
+import HeroSection from "@components/heroSection";
+import BrandLogos from "@components/brandLogos";
 import ProgramsShowcase from "@components/programsShowcase";
 import SelfPacedPrograms from "@components/selfPacedPrograms";
 import OurSuccessStories from "@components/ourSuccessStories";
@@ -44,6 +46,8 @@ export const metadata = {
 export default function HomePage() {
   return (
     <main>
+      <HeroSection />
+      <BrandLogos />
       <ProgramsShowcase />
       <SelfPacedPrograms />
       <OurSuccessStories />

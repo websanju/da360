@@ -30,7 +30,7 @@
         gap: 24px;
         justify-content: center;
         flex-wrap: wrap;
-
+      
         .card {
             border: 1px solid #000000;
             border-radius: 8px;
@@ -39,7 +39,7 @@
             display: flex;
             gap: 22px;
             align-items: center;
-
+            background: #FFFFFF;
             .reviewDetails {
                 .rating {
                     font-weight: 700;
