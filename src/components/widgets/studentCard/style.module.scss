@@ -1,0 +1,105 @@
+.card {
+  border: 1px solid #000000;
+  max-width: 350px;
+  border-radius: 20px;
+  height: 300px;
+  overflow: hidden;
+  background-color: #E2E2E4;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+
+  .cardImg {
+    width: 228px;
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  .studentBlock {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    .studentName {
+      font-weight: 600;
+      font-style: italic;
+      font-size: 16px;
+      line-height: 100%;
+      letter-spacing: 0%;
+      height: 34px;
+      min-width: 99px;
+      padding: 5px 16px;
+      box-shadow: 2px 2px 0px 0px #000000;
+      border-radius: 4px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      max-width: max-content;
+      color: #fff;
+      margin-bottom: 8px;
+    }
+  
+    .studentDetails {
+      border: 1px solid #000000;
+      background: #FFFFFF;
+      border-radius: 4px;
+      padding: 6px 14px;
+      max-width: max-content;
+      display: flex;
+      flex-direction: column;
+      line-height: normal;
+      gap: 4px;
+  
+      p {
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 100%;
+        letter-spacing: 0%;
+        color: #000;
+      }
+  
+      span {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 100%;
+        letter-spacing: 0%;
+        color: #000;
+      }
+    }
+  }
+
+}
+
+@media (width <=991px) {
+
+  .card {
+
+    height: 300px;
+    min-height: 300px;
+
+
+
+    .cardImg {
+      width: 228px;
+      height: 300px;
+      overflow: hidden;
+
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+
+}

@@ -10,6 +10,8 @@ import "aos/dist/aos.css";
 import UpArrow from "@components/Ui/svg/arrowUp";
 import StudentArrow from "@components/Ui/svg/studentArrow";
 
+import LearnSlider from "@components/learnSlider";
+
 // Font configuration for Sora
 const sora = Sora({
   subsets: ["latin"],
@@ -84,7 +86,7 @@ const StudentCard = ({
   <div
     className={`${styles.studentCard} ${cardClass}`}
     data-aos="zoom-in"
-    data-aos-delay="10"
+    data-aos-delay="100"
     data-aos-duration="300"
   >
     <div className={styles.studentBlock}>
@@ -115,6 +117,9 @@ export default function LearnersSection() {
   return (
     <section className={`${styles.learnersSection}`}>
       {/* Image Container */}
+
+      <LearnSlider />
+
       <div className={styles.imageContainer}>
         <div className={styles.imageBox}>
           <Image
@@ -141,12 +146,7 @@ export default function LearnersSection() {
 
           {/* View All Button */}
           <div className="container position-relative">
-            <Link
-              href="#"
-              className={styles.viewAllBtn}
-              data-aos="fade-up"
-              data-aos-delay="300"
-            >
+            <Link href="#" className={styles.viewAllBtn}>
               View All <UpArrow color="#fff" />
             </Link>
           </div>

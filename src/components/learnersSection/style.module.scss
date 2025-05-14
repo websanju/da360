@@ -298,8 +298,76 @@
 
 @media (width <=992px) {
   .learnersSection {
+    border-radius: 0;
+
     .imageBox {
       display: none;
     }
+
+    .infoBar {
+      padding: 40px 0 50px;
+
+      .infoNumbers {
+        flex-wrap: wrap;
+        gap: 40px;
+      }
+
+      .infobox {
+        flex-direction: column;
+        gap: 47px;
+
+        .infoLable {
+          span {
+            font-weight: 400;
+            font-size: 18px;
+          }
+
+          p {
+            font-size: 32px;
+            line-height: 100%;
+            max-width: 294px;
+          }
+        }
+
+        .companies {
+          text-align: left;
+    
+          h5 {
+            font-size: 24px;
+          }
+    
+          small {
+            font-weight: 400;
+            font-size: 14px;
+          }
+        }
+    
+        .placed {
+          text-align: left;
+    
+          h5 {
+            font-size: 24px;
+          }
+    
+          small {
+            font-weight: 400;
+            font-size: 14px;
+          }
+        }
+    
+        .freelancers {
+          h5 {
+            font-size: 24px;
+          }
+    
+          small {
+            font-weight: 400;
+            font-size: 14px;
+          }
+        }
+
+      }
+    }
+
   }
 }
