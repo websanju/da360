@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function HeroSection() {
   return (
-    <section className={`${styles.heroSection} `}>
+    <section className={`${styles.heroSection}`}>
       <div className="container">
         <div className="row">
           <div className="col-lg-12 ">

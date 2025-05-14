@@ -1,0 +1,305 @@
+.learnersSection {
+  overflow: hidden;
+  border-radius: 40px;
+
+  .imageBox {
+    position: relative;
+
+    .studentNames {
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      top: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .container {
+        height: 100%;
+      }
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+
+    .viewAllBtn {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+    }
+  }
+
+  .infoBar {
+    background: #FFEC5E;
+    padding: 75px 0;
+    font-family: var(--font-sora);
+
+    .infobox {
+      display: flex;
+      justify-content: space-between;
+      gap: 30px;
+    }
+
+    .infoNumbers {
+      display: flex;
+      gap: 60px;
+    }
+
+    .infoLable {
+      text-align: left;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      span {
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 100%;
+        letter-spacing: 1%;
+      }
+
+      p {
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 100%;
+        letter-spacing: 1%;
+      }
+    }
+
+    .companies {
+      text-align: left;
+
+      h5 {
+        font-weight: 600;
+        font-size: 32px;
+        line-height: 100%;
+        letter-spacing: 0%;
+        color: #000;
+        text-align: left;
+        margin-bottom: 10px;
+      }
+
+      small {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 100%;
+        letter-spacing: 0%;
+        color: #535353;
+        text-align: left;
+      }
+    }
+
+    .placed {
+      text-align: left;
+
+      h5 {
+        font-weight: 600;
+        font-size: 32px;
+        line-height: 100%;
+        letter-spacing: 0%;
+        color: #000;
+        text-align: left;
+        margin-bottom: 10px;
+      }
+
+      small {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 100%;
+        letter-spacing: 0%;
+        color: #535353;
+        text-align: left;
+      }
+    }
+
+    .freelancers {
+      h5 {
+        font-weight: 600;
+        font-size: 32px;
+        line-height: 100%;
+        letter-spacing: 0%;
+        color: #000;
+        text-align: left;
+        margin-bottom: 10px;
+      }
+
+      small {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 100%;
+        letter-spacing: 0%;
+        color: #535353;
+        text-align: left;
+      }
+    }
+
+
+
+  }
+
+  .viewAllBtn {
+    border: 2px solid #000000;
+    background: #000000;
+    color: #FFFFFF;
+    height: 40px;
+    min-width: 140px;
+    margin-bottom: 76px;
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 25px;
+    text-align: center;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+
+    &:hover {
+      background: #E53F43;
+    }
+  }
+}
+
+.studentCard {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  max-width: max-content;
+
+  .studentBlock {
+    display: flex;
+    max-width: max-content;
+    flex-direction: row-reverse;
+    margin-right: -40px;
+
+    .studentIcon {
+      transform: rotate(0deg);
+      top: -29px;
+      position: relative;
+      left: -8px;
+    }
+  }
+
+  .studentName {
+    font-weight: 600;
+    font-style: italic;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    height: 34px;
+    min-width: 99px;
+    padding: 5px 16px;
+    box-shadow: 2px 2px 0px 0px #000000;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: max-content;
+    color: #fff;
+    margin-bottom: 8px;
+  }
+
+  .studentDetails {
+    border: 1px solid #000000;
+    background: #FFFFFF;
+    border-radius: 4px;
+    padding: 6px 14px;
+    max-width: max-content;
+    display: flex;
+    flex-direction: column;
+    line-height: normal;
+    gap: 4px;
+
+    p {
+      font-weight: 700;
+      font-size: 12px;
+      line-height: 100%;
+      letter-spacing: 0%;
+      color: #000;
+    }
+
+    span {
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 100%;
+      letter-spacing: 0%;
+      color: #000;
+    }
+  }
+}
+
+.cardThree {
+  position: absolute;
+  bottom: 400px;
+  left: 350px;
+
+  .studentName {
+    color: #000;
+  }
+}
+
+.cardOne {
+  position: absolute;
+  bottom: 500px;
+  left: 0;
+}
+
+.cardTwo {
+  position: absolute;
+  top: 320px;
+  left: 27%;
+}
+
+.cardFour {
+  position: absolute;
+  right: 260px;
+  top: 510px;
+  align-items: flex-start;
+
+  .studentBlock {
+    flex-direction: row;
+    margin-left: -40px;
+
+    .studentIcon {
+      transform: rotate(260deg);
+      top: -27px;
+      position: relative;
+      left: 6px;
+    }
+  }
+
+}
+
+.cardFive {
+  position: absolute;
+  right: 0;
+  bottom: 348px;
+  align-items: flex-start;
+
+  .studentBlock {
+    flex-direction: row;
+    margin-left: -40px;
+
+    .studentIcon {
+      transform: rotate(260deg);
+      top: -27px;
+      position: relative;
+      left: 6px;
+    }
+  }
+
+}
+
+
+
+@media (width <=992px) {
+  .learnersSection {
+    .imageBox {
+      display: none;
+    }
+  }
+}

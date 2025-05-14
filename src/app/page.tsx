@@ -1,4 +1,5 @@
 import HeroSection from "@components/heroSection";
+import LearnersSection from "@components/learnersSection";
 import BrandLogos from "@components/brandLogos";
 import ProgramsShowcase from "@components/programsShowcase";
 import SelfPacedPrograms from "@components/selfPacedPrograms";
@@ -47,6 +48,7 @@ export default function HomePage() {
   return (
     <main>
       <HeroSection />
+      <LearnersSection />
       <BrandLogos />
       <ProgramsShowcase />
       <SelfPacedPrograms />
