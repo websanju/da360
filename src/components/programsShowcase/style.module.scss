@@ -3,6 +3,12 @@
   background: #f4f4f4;
   position: relative;
 
+  .container {
+    display: flex;
+    gap: 60px;
+    flex-direction: column;
+  }
+
   .scrollContainer {
     display: flex;
     gap: 20px;
@@ -48,6 +54,7 @@
   opacity: 0;
   transition: opacity 0.5s ease;
 }
+
 
 @media (width <=991px) {
   .programsShowcaseSection {

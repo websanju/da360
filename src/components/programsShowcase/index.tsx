@@ -58,7 +58,7 @@ const ProgramsShowcase: React.FC = () => {
           </h2>
           <p>Upskill Your Knowledge To Change Your Career Trajectory</p>
         </div>
-        <div className="container">
+        <div className={`${styles.container} container`}>
           <div className="card-wrapper">
             <div className="card1">
               <WidgetCard
