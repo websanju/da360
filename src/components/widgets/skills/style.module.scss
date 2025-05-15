@@ -5,7 +5,8 @@
     background-color: #fff;
     border-radius: 20px;
     overflow: hidden;
-
+    position: sticky;
+    top: 0;
     &.widget-card {
         opacity: 0;
         transform: translateY(50px);
@@ -68,7 +69,7 @@
 
             display: flex;
             gap: 16px;
-            justify-content: center;
+            justify-content: flex-start;
             flex-wrap: wrap;
 
             .viewCourse {
@@ -230,6 +231,54 @@
             img {
                 max-width: 100%;
                 object-position: top;
+            }
+        }
+
+        .actions {
+
+            display: flex;
+            gap: 16px;
+            justify-content: center;
+            flex-wrap: wrap;
+
+            .viewCourse {
+                background: #E10F33;
+                border: 1.5px solid #000000;
+                min-width: 200px;
+                color: #FFFFFF;
+                text-align: center;
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 37px;
+                letter-spacing: 2%;
+                height: 50px;
+                border-radius: 100px;
+
+                &:hover {
+                    background: #FFFFFF;
+                    border: 1.5px solid #000000;
+                    color: #201116;
+                }
+            }
+
+            .talkExpert {
+                background: #FFFFFF;
+                border: 1.5px solid #000000;
+                min-width: 200px;
+                color: #201116;
+                text-align: center;
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 37px;
+                letter-spacing: 2%;
+                height: 50px;
+                border-radius: 100px;
+
+                &:hover {
+                    background: #E10F33;
+                    border: 1.5px solid #000000;
+                    color: #FFFFFF;
+                }
             }
         }
     }

@@ -1,67 +1,11 @@
 "use client";
-import React, { useEffect, useRef } from "react";
-import gsap from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
+import React from "react";
 import WidgetCard from "@components/widgets/skills";
 import styles from "./style.module.scss";
 
-gsap.registerPlugin(ScrollTrigger);
-
 const ProgramsShowcase: React.FC = () => {
-  const sectionRef = useRef<HTMLDivElement>(null);
-  const cardsRef = useRef<HTMLDivElement>(null);
-
-  useEffect(() => {
-    const cards = gsap.utils.toArray(".widget-card") as HTMLElement[];
-
-    if (!sectionRef.current || !cards.length) return;
-
-    // Set only the first visible by default
-    gsap.set(cards, {
-      autoAlpha: 0,
-      position: "absolute",
-      top: 100,
-      left: 0,
-      right: 0,
-    });
-    gsap.set(cards[0], { autoAlpha: 1 });
-
-    cards.forEach((card, index) => {
-      ScrollTrigger.create({
-        trigger: sectionRef.current,
-        start: () => `top+=${index * window.innerHeight} top`,
-        end: () => `top+=${(index + 1) * window.innerHeight} top`,
-        scrub: true,
-        onEnter: () => showCard(index),
-        onEnterBack: () => showCard(index),
-      });
-    });
-
-    function showCard(index: number) {
-      cards.forEach((card, i) => {
-        gsap.to(card, {
-          autoAlpha: i === index ? 1 : 0,
-          duration: 0.5,
-          overwrite: true,
-        });
-      });
-    }
-
-    ScrollTrigger.create({
-      trigger: sectionRef.current,
-      start: "top top",
-      end: () => `+=${cards.length * window.innerHeight}`,
-      pin: true,
-      scrub: true,
-    });
-
-    return () => {
-      ScrollTrigger.getAll().forEach((trigger) => trigger.kill());
-    };
-  }, []);
-
   return (
-    <section className={styles.programsShowcaseSection} ref={sectionRef}>
+    <section className={styles.programsShowcaseSection}>
       <div className={styles.programsShowcaseHeader}>
         <h2>
           Our Programs & Skills <br /> To Master
@@ -69,7 +13,7 @@ const ProgramsShowcase: React.FC = () => {
         <p>Upskill Your Knowledge To Change Your Career Trajectory</p>
       </div>
       <div className="container">
-        <div className={styles.cardWrapper} ref={cardsRef}>
+        <div className={styles.cardWrapper}>
           <WidgetCard
             title="Leadership in Digital Marketing, AI & Entrepreneurship"
             category={["Masters", "Executive"]}
