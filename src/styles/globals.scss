@@ -614,3 +614,10 @@ select {
     width: 200px;
    }
 }
+
+.card1,
+.card2,
+.card3 {
+  will-change: transform;
+  transform-style: preserve-3d;
+}
