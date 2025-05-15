@@ -61,7 +61,7 @@ export default function HomePage() {
       <Comparison />
       <LifeAtDA360 />
       <LatestBlogPosts />
-      <PaddingWrapper desktopPaddingBottom="130px">
+      <PaddingWrapper desktopPaddingBottom="130px" mobilePaddingBottom="60px">
         <MediaAwards />
       </PaddingWrapper>
     </main>

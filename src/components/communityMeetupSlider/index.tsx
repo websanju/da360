@@ -1,5 +1,5 @@
 "use client";
-import { useState, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Scrollbar } from "swiper/modules";
 import Lightbox from "yet-another-react-lightbox";
@@ -93,7 +93,7 @@ const meetups: MeetupGroup[] = [
     type: "secondItems",
     items: [
       {
-        id: 4,
+        id: 8,
         title: "Join our next offline event!",
         image: "/images/community-metup/meetup4.jpg",
       },
@@ -103,20 +103,20 @@ const meetups: MeetupGroup[] = [
     type: "firstItems",
     items: [
       {
-        id: 1,
+        id: 9,
         image: "/images/community-metup/meetup1.jpg",
         title: "Gen-AI Meet Up",
         location: "Bengaluru",
         highlight: true,
       },
       {
-        id: 2,
+        id: 10,
         image: "/images/community-metup/meetup2.jpg",
         title: "ML Meetup",
         location: "Chennai",
       },
       {
-        id: 3,
+        id: 11,
         image: "/images/community-metup/meetup3.jpg",
         title: "Vision Meetup",
         location: "Delhi",
@@ -127,19 +127,19 @@ const meetups: MeetupGroup[] = [
     type: "thirdItems",
     items: [
       {
-        id: 5,
+        id: 12,
         image: "/images/community-metup/meetup5.jpg",
         title: "Robotics Meetup",
         location: "Mumbai",
       },
       {
-        id: 6,
+        id: 13,
         image: "/images/community-metup/meetup6.jpg",
         title: "Edge AI Meetup",
         location: "Hyderabad",
       },
       {
-        id: 7,
+        id: 14,
         image: "/images/community-metup/meetup7.jpg",
         title: "Deep Learning Meetup",
         location: "Pune",
@@ -152,9 +152,24 @@ const CommunityMeetupSlider = () => {
   const [open, setOpen] = useState(false);
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  const imageMeetups = meetups.flatMap((group) =>
-    group.items.filter((m) => m.image)
-  );
+  const [isMobile, setIsMobile] = useState(false);
+  const [visibleCount, setVisibleCount] = useState(4);
+
+  const flatMeetups: Meetup[] = meetups.flatMap((group) => group.items);
+  const imageMeetups = flatMeetups.filter((m) => m.image);
+
+  useEffect(() => {
+    const checkScreen = () => {
+      setIsMobile(window.innerWidth < 768);
+    };
+    checkScreen();
+    window.addEventListener("resize", checkScreen);
+    return () => window.removeEventListener("resize", checkScreen);
+  }, []);
+
+  const handleLoadMore = () => {
+    setVisibleCount((prev) => prev + 6);
+  };
 
   const handleOpenLightbox = (id: number) => {
     const index = imageMeetups.findIndex((m) => m.id === id);
@@ -164,6 +179,7 @@ const CommunityMeetupSlider = () => {
     }
   };
   const containerRef = useRef<HTMLDivElement>(null);
+
   const renderSlideContent = (group: MeetupGroup) => {
     const { type, items } = group;
 
@@ -340,6 +356,36 @@ const CommunityMeetupSlider = () => {
     return null;
   };
 
+  const renderMobileCard = (item: Meetup) => (
+    <div
+      key={item.id}
+      className={styles.mobileCard}
+      onClick={() => handleOpenLightbox(item.id)}
+    >
+      {item.image && (
+        <Image
+          src={item.image}
+          alt={item.title}
+          width={400}
+          height={500}
+          className={styles.cardImage}
+        />
+      )}
+      <div
+        className={styles.cardContent}
+        style={{
+          backgroundColor: item.bgColor || "#f5f5f5",
+          color: item.textColor || "inherit",
+        }}
+      >
+        <span className={styles.cardTitle}>{item.title}</span>
+        {item.location && (
+          <p className={styles.cardLocation}>{item.location}</p>
+        )}
+      </div>
+    </div>
+  );
+
   return (
     <section className={styles.communityMeetupSection}>
       <div className={styles.sectionHeader}>
@@ -356,40 +402,70 @@ const CommunityMeetupSlider = () => {
           </div>
         </div>
       </div>
-      <div ref={containerRef} className={styles.sliderWrapper}>
-        <div className={styles.sliderInnerWrapper}>
-          <div className="container position-relative">
-            <div className={styles.sliderNavigation}>
-              <button className="swiper-button-prev" id="customPrev11"></button>
-              <button className="swiper-button-next" id="customNext11"></button>
+      {isMobile ? (
+        <div className={styles.mobileCardBox}>
+          <div className="container">
+            <div className="row">
+              <div className="col-lg-12">
+                <div className={styles.mobileCardList}>
+                  {flatMeetups.slice(0, visibleCount).map(renderMobileCard)}
+                  {visibleCount < flatMeetups.length && (
+                    <div className={styles.loadMoreWrapper}>
+                      <button
+                        className={styles.loadMoreBtn}
+                        onClick={handleLoadMore}
+                      >
+                        Load More
+                      </button>
+                    </div>
+                  )}
+                </div>
+              </div>
             </div>
           </div>
-          <Swiper
-            modules={[Navigation, Scrollbar]}
-            slidesPerView="auto"
-            slidesOffsetBefore={20}
-            slidesOffsetAfter={20}
-            spaceBetween={20}
-            navigation={{
-              prevEl: "#customPrev11",
-              nextEl: "#customNext11",
-            }}
-            scrollbar={{ draggable: true, el: "#customScrollbar12" }}
-            className={styles.swiperWrapper}
-          >
-            {meetups.map((group, index) => (
-              <SwiperSlide
-                key={index}
-                className={`${styles.slide} ${styles[group.type]}`}
-              >
-                {renderSlideContent(group)}
-              </SwiperSlide>
-            ))}
-          </Swiper>
         </div>
-        {/* Custom scrollbar */}
-        <div id="customScrollbar12" className="swiper-scrollbar"></div>
-      </div>
+      ) : (
+        <div ref={containerRef} className={styles.sliderWrapper}>
+          <div className={styles.sliderInnerWrapper}>
+            <div className="container position-relative">
+              <div className={styles.sliderNavigation}>
+                <button
+                  className="swiper-button-prev"
+                  id="customPrev11"
+                ></button>
+                <button
+                  className="swiper-button-next"
+                  id="customNext11"
+                ></button>
+              </div>
+            </div>
+            <Swiper
+              modules={[Navigation, Scrollbar]}
+              slidesPerView="auto"
+              slidesOffsetBefore={20}
+              slidesOffsetAfter={20}
+              spaceBetween={20}
+              navigation={{
+                prevEl: "#customPrev11",
+                nextEl: "#customNext11",
+              }}
+              scrollbar={{ draggable: true, el: "#customScrollbar12" }}
+              className={styles.swiperWrapper}
+            >
+              {meetups.map((group, index) => (
+                <SwiperSlide
+                  key={index}
+                  className={`${styles.slide} ${styles[group.type]}`}
+                >
+                  {renderSlideContent(group)}
+                </SwiperSlide>
+              ))}
+            </Swiper>
+          </div>
+          {/* Custom scrollbar */}
+          <div id="customScrollbar12" className="swiper-scrollbar"></div>
+        </div>
+      )}
       <Lightbox
         open={open}
         close={() => setOpen(false)}
