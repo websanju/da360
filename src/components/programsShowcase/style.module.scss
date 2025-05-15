@@ -5,14 +5,17 @@
   height: 100vh;
   background: #f4f4f4;
   overflow: hidden;
+
   .scrollContainer {
     display: flex;
     gap: 20px;
     white-space: nowrap;
     will-change: transform;
   }
+
   .programsShowcaseHeader {
     margin-bottom: 60px;
+
     h2 {
       font-weight: 700;
       font-style: italic;
@@ -46,4 +49,28 @@
   padding: 1rem;
   opacity: 0;
   transition: opacity 0.5s ease;
+}
+
+@media (width <=991px) {
+  .programsShowcaseSection {
+    margin-bottom: 60px;
+    margin-top: 60px;
+
+    .programsShowcaseHeader {
+      margin-bottom: 20px;
+
+      h2 {
+        font-size: 24px;
+        line-height: 32px;
+        max-width: 274px;
+        margin: 0 auto 16px;
+      }
+
+      p {
+        font-size: 12px;
+        max-width: 243px;
+        margin: 0 auto;
+      }
+    }
+  }
 }
