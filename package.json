@@ -21,7 +21,8 @@
     "react-dom": "^19.0.0",
     "react-intersection-observer": "^9.16.0",
     "sass": "^1.87.0",
-    "swiper": "^11.2.6"
+    "swiper": "^11.2.6",
+    "yet-another-react-lightbox": "^3.23.1"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",

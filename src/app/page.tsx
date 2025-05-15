@@ -6,6 +6,7 @@ import ProgramsShowcase from "@components/programsShowcase";
 import SelfPacedPrograms from "@components/selfPacedPrograms";
 import OurSuccessStories from "@components/ourSuccessStories";
 import TrustedByLearners from "@components/trustedByLearners";
+import CommunityMeetupSlider from "@components/communityMeetupSlider";
 import Comparison from "@components/comparison";
 import LifeAtDA360 from "@components/lifeAtDA360";
 import LatestBlogPosts from "@components/latestBlogPosts";
@@ -56,6 +57,7 @@ export default function HomePage() {
       <SelfPacedPrograms />
       <OurSuccessStories />
       <TrustedByLearners />
+      <CommunityMeetupSlider />
       <Comparison />
       <LifeAtDA360 />
       <LatestBlogPosts />

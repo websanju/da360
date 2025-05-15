@@ -453,6 +453,22 @@ select {
     cursor: pointer;
   }
 }
+#customScrollbar12 {
+  width: 400px;
+  margin: 20px auto 0;
+  /* 👈 center horizontally */
+  height: 6px;
+  background: rgba(158, 158, 158, 0.4);
+  /* light background for scrollbar track */
+  border-radius: 5px;
+  position: relative;
+
+  .swiper-scrollbar-drag {
+    border-radius: 5px;
+    background: #fff;
+    cursor: pointer;
+  }
+}
 #customScrollbar {
   width: 400px;
   margin: 20px auto 0;
@@ -593,4 +609,8 @@ select {
   #customScrollbar10 {
     width: 200px;
   }
+
+  #customScrollbar12 {
+    width: 200px;
+   }
 }
