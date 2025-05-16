@@ -173,7 +173,7 @@ export default function Header() {
                     </Link>
                   </li>
                   <li>
-                    <Link href="/" className={styles.navItem}>
+                    <Link href="/performmers" className={styles.navItem}>
                       Performmers
                     </Link>
                   </li>
