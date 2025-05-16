@@ -85,13 +85,23 @@ const TopperOfMonthSlider = () => {
                           className={styles.sliderImage}
                         />
                         <div className={styles.monthBelt}>
-                          <Image
-                            src="/images/month-slider/month-belt.svg"
-                            alt={slide.name}
-                            width={1411.66}
-                            height={533.8}
-                            className={styles.sliderImage}
-                          />
+                          <div className={styles.dektop}>
+                            <Image
+                              src="/images/month-slider/month-belt.svg"
+                              alt={slide.name}
+                              width={1411.66}
+                              height={533.8}
+                            />
+                          </div>
+                          <div className={styles.mobile}>
+                            <Image
+                              src="/images/month-slider/mobile-month-belt.svg"
+                              alt={slide.name}
+                              className={styles.monthmobile}
+                              width={642.41}
+                              height={242.92}
+                            />
+                          </div>
                         </div>
                         <div className={styles.slideContent}>
                           <span className={styles.name}>{slide.name}</span>

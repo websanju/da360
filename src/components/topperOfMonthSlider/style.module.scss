@@ -6,9 +6,11 @@
     width: 100%;
 
     img {
-        border-radius: 20px;
-        width: 100%;
-        object-fit: cover;
+        &.sliderImage {
+            border-radius: 20px;
+            width: 100%;
+            object-fit: cover;
+        }
     }
 }
 
@@ -17,6 +19,11 @@
     z-index: 1;
     top: 0;
     left: 0;
+    width: 100%;
+    height: 100%;
+    img {
+        width: 100%;
+    }
 }
 
 .sliderWrapper {
@@ -50,19 +57,22 @@
 .imageSlider {
     position: relative;
     overflow: hidden;
+
     .viewResume {
         position: absolute;
-            bottom: 33px;
-            right: 45px;
-            &::after {
-                content: "";
-                width: 339px;
-                height: 273px;
-                position: absolute;
-                bottom: -40px;
-                right: -46px;
-                background: linear-gradient(334.64deg, #000000 -2.08%, rgba(0, 0, 0, 0) 64.34%);
-            }
+        bottom: 33px;
+        right: 45px;
+
+        &::after {
+            content: "";
+            width: 339px;
+            height: 273px;
+            position: absolute;
+            bottom: -40px;
+            right: -46px;
+            background: linear-gradient(334.64deg, #000000 -2.08%, rgba(0, 0, 0, 0) 64.34%);
+        }
+
         a {
             font-weight: 600;
             font-size: 14px;
@@ -72,7 +82,7 @@
             align-items: center;
             gap: 12px;
             z-index: 11;
-    position: relative;
+            position: relative;
         }
 
         i {
@@ -96,6 +106,7 @@
         align-items: end;
         justify-content: end;
         z-index: 11;
+
         .name {
             background: #FFEE6E;
             box-shadow: 6px 6px 0px 0px #000000;
@@ -132,14 +143,34 @@
     }
 }
 
+.dektop {
+    display: block;
+}
+
+.mobile {
+    display: none;
+}
+
 @media (width <=991px) {
+    .dektop {
+        display: none;
+    }
+
+    .mobile {
+        display: block;
+    }
+
     .sliderWrapper {
         margin-bottom: 60px;
 
         img {
             border-radius: 20px;
             width: 100%;
-            height: 380px;
+
+            &.sliderImage {
+                height: 380px;
+            }
+
         }
     }
 
@@ -149,21 +180,21 @@
         .viewResume {
             position: absolute;
             bottom: 33px;
-            right: 45px;
+            right: 0;
+            width: 100%;
+            display: flex;
+            justify-content: center;
 
             a {
-                font-weight: 600;
-                font-size: 14px;
-                line-height: 100%;
-                color: #FFFFFF;
-                display: flex;
-                align-items: center;
+                font-size: 12px;
                 gap: 12px;
             }
 
             i {
-                min-width: 40px;
-                min-height: 40px;
+                max-width: 28px !important;
+                max-height: 28px;
+                min-width: 28px;
+                min-height: 28px;
                 background-color: #FFFFFF;
                 display: flex;
                 align-items: center;
