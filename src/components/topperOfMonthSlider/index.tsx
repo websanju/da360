@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation } from "swiper/modules";
+import { Navigation, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/scrollbar";
@@ -65,9 +65,13 @@ const TopperOfMonthSlider = () => {
 
               <div className={styles.sliderInnerWrapper}>
                 <Swiper
-                  modules={[Navigation]}
+                  modules={[Navigation, Autoplay]}
                   spaceBetween={20}
                   slidesPerView={1}
+                  autoplay={{
+                    delay: 2000,
+                    disableOnInteraction: false,
+                  }}
                   navigation={{
                     prevEl: "#customPrev9",
                     nextEl: "#customNext9",

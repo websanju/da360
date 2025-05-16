@@ -30,7 +30,7 @@
 .sliderWrapper {
     position: relative;
     overflow: hidden;
-
+    
     &:hover {
         .sliderNavigation {
             position: absolute;
@@ -40,10 +40,10 @@
 
     .sliderNavigation {
         position: absolute;
-        top: calc(20% - 50px);
+        top: 249px;
         width: 100%;
         transition: 0.2s ease-in-out;
-
+        opacity: 0;
         button {
             width: 50px;
             height: 50px;
@@ -166,6 +166,9 @@
 
     .sliderWrapper {
         margin-bottom: 60px;
+        .sliderNavigation {
+             top: 200px;
+        }
 
         img {
             border-radius: 20px;
