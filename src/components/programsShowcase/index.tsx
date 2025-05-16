@@ -10,7 +10,7 @@ const ProgramsShowcase: React.FC = () => {
     console.clear();
     gsap.registerPlugin(ScrollTrigger);
 
-    const isMobile = window.innerWidth <= 768;
+    // const isMobile = window.innerWidth <= 768;
 
     const wrappers = gsap.utils.toArray<HTMLElement>(".card-wrapper");
     const cards = gsap.utils.toArray<HTMLElement>(".card1, .card2, .card3");
@@ -33,8 +33,8 @@ const ProgramsShowcase: React.FC = () => {
           ease: "power2.out",
           scrollTrigger: {
             trigger: wrapper,
-            start: `top ${isMobile ? 90 : 150 + 20 * i}`,
-            end: isMobile ? "bottom 720" : "bottom 680",
+            start: `top ${120 + 20 * i}`,
+            end: "bottom 680",
             endTrigger: ".wrapper",
             scrub: true,
             pin: wrapper,
