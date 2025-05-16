@@ -193,8 +193,8 @@
 
       .navbarDropdownColumn {
         padding: 24px;
-
-        &.active {
+        border: 1px solid #fff;
+        &:hover {
           border: 1px solid #000000;
           border-radius: 12px;
         }
@@ -375,7 +375,7 @@
       overflow-x: auto;
         .navbarDropdownColumn {
           padding: 24px;
-          &.active {
+          &.hover {
             border: 1px solid #000000;
             border-radius: 12px;
           }
