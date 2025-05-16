@@ -84,6 +84,15 @@ const TopperOfMonthSlider = () => {
                           height={500}
                           className={styles.sliderImage}
                         />
+                        <div className={styles.monthBelt}>
+                          <Image
+                            src="/images/month-slider/month-belt.svg"
+                            alt={slide.name}
+                            width={1411.66}
+                            height={533.8}
+                            className={styles.sliderImage}
+                          />
+                        </div>
                         <div className={styles.slideContent}>
                           <span className={styles.name}>{slide.name}</span>
                           <span className={styles.course}>{slide.course}</span>
