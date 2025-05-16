@@ -85,9 +85,7 @@ const StudentCard = ({
 }: Student) => (
   <div
     className={`${styles.studentCard} ${cardClass}`}
-    data-aos="zoom-in"
-    data-aos-delay="100"
-    data-aos-duration="300"
+    data-parallax-strength="0.1"
   >
     <div className={styles.studentBlock}>
       <div className={styles.studentIcon}>
@@ -112,6 +110,31 @@ export default function LearnersSection() {
       once: false,
       mirror: true,
     });
+
+    // === Parallax Logic (Vanilla JS) ===
+    const handleParallax = () => {
+      const parallaxElements = document.querySelectorAll(
+        "[data-parallax-strength]"
+      );
+      parallaxElements.forEach((element) => {
+        const strength = parseFloat(
+          element.getAttribute("data-parallax-strength") || "0.1"
+        );
+        const scrollY = window.scrollY;
+        const offsetTop = element.getBoundingClientRect().top + scrollY;
+        const translateY = (scrollY - offsetTop) * strength;
+
+        (
+          element as HTMLElement
+        ).style.transform = `translateY(${translateY}px)`;
+      });
+    };
+
+    // Attach scroll event
+    window.addEventListener("scroll", handleParallax);
+
+    // Cleanup event listener
+    return () => window.removeEventListener("scroll", handleParallax);
   }, []);
 
   return (
