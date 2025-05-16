@@ -33,7 +33,7 @@ const ProgramsShowcase: React.FC = () => {
           ease: "power2.out",
           scrollTrigger: {
             trigger: wrapper,
-            start: `top ${120 + 20 * i}`,
+            start: `top ${120 + 30 * i}`,
             end: "bottom 680",
             endTrigger: ".wrapper",
             scrub: true,
