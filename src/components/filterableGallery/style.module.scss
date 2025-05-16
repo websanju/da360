@@ -1,0 +1,256 @@
+.gallerySection {
+    margin-bottom: 140px;
+    min-height: 1000px;
+
+    .filterButtons {
+        display: flex;
+        gap: 10px;
+        margin-bottom: 40px;
+        justify-content: center;
+
+        button {
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 100%;
+            letter-spacing: 0%;
+            padding: 8px 16px;
+            min-height: 40px;
+            border: 1px solid #1C1C1C;
+            border-radius: 100px;
+
+            &.active {
+                background-color: #2B2B2B;
+                color: #fff;
+            }
+        }
+    }
+
+    .loadMorebtn {
+        display: flex;
+        justify-content: center;
+        margin-top: 50px;
+    }
+}
+
+
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(300px, 1fr));
+    row-gap: 24px;
+    column-gap: 22px;
+}
+
+.card {
+    border: 2px solid #000000;
+    background: #FFFFFF;
+    border-radius: 16px;
+    overflow: hidden;
+    display: flex;
+    gap: 16px;
+
+    .studentImg {
+        height: 100%;
+        width: 247px;
+        display: flex;
+        align-items: end;
+
+        img {
+            object-fit: cover;
+            height: 100%;
+            width: 100%;
+        }
+    }
+
+    .studentcontent {
+        margin-top: 40px;
+
+        h3 {
+            font-weight: 700;
+            font-style: italic;
+            font-size: 24px;
+            line-height: 22px;
+            letter-spacing: 0%;
+            text-transform: uppercase;
+            color: #090909;
+        }
+
+        .content {
+            display: flex;
+            gap: 10px;
+            flex-direction: column;
+            margin-bottom: 16px;
+
+            p {
+                font-weight: 600;
+                font-size: 13px;
+                line-height: 16px;
+                letter-spacing: 0%;
+                color: #090909;
+
+                span {
+                    font-weight: 500;
+                    font-size: 12px;
+                    line-height: 16px;
+                    letter-spacing: 0%;
+                }
+            }
+        }
+
+        .tags {
+            display: flex;
+            gap: 4px;
+            flex-wrap: wrap;
+            margin-bottom: 24px;
+
+            span {
+                font-weight: 600;
+                font-size: 10px;
+                line-height: 100%;
+                letter-spacing: 0%;
+                color: #1C1C1C;
+                padding: 4px 10px;
+                border: 1px solid #1C1C1C;
+                border-radius: 100px;
+            }
+        }
+
+        .action {
+            display: flex;
+            gap: 16px;
+            align-items: center;
+            margin-bottom: 16px;
+
+            .button {
+                box-shadow: 2px 2px 0px 0px #000000;
+                border: 1.5px solid #000000;
+                background-color: #E10F33;
+                color: #fff;
+                font-weight: 600;
+                font-size: 12px;
+                line-height: 37px;
+                letter-spacing: 2%;
+                height: 32px;
+                padding: 0 17px;
+                border-radius: 100px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                cursor: pointer;
+                transition: background-color 0.3s ease, box-shadow 0.3s ease;
+
+                &:hover {
+                    background-color: #ffffff;
+                    color: #000;
+                }
+            }
+        }
+    }
+
+}
+
+.image {
+    border-radius: 8px;
+}
+
+.cardScholarship {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    background: #1DB796;
+    border-radius: 16px;
+    padding: 35px 46px;
+
+    .cardScholarshipContent {
+        width: 100%;
+
+        h3 {
+            font-weight: 900;
+            font-style: italic;
+            font-size: 34px;
+            line-height: 36px;
+            letter-spacing: 0%;
+            text-transform: uppercase;
+            color: #FFFFFF;
+            max-width: 400px;
+            margin-bottom: 18px;
+        }
+
+        .cardScholarshiAmout {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            gap: 10px;
+            .button {
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 100%;
+                letter-spacing: 2%;
+                padding: 12px 33px;
+                box-shadow: 3px 3px 0px 0px #000000;
+                border: 1.5px solid #000000;
+                background: #FFFFFF;
+                border-radius: 100px;
+                cursor: pointer;
+                transition: background-color 0.3s ease, box-shadow 0.3s ease;
+
+                &:hover {
+                    background-color: #000000;
+                    color: #FFFFFF;
+                }
+            }
+            .scholarshiAmout {
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 100%;
+                letter-spacing: 2%;
+                color: #FFFFFF;
+
+                span {
+                    font-weight: 900;
+                    font-size: 32px;
+                    line-height: 100%;
+                    letter-spacing: 0%;
+                    color: #FFFFFF;
+                    font-family: Arial, Helvetica, sans-serif;
+                }
+
+              
+            }
+        }
+    }
+}
+
+.content {
+    margin-top: 1rem;
+
+    h3 {
+        margin: 0;
+    }
+
+    p {
+        margin: 0.2rem 0;
+    }
+}
+
+.loadMore {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 25px;
+    letter-spacing: 0%;
+    text-align: center;
+    background-color: #F5F5F5;
+    border: 2px solid #000000;
+    border-radius: 100px;
+    height: 57px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 200px;
+    color: #000;
+
+    &:hover {
+        background-color: #000000;
+        color: #fff;
+    }
+}
