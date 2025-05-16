@@ -1,0 +1,112 @@
+.sliderWrapper {
+    margin-top: 20px;
+    margin-bottom: 140px;
+    border-radius: 20px;
+    overflow: hidden;
+
+    img {
+        border-radius: 20px;
+        width: 100%;
+    }
+}
+
+
+.sliderWrapper {
+    position: relative;
+
+    &:hover {
+        .sliderNavigation {
+            position: absolute;
+            opacity: 1;
+        }
+    }
+
+    .sliderNavigation {
+        position: absolute;
+        top: calc(20% - 50px);
+        width: 100%;
+        transition: 0.2s ease-in-out;
+
+        button {
+            width: 50px;
+            height: 50px;
+            right: 25px;
+            border-radius: 50px;
+            box-shadow: none;
+            border: none;
+        }
+    }
+}
+
+.imageSlider {
+    position: relative;
+
+    .viewResume {
+        position: absolute;
+        bottom: 33px;
+        right: 45px;
+
+        a {
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 100%;
+            color: #FFFFFF;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        i {
+            min-width: 40px;
+            min-height: 40px;
+            background-color: #FFFFFF;
+            display: flex;
+            align-items: center;
+            max-width: fit-content;
+            justify-content: center;
+            border-radius: 50px;
+        }
+    }
+
+    .slideContent {
+        position: absolute;
+        bottom: 30%;
+        right: 10%;
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        justify-content: end;
+        .name {
+            background: #FFEE6E;
+            box-shadow: 6px 6px 0px 0px #000000;
+            font-family: Poppins;
+            font-weight: 800;
+            font-style: italic;
+            font-size: 24px;
+            line-height: 100%;
+            padding: 10px 23px;
+            text-transform: uppercase;
+            min-height: 56px;
+            position: relative;
+            z-index: 0;
+        }
+
+        .course {
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 100%;
+            letter-spacing: 3%;
+            text-transform: uppercase;
+            position: absolute;
+            z-index: 111;
+            background-color: #fff;
+            border: 2px solid #000000;
+            padding: 5px 10px;
+            min-width: max-content;
+            bottom: -28px;
+            display: flex;
+            height: 35px;
+            align-items: center;
+        }
+    }
+}
