@@ -7,6 +7,8 @@ import BrandLogos from "@components/brandLogos";
 import Gallery from "@components/gallery";
 import MediaAwards from "@components/mediaAwards";
 import CareerWidget from "@components/widgets/careerWidget";
+
+import VisionMissionStats from "@components/visionMissionStats";
 import styles from "./style.module.scss";
 
 export default function About() {
@@ -20,6 +22,7 @@ export default function About() {
         height={720}
       />
       <ContentBlock content="Digital Academy 360, India' Leading Digital Learning Platform started in the year 2015 with the aim of creating the largest conglomeration of digital learning resources, learning intelligence, and research opportunities that can benefit the Global Online Industry." />
+      <VisionMissionStats />
       <ImageBanner
         src="/images/team.jpg"
         alt="About Banner"
