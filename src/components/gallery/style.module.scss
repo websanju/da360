@@ -17,7 +17,7 @@
     .grid {
         display: flex;
         flex-wrap: wrap;
-        gap: 15px;
+        gap: 20px;
     }
 
     .gridItem {
@@ -40,6 +40,6 @@
     }
 
     .small {
-        flex: 1 1 calc(50% - 15px);
+        flex: 1 1 calc(50% - 20px);
     }
 }
