@@ -83,7 +83,60 @@ min-height: 72px;
   right: 0px !important;
 }
 
-@media (width <=992px) {
+@media (max-width: 992px) {
   .customSlide {
-    max-width: 320px;}
+    max-width: 320px;
   }
+  
+  .digitalAcademySection {
+    margin-top: 60px;
+    margin-bottom: 60px;
+
+    .sectionHeader {
+      margin-bottom: 40px;
+      h2 {
+        font-size: 32px;
+        line-height: 34px;
+        margin: 0;
+      }
+    }
+
+    .card {
+      .cardImg {
+        margin-bottom: 24px;
+
+        img {
+          width: 100%;
+          height: auto;
+        }
+      }
+
+      .cardDescription {
+        h3 {
+          font-weight: 600;
+          font-size: 24px;
+          line-height: 36px;
+          color: #000;
+          min-height: 72px;
+        }
+      }
+    }
+
+    .sliderNavigation {
+      position: absolute;
+      opacity: 0;
+      top: calc(60% - 50px);
+      width: 100%;
+      transition: 0.2s ease-in-out;
+
+      button {
+        width: 50px;
+        height: 50px;
+        right: 25px;
+        border-radius: 50px;
+        box-shadow: none;
+        border: none;
+      }
+    }
+  }
+}

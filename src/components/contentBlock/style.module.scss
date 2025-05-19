@@ -11,4 +11,14 @@
   }
 }
 
-@media (width <=991px) {}
+@media (width <=991px) {
+  .contentSection {
+    padding-top:60px;
+    p {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 23px;
+      margin: 0 auto;
+    }
+  }
+}

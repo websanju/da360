@@ -39,7 +39,7 @@ export default function About() {
       <MediaAwards />
       <div className={styles.careerWidget}>
         <div className="container">
-          <div className="row">
+          <div className={`${styles.careerWidgetRow} row`}>
             <div className="col-lg-6">
               <CareerWidget
                 variant="red"

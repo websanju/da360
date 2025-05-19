@@ -84,3 +84,76 @@
 .yellow {
     background-color: #ffd429;
 }
+
+@media (width <=992px) {
+    .card {
+        border-radius: 20px;
+        padding: 30px 23px;
+        position: relative;
+        overflow: hidden;
+
+       
+    
+        .whiteColor {
+            h2 {
+                color: #fff;
+             
+                line-height: normal;
+            }
+    
+            p {
+                color: #fff;
+            }
+        }
+    
+        .blackColor {
+            h2 {
+                color: #000;
+            }
+    
+            p {
+                color: #000;
+            }
+        }
+    
+        h2 {
+            font-size: 24px;
+            line-height: normal;
+            margin-bottom: 17px;
+        }
+    
+        p {
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 24px;
+            color: #000;
+            max-width: 456px;
+            margin-bottom: 27px;
+        }
+    
+        button {
+            background: #fff;
+            border: 2px solid #000;
+            border-radius: 10px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            box-shadow: 4px 4px 0px 0px #000000;
+            min-width: 240px;
+            min-height: 60px;
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 24px;
+            letter-spacing: 0%;
+            text-align: center;
+    
+            &:hover {
+                background-color: #f3f3f3;
+            }
+        }
+    
+        .right {
+          display: none;
+        }
+    }
+}

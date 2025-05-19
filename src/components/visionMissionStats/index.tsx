@@ -40,7 +40,7 @@ const VisionMissionStats = () => {
       </div>
       <div className={styles.counterBox}>
         <div className="container">
-          <div className="row">
+          <div className="row row-gap-3 d-flex justify-content-center">
             {counters.map((counter, index) => (
               <div key={index} className="col-6 col-md-4">
                 <Counter {...counter} />

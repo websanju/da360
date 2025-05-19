@@ -43,3 +43,16 @@
         flex: 1 1 calc(50% - 20px);
     }
 }
+
+@media (width <=991px) { 
+    .gallerySection {
+        padding-top: 60px;
+        .sectionHeader {
+            margin-bottom: 40px;
+            h2 {
+                font-size: 32px;
+                line-height: 40px;
+            }
+        }
+     }
+}
