@@ -7,7 +7,7 @@ import "swiper/css/navigation";
 import "swiper/css/scrollbar";
 import styles from "./style.module.scss";
 import Image from "next/image";
-import ArrowLeft from "@/components/ui/svg/arrowLeft";
+import ArrowLeft from "@/components/Ui/svg/arrowLeft";
 
 interface SlideProps {
   id: number;

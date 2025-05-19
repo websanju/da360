@@ -2,9 +2,9 @@
 
 import React, { useState } from "react";
 import styles from "./style.module.scss";
-import Live from "@/components/ui/svg/live";
-import Plus from "@/components/ui/svg/plus";
-import Minus from "@/components/ui/svg/minus";
+import Live from "@/components/Ui/svg/live";
+import Plus from "@/components/Ui/svg/plus";
+import Minus from "@/components/Ui/svg/minus";
 
 const modulesData = [
   {

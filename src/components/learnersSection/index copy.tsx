@@ -7,8 +7,8 @@ import { Sora } from "next/font/google";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
-import UpArrow from "@/components/ui/svg/arrowUp";
-import StudentArrow from "@/components/ui/svg/studentArrow";
+import UpArrow from "@/components/Ui/svg/arrowUp";
+import StudentArrow from "@/components/Ui/svg/studentArrow";
 import AccreditationSection from "@components/widgets/accreditationSection";
 import LearnSlider from "@components/learnSlider";
 

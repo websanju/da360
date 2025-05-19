@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import styles from "./style.module.scss";
-import RightArrow from "@/components/ui/svg/rightArrow";
+import RightArrow from "@/components/Ui/svg/rightArrow";
 import Link from "next/link";
 
 const blogPosts = [

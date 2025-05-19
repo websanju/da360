@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./style.module.scss";
-import LeftArrow from "@/components/ui/svg/leftArrow";
+import LeftArrow from "@/components/Ui/svg/leftArrow";
 import Image from "next/image";
 import marker from "../../../public/images/mapToadmap.svg";
 import marker2 from "../../../public/images/roadmap-mobile.svg";

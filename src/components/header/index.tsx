@@ -3,7 +3,7 @@ import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import styles from "./style.module.scss";
-import DownArrow from "@/components/ui/svg/downArrow";
+import DownArrow from "@/components/Ui/svg/downArrow";
 
 export default function Header() {
   const [isCoursesOpen, setIsCoursesOpen] = useState(false);
