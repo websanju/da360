@@ -6,6 +6,9 @@ import OurPeople from "@components/ourPeople";
 import BrandLogos from "@components/brandLogos";
 import Gallery from "@components/gallery";
 import MediaAwards from "@components/mediaAwards";
+import CareerWidget from "@components/widgets/careerWidget";
+import styles from "./style.module.scss";
+
 export default function About() {
   return (
     <main>
@@ -31,6 +34,29 @@ export default function About() {
       />
       <Gallery />
       <MediaAwards />
+      <div className={styles.careerWidget}>
+        <div className="container">
+          <div className="row">
+            <div className="col-lg-6">
+              <CareerWidget
+                variant="red"
+                title="Careers at <br/> Digital Academy 360"
+                description="Fill out the form below or connect with our placement cell directly to start hiring from our trained talent pool."
+                buttonText="Apply Now"
+              />
+            </div>
+            <div className="col-lg-6">
+              <CareerWidget
+                variant="yellow"
+                variantColor="blackColor"
+                title="Careers at <br/> Digital Academy 360"
+                description="Fill out the form below or connect with our placement cell directly to start hiring from our trained talent pool."
+                buttonText="Join Now"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
   );
 }
