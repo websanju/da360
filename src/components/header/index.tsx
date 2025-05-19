@@ -168,7 +168,7 @@ export default function Header() {
               <nav className="d-none d-lg-block">
                 <ul>
                   <li>
-                    <Link href="/" className={styles.navItem}>
+                    <Link href="/about-us" className={styles.navItem}>
                       Life@da360
                     </Link>
                   </li>
