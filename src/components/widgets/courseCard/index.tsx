@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./style.module.scss";
 import Image from "next/image";
-import RightArrow from "@components/Ui/svg/rightArrow";
+import RightArrow from "@/components/ui/svg/rightArrow";
 
 type CourseCardProps = {
   title: string;

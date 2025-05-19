@@ -8,7 +8,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Scrollbar, Navigation } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/scrollbar";
-import ArrowUp from "@components/Ui/svg/arrowUp";
+import ArrowUp from "@/components/ui/svg/arrowUp";
 
 interface Story {
   name: string;

@@ -2,7 +2,7 @@
 
 import React from "react";
 import styles from "./style.module.scss";
-import TickMark from "@components/Ui/svg/tickMark";
+import TickMark from "@/components/ui/svg/tickMark";
 
 const Highlights = () => {
   const skills = [

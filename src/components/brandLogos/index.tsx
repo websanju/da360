@@ -15,13 +15,23 @@ const logos = [
   { src: "/images/brand/upgrad.png", alt: "UpGrad" },
 ];
 
-export default function BrandLogos() {
+// Define the prop types
+interface BrandLogosProps {
+  firstHeading?: string;
+  secondHeading?: string;
+}
+
+const BrandLogos: React.FC<BrandLogosProps> = ({
+  firstHeading = "Our Learners Working",
+  secondHeading = "In 1,000+ Global Brands",
+}) => {
   return (
     <section className={styles.brandSection}>
       <div className="container text-center d-flex justify-content-center">
         <h2>
-          Our Learners Working <br />
-          In 1,000+ Global Brands
+          {firstHeading}
+          <br />
+          {secondHeading}
         </h2>
       </div>
       {/* Row 1: Right to Left */}
@@ -59,4 +69,6 @@ export default function BrandLogos() {
       </div>
     </section>
   );
-}
+};
+
+export default BrandLogos;

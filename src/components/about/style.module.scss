@@ -1,0 +1,44 @@
+.aboutSection {
+    padding: 140px 0 120px;
+
+    .headerSection {
+        text-align: center;
+
+        h1 {
+            font-weight: 700;
+            font-style: italic;
+            font-size: 60px;
+            line-height: 120%;
+            text-align: center;
+            margin-bottom: 24px;
+        }
+
+        p {
+            font-weight: 400;
+            font-size: 32px;
+            line-height: 52px;
+            letter-spacing: 0%;
+            text-align: center;
+        }
+    }
+}
+
+@media (width <=992px) {
+    .aboutSection {
+        padding: 60px 0 40px;
+
+        .headerSection {
+            h1 {
+                font-size: 32px;
+                line-height: normal;
+            }
+
+            p {
+                font-weight: 500;
+                font-size: 14px;
+                text-align: center;
+                line-height: 18px;
+            }
+        }
+    }
+}

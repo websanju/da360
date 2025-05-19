@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import styles from "./style.module.scss";
 import Image from "next/image";
-import LeftArrow from "@components/Ui/svg/leftArrow";
+import LeftArrow from "@/components/ui/svg/leftArrow";
 
 const certData = [
   { name: "DA360", image: "/images/da360.png" },

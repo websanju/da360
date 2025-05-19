@@ -3,7 +3,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import styles from "./style.module.scss";
-import Close from "@components/Ui/svg/close"; // Assuming this is the Close icon component
+import Close from "@/components/ui/svg/close"; // Assuming this is the Close icon component
 
 export default function Topbar() {
   const [isClosed, setIsClosed] = useState(false);

@@ -9,8 +9,8 @@ import styles from "./style.module.scss";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-import TickBlack from "@components/Ui/svg/tickBlack";
-import ArrowUp from "@components/Ui/svg/arrowUp";
+import TickBlack from "@/components/ui/svg/tickBlack";
+import ArrowUp from "@/components/ui/svg/arrowUp";
 import { auto } from "@popperjs/core";
 
 interface Project {

@@ -1,0 +1,35 @@
+.ourPeopleSection {
+  background: #000000;
+  padding: 80px 0;
+
+  .sectionHeader {
+    margin-bottom: 40px;
+    h2 {
+      font-weight: 700;
+      font-style: italic;
+      font-size: 48px;
+      line-height: 60px;
+      letter-spacing: 0%;
+      color: #fff;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 24px;
+      color: #fff;
+    }
+  }
+  
+  .grid {
+    display: grid;
+    row-gap: 60px;
+    column-gap: 24px;
+    grid-template-columns: repeat(3, minmax(200px, 1fr));
+  }
+}
+
+
+
+@media (width <=991px) {}
