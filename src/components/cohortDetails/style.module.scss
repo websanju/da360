@@ -214,22 +214,38 @@
             flex-direction: column;
             align-items: center;
             position: relative;
-            width: 25%;
+            width: 33%;
             &:first-child {
-              width: 15%;
+              width: 24%;
+              justify-content: flex-start;
+              align-items: flex-start;
+              text-align: left;
+              span {
+                text-align: left;
+              }
+              label {
+                text-align: left;
+              }
             }
 
             /* Separator */
             &::after {
               content: "";
               position: absolute;
-              right: -5px;
+              right: 5px;
               height: 70%;
               /* Adjust the height if needed */
               width: 1px;
               background-color: #000;
             }
-
+            &:last-child {
+              span {
+                padding-left: 12px;
+              }
+              label {
+                padding-left: 12px;
+              }
+            }
             /* Remove separator for the last item */
             &:last-child::after {
               display: none;
@@ -240,7 +256,7 @@
               font-size: 12px;
               line-height: 20px;
               letter-spacing: 0%;
-              text-align: center;
+              text-align: left;
 
             }
 
@@ -248,8 +264,7 @@
               font-weight: 500;
               font-size: 12px;
               line-height: 20px;
-              letter-spacing: 0%;
-              text-align: center;
+              text-align: left;
               color: rgb(0, 0, 0);
             }
 
@@ -257,27 +272,19 @@
               font-weight: 500;
               font-size: 12px;
               line-height: 12px;
-              letter-spacing: 0%;
-              text-align: center;
+              text-align: left;
+              width: 100%;
             }
 
             span {
               font-weight: 600;
-              font-size: 12px;
+              font-size: 14px;
               line-height: 20px;
-
+              width: 100%;
+              text-align: left;
             }
 
-            .cardMode {
-              background: rgba(254, 230, 82, 1);
-              color: rgba(0, 0, 0, 1);
-              border: 0.5px solid rgba(0, 0, 0, 1);
-              border-radius: 50px;
-              font-size: 12px;
-              font-weight: 600;
-              padding: 5px 10px;
-              line-height: 100%;
-            }
+            
 
           }
         }
@@ -286,12 +293,105 @@
           display: flex;
           gap: 10px;
           justify-content: space-between;
+          position: relative;
+          .cardItem {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+            width: 33%;
+            &:first-child {
+              width: 24%;
+              justify-content: flex-start;
+              align-items: flex-start;
+              text-align: left;
+              span {
+                text-align: left;
+              }
+              label {
+                text-align: left;
+              }
+            }
 
+            /* Separator */
+            &::after {
+              content: "";
+              position: absolute;
+              right: 5px;
+              height: 70%;
+              /* Adjust the height if needed */
+              width: 1px;
+              background-color: #000;
+            }
+
+            /* Remove separator for the last item */
+            &:nth-child(2)::after {
+              display: none;
+            }
+            &:last-child::after {
+              display: none;
+            }
+
+            .cardDate {
+              font-weight: 600;
+              font-size: 12px;
+              line-height: 20px;
+              letter-spacing: 0%;
+              text-align: left;
+
+            }
+
+            .cardDatelabel {
+              font-weight: 500;
+              font-size: 12px;
+              line-height: 20px;
+              text-align: left;
+              color: rgb(0, 0, 0);
+            }
+
+            label {
+              font-weight: 500;
+              font-size: 12px;
+              line-height: 12px;
+              text-align: left;
+              width: 100%;
+            }
+
+            span {
+              font-weight: 600;
+              font-size: 14px;
+              line-height: 20px;
+              width: 100%;
+              text-align: left;
+            }
+
+            
+
+          }
+          span {
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 20px;
+
+          }
           label {
             font-weight: 500;
             font-size: 12px;
             line-height: 12px;
           }
+
+          .cardMode {
+            background: #FFF2E5;
+            color: rgba(0, 0, 0, 1);
+            border: none;
+            border-radius: 50px;
+            font-size: 14px;
+            font-weight: 600;
+            line-height: 100%;
+            padding: 0;
+          }
+
+
         }
 
 

@@ -74,10 +74,6 @@ export default function CohortDetails() {
                             <label>Capacity</label>
                             <span>{cohort.capacity}</span>
                           </div>
-                          <div className={styles.cardItem}>
-                            <label>Campus</label>
-                            <span>{cohort.campus}</span>
-                          </div>
                         </div>
 
                         <div className={styles.cardItemsBottom}>
@@ -86,6 +82,10 @@ export default function CohortDetails() {
                             <span className={styles.cardMode}>
                               {cohort.mode}
                             </span>
+                          </div>
+                          <div className={styles.cardItem}>
+                            <label>Campus</label>
+                            <span>{cohort.campus}</span>
                           </div>
                           <div className={`${styles.enrollBtn} `}>
                             <Link href="#" className="btn btn-danger">
