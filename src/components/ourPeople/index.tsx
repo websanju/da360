@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./style.module.scss";
 import PersonCard from "@components/widgets/personCard";
+import ArrowUp from "@/components/Ui/svg/arrowUp";
 
 const people = [
   {
@@ -106,6 +107,15 @@ const OurPeople = () => {
                   image={person.image}
                 />
               ))}
+            </div>
+          </div>
+        </div>
+        <div className="row">
+          <div className="col-lg-12">
+            <div className={styles.loadMoreWrapper}>
+              <button className={styles.loadMoreBtn}>
+                Load More <ArrowUp color="#fff" />
+              </button>
             </div>
           </div>
         </div>

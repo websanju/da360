@@ -91,7 +91,8 @@
         padding: 30px 23px;
         position: relative;
         overflow: hidden;
-
+        display: flex;
+        flex-direction: column-reverse;
        
     
         .whiteColor {
@@ -117,18 +118,15 @@
         }
     
         h2 {
-            font-size: 24px;
-            line-height: normal;
+            font-size: 26px;
+            line-height: 32px;
             margin-bottom: 17px;
         }
     
         p {
-            font-weight: 500;
-            font-size: 16px;
-            line-height: 24px;
-            color: #000;
-            max-width: 456px;
-            margin-bottom: 27px;
+            font-size: 12px;
+            line-height: 17px;
+            margin-bottom: 24px;
         }
     
         button {
@@ -153,7 +151,13 @@
         }
     
         .right {
-          display: none;
+          display: block;
+          position: relative;
+          right: -90px;
+          img {
+            width: 116px;
+            height: 116px;
+          }
         }
     }
 }

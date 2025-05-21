@@ -4,6 +4,7 @@
 
   .sectionHeader {
     margin-bottom: 40px;
+
     h2 {
       font-weight: 700;
       font-style: italic;
@@ -21,7 +22,7 @@
       color: #fff;
     }
   }
-  
+
   .grid {
     display: grid;
     row-gap: 60px;
@@ -30,25 +31,75 @@
   }
 }
 
-
+.loadMoreWrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  .loadMoreBtn {
+      border: 2px solid #FFFFFF;
+      height: 57px;
+      width: max-content;
+      padding: 7px 32px;
+      color: #FFFFFF;
+      background: #000000;
+      display: flex;
+      align-items: center;
+      border-radius: 100px;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 25px;
+      letter-spacing: 0%;
+      text-align: center;
+      min-width: 172px;
+      gap: 6px;
+      justify-content: center;
+      &:hover {
+          background: #fff;
+          color: #000;
+          svg path{
+            fill: #000;
+          }
+      }
+  }
+}
 
 @media (width <=991px) {
-  .ourPeopleSection { 
-    padding: 60px 0;
+  .ourPeopleSection {
+    padding: 40px 0;
+
     .sectionHeader {
       margin-bottom: 40px;
+
       h2 {
         font-weight: 700;
         font-size: 32px;
         line-height: 40px;
-        margin-bottom: 20px;
+        margin-bottom: 0;
+      }
+
+      p {
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 18px;
+        letter-spacing: 0%;
       }
     }
+
     .grid {
       display: grid;
-      row-gap: 30px;
-      column-gap: 24px;
-      grid-template-columns: repeat(1, minmax(200px, 1fr));
+      row-gap: 16px;
+      column-gap: 16px;
+      grid-template-columns: repeat(2, minmax(152px, 1fr));
+    }
+  }
+  .loadMoreWrapper {
+    margin-top: 24px;
+    .loadMoreBtn {
+        height: 40px;
+        padding: 7px 21px;
+        min-width: 152px;
+        gap: 6px;
+        justify-content: center;
     }
   }
 }

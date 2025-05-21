@@ -68,8 +68,8 @@
 @media (width <=991px) { 
     .card {
         background: #E4E4E4;
-        max-width: 409px;
-        height: 506px;
+        max-width: 172px;
+        height: 213px;
         width: 100%;
     
         .imageWrapper {
@@ -89,32 +89,29 @@
     
         .info {
             position: absolute;
-            bottom: 20px;
-            left: 20px;
-            right: 20px;
-            width: calc(100% - 40px);
+            bottom: 4px;
+            left: 4px;
+            right: 4px;
+            width: calc(100% - 8px);
             background-color: #fff;
-            padding: 20px;
-            border-radius: 10px;
+            padding: 8px;
+            border-radius: 4px;
             display: flex;
-            gap: 20px;
+            gap: 5px;
             justify-content: space-between;
     
             .contactInfo {
                 span {
-                    font-weight: 700;
-                    font-style: italic;
-                    font-size: 24px;
-                    line-height: 32px;
+                    font-size: 14px;
+                    line-height: 16px;
                     text-transform: uppercase;
                     color: #000;
-                    margin-bottom: 10px;
+                    margin-bottom: 0px;
                     display: flex;
                 }
     
                 p {
-                    font-weight: 600;
-                    font-size: 14px;
+                    font-size: 12px;
                     line-height: 100%;
                     letter-spacing: 0%;
                     color: #000;
@@ -124,8 +121,11 @@
             button {
                 border: none;
                 background-color: transparent;
-                width: 32px;
-                height: 32px;
+                width: 20px;
+                height: 20px;
+                img {
+                    width: 20px;
+                }
             }
         }
     

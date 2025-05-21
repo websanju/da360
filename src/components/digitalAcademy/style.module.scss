@@ -1,12 +1,14 @@
 .digitalAcademySection {
   margin-top: 140px;
   margin-bottom: 140px;
+
   &:hover {
     .sliderNavigation {
       position: absolute;
       opacity: 1;
     }
   }
+
   .sectionHeader {
     margin-bottom: 60px;
 
@@ -18,7 +20,7 @@
       letter-spacing: 0%;
       text-align: center;
       color: rgba(0, 0, 0, 1);
-      max-width:674px;
+      max-width: 674px;
       margin: 0 auto 13px;
     }
   }
@@ -27,18 +29,26 @@
   .card {
     .cardImg {
       margin-bottom: 24px;
+
       img {
         width: 100%;
         height: auto;
       }
     }
+
     .cardDescription {
       h3 {
-font-weight: 600;
-font-size: 24px;
-line-height: 36px;
-color: #000;
-min-height: 72px;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 36px;
+        color: #000;
+        min-height: 72px;
+      }
+      p {
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+letter-spacing: 0%;
       }
     }
   }
@@ -63,61 +73,75 @@ min-height: 72px;
 }
 
 .customSlide {
-  max-width: 450px;
+  max-width: 413px;
 }
 
 .sliderNavigation {
-   display: flex;
+  display: flex;
   justify-content: center;
-  gap: 15px; /* Optional: Adjust the space between buttons */
+  gap: 15px;
+  /* Optional: Adjust the space between buttons */
   position: absolute !important;
   top: 210px !important;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 10;
 }
+
 .swiperPrev {
   left: 0px !important;
 }
+
 .swiperNext {
   right: 0px !important;
 }
 
 @media (max-width: 992px) {
   .customSlide {
-    max-width: 320px;
+    max-width: 260px;
   }
-  
+
   .digitalAcademySection {
     margin-top: 60px;
     margin-bottom: 60px;
 
     .sectionHeader {
       margin-bottom: 40px;
+
       h2 {
         font-size: 32px;
         line-height: 34px;
         margin: 0;
       }
+     
     }
 
     .card {
       .cardImg {
         margin-bottom: 24px;
-
+        width: 260px;
+        height: 338px;
         img {
           width: 100%;
-          height: auto;
+          height: 100%;
+          object-fit: cover;
         }
       }
 
       .cardDescription {
         h3 {
           font-weight: 600;
-          font-size: 24px;
-          line-height: 36px;
+          font-size: 16px;
+          line-height: 26px;
           color: #000;
-          min-height: 72px;
+          min-height: auto;
+          margin-bottom: 10px;
+        }
+        p {
+          font-weight: 400;
+          font-size: 12px;
+          line-height: 19px;
+          letter-spacing: 0%;
         }
       }
     }
