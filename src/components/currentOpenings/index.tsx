@@ -60,6 +60,62 @@ const CurrentOpenings = () => {
             </div>
           ))}
         </div>
+        <div className={styles.ourHiringProcess}>
+          <div className="row">
+            <div className="col-lg-12">
+              <div className={styles.subheading}>
+                <h2>Our Hiring Process</h2>
+              </div>
+            </div>
+          </div>
+          <div className={`${styles.row} row`}>
+            <div className="col-lg-4">
+              <div className={styles.ourHiringItem}>
+                <div className={styles.ourHeading}>
+                  <span>01</span>
+                </div>
+                <div className={styles.ourHiringDec}>
+                  <span>CV Submission</span>
+                  <p>
+                    We commence the hiring process by getting to learn more
+                    about you - your skills, experience, interests, & what
+                    drives you.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="col-lg-4">
+              <div className={styles.ourHiringItem}>
+                <div className={styles.ourHeading}>
+                  <span>02</span>
+                </div>
+                <div className={styles.ourHiringDec}>
+                  <span>CV Submission</span>
+                  <p>
+                    We commence the hiring process by getting to learn more
+                    about you - your skills, experience, interests, & what
+                    drives you.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="col-lg-4">
+              <div className={styles.ourHiringItem}>
+                <div className={styles.ourHeading}>
+                  <span>03</span>
+                </div>
+                <div className={styles.ourHiringDec}>
+                  <span>CV Submission</span>
+                  <p>
+                    We commence the hiring process by getting to learn more
+                    about you - your skills, experience, interests, & what
+                    drives you.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   );

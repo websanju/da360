@@ -1,7 +1,9 @@
 .openingsSection {
     padding: 140px 0;
+
     .sectionHeader {
         margin-bottom: 60px;
+
         h2 {
             font-weight: 700;
             font-style: italic;
@@ -10,16 +12,20 @@
             letter-spacing: 0%;
         }
     }
+
     .jobCard {
         background-color: #fff;
         padding: 40px;
         display: flex;
         justify-content: space-between;
+
         &:hover {
             box-shadow: 4px 4px 0px 0px #000000;
             background: #FFEC5E;
             cursor: pointer;
+            transition: all 0.3s ease;
         }
+
         .jobDec {
             h5 {
                 font-weight: 500;
@@ -29,6 +35,7 @@
                 color: #000;
                 margin-bottom: 8px;
             }
+
             p {
                 font-weight: 400;
                 font-size: 18px;
@@ -36,6 +43,7 @@
                 color: #000;
             }
         }
+
         .arrow {
             display: flex;
             align-items: center;
@@ -46,6 +54,63 @@
     .row {
         --bs-gutter-x: 33px;
         --bs-gutter-y: 28px;
+    }
+
+    .ourHiringProcess {
+        margin-top: 100px;
+
+        .subheading {
+            margin-bottom: 60px;
+
+            h2 {
+                font-weight: 400;
+                font-style: italic;
+                font-size: 40px;
+                line-height: 60px;
+                color: #201116;
+            }
+        }
+
+        .row {
+            --bs-gutter-x: 77px;
+        }
+
+        .ourHiringItem {
+            .ourHeading {
+                border-bottom: 3px solid #000000;
+                margin-bottom: 30px;
+
+                span {
+                    font-weight: 500;
+                    font-size: 50px;
+                    line-height: 60px;
+                    color: #201116;
+                    padding-bottom: 28px;
+                    display: block;
+                }
+            }
+
+            .ourHiringDec {
+                span {
+                    font-weight: 500;
+                    font-size: 24px;
+                    line-height: 100%;
+                    letter-spacing: 0%;
+                    color: #201116;
+                    margin-bottom: 10px;
+                    display: block;
+                }
+
+                p {
+                    font-weight: 300;
+                    font-size: 16px;
+                    line-height: 28px;
+                    letter-spacing: 0%;
+                    color: #000;
+                }
+            }
+        }
+
     }
 }
 
