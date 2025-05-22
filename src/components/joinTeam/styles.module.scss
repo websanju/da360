@@ -1,0 +1,58 @@
+.teamSection {
+    background-size: cover;
+    min-height: 800px;
+    position: relative;
+    padding: 60px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-position: center;
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background: rgba(0, 0, 0, 0.5);
+        z-index: 1;
+    }
+
+    .container {
+        position: relative;
+        z-index: 11;
+
+        .teamInfo {
+            text-align: center;
+            span {
+                color: #FFFFFF;
+                font-weight: 500;
+                font-size: 24px;
+                line-height: normal;
+                text-align: center;
+                margin-bottom: 9px;
+            }
+
+            h1 {
+                font-weight: 400;
+                font-size: 80px;
+                line-height: 120%;
+                text-align: center;
+                color: #FFFFFF;
+                margin-bottom: 18px;
+            }
+
+            p {
+                font-weight: 300;
+                font-size: 28px;
+                line-height: 41px;
+                letter-spacing: 0%;
+                text-align: center;
+                color: #FFFFFF;
+                max-width: 1065px;
+                margin: 0 auto;
+            }
+        }
+    }
+}

@@ -1,0 +1,52 @@
+.openingsSection {
+    padding: 140px 0;
+    .sectionHeader {
+        margin-bottom: 60px;
+        h2 {
+            font-weight: 700;
+            font-style: italic;
+            font-size: 48px;
+            line-height: 60px;
+            letter-spacing: 0%;
+        }
+    }
+    .jobCard {
+        background-color: #fff;
+        padding: 40px;
+        display: flex;
+        justify-content: space-between;
+        &:hover {
+            box-shadow: 4px 4px 0px 0px #000000;
+            background: #FFEC5E;
+            cursor: pointer;
+        }
+        .jobDec {
+            h5 {
+                font-weight: 500;
+                font-size: 28px;
+                line-height: 100%;
+                letter-spacing: 0%;
+                color: #000;
+                margin-bottom: 8px;
+            }
+            p {
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 100%;
+                color: #000;
+            }
+        }
+        .arrow {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+
+    .row {
+        --bs-gutter-x: 33px;
+        --bs-gutter-y: 28px;
+    }
+}
+
+@media (width <=992px) {}
