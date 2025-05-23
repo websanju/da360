@@ -160,5 +160,73 @@
                 text-align: center;
             }
         }
+
+        .testimonial {
+            flex-direction: column;
+            gap: 24px;
+            .imageWrapper {
+                width: 240px;
+                height: 240px;
+                margin: 0 auto;
+                img {
+                    width: 100%;
+                }
+            }
+        }
+
+        .content {
+    
+            h3 {
+                font-size: 24px;
+                color: #201116;
+                margin-bottom: 28px;
+                text-align: center;
+            }
+    
+            p {
+                font-weight: 300;
+                font-size: 14px;
+                line-height: 28px;
+                color: #000000;
+                margin-bottom: 40px;
+                strong {
+                    font-weight: 600;
+                }
+            }
+        }
+
+        .testimonialMessage {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            .icon {
+                display: inline-flex;
+            }
+        }
+
+        .sliderNavigation {
+            bottom: 0;
+        }
+    }
+
+    .sliderWrapper {
+     
+
+       
+
+        .sliderNavigation {
+            position: absolute;
+            opacity: 1;
+            width: 100%;
+            transition: 0.2s ease-in-out;
+
+            button {
+                width: 20px !important;
+                height: 20px !important;
+                border-radius: 50px;
+                box-shadow: none;
+                border: none;
+            }
+        }
     }
 }
