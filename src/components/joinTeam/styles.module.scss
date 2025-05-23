@@ -56,3 +56,38 @@
         }
     }
 }
+
+@media (width <=991px) {
+    .teamSection { 
+        min-height: 450px;
+        align-items: flex-end;
+        .container {
+            position: relative;
+            z-index: 11;
+    
+            .teamInfo {
+                text-align: center;
+                span {
+                    color: #FFFFFF;
+                    font-size: 14px;
+                    margin-bottom: 4px;
+                }
+    
+                h1 {
+                    font-weight: 400;
+                    font-size:32px;
+                    line-height: 120%;
+                    margin-bottom: 7px;
+                }
+    
+                p {
+                    font-weight: 300;
+                    font-size: 12px;
+                    line-height: 20px;
+                    color: #FFFFFF;
+                    max-width: 298px;
+                }
+            }
+        }
+    }
+ }
