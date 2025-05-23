@@ -1,0 +1,103 @@
+.teamSpeaksSlider {
+    padding-bottom: 140px;
+
+    .headerSection {
+        margin-bottom: 60px;
+
+        h2 {
+            font-weight: 700;
+            font-style: italic;
+            font-size: 48px;
+            line-height: 60px;
+            color: #201116;
+        }
+    }
+
+    .testimonial {
+        display: flex;
+        gap: 60px;
+        align-items: stretch;
+    }
+
+    .imageWrapper {
+        width: 408px;
+        height: 407px;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        background-color: #FFEC5E;
+
+        img {
+            height: auto;
+        }
+    }
+
+    .content {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        h3 {
+            font-weight: 500;
+            font-size: 40px;
+            line-height: normal;
+            color: #201116;
+            margin-bottom: 58px;
+        }
+
+        p {
+            font-weight: 300;
+            font-size: 20px;
+            line-height: 33px;
+            color: #000000;
+
+        }
+    }
+    .sliderWrapper {
+        width: 100%;
+        position: relative;
+    
+        &:hover {
+            .sliderNavigation {
+                position: absolute;
+                opacity: 1;
+            }
+        }
+    
+        .sliderNavigation {
+            position: absolute;
+            opacity: 1;
+            width: 100%;
+            transition: 0.2s ease-in-out;
+    
+            button {
+                width: 50px;
+                height: 50px;
+                right: 25px;
+                border-radius: 50px;
+                box-shadow: none;
+                border: none;
+            }
+        }
+    }
+    .sliderNavigation {
+        display: flex;
+        justify-content: flex-end;
+        gap: 15px;
+        /* Optional: Adjust the space between buttons */
+        position: absolute !important;
+        bottom:50px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 10;
+    }
+    
+    .swiperPrev {
+        right: 80px !important;
+    left: auto !important;
+    }
+    
+    .swiperNext {
+        right: 0px !important;
+    }
+    
+}
