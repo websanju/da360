@@ -442,17 +442,8 @@
     width: 100%;
     position: relative;
 
-    &:hover {
-        .sliderNavigation {
-            position: absolute;
-            opacity: 1;
-        }
-    }
-
     .sliderNavigation {
-        position: absolute;
-        opacity: 0;
-        width: 100%;
+        width: max-content;
         transition: 0.2s ease-in-out;
 
         button {
@@ -470,10 +461,6 @@
     display: flex;
     justify-content: center;
     gap: 15px;
-    /* Optional: Adjust the space between buttons */
-    position: absolute !important;
-    top: 330px !important;
-    left: 50%;
     transform: translate(-50%, -50%);
     z-index: 10;
 }
@@ -561,12 +548,57 @@
     }
 }
 
-@media (width <=991px) { 
+.sliderControls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    max-width: max-content;
+    margin: 40px auto 0;
+    gap: 24px;
+
+    button {
+        width: 32px;
+        height: 32px;
+        font-size: 1.5rem;
+        border: 2px solid #000;
+        background: #fff !important;
+        cursor: pointer;
+        transition: background 0.3s;
+        position: relative;
+        margin-top: 0;
+        color: rgb(0, 0, 0) !important;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &:hover {
+            background-color: #f0f0f0;
+        }
+        &:disabled {
+            opacity: 0.4;
+        }
+    }
+
+    .swiperScrollbar {
+        margin-top: 0 !important;
+        left: auto;
+        top: auto;
+        top: auto;
+        bottom: auto;
+        position: relative !important;
+    }
+
+ 
+}
+
+@media (width <=991px) {
     .communityMeetupSection {
         padding: 50px 0;
         background-color: #000;
+
         .sectionHeader {
             margin-bottom: 30px;
+
             h2 {
                 font-size: 24px;
                 line-height: 32px;
@@ -574,6 +606,7 @@
                 max-width: 192px;
                 margin: 0 auto 16px;
             }
+
             p {
                 font-size: 12px;
                 line-height: normal;
@@ -581,5 +614,5 @@
                 margin: 0 auto;
             }
         }
-    } 
+    }
 }

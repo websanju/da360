@@ -345,18 +345,7 @@ const LifeAtDA360Gallery = () => {
       ) : (
         <div ref={containerRef} className={styles.sliderWrapper}>
           <div className={styles.sliderInnerWrapper}>
-            <div className="container position-relative">
-              <div className={styles.sliderNavigation}>
-                <button
-                  className="swiper-button-prev"
-                  id="customPrev11"
-                ></button>
-                <button
-                  className="swiper-button-next"
-                  id="customNext11"
-                ></button>
-              </div>
-            </div>
+            <div className="container position-relative"></div>
             <Swiper
               modules={[Navigation, Scrollbar]}
               slidesPerView="auto"
@@ -381,7 +370,38 @@ const LifeAtDA360Gallery = () => {
             </Swiper>
           </div>
           {/* Custom scrollbar */}
-          <div id="customScrollbar18" className="swiper-scrollbar"></div>
+          {/* <div className={styles.sliderNavigation}>
+            <button className="swiper-button-prev" id="customPrev11"></button>
+            <button className="swiper-button-next" id="customNext11"></button>
+          </div>
+          <div id="customScrollbar18" className="swiper-scrollbar"></div> */}
+
+          <div className={styles.sliderControls}>
+            <button id="customPrev11">
+              <Image
+                src={"/images/icons/sliderLeft.svg"}
+                alt={"leftArrow"}
+                width={16}
+                height={16}
+                className={styles.cardImage}
+              />
+            </button>
+            <div className={styles.sliderScrollbarBox}>
+              <div
+                id="customScrollbar18"
+                className={`${styles.swiperScrollbar} swiper-scrollbar`}
+              ></div>
+            </div>
+            <button id="customNext11">
+              <Image
+                src={"/images/icons/sliderRight.svg"}
+                alt={"leftArrow"}
+                width={16}
+                height={16}
+                className={styles.cardImage}
+              />
+            </button>
+          </div>
         </div>
       )}
       <Lightbox
