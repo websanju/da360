@@ -90,11 +90,11 @@ const CurrentOpenings = () => {
                   <span>02</span>
                 </div>
                 <div className={styles.ourHiringDec}>
-                  <span>CV Submission</span>
+                  <span>Skill Assessment</span>
                   <p>
-                    We commence the hiring process by getting to learn more
-                    about you - your skills, experience, interests, & what
-                    drives you.
+                    Depending on the role you’re applying for, we’ll send you an
+                    interesting assignment with a stipulated deadline, a must-do
+                    for the next phase.
                   </p>
                 </div>
               </div>
@@ -105,11 +105,10 @@ const CurrentOpenings = () => {
                   <span>03</span>
                 </div>
                 <div className={styles.ourHiringDec}>
-                  <span>CV Submission</span>
+                  <span>Final Interview</span>
                   <p>
-                    We commence the hiring process by getting to learn more
-                    about you - your skills, experience, interests, & what
-                    drives you.
+                    Once you clear the assessment phase, you will be then
+                    invited for the final round, aka, the Interview!
                   </p>
                 </div>
               </div>

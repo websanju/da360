@@ -76,3 +76,36 @@
         padding: 40px 40px 60px;
     }
 }
+
+@media (width <=991px) {
+    .whyWorkSection {
+        margin: 0 auto 60px;
+    }
+    .contentImg {
+        max-width: 100%;
+        padding-right: calc(var(--bs-gutter-x) * .5);
+        min-height: 244px;
+    }
+    .contentBox { 
+        width: auto;
+        background-color: #ffffff;
+        h2 {
+            font-size: 24px;
+            line-height: 32px;
+            margin-bottom: 16px;
+        }
+        p {
+            font-size: 12px;
+            line-height: 18px;
+        }
+        .contentInfo { 
+            padding: 20px;
+            background-color: #e5003d;
+        }
+        .ctaBtn {
+            margin-top: 26px;
+            font-size: 14px;
+            line-height: 24px;
+        }
+    }
+ }
