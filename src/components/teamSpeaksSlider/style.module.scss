@@ -36,6 +36,7 @@
         display: flex;
         justify-content: space-between;
         flex-direction: column;
+
         h3 {
             font-weight: 500;
             font-size: 40px;
@@ -49,26 +50,29 @@
             font-size: 20px;
             line-height: 33px;
             color: #000000;
-
+            strong {
+                font-weight: 600;
+            }
         }
     }
+
     .sliderWrapper {
         width: 100%;
         position: relative;
-    
+
         &:hover {
             .sliderNavigation {
                 position: absolute;
                 opacity: 1;
             }
         }
-    
+
         .sliderNavigation {
             position: absolute;
             opacity: 1;
             width: 100%;
             transition: 0.2s ease-in-out;
-    
+
             button {
                 width: 50px;
                 height: 50px;
@@ -79,25 +83,64 @@
             }
         }
     }
+
     .sliderNavigation {
         display: flex;
         justify-content: flex-end;
         gap: 15px;
         /* Optional: Adjust the space between buttons */
         position: absolute !important;
-        bottom:50px;
+        bottom: 50px;
         left: 50%;
         transform: translate(-50%, -50%);
         z-index: 10;
     }
-    
+
     .swiperPrev {
         right: 80px !important;
-    left: auto !important;
+        left: auto !important;
     }
-    
+
     .swiperNext {
         right: 0px !important;
     }
-    
+
+
+    .testimonialName {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 100%;
+        color: #201116;
+        margin-bottom: 4px;
+    }
+
+    .testimonialRole {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 100%;
+        color: #201116;
+    }
+
+    .fontSlab {
+        font-weight: 400;
+        font-size: 160px;
+        line-height: 100%;
+    }
+
+    .testimonialMessage {
+        .icon {
+            width: 62px;
+            position: relative;
+            height: 24px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+          img {
+            width: 50px;
+            height: 38px;
+            position: absolute;
+          }
+        }
+      }
+
 }

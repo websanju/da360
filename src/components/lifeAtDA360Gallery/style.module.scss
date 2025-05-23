@@ -1,0 +1,585 @@
+.communityMeetupSection {
+    padding: 100px 0;
+    background: #FFFFFF;
+
+    .sectionHeader {
+        margin-bottom: 60px;
+
+        h2 {
+            font-weight: 700;
+            font-style: italic;
+            font-size: 48px;
+            line-height: 60px;
+            text-align: center;
+            margin-bottom: 0;
+            color: #000;
+        }
+
+        p {
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 24px;
+            letter-spacing: 0%;
+            text-align: center;
+            color: #fff;
+            max-width: 682px;
+            margin: 0 auto;
+        }
+    }
+}
+
+.swiper-slide {
+    width: auto !important; // Enable variable width
+}
+
+.firstItems {
+    max-width: 559px;
+    width: auto !important;
+    position: relative;
+    cursor: pointer;
+
+    .cardLarge {
+        width: 100%;
+        height: 325px;
+        position: relative;
+        margin-bottom: 20px;
+        overflow: hidden;
+        border-radius: 10px;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .cardContent {
+            position: absolute;
+            bottom: 16px;
+            margin: 0 16px;
+            background-color: #fff;
+            width: calc(100% - 32px);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 10px;
+            padding: 12px 16px;
+            border: 1px solid #000000;
+            border-radius: 3px;
+
+            .cardTitle {
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 100%;
+                letter-spacing: 0%;
+                text-align: center;
+            }
+
+            .cardLocation {
+                font-weight: 500;
+                font-size: 12px;
+                line-height: 100%;
+                letter-spacing: 2%;
+                text-align: center;
+            }
+
+        }
+    }
+
+    .smallcardGroup {
+        display: flex;
+        gap: 20px;
+
+        .smallcard {
+            width: 100%;
+            height: 325px;
+            position: relative;
+            margin-bottom: 20px;
+            overflow: hidden;
+            border-radius: 10px;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                border-radius: 10px;
+            }
+
+            .cardContent {
+                position: absolute;
+                bottom: 16px;
+                margin: 0 16px;
+                background-color: #fff;
+                width: calc(100% - 32px);
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                gap: 10px;
+                padding: 12px 16px;
+                border: 1px solid #000000;
+                border-radius: 3px;
+
+                .cardTitle {
+                    font-weight: 600;
+                    font-size: 14px;
+                    line-height: 100%;
+                    letter-spacing: 0%;
+                    text-align: center;
+                }
+
+                .cardLocation {
+                    font-weight: 500;
+                    font-size: 12px;
+                    line-height: 100%;
+                    letter-spacing: 2%;
+                    text-align: center;
+                }
+
+            }
+        }
+
+        .smallcardColumn {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .vsmallCard {
+            width: 100%;
+            height: 185px;
+            position: relative;
+            overflow: hidden;
+            border-radius: 10px;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                border-radius: 10px;
+            }
+
+            .cardContent {
+                position: absolute;
+                bottom: 16px;
+                margin: 0 16px;
+                background-color: #fff;
+                width: calc(100% - 32px);
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                gap: 10px;
+                padding: 12px 16px;
+                border: 1px solid #000000;
+                border-radius: 3px;
+
+                .cardTitle {
+                    font-weight: 600;
+                    font-size: 14px;
+                    line-height: 100%;
+                    letter-spacing: 0%;
+                    text-align: center;
+                }
+
+                .cardLocation {
+                    font-weight: 500;
+                    font-size: 12px;
+                    line-height: 100%;
+                    letter-spacing: 2%;
+                    text-align: center;
+                }
+
+            }
+        }
+
+        .meetupsCard {
+            background: #FFDD31;
+            width: 270px;
+            height: 120px;
+            border-radius: 10px;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: left;
+            align-items: flex-start;
+            padding: 0 16px;
+
+            span {
+                font-weight: 700;
+                font-size: 48px;
+                line-height: 100%;
+                text-align: center;
+                color: #000000;
+            }
+
+            p {
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 100%;
+                text-align: center;
+            }
+        }
+    }
+}
+
+.secondItems {
+    max-width: 397px;
+    position: relative;
+    cursor: pointer;
+
+    .cardLarge {
+        width: 100%;
+        height: 670px;
+        position: relative;
+        margin-bottom: 20px;
+        overflow: hidden;
+        border-radius: 10px;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .cardContent {
+            position: absolute;
+            bottom: 16px;
+            margin: 0 16px;
+            background-color: #fff;
+            width: calc(100% - 32px);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 10px;
+            padding: 12px 16px;
+            border: 1px solid #000000;
+            border-radius: 3px;
+
+            .cardTitle {
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 100%;
+                letter-spacing: 0%;
+                text-align: center;
+            }
+
+            .cardLocation {
+                font-weight: 500;
+                font-size: 12px;
+                line-height: 100%;
+                letter-spacing: 2%;
+                text-align: center;
+            }
+
+        }
+    }
+
+}
+
+.thirdItems {
+    max-width: 559px;
+    width: auto !important;
+    position: relative;
+    cursor: pointer;
+
+    .cardLarge {
+        width: 100%;
+        height: 325px;
+        position: relative;
+        margin-bottom: 20px;
+        overflow: hidden;
+        border-radius: 10px;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .cardContent {
+            position: absolute;
+            bottom: 16px;
+            margin: 0 16px;
+            background-color: #fff;
+            width: calc(100% - 32px);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 10px;
+            padding: 12px 16px;
+            border: 1px solid #000000;
+            border-radius: 3px;
+
+            .cardTitle {
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 100%;
+                letter-spacing: 0%;
+                text-align: center;
+            }
+
+            .cardLocation {
+                font-weight: 500;
+                font-size: 12px;
+                line-height: 100%;
+                letter-spacing: 2%;
+                text-align: center;
+            }
+
+        }
+    }
+
+    .smallcardGroup {
+        display: flex;
+        gap: 20px;
+
+        .smallcard {
+            width: 100%;
+            height: 325px;
+            position: relative;
+            margin-bottom: 20px;
+            overflow: hidden;
+            border-radius: 10px;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                border-radius: 10px;
+            }
+
+            .cardContent {
+                position: absolute;
+                bottom: 16px;
+                margin: 0 16px;
+                background-color: #fff;
+                width: calc(100% - 32px);
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                gap: 10px;
+                padding: 12px 16px;
+                border: 1px solid #000000;
+                border-radius: 3px;
+
+                .cardTitle {
+                    font-weight: 600;
+                    font-size: 14px;
+                    line-height: 100%;
+                    letter-spacing: 0%;
+                    text-align: center;
+                }
+
+                .cardLocation {
+                    font-weight: 500;
+                    font-size: 12px;
+                    line-height: 100%;
+                    letter-spacing: 2%;
+                    text-align: center;
+                }
+
+            }
+        }
+
+        .smallcardColumn {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .vsmallCard {
+            width: 100%;
+            height: 185px;
+            position: relative;
+            overflow: hidden;
+            border-radius: 10px;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                border-radius: 10px;
+            }
+
+            .cardContent {
+                position: absolute;
+                bottom: 16px;
+                margin: 0 16px;
+                background-color: #fff;
+                width: calc(100% - 32px);
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                gap: 10px;
+                padding: 12px 16px;
+                border: 1px solid #000000;
+                border-radius: 3px;
+
+                .cardTitle {
+                    font-weight: 600;
+                    font-size: 14px;
+                    line-height: 100%;
+                    letter-spacing: 0%;
+                    text-align: center;
+                }
+
+                .cardLocation {
+                    font-weight: 500;
+                    font-size: 12px;
+                    line-height: 100%;
+                    letter-spacing: 2%;
+                    text-align: center;
+                }
+
+            }
+        }
+    }
+}
+
+.sliderWrapper {
+    width: 100%;
+    position: relative;
+
+    &:hover {
+        .sliderNavigation {
+            position: absolute;
+            opacity: 1;
+        }
+    }
+
+    .sliderNavigation {
+        position: absolute;
+        opacity: 0;
+        width: 100%;
+        transition: 0.2s ease-in-out;
+
+        button {
+            width: 50px;
+            height: 50px;
+            right: 25px;
+            border-radius: 50px;
+            box-shadow: none;
+            border: none;
+        }
+    }
+}
+
+.sliderNavigation {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    /* Optional: Adjust the space between buttons */
+    position: absolute !important;
+    top: 330px !important;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+}
+
+.swiperPrev {
+    left: 0px !important;
+}
+
+.swiperNext {
+    right: 0px !important;
+}
+
+
+.mobileCardBox {
+    .mobileCardList {
+        .loadMoreWrapper {
+            display: flex;
+            justify-content: center;
+
+            .loadMoreBtn {
+                border: 2px solid #FFFFFF;
+                height: 40px;
+                width: max-content;
+                padding: 7px 32px;
+                color: #FFFFFF;
+                background: #000000;
+                display: flex;
+                align-items: center;
+                border-radius: 100px;
+
+                &:hover {
+                    background: #fff;
+                    color: #000;
+                }
+            }
+        }
+    }
+}
+
+.mobileCard {
+    width: 100%;
+    height: 240px;
+    position: relative;
+    margin-bottom: 24px;
+    overflow: hidden;
+    border-radius: 10px;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+
+    .cardContent {
+        position: absolute;
+        bottom: 16px;
+        margin: 0 16px;
+        background-color: #fff;
+        width: calc(100% - 32px);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 10px;
+        padding: 12px 16px;
+        border: 1px solid #000000;
+        border-radius: 3px;
+
+        .cardTitle {
+            font-weight: 600;
+            font-size: 12px;
+            line-height: 100%;
+            letter-spacing: 0%;
+            text-align: center;
+        }
+
+        .cardLocation {
+            font-weight: 500;
+            font-size: 10px;
+            line-height: 100%;
+            letter-spacing: 2%;
+            text-align: center;
+        }
+
+    }
+}
+
+@media (width <=991px) { 
+    .communityMeetupSection {
+        padding: 50px 0;
+        background-color: #000;
+        .sectionHeader {
+            margin-bottom: 30px;
+            h2 {
+                font-size: 24px;
+                line-height: 32px;
+                color: #fff;
+                max-width: 192px;
+                margin: 0 auto 16px;
+            }
+            p {
+                font-size: 12px;
+                line-height: normal;
+                max-width: 304px;
+                margin: 0 auto;
+            }
+        }
+    } 
+}

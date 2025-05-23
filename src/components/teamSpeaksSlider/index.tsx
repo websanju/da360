@@ -18,15 +18,13 @@ const testimonials: Testimonial[] = [
   {
     name: "Jyotsana",
     role: "Sales Manager",
-    message:
-      "From starting as an individual contributor to becoming a part of the design leadership team, I have always had the opportunity and platform at DigitalAcademy360, to push myself and",
+    message: `From starting as an individual contributor to becoming a part of the design leadership team, I have always had the opportunity and platform at <strong> DigitalAcademy360 </strong> , to push myself and`,
     image: "/images/jyotsana.png",
   },
   {
     name: "Jyotsana",
     role: "Sales Manager",
-    message:
-      "From starting as an individual contributor to becoming a part of the design leadership team, I have always had the opportunity and platform at DigitalAcademy360, to push myself and",
+    message: `From starting as an individual contributor to becoming a part of the design leadership team, I have always had the opportunity and platform at <strong>DigitalAcademy360</strong> , to push myself and`,
     image: "/images/jyotsana.png",
   },
 ];
@@ -68,7 +66,7 @@ export default function TeamSpeaksSlider() {
                 <div className={styles.testimonial}>
                   <div className={styles.imageWrapper}>
                     <Image
-                      src={testimonial.image}
+                      src={"/images/jyotsana.png"}
                       alt={testimonial.name}
                       width={367}
                       height={300}
@@ -78,14 +76,31 @@ export default function TeamSpeaksSlider() {
                   <div className={styles.content}>
                     <div>
                       <h3>Explore newer ways</h3>
-                      <p>
-                        <span>“</span>
-                        {testimonial.message}
+                      <p className={styles.testimonialMessage}>
+                        <span className={styles.icon}>
+                          {" "}
+                          <Image
+                            src={"./images/icons/q.svg"}
+                            alt={testimonial.name}
+                            width={71}
+                            height={71}
+                            className="object-cover rounded"
+                          />
+                        </span>
+                        <span
+                          dangerouslySetInnerHTML={{
+                            __html: testimonial.message,
+                          }}
+                        />
                       </p>
                     </div>
                     <div>
-                      <p>{testimonial.name}</p>
-                      <p>{testimonial.role}</p>
+                      <div className={styles.testimonialName}>
+                        {testimonial.name}
+                      </div>
+                      <div className={styles.testimonialRole}>
+                        {testimonial.role}
+                      </div>
                     </div>
                   </div>
                 </div>
