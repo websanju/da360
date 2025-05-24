@@ -207,6 +207,9 @@
         .sliderNavigation {
             bottom: 0;
         }
+        .swiperPrev {
+            right: 50px !important;
+        }
     }
 
     .sliderWrapper {
@@ -229,4 +232,6 @@
             }
         }
     }
+
+   
 }

@@ -1,0 +1,124 @@
+.journeySection {
+    margin-top: 140px;
+
+    .headerSection {
+        margin-bottom: 60px;
+
+        h2 {
+            font-weight: 700;
+            font-style: italic;
+            font-size: 48px;
+            line-height: 60px;
+            color: #201116;
+            margin-bottom: 26px;
+        }
+
+        p {
+            font-weight: 500;
+            font-size: 22px;
+            line-height: normal;
+            color: #000;
+        }
+    }
+
+    .row {
+        --bs-gutter-x: 32px;
+    }
+
+    .cardBox {
+        border: 1px solid #000000;
+        padding: 30px 40px 60px;
+        border-radius: 10px;
+
+        .cardImg {
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            img {
+                width: auto;
+            }
+        }
+
+        h3 {
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 25px;
+            text-align: center;
+            text-transform: uppercase;
+            color: #070707;
+            margin-bottom: 16px;
+        }
+
+        p {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 20px;
+            text-align: center;
+            color: #070707;
+        }
+
+    }
+}
+
+@media (width <=992px) { 
+    .journeySection {
+        margin-top: 60px; 
+        .headerSection {
+            margin-bottom: 24px;
+            h2 {
+                font-size: 24px;
+                line-height: 32px;
+                margin-bottom: 20px;
+                text-align: center;
+            }
+    
+            p {
+                font-weight: 500;
+                font-size: 12px;
+                line-height:18px;
+                text-align: center;
+                max-width: 313px;
+                margin: 0 auto;
+            }
+        }
+        .row {
+            --bs-gutter-x: 32px;
+            --bs-gutter-y: 16px;
+        }
+
+        .cardBox {
+            padding: 20px;
+            display: flex;
+            gap: 20px;
+            .cardImg {
+                margin-bottom: 0;
+                min-width: 96px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                img {
+                    width: auto;
+                    max-width: 96px;
+                    max-height: 96px;
+                    height: 96px;
+                }
+            }
+    
+            h3 {
+                font-size: 16px;
+                line-height: 25px;
+                text-align: left;
+                margin-bottom: 10px;
+            }
+    
+            p {
+                font-weight: 400;
+                font-size: 12px;
+                text-align: left;
+            }
+    
+        }
+    
+    }
+}
