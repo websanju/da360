@@ -1,10 +1,13 @@
+"use client";
+import { useState, useEffect } from "react";
 import SportCardSlider from "@/components/widgets/sportCardSlider";
 import styles from "./style.module.scss";
+import LeftArrow from "@components/Ui/svg/leftArrow";
 
 const sportData = [
   {
     title: "Cricket",
-    images: ["/images/sports/cricket1.png"],
+    images: ["/images/sports/cricket1.png", "/images/sports/cricket1.png"],
     color: "#FFD700",
   },
   {
@@ -14,17 +17,17 @@ const sportData = [
   },
   {
     title: "Foosball",
-    images: ["/images/sports/foosball.png", "/images/sports/foosball.png"],
+    images: ["/images/sports/foosball.png"],
     color: "#32CD32",
   },
   {
     title: "Badminton",
-    images: ["/images/sports/badminton.png", "/images/sports/badminton.png"],
+    images: ["/images/sports/badminton.png"],
     color: "#FFB6C1",
   },
   {
     title: "Table Tennis",
-    images: ["/images/sports/table.png", "/images/sports/table.png"],
+    images: ["/images/sports/table.png"],
     color: "#FFA500",
   },
   {
@@ -35,6 +38,25 @@ const sportData = [
 ];
 
 export default function SportsGrid() {
+  const [visibleCount, setVisibleCount] = useState(sportData.length);
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      const mobile = window.innerWidth <= 768;
+      setIsMobile(mobile);
+      setVisibleCount(mobile ? 4 : sportData.length);
+    };
+
+    handleResize(); // Initial run
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+  const handleLoadMore = () => {
+    setVisibleCount(sportData.length);
+  };
+
   return (
     <section className={styles.sportCardSection}>
       <div className="container">
@@ -44,13 +66,14 @@ export default function SportsGrid() {
               <h2>Sports Event</h2>
               <p>
                 Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been.
+                industry.
               </p>
             </div>
           </div>
         </div>
+
         <div className={styles.gridCards}>
-          {sportData.map((item, idx) => (
+          {sportData.slice(0, visibleCount).map((item, idx) => (
             <SportCardSlider
               key={idx}
               title={item.title}
@@ -59,6 +82,14 @@ export default function SportsGrid() {
             />
           ))}
         </div>
+
+        {isMobile && visibleCount < sportData.length && (
+          <div className={styles.loadMoreAction}>
+            <button onClick={handleLoadMore} className={styles.loadMoreBtn}>
+              Load More <LeftArrow />
+            </button>
+          </div>
+        )}
       </div>
     </section>
   );
