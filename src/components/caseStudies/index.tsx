@@ -7,8 +7,8 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import styles from "./style.module.scss";
-import Image from "next/image";
 import { auto } from "@popperjs/core";
+import CaseStudiesCard from "@components/widgets/caseStudiesCard";
 // import LeftArrow from "@components/Ui/svg/leftArrow";
 
 const caseStudies = [
@@ -145,34 +145,7 @@ export default function CaseStudiesSlider() {
           >
             {caseStudies.map((study) => (
               <SwiperSlide key={study.id} className={styles.customSlide}>
-                <div className={styles.card}>
-                  <div className={styles.cardImg}>
-                    <Image
-                      src={study.logo}
-                      alt={study.title}
-                      width={82}
-                      height={62}
-                      className={styles.logo}
-                    />
-                  </div>
-                  <div className={styles.cardDescription}>
-                    <h3>{study.title}</h3>
-                    <p className={styles.desc}>
-                      {study.description} <a href="#">Know More</a>
-                    </p>
-                  </div>
-                  <div className={styles.separator}></div>
-                  <div className={styles.skills}>
-                    <span className={styles.skillsLable}>Skills Learned</span>
-                    <div className={styles.tags}>
-                      {study.tags.map((tag, idx) => (
-                        <span key={idx} className={styles.tag}>
-                          {tag}
-                        </span>
-                      ))}
-                    </div>
-                  </div>
-                </div>
+                <CaseStudiesCard study={study} />
               </SwiperSlide>
             ))}
           </Swiper>

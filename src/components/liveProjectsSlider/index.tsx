@@ -177,12 +177,12 @@ export default function LiveProjectsSlider() {
             prevEl: "#customPrev8",
             nextEl: "#customNext8",
           }}
-          pagination={{
-            el: ".swiper-pagination",
-            clickable: true,
-            renderBullet: (index, className) =>
-              `<span class="${className}">${index + 1}</span>`,
-          }}
+          // pagination={{
+          //   el: ".swiper-pagination",
+          //   clickable: true,
+          //   renderBullet: (index, className) =>
+          //     `<span class="${className}">${index + 1}</span>`,
+          // }}
           breakpoints={{
             0: {
               // slidesPerView: 1.2,

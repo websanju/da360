@@ -517,6 +517,28 @@ select {
   }
 }
 
+.customScrollbarWhite {
+  width: 400px;
+  margin: 0 auto 0;
+  /* 👈 center horizontally */
+  height: 6px;
+  background:#9E9E9E !important;
+  border-radius: 5px;
+  position: relative;
+
+  .swiper-scrollbar-drag {
+    border-radius: 5px;
+    background:#fff !important;
+    cursor: pointer;
+  }
+}
+
+.controlsWhite {
+  .swiper-button-disabled {
+    opacity: 0.6;
+  }
+}
+
 .swiper-button-prev,
 .swiper-button-next {
   color: rgb(255, 255, 255) !important;
@@ -661,6 +683,11 @@ select {
    }
    #customScrollbar18 {
     width: 200px;
+   }
+   .customScrollbarWhite {width: 200px; }
+   .swiper-scrollbar {
+    width: 200px !important;
+    margin: 0 auto;
    }
 }
 
