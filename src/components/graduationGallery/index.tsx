@@ -28,8 +28,8 @@ const GraduationGallery: React.FC = () => {
               </h2>
 
               <p>
-                Lorem Ipsum is simply dummy text of the printing and <br />
-                typesetting industry. Lorem Ipsum has been.
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been.
               </p>
             </div>
           </div>

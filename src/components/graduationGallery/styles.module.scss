@@ -3,6 +3,7 @@
 
     .sectionHeader {
         margin-bottom: 60px;
+
         h2 {
             font-weight: 700;
             font-style: italic;
@@ -16,7 +17,7 @@
         p {
             font-weight: 500;
             font-size: 16px;
-            line-height:normal;
+            line-height: normal;
             letter-spacing: 0%;
             text-align: center;
             max-width: 604px;
@@ -36,6 +37,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
+
         img {
             object-fit: cover;
             width: 100%;
@@ -49,7 +51,7 @@
         justify-content: center;
         margin: 40px auto 0;
         gap: 24px;
-    
+
         button {
             border: 2px solid rgba(0, 0, 0, 1);
             width: 28px;
@@ -62,3 +64,37 @@
         }
     }
 }
+
+@media (width <=991px) { 
+    .gallerySection { 
+        padding: 60px 0; 
+        .sectionHeader {
+            margin-bottom: 24px;
+            h2 {
+                font-size: 24px;
+                line-height: normal;
+                margin-bottom: 0px;
+            }
+    
+            p {
+                font-size: 14px;
+                max-width: 304px;
+                margin: 0 auto;
+            }
+        }
+        .slide {
+            max-width: 240px;
+            min-height: 166px;
+        }
+        .galleryItem {
+            height: 166px;
+            min-height: 166px;
+            width: 100%;
+            img {
+                object-fit: cover;
+                width: 100%;
+                object-fit: contain;
+            }
+        }
+    }
+ }
