@@ -1,0 +1,35 @@
+.sportCardSection {
+    background: #E10F33;
+    padding: 100px 0;
+
+    .sectionHeader {
+        margin-bottom: 60px;
+        h2 {
+            font-weight: 700;
+            font-style: italic;
+            font-size: 48px;
+            line-height: 60px;
+            letter-spacing: 0%;
+            text-align: center;
+            color: #fff;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 24px;
+            letter-spacing: 0%;
+            color: #fff;
+            max-width: 604px;
+            margin: 0 auto;
+            text-align: center;
+        }
+    }
+
+    .gridCards {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(405px, 1fr));
+        gap: 20px;
+    }
+}

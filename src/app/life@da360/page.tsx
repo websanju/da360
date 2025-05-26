@@ -3,6 +3,7 @@ import CampusTour from "@components/campusTour";
 import LiveProjectsSlider from "@components/liveProjectsSlider";
 import GuestFaculty from "@components/guestFaculty";
 import TrendReportsSlider from "@components/trendReportsSlider";
+import SportsEvent from "@components/sportsEvent";
 
 export default function Lifeda360() {
   return (
@@ -12,6 +13,7 @@ export default function Lifeda360() {
       <LiveProjectsSlider />
       <GuestFaculty />
       <TrendReportsSlider />
+      <SportsEvent />
     </main>
   );
 }

@@ -54,6 +54,23 @@ li {
   list-style: none;
 }
 
+
+.swipers-sport {
+  .swiper-wrapper {
+    padding-bottom: 0;
+  }
+  .swiper-pagination {
+    bottom: 126px !important;
+    z-index: 111;
+    .swiper-pagination-bullet-active {
+      background-color: #fff !important;
+    }
+    .swiper-pagination-bullet {
+      background: rgba(255, 255, 255, 0.5);
+    }
+  }
+}
+
 .swiper-wrapper {
   padding-bottom: 4px;
 }
