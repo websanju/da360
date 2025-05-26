@@ -51,12 +51,14 @@ const GraduationGallery: React.FC = () => {
         >
           {images.map((src, index) => (
             <SwiperSlide key={index} className={styles.slide}>
-              <Image
-                width={550}
-                height={380}
-                src={src}
-                alt={`Graduation ${index + 1}`}
-              />
+              <div className={styles.galleryItem}>
+                <Image
+                  width={550}
+                  height={380}
+                  src={src}
+                  alt={`Graduation ${index + 1}`}
+                />
+              </div>
             </SwiperSlide>
           ))}
         </Swiper>
