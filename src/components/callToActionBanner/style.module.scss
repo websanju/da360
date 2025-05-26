@@ -1,0 +1,74 @@
+.callToActionBanner {
+    margin-bottom: 120px;
+    .callToAction {
+        background: #ffe44c;
+        border-radius: 10px;
+        max-width: 100%;
+        box-shadow: 6px 6px 0 #000;
+        position: relative;
+        overflow: hidden;
+        text-align: center;
+        background-image: url("/images/Isolation_mode.svg");
+        background-position: right;
+        background-repeat: no-repeat;
+        border: 2px solid rgba(0, 0, 0, 1);
+        padding: 60px 0;
+      }
+      
+      .callToAction {
+        position: relative;
+        z-index: 2;
+      
+        h2 {
+            font-weight: 700;
+            font-style: italic;
+            font-size: 48px;
+            line-height: 60px;
+            text-align: center;
+            margin-bottom: 12px;
+        }
+      
+        p {
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 24px;
+            letter-spacing: 0%;
+            text-align: center;
+            color: rgba(0, 0, 0, 1);
+            margin-bottom: 24px;
+        }
+      }
+      
+      .buttons {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+        flex-wrap: wrap;
+      }
+      
+      .btn {
+        background: #fff;
+        transition: all 0.3s ease;
+        box-shadow: 4px 4px 0px 0px rgba(0, 0, 0, 1);
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 24px;
+        letter-spacing: 0%;
+        text-align: center;
+        min-height: 60px;
+        min-width: 300px;
+        border-radius: 10px;
+
+        &:hover {
+          background: #000;
+          color: #fff;
+        }
+      }
+      
+}
+
+@media (width <=991px) {
+    .callToActionBanner {
+        display: none;
+     }
+ }

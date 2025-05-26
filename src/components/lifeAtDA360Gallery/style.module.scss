@@ -594,7 +594,7 @@
 @media (width <=991px) {
     .communityMeetupSection {
         padding: 50px 0;
-        background-color: #000;
+        background-color: #fff;
 
         .sectionHeader {
             margin-bottom: 30px;
@@ -602,7 +602,7 @@
             h2 {
                 font-size: 24px;
                 line-height: 32px;
-                color: #fff;
+                color: #000;
                 max-width: 192px;
                 margin: 0 auto 16px;
             }
@@ -612,6 +612,29 @@
                 line-height: normal;
                 max-width: 304px;
                 margin: 0 auto;
+            }
+        }
+    }
+    .mobileCardBox {
+        .mobileCardList {
+            .loadMoreWrapper {
+              
+    
+                .loadMoreBtn {
+                 
+                    width: max-content;
+                    min-width: 138px;
+                    color: #FFFFFF;
+                    background: #000000;
+                    font-weight: 500;
+                    font-size: 14px;
+                    line-height: 25px;
+                    
+                    &:hover {
+                        background: #fff;
+                        color: #000;
+                    }
+                }
             }
         }
     }
