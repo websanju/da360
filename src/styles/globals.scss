@@ -533,7 +533,20 @@ select {
     cursor: pointer;
   }
 }
-
+.customScrollbar {
+  width: 200px !important;
+  margin: 0 auto 0;
+  /* 👈 center horizontally */
+  height: 6px;
+  background:rgba(229, 229, 229, 1) !important;
+  border-radius: 5px;
+  position: relative;
+  .swiper-scrollbar-drag {
+    border-radius: 5px;
+    background: rgba(85, 85, 85, 1)!important;
+    cursor: pointer;
+  }
+}
 .customScrollbarWhite {
   width: 400px;
   margin: 0 auto 0;
@@ -555,7 +568,15 @@ select {
     opacity: 0.6;
   }
 }
-
+.controls{
+  .swiper-button-disabled {
+    opacity: 0.6;
+  }
+  .customScrollbar {
+   margin-top: 0 !important;
+   bottom: auto !important;
+  }
+}
 .swiper-button-prev,
 .swiper-button-next {
   color: rgb(255, 255, 255) !important;

@@ -5,6 +5,7 @@ import GuestFaculty from "@components/guestFaculty";
 import TrendReportsSlider from "@components/trendReportsSlider";
 import SportsEvent from "@components/sportsEvent";
 import LifeAtDA360Gallery from "@components/lifeAtDA360Gallery";
+import GraduationGallery from "@components/graduationGallery";
 import CallToActionBanner from "@components/callToActionBanner";
 
 export default function Lifeda360() {
@@ -17,6 +18,7 @@ export default function Lifeda360() {
       <TrendReportsSlider />
       <SportsEvent />
       <LifeAtDA360Gallery />
+      <GraduationGallery />
       <CallToActionBanner />
     </main>
   );
