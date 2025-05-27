@@ -7,6 +7,7 @@ import SportsEvent from "@components/sportsEvent";
 import LifeAtDA360Gallery from "@components/lifeAtDA360Gallery";
 import GraduationGallery from "@components/graduationGallery";
 import CallToActionBanner from "@components/callToActionBanner";
+import FreelancerSteps from "@components/freelancerSteps";
 
 export default function Lifeda360() {
   return (
@@ -18,6 +19,7 @@ export default function Lifeda360() {
       <TrendReportsSlider />
       <SportsEvent />
       <LifeAtDA360Gallery />
+      <FreelancerSteps videoUrl="/images/videos/classroom-video-2.mp4" />
       <GraduationGallery />
       <CallToActionBanner />
     </main>
