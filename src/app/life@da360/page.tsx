@@ -1,3 +1,4 @@
+import HeroVideoSection from "@components/heroVideoSection";
 import CourseJourney from "@components/courseJourney";
 import CampusTour from "@components/campusTour";
 import LiveProjectsSlider from "@components/liveProjectsSlider";
@@ -13,6 +14,7 @@ import styles from "./styles.module.scss";
 export default function Lifeda360() {
   return (
     <main>
+      <HeroVideoSection videoUrl="/images/videos/classroom-video-2.mp4" />
       <div className={styles.textContent}>
         <div className="container">
           <div className="row">
