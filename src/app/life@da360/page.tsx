@@ -8,6 +8,7 @@ import SportsEvent from "@components/sportsEvent";
 import LifeAtDA360Gallery from "@components/lifeAtDA360Gallery";
 import GraduationGallery from "@components/graduationGallery";
 import CallToActionBanner from "@components/callToActionBanner";
+import ToobGrid from "@components/toobGrid";
 import FreelancerSteps from "@components/freelancerSteps";
 import styles from "./styles.module.scss";
 
@@ -36,6 +37,7 @@ export default function Lifeda360() {
       <TrendReportsSlider />
       <SportsEvent />
       <LifeAtDA360Gallery />
+      <ToobGrid />
       <FreelancerSteps videoUrl="/images/videos/classroom-video-2.mp4" />
       <GraduationGallery />
       <CallToActionBanner />
