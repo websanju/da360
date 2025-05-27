@@ -378,6 +378,10 @@
             right: 90px;
         }
     }
+
+    .viewAll {
+        display: none;
+    }
 }
 
 @media (width <=991px) {
@@ -583,7 +587,25 @@
         .brown {
             display: none;
         }
-
+        .viewAll {
+            display: flex;
+            align-items: flex-end;
+            justify-content: flex-end;
+            width: 100%;
+            a {
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 25px;
+                letter-spacing: 0%;
+                text-align: center;
+                color: rgba(0, 0, 0, 1);
+                min-width: 120px;
+                height: 40px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
     }
 
 

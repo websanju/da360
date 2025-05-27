@@ -247,6 +247,9 @@ const TOOBGrid = () => {
                   />
                 </div>
               </div>
+              <div className={styles.viewAll}>
+                <Link href={"#"}>View All</Link>
+              </div>
             </div>
           </div>
         </div>
