@@ -33,7 +33,7 @@ const FreelancerSteps = ({ videoUrl, isYouTube = false }: VideoCardProps) => {
 
   useEffect(() => {
     const handleResize = () => {
-      setIsMobile(window.innerWidth <= 768);
+      setIsMobile(window.innerWidth <= 992);
     };
     handleResize();
     window.addEventListener("resize", handleResize);
