@@ -51,6 +51,7 @@
                     cursor: pointer;
                     border-radius: 10px;
                     position: relative;
+
                     h3 {
                         font-weight: 700;
                         font-style: italic;
@@ -59,6 +60,7 @@
                         text-transform: capitalize;
                         color: rgba(0, 0, 0, 0.5);
                     }
+
                     p {
                         font-weight: 500;
                         font-size: 16px;
@@ -72,6 +74,7 @@
                         position: absolute;
                         bottom: -50px;
                         width: calc(100% - 50px);
+
                         span {
                             width: 100%;
                             display: flex;
@@ -79,84 +82,251 @@
                             justify-content: center;
                         }
                     }
+
                     &.active {
                         background: rgba(193, 255, 158, 1);
+
                         h3 {
                             color: rgba(0, 0, 0, 1);
                         }
+
                         p {
                             color: rgba(0, 0, 0, 1);
                         }
                     }
+
                     &:hover {
                         background: rgba(193, 255, 158, 1);
+
                         h3 {
                             color: rgba(0, 0, 0, 1);
                         }
+
                         p {
                             color: rgba(0, 0, 0, 1);
                         }
                     }
                 }
             }
+
             .videoContainer {
                 width: 100%;
-            .videoSection {
-                position: relative;
-                width: 100%;
-                border-radius: 10px;
-                overflow: hidden;
-                
-                .backgroundImage {
-                  width: 100%;
-                  height: 100%;
-                  object-fit: cover;
-                  display: block;
+
+                .videoSection {
+                    position: relative;
+                    width: 100%;
+                    border-radius: 10px;
+                    overflow: hidden;
+
+                    .backgroundImage {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                        display: block;
+                    }
+
+                    .plaYbtn {
+                        background-color: rgba(0, 0, 0, 0.6);
+                        border: none;
+                        border-radius: 50%;
+                        width: 60px;
+                        height: 60px;
+                        margin-top: 1rem;
+                        font-size: 24px;
+                        color: #fff;
+                    }
+
+                    .overlayText {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        color: #fff;
+                        text-align: center;
+                        font-weight: bold;
+                        width: 100%;
+                        height: 100%;
+                        background-color: rgba(0, 0, 0, 0.1);
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+
+                        h2 {
+                            font-size: 2rem;
+                            font-style: italic;
+                            font-weight: 700;
+                        }
+
+                        .playButton {
+                            background-color: rgba(0, 0, 0, 0.6);
+                            border: none;
+                            border-radius: 50%;
+                            width: 60px;
+                            height: 60px;
+                            margin-top: 1rem;
+                            font-size: 24px;
+                            color: #fff;
+                            cursor: pointer;
+                        }
+                    }
                 }
-            
-                .plaYbtn {
-                    background-color: rgba(0, 0, 0, 0.6);
-                    border: none;
-                    border-radius: 50%;
-                    width: 60px;
-                    height: 60px;
-                    margin-top: 1rem;
+            }
+        }
+    }
+}
+
+@media (width <=992px) {
+    .freelancerSteps {
+        margin-top: 60px;
+
+        .freelancerStepsBox {
+            padding: 30px 20px;
+
+            .sectionHeader {
+                margin-bottom: 24px;
+
+                h2 {
+
                     font-size: 24px;
-                    color: #fff;
+                    line-height: normal;
+                    margin-bottom: 0px;
                 }
-              
-                .overlayText {
-                  position: absolute;
-                  top: 0;
-                  left: 0;
-                  color: #fff;
-                  text-align: center;
-                  font-weight: bold;
-                  width: 100%;
-                  height: 100%;
-                  background-color: rgba(0, 0, 0, 0.1);
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                  h2 {
-                    font-size: 2rem;
-                    font-style: italic;
-                    font-weight: 700;
-                  }
-              
-                  .playButton {
-                    background-color: rgba(0, 0, 0, 0.6);
-                    border: none;
-                    border-radius: 50%;
-                    width: 60px;
-                    height: 60px;
-                    margin-top: 1rem;
-                    font-size: 24px;
-                    color: #fff;
-                    cursor: pointer;
-                  }
+
+                p {
+                    font-size: 14px;
+                    max-width: 304px;
                 }
-              }
+            }
+
+            .freelancerContent {
+                gap: 58px;
+                flex-direction: column;
+
+                .tabs {
+                    max-width: 324px;
+                    width: 100%;
+                    flex-direction: column;
+                    gap: 0px;
+
+                    &:last-child {
+                        .tab {
+                            .arrow {
+                                display: none;
+                            }
+                        }
+                        .videoContainer { 
+                            .arrow {
+                                display: none;
+                            }
+                        }
+                    }
+
+                    .tab {
+                        padding: 20px 28px;
+
+                        h3 {
+                            font-size: 18px;
+                            line-height: normal;
+                            text-align: center;
+                        }
+
+                        p {
+
+                            font-size: 14px;
+                            line-height: normal;
+                            text-align: center;
+                        }
+
+                        .arrow {
+                            bottom: -40px;
+                        }
+                    }
+                }
+
+                .videoContainer {
+                    margin-top: 16px;
+                    height: 217px;
+                    position: relative;
+                    .arrow {
+                        width: 100%;
+                        bottom: -40px;
+                        position: absolute;
+                        span {
+                            width: 100%;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                        }
+                    }
+                    .videoSection {
+                        width: 100%;
+                        height: 217px;
+
+                        .ratio {
+                            height: 217px;
+                            min-height: 217px !important;
+
+                            video {
+                                height: 217px;
+                                min-height: 217px;
+                            }
+                        }
+
+                        img {
+                            max-height: 217px;
+                        }
+
+                        .backgroundImage {
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                            display: block;
+                        }
+
+                        .plaYbtn {
+                            background-color: rgba(0, 0, 0, 0.6);
+                            border: none;
+                            border-radius: 50%;
+                            width: 60px;
+                            height: 60px;
+                            margin-top: 1rem;
+                            font-size: 24px;
+                            color: #fff;
+                        }
+
+                        .overlayText {
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            color: #fff;
+                            text-align: center;
+                            font-weight: bold;
+                            width: 100%;
+                            height: 100%;
+                            background-color: rgba(0, 0, 0, 0.1);
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+
+                            h2 {
+                                font-size: 2rem;
+                                font-style: italic;
+                                font-weight: 700;
+                            }
+
+                            .playButton {
+                                background-color: rgba(0, 0, 0, 0.6);
+                                border: none;
+                                border-radius: 50%;
+                                width: 60px;
+                                height: 60px;
+                                margin-top: 1rem;
+                                font-size: 24px;
+                                color: #fff;
+                                cursor: pointer;
+                            }
+                        }
+                    }
+                }
             }
         }
     }
