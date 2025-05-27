@@ -36,7 +36,12 @@ export default function Lifeda360() {
       <GuestFaculty />
       <TrendReportsSlider />
       <SportsEvent />
-      <LifeAtDA360Gallery />
+      <LifeAtDA360Gallery
+        title="Digital Marketing Meetups"
+        description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been."
+        bgColor="rgba(245, 245, 245, 1);
+"
+      />
       <ToobGrid />
       <FreelancerSteps videoUrl="/images/videos/classroom-video-2.mp4" />
       <GraduationGallery />

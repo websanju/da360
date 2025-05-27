@@ -3,7 +3,8 @@ import { useEffect, useRef, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Scrollbar } from "swiper/modules";
 import Lightbox from "yet-another-react-lightbox";
-
+import LeftArrow from "@components/Ui/svg/leftArrow";
+import RightArrow from "@components/Ui/svg/rightArrowLine";
 // Styles
 import "swiper/scss";
 import "swiper/scss/navigation";
@@ -148,7 +149,17 @@ const meetups: MeetupGroup[] = [
   },
 ];
 
-const LifeAtDA360Gallery = () => {
+interface LifeAtDA360GalleryProps {
+  title?: string;
+  description?: string;
+  bgColor?: string;
+}
+
+const LifeAtDA360Gallery = ({
+  title = "#LifeAtDA360 Gallery",
+  description,
+  bgColor = "#ffffff",
+}: LifeAtDA360GalleryProps) => {
   const [open, setOpen] = useState(false);
   const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -212,20 +223,17 @@ const LifeAtDA360Gallery = () => {
                 className={styles.cardImage}
               />
             </div>
-
-            <div className={styles.smallcardColumn}>
-              <div
-                className={styles.smallcard}
-                onClick={() => handleOpenLightbox(items[2].id)}
-              >
-                <Image
-                  src={items[2].image!}
-                  alt={items[2].title}
-                  width={400}
-                  height={500}
-                  className={styles.cardImage}
-                />
-              </div>
+            <div
+              className={styles.smallcard}
+              onClick={() => handleOpenLightbox(items[2].id)}
+            >
+              <Image
+                src={items[2].image!}
+                alt={items[2].title}
+                width={400}
+                height={500}
+                className={styles.cardImage}
+              />
             </div>
           </div>
         </div>
@@ -310,12 +318,21 @@ const LifeAtDA360Gallery = () => {
   );
 
   return (
-    <section className={styles.communityMeetupSection}>
+    <section
+      className={styles.communityMeetupSection}
+      style={{ backgroundColor: bgColor }}
+    >
       <div className={styles.sectionHeader}>
         <div className="container">
           <div className="row">
             <div className="col-lg-12">
-              <h2>#LifeAtDA360 Gallery</h2>
+              {title && <h2>{title}</h2>}
+              {description && <p>{description}</p>}
+              {/* <h2>#LifeAtDA360 Gallery</h2>
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been.
+              </p> */}
             </div>
           </div>
         </div>
@@ -369,37 +386,19 @@ const LifeAtDA360Gallery = () => {
               ))}
             </Swiper>
           </div>
-          {/* Custom scrollbar */}
-          {/* <div className={styles.sliderNavigation}>
-            <button className="swiper-button-prev" id="customPrev11"></button>
-            <button className="swiper-button-next" id="customNext11"></button>
-          </div>
-          <div id="customScrollbar18" className="swiper-scrollbar"></div> */}
 
-          <div className={styles.sliderControls}>
-            <button id="customPrev11">
-              <Image
-                src={"/images/icons/sliderLeft.svg"}
-                alt={"leftArrow"}
-                width={16}
-                height={16}
-                className={styles.cardImage}
-              />
+          <div className={`${styles.controls} controls`}>
+            <button id="customPrev11" className={`prevBtn ${styles.navBtn}`}>
+              {" "}
+              <RightArrow width={16} height={16} color="#000" />
             </button>
-            <div className={styles.sliderScrollbarBox}>
-              <div
-                id="customScrollbar18"
-                className={`${styles.swiperScrollbar} swiper-scrollbar`}
-              ></div>
-            </div>
-            <button id="customNext11">
-              <Image
-                src={"/images/icons/sliderRight.svg"}
-                alt={"leftArrow"}
-                width={16}
-                height={16}
-                className={styles.cardImage}
-              />
+            <div
+              id="customScrollbar18"
+              className={`${styles.scrollbar} customScrollbar swiper-scrollbar`}
+            ></div>
+            <button id="customNext11" className={`nextBtn ${styles.navBtn}`}>
+              {" "}
+              <LeftArrow width={16} height={16} color="#000" />
             </button>
           </div>
         </div>

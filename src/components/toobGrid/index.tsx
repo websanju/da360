@@ -153,6 +153,22 @@ const TOOBGrid = () => {
                   <h3>Reel Talk</h3>
                   <p>Personal Branding Day</p>
                 </div>
+                <div className={styles.itemImg}>
+                  <Image
+                    width={107}
+                    height={154}
+                    src="/images/mobile-reeltalk.png"
+                    alt="marketing"
+                    className={styles.mitemImg}
+                  />
+                  <Image
+                    width={654}
+                    height={411}
+                    src="/images/reel-talk.png"
+                    alt="marketing"
+                    className={styles.ditemImg}
+                  />
+                </div>
                 <Link href={"#"} className={styles.itemIcon}>
                   <Image
                     width={20}

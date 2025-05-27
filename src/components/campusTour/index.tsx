@@ -31,7 +31,10 @@ const CampusTour = ({ videoUrl, isYouTube = false }: VideoCardProps) => {
               onClick={!isPlaying ? handlePlay : undefined}
             >
               {isPlaying ? (
-                <div className="ratio" style={{ minHeight: "650px" }}>
+                <div
+                  className={`${styles.ratio} ratio`}
+                  style={{ minHeight: "650px" }}
+                >
                   {isYouTube ? (
                     <iframe
                       src={`${videoUrl}?autoplay=1&mute=1`}

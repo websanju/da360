@@ -735,3 +735,23 @@ select {
   will-change: transform;
   transform-style: preserve-3d;
 }
+
+.controls {
+  max-width: max-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 40px auto 0;
+  gap: 24px;
+
+  button {
+      border: 2px solid rgba(0, 0, 0, 1);
+      width: 28px;
+      height: 28px;
+      background-color: transparent;
+      color: #000;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  }
+}
