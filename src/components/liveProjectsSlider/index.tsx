@@ -26,6 +26,10 @@ interface Project {
   bgsolid: string;
 }
 
+interface ProjectSectionProps {
+  section?: string;
+}
+
 const projects: Project[] = [
   {
     id: 1,
@@ -125,7 +129,7 @@ const projects: Project[] = [
   },
 ];
 
-export default function LiveProjectsSlider() {
+export default function LiveProjectsSlider({ section }: ProjectSectionProps) {
   const swiperRef = useRef<SwiperClass | null>(null);
   const [activeIndex, setActiveIndex] = useState(1); // Default to slide 2
 
@@ -134,7 +138,7 @@ export default function LiveProjectsSlider() {
   };
 
   return (
-    <section className={styles.liveProjectsSlider}>
+    <section className={styles.liveProjectsSlider} id={section}>
       <div className="container">
         <div className="row">
           <div className="col-lg-12">

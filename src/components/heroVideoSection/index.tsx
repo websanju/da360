@@ -7,10 +7,15 @@ import styles from "./styles.module.scss";
 interface VideoCardProps {
   videoUrl: string;
   isYouTube?: boolean;
+  section?: string;
 }
 
-const HeroSection = ({ videoUrl, isYouTube = false }: VideoCardProps) => {
-  const [isPlaying, setIsPlaying] = useState(false);
+const HeroSection = ({
+  videoUrl,
+  isYouTube = false,
+  section,
+}: VideoCardProps) => {
+  const [isPlaying, setIsPlaying] = useState(true);
   const [hovering, setHovering] = useState(false);
 
   const handlePlay = () => setIsPlaying(true);
@@ -25,7 +30,7 @@ const HeroSection = ({ videoUrl, isYouTube = false }: VideoCardProps) => {
       onClick={!isPlaying ? handlePlay : undefined}
     >
       {isPlaying ? (
-        <div className={`${styles.ratio} ratio`} style={{ minHeight: "800px" }}>
+        <div className={`${styles.ratio} ratio`} style={{ minHeight: "100vh" }}>
           {isYouTube ? (
             <iframe
               src={`${videoUrl}?autoplay=1&mute=1`}
@@ -33,7 +38,7 @@ const HeroSection = ({ videoUrl, isYouTube = false }: VideoCardProps) => {
               allow="autoplay; encrypted-media"
               allowFullScreen
               className="w-100 h-100"
-              style={{ height: "800px" }}
+              style={{ height: "100vh" }}
             />
           ) : (
             <video
@@ -43,7 +48,7 @@ const HeroSection = ({ videoUrl, isYouTube = false }: VideoCardProps) => {
               loop
               playsInline
               className="w-100 h-100"
-              style={{ objectFit: "cover", height: "800px" }}
+              style={{ objectFit: "cover", height: "100vh" }}
             />
           )}
         </div>
@@ -58,7 +63,7 @@ const HeroSection = ({ videoUrl, isYouTube = false }: VideoCardProps) => {
             alt="Campus Tour Thumbnail"
             width={1440}
             height={800}
-            style={{ objectFit: "cover", height: "800px" }}
+            style={{ objectFit: "cover", height: "100vh" }}
           />
         </div>
       )}
@@ -70,6 +75,7 @@ const HeroSection = ({ videoUrl, isYouTube = false }: VideoCardProps) => {
       className={styles.heroVideoSection}
       onMouseEnter={() => setHovering(true)}
       onMouseLeave={() => setHovering(false)}
+      id={section}
     >
       {renderVideo()}
 

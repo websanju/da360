@@ -64,8 +64,10 @@ const getUniqueBrands = (data: typeof caseStudies) => {
     return true;
   });
 };
-
-export default function CaseStudySlider() {
+interface CaseStudySliderProps {
+  section?: string;
+}
+export default function CaseStudySlider({ section }: CaseStudySliderProps) {
   const swiperRef = useRef<SwiperType | null>(null);
   const uniqueBrands = getUniqueBrands(caseStudies);
   const [selectedLogo, setSelectedLogo] = useState<string>("");
@@ -79,7 +81,7 @@ export default function CaseStudySlider() {
   };
 
   return (
-    <div className={styles.trendReportsSlider}>
+    <section className={styles.trendReportsSlider} id={section}>
       <div className="container">
         <div className="row">
           <div className="col-lg-12">
@@ -163,6 +165,6 @@ export default function CaseStudySlider() {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }

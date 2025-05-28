@@ -37,7 +37,11 @@ const sportData = [
   },
 ];
 
-export default function SportsGrid() {
+interface SportsGridProps {
+  section?: string;
+}
+
+export default function SportsGrid({ section }: SportsGridProps) {
   const [visibleCount, setVisibleCount] = useState(sportData.length);
   const [isMobile, setIsMobile] = useState(false);
 
@@ -58,7 +62,7 @@ export default function SportsGrid() {
   };
 
   return (
-    <section className={styles.sportCardSection}>
+    <section className={styles.sportCardSection} id={section}>
       <div className="container">
         <div className="row">
           <div className="col-lg-12">

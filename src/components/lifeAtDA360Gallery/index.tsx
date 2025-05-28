@@ -153,12 +153,14 @@ interface LifeAtDA360GalleryProps {
   title?: string;
   description?: string;
   bgColor?: string;
+  section?: string;
 }
 
 const LifeAtDA360Gallery = ({
   title = "#LifeAtDA360 Gallery",
   description,
   bgColor = "#ffffff",
+  section,
 }: LifeAtDA360GalleryProps) => {
   const [open, setOpen] = useState(false);
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -321,6 +323,7 @@ const LifeAtDA360Gallery = ({
     <section
       className={styles.communityMeetupSection}
       style={{ backgroundColor: bgColor }}
+      id={section}
     >
       <div className={styles.sectionHeader}>
         <div className="container">

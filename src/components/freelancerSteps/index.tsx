@@ -22,9 +22,14 @@ const steps = [
 interface VideoCardProps {
   videoUrl: string;
   isYouTube?: boolean;
+  section?: string;
 }
 
-const FreelancerSteps = ({ videoUrl, isYouTube = false }: VideoCardProps) => {
+const FreelancerSteps = ({
+  section,
+  videoUrl,
+  isYouTube = false,
+}: VideoCardProps) => {
   const [active, setActive] = useState(0);
   const [isPlaying, setIsPlaying] = useState(false);
   const [hovering, setHovering] = useState(false);
@@ -132,7 +137,7 @@ const FreelancerSteps = ({ videoUrl, isYouTube = false }: VideoCardProps) => {
   );
 
   return (
-    <section className={styles.freelancerSteps}>
+    <section className={styles.freelancerSteps} id={section}>
       <div className="container">
         <div className="row">
           <div className="col-lg-12">

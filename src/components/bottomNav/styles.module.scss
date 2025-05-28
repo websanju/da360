@@ -1,0 +1,59 @@
+.bottomNav {
+    position: fixed;
+    bottom: 24px;
+    left: 0;
+    right: 0;
+    background: rgba(255, 255, 255, 1);
+    display: flex;
+    justify-content: space-around;
+    z-index: 999;
+    border: 1px solid rgba(220, 220, 220, 1);
+    box-shadow: 0px 7px 4px 0px rgba(0, 0, 0, 0.06);
+    max-width: 1117px;
+    margin: 0 auto;
+    border-radius: 100px;
+    min-height: 55px;
+    display: flex;
+    align-items: center;
+    padding-left: 32px;
+    padding-right: 32px;
+    overflow-y: auto;
+    transition: transform 0.4s ease, opacity 0.4s ease;
+    &.show {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  
+    &.hide {
+      transform: translateY(100px);
+      opacity: 0;
+    }
+  }
+  
+  .link {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: 2%;
+    position: relative;
+    padding-left: 10px;
+    padding-right: 10px;
+    transition: color 0.3s ease;
+    color: rgba(32, 17, 22, 1);
+    background-color: transparent;
+    border: none;
+    height: 30px;
+    border-radius: 100px;
+  }
+  
+  
+  .active {
+    transition: transform 0.3s ease;
+    background: rgba(18, 18, 18, 1);
+    color: #fff;
+  }
+  
+  .active::after {
+    transform: translateX(-50%) scaleX(1);
+  }
+  

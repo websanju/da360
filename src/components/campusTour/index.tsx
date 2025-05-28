@@ -7,9 +7,14 @@ import styles from "./style.module.scss";
 interface VideoCardProps {
   videoUrl: string;
   isYouTube?: boolean;
+  section?: string;
 }
 
-const CampusTour = ({ videoUrl, isYouTube = false }: VideoCardProps) => {
+const CampusTour = ({
+  section,
+  videoUrl,
+  isYouTube = false,
+}: VideoCardProps) => {
   const [isPlaying, setIsPlaying] = useState(false);
   const [hovering, setHovering] = useState(false);
 
@@ -20,7 +25,7 @@ const CampusTour = ({ videoUrl, isYouTube = false }: VideoCardProps) => {
   };
 
   return (
-    <section className={styles.campusTourSection}>
+    <section className={styles.campusTourSection} id={section}>
       <div className="container">
         <div className="row">
           <div className="col-lg-12">

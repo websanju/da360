@@ -1,4 +1,5 @@
 import HeroVideoSection from "@components/heroVideoSection";
+import TextContent from "@components/textContent";
 import CourseJourney from "@components/courseJourney";
 import CampusTour from "@components/campusTour";
 import LiveProjectsSlider from "@components/liveProjectsSlider";
@@ -10,42 +11,50 @@ import GraduationGallery from "@components/graduationGallery";
 import CallToActionBanner from "@components/callToActionBanner";
 import ToobGrid from "@components/toobGrid";
 import FreelancerSteps from "@components/freelancerSteps";
-import styles from "./styles.module.scss";
+import BottomNav from "@components/bottomNav";
 
 export default function Lifeda360() {
+  const sections = [
+    { id: "section1", label: "Overview" },
+    { id: "section2", label: "Journey" },
+    { id: "section3", label: "Campus Tour" },
+    { id: "section4", label: "Projects" },
+    { id: "section5", label: "Faculty" },
+    { id: "section6", label: "Case Studies" },
+    { id: "section7", label: "Sports" },
+    { id: "section8", label: "Meetups" },
+    { id: "section9", label: "TOOB" },
+    { id: "section10", label: "Freelancer" },
+    { id: "section11", label: "Graduation Day" },
+  ];
+
   return (
     <main>
-      <HeroVideoSection videoUrl="/images/videos/classroom-video-2.mp4" />
-      <div className={styles.textContent}>
-        <div className="container">
-          <div className="row">
-            <div className="col-lg-4"></div>
-            <div className="col-lg-8">
-              <h2>
-                Get a glimpse into the vibrant student life, collaborative
-                learning, and inspiring culture that make Digital Academy 360
-                more than just a classroom.
-              </h2>
-            </div>
-          </div>
-        </div>
-      </div>
-      <CourseJourney />
-      <CampusTour videoUrl="/images/videos/classroom-video-2.mp4" />
-      <LiveProjectsSlider />
-      <GuestFaculty />
-      <TrendReportsSlider />
-      <SportsEvent />
+      <HeroVideoSection videoUrl="/images/videos/classroom-video-3.mp4" />
+      <TextContent section="section1" />
+      <CourseJourney section="section2" />
+      <CampusTour
+        section="section3"
+        videoUrl="/images/videos/classroom-video-3.mp4"
+      />
+      <LiveProjectsSlider section="section4" />
+      <GuestFaculty section="section5" />
+      <TrendReportsSlider section="section6" />
+      <SportsEvent section="section7" />
       <LifeAtDA360Gallery
         title="Digital Marketing Meetups"
         description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been."
-        bgColor="rgba(245, 245, 245, 1);
-"
+        bgColor="rgba(245, 245, 245, 1);"
+        section="section8"
       />
-      <ToobGrid />
-      <FreelancerSteps videoUrl="/images/videos/classroom-video-2.mp4" />
-      <GraduationGallery />
+      <ToobGrid section="section9" />
+      <FreelancerSteps
+        section="section10"
+        videoUrl="/images/videos/classroom-video-2.mp4"
+      />
+      <GraduationGallery section="section11" />
       <CallToActionBanner />
+      <BottomNav sections={sections} />
     </main>
   );
 }

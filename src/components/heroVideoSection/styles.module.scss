@@ -1,6 +1,6 @@
 .heroVideoSection {
     position: relative;
-
+    height:calc( 100vh - 140px);
     .heroVideoInfo {
         position: absolute;
         top: 0;
@@ -48,7 +48,18 @@
 
     .videoSection {
         position: relative;
-
+        .ratio {
+            height:calc( 100vh - 140px);
+            video {
+                height:calc( 100vh - 140px) !important;
+            }
+        }
+        .thumbnailImage {
+            height:calc( 100vh - 140px);
+            img {
+                height:calc( 100vh - 140px) !important;
+            }
+        }
         .videoContent,
         .thumbnailImage {
             width: 100%;
@@ -91,7 +102,7 @@
 
 @media (width <=991px) {
     .heroVideoSection {
-        height: 450px;
+        height: calc( 100vh - 150px);
         .heroVideoInfo {
             align-items: flex-end;
             padding-bottom: 80px;
@@ -118,15 +129,15 @@
         }
         .videoSection {
             .ratio {
-                height: 450px;
+                height: calc( 100vh - 150px);
                 video {
-                    height: 450px !important;
+                    height: calc( 100vh - 150px) !important;
                 }
             }
             .thumbnailImage {
-                height: 450px;
+                height: calc( 100vh - 150px);
                 img {
-                    height: 450px !important;
+                    height: calc( 100vh - 150px) !important;
                 }
             }
         }

@@ -15,9 +15,12 @@ const images = [
   "/images/graduation/graduation-3.jpg",
 ];
 
-const GraduationGallery: React.FC = () => {
+interface GraduationGalleryProps {
+  section?: string;
+}
+const GraduationGallery: React.FC<GraduationGalleryProps> = ({ section }) => {
   return (
-    <section className={styles.gallerySection}>
+    <section className={styles.gallerySection} id={section}>
       <div className="container">
         <div className="row">
           <div className="col-lg-12">

@@ -1,9 +1,12 @@
 import React from "react";
 import styles from "./style.module.scss";
 
-const CallToActionBanner: React.FC = () => {
+interface CallToActionBannerProps {
+  section?: string;
+}
+const CallToActionBanner: React.FC<CallToActionBannerProps> = ({ section }) => {
   return (
-    <section className={styles.callToActionBanner}>
+    <section className={styles.callToActionBanner} id={section}>
       <div className="container">
         <div className="row">
           <div className="col-lg-12">

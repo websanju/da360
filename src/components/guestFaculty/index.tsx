@@ -75,10 +75,12 @@ const data = [
     },
   },
 ];
-
-const GuestFacultySection = () => {
+interface GuestFacultySectionProps {
+  section?: string;
+}
+const GuestFacultySection = ({ section }: GuestFacultySectionProps) => {
   return (
-    <section className={styles.guestFaculty}>
+    <section className={styles.guestFaculty} id={section}>
       <div className="container">
         <div className="row">
           <div className="col-lg-12">

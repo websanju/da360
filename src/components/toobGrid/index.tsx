@@ -2,10 +2,12 @@
 import Link from "next/link";
 import styles from "./styles.module.scss";
 import Image from "next/image";
-
-const TOOBGrid = () => {
+interface TOOBGridProps {
+  section?: string;
+}
+const TOOBGrid = ({ section }: TOOBGridProps) => {
   return (
-    <section className={styles.toobSection}>
+    <section className={styles.toobSection} id={section}>
       <div className="container">
         <div className="row">
           <div className="col-lg-12">
