@@ -9,6 +9,8 @@ import "swiper/css/scrollbar";
 import styles from "./style.module.scss";
 import Image from "next/image";
 import { auto } from "@popperjs/core";
+import LeftArrow from "@components/Ui/svg/leftArrow";
+import RightArrow from "@components/Ui/svg/rightArrowLine";
 
 type Person = {
   id: number;
@@ -216,12 +218,12 @@ const PeopleSlider = () => {
           </div>
         </div>
         <div className={styles.sliderWrapper}>
-          <div className={styles.sliderNavigationRow}>
+          {/* <div className={styles.sliderNavigationRow}>
             <div className={styles.sliderNavigation}>
               <button className="swiper-button-prev" id="customPrev6"></button>
               <button className="swiper-button-next" id="customNext6"></button>
             </div>
-          </div>
+          </div> */}
           <div
             ref={containerRef}
             className={`${styles.sliderInnerWrapper} peoplesliderWrapper`}
@@ -380,7 +382,21 @@ const PeopleSlider = () => {
             </Swiper>
           </div>
         </div>
-        <div id="customScrollbar6" className="swiper-scrollbar"></div>
+        {/* <div id="customScrollbar6" className="swiper-scrollbar"></div> */}
+        <div className={`${styles.controls} controls`}>
+          <button id="customPrev6" className={`prevBtn ${styles.navBtn}`}>
+            {" "}
+            <RightArrow width={16} height={16} color="#000" />
+          </button>
+          <div
+            id="customScrollbar6"
+            className={`${styles.scrollbar} customScrollbar swiper-scrollbar`}
+          ></div>
+          <button id="customNext6" className={`nextBtn ${styles.navBtn}`}>
+            {" "}
+            <LeftArrow width={16} height={16} color="#000" />
+          </button>
+        </div>
       </section>
 
       {/* Modal */}

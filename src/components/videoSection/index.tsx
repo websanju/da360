@@ -8,6 +8,8 @@ import "swiper/css/scrollbar";
 import VideoCard from "./VideoCard";
 import styles from "./style.module.scss"; // optional for button custom styling
 import { auto } from "@popperjs/core";
+import LeftArrow from "@components/Ui/svg/leftArrow";
+import RightArrow from "@components/Ui/svg/rightArrowLine";
 
 export default function VideoSection() {
   const videoData = [
@@ -84,12 +86,12 @@ export default function VideoSection() {
         </div>
       </div>
       <div className={styles.sliderWrapper}>
-        <div className="container position-relative">
+        {/* <div className="container position-relative">
           <div className={styles.sliderNavigation}>
             <button className="swiper-button-prev" id="customPrev8"></button>
             <button className="swiper-button-next" id="customNext8"></button>
           </div>
-        </div>
+        </div> */}
         <div
           className={styles.sliderInnerWrapper}
           // style={{
@@ -107,8 +109,8 @@ export default function VideoSection() {
             slidesOffsetBefore={20}
             slidesOffsetAfter={20}
             navigation={{
-              prevEl: "#customPrev8",
-              nextEl: "#customNext8",
+              prevEl: "#customPrev80",
+              nextEl: "#customNext80",
             }}
             loop={false}
             scrollbar={{ draggable: true, el: "#customScrollbar4" }}
@@ -149,7 +151,22 @@ export default function VideoSection() {
           </Swiper>
         </div>
       </div>
-      <div id="customScrollbar4" className="swiper-scrollbar"></div>
+      {/* <div id="customScrollbar4" className="swiper-scrollbar"></div> */}
+
+      <div className={`${styles.controls} controls`}>
+        <button id="customPrev80" className={`prevBtn ${styles.navBtn}`}>
+          {" "}
+          <RightArrow width={16} height={16} color="#000" />
+        </button>
+        <div
+          id="customScrollbar4"
+          className={`${styles.scrollbar} customScrollbar swiper-scrollbar`}
+        ></div>
+        <button id="customNext80" className={`nextBtn ${styles.navBtn}`}>
+          {" "}
+          <LeftArrow width={16} height={16} color="#000" />
+        </button>
+      </div>
     </section>
   );
 }

@@ -9,6 +9,8 @@ import "swiper/css/pagination";
 import styles from "./style.module.scss";
 import Image from "next/image";
 import { auto } from "@popperjs/core";
+import LeftArrow from "@components/Ui/svg/leftArrow";
+import RightArrow from "@components/Ui/svg/rightArrowLine";
 // import LeftArrow from "@components/Ui/svg/leftArrow";
 
 const digitalAcademy = [
@@ -62,12 +64,12 @@ export default function DigitalAcademySlider() {
         </div>
       </div>
       <div className={styles.sliderWrapper}>
-        <div className="container position-relative">
+        {/* <div className="container position-relative">
           <div className={styles.sliderNavigation}>
             <button className="swiper-button-prev" id="customPrev14"></button>
             <button className="swiper-button-next" id="customNext14"></button>
           </div>
-        </div>
+        </div> */}
         <div
           className={styles.sliderInnerc}
           // style={{
@@ -133,7 +135,21 @@ export default function DigitalAcademySlider() {
         </div>
       </div>
       {/* Custom scrollbar */}
-      <div id="customScrollbar14" className="swiper-scrollbar"></div>
+      <div className={`${styles.controls} controls`}>
+        <button id="customPrev14" className={`prevBtn ${styles.navBtn}`}>
+          {" "}
+          <RightArrow width={16} height={16} color="#000" />
+        </button>
+        <div
+          id="customScrollbar14"
+          className={`${styles.scrollbar} customScrollbar swiper-scrollbar`}
+        ></div>
+        <button id="customNext14" className={`nextBtn ${styles.navBtn}`}>
+          {" "}
+          <LeftArrow width={16} height={16} color="#000" />
+        </button>
+      </div>
+      {/* <div id="customScrollbar14" className="swiper-scrollbar"></div> */}
     </section>
   );
 }

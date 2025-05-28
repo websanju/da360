@@ -8,6 +8,8 @@ import "swiper/css";
 import "swiper/css/scrollbar";
 import styles from "./style.module.scss";
 import { auto } from "@popperjs/core";
+import LeftArrow from "@components/Ui/svg/leftArrow";
+import RightArrow from "@components/Ui/svg/rightArrowLine";
 
 interface Member {
   name: string;
@@ -59,12 +61,12 @@ const TeamSlider = ({ members }: TeamSliderProps) => {
         //   boxSizing: "border-box",
         // }}
       >
-        <div className="container position-relative">
+        {/* <div className="container position-relative">
           <div className={styles.sliderNavigation}>
             <button className="swiper-button-prev" id="customPrev9"></button>
             <button className="swiper-button-next" id="customNext9"></button>
           </div>
-        </div>
+        </div> */}
         <Swiper
           slidesPerView={auto}
           spaceBetween={10}
@@ -186,7 +188,22 @@ const TeamSlider = ({ members }: TeamSliderProps) => {
       </div>
 
       {/* Custom scrollbar */}
-      <div id="customScrollbar" className="swiper-scrollbar"></div>
+      {/* <div id="customScrollbar" className="swiper-scrollbar"></div> */}
+
+      <div className={`${styles.controls} controls`}>
+        <button id="customPrev9" className={`prevBtn ${styles.navBtn}`}>
+          {" "}
+          <RightArrow width={16} height={16} color="#000" />
+        </button>
+        <div
+          id="customScrollbar"
+          className={`${styles.scrollbar} customScrollbar swiper-scrollbar`}
+        ></div>
+        <button id="customNext9" className={`nextBtn ${styles.navBtn}`}>
+          {" "}
+          <LeftArrow width={16} height={16} color="#000" />
+        </button>
+      </div>
     </div>
   );
 };
