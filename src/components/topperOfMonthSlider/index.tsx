@@ -1,13 +1,15 @@
 "use client";
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Autoplay } from "swiper/modules";
+import { Scrollbar, Navigation, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/scrollbar";
 import styles from "./style.module.scss";
 import Image from "next/image";
 import ArrowLeft from "@/components/Ui/svg/arrowLeft";
+import LeftArrow from "@components/Ui/svg/leftArrow";
+import RightArrow from "@components/Ui/svg/rightArrowLine";
 
 interface SlideProps {
   id: number;
@@ -43,12 +45,12 @@ const slides: SlideProps[] = [
 
 const TopperOfMonthSlider = () => {
   return (
-    <section>
+    <section className={styles.topperOfMonthSlider}>
       <div className="container">
         <div className="row">
           <div className="col-lg-12">
             <div className={styles.sliderWrapper}>
-              <div
+              {/* <div
                 className={`${styles.container} container position-relative`}
               >
                 <div className={styles.sliderNavigation}>
@@ -61,11 +63,12 @@ const TopperOfMonthSlider = () => {
                     id="customNext9"
                   ></button>
                 </div>
-              </div>
+              </div> */}
 
               <div className={styles.sliderInnerWrapper}>
                 <Swiper
-                  modules={[Navigation, Autoplay]}
+                  modules={[Navigation, Autoplay, Scrollbar]}
+                  scrollbar={{ draggable: true, el: "#customScrollbar90" }}
                   spaceBetween={20}
                   slidesPerView={1}
                   autoplay={{
@@ -73,8 +76,8 @@ const TopperOfMonthSlider = () => {
                     disableOnInteraction: false,
                   }}
                   navigation={{
-                    prevEl: "#customPrev9",
-                    nextEl: "#customNext9",
+                    prevEl: "#customPrev90",
+                    nextEl: "#customNext90",
                   }}
                   className={styles.swiper}
                 >
@@ -125,6 +128,20 @@ const TopperOfMonthSlider = () => {
                   ))}
                 </Swiper>
               </div>
+            </div>
+            <div className={`${styles.controls} controls`}>
+              <button id="customPrev90" className={`prevBtn ${styles.navBtn}`}>
+                {" "}
+                <RightArrow width={16} height={16} color="#000" />
+              </button>
+              <div
+                id="customScrollbar90"
+                className={`${styles.scrollbar} customScrollbar swiper-scrollbar`}
+              ></div>
+              <button id="customNext90" className={`nextBtn ${styles.navBtn}`}>
+                {" "}
+                <LeftArrow width={16} height={16} color="#000" />
+              </button>
             </div>
           </div>
         </div>

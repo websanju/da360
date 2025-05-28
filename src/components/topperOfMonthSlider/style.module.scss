@@ -1,6 +1,9 @@
+.topperOfMonthSlider {
+    margin-bottom: 140px;
+}
+
 .sliderWrapper {
     margin-top: 20px;
-    margin-bottom: 140px;
     border-radius: 20px;
     overflow: hidden;
     width: 100%;
@@ -163,7 +166,9 @@
             height: auto;
         }
     }
-
+    .topperOfMonthSlider {
+        margin-bottom: 60px;
+    }
     .sliderWrapper {
         margin-bottom: 60px;
         .sliderNavigation {

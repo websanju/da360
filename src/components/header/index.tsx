@@ -173,8 +173,13 @@ export default function Header() {
                     </Link>
                   </li>
                   <li>
-                    <Link href="/performmers" className={styles.navItem}>
-                      Performmers
+                    <Link href="/" className={styles.navItem}>
+                      #TOOB
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/" className={styles.navItem}>
+                      Trainers
                     </Link>
                   </li>
                   <li>
@@ -185,11 +190,6 @@ export default function Header() {
                   <li>
                     <Link href="/" className={styles.navItem}>
                       Placements
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="/" className={styles.navItem}>
-                      Contact Us
                     </Link>
                   </li>
                 </ul>
