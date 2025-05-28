@@ -7,6 +7,8 @@ import "swiper/css/navigation";
 import "swiper/css/scrollbar";
 import styles from "./style.module.scss";
 import CourseCard from "@components/widgets/courseCard";
+import LeftArrow from "@components/Ui/svg/leftArrow";
+import RightArrow from "@components/Ui/svg/rightArrowLine";
 
 const courses = [
   {
@@ -82,7 +84,7 @@ const SelfPacedPrograms = () => {
       </div>
 
       <div className={styles.sliderWrapper}>
-        <div className="container position-relative">
+        {/* <div className="container position-relative">
           <div className={styles.sliderNavigation}>
             <button
               className={`${styles.swiperPrev} swiper-button-prev`}
@@ -93,7 +95,7 @@ const SelfPacedPrograms = () => {
               id="customNext9"
             ></button>
           </div>
-        </div>
+        </div> */}
 
         <div className={styles.sliderInnerWrapper}>
           <Swiper
@@ -142,7 +144,21 @@ const SelfPacedPrograms = () => {
           </Swiper>
         </div>
         {/* Custom scrollbar */}
-        <div id="customScrollbar9" className="swiper-scrollbar"></div>
+        {/* <div id="customScrollbar9" className="swiper-scrollbar"></div> */}
+        <div className={`${styles.controls} controls`}>
+          <button id="customPrev9" className={`prevBtn ${styles.navBtn}`}>
+            {" "}
+            <RightArrow width={16} height={16} color="#000" />
+          </button>
+          <div
+            id="customScrollbar9"
+            className={`${styles.scrollbar} customScrollbar swiper-scrollbar`}
+          ></div>
+          <button id="customNext9" className={`nextBtn ${styles.navBtn}`}>
+            {" "}
+            <LeftArrow width={16} height={16} color="#000" />
+          </button>
+        </div>
       </div>
     </section>
   );

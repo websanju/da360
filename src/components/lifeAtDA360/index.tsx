@@ -9,6 +9,8 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import styles from "./style.module.scss";
 import { auto } from "@popperjs/core";
+import LeftArrow from "@components/Ui/svg/leftArrow";
+import RightArrow from "@components/Ui/svg/rightArrowLine";
 
 const LifeAtDA360 = () => {
   const [playingIndex, setPlayingIndex] = useState<number | null>(null);
@@ -74,18 +76,6 @@ const LifeAtDA360 = () => {
         </div>
       </div>
       <div className={styles.sliderWrapper}>
-        <div className="container position-relative">
-          <div className={styles.sliderNavigation}>
-            <button
-              className={`${styles.swiperPrev} swiper-button-prev`}
-              id="customPrev8"
-            ></button>
-            <button
-              className={`${styles.swiperNext} swiper-button-next`}
-              id="customNext8"
-            ></button>
-          </div>
-        </div>
         <div
           className={styles.sliderInnerWrapper}
           // style={{
@@ -207,7 +197,20 @@ const LifeAtDA360 = () => {
       <div className="container">
         <div className="row">
           <div className="col-lg-12">
-            <div id="customScrollbar2" className="swiper-scrollbar"></div>
+            <div className={`${styles.controls} controls`}>
+              <button id="customPrev8" className={`prevBtn ${styles.navBtn}`}>
+                {" "}
+                <RightArrow width={16} height={16} color="#000" />
+              </button>
+              <div
+                id="customScrollbar2"
+                className={`${styles.scrollbar} customScrollbar swiper-scrollbar`}
+              ></div>
+              <button id="customNext8" className={`nextBtn ${styles.navBtn}`}>
+                {" "}
+                <LeftArrow width={16} height={16} color="#000" />
+              </button>
+            </div>
           </div>
         </div>
       </div>

@@ -3,7 +3,8 @@ import { useEffect, useRef, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Scrollbar } from "swiper/modules";
 import Lightbox from "yet-another-react-lightbox";
-
+import LeftArrow from "@components/Ui/svg/leftArrow";
+import RightArrow from "@components/Ui/svg/rightArrowLine";
 // Styles
 import "swiper/scss";
 import "swiper/scss/navigation";
@@ -463,7 +464,20 @@ const CommunityMeetupSlider = () => {
             </Swiper>
           </div>
           {/* Custom scrollbar */}
-          <div id="customScrollbar12" className="swiper-scrollbar"></div>
+          {/* <div id="customScrollbar12" className="swiper-scrollbar"></div> */}
+
+          <div className={`${styles.controls} controlsWhite`}>
+            <button id="customPrev11" className={styles.navBtn}>
+              <RightArrow width={16} height={16} color="#fff" />
+            </button>
+            <div
+              id="customScrollbar12"
+              className={`${styles.scrollbar} customScrollbarWhite`}
+            ></div>
+            <button id="customNext11" className={styles.navBtn}>
+              <LeftArrow width={16} height={16} color="#fff" />
+            </button>
+          </div>
         </div>
       )}
       <Lightbox

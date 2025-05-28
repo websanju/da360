@@ -561,6 +561,26 @@
     }
 }
 
+.controls {
+    max-width: max-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 40px auto 0;
+    gap: 24px;
+
+    button {
+        border: 2px solid #FFFFFF;
+        width: 28px;
+        height: 28px;
+        background-color: transparent;
+        color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
 @media (width <=991px) { 
     .communityMeetupSection {
         padding: 50px 0;

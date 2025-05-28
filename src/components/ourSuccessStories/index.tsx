@@ -9,6 +9,8 @@ import { Scrollbar, Navigation } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/scrollbar";
 import ArrowUp from "@/components/Ui/svg/arrowUp";
+import LeftArrow from "@components/Ui/svg/leftArrow";
+import RightArrow from "@components/Ui/svg/rightArrowLine";
 
 interface Story {
   name: string;
@@ -101,10 +103,10 @@ const SuccessStories: React.FC = () => {
             </div>
           </div>
           <div className={styles.sliderWrapper}>
-            <div className={styles.sliderNavigation}>
+            {/* <div className={styles.sliderNavigation}>
               <button className="swiper-button-prev" id="customPrev7"></button>
               <button className="swiper-button-next" id="customNext7"></button>
-            </div>
+            </div> */}
 
             {/* Swiper Here */}
             <Swiper
@@ -168,9 +170,24 @@ const SuccessStories: React.FC = () => {
                 </SwiperSlide>
               ))}
             </Swiper>
+
+            <div className={`${styles.controls} controls`}>
+              <button id="customPrev7" className={`prevBtn ${styles.navBtn}`}>
+                {" "}
+                <RightArrow width={16} height={16} color="#000" />
+              </button>
+              <div
+                id="customScrollbar3"
+                className={`${styles.scrollbar} customScrollbar swiper-scrollbar drag-white`}
+              ></div>
+              <button id="customNext7" className={`nextBtn ${styles.navBtn}`}>
+                {" "}
+                <LeftArrow width={16} height={16} color="#000" />
+              </button>
+            </div>
           </div>
           {/* Custom scrollbar */}
-          <div id="customScrollbar3" className="swiper-scrollbar"></div>
+          {/* <div id="customScrollbar3" className="swiper-scrollbar"></div> */}
           <div className={styles.downloadBtnAction}>
             <Link
               href="#"

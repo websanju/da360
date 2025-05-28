@@ -150,13 +150,6 @@ export default function CaseStudySlider() {
               <div className={`${styles.controls} controlsWhite`}>
                 <button id="customPrev20" className={styles.navBtn}>
                   <RightArrow width={16} height={16} color="#fff" />
-                  {/* <Image
-                    src={"/images/icons/sliderLeft.svg"}
-                    alt={"leftArrow"}
-                    width={16}
-                    height={16}
-                    className={styles.cardImage}
-                  /> */}
                 </button>
                 <div
                   id="customScrollbar20"
@@ -164,13 +157,6 @@ export default function CaseStudySlider() {
                 ></div>
                 <button id="customNext20" className={styles.navBtn}>
                   <LeftArrow width={16} height={16} color="#fff" />
-                  {/* <Image
-                    src={"/images/icons/sliderRight.svg"}
-                    alt={"leftArrow"}
-                    width={16}
-                    height={16}
-                    className={styles.cardImage}
-                  /> */}
                 </button>
               </div>
             </div>
