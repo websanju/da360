@@ -3,6 +3,7 @@
 import Image from "next/image";
 import styles from "./style.module.scss";
 import RightArrow from "@/components/Ui/svg/rightArrow";
+import SectionHeader from "@components/widgets/sectionHeader";
 import Link from "next/link";
 
 const blogPosts = [
@@ -29,9 +30,13 @@ const LatestBlogPosts = () => {
       <div className="container">
         <div className="row">
           <div className="col-12">
-            <div className={`${styles.sectionHeader}`}>
+            <SectionHeader
+              wrapperMarginBottom={{ desktop: "60px", mobile: "40px" }}
+              title={<>Latest Blog Posts</>}
+            />
+            {/* <div className={`${styles.sectionHeader}`}>
               <h2>Latest Blog Posts</h2>
-            </div>
+            </div> */}
           </div>
         </div>
         <div className={`${styles.row} row`}>

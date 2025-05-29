@@ -9,6 +9,8 @@ interface SectionHeaderProps {
   description?: ReactNode;
   wrapperMarginBottom?: MarginValue;
   titleMarginBottom?: MarginValue;
+  titleColor?: string;
+  descriptionColor?: string;
 }
 
 function useResponsiveMargin(margin?: MarginValue): string {
@@ -37,14 +39,16 @@ export default function SectionHeader({
   description,
   wrapperMarginBottom = "0",
   titleMarginBottom = "0",
+  titleColor,
+  descriptionColor,
 }: SectionHeaderProps) {
   const wrapperMargin = useResponsiveMargin(wrapperMarginBottom);
   const titleMargin = useResponsiveMargin(titleMarginBottom);
 
   return (
     <div className={styles.header} style={{ marginBottom: wrapperMargin }}>
-      <h2 style={{ marginBottom: titleMargin }}>{title}</h2>
-      {description && <p>{description}</p>}
+      <h2 style={{ marginBottom: titleMargin, color: titleColor }}>{title}</h2>
+      {description && <p style={{ color: descriptionColor }}>{description}</p>}
     </div>
   );
 }

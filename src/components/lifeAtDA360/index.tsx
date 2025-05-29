@@ -11,6 +11,7 @@ import styles from "./style.module.scss";
 import { auto } from "@popperjs/core";
 import LeftArrow from "@components/Ui/svg/leftArrow";
 import RightArrow from "@components/Ui/svg/rightArrowLine";
+import SectionHeader from "@components/widgets/sectionHeader";
 
 const LifeAtDA360 = () => {
   const [playingIndex, setPlayingIndex] = useState<number | null>(null);
@@ -64,14 +65,22 @@ const LifeAtDA360 = () => {
       <div className="container">
         <div className="row">
           <div className="col-lg-12">
-            <div className={styles.lifeAtDA360Header}>
+            <SectionHeader
+              wrapperMarginBottom={{ desktop: "60px", mobile: "40px" }}
+              titleMarginBottom={{ desktop: "24px", mobile: "10px" }}
+              title={<>Life @DA360</>}
+              description="Experience next-level education through dynamic contests for Top
+                Ad Copywriters, Digital Marketing planners, Reels Expert,
+                Bloggers, Social Media Ninjas, and beyond."
+            />
+            {/* <div className={styles.lifeAtDA360Header}>
               <h2>Life @DA360</h2>
               <p>
                 Experience next-level education through dynamic contests for Top
                 Ad Copywriters, Digital Marketing planners, Reels Expert,
                 Bloggers, Social Media Ninjas, and beyond.
               </p>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
