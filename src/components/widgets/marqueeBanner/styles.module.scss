@@ -30,11 +30,11 @@
 }
 
 .leftToRight .marqueeContent {
-    animation: scrollLTR 30s linear infinite;
+    animation: scrollLTR 100s linear infinite;
 }
 
 .rightToLeft .marqueeContent {
-    animation: scrollRTL 30s linear infinite;
+    animation: scrollRTL 100s linear infinite;
 }
 
 @keyframes scrollLTR {
