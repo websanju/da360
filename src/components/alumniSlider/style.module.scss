@@ -2,21 +2,6 @@
 
 .alumniSection {
   margin-top: 140px;
-
-  .sectionheader {
-    margin-bottom: 40px;
-
-    h2 {
-      font-weight: 700;
-      font-style: italic;
-      font-size: 48px;
-      line-height: 60px;
-      letter-spacing: 0%;
-      text-align: center;
-      color: rgba(0, 0, 0, 1);
-    }
-  }
-
   .feedback {
     padding-left: 30px;
     display: flex;
@@ -217,18 +202,6 @@
 @media (width <=991px) {
   .alumniSection {
     margin-top: 60px;
-
-    .sectionheader {
-      margin-bottom: 40px;
-
-      h2 {
-        font-size: 24px;
-        text-align: center;
-        color: rgba(0, 0, 0, 1);
-        line-height: normal;
-      }
-    }
-
     .feedback {
       padding-left: 0;
       margin-top: 16px;

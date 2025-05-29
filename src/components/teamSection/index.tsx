@@ -3,6 +3,7 @@
 import { useState } from "react";
 import TeamSlider from "./teamSlider";
 import styles from "./style.module.scss";
+import SectionHeader from "@components/widgets/sectionHeader";
 
 const tabs = [
   "Super Mentors",
@@ -143,9 +144,14 @@ const TeamSection = () => {
       <div className="container">
         <div className="row">
           <div className="col-lg-12">
-            <div className={styles.sectionHeader}>
-              <h2>Your Success, Our People Meet the Team</h2>
-            </div>
+            <SectionHeader
+              wrapperMarginBottom={{ desktop: "60px", mobile: "40px" }}
+              title={
+                <>
+                  Your Success, Our People <br /> Meet the Team
+                </>
+              }
+            />
             {/* Tabs */}
             <div className={styles.tabs}>
               {tabs.map((tab, index) => (

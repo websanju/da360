@@ -11,6 +11,7 @@ import Image from "next/image";
 import { auto } from "@popperjs/core";
 import LeftArrow from "@components/Ui/svg/leftArrow";
 import RightArrow from "@components/Ui/svg/rightArrowLine";
+import SectionHeader from "@components/widgets/sectionHeader";
 // import LeftArrow from "@components/Ui/svg/leftArrow";
 
 const digitalAcademy = [
@@ -57,9 +58,10 @@ export default function DigitalAcademySlider() {
       <div className="container">
         <div className="row">
           <div className="col-md-12">
-            <div className={styles.sectionHeader}>
-              <h2>Life at Digital Academy 360</h2>
-            </div>
+            <SectionHeader
+              wrapperMarginBottom={{ desktop: "60px", mobile: "40px" }}
+              title={<>Life at Digital Academy 360</>}
+            />
           </div>
         </div>
       </div>

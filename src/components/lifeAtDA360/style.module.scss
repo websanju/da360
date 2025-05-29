@@ -40,10 +40,6 @@
     transition: all 200ms;
   }
 
-  // &:hover::after {
-  //   background-color: #1D1D1D;
-  // }
-
   img {
     position: relative;
     z-index: 3;
@@ -85,35 +81,6 @@
     transform: scale(1);
   }
 }
-
-
-// .lifeAtDA360Header {
-//   margin-bottom: 60px;
-
-//   h2 {
-//     font-weight: 700;
-//     font-style: italic;
-//     font-size: 48px;
-//     line-height: 60px;
-//     letter-spacing: 0%;
-//     margin-bottom: 24px;
-//     color: rgba(0, 0, 0, 1);
-//     text-align: center;
-//   }
-
-//   p {
-//     font-weight: 500;
-//     font-size: 16px;
-//     line-height: 24px;
-//     letter-spacing: 0%;
-//     color: rgba(15, 11, 49, 1);
-//     max-width: 863px;
-//     margin: 0 auto;
-//     text-align: center;
-
-//   }
-// }
-
 
 .sliderWrapper {
   position: relative;
@@ -216,31 +183,6 @@
   .lifeAtDA360Section {
     margin-bottom: 60px;
   }
-
-  // .lifeAtDA360Header {
-  //   margin-bottom: 40px;
-
-  //   h2 {
-  //     font-weight: 700;
-  //     font-style: italic;
-  //     font-size: 24px;
-  //     line-height: 100%;
-  //     text-align: center;
-  //     margin-bottom: 10px;
-  //   }
-
-  //   p {
-  //     font-weight: 500;
-  //     font-size: 12px;
-  //     line-height: 18px;
-  //     letter-spacing: 0%;
-  //     text-align: center;
-
-  //     color: rgba(15, 11, 49, 1);
-  //     max-width: 303px;
-  //     margin: 0 auto;
-  //   }
-  // }
 
   .videoBox {
     min-height: 207px !important;

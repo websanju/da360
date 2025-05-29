@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import styles from "./style.module.scss";
+import SectionHeader from "@components/widgets/sectionHeader";
 
 const unlockBonuses = [
   {
@@ -61,10 +62,17 @@ const UnlockBonuses = () => {
       <div className={`${styles.container} container`}>
         <div className="row">
           <div className="col-12">
-            <div className={`${styles.sectionHeader}`}>
-              <h2>Unlock Bonuses Worth ₹5000+ for Free1</h2>
-              <p>Register before midnight of December 28, 2024</p>
-            </div>
+            <SectionHeader
+              wrapperMarginBottom={{ desktop: "60px", mobile: "40px" }}
+              titleMarginBottom={{ desktop: "16px", mobile: "10px" }}
+              title={
+                <>
+                  Unlock Bonuses Worth <br /> ₹5000+ for Free1
+                </>
+              }
+              maxWidth="650px"
+              description="Register before midnight of December 28, 2024"
+            />
           </div>
         </div>
         <div className={`${styles.row} row`}>

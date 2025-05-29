@@ -11,6 +11,7 @@ import Image from "next/image";
 import { auto } from "@popperjs/core";
 import LeftArrow from "@components/Ui/svg/leftArrow";
 import RightArrow from "@components/Ui/svg/rightArrowLine";
+import SectionHeader from "@components/widgets/sectionHeader";
 
 type Person = {
   id: number;
@@ -210,10 +211,16 @@ const PeopleSlider = () => {
         <div className="container">
           <div className="row">
             <div className="col-lg-12">
-              <div className={styles.sectionheader}>
-                <h2>Ambitious People @DA360</h2>
-                <p>Hear it from them</p>
-              </div>
+              <SectionHeader
+                wrapperMarginBottom={{ desktop: "60px", mobile: "40px" }}
+                titleMarginBottom={{ desktop: "20px", mobile: "10px" }}
+                title={
+                  <>
+                    Ambitious People <br /> @DA360
+                  </>
+                }
+                description="Hear it from them"
+              />
             </div>
           </div>
         </div>

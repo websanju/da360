@@ -12,6 +12,7 @@ import "swiper/css/pagination";
 import TickBlack from "@/components/Ui/svg/tickBlack";
 import ArrowUp from "@/components/Ui/svg/arrowUp";
 import { auto } from "@popperjs/core";
+import SectionHeader from "@components/widgets/sectionHeader";
 
 interface Project {
   id: number;
@@ -142,9 +143,14 @@ export default function LiveProjectsSlider({ section }: ProjectSectionProps) {
       <div className="container">
         <div className="row">
           <div className="col-lg-12">
-            <div className={styles.sectionHeader}>
-              <h2>Digital Marketing Live Projects</h2>
-            </div>
+            <SectionHeader
+              wrapperMarginBottom={{ desktop: "60px", mobile: "40px" }}
+              title={
+                <>
+                  Digital Marketing <br /> Live Projects
+                </>
+              }
+            />
           </div>
         </div>
 

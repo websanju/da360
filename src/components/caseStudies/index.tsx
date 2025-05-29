@@ -11,6 +11,7 @@ import { auto } from "@popperjs/core";
 import CaseStudiesCard from "@components/widgets/caseStudiesCard";
 import LeftArrow from "@components/Ui/svg/leftArrow";
 import RightArrow from "@components/Ui/svg/rightArrowLine";
+import SectionHeader from "@components/widgets/sectionHeader";
 // import LeftArrow from "@components/Ui/svg/leftArrow";
 
 const caseStudies = [
@@ -62,10 +63,16 @@ export default function CaseStudiesSlider() {
       <div className="container">
         <div className="row">
           <div className="col-md-12">
-            <div className={styles.sectionHeader}>
-              <h2>Glimpse of Brand Case Studies</h2>
-              <p>Learn with real case studies from brands across industries</p>
-            </div>
+            <SectionHeader
+              wrapperMarginBottom={{ desktop: "60px", mobile: "40px" }}
+              titleMarginBottom={{ desktop: "20px", mobile: "10px" }}
+              title={
+                <>
+                  Glimpse of Brand <br /> Case Studies
+                </>
+              }
+              description="Learn with real case studies from brands across industries"
+            />
           </div>
         </div>
       </div>

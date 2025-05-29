@@ -1,15 +1,15 @@
 "use client";
 import React from "react";
-// import React, { useRef, useState, useEffect } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Scrollbar, Navigation } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/scrollbar";
 import VideoCard from "./VideoCard";
-import styles from "./style.module.scss"; // optional for button custom styling
+import styles from "./style.module.scss";
 import { auto } from "@popperjs/core";
 import LeftArrow from "@components/Ui/svg/leftArrow";
 import RightArrow from "@components/Ui/svg/rightArrowLine";
+import SectionHeader from "@components/widgets/sectionHeader";
 
 export default function VideoSection() {
   const videoData = [
@@ -57,31 +57,18 @@ export default function VideoSection() {
     },
   ];
 
-  // const containerRef = useRef<HTMLDivElement>(null);
-  // const [containerPaddingLeft, setContainerPaddingLeft] = useState(20);
-
-  // useEffect(() => {
-  //   function updatePadding() {
-  //     if (containerRef.current) {
-  //       const rect = containerRef.current.getBoundingClientRect();
-  //       setContainerPaddingLeft(rect.left);
-  //     }
-  //   }
-  //   updatePadding();
-  //   window.addEventListener("resize", updatePadding);
-  //   return () => window.removeEventListener("resize", updatePadding);
-  // }, []);
-
   return (
     <section className={styles.videoSection}>
       <div className="container">
-        <div className={`${styles.sectionHeader} row`}>
+        <div className={`row`}>
           <div className="col-md-12">
-            <h2>Live Sessions Short Clips.</h2>
-            <p>
-              Sneak Peeks into Our Expert-Led Digital Marketing Training
-              Sessions
-            </p>
+            <SectionHeader
+              wrapperMarginBottom={{ desktop: "60px", mobile: "40px" }}
+              titleMarginBottom={{ desktop: "20px", mobile: "10px" }}
+              title={<>Live Sessions Short Clips.</>}
+              maxWidth="650px"
+              description="Sneak Peeks into Our Expert-Led Digital Marketing Training Sessions"
+            />
           </div>
         </div>
       </div>

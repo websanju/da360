@@ -73,14 +73,6 @@ const LifeAtDA360 = () => {
                 Ad Copywriters, Digital Marketing planners, Reels Expert,
                 Bloggers, Social Media Ninjas, and beyond."
             />
-            {/* <div className={styles.lifeAtDA360Header}>
-              <h2>Life @DA360</h2>
-              <p>
-                Experience next-level education through dynamic contests for Top
-                Ad Copywriters, Digital Marketing planners, Reels Expert,
-                Bloggers, Social Media Ninjas, and beyond.
-              </p>
-            </div> */}
           </div>
         </div>
       </div>

@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./style.module.scss";
 import Image from "next/image";
+import SectionHeader from "@components/widgets/sectionHeader";
 
 const RewardGrid = () => {
   return (
@@ -9,13 +10,17 @@ const RewardGrid = () => {
         <div className="row">
           <div className="col-lg-12">
             <div className={styles.rewardGridBox}>
-              <div className={styles.header}>
-                <h2>Get Rewarded</h2>
-                <p>
-                  Earn slam coins at the end of every epic and exchange them for
-                  lucrative rewards
-                </p>
-              </div>
+              <SectionHeader
+                wrapperMarginBottom={{ desktop: "40px", mobile: "40px" }}
+                titleMarginBottom={{ desktop: "20px", mobile: "10px" }}
+                title={<>Get Rewarded</>}
+                maxWidth="450px"
+                titleColor="#fff"
+                descriptionColor="#fff"
+                description="Earn slam coins at the end of every epic and exchange them for
+                  lucrative rewards"
+              />
+
               <div>
                 <div className={`${styles.gridWapper} ${styles.desktopblock}`}>
                   <div className={styles.item1}>

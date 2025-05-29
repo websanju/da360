@@ -7,6 +7,7 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import styles from "./style.module.scss";
 import VideoCard from "./VideoCard";
+import SectionHeader from "@components/widgets/sectionHeader";
 
 type Slide = {
   id: number;
@@ -52,9 +53,10 @@ export default function AlumniSlider() {
       <div className="container">
         <div className="row">
           <div className="col-lg-12">
-            <div className={styles.sectionheader}>
-              <h2>Hear from Our Alumni</h2>
-            </div>
+            <SectionHeader
+              wrapperMarginBottom={{ desktop: "60px", mobile: "40px" }}
+              title={<>Hear from Our Alumni</>}
+            />
           </div>
         </div>
         <div className="row">
