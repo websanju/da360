@@ -11,6 +11,7 @@ interface SectionHeaderProps {
   titleMarginBottom?: MarginValue;
   titleColor?: string;
   descriptionColor?: string;
+  maxWidth?: string;
 }
 
 function useResponsiveMargin(margin?: MarginValue): string {
@@ -41,6 +42,7 @@ export default function SectionHeader({
   titleMarginBottom = "0",
   titleColor,
   descriptionColor,
+  maxWidth,
 }: SectionHeaderProps) {
   const wrapperMargin = useResponsiveMargin(wrapperMarginBottom);
   const titleMargin = useResponsiveMargin(titleMarginBottom);
@@ -48,7 +50,11 @@ export default function SectionHeader({
   return (
     <div className={styles.header} style={{ marginBottom: wrapperMargin }}>
       <h2 style={{ marginBottom: titleMargin, color: titleColor }}>{title}</h2>
-      {description && <p style={{ color: descriptionColor }}>{description}</p>}
+      {description && (
+        <p style={{ color: descriptionColor, maxWidth: maxWidth }}>
+          {description}
+        </p>
+      )}
     </div>
   );
 }

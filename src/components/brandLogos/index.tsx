@@ -1,7 +1,7 @@
 // components/BrandLogos.tsx
 import Image from "next/image";
 import styles from "./style.module.scss";
-
+import SectionHeader from "@components/widgets/sectionHeader";
 const logos = [
   { src: "/images/brand/amazon.png", alt: "Amazon" },
   { src: "/images/brand/reddit.png", alt: "Reddit" },
@@ -28,11 +28,16 @@ const BrandLogos: React.FC<BrandLogosProps> = ({
   return (
     <section className={styles.brandSection}>
       <div className="container text-center d-flex justify-content-center">
-        <h2>
-          {firstHeading}
-          <br />
-          {secondHeading}
-        </h2>
+        <SectionHeader
+          wrapperMarginBottom={{ desktop: "60px", mobile: "40px" }}
+          title={
+            <>
+              {firstHeading}
+              <br />
+              {secondHeading}
+            </>
+          }
+        />
       </div>
       {/* Row 1: Right to Left */}
       <div className={styles.slider}>

@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./style.module.scss";
 import Image from "next/image";
+import SectionHeader from "@components/widgets/sectionHeader";
 
 const reviews = [
   {
@@ -35,13 +36,14 @@ const TrustedByLearners = () => {
       <div className="container">
         <div className="row">
           <div className="col-lg-12">
-            <div className={styles.sectionHeader}>
-              <h2>Trusted by Learners</h2>
-              <p>
-                1,00,000+ Digital Academy 360 alumni from 1,100+ companies &
-                4,400+ colleges working in top product companies
-              </p>
-            </div>
+            <SectionHeader
+              wrapperMarginBottom={{ desktop: "60px", mobile: "40px" }}
+              titleMarginBottom={{ desktop: "20px", mobile: "10px" }}
+              title={<>Trusted by Learners</>}
+              maxWidth="650px"
+              description="1,00,000+ Digital Academy 360 alumni from 1,100+ companies &
+                4,400+ colleges working in top product companies"
+            />
           </div>
         </div>
       </div>

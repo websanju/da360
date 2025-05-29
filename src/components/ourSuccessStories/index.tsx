@@ -11,7 +11,7 @@ import "swiper/css/scrollbar";
 import ArrowUp from "@/components/Ui/svg/arrowUp";
 import LeftArrow from "@components/Ui/svg/leftArrow";
 import RightArrow from "@components/Ui/svg/rightArrowLine";
-
+import SectionHeader from "@components/widgets/sectionHeader";
 interface Story {
   name: string;
   companyLogo: string;
@@ -76,11 +76,14 @@ const SuccessStories: React.FC = () => {
       <div className="container">
         <div className={styles.successWrapper}>
           <div className={styles.storiesHeader}>
-            <h2>Our Success Stories</h2>
-            <p>
-              Our learners who made impressive career advancements through AI
-              Digital Marketing Course
-            </p>
+            <SectionHeader
+              wrapperMarginBottom={{ desktop: "24px", mobile: "40px" }}
+              titleMarginBottom={{ desktop: "16px", mobile: "10px" }}
+              title={<>Our Success Stories</>}
+              maxWidth="484px"
+              description="Our learners who made impressive career advancements through AI
+              Digital Marketing Course"
+            />
             <div className={styles.usersimg}>
               {["user-1", "user-2", "user-3", "user-4", "user-5"].map(
                 (user, i) => (

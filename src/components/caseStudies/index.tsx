@@ -57,21 +57,6 @@ const caseStudies = [
 ];
 
 export default function CaseStudiesSlider() {
-  // const containerRef = useRef<HTMLDivElement>(null);
-  // const [containerPaddingLeft, setContainerPaddingLeft] = useState(20);
-
-  // useEffect(() => {
-  //   function updatePadding() {
-  //     if (containerRef.current) {
-  //       const rect = containerRef.current.getBoundingClientRect();
-  //       setContainerPaddingLeft(rect.left);
-  //     }
-  //   }
-  //   updatePadding();
-  //   window.addEventListener("resize", updatePadding);
-  //   return () => window.removeEventListener("resize", updatePadding);
-  // }, []);
-
   return (
     <section className={styles.caseStudiessection}>
       <div className="container">
@@ -85,21 +70,7 @@ export default function CaseStudiesSlider() {
         </div>
       </div>
       <div className={styles.sliderWrapper}>
-        {/* <div className="container position-relative">
-          <div className={styles.sliderNavigation}>
-            <button className="swiper-button-prev" id="customPrev5"></button>
-            <button className="swiper-button-next" id="customNext5"></button>
-          </div>
-        </div> */}
-        <div
-          className={styles.sliderInnerc}
-          // style={{
-          //   width: "100vw",
-          //   marginLeft: `-${containerPaddingLeft}px`,
-          //   paddingLeft: containerPaddingLeft,
-          //   boxSizing: "border-box",
-          // }}
-        >
+        <div className={styles.sliderInnerc}>
           <Swiper
             modules={[Navigation, Scrollbar]}
             spaceBetween={20}

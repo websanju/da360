@@ -9,6 +9,7 @@ import styles from "./style.module.scss";
 import CourseCard from "@components/widgets/courseCard";
 import LeftArrow from "@components/Ui/svg/leftArrow";
 import RightArrow from "@components/Ui/svg/rightArrowLine";
+import SectionHeader from "@components/widgets/sectionHeader";
 
 const courses = [
   {
@@ -75,10 +76,12 @@ const SelfPacedPrograms = () => {
       <div className="container">
         <div className="row">
           <div className="col-lg-12">
-            <div className={styles.sectionHeader}>
-              <h2>Self-Paced Programs</h2>
-              <p>Upskill Your Knowledge To Change Your Career Trajectory</p>
-            </div>
+            <SectionHeader
+              wrapperMarginBottom={{ desktop: "60px", mobile: "40px" }}
+              titleMarginBottom={{ desktop: "16px", mobile: "10px" }}
+              title={<>Self-Paced Programs</>}
+              description="Upskill Your Knowledge To Change Your Career Trajectory"
+            />
           </div>
         </div>
       </div>

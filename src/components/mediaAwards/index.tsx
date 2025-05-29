@@ -34,9 +34,6 @@ const MediaAwards = () => {
   return (
     <section className={styles.mediaAwardsSection}>
       <div className={`${styles.mediaAwardsContainer} container`}>
-        {/* <h2 className={styles.title}>
-          <em>Media & Awards</em>
-        </h2> */}
         <SectionHeader
           wrapperMarginBottom={{ desktop: "60px", mobile: "40px" }}
           title={<>DA360 In Spotlight</>}

@@ -9,38 +9,11 @@
   background-image: url("/images/successStories.svg");
 }
 
-.storiesHeader {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  margin-bottom: 30px;
-
-  h2 {
-    font-weight: 700;
-    font-style: italic;
-    font-size: 52px;
-    line-height: 49px;
-    letter-spacing: 0%;
-    margin-bottom: 16px;
-  }
-
-  p {
-    max-width: 484px;
-    margin: 0 auto;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 24px;
-    letter-spacing: 2%;
-    text-align: center;
-    color: rgba(0, 0, 0, 1);
-    margin-bottom: 24px;
-  }
-}
-
 .usersimg {
   display: flex;
   align-items: center;
+  justify-content: center;
+  margin-bottom: 31px;
 
   .userImgItems {
     width: 50px;
@@ -285,22 +258,7 @@
     }
   }
 
-  .storiesHeader {
-    margin-bottom: 30px;
 
-    h2 {
-      font-size: 24px;
-      line-height: 100%;
-      margin-bottom: 6px;
-    }
-
-    p {
-      max-width: 260px;
-      font-size: 12px;
-      margin-bottom: 0;
-      line-height: normal;
-    }
-  }
 
   .downloadBtnAction {
     margin-top: 40px;

@@ -5,6 +5,7 @@ import { Navigation, Scrollbar } from "swiper/modules";
 import Lightbox from "yet-another-react-lightbox";
 import LeftArrow from "@components/Ui/svg/leftArrow";
 import RightArrow from "@components/Ui/svg/rightArrowLine";
+import SectionHeader from "@components/widgets/sectionHeader";
 // Styles
 import "swiper/scss";
 import "swiper/scss/navigation";
@@ -389,17 +390,25 @@ const CommunityMeetupSlider = () => {
 
   return (
     <section className={styles.communityMeetupSection}>
-      <div className={styles.sectionHeader}>
-        <div className="container">
-          <div className="row">
-            <div className="col-lg-12">
-              <h2>Learn Online, Connect Offline</h2>
+      <div className="container">
+        <div className="row">
+          <div className="col-lg-12">
+            <SectionHeader
+              wrapperMarginBottom={{ desktop: "60px", mobile: "40px" }}
+              titleMarginBottom={{ desktop: "20px", mobile: "10px" }}
+              titleColor="#fff"
+              descriptionColor="#fff"
+              title={<>Learn Online, Connect Offline</>}
+              description="Engage with other learners, alumni, and mentors and attend
+                community sessions to learn from each other in our curated
+                community."
+            />
+            {/* <h2>Learn Online, Connect Offline</h2>
               <p>
                 Engage with other learners, alumni, and mentors and attend
                 community sessions to learn from each other in our curated
                 community.
-              </p>
-            </div>
+              </p> */}
           </div>
         </div>
       </div>

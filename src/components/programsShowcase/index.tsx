@@ -4,6 +4,7 @@ import WidgetCard from "@components/widgets/skills";
 import styles from "./style.module.scss";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
+import SectionHeader from "@components/widgets/sectionHeader";
 
 const ProgramsShowcase: React.FC = () => {
   useEffect(() => {
@@ -54,12 +55,17 @@ const ProgramsShowcase: React.FC = () => {
   return (
     <section className={styles.programsShowcaseSection}>
       <div className="wrapper">
-        <div className={styles.programsShowcaseHeader}>
-          <h2>
-            Our Programs & Skills <br /> To Master
-          </h2>
-          <p>Upskill Your Knowledge To Change Your Career Trajectory</p>
-        </div>
+        <SectionHeader
+          wrapperMarginBottom={{ desktop: "60px", mobile: "40px" }}
+          titleMarginBottom={{ desktop: "20px", mobile: "10px" }}
+          title={
+            <>
+              Our Programs & Skills <br /> To Master
+            </>
+          }
+          description="Upskill Your Knowledge To Change Your Career Trajectory"
+        />
+
         <div className={`${styles.container} container`}>
           <div className="card-wrapper">
             <div className="card1">

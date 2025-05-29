@@ -16,29 +16,6 @@
     will-change: transform;
     overflow: visible;
   }
-
-  .programsShowcaseHeader {
-    margin-bottom: 60px;
-
-    h2 {
-      font-weight: 700;
-      font-style: italic;
-      font-size: 48px;
-      line-height: 60px;
-      text-align: center;
-      margin-bottom: 13px;
-      color: #201116;
-    }
-
-    p {
-      font-weight: 500;
-      font-size: 16px;
-      line-height: 100%;
-      letter-spacing: 0%;
-      color: #000000;
-      text-align: center;
-    }
-  }
 }
 
 .cardWrapper {
@@ -59,21 +36,5 @@
 @media (width <=991px) {
   .programsShowcaseSection {
     margin-top: 60px;
-    .programsShowcaseHeader {
-      margin-bottom: 20px;
-
-      h2 {
-        font-size: 24px;
-        line-height: 32px;
-        max-width: 274px;
-        margin: 0 auto 16px;
-      }
-
-      p {
-        font-size: 12px;
-        max-width: 243px;
-        margin: 0 auto;
-      }
-    }
   }
 }
