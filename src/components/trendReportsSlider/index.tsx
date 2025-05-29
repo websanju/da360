@@ -11,6 +11,7 @@ import styles from "./styles.module.scss";
 import CaseStudiesCard from "@components/widgets/caseStudiesCard";
 import LeftArrow from "@components/Ui/svg/leftArrow";
 import RightArrow from "@components/Ui/svg/rightArrowLine";
+import SectionHeader from "@components/widgets/sectionHeader";
 
 const caseStudies = [
   {
@@ -85,9 +86,15 @@ export default function CaseStudySlider({ section }: CaseStudySliderProps) {
       <div className="container">
         <div className="row">
           <div className="col-lg-12">
-            <div className={styles.sectionHeader}>
-              <h2>Unlock 25,000+ Case Studies & Trend Reports </h2>
-            </div>
+            <SectionHeader
+              wrapperMarginBottom={{ desktop: "60px", mobile: "40px" }}
+              title={
+                <>
+                  Unlock 25,000+ Case Studies <br /> & Trend Reports
+                </>
+              }
+              titleColor="#fff"
+            />
             <div className={styles.brandLogos}>
               {uniqueBrands.map((brand, idx) => (
                 <button

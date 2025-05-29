@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 import SportCardSlider from "@/components/widgets/sportCardSlider";
 import styles from "./style.module.scss";
 import LeftArrow from "@components/Ui/svg/leftArrow";
+import SectionHeader from "@components/widgets/sectionHeader";
 
 const sportData = [
   {
@@ -66,13 +67,17 @@ export default function SportsGrid({ section }: SportsGridProps) {
       <div className="container">
         <div className="row">
           <div className="col-lg-12">
-            <div className={styles.sectionHeader}>
-              <h2>Sports Event</h2>
-              <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry.
-              </p>
-            </div>
+            <SectionHeader
+              wrapperMarginBottom={{ desktop: "60px", mobile: "40px" }}
+              titleMarginBottom={{ desktop: "20px", mobile: "10px" }}
+              title={<>Sports Event</>}
+              titleColor="#fff"
+              descriptionColor="#fff"
+              maxWidth="600px"
+              description=" Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. text of the printing and typesetting
+                industry"
+            />
           </div>
         </div>
 

@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import styles from "./styles.module.scss";
 import Image from "next/image";
+import SectionHeader from "@components/widgets/sectionHeader";
 
 const steps = [
   {
@@ -142,14 +143,14 @@ const FreelancerSteps = ({
         <div className="row">
           <div className="col-lg-12">
             <div className={styles.freelancerStepsBox}>
-              <div className={styles.sectionHeader}>
-                <h2>Become A Freelancer</h2>
-                <p>
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been.
-                </p>
-              </div>
-
+              <SectionHeader
+                wrapperMarginBottom={{ desktop: "40px", mobile: "30px" }}
+                titleMarginBottom={{ desktop: "16px", mobile: "10px" }}
+                title={<>Become A Freelancer</>}
+                maxWidth="650px"
+                description=" Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Lorem Ipsum has been."
+              />
               {isMobile ? (
                 // Mobile Accordion View
                 <div className={styles.freelancerContent}>

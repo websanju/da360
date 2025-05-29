@@ -1,30 +1,5 @@
 .communityMeetupSection {
-    padding: 100px 0;
-
-    .sectionHeader {
-        margin-bottom: 60px;
-
-        h2 {
-            font-weight: 700;
-            font-style: italic;
-            font-size: 48px;
-            line-height: 60px;
-            text-align: center;
-            margin-bottom: 20px;
-            color: #000;
-        }
-
-        p {
-            font-weight: 500;
-            font-size: 16px;
-            line-height: 24px;
-            letter-spacing: 0%;
-            text-align: center;
-            color: #000;
-            max-width: 602px;
-            margin: 0 auto;
-        }
-    }
+    padding: 140px 0 0;
 }
 
 .swiper-slide {
@@ -592,27 +567,8 @@
 
 @media (width <=991px) {
     .communityMeetupSection {
-        padding: 50px 0;
+        padding: 60px 0 0;
         background-color: #fff;
-
-        .sectionHeader {
-            margin-bottom: 30px;
-
-            h2 {
-                font-size: 24px;
-                line-height: 32px;
-                color: #000;
-                max-width: 292px;
-                margin: 0 auto 16px;
-            }
-
-            p {
-                font-size: 12px;
-                line-height: normal;
-                max-width: 304px;
-                margin: 0 auto;
-            }
-        }
     }
     .mobileCardBox {
         .mobileCardList {

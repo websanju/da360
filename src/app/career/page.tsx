@@ -11,7 +11,9 @@ export default function Career() {
       <CurrentOpenings />
       <WhyWorkWithUs />
       <TeamSpeaksSlider />
-      <LifeAtDA360Gallery />
+      <LifeAtDA360Gallery
+        paddingBottom={{ desktop: "140px", mobile: "60px" }}
+      />
     </main>
   );
 }

@@ -5,6 +5,7 @@ import GuestFacultyCard from "@components/widgets/guestFacultyCard";
 import styles from "./styles.module.scss";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Scrollbar } from "swiper/modules";
+import SectionHeader from "@components/widgets/sectionHeader";
 import "swiper/css";
 
 const data = [
@@ -84,13 +85,14 @@ const GuestFacultySection = ({ section }: GuestFacultySectionProps) => {
       <div className="container">
         <div className="row">
           <div className="col-lg-12">
-            <div className={styles.sectionHeader}>
-              <h2>Guest Faculty</h2>
-              <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry.
-              </p>
-            </div>
+            <SectionHeader
+              wrapperMarginBottom={{ desktop: "60px", mobile: "40px" }}
+              titleMarginBottom={{ desktop: "16px", mobile: "10px" }}
+              title={<>Guest Faculty</>}
+              maxWidth="650px"
+              description="Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry."
+            />
           </div>
         </div>
       </div>

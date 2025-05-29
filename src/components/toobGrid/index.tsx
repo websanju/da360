@@ -2,6 +2,8 @@
 import Link from "next/link";
 import styles from "./styles.module.scss";
 import Image from "next/image";
+import SectionHeader from "@components/widgets/sectionHeader";
+
 interface TOOBGridProps {
   section?: string;
 }
@@ -11,14 +13,14 @@ const TOOBGrid = ({ section }: TOOBGridProps) => {
       <div className="container">
         <div className="row">
           <div className="col-lg-12">
-            <div className={styles.headerSection}>
-              <h2>#TOOB</h2>
-              <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been.
-              </p>
-            </div>
-
+            <SectionHeader
+              wrapperMarginBottom={{ desktop: "60px", mobile: "40px" }}
+              titleMarginBottom={{ desktop: "20px", mobile: "10px" }}
+              title={<>#TOOB</>}
+              maxWidth="650px"
+              description=" Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been Lorem Ipsum has been."
+            />
             {/* <div className={styles.grid}>
               <div className={styles.colume}>
                 <div className={`${styles.item} ${styles.green}`}>

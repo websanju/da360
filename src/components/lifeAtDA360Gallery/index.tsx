@@ -5,6 +5,7 @@ import { Navigation, Scrollbar } from "swiper/modules";
 import Lightbox from "yet-another-react-lightbox";
 import LeftArrow from "@components/Ui/svg/leftArrow";
 import RightArrow from "@components/Ui/svg/rightArrowLine";
+import SectionHeader from "@components/widgets/sectionHeader";
 // Styles
 import "swiper/scss";
 import "swiper/scss/navigation";
@@ -148,12 +149,35 @@ const meetups: MeetupGroup[] = [
     ],
   },
 ];
+type MarginValue = string | { desktop: string; mobile: string };
 
 interface LifeAtDA360GalleryProps {
   title?: string;
   description?: string;
   bgColor?: string;
   section?: string;
+  paddingBottom?: MarginValue;
+}
+
+function useResponsiveMargin(margin?: MarginValue): string {
+  const [value, setValue] = useState("0");
+
+  useEffect(() => {
+    const updateMargin = () => {
+      const isMobile = window.innerWidth <= 767;
+      if (typeof margin === "string") {
+        setValue(margin);
+      } else if (margin) {
+        setValue(isMobile ? margin.mobile : margin.desktop);
+      }
+    };
+
+    updateMargin();
+    window.addEventListener("resize", updateMargin);
+    return () => window.removeEventListener("resize", updateMargin);
+  }, [margin]);
+
+  return value;
 }
 
 const LifeAtDA360Gallery = ({
@@ -161,6 +185,7 @@ const LifeAtDA360Gallery = ({
   description,
   bgColor = "#ffffff",
   section,
+  paddingBottom,
 }: LifeAtDA360GalleryProps) => {
   const [open, setOpen] = useState(false);
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -322,21 +347,22 @@ const LifeAtDA360Gallery = ({
   return (
     <section
       className={styles.communityMeetupSection}
-      style={{ backgroundColor: bgColor }}
+      style={{
+        backgroundColor: bgColor,
+        paddingBottom: useResponsiveMargin(paddingBottom),
+      }}
       id={section}
     >
-      <div className={styles.sectionHeader}>
-        <div className="container">
-          <div className="row">
-            <div className="col-lg-12">
-              {title && <h2>{title}</h2>}
-              {description && <p>{description}</p>}
-              {/* <h2>#LifeAtDA360 Gallery</h2>
-              <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been.
-              </p> */}
-            </div>
+      <div className="container">
+        <div className="row">
+          <div className="col-lg-12">
+            <SectionHeader
+              wrapperMarginBottom={{ desktop: "60px", mobile: "40px" }}
+              titleMarginBottom={{ desktop: "20px", mobile: "10px" }}
+              title={<>{title}</>}
+              maxWidth="650px"
+              description={description}
+            />
           </div>
         </div>
       </div>

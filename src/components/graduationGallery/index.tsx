@@ -8,6 +8,7 @@ import styles from "./styles.module.scss";
 import Image from "next/image";
 import LeftArrow from "@components/Ui/svg/leftArrow";
 import RightArrow from "@components/Ui/svg/rightArrowLine";
+import SectionHeader from "@components/widgets/sectionHeader";
 const images = [
   "/images/graduation/graduation-1.jpg",
   "/images/graduation/graduation-2.jpg",
@@ -24,17 +25,19 @@ const GraduationGallery: React.FC<GraduationGalleryProps> = ({ section }) => {
       <div className="container">
         <div className="row">
           <div className="col-lg-12">
-            <div className={styles.sectionHeader}>
-              <h2>
-                Graduation Day <br />
-                <span>Gallery</span>
-              </h2>
-
-              <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been.
-              </p>
-            </div>
+            <SectionHeader
+              wrapperMarginBottom={{ desktop: "60px", mobile: "40px" }}
+              titleMarginBottom={{ desktop: "20px", mobile: "10px" }}
+              title={
+                <>
+                  Graduation Day <br />
+                  Gallery
+                </>
+              }
+              maxWidth="650px"
+              description="  Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been Ipsum is simply dummy."
+            />
           </div>
         </div>
       </div>

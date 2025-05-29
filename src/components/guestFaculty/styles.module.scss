@@ -1,27 +1,6 @@
 .guestFaculty {
-    margin-top: 140px;
-    margin-bottom: 140px;
-    .sectionHeader {
-        margin-bottom: 60px;
-        h2 {
-            font-weight: 700;
-            font-style: italic;
-            font-size: 48px;
-            line-height: 60px;
-            text-align: center;
-            color: #000;
-            margin-bottom: 20px;
-        }
-        p {
-            font-weight: 500;
-            font-size: 22px;
-            line-height: normal;
-            text-align: center;
-            max-width: 604px;
-            margin: 0 auto;
-        }
-    }
-
+    padding-top: 140px;
+    padding-bottom: 140px;
     .row {
         --bs-gutter-x: 40px;
         --bs-gutter-y: 40px;
@@ -35,8 +14,8 @@
 
 @media (width <=992px) {
     .guestFaculty { 
-        margin-top: 60px;
-        margin-bottom: 60px;
+        padding-top: 60px;
+        padding-bottom: 60px;
         .sectionHeader {
             margin-bottom: 24px;
             h2 {

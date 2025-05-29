@@ -1,23 +1,6 @@
 .trendReportsSlider {
     background: #000000;
     padding: 100px 0;
-
-    .sectionHeader {
-        margin-bottom: 60px;
-
-        h2 {
-            font-weight: 700;
-            font-style: italic;
-            font-size: 48px;
-            line-height: 63px;
-            letter-spacing: 0%;
-            text-align: center;
-            color: #FFFFFF;
-            max-width: 721px;
-            margin: 0 auto;
-        }
-    }
-
     .brandLogos {
         margin: 0 auto 50px;
         display: flex;
@@ -103,20 +86,6 @@
     }
     .trendReportsSlider { 
         padding: 60px 0;
-        .sectionHeader {
-            margin-bottom: 24px;
-            h2 {
-                font-weight: 700;
-                font-style: italic;
-                font-size: 24px;
-                line-height: normal;
-                letter-spacing: 0%;
-                text-align: center;
-                color: #FFFFFF;
-                max-width: 721px;
-                margin: 0 auto;
-            }
-        }
         .brandLogos {
             display: none;
          }
