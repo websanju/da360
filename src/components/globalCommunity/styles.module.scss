@@ -167,3 +167,22 @@
         transform: scale(1);
     }
 }
+
+@media (width <=991px) {
+    .community {
+        text-align: center;
+        margin-top: 60px;
+        .stats { 
+            .statItem {
+                h3 {
+                    font-size: 18px;
+                    line-height: normal;
+                }
+                p {
+                    font-size: 12px;
+                    line-height: normal;
+                }
+             }
+        }
+    }
+  }

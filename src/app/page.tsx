@@ -8,6 +8,7 @@ import OurSuccessStories from "@components/ourSuccessStories";
 import TrustedByLearners from "@components/trustedByLearners";
 import CommunityMeetupSlider from "@components/communityMeetupSlider";
 import GlobalCommunity from "@components/globalCommunity";
+import MarqueeBanner from "@components/widgets/marqueeBanner";
 import Comparison from "@components/comparison";
 import LifeAtDA360 from "@components/lifeAtDA360";
 import LatestBlogPosts from "@components/latestBlogPosts";
@@ -60,6 +61,7 @@ export default function HomePage() {
       <TrustedByLearners />
       <CommunityMeetupSlider />
       <GlobalCommunity />
+      <MarqueeBanner />
       <Comparison />
       <LifeAtDA360 />
       <LatestBlogPosts />

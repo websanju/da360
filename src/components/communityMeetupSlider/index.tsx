@@ -428,7 +428,7 @@ const CommunityMeetupSlider = () => {
       ) : (
         <div ref={containerRef} className={styles.sliderWrapper}>
           <div className={styles.sliderInnerWrapper}>
-            <div className="container position-relative">
+            {/* <div className="container position-relative">
               <div className={styles.sliderNavigation}>
                 <button
                   className="swiper-button-prev"
@@ -439,7 +439,7 @@ const CommunityMeetupSlider = () => {
                   id="customNext11"
                 ></button>
               </div>
-            </div>
+            </div> */}
             <Swiper
               modules={[Navigation, Scrollbar]}
               slidesPerView="auto"

@@ -58,7 +58,7 @@ export default function GlobalCommunity() {
         <div className="row">
           <div className="col-lg-12">
             <SectionHeader
-              wrapperMarginBottom="80px"
+              wrapperMarginBottom={{ desktop: "80px", mobile: "20px" }}
               title={
                 <>
                   Join Our Thriving Global <br />
