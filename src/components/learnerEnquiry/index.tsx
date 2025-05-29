@@ -3,6 +3,7 @@
 import React, { useState, useEffect } from "react";
 import styles from "./style.module.scss";
 import Image from "next/image";
+import SectionHeader from "@components/widgets/sectionHeader";
 
 const LearnerEnquiry = () => {
   const [isMobile, setIsMobile] = useState(false);
@@ -35,13 +36,15 @@ const LearnerEnquiry = () => {
         <div className="row">
           <div className="col-lg-12">
             <div className={styles.enquiryBox} style={stylescss}>
-              <div className={styles.enquiryHeader}>
-                <h2>DA360 Learner enquires</h2>
-                <p className="text-white small">
-                  Talk to your experts. We{}re available 24/7
-                </p>
-              </div>
-
+              <SectionHeader
+                wrapperMarginBottom={{ desktop: "37px", mobile: "30px" }}
+                titleMarginBottom={{ desktop: "20px", mobile: "10px" }}
+                title={<>DA360 Learner enquires</>}
+                titleColor="#fff"
+                descriptionColor="#fff"
+                maxWidth="650px"
+                description="Talk to your experts. We’re available 24/7"
+              />
               <div className={`${styles.row} row justify-content-center`}>
                 <div className="col-12 col-md-6">
                   <div className={styles.phoneCard}>
