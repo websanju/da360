@@ -22,34 +22,60 @@ const caseStudies = [
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry...",
     tags: ["Marketing Strategy", "SEO"],
   },
+
   {
     id: 2,
-    logo: "/images/motherdairy-logo.png",
-    title: "MotherDairy case Study",
+    logo: "/images/oneplus.png",
+    title: "Oneplus's case Study",
     description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry...",
     tags: ["Marketing Strategy", "SEO"],
   },
   {
     id: 3,
-    logo: "/images/oneplus.png",
-    title: "McDonald's case Study",
+    logo: "/images/rolex.png",
+    title: "Rolex case Study",
     description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry...",
     tags: ["Marketing Strategy", "SEO"],
   },
   {
     id: 4,
-    logo: "/images/mcdonalds-logo.png",
-    title: "McDonald's case Study",
+    logo: "/images/cocacola.png",
+    title: "Cocacola case Study",
     description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry...",
     tags: ["Marketing Strategy", "SEO"],
   },
   {
     id: 5,
-    logo: "/images/mcdonalds-logo.png",
-    title: "McDonald's case Study",
+    logo: "/images/nextflix.png",
+    title: "Nextflix case Study",
+    description:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry...",
+    tags: ["Marketing Strategy", "SEO"],
+  },
+
+  {
+    id: 6,
+    logo: "/images/durex.png",
+    title: "Durex case Study",
+    description:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry...",
+    tags: ["Marketing Strategy", "SEO"],
+  },
+  {
+    id: 7,
+    logo: "/images/whatsup.png",
+    title: "Whatsapp case Study",
+    description:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry...",
+    tags: ["Marketing Strategy", "SEO"],
+  },
+  {
+    id: 8,
+    logo: "/images/cadbury.png",
+    title: "Cadbury case Study",
     description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry...",
     tags: ["Marketing Strategy", "SEO"],
