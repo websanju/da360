@@ -75,8 +75,9 @@ export default function Header() {
                     <h3>Digital Marketing Programs & Skills To Master</h3>
                   </div>
                   <div className={styles.dropdownColumnGroup}>
-                    <div
-                      className={`${styles.navbarDropdownColumn} ${styles.active}`}
+                    <Link
+                      href={"/course-detail"}
+                      className={`${styles.navbarDropdownColumn}`}
                     >
                       <h4>Leadership & AI Course</h4>
                       <span className={styles.dropdownTag}>9 Months</span>
@@ -103,9 +104,12 @@ export default function Header() {
                           </li>
                         </ul>
                       </div>
-                    </div>
+                    </Link>
 
-                    <div className={`${styles.navbarDropdownColumn}`}>
+                    <Link
+                      href={"/course-detail"}
+                      className={`${styles.navbarDropdownColumn}`}
+                    >
                       <h4>PGCP Course</h4>
                       <span className={styles.dropdownTag}>9 Months</span>
                       <div className={styles.navbarDropdownList}>
@@ -130,8 +134,11 @@ export default function Header() {
                           </li>
                         </ul>
                       </div>
-                    </div>
-                    <div className={`${styles.navbarDropdownColumn}`}>
+                    </Link>
+                    <Link
+                      href={"/course-detail"}
+                      className={`${styles.navbarDropdownColumn}`}
+                    >
                       <h4>SDCP Course</h4>
                       <span className={styles.dropdownTag}>9 Months</span>
                       <div className={styles.navbarDropdownList}>
@@ -156,7 +163,7 @@ export default function Header() {
                           </li>
                         </ul>
                       </div>
-                    </div>
+                    </Link>
                   </div>
                 </div>
               </div>
