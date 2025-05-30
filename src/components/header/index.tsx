@@ -77,6 +77,7 @@ export default function Header() {
                   <div className={styles.dropdownColumnGroup}>
                     <Link
                       href={"/course-detail"}
+                      onClick={toggleCourses}
                       className={`${styles.navbarDropdownColumn}`}
                     >
                       <h4>Leadership & AI Course</h4>
@@ -108,6 +109,7 @@ export default function Header() {
 
                     <Link
                       href={"/course-detail"}
+                      onClick={toggleCourses}
                       className={`${styles.navbarDropdownColumn}`}
                     >
                       <h4>PGCP Course</h4>
@@ -137,6 +139,7 @@ export default function Header() {
                     </Link>
                     <Link
                       href={"/course-detail"}
+                      onClick={toggleCourses}
                       className={`${styles.navbarDropdownColumn}`}
                     >
                       <h4>SDCP Course</h4>
