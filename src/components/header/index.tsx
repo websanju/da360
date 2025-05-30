@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import styles from "./style.module.scss";
 import DownArrow from "@/components/Ui/svg/downArrow";
+import { useRouter } from "next/navigation";
 
 export default function Header() {
   const [isCoursesOpen, setIsCoursesOpen] = useState(false);
@@ -29,6 +30,11 @@ export default function Header() {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+  const router = useRouter();
+  const handleClick = () => {
+    toggleCourses(); // call your custom function
+    router.push("/course-detail"); // then navigate
+  };
 
   return (
     <header className={`${styles.header} ${isSticky ? styles.sticky : ""}`}>
@@ -75,9 +81,8 @@ export default function Header() {
                     <h3>Digital Marketing Programs & Skills To Master</h3>
                   </div>
                   <div className={styles.dropdownColumnGroup}>
-                    <Link
-                      href={"/course-detail"}
-                      onClick={toggleCourses}
+                    <div
+                      onClick={handleClick}
                       className={`${styles.navbarDropdownColumn}`}
                     >
                       <h4>Leadership & AI Course</h4>
@@ -105,11 +110,10 @@ export default function Header() {
                           </li>
                         </ul>
                       </div>
-                    </Link>
+                    </div>
 
-                    <Link
-                      href={"/course-detail"}
-                      onClick={toggleCourses}
+                    <div
+                      onClick={handleClick}
                       className={`${styles.navbarDropdownColumn}`}
                     >
                       <h4>PGCP Course</h4>
@@ -136,10 +140,9 @@ export default function Header() {
                           </li>
                         </ul>
                       </div>
-                    </Link>
-                    <Link
-                      href={"/course-detail"}
-                      onClick={toggleCourses}
+                    </div>
+                    <div
+                      onClick={handleClick}
                       className={`${styles.navbarDropdownColumn}`}
                     >
                       <h4>SDCP Course</h4>
@@ -166,7 +169,7 @@ export default function Header() {
                           </li>
                         </ul>
                       </div>
-                    </Link>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -220,7 +223,7 @@ export default function Header() {
                       <Link href="/about-us">About Us</Link>
                     </li>
                     <li>
-                      <Link href="/">Refer &amp; Earn</Link>
+                      <Link href="/refer-and-earn">Refer &amp; Earn</Link>
                     </li>
                     <li>
                       <Link href="/career">Career@da360</Link>

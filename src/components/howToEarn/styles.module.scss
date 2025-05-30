@@ -1,0 +1,73 @@
+.howToEarnSection {
+    padding-bottom: 140px;
+
+
+    .row {
+        --bs-gutter-x: 100px;
+        --bs-gutter-y: 66px;
+    }
+
+    .arrow {
+        position: absolute;
+        top: 50%a;
+        right: 0;
+    }
+
+    .stepCol {
+        position: relative;
+    }
+
+    .stepCard {
+        background: rgba(255, 236, 94, 1);
+        box-shadow: 4px 4px 0px 0px rgba(0, 0, 0, 1);
+        border: 2px solid rgba(0, 0, 0, 1);
+        padding: 40px 30px;
+        border-radius: 20px;
+        height: 100%;
+
+        .stepIcon {
+            margin-bottom: 45px;
+        }
+
+
+
+        h5 {
+            font-weight: 700;
+            font-style: italic;
+            font-size: 28px;
+            line-height: normal;
+            letter-spacing: 0%;
+            text-transform: capitalize;
+            margin-bottom: 9px;
+            max-width: 200px;
+        }
+
+        p {
+            font-weight: 500;
+            font-size: 18px;
+            line-height: normal;
+            letter-spacing: 0%;
+            text-transform: capitalize;
+            color: rgba(0, 0, 0, 1);
+
+        }
+    }
+
+    .tncLinkBox {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: 0%;
+        text-align: center;
+        text-decoration: none;
+        text-decoration-style: solid;
+        text-decoration-thickness: 0%;
+        text-decoration-skip-ink: auto;
+        margin-top: 40px;
+        color: rgba(7, 7, 7, 1);
+        .tncLink {
+            color: rgba(224, 16, 51, 1);
+            text-decoration: underline;
+        }
+    }
+}

@@ -1,4 +1,3 @@
-// components/TextContent.js
 import styles from "./styles.module.scss";
 interface TextContentGridProps {
   section?: string;
