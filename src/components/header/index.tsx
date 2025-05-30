@@ -168,7 +168,7 @@ export default function Header() {
               <nav className="d-none d-lg-block">
                 <ul>
                   <li>
-                    <Link href="/about-us" className={styles.navItem}>
+                    <Link href="/life@da360" className={styles.navItem}>
                       Life@da360
                     </Link>
                   </li>
@@ -207,10 +207,16 @@ export default function Header() {
                 <div className={`${styles.dropdownMenu} `}>
                   <ul>
                     <li>
+                      <Link href="/about-us">About Us</Link>
+                    </li>
+                    <li>
                       <Link href="/">Refer &amp; Earn</Link>
                     </li>
                     <li>
-                      <Link href="/">Career@da360</Link>
+                      <Link href="/career">Career@da360</Link>
+                    </li>
+                    <li>
+                      <Link href="/performmers">Performmers</Link>
                     </li>
                     <li>
                       <Link href="/">Contact Us</Link>
