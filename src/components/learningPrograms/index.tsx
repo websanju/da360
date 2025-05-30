@@ -8,21 +8,24 @@ const programs = [
     duration: "6 Months",
     mode: "Classroom / Online",
     bonus: "₹3000",
-    image: "/images/skill-1.png", // Replace with your actual images
+    imageDesktop: "/images/skill-1.png",
+    imageMobile: "/images/skill-m-1.png",
   },
   {
     title: "PGCP In Digital Marketing & ECommerce",
     duration: "6 Months",
     mode: "Classroom / Online",
     bonus: "₹3000",
-    image: "/images/skill-2.png",
+    imageDesktop: "/images/skill-2.png",
+    imageMobile: "/images/skill-m-2.png",
   },
   {
     title: "Skill Diploma in Digital Marketing & Analytics",
     duration: "6 Months",
     mode: "Classroom / Online",
     bonus: "₹3000",
-    image: "/images/skill-3.png",
+    imageDesktop: "/images/skill-3.png",
+    imageMobile: "/images/skill-m-3.png",
   },
 ];
 
@@ -61,13 +64,23 @@ const LearningPrograms = () => {
                   </div>
                   <div className={styles.imageCol}>
                     <div className={styles.imageWrapper}>
-                      <Image
-                        src={program.image}
-                        alt={program.title}
-                        width={300}
-                        height={180}
-                        className="img-fluid"
-                      />
+                      <picture>
+                        <source
+                          media="(max-width: 767px)"
+                          srcSet={program.imageMobile}
+                        />
+                        <source
+                          media="(min-width: 768px)"
+                          srcSet={program.imageDesktop}
+                        />
+                        <Image
+                          src={program.imageDesktop} // Fallback for no <picture> support
+                          alt={program.title}
+                          width={300}
+                          height={180}
+                          className="img-fluid"
+                        />
+                      </picture>
                     </div>
                   </div>
                 </div>

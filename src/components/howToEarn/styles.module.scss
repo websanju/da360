@@ -65,9 +65,48 @@
         text-decoration-skip-ink: auto;
         margin-top: 40px;
         color: rgba(7, 7, 7, 1);
+
         .tncLink {
             color: rgba(224, 16, 51, 1);
             text-decoration: underline;
+        }
+    }
+}
+
+@media (width <=991px) {
+    .howToEarnSection {
+        padding-bottom: 60px;
+        .row {
+            --bs-gutter-x: 100px;
+            --bs-gutter-y: 66px;
+        }
+        .arrow {
+            position: absolute;
+            top: auto;
+            right: 0;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            bottom: -45px;
+            img {
+               transform: rotate(90deg);
+            }
+        }
+        .stepCard {
+            padding: 30px;
+
+            .stepIcon {
+                margin-bottom: 20px;
+                img {
+                    height: 50px;
+                }
+            }
+
+            h5 {
+                font-size: 20px;
+                line-height: normal;
+                max-width: max-content;
+            }
         }
     }
 }

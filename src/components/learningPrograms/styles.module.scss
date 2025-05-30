@@ -1,81 +1,118 @@
 .programsSection {
     padding-bottom: 140px;
-   .program {
-    position: relative;
-    .row {
-        &:last-child {
-            .programCard { 
-                margin-bottom: 0;
+
+    .program {
+        position: relative;
+
+        .row {
+            &:last-child {
+                .programCard {
+                    margin-bottom: 0;
+                }
             }
-        }
-        .programCard {
-            background: rgba(255, 255, 255, 1);
-            border-radius: 20px;
-            overflow: hidden;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            margin-bottom: 40px;
-    
-            .programCardDetails {
-                padding: 30px 60px;
-                .programBonus {
-                    font-weight: 500;
-                    font-size: 18px;
-                    line-height: 100%;
-                    letter-spacing: 0%;
-                    text-transform: capitalize;
-                    margin-top: 40px;
-    
-                    span {
-                        font-weight: 700;
+
+            .programCard {
+                background: rgba(255, 255, 255, 1);
+                border-radius: 20px;
+                overflow: hidden;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin-bottom: 40px;
+
+                .programCardDetails {
+                    padding: 30px 60px;
+
+                    .programBonus {
+                        font-weight: 500;
                         font-size: 18px;
                         line-height: 100%;
                         letter-spacing: 0%;
                         text-transform: capitalize;
+                        margin-top: 40px;
+
+                        span {
+                            font-weight: 700;
+                            font-size: 18px;
+                            line-height: 100%;
+                            letter-spacing: 0%;
+                            text-transform: capitalize;
+                        }
+                    }
+
+                    h5 {
+                        font-weight: 600;
+                        font-size: 40px;
+                        line-height: 42px;
+                        letter-spacing: 0%;
+                        color: rgba(28, 28, 28, 1);
+                        max-width: 743px;
+                        margin-bottom: 24px;
+                    }
+
+                    .programInfo {
+                        display: flex;
+                        gap: 10px;
+
+                        span {
+                            font-weight: 600;
+                            font-size: 12px;
+                            line-height: 100%;
+                            color: rgba(28, 28, 28, 1);
+                            border: 1px solid rgba(28, 28, 28, 1);
+                            padding: 4px 10px;
+                            border-radius: 100px;
+                        }
                     }
                 }
-    
-                h5 {
-                    font-weight: 600;
-                    font-size: 40px;
-                    line-height: 42px;
-                    letter-spacing: 0%;
-                    color: rgba(28, 28, 28, 1);
-                    max-width: 743px;
-                    margin-bottom: 24px;
-                }
-    
-                .programInfo {
-                    display: flex;
-                    gap: 10px;
-    
-                    span {
-                        font-weight: 600;
-                        font-size: 12px;
-                        line-height: 100%;
-                        color: rgba(28, 28, 28, 1);
-                        border: 1px solid rgba(28, 28, 28, 1);
-                        padding: 4px 10px;
-                        border-radius: 100px;
+
+                .imageWrapper {
+                    width: 415px;
+                    height: 100%;
+                    max-height: 342px;
+
+                    img {
+                        object-fit: cover;
+                        object-position: top;
+                        height: 100%;
+                        width: 100%;
                     }
                 }
             }
-    
-            .imageWrapper {
-                width:  415px;
-                height: 100%;
-                max-height: 342px;
-                img {
-                    object-fit: cover;
-                    object-position: top;
-                    height: 100%;
-                    width: 100%;
+        }
+
+    }
+
+}
+
+@media (width <=992px) {
+    .programsSection {
+        padding-bottom: 60px;
+        .program {
+            .row {
+                .programCard {
+                    margin-bottom: 24px;
+                    flex-direction: column-reverse;
+                    .programCardDetails {
+                        padding: 16px;
+                        h5 {
+                            font-weight: 600;
+                            font-size: 20px;
+                            line-height: 33px;
+                        }
+                        .programBonus {
+                            margin-top: 60px;
+                        }
+                    }
+                    .imageWrapper {
+                        max-height: 128px;
+                        overflow: hidden;
+                        img {
+                            object-position: center center;
+                        }
+                    }
                 }
             }
         }
     }
-   
-   }
-   
 }
