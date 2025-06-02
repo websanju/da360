@@ -1,0 +1,121 @@
+.eventSection {
+    padding-top: 140px;
+    .row {
+        --bs-gutter-x: 20px;
+    }
+    .card {
+        width: 100%;
+        border: 1px solid rgba(0, 0, 0, 1);
+        border-radius: 10px;
+        overflow: hidden;
+
+        .imageWrapper {
+            width: 100%;
+            height: 275px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .cardImage {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+
+        .cardBody {
+            padding: 32px 32px 40px;
+
+            .tag {
+                font-weight: 500;
+                font-size: 11px;
+                line-height: normal;
+                letter-spacing: 2%;
+                text-transform: uppercase;
+                background: rgba(182, 234, 213, 1);
+                border: 1px solid rgba(0, 0, 0, 1);
+                padding: 0 8px;
+                min-width: 56px;
+                border-radius: 4px;
+                margin-bottom: 16px;
+                display: flex;
+                width: max-content;
+            }
+
+            p {
+                font-weight: 500;
+                font-size: 14px;
+                line-height: normal;
+                color: rgba(32, 17, 22, 1);
+                margin-bottom: 4px;
+
+            }
+
+            .subtitle {
+                font-weight: 500;
+                font-size: 24px;
+                line-height: normal;
+                letter-spacing: 0%;
+                margin-bottom: 16px;
+            }
+
+            .meta {
+                display: flex;
+                gap: 8px;
+                margin-bottom: 24px;
+
+                span {
+                    color: rgba(32, 17, 22, 1);
+                    padding: 4px 8px;
+                    border: 1px solid rgba(0, 0, 0, 1);
+                    font-weight: 400;
+                    font-size: 12px;
+                    line-height: normal;
+                    border-radius: 2px;
+                }
+            }
+
+            .participants {
+                display: flex;
+                align-items: center;
+                .participantImg {
+                    width: 32px;
+                    height: 32px;
+                    border: solid 2px #fff;
+                    border-radius: 100px;
+                    overflow: hidden;
+                    margin-left: -10px;
+                    &:first-child {
+                        margin-left: 0;
+                    }
+                }
+                .count {
+                    font-weight: 500;
+                    font-size: 14px;
+                    line-height:normal;
+                    letter-spacing: 0%;
+                    color: rgba(54, 112, 255, 1);
+                    margin-left: 11px;
+                }
+            }
+        }
+
+        .cardFooter {
+            background: rgba(255, 204, 213, 1);
+            border-top: 1px solid rgba(0, 0, 0, 1);
+            width: 100%;
+            display: flex;
+            min-height: 60px;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 38px;
+
+            span {
+                font-weight: 500;
+                font-size: 16px;
+                line-height: normal;
+                color: rgba(0, 0, 0, 1);
+            }
+        }
+    }
+}

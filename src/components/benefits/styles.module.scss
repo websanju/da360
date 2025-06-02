@@ -1,0 +1,47 @@
+.benefitsSection {
+    padding-top: 140px;
+
+    .benefitsBox {
+        background: rgba(255, 236, 94, 1);
+        border-radius: 20px;
+        border: 2px solid rgba(0, 0, 0, 1);
+        padding: 40px;
+
+        .benefitsItems {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .benefitsItem {
+            position: relative;
+
+            .iconWrapper {
+                width: 58px;
+                height: 58px;
+                margin: 0 auto 23px;
+            }
+
+            .text {
+                h3 {
+                    font-weight: 600;
+                    font-size: 20px;
+                    line-height: 24px;
+                    text-align: center;
+                    max-width: 200px;
+                }
+            }
+        }
+    }
+
+    .benefitsCounters {
+        margin-top: 80px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 60px;
+        .countersItem {
+            max-width: 228px;
+        }
+    }
+}
