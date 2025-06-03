@@ -96,18 +96,6 @@ const slides: SlideContent[] = [
   ],
   [
     {
-      id: 5,
-      name: "Nishank Koushak",
-      image: "/images/nishank2.png",
-      type: "video",
-      videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
-      designation: "Digital Marketing Trainer",
-      bgColor: "#3ACFAF",
-      textColor: "#fff",
-    },
-  ],
-  [
-    {
       id: 6,
       name: "Sonal Lal",
       designation: "SEO Analyst",
@@ -188,22 +176,14 @@ const slides: SlideContent[] = [
   ],
 ];
 
-const PeopleSlider = () => {
+type PeopleSliderProps = {
+  title?: string;
+  description?: string;
+};
+
+const PeopleSlider: React.FC<PeopleSliderProps> = ({ title, description }) => {
   const [selected, setSelected] = useState<Person | null>(null);
   const containerRef = useRef<HTMLDivElement>(null);
-  // const [containerPaddingLeft, setContainerPaddingLeft] = useState(20);
-
-  // useEffect(() => {
-  //   function updatePadding() {
-  //     if (containerRef.current) {
-  //       const rect = containerRef.current.getBoundingClientRect();
-  //       setContainerPaddingLeft(rect.left);
-  //     }
-  //   }
-  //   updatePadding();
-  //   window.addEventListener("resize", updatePadding);
-  //   return () => window.removeEventListener("resize", updatePadding);
-  // }, []);
 
   return (
     <>
@@ -215,31 +195,22 @@ const PeopleSlider = () => {
                 wrapperMarginBottom={{ desktop: "60px", mobile: "40px" }}
                 titleMarginBottom={{ desktop: "20px", mobile: "10px" }}
                 title={
-                  <>
-                    Ambitious People <br /> @DA360
-                  </>
+                  title ? (
+                    <span dangerouslySetInnerHTML={{ __html: title }} />
+                  ) : (
+                    "Ambitious People @DA360"
+                  )
                 }
-                description="Hear it from them"
+                maxWidthTitle="480px"
+                description={description || "Hear it from them"}
               />
             </div>
           </div>
         </div>
         <div className={styles.sliderWrapper}>
-          {/* <div className={styles.sliderNavigationRow}>
-            <div className={styles.sliderNavigation}>
-              <button className="swiper-button-prev" id="customPrev6"></button>
-              <button className="swiper-button-next" id="customNext6"></button>
-            </div>
-          </div> */}
           <div
             ref={containerRef}
             className={`${styles.sliderInnerWrapper} peoplesliderWrapper`}
-            // style={{
-            //   width: "100vw",
-            //   marginLeft: `-${containerPaddingLeft}px`,
-            //   paddingLeft: containerPaddingLeft,
-            //   boxSizing: "border-box",
-            // }}
           >
             <Swiper
               modules={[Navigation, Scrollbar]}
@@ -256,34 +227,19 @@ const PeopleSlider = () => {
               }}
               breakpoints={{
                 0: {
-                  // slidesPerView: 1.2,
                   spaceBetween: 16,
-                  // slidesOffsetBefore: 0,
-                  // slidesOffsetAfter: 40,
                 },
                 768: {
-                  // slidesPerView: 1.5,
                   spaceBetween: 16,
-                  // slidesOffsetBefore: 0,
-                  // slidesOffsetAfter: 40,
                 },
                 992: {
-                  // slidesPerView: 2.5,
                   spaceBetween: 20,
-                  // slidesOffsetBefore: 0,
-                  // slidesOffsetAfter: 40,
                 },
                 1440: {
-                  // slidesPerView: 4.5,
                   spaceBetween: 20,
-                  // slidesOffsetBefore: 0,
-                  // slidesOffsetAfter: 40,
                 },
                 1840: {
-                  // slidesPerView: 5.5,
                   spaceBetween: 20,
-                  // slidesOffsetBefore: 0,
-                  // slidesOffsetAfter: 40,
                 },
               }}
             >
