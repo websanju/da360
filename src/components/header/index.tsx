@@ -196,7 +196,7 @@ export default function Header() {
                     </Link>
                   </li>
                   <li>
-                    <Link href="/" className={styles.navItem}>
+                    <Link href="/hackathon" className={styles.navItem}>
                       Hackathon
                     </Link>
                   </li>
