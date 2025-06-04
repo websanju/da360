@@ -199,7 +199,7 @@ const CommunityMeetupSlider = () => {
               height={500}
               className={styles.cardImage}
             />
-            <div
+            {/* <div
               className={styles.cardContent}
               style={{
                 backgroundColor: items[0].bgColor || "#f5f5f5",
@@ -208,7 +208,7 @@ const CommunityMeetupSlider = () => {
             >
               <span className={styles.cardTitle}>{items[0].title}</span>
               <p className={styles.cardLocation}>{items[0].location}</p>
-            </div>
+            </div> */}
           </div>
 
           <div className={styles.smallcardGroup}>
@@ -223,7 +223,7 @@ const CommunityMeetupSlider = () => {
                 height={500}
                 className={styles.cardImage}
               />
-              <div
+              {/* <div
                 className={styles.cardContent}
                 style={{
                   backgroundColor: items[1].bgColor || "#f5f5f5",
@@ -232,7 +232,7 @@ const CommunityMeetupSlider = () => {
               >
                 <span className={styles.cardTitle}>{items[1].title}</span>
                 <p className={styles.cardLocation}>{items[1].location}</p>
-              </div>
+              </div> */}
             </div>
 
             <div className={styles.smallcardColumn}>
@@ -247,7 +247,7 @@ const CommunityMeetupSlider = () => {
                   height={500}
                   className={styles.cardImage}
                 />
-                <div
+                {/* <div
                   className={styles.cardContent}
                   style={{
                     backgroundColor: items[2].bgColor || "#f5f5f5",
@@ -256,7 +256,7 @@ const CommunityMeetupSlider = () => {
                 >
                   <span className={styles.cardTitle}>{items[2].title}</span>
                   <p className={styles.cardLocation}>{items[2].location}</p>
-                </div>
+                </div> */}
               </div>
 
               <div className={styles.meetupsCard}>
@@ -284,7 +284,7 @@ const CommunityMeetupSlider = () => {
               height={670}
               className={styles.cardImage}
             />
-            <div
+            {/* <div
               className={styles.cardContent}
               style={{
                 backgroundColor: item.bgColor || "#f5f5f5",
@@ -293,7 +293,7 @@ const CommunityMeetupSlider = () => {
             >
               <span className={styles.cardTitle}>{item.title}</span>
               <p className={styles.cardLocation}>{item.location}</p>
-            </div>
+            </div> */}
           </div>
         </div>
       );
@@ -316,7 +316,7 @@ const CommunityMeetupSlider = () => {
                   height={500}
                   className={styles.cardImage}
                 />
-                <div
+                {/* <div
                   className={styles.cardContent}
                   style={{
                     backgroundColor: item.bgColor || "#f5f5f5",
@@ -325,7 +325,7 @@ const CommunityMeetupSlider = () => {
                 >
                   <span className={styles.cardTitle}>{item.title}</span>
                   <p className={styles.cardLocation}>{item.location}</p>
-                </div>
+                </div> */}
               </div>
             ))}
           </div>
@@ -340,7 +340,7 @@ const CommunityMeetupSlider = () => {
               height={500}
               className={styles.cardImage}
             />
-            <div
+            {/* <div
               className={styles.cardContent}
               style={{
                 backgroundColor: items[2].bgColor || "#f5f5f5",
@@ -349,7 +349,7 @@ const CommunityMeetupSlider = () => {
             >
               <span className={styles.cardTitle}>{items[2].title}</span>
               <p className={styles.cardLocation}>{items[2].location}</p>
-            </div>
+            </div> */}
           </div>
         </div>
       );

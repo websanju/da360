@@ -1,5 +1,5 @@
 "use client";
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import styles from "./style.module.scss";
@@ -9,10 +9,28 @@ import { useRouter } from "next/navigation";
 export default function Header() {
   const [isCoursesOpen, setIsCoursesOpen] = useState(false);
   const [isSticky, setIsSticky] = useState(false);
+  const dropdownRef = useRef<HTMLDivElement>(null);
 
   const toggleCourses = () => {
-    setIsCoursesOpen(!isCoursesOpen);
+    setIsCoursesOpen((prev) => !prev);
   };
+
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (
+        dropdownRef.current &&
+        !dropdownRef.current.contains(event.target as Node)
+      ) {
+        setIsCoursesOpen(false);
+      }
+    };
+
+    document.addEventListener("mousedown", handleClickOutside); // OR "click"
+
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, []);
 
   // Check scroll position to toggle sticky class
   useEffect(() => {
@@ -76,6 +94,7 @@ export default function Header() {
                   className={`${styles.dropdownContainer} ${
                     isCoursesOpen ? styles.open : ""
                   }`}
+                  ref={dropdownRef}
                 >
                   <div className={styles.dropdownContainerHeader}>
                     <h3>Digital Marketing Programs & Skills To Master</h3>
