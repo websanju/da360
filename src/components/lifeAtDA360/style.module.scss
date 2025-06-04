@@ -14,7 +14,7 @@
   height: 32px;
   border-radius: 50%;
   border: none;
-
+  background: transparent;
   &::before,
   &::after {
     content: "";
