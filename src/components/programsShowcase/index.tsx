@@ -60,10 +60,10 @@ const ProgramsShowcase: React.FC = () => {
           titleMarginBottom={{ desktop: "20px", mobile: "10px" }}
           title={
             <>
-              Our Programs & Skills <br /> To Master
+              Programs Designed for <br /> Career Success
             </>
           }
-          description="Upskill Your Knowledge To Change Your Career Trajectory"
+          description="Explore Our Job-Ready Certifications"
         />
 
         <div className={`${styles.container} container`}>
@@ -71,27 +71,27 @@ const ProgramsShowcase: React.FC = () => {
             <div className="card1">
               <WidgetCard
                 title="Leadership in Digital Marketing, AI & Entrepreneurship"
-                category={["Masters", "Executive"]}
+                category={["9-Month Flagship Program", "Classroom Only"]}
                 stats={[
                   {
                     icon: "/images/icons/certification.svg",
-                    label: "Masters Level Certification",
+                    label: "40+ In-Depth Modules",
                   },
                   {
                     icon: "/images/icons/certification.svg",
-                    label: "10 Advanced Specialisations",
+                    label: "1900+ Hours of Hands-On Training",
                   },
                   {
                     icon: "/images/icons/certification.svg",
-                    label: "30 Courses in 1 Program",
+                    label: "Guaranteed Internship",
                   },
                   {
                     icon: "/images/icons/certification.svg",
-                    label: "15+ Projects & Case Studies",
+                    label: "5+ Capstone Projects",
                   },
                 ]}
-                buttonText="View Course"
-                expertText="Talk To Our Expert"
+                buttonText="Download Curriculum"
+                expertText="Talk to Our Expert"
                 image="/images/skill-1.png"
               />
             </div>
@@ -99,8 +99,8 @@ const ProgramsShowcase: React.FC = () => {
           <div className="card-wrapper">
             <div className="card2">
               <WidgetCard
-                title="PGCP In Digital Marketing & Ecommerce"
-                category={["Masters", "Executive"]}
+                title="PGCP In Digital Marketing & ECommerce"
+                category={["6-Month Career Accelerator", "Classroom & Online"]}
                 stats={[
                   {
                     icon: "/images/icons/certification.svg",
@@ -108,19 +108,19 @@ const ProgramsShowcase: React.FC = () => {
                   },
                   {
                     icon: "/images/icons/certification.svg",
-                    label: "10 Advanced Specialisations",
+                    label: "4 Expert Specialisations",
                   },
                   {
                     icon: "/images/icons/certification.svg",
-                    label: "30 Courses in 1 Program",
+                    label: "10+ Integrated Marketing Campaigns",
                   },
                   {
                     icon: "/images/icons/certification.svg",
-                    label: "15+ Projects & Case Studies",
+                    label: "Portfolio-Based Learning",
                   },
                 ]}
-                buttonText="View Course"
-                expertText="Talk To Our Expert"
+                buttonText="Download Curriculum"
+                expertText="Talk to Our Expert"
                 image="/images/skill-2.png"
               />
             </div>
@@ -129,27 +129,27 @@ const ProgramsShowcase: React.FC = () => {
             <div className="card3">
               <WidgetCard
                 title="Skill Diploma in Digital Marketing & Analytics"
-                category={["Diploma"]}
+                category={["3-Month Career Launchpad", "Classroom & Online"]}
                 stats={[
                   {
                     icon: "/images/icons/certification.svg",
-                    label: "Masters Level Certification",
+                    label: "8+ Modules Across Core Topics",
                   },
                   {
                     icon: "/images/icons/certification.svg",
-                    label: "10 Advanced Specialisations",
+                    label: "120+ Hours of Practical Learning",
                   },
                   {
                     icon: "/images/icons/certification.svg",
-                    label: "30 Courses in 1 Program",
+                    label: "20+ Live Case Studies",
                   },
                   {
                     icon: "/images/icons/certification.svg",
-                    label: "15+ Projects & Case Studies",
+                    label: "15+ Tools to Learn",
                   },
                 ]}
-                buttonText="View Course"
-                expertText="Talk To Our Expert"
+                buttonText="Download Curriculum"
+                expertText="Talk to Our Expert"
                 image="/images/skill-3.png"
               />
             </div>

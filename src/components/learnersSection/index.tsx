@@ -186,7 +186,7 @@ export default function LearnersSection() {
               <div className={styles.infobox}>
                 <div className={styles.infoLable}>
                   <span>Be A Skilled Professional</span>
-                  <p>Learn Today. Lead Tomorrow</p>
+                  <p>Lead the Digital Future.</p>
                 </div>
 
                 <div className={styles.infoNumbers}>
@@ -199,7 +199,8 @@ export default function LearnersSection() {
                   <div className={styles.placed}>
                     <h5>93%</h5>
                     <small>
-                      Learners placed <br /> on average
+                      Learners placed
+                      <br /> on average
                     </small>
                   </div>
                   <div className={styles.freelancers}>

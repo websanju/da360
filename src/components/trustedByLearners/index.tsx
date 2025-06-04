@@ -5,28 +5,28 @@ import SectionHeader from "@components/widgets/sectionHeader";
 
 const reviews = [
   {
-    icon: "images/icons/fb.svg",
-    rating: 4.9,
-    platform: "Facebook",
-    reviews: "700+ reviews",
-  },
-  {
     icon: "images/icons/google.svg",
-    rating: 4.8,
+    rating: 4.9,
     platform: "Google",
-    reviews: "700+ reviews",
+    reviews: "4.7* 750+ reviews",
   },
   {
     icon: "images/icons/star.svg",
-    rating: 5,
-    platform: "Star",
-    reviews: "700+ reviews",
+    rating: 4.8,
+    platform: "TrustPilot",
+    reviews: "4.5* 30+ reviews",
   },
   {
     icon: "images/icons/b-review.svg",
+    rating: 5,
+    platform: "Ambition Box",
+    reviews: "4.5* 85+ reviews",
+  },
+  {
+    icon: "images/icons/fb.svg",
     rating: 4.9,
-    platform: "Platform",
-    reviews: "700+ reviews",
+    platform: "Facebook",
+    reviews: "4.8* 143+ reviews",
   },
 ];
 
@@ -39,10 +39,10 @@ const TrustedByLearners = () => {
             <SectionHeader
               wrapperMarginBottom={{ desktop: "60px", mobile: "40px" }}
               titleMarginBottom={{ desktop: "20px", mobile: "10px" }}
-              title={<>Trusted by Learners</>}
-              maxWidth="650px"
-              description="1,00,000+ Digital Academy 360 alumni from 1,100+ companies &
-                4,400+ colleges working in top product companies"
+              maxWidthTitle="630px"
+              title={<>Trusted by Learners Across the Globe</>}
+              maxWidth="680px"
+              description="With a thriving community of 50,000+ alumni, Digital Academy 360 has empowered learners from all over the world to build successful careers in the digital world."
             />
           </div>
         </div>

@@ -7,7 +7,7 @@
     overflow: hidden;
     position: sticky;
     top: 0;
-    box-shadow: 4px 4px 54px 0px #00000040;
+    box-shadow: 1px 1px 14px 12px rgba(0, 0, 0, 0.03);
 
     &.widget-card {
         opacity: 0;
@@ -78,6 +78,8 @@
                 background: #E10F33;
                 border: 1.5px solid #000000;
                 min-width: 200px;
+                padding-left: 25px;
+                padding-right: 25px;
                 color: #FFFFFF;
                 text-align: center;
                 font-weight: 600;

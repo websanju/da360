@@ -10,7 +10,7 @@ export default function HeroSection() {
           <div className="col-lg-12 ">
             <span className={styles.overline}>Asia’s Largest</span>
             <h1>
-              Digital Marketing{" "}
+              Digital Marketing
               <span className={styles.peace}>
                 {" "}
                 <Image
@@ -21,14 +21,16 @@ export default function HeroSection() {
                   className="img-fluid"
                 />
               </span>{" "}
-              <br /> Learning Centre
+              <br />
+              Learning Centre
             </h1>
-            <p>
-              Learn from industry experts through online and offline courses.
-            </p>
+            <p>Transform Your Career with Industry - Driven Programs</p>
             <div className={styles.applyAction}>
-              <Link href="#apply-now" className="btn btn-danger btn-lg px-4">
+              <Link href="#" className="btn btn-danger btn-lg px-4">
                 Apply Now
+              </Link>
+              <Link href="#" className="btn btnWhite btn-lg px-4">
+                Download Brochure
               </Link>
             </div>
           </div>

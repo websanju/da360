@@ -151,7 +151,7 @@ const Comparison = () => {
                         src={"/images/icons/tick-close.svg"}
                       />
                     </span>
-                    Real-world, ready for 2029 & beyond
+                    Theoretical
                   </li>
                   <li>
                     <span>
@@ -162,7 +162,7 @@ const Comparison = () => {
                         src={"/images/icons/tick-close.svg"}
                       />
                     </span>{" "}
-                    Worked at Google, Meta, Metasoft…
+                    Academicians
                   </li>
                   <li>
                     <span>
@@ -173,7 +173,7 @@ const Comparison = () => {
                         src={"/images/icons/tick-close.svg"}
                       />
                     </span>{" "}
-                    50+ Apps and products to be coded
+                    Passive
                   </li>
                   <li>
                     <span>
@@ -184,7 +184,7 @@ const Comparison = () => {
                         src={"/images/icons/tick-close.svg"}
                       />
                     </span>{" "}
-                    Mentorship session with top industry professionals
+                    Limited
                   </li>
                   <li>
                     <span>
@@ -195,7 +195,7 @@ const Comparison = () => {
                         src={"/images/icons/tick-close.svg"}
                       />
                     </span>{" "}
-                    Compulsory paid internship for 1 year
+                    Minimal
                   </li>
                   <li>
                     <span>
@@ -206,7 +206,7 @@ const Comparison = () => {
                         src={"/images/icons/tick-close.svg"}
                       />
                     </span>{" "}
-                    Ready to work at Top Tech Companies
+                    Optional
                   </li>
                   <li>
                     <span>
@@ -217,7 +217,7 @@ const Comparison = () => {
                         src={"/images/icons/tick-close.svg"}
                       />
                     </span>{" "}
-                    Senior SDE
+                    Low
                   </li>
                 </ul>
               </div>
@@ -231,9 +231,7 @@ const Comparison = () => {
                   backgroundPosition: "top right",
                 }}
               >
-                <h3>
-                  Digital Academy 360 <br /> Advantages
-                </h3>
+                <h3>Digital Academy 360</h3>
                 <hr />
                 <ul>
                   <li>
@@ -245,7 +243,7 @@ const Comparison = () => {
                         src={"/images/icons/tick-circle.svg"}
                       />
                     </span>
-                    Real-world, ready for 2029 & beyond
+                    Real-world, future-ready
                   </li>
                   <li>
                     <span>
@@ -256,7 +254,7 @@ const Comparison = () => {
                         src={"/images/icons/tick-circle.svg"}
                       />
                     </span>{" "}
-                    Worked at Google, Meta, Metasoft…
+                    Industry Experts (Google, Meta, etc.)
                   </li>
                   <li>
                     <span>
@@ -267,7 +265,7 @@ const Comparison = () => {
                         src={"/images/icons/tick-circle.svg"}
                       />
                     </span>{" "}
-                    50+ Apps and products to be coded
+                    Interactive + Hands-on
                   </li>
                   <li>
                     <span>
@@ -278,7 +276,7 @@ const Comparison = () => {
                         src={"/images/icons/tick-circle.svg"}
                       />
                     </span>{" "}
-                    Mentorship session with top industry professionals
+                    1-on-1 Guidance
                   </li>
                   <li>
                     <span>
@@ -289,7 +287,7 @@ const Comparison = () => {
                         src={"/images/icons/tick-circle.svg"}
                       />
                     </span>{" "}
-                    Compulsory paid internship for 1 year
+                    30+ Real-World Projects
                   </li>
                   <li>
                     <span>
@@ -300,7 +298,7 @@ const Comparison = () => {
                         src={"/images/icons/tick-circle.svg"}
                       />
                     </span>{" "}
-                    Ready to work at Top Tech Companies
+                    Guaranteed Internship
                   </li>
                   <li>
                     <span>
@@ -311,7 +309,7 @@ const Comparison = () => {
                         src={"/images/icons/tick-circle.svg"}
                       />
                     </span>{" "}
-                    Senior SDE
+                    High – Job-Ready from Day 1
                   </li>
                 </ul>
               </div>

@@ -16,21 +16,6 @@ import SectionHeader from "@components/widgets/sectionHeader";
 const LifeAtDA360 = () => {
   const [playingIndex, setPlayingIndex] = useState<number | null>(null);
 
-  // const containerRef = useRef<HTMLDivElement>(null);
-  // const [containerPaddingLeft, setContainerPaddingLeft] = useState(20);
-
-  // useEffect(() => {
-  //   function updatePadding() {
-  //     if (containerRef.current) {
-  //       const rect = containerRef.current.getBoundingClientRect();
-  //       setContainerPaddingLeft(rect.left);
-  //     }
-  //   }
-  //   updatePadding();
-  //   window.addEventListener("resize", updatePadding);
-  //   return () => window.removeEventListener("resize", updatePadding);
-  // }, []);
-
   const slides = [
     {
       title: "AI IN DIGITAL MARKETING BOOTCAMP",
@@ -68,24 +53,16 @@ const LifeAtDA360 = () => {
             <SectionHeader
               wrapperMarginBottom={{ desktop: "60px", mobile: "40px" }}
               titleMarginBottom={{ desktop: "24px", mobile: "10px" }}
-              title={<>Life @DA360</>}
-              description="Experience next-level education through dynamic contests for Top
-                Ad Copywriters, Digital Marketing planners, Reels Expert,
-                Bloggers, Social Media Ninjas, and beyond."
+              title={<>Students @ DA360</>}
+              maxWidth="580px"
+              description="An Ecosystem of Learning, Competition & Growth
+Explore Creativity and strategic thinking through exclusive student competitions"
             />
           </div>
         </div>
       </div>
       <div className={styles.sliderWrapper}>
-        <div
-          className={styles.sliderInnerWrapper}
-          // style={{
-          //   width: "100vw",
-          //   marginLeft: `-${containerPaddingLeft}px`,
-          //   paddingLeft: containerPaddingLeft,
-          //   boxSizing: "border-box",
-          // }}
-        >
+        <div className={styles.sliderInnerWrapper}>
           <Swiper
             slidesPerView={auto}
             spaceBetween={20}
@@ -98,22 +75,18 @@ const LifeAtDA360 = () => {
             }}
             breakpoints={{
               768: {
-                // slidesPerView: 2,
                 spaceBetween: 20,
                 slidesOffsetAfter: 20,
               },
               992: {
-                // slidesPerView: 3,
                 spaceBetween: 20,
                 slidesOffsetAfter: 20,
               },
               1440: {
-                // slidesPerView: 2.9,
                 spaceBetween: 20,
                 slidesOffsetAfter: 20,
               },
               1840: {
-                // slidesPerView: auto,
                 spaceBetween: 20,
                 slidesOffsetAfter: 20,
               },
