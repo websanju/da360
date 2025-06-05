@@ -11,7 +11,8 @@ export default function Header() {
   const [isSticky, setIsSticky] = useState(false);
   const dropdownRef = useRef<HTMLDivElement>(null);
 
-  const toggleCourses = () => {
+  const toggleCourses = (e?: React.MouseEvent) => {
+    e?.stopPropagation(); // works only if e exists
     setIsCoursesOpen((prev) => !prev);
   };
 
@@ -52,17 +53,17 @@ export default function Header() {
 
   const handleClickMasterDigital = () => {
     toggleCourses(); // call your custom function
-    router.push("/master-digital-marketing-leadership-course"); // then navigate
+    router.push("/master-digital-marketing-leadership-course");
   };
 
   const handleClickOline = () => {
     toggleCourses(); // call your custom function
-    router.push("/online-digital-marketing-courses"); // then navigate
+    router.push("/online-digital-marketing-courses");
   };
 
   const handleClickDigitalMarketing = () => {
     toggleCourses(); // call your custom function
-    router.push("/digital-marketing-training-institute"); // then navigate
+    router.push("/digital-marketing-training-institute");
   };
 
   return (
@@ -80,13 +81,20 @@ export default function Header() {
                 />
               </Link>
               {/* Courses Dropdown */}
-              <div className={styles.courseDropdown}>
+              <div
+                className={`${styles.navbarDropdownOverlay} ${
+                  isCoursesOpen ? styles.open : ""
+                }`}
+              ></div>
+              <div className={styles.courseDropdown} ref={dropdownRef}>
                 <div
-                  ref={dropdownRef}
                   className={`${styles.dropdownToggle} ${
                     isCoursesOpen ? styles.open : ""
                   }`}
-                  onClick={toggleCourses}
+                  onClick={(e) => {
+                    e.stopPropagation(); // Prevent bubbling
+                    toggleCourses();
+                  }}
                 >
                   <span>Courses</span>
                   <span
@@ -97,16 +105,11 @@ export default function Header() {
                     <DownArrow />
                   </span>
                 </div>
-                <div
-                  className={`${styles.navbarDropdownOverlay} ${
-                    isCoursesOpen ? styles.open : ""
-                  }`}
-                ></div>
+
                 <div
                   className={`${styles.dropdownContainer} ${
                     isCoursesOpen ? styles.open : ""
                   }`}
-                  ref={dropdownRef}
                 >
                   <div className={styles.dropdownContainerHeader}>
                     <h3>Digital Marketing Programs & Skills To Master</h3>
