@@ -12,6 +12,8 @@ import ArrowUp from "@/components/Ui/svg/arrowUp";
 import LeftArrow from "@components/Ui/svg/leftArrow";
 import RightArrow from "@components/Ui/svg/rightArrowLine";
 import SectionHeader from "@components/widgets/sectionHeader";
+// import { header } from "framer-motion/client";
+
 interface Story {
   name: string;
   companyLogo: string;
@@ -20,6 +22,10 @@ interface Story {
   newRole: string;
   packageLPA: string;
   profileImage: string;
+}
+interface StoryHeader {
+  headerTitle: string;
+  description: string;
 }
 
 const stories: Story[] = [
@@ -70,7 +76,10 @@ const stories: Story[] = [
   },
 ];
 
-const SuccessStories: React.FC = () => {
+const SuccessStories: React.FC<StoryHeader> = ({
+  headerTitle,
+  description,
+}) => {
   return (
     <section className={styles.successSection}>
       <div className="container">
@@ -79,10 +88,9 @@ const SuccessStories: React.FC = () => {
             <SectionHeader
               wrapperMarginBottom={{ desktop: "24px", mobile: "40px" }}
               titleMarginBottom={{ desktop: "16px", mobile: "10px" }}
-              title={<>Our Success Stories</>}
+              title={<> {headerTitle} </>}
               maxWidth="484px"
-              description="Our learners who made impressive career advancements through AI
-              Digital Marketing Course"
+              description={<>{description}</>}
             />
             <div className={styles.usersimg}>
               {["user-1", "user-2", "user-3", "user-4", "user-5"].map(

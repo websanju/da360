@@ -103,24 +103,29 @@ const Curriculum = () => {
 
   return (
     <section className={styles.curriculumSection}>
-      <h2>Latest Curriculum Vetted By Industry Experts</h2>
+      <h2>Latest Curriculum Reviewed by Industry Leaders</h2>
       <p>
-        Explore a comprehensive offline and online digital marketing syllabus
-        designed by corporate trainers and vetted by industry-renowned experts &
-        recruiters.
+        Cutting-edge digital marketing syllabus—designed by Expert trainers and
+        endorsed by top recruiters and domain experts.
       </p>
 
       <div className={styles["info-line"]}>
         <div className={styles["Learning"]}>
-          <label>Learning Modes</label>
+          <label>Learning Mode </label>
           <p>Online / Offline</p>
         </div>
         <div className={styles["timings"]}>
           <label> Batch Timings</label>
           <p className={styles.batchTimings}>
-            <span>07:30AM - 09:30AM (Online) | </span>
-            <span>10:30AM - 01:00PM (Classroom) | </span>
-            <span>08:30PM - 10:30PM (Online)</span>
+            <span>Online (PGCP & SDP)</span>
+            <span>07:30 AM to 09:30 AM | </span>
+            <span>10:30 AM to 12:30 PM | </span>
+            <span>09:00 PM to 10:30 PM</span>
+          </p>
+          <p className={styles.batchTimings}>
+            <span>Classroom (PGCP & SDP)</span>
+            <span>11:00 AM to 1:00 PM | </span>
+            <span>05:00 PM to 07:00 PM </span>
           </p>
         </div>
       </div>

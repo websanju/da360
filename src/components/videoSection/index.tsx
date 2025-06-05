@@ -65,9 +65,9 @@ export default function VideoSection() {
             <SectionHeader
               wrapperMarginBottom={{ desktop: "60px", mobile: "40px" }}
               titleMarginBottom={{ desktop: "20px", mobile: "10px" }}
-              title={<>Live Sessions Short Clips.</>}
+              title={<>Live Session Highlights</>}
               maxWidth="650px"
-              description="Sneak Peeks into Our Expert-Led Digital Marketing Training Sessions"
+              description="Sneak Peeks into Our Power-Packed, Expert-Led Marketing Masterclasses"
             />
           </div>
         </div>

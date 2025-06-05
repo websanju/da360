@@ -32,7 +32,7 @@ export default function Card({ study }: { study: CaseStudy }) {
       </div>
       <div className={styles.separator}></div>
       <div className={styles.skills}>
-        <span className={styles.skillsLable}>Skills Learned</span>
+        <span className={styles.skillsLable}>Key Skills Learned</span>
         <div className={styles.tags}>
           {study.tags.map((tag, idx) => (
             <span key={idx} className={styles.tag}>

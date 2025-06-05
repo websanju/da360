@@ -25,12 +25,11 @@ const AiTools: React.FC = () => {
   return (
     <section className={styles.digitalToolsSection}>
       <div className="container">
-        <h2 className={styles.sectionTitle}>Next-gen AI-powered Tools</h2>
+        <h2 className={styles.sectionTitle}>Next-Gen AI-Powered Tools</h2>
         <p className={styles.sectionDescription}>
-          Being a digital marketer means interacting & working with multiple
-          digital marketing tools daily. Here are some of the tools that you
-          will master during Digital Academy 360’s online digital marketing
-          course.
+          Modern digital marketers thrive on automation and insights—master the
+          latest AI-driven tools used by top brands in Digital Academy 360’s
+          online marketing course.
         </p>
         <div className={styles.digitalToolList}>
           {designTools.map((designTool, index) => (

@@ -47,7 +47,8 @@
 
   span {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
+    height: 100%;
   }
 
   &:hover {
@@ -60,6 +61,7 @@
   }
 
   .highlightItem {
+    height: 100%;
     p {
       font-weight: 400;
       font-size: 18px;

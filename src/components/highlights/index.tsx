@@ -33,8 +33,8 @@ const Highlights = () => {
 
   return (
     <section className={styles.highlightsSection}>
-      <h2>Key Highlights Of Our AI Digital Marketing Course</h2>
-      <p>Digital Marketing Skills You ll Master</p>
+      <h2>Key Highlights of Our AI-Driven Digital Marketing Program</h2>
+      <p>Digital Marketing Skills You’ll Master to Lead the Future</p>
 
       <div className={styles.highlightsList}>
         {skills.map((skill, index) => (

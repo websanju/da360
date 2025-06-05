@@ -20,6 +20,10 @@ import AlumniSlider from "@components/alumniSlider";
 import PeopleSlider from "@components/peopleSlider";
 import LiveProjectsSlider from "@components/liveProjectsSlider";
 import ContactButtonsSticky from "@/components/widgets/contactButtonsSticky";
+
+import digitalNarketingTrainingInstitute from "@/data/digitalNarketingTrainingInstitute";
+import { Cohort } from "@/types/courses";
+
 export const metadata = {
   title: "#1 Top Ranked Digital Marketing Training Institute in Asia",
   description:
@@ -53,14 +57,48 @@ export const metadata = {
   },
 };
 
+const cohortData: Cohort[] = [
+  {
+    date: "Mar 28",
+    mode: "Offline",
+    weekday: "(Mon-Fri)",
+    capacity: "30 Seats",
+    campus: "Bengaluru",
+  },
+  {
+    date: "Mar 31",
+    mode: "Online",
+    weekday: "(Mon-Fri)",
+    capacity: "30 Seats",
+    campus: "Bengaluru",
+  },
+];
 export default function courseDetail() {
   return (
     <main>
       <ContactButtonsSticky />
-      <LeadCaptureSection />
-      <CohortDetails />
-      <CourseHighlights />
-      <OurSuccessStories />
+      <LeadCaptureSection
+        headingLineOne={digitalNarketingTrainingInstitute.leadCapture.titleOne}
+        headingLineTow={digitalNarketingTrainingInstitute.leadCapture.titleTow}
+        descriptionLineOne={
+          digitalNarketingTrainingInstitute.leadCapture.subtitleOne
+        }
+        descriptionLineTow={
+          digitalNarketingTrainingInstitute.leadCapture.subtitleTow
+        }
+        tags={digitalNarketingTrainingInstitute.leadCapture.tags || []}
+      />
+      <CohortDetails
+        cohorts={cohortData}
+        heading={digitalNarketingTrainingInstitute.cohortSectionHeading}
+      />
+      <CourseHighlights
+        highlights={digitalNarketingTrainingInstitute.highlights}
+      />
+      <OurSuccessStories
+        headerTitle={digitalNarketingTrainingInstitute.StoryHeader.headerTitle}
+        description={digitalNarketingTrainingInstitute.StoryHeader.description}
+      />
       <CounterOnScroll />
       <LifeAtDA360 />
       <TeamSection />

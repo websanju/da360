@@ -27,12 +27,12 @@ const LearningRoadmap = () => {
               <div className={`${styles.roadmapContent}`}>
                 <h2>
                   Your{" "}
-                  <span className={styles.highlight}>6 Month Learning</span>
+                  <span className={styles.highlight}>6-Month Learning</span>
                   <br /> Roadmap
                 </h2>
                 <p>
-                  We&apos;ve crafted your journey with an exceptional level of
-                  attention to detail.
+                  Your journey is strategically designed for maximum growth at
+                  every stage.
                 </p>
                 <div className={styles.btnAction}>
                   <a href="#" className="btnWhite">

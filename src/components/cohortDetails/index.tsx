@@ -12,25 +12,14 @@ interface Cohort {
   capacity: string;
   campus: string;
 }
-
-const cohorts: Cohort[] = [
-  {
-    date: "Mar 28",
-    mode: "Offline",
-    weekday: "(Mon-Fri)",
-    capacity: "30 Seats",
-    campus: "Bengaluru",
-  },
-  {
-    date: "Mar 31",
-    mode: "Online",
-    weekday: "(Mon-Fri)",
-    capacity: "30 Seats",
-    campus: "Bengaluru",
-  },
-];
-
-export default function CohortDetails() {
+interface CohortDetailsProps {
+  heading: string;
+  cohorts: Cohort[];
+}
+export default function CohortDetails({
+  heading,
+  cohorts,
+}: CohortDetailsProps) {
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
@@ -49,7 +38,7 @@ export default function CohortDetails() {
       <div className={`${styles.container} container`}>
         <div className="row d-flex justify-content-center">
           <div className="col-lg-10">
-            <h2>PG in Digital Marketing 2025 Cohort Details</h2>
+            <h2>{heading}</h2>
             {/* Cohort Cards */}
             {isMobile ? (
               <div className={styles.mobileCohorts}>

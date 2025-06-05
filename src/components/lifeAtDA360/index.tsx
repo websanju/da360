@@ -53,10 +53,9 @@ const LifeAtDA360 = () => {
             <SectionHeader
               wrapperMarginBottom={{ desktop: "60px", mobile: "40px" }}
               titleMarginBottom={{ desktop: "24px", mobile: "10px" }}
-              title={<>Students @ DA360</>}
-              maxWidth="580px"
-              description="An Ecosystem of Learning, Competition & Growth
-Explore Creativity and strategic thinking through exclusive student competitions"
+              title={<>Life @ DA360 — Where Learning Gets Real</>}
+              maxWidth="560px"
+              description="Go Beyond the Classroom with Power-Packed Competitions & Creative Showdowns"
             />
           </div>
         </div>

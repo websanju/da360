@@ -69,10 +69,9 @@ const DigitalMarketingTools: React.FC = () => {
           Digital Marketing Tools You’ll Master
         </h2>
         <p className={styles.sectionDescription}>
-          Being a digital marketer means interacting & working with multiple
-          digital marketing tools daily. Here are some of the tools that you
-          will master during Digital Academy 360’s online digital marketing
-          course.
+          As a digital marketer, you&apos;ll work with top tools daily—gain
+          hands-on expertise with the industry’s most in-demand platforms in
+          Digital Academy 360’s AI Driven programs.
         </p>
         <div className={styles.digitalToolList}>
           {tools.map((tool, index) => (

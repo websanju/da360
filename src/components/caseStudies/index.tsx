@@ -18,26 +18,43 @@ const caseStudies = [
   {
     id: 1,
     logo: "/images/mcdonalds-logo.png",
-    title: "McDonald's case Study",
+    title: "McDonald’s India – Localizing a Global Brand",
     description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to...",
-    tags: ["Marketing Strategy", "SEO"],
+      "McDonald’s India adapted its global brand strategy to meet local market preferences—replacing beef-based offerings, introducing aloo tikki burgers, and launching value pricing to capture the price-sensitive Indian audience. Their digital marketing focused on regional content, hyper-local social media campaigns, and app-based loyalty programs.",
+    tags: [
+      "Marketing Strategy",
+      "Consumer Segmentation",
+      "Localization in Campaigns",
+      "Social Media Planning",
+      "App-Based Loyalty Marketing",
+    ],
   },
   {
     id: 2,
     logo: "/images/motherdairy-logo.png",
-    title: "MotherDairy case Study",
+    title: "Mother Dairy – Building Trust Through Content",
     description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to...",
-    tags: ["Marketing Strategy", "SEO"],
+      "Mother Dairy strengthened its brand presence by focusing on emotional storytelling and purpose-driven marketing. Campaigns like `Rishton Ka Swad Badhaiye` positioned the brand as a part of Indian family life. It leveraged SEO, blog content, influencer tie-ups, and YouTube storytelling to increase brand engagement and product awareness.",
+    tags: [
+      "Content Marketing",
+      "SEO & Organic Reach",
+      "Video Marketing Strategy",
+      "Influencer Marketing",
+    ],
   },
   {
     id: 3,
     logo: "/images/mcdonalds-logo.png",
-    title: "McDonald's case Study",
+    title: "Zomato – Data-Driven Performance Marketing",
     description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to...",
-    tags: ["Marketing Strategy", "SEO"],
+      "Zomato scaled its customer acquisition by running high-performing campaigns during IPL seasons, using data-backed insights to target users based on cuisine preferences, location, and time of day. They executed geo-targeted Google and Meta ads, retargeting sequences, and meme-based creatives to boost engagement and app installs.",
+    tags: [
+      "Performance Marketing",
+      "Google & Meta Ad Strategy",
+      "Retargeting Campaigns",
+      "A/B Testing & Optimization",
+      "Data-Driven Customer Insights",
+    ],
   },
   {
     id: 4,
@@ -71,7 +88,7 @@ export default function CaseStudiesSlider() {
                   Glimpse of Brand <br /> Case Studies
                 </>
               }
-              description="Learn with real case studies from brands across industries"
+              description="Learn Through Real Business Challenges from Industry-Leading Brands"
             />
           </div>
         </div>
