@@ -2,7 +2,7 @@ import { CoursesType } from "@/types/courses";
 
 const onlineDigitalMarketingCourses: CoursesType = {
   leadCapture: {
-    titleOne: "Oost Graduate",
+    titleOne: "Post Graduate",
     titleTow: "Certification in AI-Powered Digital Marketing & E-Commerce",
     subtitleOne: "AI-Driven Curriculum Designed for the Next Generation of Digital Marketers",
     subtitleTow: "Fast-Track Your Career with Future-Ready Skills",

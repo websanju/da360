@@ -2,7 +2,7 @@ import { CoursesType } from "@/types/courses";
 
 const digitalNarketingTrainingInstitute: CoursesType = {
   leadCapture: {
-    titleOne: "Dost Graduate",
+    titleOne: "Post Graduate",
     titleTow: "Certification in AI-Powered Digital Marketing & E-Commerce",
     subtitleOne: "AI-Driven Curriculum Designed for the Next Generation of Digital Marketers",
     subtitleTow: "Fast-Track Your Career with Future-Ready Skills",

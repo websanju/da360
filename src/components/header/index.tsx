@@ -49,9 +49,20 @@ export default function Header() {
     };
   }, []);
   const router = useRouter();
-  const handleClick = () => {
+
+  const handleClickMasterDigital = () => {
     toggleCourses(); // call your custom function
-    router.push("/course-detail"); // then navigate
+    router.push("/master-digital-marketing-leadership-course"); // then navigate
+  };
+
+  const handleClickOline = () => {
+    toggleCourses(); // call your custom function
+    router.push("/online-digital-marketing-courses"); // then navigate
+  };
+
+  const handleClickDigitalMarketing = () => {
+    toggleCourses(); // call your custom function
+    router.push("/digital-marketing-training-institute"); // then navigate
   };
 
   return (
@@ -71,6 +82,7 @@ export default function Header() {
               {/* Courses Dropdown */}
               <div className={styles.courseDropdown}>
                 <div
+                  ref={dropdownRef}
                   className={`${styles.dropdownToggle} ${
                     isCoursesOpen ? styles.open : ""
                   }`}
@@ -101,7 +113,7 @@ export default function Header() {
                   </div>
                   <div className={styles.dropdownColumnGroup}>
                     <div
-                      onClick={handleClick}
+                      onClick={handleClickMasterDigital}
                       className={`${styles.navbarDropdownColumn}`}
                     >
                       <h4>Leadership & AI Course</h4>
@@ -132,7 +144,7 @@ export default function Header() {
                     </div>
 
                     <div
-                      onClick={handleClick}
+                      onClick={handleClickOline}
                       className={`${styles.navbarDropdownColumn}`}
                     >
                       <h4>PGCP Course</h4>
@@ -161,7 +173,7 @@ export default function Header() {
                       </div>
                     </div>
                     <div
-                      onClick={handleClick}
+                      onClick={handleClickDigitalMarketing}
                       className={`${styles.navbarDropdownColumn}`}
                     >
                       <h4>SDCP Course</h4>
