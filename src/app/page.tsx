@@ -57,7 +57,12 @@ export default function HomePage() {
       <BrandLogos />
       <ProgramsShowcase />
       <SelfPacedPrograms />
-      <OurSuccessStories />
+      <OurSuccessStories
+        headerTitle={"Our Success Stories"}
+        description={
+          "Mentees who achieved remarkable career transitions through our program"
+        }
+      />
       <TrustedByLearners />
       <CommunityMeetupSlider />
       <GlobalCommunity />
