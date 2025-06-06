@@ -9,24 +9,27 @@
             margin-bottom: 21px;
         }
 
-        h4 {
+        h3 {
             font-weight: 500;
             font-size: 20px;
-            line-height:normal;
-            letter-spacing: 0%;
+            line-height: normal;
             color: rgba(32, 17, 22, 1);
             margin-bottom: 21px;
         }
+
         address {
             margin-bottom: 40px;
+
+            p {
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 23px;
+                color: rgba(32, 17, 22, 1);
+            }
         }
-        p {
-            font-weight: 400;
-            font-size: 14px;
-            line-height: 23px;
-            letter-spacing: 0%;
-            color: rgba(32, 17, 22, 1);
-        }
+
+
+
         .contact {
             display: flex;
             justify-content: space-between;
@@ -51,6 +54,72 @@
         .image {
             object-fit: cover;
             border-radius: 10px;
+        }
+    }
+}
+
+@media (width <=992px) {
+    .locationSection {
+        padding-bottom: 60px;
+
+        .row {
+            flex-direction: column-reverse;
+
+            .imageContainer {
+                height: 180px;
+                margin-bottom: 20px;
+
+                .image {
+                    object-fit: cover;
+                    border-radius: 4px;
+                }
+            }
+
+            .info {
+                h2 {
+                    margin-bottom: 10px;
+
+                    span {
+                        font-weight: 600;
+                        font-size: 20px;
+                        line-height: normal;
+                        letter-spacing: 0%;
+                        text-align: center;
+
+                    }
+                }
+
+                h3 {
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: normal;
+                    letter-spacing: normal;
+                }
+
+                address {
+                    margin-bottom: 24px;
+
+                    p {
+                        font-weight: 400;
+                        font-size: 12px;
+                        line-height: 23px;
+                        letter-spacing: 0%;
+                    }
+                }
+
+                .contact {
+                    a {
+                        font-weight: 500;
+                        font-size: 14px;
+                        line-height: 23px;
+                        text-decoration: underline;
+                        color: rgba(32, 17, 22, 1);
+                        display: flex;
+                        align-items: center;
+                        gap: 6px;
+                    }
+                }
+            }
         }
     }
 }

@@ -156,8 +156,6 @@
             }
         }
 
-
-
         .row {
             row-gap: 24px;
         }
@@ -209,3 +207,28 @@
         }
     }
 }
+
+@media (width <=992px) {
+    .contactFormSection {
+        padding: 60px 0;
+        .contactForm {
+            margin-top: 30px;
+
+            .learningMode { 
+
+            }
+            .inputGroup { 
+                .formInput {
+                    min-height: 60px;
+                }
+    
+            }
+            .contactBtn {
+
+             }
+             .row {
+                row-gap: 16px;
+            }
+         }
+    }
+ }

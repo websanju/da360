@@ -23,16 +23,16 @@ const LocationCard: React.FC<LocationCardProps> = ({
   return (
     <section className={styles.locationSection}>
       <div className="container">
-        <div className="row">
+        <div className={`${styles.row} row`}>
           <div className="col-lg-5 d-flex align-items-center">
             <div className={styles.info}>
               <h2>
                 <span className={styles.city}>{city}</span>
               </h2>
-              <h4>
+              <h3>
                 Head Office Jayanagar <br />
                 Digital Academy 360
-              </h4>
+              </h3>
               <address>
                 {addressLines.map((line, index) => (
                   <p key={index}>{line}</p>
