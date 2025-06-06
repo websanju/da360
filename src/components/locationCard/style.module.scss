@@ -1,0 +1,56 @@
+.locationSection {
+    padding-bottom: 140px;
+
+    .info {
+        h2 {
+            font-weight: 600;
+            font-size: 32px;
+            color: rgba(32, 17, 22, 1);
+            margin-bottom: 21px;
+        }
+
+        h4 {
+            font-weight: 500;
+            font-size: 20px;
+            line-height:normal;
+            letter-spacing: 0%;
+            color: rgba(32, 17, 22, 1);
+            margin-bottom: 21px;
+        }
+        address {
+            margin-bottom: 40px;
+        }
+        p {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 23px;
+            letter-spacing: 0%;
+            color: rgba(32, 17, 22, 1);
+        }
+        .contact {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .contact a {
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 23px;
+            letter-spacing: 0%;
+            color: rgba(32, 17, 22, 1);
+        }
+    }
+
+    .imageContainer {
+        position: relative;
+        max-width: 728px;
+        width: 100%;
+        height: 365px;
+        display: flex;
+
+        .image {
+            object-fit: cover;
+            border-radius: 10px;
+        }
+    }
+}

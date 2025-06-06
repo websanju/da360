@@ -1,0 +1,46 @@
+.departmentContacts {
+    background: rgba(255, 255, 255, 1);
+    padding: 140px 0;
+
+    .headerSection {
+        h2 {
+            font-weight: 600;
+            font-size: 24px;
+            line-height: normal;
+            text-align: center;
+            margin-bottom: 60px;
+        }
+    }
+
+    .card {
+        .icon {
+            text-align: center;
+        }
+
+        h3 {
+            font-weight: 600;
+            font-size: 24px;
+            line-height: normal;
+            letter-spacing: 0%;
+            text-align: center;
+            color: rgba(32, 17, 22, 1);
+            margin-bottom: 10px;
+        }
+
+        .action {
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+            text-align: center;
+            a {
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 100%;
+                letter-spacing: 0%;
+                text-align: center;
+                color: rgba(32, 17, 22, 1);
+                margin-bottom: 4px;
+            }
+        }
+    }
+}
