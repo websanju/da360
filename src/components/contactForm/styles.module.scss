@@ -5,6 +5,22 @@
     .contactForm {
         margin-top: 40px;
 
+        .learningMode {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            .label {
+                font-weight: 500;
+                font-size: 18px;
+                line-height: normal;
+                color: #fff;
+                padding: 10px 20px;
+            }
+            .mode {
+                margin-left: 20px;
+            }
+        }
+
         .inputGroup {
             display: flex;
             flex-direction: column;
@@ -108,7 +124,6 @@
 
             .phoneInput {
                 width: 100%;
-
                 input {
                     padding-left: 100px !important;
                 }
@@ -159,7 +174,7 @@
     label {
         display: flex;
         align-items: center;
-        gap: 0.5rem;
+        gap: 12px;
         font-weight: 500;
         font-size: 18px;
         line-height: 100%;
@@ -167,7 +182,11 @@
         cursor: pointer;
         position: relative;
     }
-
+    input[type="radio"]:checked {
+        width: 32px;
+        height: 32px;
+        border: solid 1px #000;
+     }
     input[type="radio"] {
         appearance: none;
         width: 32px;

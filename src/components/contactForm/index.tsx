@@ -86,7 +86,6 @@ const ContactForm: React.FC = () => {
                     value={formData.phone}
                     onChange={(val) => setFormData({ ...formData, phone: val })}
                   />
-                  ;
                 </div>
               </div>
               <div className="col-lg-6">
@@ -114,25 +113,28 @@ const ContactForm: React.FC = () => {
                 </div>
               </div>
               <div className="col-lg-12">
-                <div className={styles.mode}>
-                  <label>
-                    <input
-                      type="radio"
-                      name="mode"
-                      checked={formData.mode === "Online"}
-                      onChange={() => handleModeChange("Online")}
-                    />
-                    Online
-                  </label>
-                  <label>
-                    <input
-                      type="radio"
-                      name="mode"
-                      checked={formData.mode === "Offline"}
-                      onChange={() => handleModeChange("Offline")}
-                    />
-                    Offline
-                  </label>
+                <div className={styles.learningMode}>
+                  <label className={styles.label}>Learning Mode</label>
+                  <div className={styles.mode}>
+                    <label>
+                      <input
+                        type="radio"
+                        name="mode"
+                        checked={formData.mode === "Online"}
+                        onChange={() => handleModeChange("Online")}
+                      />
+                      Online
+                    </label>
+                    <label>
+                      <input
+                        type="radio"
+                        name="mode"
+                        checked={formData.mode === "Offline"}
+                        onChange={() => handleModeChange("Offline")}
+                      />
+                      Offline
+                    </label>
+                  </div>
                 </div>
               </div>
               <div className="col-lg-12">
