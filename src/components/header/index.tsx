@@ -266,7 +266,7 @@ export default function Header() {
                       <Link href="/performmers">Performmers</Link>
                     </li>
                     <li>
-                      <Link href="/">Contact Us</Link>
+                      <Link href="/contact-us">Contact Us</Link>
                     </li>
                     <li className={styles.loginAction}>
                       <span>
