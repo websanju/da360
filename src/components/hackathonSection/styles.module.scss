@@ -45,4 +45,47 @@
         }
     }
   }
+
+  @media (width <=992px) {
+    .hackathonSection {
+        padding-top: 60px;
+        .heading {
+            font-size: 14px;
+            line-height:normal;
+            letter-spacing: 0%;
+            text-align: center;
+            margin: 0 auto 36px;
+        }
+        .hackathonItem {
+          
+           .row {
+            row-gap: 36px;
+
+           
+           }
+        }
+        .iconWrapper {
+            width: 80px;
+            height: 80px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            img {
+                width: 80px;
+                height: 80px;  
+            }
+          }
+          .text {
+       
+            p {
+                font-size: 14px;
+                line-height: normal;
+            }
+            span {
+                font-size: 14px;
+                line-height: normal;
+            }
+        }
+     }
+   }
   

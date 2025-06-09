@@ -119,3 +119,37 @@
         }
     }
 }
+
+@media (width <=992px) { 
+    .eventSection {
+        padding-top: 60px;
+        .card { 
+            border-radius: 4px;
+            .imageWrapper { 
+                height: 200px;
+            }
+            .cardBody { 
+                padding: 20px;
+                .tag { 
+                    height: 25px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin-bottom: 10px;
+                }
+                p{
+                    font-size: 12px;
+                }
+                .subtitle {
+                    font-size: 16px;
+                    margin-bottom: 22px;
+                }
+
+                .meta { 
+                    margin-bottom: 16px;
+                }
+    
+            }
+        }
+     }
+}

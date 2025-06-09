@@ -1,0 +1,153 @@
+.hackathonEventSlider {
+  margin-top: 140px;
+
+  .sliderInnerc {
+    border-radius: 20px;
+    overflow: hidden;
+  }
+
+  .slide {
+    background: rgba(59, 43, 235, 1);
+    border-radius: 20px;
+    overflow: hidden;
+
+    .slideInfo {
+      margin-top: 74px;
+      margin-bottom: 30px;
+      margin-left: 100px;
+      .title {
+        font-weight: 400;
+        font-size: 82px;
+        line-height: 55px;
+        letter-spacing: 0%;
+        vertical-align: middle;
+        text-transform: uppercase;
+        color: rgba(202, 255, 77, 1);
+        margin-bottom: 4px;
+        .year {
+          font-size: 80px;
+          line-height: 45px;
+        }
+    }
+    .subtitle {
+      font-weight: 400;
+      font-size: 32px;
+      line-height: 55px;
+      vertical-align: middle;
+      color: rgba(255, 255, 255, 1);
+
+    }
+
+    
+    }
+
+    .row {
+      max-width: 1200px;
+      margin: 0 auto;
+      height: 100%;
+      .col6 {
+        min-height: 440px;
+        width: 50%;
+        display: flex;
+        position: relative;
+        .ImageSlide {
+          position: absolute;
+          bottom: 0;
+        }
+      }
+    }
+  }
+
+  .sliderWrapper {
+    position: relative;
+  }
+
+  .sliderNavigation {
+    position: absolute;
+    opacity: 0;
+    top: calc(60% - 50px);
+    width: 100%;
+    transition: 0.2s ease-in-out;
+
+    button {
+      width: 50px;
+      height: 50px;
+      right: 25px;
+      border-radius: 50px;
+      box-shadow: none;
+      border: none;
+    }
+  }
+}
+
+.sliderNavigation {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  position: absolute !important;
+  top: 210px !important;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+}
+
+.swiperPrev {
+  left: 0px !important;
+}
+
+.swiperNext {
+  right: 0px !important;
+}
+
+.meta {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 24px;
+
+  span {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: normal;
+    height: 37px;
+    min-width: 106px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border: 1px solid rgba(255, 255, 255, 1);
+    border-radius: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: rgba(255, 255, 255, 1);
+
+  }
+}
+
+.knowMore {
+  box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 1);
+  border-radius: 50px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 37px;
+  letter-spacing: 2%;
+  height: 45px;
+  min-width: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 60px;
+}
+
+.knowMore:hover {
+  box-shadow: none;
+}
+
+@media (width <=992px) {
+  .hackathonEventSlider {
+    margin-top: 60px;
+  }
+}

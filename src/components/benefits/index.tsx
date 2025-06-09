@@ -34,7 +34,7 @@ export default function WhoJoin() {
           <div className="row">
             <div className="col-lg-12">
               <SectionHeader
-                wrapperMarginBottom={{ desktop: "60px", mobile: "40px" }}
+                wrapperMarginBottom={{ desktop: "60px", mobile: "24px" }}
                 title={<>Benefits</>}
               />
             </div>

@@ -373,7 +373,7 @@ const CommunityMeetupSlider = () => {
           className={styles.cardImage}
         />
       )}
-      <div
+      {/* <div
         className={styles.cardContent}
         style={{
           backgroundColor: item.bgColor || "#f5f5f5",
@@ -384,7 +384,7 @@ const CommunityMeetupSlider = () => {
         {item.location && (
           <p className={styles.cardLocation}>{item.location}</p>
         )}
-      </div>
+      </div> */}
     </div>
   );
 

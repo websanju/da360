@@ -1,5 +1,7 @@
 import HackathonSection from "@components/hackathonSection";
-import WhoJoin from "@components/whoJoin";
+import HackathonSlider from "@/components/hackathonEventSlider";
+import VideoCard from "@/components/widgets/VideoCard";
+// import WhoJoin from "@components/whoJoin";
 import Benefits from "@components/benefits";
 import HackStorm from "@/components/hackStormEvent";
 import EventsSlider from "@/components/eventsSlider";
@@ -10,8 +12,13 @@ import PaddingWrapper from "@components/widgets/PaddingWrapper";
 export default function Hackathon() {
   return (
     <main>
+      <HackathonSlider />
       <HackathonSection />
-      <WhoJoin />
+      {/* <WhoJoin /> */}
+      <VideoCard
+        videoUrl={"/images/videos/classroom-video-3.mp4"}
+        thumbnail={"/images/videos/video.png"}
+      />
       <Benefits />
       <HackStorm />
       <EventsSlider />

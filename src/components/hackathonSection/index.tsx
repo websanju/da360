@@ -44,9 +44,11 @@ export default function HackathonSection() {
           </div>
         </div>
         <div className={` ${styles.hackathonItem}`}>
-          <div className="row text-center justify-content-center">
+          <div
+            className={` ${styles.row} row text-center justify-content-lg-center`}
+          >
             {hackathonItems.map((item, index) => (
-              <div className="col-6 col-sm-4 col-md-2 mx-2 mb-4" key={index}>
+              <div className="col-6 col-sm-4 col-md-2 " key={index}>
                 <div className={styles.iconWrapper}>
                   <Image src={item.icon} alt="icon" width={118} height={118} />
                 </div>

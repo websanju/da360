@@ -45,3 +45,60 @@
         }
     }
 }
+
+@media (width <=992px) {
+  .benefitsSection {
+    padding-top: 60px;
+    .benefitsBox {
+        border-radius: 10px;
+        padding: 24px;
+        h2 {
+            text-align: left;
+        }
+        .benefitsItems {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-direction: column;
+            row-gap: 16px;
+        }
+
+        .benefitsItem {
+            position: relative;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            width: 100%;
+            gap: 10px;
+            .iconWrapper {
+                width: 50px;
+                height: 50px;
+                margin: 0;
+                img {
+                    width: 50px;
+                    height: 50px;
+                }
+            }
+
+            .text {
+                h3 {
+                    font-size: 16px;
+                    line-height: 24px;
+                    text-align: left;
+                }
+            }
+        }
+    }
+    .benefitsCounters {
+        margin-top: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 60px;
+        .countersItem {
+            max-width: 228px;
+        }
+    }
+  }
+ }
