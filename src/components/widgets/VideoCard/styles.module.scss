@@ -198,3 +198,45 @@
     height: 100%;
     border: none;
 }
+
+@media (width <=991px) {
+    .videoSection {
+        padding-top: 60px;
+    }
+    
+    .thumbnail {
+        height: 291px;
+    }
+    .playButton {
+        height: 40px;
+        width: 40px;
+        img {
+            height: 15px;
+            width: 15px;
+        }
+        &::before,
+        &::after {
+            height: 40px;
+            width: 40px;
+         }
+     }
+    .pushButton {
+        height: 40px;
+        width: 40px;
+        img {
+            height: 15px;
+            width: 15px;
+        }
+        &::before,
+        &::after {
+            height: 40px;
+            width: 40px;
+         }
+     }
+    .videoWrapper {
+        height: 291px;
+        video {
+            height:100%;
+        }
+    }
+ }
