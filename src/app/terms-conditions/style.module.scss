@@ -24,13 +24,20 @@
                     margin-bottom: 0;
                 }
             }
-
             ul {
+                margin-bottom: 15px;
+                &:last-child {
+                    margin-bottom: 0;
+                }
                 li {
                     font-weight: 400;
                     font-size: 14px;
                     line-height: 25px;
                     color: #3f3c5a;
+                    margin-bottom: 5px;
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
                 }
             }
         }
