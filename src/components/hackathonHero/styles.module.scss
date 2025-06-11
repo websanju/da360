@@ -1,0 +1,101 @@
+.heroBanner {
+    background-color: #2a00ff;
+    color: white;
+    text-align: center;
+
+
+    .teamImage {
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    .bottomSection {
+        background: #fff;
+        color: #000;
+        padding: 30px 80px 40px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-end;
+        justify-content: space-between;
+        border-bottom: 1px solid #000000;
+
+        .details {
+            text-align: left;
+
+            .header {
+                margin-bottom: 16px;
+                font-weight: 600;
+                font-size: 24px;
+                line-height: 100%;
+                letter-spacing: 0%;
+                text-align: center;
+                color: #000;
+            }
+
+            .participants {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                margin-bottom: 27px;
+                margin-left: 12px;
+              
+                .participantImage {
+                    border-radius: 100%;
+                    height: 32px;
+                    width: 32px;
+                    margin-left: -12px;
+                    position: relative;
+                    border: 2px solid #FFFFFF;
+                    border-radius: 50%;
+                    min-height: 32px;
+                    img {
+                        border-radius: 50%;
+                    }
+                }
+
+                .count {
+                    font-weight: 500;
+                    font-size: 14px;
+                    line-height: 100%;
+                    color: #0070f3;
+                }
+            }
+
+            .infoTags {
+                display: flex;
+                gap: 10px;
+
+                .tag {
+                    background: #fff;
+                    padding: 6px 12px;
+                    border-radius: 2px;
+                    font-weight: 400;
+                    font-size: 12px;
+                    line-height: 100%;
+                    color: #201116;
+                    border: 1px solid #000000;
+                    height: 26px;
+                    min-width: 76px;
+                }
+            }
+        }
+
+        .buttonWrap {
+            .applyBtn {
+                min-width: 180px;
+                height: 45px;
+                padding: 0 10px;
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 37px;
+                letter-spacing: 2%;
+
+                &:hover {
+                    border: 1.5px solid #000000
+                }
+            }
+        }
+    }
+}

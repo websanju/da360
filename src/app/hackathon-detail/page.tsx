@@ -4,11 +4,20 @@ import EventSponsors from "@components/eventSponsors";
 // import PaddingWrapper from "@components/widgets/PaddingWrapper";
 import styles from "./style.module.scss";
 import TeamCard from "@/components/widgets/teamCard";
+import HackathonHero from "@/components/hackathonHero";
+import HackathonIntro from "@/components/hackathonIntro";
 import Prizes from "@/components/prizesSection";
 import SectionHeader from "@/components/widgets/sectionHeader";
+import EventSchedule from "@/components/eventSchedule";
+import MarqueeBanner from "@/components/widgets/marqueeRegisterBanner";
+
 export default function HackathonDetail() {
   return (
     <main>
+      <HackathonHero />
+      <HackathonIntro />
+      <EventSchedule />
+      <MarqueeBanner />
       <Prizes />
       <div className={styles.accordionSection}>
         <div className="container">
