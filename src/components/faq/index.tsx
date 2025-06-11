@@ -8,7 +8,10 @@ type FAQItem = {
   question: string;
   answer: string;
 };
-
+type FAQProps = {
+  title?: React.ReactNode;
+  description?: string;
+};
 const faqData: FAQItem[] = [
   {
     question: "Is it beginner-friendly?",
@@ -29,7 +32,10 @@ const faqData: FAQItem[] = [
   },
 ];
 
-const FAQ = () => {
+const FAQ = ({
+  title = <>FAQ</>,
+  description = "Everything you need to know about the Hackathon event.",
+}: FAQProps) => {
   const [activeIndex, setActiveIndex] = useState<number | null>(null);
 
   const toggleIndex = (index: number) => {
@@ -44,10 +50,9 @@ const FAQ = () => {
             <SectionHeader
               wrapperMarginBottom={{ desktop: "60px", mobile: "40px" }}
               titleMarginBottom={{ desktop: "16px", mobile: "10px" }}
-              title={<>FAQ</>}
+              title={title}
               maxWidth="300px"
-              description="Everything you need to know about the
-Hackathon event."
+              description={description}
             />
             <div className={styles.accordion}>
               {faqData.map((item, index) => (
