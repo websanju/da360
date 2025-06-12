@@ -71,6 +71,7 @@
     z-index: 1;
     width: 413px;
     padding: 30px;
+    right: 15px;
 
     &::before {
       background: rgb(255, 255, 255);
@@ -176,12 +177,13 @@
  
 
 }
-@media (min-width: 992px) {
+@media (min-width: 1392px) {
   .collg7 {
-    width: 65.83333333%;
+    width: 64.83333333%;
+    padding-right: 10px;
   }
   .collg5 {
-    width: 34.1667%;
+  width: 35.1667%;
   }
 }
 @media (width <=992px) {
