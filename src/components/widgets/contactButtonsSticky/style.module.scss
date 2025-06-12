@@ -41,9 +41,11 @@
       align-items: center;
       justify-content: center;
       gap: 12px;
-      width: 331px;
+      width:auto;
       height: 55px;
       border-radius: 130px;
+      padding-left: 10px;
+      padding-right: 10px;
   
       .applyButton {
         border: 2px solid #000000;
@@ -53,7 +55,7 @@
         line-height: 37px;
         color: #fff;
         border-radius: 100px;
-        min-width: 190px;
+        min-width: 132px;
         height: 41px;
         transition: background 0.3s, color 0.3s;
   
