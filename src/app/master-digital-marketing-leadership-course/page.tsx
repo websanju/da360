@@ -19,10 +19,10 @@ import Banner from "@components/banner";
 import AlumniSlider from "@components/alumniSlider";
 import PeopleSlider from "@components/peopleSlider";
 import LiveProjectsSlider from "@components/liveProjectsSlider";
-import ContactButtonsSticky from "@/components/widgets/contactButtonsSticky";
 
 import digitalMarketingLeadership from "@/data/digitalMarketingLeadership";
 import { Cohort } from "@/types/courses";
+import BottomNav from "@/components/bottomNav";
 
 export const metadata = {
   title: "#1 Top Ranked Digital Marketing Training Institute in Asia",
@@ -74,9 +74,18 @@ const cohortData: Cohort[] = [
   },
 ];
 export default function courseDetail() {
+  const sections = [
+    { id: "section1", label: "Overview" },
+    { id: "section2", label: "Course Highlights" },
+    { id: "section3", label: "Success Stories" },
+    { id: "section4", label: "Our People" },
+    { id: "section5", label: "Curriculam" },
+    { id: "section6", label: "Projects" },
+    { id: "section7", label: "Rewards" },
+  ];
+
   return (
     <main>
-      <ContactButtonsSticky />
       <LeadCaptureSection
         headingLineOne={digitalMarketingLeadership.leadCapture.titleOne}
         headingLineTow={digitalMarketingLeadership.leadCapture.titleTow}
@@ -85,31 +94,37 @@ export default function courseDetail() {
         tags={digitalMarketingLeadership.leadCapture.tags || []}
       />
       <CohortDetails
+        section="section1"
         cohorts={cohortData}
         heading={digitalMarketingLeadership.cohortSectionHeading}
       />
-      <CourseHighlights highlights={digitalMarketingLeadership.highlights} />
+      <CourseHighlights
+        section="section2"
+        highlights={digitalMarketingLeadership.highlights}
+      />
       <OurSuccessStories
+        section="section3"
         headerTitle={digitalMarketingLeadership.StoryHeader.headerTitle}
         description={digitalMarketingLeadership.StoryHeader.description}
       />
       <CounterOnScroll />
       <LifeAtDA360 />
-      <TeamSection />
+      <TeamSection section="section4" />
       <VideoSection />
-      <Highlights />
+      <Highlights section="section5" />
       <LearningRoadmap />
-      <LiveProjectsSlider />
+      <LiveProjectsSlider section="section6" />
       <CaseStudies />
       <Banner />
       <PeopleSlider />
       <AlumniSlider />
       <BrandLogos />
-      <RewardGrid />
+      <RewardGrid section="section7" />
       <UnlockBonuses />
       <LatestBlogPosts />
       <MediaAwards />
       <LearnerEnquiry />
+      <BottomNav sections={sections} showContactButtons={true} />
     </main>
   );
 }

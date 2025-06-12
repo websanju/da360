@@ -6,10 +6,10 @@ import AIDigital from "@components/aIDigital";
 import DigitalMarketingTools from "@components/digitalMarketingTools";
 import AiTools from "@components/aiTools";
 import Certifications from "@components/certifications";
-interface CohortDetailsProps {
+interface HighlightsProps {
   section?: string;
 }
-const Highlights = ({ section }: CohortDetailsProps) => {
+const Highlights = ({ section }: HighlightsProps) => {
   return (
     <div className={styles.highlight} id={section}>
       <div className="container">
