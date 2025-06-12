@@ -28,7 +28,7 @@ const LeadCaptureSection: React.FC<LeadCaptureSectionProps> = ({
       <div className="container">
         <div className="row align-items-start g-5">
           {/* Left Content */}
-          <div className="col-lg-7">
+          <div className={`col-lg-7 ${styles.collg7}`}>
             <h1>
               {headingLineOne}
               {gifSrc && (
@@ -57,7 +57,9 @@ const LeadCaptureSection: React.FC<LeadCaptureSectionProps> = ({
           </div>
 
           {/* Right Form */}
-          <div className="col-lg-5 d-flex justify-content-end align-items-start">
+          <div
+            className={`col-lg-5 d-flex justify-content-end align-items-start ${styles.collg5}`}
+          >
             <LeadCaptureForm />
           </div>
         </div>

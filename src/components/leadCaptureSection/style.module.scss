@@ -8,14 +8,16 @@
     padding-left: 5px;
     img {
       height: auto;
+      width: auto;
+      max-height: 60px;
     }
   }
 
   h1 {
     font-weight: 700;
     font-style: italic;
-    font-size: 76px;
-    line-height: 90px;
+    font-size: 60px;
+    line-height:70px;
     letter-spacing: 0%;
   }
 
@@ -150,7 +152,7 @@
 @media (min-width: 992px) and (max-width: 1200px) {
   .leadCaptureSection {
     h1 {
-      font-size: 60px;
+      font-size: 40px;
       line-height: normal;
     }
 
@@ -174,7 +176,14 @@
  
 
 }
-
+@media (min-width: 992px) {
+  .collg7 {
+    width: 65.83333333%;
+  }
+  .collg5 {
+    width: 34.1667%;
+  }
+}
 @media (width <=992px) {
   .gifAniamtion {
     img {
