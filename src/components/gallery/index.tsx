@@ -3,32 +3,32 @@ import styles from "./style.module.scss";
 import SectionHeader from "@components/widgets/sectionHeader";
 const images = [
   {
-    src: "/images/gallery/gallery1.jpg",
+    src: "/images/aboutus-gallery/1-min.jpg",
     alt: "Gallery Image 1",
     size: "small",
   },
   {
-    src: "/images/gallery/gallery2.jpg",
+    src: "/images/aboutus-gallery/2-min.jpg",
     alt: "Gallery Image 2",
     size: "small",
   },
   {
-    src: "/images/gallery/gallery3.jpg",
+    src: "/images/aboutus-gallery/3-min.jpg",
     alt: "Gallery Image 3",
     size: "large",
   },
   {
-    src: "/images/gallery/gallery4.jpg",
+    src: "/images/aboutus-gallery/4-min.jpg",
     alt: "Gallery Image 4",
     size: "small",
   },
   {
-    src: "/images/gallery/gallery5.jpg",
+    src: "/images/aboutus-gallery/5-min.jpg",
     alt: "Gallery Image 5",
     size: "small",
   },
   {
-    src: "/images/gallery/gallery6.jpg",
+    src: "/images/aboutus-gallery/6-min.jpg",
     alt: "Gallery Image 6",
     size: "large",
   },

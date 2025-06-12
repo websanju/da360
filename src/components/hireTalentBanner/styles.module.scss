@@ -1,0 +1,71 @@
+.hireTalentBanner {
+    padding-bottom: 140px;
+    padding-top: 140px;
+
+    .hireTalentContent {
+        border: 3px solid #000000;
+        background: #E10F33;
+        box-shadow: 6px 6px 0px 0px rgb(0, 0, 0);
+        border-radius: 10px;
+        min-height: 360px;
+        padding: 40px  30px 37px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        position: relative;
+
+        .hireTalentText {
+            h2 {
+                font-weight: 700;
+                font-style: italic;
+                font-size: 48px;
+                line-height: 60px;
+                letter-spacing: 0%;
+                text-align: center;
+                color: #fff;
+                margin-bottom: 17px;
+            }
+            p {
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 24px;
+                letter-spacing: 0%;
+                text-align: center;
+                color: #FFFFFF;
+                max-width: 592px;
+                margin-bottom: 32px;
+            }
+            .buttonAction {
+                display: flex;
+                justify-content: center;
+            }
+            .hireButton {
+                background: #FDC600;
+                font-weight: 700;
+                font-size: 20px;
+                line-height: 24px;
+                letter-spacing: 0%;
+                text-align: center;
+                color: #000000;
+                min-width: 240px;
+                min-height: 60px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 10px;
+                box-shadow: 4px 4px 0px 0px #000000;
+                transition: background .3s, color .3s;
+                &:hover {
+                    background: #ffffff;
+                    box-shadow: none;
+                }
+            }
+        }
+
+        .icon {
+            position: absolute;
+            right: 40px;
+        }
+    }
+}
