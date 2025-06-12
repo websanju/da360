@@ -26,6 +26,7 @@ interface Story {
 interface StoryHeader {
   headerTitle: string;
   description: string;
+  section?: string;
 }
 
 const stories: Story[] = [
@@ -79,9 +80,10 @@ const stories: Story[] = [
 const SuccessStories: React.FC<StoryHeader> = ({
   headerTitle,
   description,
+  section,
 }) => {
   return (
-    <section className={styles.successSection}>
+    <section className={styles.successSection} id={section}>
       <div className="container">
         <div className={styles.successWrapper}>
           <div className={styles.storiesHeader}>

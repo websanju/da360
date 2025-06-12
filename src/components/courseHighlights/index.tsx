@@ -11,11 +11,15 @@ interface Highlight {
 
 interface highlightsProps {
   highlights: Highlight[];
+  section?: string;
 }
 
-const CourseHighlights: React.FC<highlightsProps> = ({ highlights = [] }) => {
+const CourseHighlights: React.FC<highlightsProps> = ({
+  highlights = [],
+  section,
+}) => {
   return (
-    <section className="container">
+    <section className="container" id={section}>
       <div className={`${styles.highlightWrapper} `}>
         <div className={`${styles.sectionHeader} `}>
           <h2>Course Highlights</h2>

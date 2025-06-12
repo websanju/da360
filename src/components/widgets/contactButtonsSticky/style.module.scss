@@ -1,21 +1,10 @@
 .contactContainer {
-    position: fixed;
-    bottom: 24px;
+    position: relative;
     width: 100%;
     display: flex;
     justify-content: center;
     z-index: 111;
     transition: transform 0.4s ease, opacity 0.4s ease;
-  
-    &.show {
-      transform: translateY(0);
-      opacity: 1;
-    }
-  
-    &.hide {
-      transform: translateY(100px);
-      opacity: 0;
-    }
   
     .iconWrapper {
       display: flex;
@@ -24,8 +13,8 @@
       gap: 12px;
   
       .phoneIcon {
-        width: 46px;
-        height: 46px;
+        width:41px;
+        height: 41px;
         border-radius: 60px;
         background-color: #000000;
         display: flex;
@@ -34,8 +23,8 @@
       }
   
       .whatsappIcon {
-        width: 46px;
-        height: 46px;
+        width: 41px;
+        height: 41px;
         border-radius: 60px;
         background-color: #60D669;
         display: flex;
@@ -53,7 +42,7 @@
       justify-content: center;
       gap: 12px;
       width: 331px;
-      height: 72px;
+      height: 55px;
       border-radius: 130px;
   
       .applyButton {
@@ -65,7 +54,7 @@
         color: #fff;
         border-radius: 100px;
         min-width: 190px;
-        height: 56px;
+        height: 41px;
         transition: background 0.3s, color 0.3s;
   
         &:hover {

@@ -124,13 +124,17 @@ const members = [
   },
 ];
 
-const TeamSection = () => {
+interface TeamSectionProps {
+  section?: string;
+}
+
+const TeamSection = ({ section }: TeamSectionProps) => {
   const [activeTab, setActiveTab] = useState(tabs[0]);
 
   const filteredMembers = members.filter((m) => m.tab === activeTab);
 
   return (
-    <section className={styles.teamSection}>
+    <section className={styles.teamSection} id={section}>
       <div className="container">
         <div className="row">
           <div className="col-lg-12">

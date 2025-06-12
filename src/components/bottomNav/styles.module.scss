@@ -1,8 +1,22 @@
+.bottomNavSection {
+  position: fixed;
+  bottom: 24px;
+  left: 0;
+  right: 0;
+  transition: transform 0.4s ease, opacity 0.4s ease;
+  z-index: 999;
+  &.show {
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  &.hide {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+}
+
 .bottomNav {
-    position: fixed;
-    bottom: 24px;
-    left: 0;
-    right: 0;
     background: rgba(255, 255, 255, 1);
     display: flex;
     justify-content: space-around;
@@ -44,6 +58,7 @@
     border: none;
     height: 30px;
     border-radius: 100px;
+    min-width: max-content;
   }
   
   
@@ -55,5 +70,12 @@
   
   .active::after {
     transform: translateX(-50%) scaleX(1);
+  }
+
+  .bottomNavBox {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    gap: 10px;
   }
   

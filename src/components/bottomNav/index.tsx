@@ -1,7 +1,7 @@
 "use client";
 import { useEffect, useState } from "react";
 import styles from "./styles.module.scss";
-
+import ContactButtonsSticky from "@components/widgets/contactButtonsSticky";
 interface Section {
   id: string;
   label: string;
@@ -9,9 +9,10 @@ interface Section {
 
 interface Props {
   sections: Section[];
+  showContactButtons?: boolean;
 }
 
-const BottomNav = ({ sections }: Props) => {
+const BottomNav = ({ sections, showContactButtons = false }: Props) => {
   const [activeId, setActiveId] = useState("");
   const [isVisible, setIsVisible] = useState(false);
   const [lastScrollY, setLastScrollY] = useState(0);
@@ -68,27 +69,36 @@ const BottomNav = ({ sections }: Props) => {
   }, [lastScrollY]);
 
   return (
-    <div className={styles.bottomNavSection}>
+    <div
+      className={`${styles.bottomNavSection} ${
+        isVisible ? styles.show : styles.hide
+      }`}
+    >
       <div className="container">
         <div className="row">
           <div className="col-lg-12">
-            <nav
-              className={`${styles.bottomNav} ${
-                isVisible ? styles.show : styles.hide
-              }`}
-            >
-              {sections.map((section) => (
-                <button
-                  key={section.id}
-                  onClick={() => scrollToSection(section.id)}
-                  className={`${styles.link} ${
-                    activeId === section.id ? styles.active : ""
-                  }`}
-                >
-                  {section.label}
-                </button>
-              ))}
-            </nav>
+            <div className={styles.bottomNavBox}>
+              <div className={styles.bottomNavLeft}>
+                <nav className={`${styles.bottomNav} `}>
+                  {sections.map((section) => (
+                    <button
+                      key={section.id}
+                      onClick={() => scrollToSection(section.id)}
+                      className={`${styles.link} ${
+                        activeId === section.id ? styles.active : ""
+                      }`}
+                    >
+                      {section.label}
+                    </button>
+                  ))}
+                </nav>
+              </div>
+              {showContactButtons && (
+                <div className={styles.bottomNavRight}>
+                  <ContactButtonsSticky />
+                </div>
+              )}
+            </div>
           </div>
         </div>
       </div>

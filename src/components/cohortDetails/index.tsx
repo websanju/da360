@@ -15,10 +15,12 @@ interface Cohort {
 interface CohortDetailsProps {
   heading: string;
   cohorts: Cohort[];
+  section?: string;
 }
 export default function CohortDetails({
   heading,
   cohorts,
+  section,
 }: CohortDetailsProps) {
   const [isMobile, setIsMobile] = useState(false);
 
@@ -34,7 +36,7 @@ export default function CohortDetails({
   }, []);
 
   return (
-    <section className={styles.cohortDetailsSection}>
+    <section className={styles.cohortDetailsSection} id={section}>
       <div className={`${styles.container} container`}>
         <div className="row d-flex justify-content-center">
           <div className="col-lg-10">
