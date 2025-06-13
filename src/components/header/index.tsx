@@ -225,7 +225,7 @@ export default function Header() {
                     </Link>
                   </li>
                   <li>
-                    <Link href="/" className={styles.navItem}>
+                    <Link href="/Trainers" className={styles.navItem}>
                       Trainers
                     </Link>
                   </li>
@@ -235,7 +235,7 @@ export default function Header() {
                     </Link>
                   </li>
                   <li>
-                    <Link href="/" className={styles.navItem}>
+                    <Link href="/placements" className={styles.navItem}>
                       Placements
                     </Link>
                   </li>
