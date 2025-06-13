@@ -1,0 +1,42 @@
+.showcaseSection {
+  background: #fff176;
+  padding: 140px 0;
+
+  .studentContainer {
+    max-width: 1200px;
+    margin: 0 auto;
+
+    .row {
+      --bs-gutter-x: 30px;
+      --bs-gutter-y: 30px;
+    }
+
+  }
+}
+.loadMoreBtn {
+  display: flex;
+  justify-content: center;
+  margin-top: 60px;
+}
+.loadMore {
+  border: 2px solid #000000;
+  min-height: 57px;
+  min-width: 182px;
+  border-radius: 100px;
+  background-color: transparent;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 25px;
+  letter-spacing: 0%;
+  text-align: center;
+  transition: background cubic-bezier(0.47, 0.01, 0.17, 1) 0.3s, color cubic-bezier(0.47, 0.01, 0.17, 1) 0.3s;
+
+  &:hover {
+    background: #000000;
+    color: #fff;
+
+    svg path {
+      fill: #fff;
+    }
+  }
+}

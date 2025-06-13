@@ -1,0 +1,104 @@
+.card {
+  border-radius: 16px;
+  border: 2px solid #000000;
+  box-shadow: 4px 4px 0px 0px #000000;
+  transition: all 0.3s ease;
+  height: 100%;
+  overflow: hidden;
+  min-height: 470px;
+
+  img {
+    border-radius: 16px 16px 0 0;
+    object-fit: cover;
+    height: 234px;
+    width: 100%;
+  }
+
+  .cardBody {
+    padding-top: 15px;
+
+    .studentName {
+      font-weight: 600;
+      font-size: 22px;
+      line-height: 100%;
+      letter-spacing: 0%;
+      text-align: center;
+      color: #000;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 13px;
+      padding: 0 10px;
+    }
+
+    .studentImg {
+      padding: 0 10px;
+      text-align: center;
+      margin-bottom: 26px;
+
+      img {
+        height: auto;
+        width: auto;
+        max-height: 80px;
+      }
+    }
+
+    .studentInfo {
+      display: flex;
+      align-items: center;
+      padding-left: 10px;
+      padding-right: 10px;
+      justify-content: center;
+      margin-bottom: 32px;
+      gap: 12px;
+
+      .standard {
+        color: #000000;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 100%;
+        letter-spacing: 0%;
+        text-align: center;
+      }
+
+      .designation {
+        max-width: 140px;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 100%;
+        letter-spacing: 0%;
+      }
+
+      .studentArrow {
+        img {
+          max-width: 26px;
+          max-height: 26px;
+        }
+      }
+    }
+    .seprater {
+      height: 1px;
+      width: 100%;
+      border: 0.7px solid #000000;
+      opacity: 0.1;
+      max-width: 332px;
+      margin: 0 auto;
+    }
+    .package {
+      color: #141414;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 120%;
+      letter-spacing: 0%;
+      text-align: center;
+      padding: 12px 0 19px;
+      span {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 120%;
+        letter-spacing: 0%;
+        text-align: center;
+      }
+    }
+  }
+}
