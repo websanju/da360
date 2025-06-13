@@ -63,6 +63,7 @@ const GalleryComponent: React.FC = () => {
                     alt={image.alt}
                     width={400}
                     height={300}
+                    unoptimized
                     className="img-fluid"
                   />
                 </div>
