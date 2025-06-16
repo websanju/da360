@@ -7,10 +7,12 @@ import PaddingWrapper from "@components/widgets/PaddingWrapper";
 import BrandLogos from "@components/brandLogos";
 import PlacementStats from "@components/placementStats";
 import StudentShowcase from "@components/studentShowcase";
+import PlacementsBanner from "@components/placementsBanner";
 
 export default function Career() {
   return (
     <main>
+      <PlacementsBanner />
       <StudentShowcase />
       <PlacementStats />
       <BrandLogos />

@@ -1,0 +1,97 @@
+// components/HeroSection.module.scss
+.hero {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    overflow: hidden;
+    height: auto;
+
+    .heroImage {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh; // Ensure it covers the full height
+        z-index: 0;
+      
+        &::after {
+          content: '';
+          background: rgba(0, 0, 0, 0.2);
+          position: absolute;
+          top: 0;
+          right: 0;
+          width: 100%;
+          height: 100%;
+          z-index: 1;
+        }
+      
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          object-position: top;
+        }
+      }
+   
+
+    .heroInner {
+        position: relative;
+        z-index: 111;
+    }
+
+    .bgImage {
+        z-index: 0;
+        width: 100%;
+        height: auto;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+    .heroContentBox {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        width: 100%;
+    }
+
+    .content {
+        position: relative;
+        text-align: center;
+
+        h1 {
+            font-weight: 400;
+            font-size: 80px;
+            line-height: 100px;
+            letter-spacing: 0%;
+            text-align: center;
+            color: #fff;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-weight: 300;
+            font-size: 20px;
+            line-height: normal;
+            letter-spacing: 0%;
+            text-align: center;
+            color: #fff;
+            max-width:578px;
+            margin: 0 auto 52px;
+        }
+
+        .applyAction {
+            a {
+                height: 60px;
+                min-width: 266px;
+                box-shadow: 3px 3px 0px 0px #000000;
+                border-radius: 100px;
+                font-weight: 600;
+                font-size: 18px;
+                line-height: 37px;
+                letter-spacing: 2%;
+            }
+        }
+    }
+}
