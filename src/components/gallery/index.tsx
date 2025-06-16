@@ -8,7 +8,7 @@ const images = [
     size: "small",
   },
   {
-    src: "/images/aboutus-gallery/2-min.jpg",
+    src: "/images/aboutus-gallery/7-min.jpg",
     alt: "Gallery Image 2",
     size: "small",
   },
