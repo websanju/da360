@@ -8,7 +8,7 @@ interface GuestFacultyCardProps {
   title: string;
   experience: string;
   logo: string;
-  bgColor: string; // CSS class for background color
+  bgColor: string;
   image: {
     mobile: string;
     desktop: string;
@@ -25,7 +25,7 @@ const GuestFacultyCard: React.FC<GuestFacultyCardProps> = ({
 }) => {
   return (
     <div className={`card ${styles.card} ${styles[bgColor]}`}>
-      <div className={styles.cardImg}>
+      <div className={`${styles.cardImg} cardImg`}>
         <picture>
           <source media="(max-width: 767px)" srcSet={image.mobile} />
           <Image
@@ -37,7 +37,7 @@ const GuestFacultyCard: React.FC<GuestFacultyCardProps> = ({
           />
         </picture>
       </div>
-      <div className={styles.cardBody}>
+      <div className={`${styles.cardBody} cardBody`}>
         <div className={styles.facultyName}>
           <h5 dangerouslySetInnerHTML={{ __html: name }} />
           <span>

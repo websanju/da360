@@ -1,0 +1,32 @@
+.featuredSuperSection {
+    padding-bottom: 140px;
+
+    .row {
+        row-gap: 36px;
+    }
+}
+
+@media (width <=991px) {
+    .featuredSuperSection {
+        padding-bottom: 60px;
+
+        :global(.card) {
+            border-radius: 8px;
+            min-height: auto;
+          }
+        
+          :global(.cardImg) {
+            height: 122px;
+          }
+
+          :global(.cardBody) {
+            min-height:auto;
+            padding: 6px 10px 15px;
+          }
+
+        .row {
+            row-gap: 10px;
+            --bs-gutter-x: 10px;
+        }
+    }
+}

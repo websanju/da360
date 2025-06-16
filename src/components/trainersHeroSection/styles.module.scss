@@ -1,0 +1,60 @@
+.trainersHeroSection {
+    padding: 110px 0 140px;
+  
+    .content {
+        text-align: center;
+        max-width: 850px;
+        margin: 0 auto 80px;
+
+        h1 {
+            font-weight: 700;
+            font-style: italic;
+            font-size: 80px;
+            line-height: 110.00000000000001%;
+            letter-spacing: 0%;
+            text-align: center;
+            text-transform: capitalize;
+            color: #000;
+            margin-bottom: 40px;
+        }
+
+        p {
+            font-weight: 500;
+            font-size: 22px;
+            line-height: normal;
+            letter-spacing: 0%;
+            text-align: center;
+        }
+    }
+    .trainersImg {
+        max-width: 1280px;
+        margin: 0 auto;
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 20px;
+        }
+    }
+}
+
+@media (width <=991px) {
+    .trainersHeroSection {
+        padding: 60px 0 60px;
+
+        .content {
+            margin-bottom: 40px;
+            h1 {
+                font-size: 32px;
+                line-height: 36px;
+                max-width: 200px;
+                margin: 0 auto 24px;
+            }
+
+            p {
+               
+                font-size: 14px;
+                text-align: center;
+            }
+        }
+    }
+}
