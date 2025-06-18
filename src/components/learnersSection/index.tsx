@@ -185,6 +185,11 @@ export default function LearnersSection() {
             <div className="col-lg-12">
               <div className={styles.infobox}>
                 <div className={styles.infoLable}>
+                  <span className={styles.experience}>
+                    <span className={styles.marquee}>
+                      10 years “legacy, passion”
+                    </span>
+                  </span>
                   <span>Be A Skilled Professional</span>
                   <p>Lead the Digital Future.</p>
                 </div>
@@ -207,6 +212,12 @@ export default function LearnersSection() {
                     <h5>300+</h5>
                     <small>
                       Entrepreneurs & <br /> freelancers created
+                    </small>
+                  </div>
+                  <div className={styles.freelancers}>
+                    <h5>50000+</h5>
+                    <small>
+                      Careers <br /> Transformed
                     </small>
                   </div>
                 </div>
