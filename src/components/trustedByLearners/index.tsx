@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import styles from "./style.module.scss";
 import Image from "next/image";
@@ -30,9 +31,19 @@ const reviews = [
   },
 ];
 
-const TrustedByLearners = () => {
+const TrustedByLearners = ({
+  padding = { desktop: "0 0 140px 0", mobile: "0 0 60px 0" },
+}) => {
   return (
-    <section className={styles.trustedByLearnersSection}>
+    <section
+      className={styles.trustedByLearnersSection}
+      style={
+        {
+          "--padding-mobile": padding.mobile,
+          "--padding-desktop": padding.desktop,
+        } as React.CSSProperties & Record<string, string>
+      }
+    >
       <div className="container">
         <div className="row">
           <div className="col-lg-12">

@@ -23,6 +23,7 @@ import LiveProjectsSlider from "@components/liveProjectsSlider";
 import digitalMarketingLeadership from "@/data/digitalMarketingLeadership";
 import { Cohort } from "@/types/courses";
 import BottomNav from "@/components/bottomNav";
+import TrustedByLearners from "@/components/trustedByLearners";
 
 export const metadata = {
   title: "#1 Top Ranked Digital Marketing Training Institute in Asia",
@@ -112,6 +113,9 @@ export default function courseDetail() {
       <TeamSection section="section4" />
       <VideoSection />
       <Highlights section="section5" />
+      <TrustedByLearners
+        padding={{ desktop: "140px 0 60px 0", mobile: "60px 0 0 0" }}
+      />
       <LearningRoadmap />
       <LiveProjectsSlider section="section6" />
       <CaseStudies />

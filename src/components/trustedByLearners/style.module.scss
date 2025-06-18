@@ -1,5 +1,5 @@
 .trustedByLearnersSection {
-    padding-bottom: 140px;
+    
 
     .reviewCards {
         display: flex;
@@ -40,8 +40,8 @@
 
 @media (width <=991px) {
     .trustedByLearnersSection {
-        margin-bottom: 60px;
-        padding-bottom: 0px;
+      
+       
         .reviewCards {
             gap: 10px;
     
@@ -78,7 +78,7 @@
  }
  @media (width <=768px) {
     .trustedByLearnersSection {
-        margin-bottom: 60px;
+       
        
         .reviewCards {
             gap: 10px;
@@ -93,3 +93,11 @@
         }
      }
  }
+
+ .trustedByLearnersSection {
+    padding: var(--padding-mobile, 0 0 60px 0);
+  
+    @media (min-width: 992px) {
+      padding: var(--padding-desktop, 0 0 140px 0);
+    }
+  }

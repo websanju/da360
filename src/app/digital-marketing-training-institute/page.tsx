@@ -18,6 +18,7 @@ import CaseStudies from "@components/caseStudies";
 import Banner from "@components/banner";
 import AlumniSlider from "@components/alumniSlider";
 import PeopleSlider from "@components/peopleSlider";
+import TrustedByLearners from "@components/trustedByLearners";
 import LiveProjectsSlider from "@components/liveProjectsSlider";
 // import ContactButtonsSticky from "@/components/widgets/contactButtonsSticky";
 import BottomNav from "@components/bottomNav";
@@ -116,6 +117,9 @@ export default function courseDetail() {
       <TeamSection section="section4" />
       <VideoSection />
       <Highlights section="section5" />
+      <TrustedByLearners
+        padding={{ desktop: "140px 0 60px 0", mobile: "60px 0 0 0" }}
+      />
       <LearningRoadmap />
       <LiveProjectsSlider section="section6" />
       <CaseStudies />
