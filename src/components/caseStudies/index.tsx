@@ -26,7 +26,6 @@ const caseStudies = [
       "Consumer Segmentation",
       "Localization in Campaigns",
       "Social Media Planning",
-      "App-Based Loyalty Marketing",
     ],
   },
   {
@@ -53,7 +52,6 @@ const caseStudies = [
       "Google & Meta Ad Strategy",
       "Retargeting Campaigns",
       "A/B Testing & Optimization",
-      "Data-Driven Customer Insights",
     ],
   },
   {
