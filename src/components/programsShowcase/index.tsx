@@ -79,7 +79,7 @@ const ProgramsShowcase: React.FC = () => {
                   },
                   {
                     icon: "/images/icons/certification.svg",
-                    label: "1900+ Hours of Hands-On Training",
+                    label: "1900+ hrs Hands-On Training",
                   },
                   {
                     icon: "/images/icons/certification.svg",
@@ -137,7 +137,7 @@ const ProgramsShowcase: React.FC = () => {
                   },
                   {
                     icon: "/images/icons/certification.svg",
-                    label: "120+ Hours of Practical Learning",
+                    label: "120+ hrs Learning",
                   },
                   {
                     icon: "/images/icons/certification.svg",
