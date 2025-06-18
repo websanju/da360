@@ -22,7 +22,7 @@ const CallToActionBanner: React.FC<CallToActionBannerProps> = ({ section }) => {
               </p>
               <div className={styles.buttons}>
                 <button className={styles.btn}>Join the Experience</button>
-                <button className={styles.btn}>Visit Campus</button>
+                <button className={styles.btn}>Book Campus Visit</button>
               </div>
             </div>
           </div>
