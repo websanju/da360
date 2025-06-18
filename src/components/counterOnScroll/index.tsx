@@ -85,11 +85,11 @@ const CounterOnScroll = () => {
           </div>
           <div className="col-6 col-md-3">
             <Counter
-              from={3}
-              to={6}
+              from={0}
+              to={50000}
               duration={2}
-              suffix=" Lakhs"
-              label="Average CTC Offered On Minimum"
+              suffix="+"
+              label="Careers  Transformed"
             />
           </div>
         </div>
