@@ -1,0 +1,38 @@
+.guestFaculty {
+    padding-bottom: 140px;
+
+    .row {
+        --bs-gutter-x: 40px;
+        --bs-gutter-y: 40px;
+    }
+}
+
+.customSlide {
+    max-width: 370px;
+}
+
+@media (width <=992px) {
+    .guestFaculty {
+        padding-bottom: 60px;
+
+        .sectionHeader {
+            margin-bottom: 24px;
+
+            h2 {
+
+                font-size: 24px;
+                line-height: normal;
+                margin-bottom: 0;
+            }
+
+            p {
+                font-size: 16px;
+                line-height: normal;
+            }
+        }
+    }
+
+    .customSlide {
+        max-width: 261px;
+    }
+}

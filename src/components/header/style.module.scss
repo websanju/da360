@@ -99,7 +99,7 @@
   visibility: hidden;
   pointer-events: none;
   opacity: 0;
-  z-index: 100;
+  z-index: 1;
   width: 100vw;
   height: 100vh;
   background-color: rgba(0, 0, 0, .6);
@@ -320,7 +320,7 @@
 }
 
 .dropdownWrapper {
-  z-index: 111;
+  z-index: 11;
 }
 
 @media (max-width: 1024px) {

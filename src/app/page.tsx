@@ -14,6 +14,7 @@ import LifeAtDA360 from "@components/lifeAtDA360";
 import LatestBlogPosts from "@components/latestBlogPosts";
 import MediaAwards from "@components/mediaAwards";
 import PaddingWrapper from "@components/widgets/PaddingWrapper";
+import GuestFacultySlider from "@components/guestFacultySlider";
 
 export const metadata = {
   title: "#1 Top Ranked Digital Marketing Training Institute in Asia",
@@ -68,6 +69,7 @@ export default function HomePage() {
       <GlobalCommunity />
       <MarqueeBanner />
       <Comparison />
+      <GuestFacultySlider />
       <LifeAtDA360 />
       <LatestBlogPosts />
       <PaddingWrapper desktopPaddingBottom="130px" mobilePaddingBottom="60px">
