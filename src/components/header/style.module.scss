@@ -43,7 +43,7 @@
     display: flex;
     align-items: center;
     gap: 32px;
-
+    position: relative;
     ul {
       display: flex;
       gap: 32px;
@@ -69,6 +69,7 @@
       display: flex;
       align-items: center;
       justify-content: center;
+      background-color: #fff;
     }
   }
 }
@@ -92,7 +93,24 @@
     pointer-events: all;
   }
 }
+.navbarQuickOverlay {
+  position: fixed;
+  inset: 0;
+  visibility: hidden;
+  pointer-events: none;
+  opacity: 0;
+  z-index: 100;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, .6);
+  transition: all .75s cubic-bezier(.23, 1, .32, 1);
 
+  &.open {
+    visibility: visible;
+    opacity: 1;
+    pointer-events: all;
+  }
+}
 // course for action
 .courseDropdown {
   margin-left: 20px;
@@ -278,89 +296,31 @@
   }
 }
 
-// dropdown for action
+.dropdownMenu {
+  position: absolute;
+  top: 100px;
+  right: 0;
+  z-index: 1000;
+  width: 100%;
+  max-width: max-content;
+  height: auto;
+  overflow: hidden;
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 1s cubic-bezier(0.23, 1, 0.32, 1);
+  translate: 0 -40px;
+  &.open {
+    translate: 0 0;
+    transition: all 1s cubic-bezier(.23, 1, .32, 1);
+    visibility: visible;
+    opacity: 1;
+    pointer-events: all;
+  }
+}
+
 .dropdownWrapper {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  padding:0;
-  border-radius: 1.875rem;
-  height:50px;
-  width:50px;
-  align-items: center;
-  z-index: 10;
-
-  .hamburgerMenu {
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 8px;
-    border: 1px solid #e33c59;
-    border-radius: 50%;
-    transition: all 0.3s ease;
-
-  }
-
-  .dropdownMenu {
-    position: absolute;
-    top: 25px;
-    right: 0;
-    padding-top: 40px;
-    display: none;
-
-    ul {
-      list-style: none;
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
-      margin: 0;
-      padding: 0;
-      background: white;
-      border-radius: 12px;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-      min-width: 15rem;
-      padding: 1rem 1.2rem;
-      z-index: 1000;
-      transition: transform 0.2s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.2s ease-in-out;
-
-      li {
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-start;
-        cursor: pointer;
-        font-size: 0.87rem;
-        font-weight: 500;
-        color: #000;
-        line-height: 1.5rem;
-        opacity: 0.8;
-
-        a {
-          padding: 4px 0;
-        }
-
-        &.loginAction {
-          display: flex;
-          align-items: center;
-          gap: 20px;
-
-          a {
-            min-width: 80px;
-            display: flex;
-            align-items: center;
-            gap: 4px;
-          }
-        }
-      }
-    }
-  }
-
-  // Hover effect to show the dropdown when hovering on the button or the dropdown itself
-  &:hover {
-    .dropdownMenu {
-      display: block;
-    }
-  }
+  z-index: 111;
 }
 
 @media (max-width: 1024px) {
@@ -417,4 +377,17 @@
       border: none !important;
     }
   }
+}
+@media (width <=1160px) {
+.dropdownMenu {
+  left: auto;
+  transform: translate(0%, 0%);
+  right: 20px;
+  display: flex;
+          justify-content: end;
+          align-items: center;
+}
+.menu { 
+  position: static !important;
+}
 }

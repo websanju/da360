@@ -4,16 +4,24 @@ import Image from "next/image";
 import Link from "next/link";
 import styles from "./style.module.scss";
 import DownArrow from "@/components/Ui/svg/downArrow";
+import QuickMenu from "@/components/widgets/quickMenu";
 import { useRouter } from "next/navigation";
 
 export default function Header() {
   const [isCoursesOpen, setIsCoursesOpen] = useState(false);
+  const [isQuickOpen, setIsQuickOpen] = useState(false);
   const [isSticky, setIsSticky] = useState(false);
   const dropdownRef = useRef<HTMLDivElement>(null);
+  const dropdownQuickRef = useRef<HTMLDivElement>(null);
 
   const toggleCourses = (e?: React.MouseEvent) => {
     e?.stopPropagation(); // works only if e exists
     setIsCoursesOpen((prev) => !prev);
+  };
+
+  const toggleQuickMenu = (e?: React.MouseEvent) => {
+    e?.stopPropagation(); // works only if e exists
+    setIsQuickOpen((prev) => !prev);
   };
 
   useEffect(() => {
@@ -33,6 +41,22 @@ export default function Header() {
     };
   }, []);
 
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (
+        dropdownQuickRef.current &&
+        !dropdownQuickRef.current.contains(event.target as Node)
+      ) {
+        setIsQuickOpen(false);
+      }
+    };
+
+    document.addEventListener("mousedown", handleClickOutside); // OR "click"
+
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, []);
   // Check scroll position to toggle sticky class
   useEffect(() => {
     const handleScroll = () => {
@@ -84,7 +108,7 @@ export default function Header() {
               <div
                 className={`${styles.navbarDropdownOverlay} ${
                   isCoursesOpen ? styles.open : ""
-                }`}
+                } `}
               ></div>
               <div className={styles.courseDropdown} ref={dropdownRef}>
                 <div
@@ -241,8 +265,19 @@ export default function Header() {
                   </li>
                 </ul>
               </nav>
-              <div className={styles.dropdownWrapper}>
-                <div className={styles.hamburgerMenu}>
+              <div
+                className={`${styles.navbarQuickOverlay} ${
+                  isQuickOpen ? styles.open : ""
+                } `}
+              ></div>
+              <div className={styles.dropdownWrapper} ref={dropdownQuickRef}>
+                <div
+                  onClick={(e) => {
+                    e.stopPropagation(); // Prevent bubbling
+                    toggleQuickMenu();
+                  }}
+                  className={styles.hamburgerMenu}
+                >
                   <Image
                     src="/images/hamburger.svg"
                     alt="menu"
@@ -250,33 +285,12 @@ export default function Header() {
                     height={11}
                   />
                 </div>
-
-                <div className={`${styles.dropdownMenu} `}>
-                  <ul>
-                    <li>
-                      <Link href="/about-us">About Us</Link>
-                    </li>
-                    <li>
-                      <Link href="/refer-and-earn">Refer &amp; Earn</Link>
-                    </li>
-                    <li>
-                      <Link href="/career">Career@da360</Link>
-                    </li>
-                    <li>
-                      <Link href="/performmers">Performmers</Link>
-                    </li>
-                    <li>
-                      <Link href="/contact-us">Contact Us</Link>
-                    </li>
-                    <li className={styles.loginAction}>
-                      <span>
-                        <Link href="/">Login</Link>
-                      </span>
-                      <span>
-                        <Link href="/">Call</Link>
-                      </span>
-                    </li>
-                  </ul>
+                <div
+                  className={`${styles.dropdownMenu} ${
+                    isQuickOpen ? styles.open : ""
+                  }`}
+                >
+                  <QuickMenu toggleQuickMenu={toggleQuickMenu} />
                 </div>
               </div>
             </div>
