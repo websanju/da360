@@ -7,7 +7,7 @@ import SectionHeader from "@components/widgets/sectionHeader";
 
 const tabs = [
   "Guest Faculty",
-  "Guest Trainers",
+  "DA360 Faculty",
   "AI Tool Experts",
   "Project Advisors",
   "Placement Coaches",
@@ -30,7 +30,7 @@ const members = [
     experience: "5 Years Experience",
     img: "/images/deepak-1.png",
     companyLogo: "/images/jeet.png",
-    tab: "Guest Faculty",
+    tab: "DA360 Faculty",
     design: "default",
     icon: "star",
   },
