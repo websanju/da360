@@ -3,19 +3,25 @@ import Counter, { CounterProps } from "@components/widgets/counter";
 
 const counters: CounterProps[] = [
   {
+    to: 50000,
+    suffix: "+",
+    label: "Careers Elevated Turning Ambition into Achievement",
+  },
+  {
+    to: 25000,
+    suffix: "+",
+    label: "Learners Successfully Placed From Learning to Earning",
+  },
+  {
     to: 1000,
     suffix: "+",
-    label: "Participants",
+    label: "Trusted Hiring Partners Top Brands Choose Our Talent",
   },
   {
-    to: 93,
-    suffix: "%",
-    label: "Job Interview Shortlisting",
-  },
-  {
-    to: 200,
+    to: 300,
     suffix: "+",
-    label: "Brands Engaged",
+    label:
+      "Entrepreneurs & Freelancers Launched Fueling Independent Success Stories",
   },
 ];
 // import Image from "next/image";
@@ -42,7 +48,7 @@ const VisionMissionStats = () => {
         <div className="container">
           <div className="row row-gap-3 d-flex justify-content-center">
             {counters.map((counter, index) => (
-              <div key={index} className="col-6 col-md-4">
+              <div key={index} className="col-6 col-md-3">
                 <Counter {...counter} />
               </div>
             ))}
@@ -58,9 +64,10 @@ const VisionMissionStats = () => {
                   <span>Our</span> Vision
                 </h2>
                 <p>
-                  Inspire more people to pursue their dreams, by combining fun
-                  and rewards while enriching them with quality training and
-                  world-class certifications*
+                  To be the world’s leading catalyst for digital transformation
+                  by empowering individuals with future-ready skills in AI,
+                  digital marketing, and innovation — shaping tomorrow’s
+                  workforce today.
                 </p>
               </div>
               <div className={styles.card}>
@@ -68,8 +75,12 @@ const VisionMissionStats = () => {
                   <span>Our</span> Mission
                 </h2>
                 <p>
-                  Nurture the learner’s upskilling journey with the most
-                  sought-after digital learning platform
+                  Our mission is to deliver industry-driven, immersive learning
+                  experiences that combine cutting-edge digital marketing with
+                  AI-powered tools. We aim to create a global community of
+                  skilled professionals, entrepreneurs, and leaders through
+                  practical training, real-world projects, and a 360° approach
+                  to career success.
                 </p>
               </div>
             </div>

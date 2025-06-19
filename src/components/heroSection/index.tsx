@@ -24,7 +24,7 @@ export default function HeroSection() {
               <br />
               Learning Centre
             </h1>
-            <p>Transform Your Career with Industry - Driven Programs</p>
+            <p>School of Digital Marketing</p>
             <div className={styles.applyAction}>
               <Link href="#" className="btn btn-danger btn-lg px-4">
                 Apply Now

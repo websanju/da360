@@ -36,7 +36,9 @@ const MediaAwards = () => {
       <div className={`${styles.mediaAwardsContainer} container`}>
         <SectionHeader
           wrapperMarginBottom={{ desktop: "60px", mobile: "40px" }}
+          titleMarginBottom={{ desktop: "24px", mobile: "10px" }}
           title={<>DA360 In Spotlight</>}
+          description={"Media, Awards & Achievements "}
         />
         {isMobile ? (
           <Swiper

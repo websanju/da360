@@ -79,8 +79,8 @@ const SelfPacedPrograms = () => {
             <SectionHeader
               wrapperMarginBottom={{ desktop: "60px", mobile: "40px" }}
               titleMarginBottom={{ desktop: "16px", mobile: "10px" }}
-              title={<>Self-Paced Programs</>}
-              description="Upskill Your Knowledge To Change Your Career Trajectory"
+              title={<>Digital Marketing Bootcamps</>}
+              description="Deep Dive into Core Marketing Concepts "
             />
           </div>
         </div>

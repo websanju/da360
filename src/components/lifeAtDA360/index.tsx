@@ -53,9 +53,9 @@ const LifeAtDA360 = () => {
             <SectionHeader
               wrapperMarginBottom={{ desktop: "60px", mobile: "40px" }}
               titleMarginBottom={{ desktop: "24px", mobile: "10px" }}
-              title={<>Life @ DA360 — Where Learning Gets Real</>}
+              title={<>#TOOB – The Creative Arena for Future Leaders</>}
               maxWidth="560px"
-              description="Go Beyond the Classroom with Power-Packed Competitions & Creative Showdowns"
+              description="Break Boundaries with Skill-Driven Battles and Innovation Challenges"
             />
           </div>
         </div>

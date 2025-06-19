@@ -59,10 +59,8 @@ export default function HomePage() {
       <ProgramsShowcase />
       <SelfPacedPrograms />
       <OurSuccessStories
-        headerTitle={"Our Success Stories"}
-        description={
-          "Mentees who achieved remarkable career transitions through our program"
-        }
+        headerTitle={"Our Alumni Achievements"}
+        description={"Real People, Real Transitions, Real Success"}
       />
       <TrustedByLearners />
       <CommunityMeetupSlider />

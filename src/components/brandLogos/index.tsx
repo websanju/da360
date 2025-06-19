@@ -22,8 +22,8 @@ interface BrandLogosProps {
 }
 
 const BrandLogos: React.FC<BrandLogosProps> = ({
-  firstHeading = "Our Learners Working",
-  secondHeading = "In 1,000+ Global Brands",
+  firstHeading = "Our Alumni Work Across",
+  secondHeading = "1,000+ Global Giants",
 }) => {
   return (
     <section className={styles.brandSection}>

@@ -187,37 +187,42 @@ export default function LearnersSection() {
                 <div className={styles.infoLable}>
                   <span className={styles.experience}>
                     <span className={styles.marquee}>
-                      10 years “legacy, passion”
+                      · A Decade of Excellence · A Decade of Excellence · A
+                      Decade of Excellence · A Decade of Excellence · A Decade
+                      of Excellence · A Decade of Excellence · A Decade of
+                      Excellence · A Decade of Excellence · A Decade of
+                      Excellence · A Decade of Excellence · A Decade of
+                      Excellence · A Decade of Excellence
                     </span>
                   </span>
-                  <span>Be A Skilled Professional</span>
-                  <p>Lead the Digital Future.</p>
+                  <span>Master In-Demand Skills</span>
+                  <p>Your Gateway to Digital Dominance</p>
                 </div>
 
                 <div className={styles.infoNumbers}>
                   <div className={styles.companies}>
-                    <h5>1000+</h5>
+                    <h5>50,000+</h5>
                     <small>
-                      Companies our <br /> learners work in
+                      Careers Elevated Turning Ambition into Achievement
                     </small>
                   </div>
                   <div className={styles.placed}>
-                    <h5>93%</h5>
+                    <h5>25,000+</h5>
                     <small>
-                      Learners placed
-                      <br /> on average
+                      Learners Successfully Placed From Learning to Earning
+                    </small>
+                  </div>
+                  <div className={styles.freelancers}>
+                    <h5>1,000+</h5>
+                    <small>
+                      Trusted Hiring Partners Top Brands Choose Our Talent
                     </small>
                   </div>
                   <div className={styles.freelancers}>
                     <h5>300+</h5>
                     <small>
-                      Entrepreneurs & <br /> freelancers created
-                    </small>
-                  </div>
-                  <div className={styles.freelancers}>
-                    <h5>50000+</h5>
-                    <small>
-                      Careers <br /> Transformed
+                      Entrepreneurs & Freelancers Launched Fueling Independent
+                      Success Stories
                     </small>
                   </div>
                 </div>

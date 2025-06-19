@@ -9,11 +9,9 @@ const AboutUs = () => {
           <div className="col-lg-12">
             <div className={styles.headerSection}>
               <h1>
-                Asia’s Leading AI
-                <br />
-                Digital Marketing Academy
+                Asia’s #1 Academy for <br /> AI-Powered Digital Marketing
               </h1>
-              <p>Making Opportunities Knock On Your Door</p>
+              <p>Opportunities Don’t Knock. You Walk Right In.</p>
             </div>
           </div>
         </div>

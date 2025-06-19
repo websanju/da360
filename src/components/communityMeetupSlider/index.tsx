@@ -382,10 +382,8 @@ const CommunityMeetupSlider = () => {
               titleMarginBottom={{ desktop: "20px", mobile: "10px" }}
               titleColor="#fff"
               descriptionColor="#fff"
-              title={<>Learn Online, Connect Offline</>}
-              description="Engage with other learners, alumni, and mentors and attend
-                community sessions to learn from each other in our curated
-                community."
+              title={<>Life@D360</>}
+              description="Student life at Digital Academy 360 is far from ordinary – it’s extraordinary!"
             />
             {/* <h2>Learn Online, Connect Offline</h2>
               <p>

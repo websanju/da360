@@ -13,7 +13,7 @@ const Comparison = () => {
                 Digital Academy 360 <br />
                 <span>
                   {" "}
-                  VS <br /> Traditional Education
+                  VS <br /> Other Institutions
                 </span>
               </h2>
             </div>
@@ -27,25 +27,61 @@ const Comparison = () => {
               <div className={styles.labels}>
                 <ul>
                   <li>
-                    <span>Curriculum</span>
+                    <span>Program Duration</span>
                   </li>
                   <li>
-                    <span>Instructors</span>
+                    <span>Learning Modes</span>
                   </li>
                   <li>
-                    <span>Assignments</span>
+                    <span>Modules Covered</span>
                   </li>
                   <li>
-                    <span>Mentorship</span>
+                    <span>Domain Specialist Trainers</span>
                   </li>
                   <li>
-                    <span>Intership</span>
+                    <span>Total Training Hours</span>
                   </li>
                   <li>
-                    <span>Employability</span>
+                    <span>Certifications Offered</span>
                   </li>
                   <li>
-                    <span>Graduate</span>
+                    <span>Specialisations/Tracks</span>
+                  </li>
+
+                  <li>
+                    <span>Live Projects</span>
+                  </li>
+
+                  <li>
+                    <span>Tools Covered</span>
+                  </li>
+
+                  <li>
+                    <span>Job Guarantee</span>
+                  </li>
+
+                  <li>
+                    <span>Hiring Partners</span>
+                  </li>
+
+                  <li>
+                    <span>Entrepreneurship Support</span>
+                  </li>
+
+                  <li>
+                    <span>Student Life & Campus Experience</span>
+                  </li>
+
+                  <li>
+                    <span>Capstone Projects / Portfolios</span>
+                  </li>
+
+                  <li>
+                    <span>EMI / Payment Flexibility</span>
+                  </li>
+
+                  <li>
+                    <span>Alumni Success Stories</span>
                   </li>
                 </ul>
               </div>
@@ -137,9 +173,7 @@ const Comparison = () => {
                 </ul>
               </div>
               <div className={styles.card}>
-                <h3>
-                  Traditional <br /> Education
-                </h3>
+                <h3>Other Institutes</h3>
                 <hr />
                 <ul>
                   <li>
@@ -151,7 +185,7 @@ const Comparison = () => {
                         src={"/images/icons/tick-close.svg"}
                       />
                     </span>
-                    Theoretical
+                    2 to 6 Months
                   </li>
                   <li>
                     <span>
@@ -162,7 +196,7 @@ const Comparison = () => {
                         src={"/images/icons/tick-close.svg"}
                       />
                     </span>{" "}
-                    Academicians
+                    Mostly Online or Limited Classroom Options
                   </li>
                   <li>
                     <span>
@@ -173,7 +207,7 @@ const Comparison = () => {
                         src={"/images/icons/tick-close.svg"}
                       />
                     </span>{" "}
-                    Passive
+                    15–20 Modules (Basic to Intermediate)
                   </li>
                   <li>
                     <span>
@@ -184,7 +218,7 @@ const Comparison = () => {
                         src={"/images/icons/tick-close.svg"}
                       />
                     </span>{" "}
-                    Limited
+                    2 Domain Specialist
                   </li>
                   <li>
                     <span>
@@ -195,7 +229,7 @@ const Comparison = () => {
                         src={"/images/icons/tick-close.svg"}
                       />
                     </span>{" "}
-                    Minimal
+                    100–150 Hours (Mostly Theory-Based)
                   </li>
                   <li>
                     <span>
@@ -206,7 +240,7 @@ const Comparison = () => {
                         src={"/images/icons/tick-close.svg"}
                       />
                     </span>{" "}
-                    Optional
+                    3–5 Basic Certifications
                   </li>
                   <li>
                     <span>
@@ -217,7 +251,106 @@ const Comparison = () => {
                         src={"/images/icons/tick-close.svg"}
                       />
                     </span>{" "}
-                    Low
+                    1–2 General Tracks
+                  </li>
+                  <li>
+                    <span>
+                      <Image
+                        width={22}
+                        height={22}
+                        alt="close"
+                        src={"/images/icons/tick-close.svg"}
+                      />
+                    </span>{" "}
+                    1–2 Case Studies
+                  </li>
+                  <li>
+                    <span>
+                      <Image
+                        width={22}
+                        height={22}
+                        alt="close"
+                        src={"/images/icons/tick-close.svg"}
+                      />
+                    </span>{" "}
+                    10–20 Tools
+                  </li>
+                  <li>
+                    <span>
+                      <Image
+                        width={22}
+                        height={22}
+                        alt="close"
+                        src={"/images/icons/tick-close.svg"}
+                      />
+                    </span>{" "}
+                    Limited or No Placement Support
+                  </li>
+                  <li>
+                    <span>
+                      <Image
+                        width={22}
+                        height={22}
+                        alt="close"
+                        src={"/images/icons/tick-close.svg"}
+                      />
+                    </span>{" "}
+                    100–200 Companies (Limited Reach)
+                  </li>
+                  <li>
+                    <span>
+                      <Image
+                        width={22}
+                        height={22}
+                        alt="close"
+                        src={"/images/icons/tick-close.svg"}
+                      />
+                    </span>{" "}
+                    Rare or Not Available
+                  </li>
+                  <li>
+                    <span>
+                      <Image
+                        width={22}
+                        height={22}
+                        alt="close"
+                        src={"/images/icons/tick-close.svg"}
+                      />
+                    </span>{" "}
+                    Mostly Course-Centric, No Extracurriculars
+                  </li>
+                  <li>
+                    <span>
+                      <Image
+                        width={22}
+                        height={22}
+                        alt="close"
+                        src={"/images/icons/tick-close.svg"}
+                      />
+                    </span>{" "}
+                    Optional or Not Offered
+                  </li>
+                  <li>
+                    <span>
+                      <Image
+                        width={22}
+                        height={22}
+                        alt="close"
+                        src={"/images/icons/tick-close.svg"}
+                      />
+                    </span>{" "}
+                    Limited or Not Available
+                  </li>
+                  <li>
+                    <span>
+                      <Image
+                        width={22}
+                        height={22}
+                        alt="close"
+                        src={"/images/icons/tick-close.svg"}
+                      />
+                    </span>{" "}
+                    Few Documented Success Stories
                   </li>
                 </ul>
               </div>
@@ -243,7 +376,7 @@ const Comparison = () => {
                         src={"/images/icons/tick-circle.svg"}
                       />
                     </span>
-                    Real-world, future-ready
+                    3 to 12 Months (Flexible Options)
                   </li>
                   <li>
                     <span>
@@ -254,7 +387,7 @@ const Comparison = () => {
                         src={"/images/icons/tick-circle.svg"}
                       />
                     </span>{" "}
-                    Industry Experts (Google, Meta, etc.)
+                    Online & Classroom
                   </li>
                   <li>
                     <span>
@@ -265,7 +398,7 @@ const Comparison = () => {
                         src={"/images/icons/tick-circle.svg"}
                       />
                     </span>{" "}
-                    Interactive + Hands-on
+                    40+ In-Depth Modules
                   </li>
                   <li>
                     <span>
@@ -276,7 +409,7 @@ const Comparison = () => {
                         src={"/images/icons/tick-circle.svg"}
                       />
                     </span>{" "}
-                    1-on-1 Guidance
+                    7 Domain Specialist
                   </li>
                   <li>
                     <span>
@@ -287,7 +420,7 @@ const Comparison = () => {
                         src={"/images/icons/tick-circle.svg"}
                       />
                     </span>{" "}
-                    30+ Real-World Projects
+                    240–1900+ Hours (Hands-On Learning)
                   </li>
                   <li>
                     <span>
@@ -298,7 +431,7 @@ const Comparison = () => {
                         src={"/images/icons/tick-circle.svg"}
                       />
                     </span>{" "}
-                    Guaranteed Internship
+                    5 to 20+ (Incl. Google, Meta, HubSpot, etc.)
                   </li>
                   <li>
                     <span>
@@ -309,7 +442,115 @@ const Comparison = () => {
                         src={"/images/icons/tick-circle.svg"}
                       />
                     </span>{" "}
-                    High – Job-Ready from Day 1
+                    5–15 Advanced Career Tracks
+                  </li>
+
+                  <li>
+                    <span>
+                      <Image
+                        width={30}
+                        height={30}
+                        alt="close"
+                        src={"/images/icons/tick-circle.svg"}
+                      />
+                    </span>{" "}
+                    8–15+ Real-Time Agency Projects
+                  </li>
+
+                  <li>
+                    <span>
+                      <Image
+                        width={30}
+                        height={30}
+                        alt="close"
+                        src={"/images/icons/tick-circle.svg"}
+                      />
+                    </span>{" "}
+                    50+ Industry Tools
+                  </li>
+
+                  <li>
+                    <span>
+                      <Image
+                        width={30}
+                        height={30}
+                        alt="close"
+                        src={"/images/icons/tick-circle.svg"}
+                      />
+                    </span>{" "}
+                    Dedicated Career Services + 100% Placements
+                  </li>
+
+                  <li>
+                    <span>
+                      <Image
+                        width={30}
+                        height={30}
+                        alt="close"
+                        src={"/images/icons/tick-circle.svg"}
+                      />
+                    </span>{" "}
+                    1000+ Global Brands
+                  </li>
+
+                  <li>
+                    <span>
+                      <Image
+                        width={30}
+                        height={30}
+                        alt="close"
+                        src={"/images/icons/tick-circle.svg"}
+                      />
+                    </span>{" "}
+                    Mentoring, Startup Guidance, Freelancer Support
+                  </li>
+
+                  <li>
+                    <span>
+                      <Image
+                        width={30}
+                        height={30}
+                        alt="close"
+                        src={"/images/icons/tick-circle.svg"}
+                      />
+                    </span>{" "}
+                    Events, Competitions, Celebrations, Networking
+                  </li>
+
+                  <li>
+                    <span>
+                      <Image
+                        width={30}
+                        height={30}
+                        alt="close"
+                        src={"/images/icons/tick-circle.svg"}
+                      />
+                    </span>{" "}
+                    Mandatory with Portfolio Review
+                  </li>
+
+                  <li>
+                    <span>
+                      <Image
+                        width={30}
+                        height={30}
+                        alt="close"
+                        src={"/images/icons/tick-circle.svg"}
+                      />
+                    </span>{" "}
+                    Available
+                  </li>
+
+                  <li>
+                    <span>
+                      <Image
+                        width={30}
+                        height={30}
+                        alt="close"
+                        src={"/images/icons/tick-circle.svg"}
+                      />
+                    </span>{" "}
+                    50,000+ Careers Transformed + Proof of offer Letters
                   </li>
                 </ul>
               </div>

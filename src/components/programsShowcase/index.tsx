@@ -58,12 +58,8 @@ const ProgramsShowcase: React.FC = () => {
         <SectionHeader
           wrapperMarginBottom={{ desktop: "60px", mobile: "40px" }}
           titleMarginBottom={{ desktop: "20px", mobile: "10px" }}
-          title={
-            <>
-              Programs Designed for <br /> Career Success
-            </>
-          }
-          description="Explore Our Job-Ready Certifications"
+          title={<>Programs Crafted for Real-World Success</>}
+          description="Get Certified. Get Hired."
         />
 
         <div className={`${styles.container} container`}>
@@ -71,23 +67,26 @@ const ProgramsShowcase: React.FC = () => {
             <div className="card1">
               <WidgetCard
                 title="Leadership in Digital Marketing, AI & Entrepreneurship"
-                category={["9-Month Flagship Program", "Classroom Only"]}
+                category={[
+                  "12-Month Full Time Program",
+                  " In-Person, Immersive Learning",
+                ]}
                 stats={[
                   {
                     icon: "/images/icons/certification.svg",
-                    label: "40+ In-Depth Modules",
+                    label: "40+ Power-Packed Modules",
                   },
                   {
                     icon: "/images/icons/certification.svg",
-                    label: "1900+ hrs Hands-On Training",
+                    label: "1900+ hrs Practical Training",
                   },
                   {
                     icon: "/images/icons/certification.svg",
-                    label: "Guaranteed Internship",
+                    label: "15 Specialized Career Tracks",
                   },
                   {
                     icon: "/images/icons/certification.svg",
-                    label: "5+ Capstone Projects",
+                    label: "15+ Live Agency-Style Projects",
                   },
                 ]}
                 buttonText="Download Curriculum"
@@ -99,24 +98,27 @@ const ProgramsShowcase: React.FC = () => {
           <div className="card-wrapper">
             <div className="card2">
               <WidgetCard
-                title="PGCP In Digital Marketing & ECommerce"
-                category={["6-Month Career Accelerator", "Classroom & Online"]}
+                title="PGCP in Digital Marketing & E-Commerce"
+                category={[
+                  "6.5-Month Flagship Program",
+                  "Available Online & On-Campus",
+                ]}
                 stats={[
                   {
                     icon: "/images/icons/certification.svg",
-                    label: "Masters Level Certification",
+                    label: "15+ Dynamic Learning Modules",
                   },
                   {
                     icon: "/images/icons/certification.svg",
-                    label: "4 Expert Specialisations",
+                    label: "260+ Hours of Experiential Learning",
                   },
                   {
                     icon: "/images/icons/certification.svg",
-                    label: "10+ Integrated Marketing Campaigns",
+                    label: "5 Specialisation",
                   },
                   {
                     icon: "/images/icons/certification.svg",
-                    label: "Portfolio-Based Learning",
+                    label: "8+ Real-Time Marketing Projects",
                   },
                 ]}
                 buttonText="Download Curriculum"
@@ -129,23 +131,26 @@ const ProgramsShowcase: React.FC = () => {
             <div className="card3">
               <WidgetCard
                 title="Skill Diploma in Digital Marketing & Analytics"
-                category={["3-Month Career Launchpad", "Classroom & Online"]}
+                category={[
+                  "3-Month Certification Program",
+                  "Online Learning Only",
+                ]}
                 stats={[
                   {
                     icon: "/images/icons/certification.svg",
-                    label: "8+ Modules Across Core Topics",
+                    label: " 5+ Impact-Driven Modules",
                   },
                   {
                     icon: "/images/icons/certification.svg",
-                    label: "120+ hrs Learning",
+                    label: "120+ hrs Hands-On Learning",
                   },
                   {
                     icon: "/images/icons/certification.svg",
-                    label: "20+ Live Case Studies",
+                    label: " 5+ Professional Certifications",
                   },
                   {
                     icon: "/images/icons/certification.svg",
-                    label: "15+ Tools to Learn",
+                    label: "2+ Live Marketing Case Projects",
                   },
                 ]}
                 buttonText="Download Curriculum"
