@@ -10,11 +10,13 @@ const ReferHero = () => {
           <div className="col-lg-12">
             <div className={styles.headerSection}>
               <h1>
-                Refer and Earn Amazing <br /> Cashback & Rewards
+                Become a DA360 Learning Ambassador
+                <br /> Refer & Earn Exclusive Cashback and Rewards!
               </h1>
               <p>
-                Help a friend upskill and enhance their knowledge to a better
-                career.
+                Inspire your friends, family, or colleagues to upskill with
+                Digital Academy 360 — and get rewarded while helping them build
+                brighter careers!
               </p>
             </div>
             <div className={styles.headerImges}>
