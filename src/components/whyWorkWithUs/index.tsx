@@ -19,20 +19,31 @@ export default function WhyWorkWithUs() {
           <div className={`col-md-6 ${styles.contentBox}`}>
             <div className={styles.contentInfo}>
               <div>
-                <h2>
-                  Why work with <br /> <span>DigitalAcademy360?</span>
-                </h2>
-                <p>
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industrys
-                  standard dummy text ever since the 1500s, when an unknown
-                  printer took a galley of type and scrambled it to make a type
-                  specimen book. It has survived not only five centuries, but
-                  also the leap into electronic typesetting, remaining
-                  essentially unchanged. Lorem Ipsum is simply dummy text of the
-                  printing and typesetting industry. Lorem Ipsum has been the
-                  industrys standard dummy text ever since the 1500s, when an
-                </p>
+                <h2>Why Work With Us?</h2>
+                <div className={styles.list}>
+                  <ul>
+                    <li>
+                      <span>Innovative Work Culture</span> – Collaborate on
+                      industry-first programs in digital marketing and AI.
+                    </li>
+                    <li>
+                      <span> Growth Opportunities</span> – Clear career paths,
+                      internal promotions, and professional development.
+                    </li>
+                    <li>
+                      <span> Impactful Work </span>– Help transform thousands of
+                      lives through quality education.
+                    </li>
+                    <li>
+                      <span> Flexible & Inclusive </span> – A dynamic
+                      environment that values diversity and creativity.
+                    </li>
+                    <li>
+                      <span>Recognition & Rewards </span> – Your contributions
+                      are seen, celebrated, and rewarded.
+                    </li>
+                  </ul>
+                </div>
               </div>
               <a href="#" className={styles.ctaBtn}>
                 Apply Now{" "}
