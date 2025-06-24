@@ -185,7 +185,7 @@ export default function LearnersSection() {
             <div className="col-lg-12">
               <div className={styles.infobox}>
                 <div className={styles.infoLable}>
-                  <span className={styles.experience}>
+                  {/* <span className={styles.experience}>
                     <span className={styles.marquee}>
                       · A Decade of Excellence · A Decade of Excellence · A
                       Decade of Excellence · A Decade of Excellence · A Decade
@@ -194,9 +194,19 @@ export default function LearnersSection() {
                       Excellence · A Decade of Excellence · A Decade of
                       Excellence · A Decade of Excellence
                     </span>
+                  </span> */}
+                  <span>
+                    10 Years of{" "}
+                    <Image
+                      src="/images/green-star.svg"
+                      alt="Learners Group"
+                      width={48}
+                      height={48}
+                      className="object-cover"
+                      priority
+                    />
                   </span>
-                  <span>Master In-Demand Skills</span>
-                  <p>Your Gateway to Digital Dominance</p>
+                  <p>Excellence</p>
                 </div>
 
                 <div className={styles.infoNumbers}>
@@ -206,24 +216,21 @@ export default function LearnersSection() {
                       Careers Elevated Turning Ambition into Achievement
                     </small>
                   </div>
-                  <div className={styles.placed}>
+                  <div className={styles.companies}>
                     <h5>25,000+</h5>
                     <small>
                       Learners Successfully Placed From Learning to Earning
                     </small>
                   </div>
-                  <div className={styles.freelancers}>
+                  <div className={styles.companies}>
                     <h5>1,000+</h5>
                     <small>
                       Trusted Hiring Partners Top Brands Choose Our Talent
                     </small>
                   </div>
-                  <div className={styles.freelancers}>
+                  <div className={styles.companies}>
                     <h5>300+</h5>
-                    <small>
-                      Entrepreneurs & Freelancers Launched Fueling Independent
-                      Success Stories
-                    </small>
+                    <small>Entrepreneurs & Freelancers Success Stories</small>
                   </div>
                 </div>
               </div>
