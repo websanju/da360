@@ -22,7 +22,7 @@ import LiveProjectsSlider from "@components/liveProjectsSlider";
 
 import BottomNav from "@components/bottomNav";
 import onlineDigitalMarketingCourses from "@/data/onlineDigitalMarketingCourses";
-import { Cohort } from "@/types/courses";
+import { Cohort } from "@/components/cohortDetails";
 import TrustedByLearners from "@/components/trustedByLearners";
 
 export const metadata = {
@@ -88,12 +88,12 @@ export default function courseDetail() {
     <main>
       <LeadCaptureSection
         headingLineOne={onlineDigitalMarketingCourses.leadCapture.titleOne}
-        headingLineTow={onlineDigitalMarketingCourses.leadCapture.titleTow}
+        headingLineTow={onlineDigitalMarketingCourses.leadCapture.titleTwo}
         descriptionLineOne={
           onlineDigitalMarketingCourses.leadCapture.subtitleOne
         }
         descriptionLineTow={
-          onlineDigitalMarketingCourses.leadCapture.subtitleTow
+          onlineDigitalMarketingCourses.leadCapture.subtitleTwo
         }
         tags={onlineDigitalMarketingCourses.leadCapture.tags || []}
       />

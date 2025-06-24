@@ -60,14 +60,14 @@ export const metadata = {
 
 const cohortData: Cohort[] = [
   {
-    date: "Mar 28",
+    date: "June 16th",
     mode: "Offline",
     weekday: "(Mon-Fri)",
     capacity: "30 Seats",
     campus: "Bengaluru",
   },
   {
-    date: "Mar 31",
+    date: "June 16th",
     mode: "Online",
     weekday: "(Mon-Fri)",
     capacity: "30 Seats",
