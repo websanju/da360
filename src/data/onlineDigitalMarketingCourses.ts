@@ -2,14 +2,14 @@ import { CoursesType } from "@/types/courses";
 
 const onlineDigitalMarketingCourses: CoursesType = {
   leadCapture: {
-    titleOne: "Post Graduate",
-    titleTow: "Certification in AI-Powered Digital Marketing & E-Commerce",
+    titleOne: "India's First Leadership",
+    titleTwo: "Certification in AI-Powered Digital Marketing & E-Commerce",
     subtitleOne: "AI-Driven Curriculum Designed for the Next Generation of Digital Marketers",
-    subtitleTow: "Fast-Track Your Career with Future-Ready Skills",
+    subtitleTwo: "Fast-Track Your Career with Future-Ready Skills",
     tags: ["6-Month Intensive Program", "Includes 1-Month Agency Internship"],
   },
   cohortSectionHeading: "PG in Digital Marketing 2025 Cohort Details",
-  cohorts: [
+  Cohort: [
     {
       date: "Mar 28",
       mode: "Offline",
@@ -26,18 +26,6 @@ const onlineDigitalMarketingCourses: CoursesType = {
     },
   ],
   highlights: [
-    // { icon: "/images/icons/calendar.png", title: "Modules", value: "15+" },
-    // { icon: "/images/icons/clock.png", title: "Hours of Training", value: "240+" },
-    // {
-    //   icon: "/images/icons/interview.png",
-    //   title: "Interview Assistance",
-    //   value: "5",
-    // },
-    // {
-    //   icon: "/images/icons/internship.png",
-    //   title: "Internship (Optional)",
-    //   value: "1 Month",
-    // },
     {
       icon: "/images/icons/courses.png",
       title: "Modules",
@@ -83,6 +71,14 @@ const onlineDigitalMarketingCourses: CoursesType = {
   StoryHeader: {
     headerTitle: "Real Stories. Real Impact. Real Careers.",
     description: "Meet the Learners Who Transformed Their Futures with AI-Powered Digital Marketing.",
+  },
+  LifeAtDA360Header: {
+    headerTitle: "",
+    description: ""
+  },
+  LearningRoadmapProps: {
+    headerTitle: "",
+    description: ""
   }
 };
 

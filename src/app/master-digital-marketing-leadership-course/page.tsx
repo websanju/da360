@@ -21,7 +21,7 @@ import PeopleSlider from "@components/peopleSlider";
 import LiveProjectsSlider from "@components/liveProjectsSlider";
 
 import digitalMarketingLeadership from "@/data/digitalMarketingLeadership";
-import { Cohort } from "@/types/courses";
+import { Cohort } from "@/components/cohortDetails";
 import BottomNav from "@/components/bottomNav";
 import TrustedByLearners from "@/components/trustedByLearners";
 
@@ -89,9 +89,9 @@ export default function courseDetail() {
     <main>
       <LeadCaptureSection
         headingLineOne={digitalMarketingLeadership.leadCapture.titleOne}
-        headingLineTow={digitalMarketingLeadership.leadCapture.titleTow}
+        headingLineTow={digitalMarketingLeadership.leadCapture.titleTwo}
         descriptionLineOne={digitalMarketingLeadership.leadCapture.subtitleOne}
-        descriptionLineTow={digitalMarketingLeadership.leadCapture.subtitleTow}
+        descriptionLineTow={digitalMarketingLeadership.leadCapture.subtitleTwo}
         tags={digitalMarketingLeadership.leadCapture.tags || []}
       />
       <CohortDetails
