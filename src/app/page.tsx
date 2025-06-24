@@ -1,6 +1,6 @@
 import HeroSection from "@components/heroSection";
 import LearnersSection from "@components/learnersSection";
-import Accreditation from "@components/widgets/accreditationSection/accreditation";
+// import Accreditation from "@components/widgets/accreditationSection/accreditation";
 import BrandLogos from "@components/brandLogos";
 import ProgramsShowcase from "@components/programsShowcase";
 import SelfPacedPrograms from "@components/selfPacedPrograms";
@@ -53,16 +53,21 @@ export default function HomePage() {
   return (
     <main>
       <HeroSection />
-      <LearnersSection />
-      <Accreditation />
-      <BrandLogos />
+      <PaddingWrapper desktopPaddingBottom="130px" mobilePaddingBottom="60px">
+        <LearnersSection />
+      </PaddingWrapper>
+      <TrustedByLearners padding={{ desktop: "0 0 0 0", mobile: "0 0 0 0" }} />
+      {/* <Accreditation /> */}
+
       <ProgramsShowcase />
       <SelfPacedPrograms />
       <OurSuccessStories
         headerTitle={"Our Alumni Achievements"}
         description={"Real People, Real Transitions, Real Success"}
       />
-      <TrustedByLearners />
+      <PaddingWrapper desktopPaddingBottom="130px" mobilePaddingBottom="60px">
+        <BrandLogos />
+      </PaddingWrapper>
       <CommunityMeetupSlider />
       <GlobalCommunity />
       <MarqueeBanner />

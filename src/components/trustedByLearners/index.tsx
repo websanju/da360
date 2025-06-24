@@ -4,33 +4,6 @@ import styles from "./style.module.scss";
 import Image from "next/image";
 import SectionHeader from "@components/widgets/sectionHeader";
 
-const reviews = [
-  {
-    icon: "images/icons/google.svg",
-    rating: 4.9,
-    platform: "Google",
-    reviews: "4.7* 750+ reviews",
-  },
-  {
-    icon: "images/icons/star.svg",
-    rating: 4.8,
-    platform: "TrustPilot",
-    reviews: "4.5* 30+ reviews",
-  },
-  {
-    icon: "images/icons/b-review.svg",
-    rating: 5,
-    platform: "Ambition Box",
-    reviews: "4.5* 85+ reviews",
-  },
-  {
-    icon: "images/icons/fb.svg",
-    rating: 4.9,
-    platform: "Facebook",
-    reviews: "4.8* 143+ reviews",
-  },
-];
-
 const TrustedByLearners = ({
   padding = { desktop: "0 0 140px 0", mobile: "0 0 60px 0" },
 }) => {
@@ -58,34 +31,98 @@ const TrustedByLearners = ({
           </div>
         </div>
       </div>
+
       <div className="container">
         <div className="row">
           <div className="col-lg-12">
             <div className={styles.reviewCards}>
-              {reviews.map((review, index) => (
-                <div key={index} className={styles.card}>
-                  <div className={styles.reviewIcon}>
+              {/* Card 3 */}
+              <div className={styles.card}>
+                <div className={styles.skillIcon}>
+                  <Image
+                    src="/images/skill-india.svg"
+                    alt="Skill India"
+                    width={106}
+                    height={126}
+                  />
+                  <Image
+                    src="/images/media.svg"
+                    alt="Media Skill Council India"
+                    width={107}
+                    height={102}
+                  />
+                </div>
+              </div>
+              {/* Card 3 */}
+              <div className={styles.card}>
+                <div className={styles.reviewIcon}>
+                  <Image
+                    src="images/icons/fb.svg"
+                    alt="Facebook"
+                    width={43}
+                    height={43}
+                  />
+                </div>
+                <div className={styles.reviewDetails}>
+                  <div className={styles.rating}>
+                    4.9
                     <Image
-                      src={review.icon}
-                      alt={review.platform}
-                      width={43}
-                      height={43}
+                      alt="round"
+                      width={24}
+                      height={24}
+                      src="images/icons/round-star.svg"
                     />
                   </div>
-                  <div className={styles.reviewDetails}>
-                    <div className={styles.rating}>
-                      {review.rating}
-                      <Image
-                        alt="round"
-                        width={24}
-                        height={24}
-                        src={"images/icons/round-star.svg"}
-                      />
-                    </div>
-                    <p className={styles.reviewText}>{review.reviews}</p>
-                  </div>
+                  <p className={styles.reviewText}>4.8* 143+ reviews</p>
                 </div>
-              ))}
+              </div>
+              {/* Card 1 */}
+              <div className={styles.card}>
+                <div className={styles.reviewIcon}>
+                  <Image
+                    src="images/icons/google.svg"
+                    alt="Google"
+                    width={43}
+                    height={43}
+                  />
+                </div>
+                <div className={styles.reviewDetails}>
+                  <div className={styles.rating}>
+                    4.9
+                    <Image
+                      alt="round"
+                      width={24}
+                      height={24}
+                      src="images/icons/round-star.svg"
+                    />
+                  </div>
+                  <p className={styles.reviewText}>4.7* 750+ reviews</p>
+                </div>
+              </div>
+
+              {/* Card 2 */}
+              <div className={styles.card}>
+                <div className={styles.reviewIcon}>
+                  <Image
+                    src="images/icons/star.svg"
+                    alt="TrustPilot"
+                    width={43}
+                    height={43}
+                  />
+                </div>
+                <div className={styles.reviewDetails}>
+                  <div className={styles.rating}>
+                    4.8
+                    <Image
+                      alt="round"
+                      width={24}
+                      height={24}
+                      src="images/icons/round-star.svg"
+                    />
+                  </div>
+                  <p className={styles.reviewText}>4.5* 30+ reviews</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
