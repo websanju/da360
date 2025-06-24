@@ -5,7 +5,15 @@ import Image from "next/image";
 import marker from "../../../public/images/mapToadmap.svg";
 import marker2 from "../../../public/images/roadmap-mobile.svg";
 
-const LearningRoadmap = () => {
+interface LearningRoadmapProps {
+  headerTitle?: string;
+  description?: string;
+}
+
+const LearningRoadmap = ({
+  headerTitle = "Your 6-Month Learning Roadmap",
+  description = "Your journey is strategically designed for maximum growth at every stage.",
+}: LearningRoadmapProps) => {
   return (
     <section className={styles.roadmapSection}>
       <div className={`container`}>
@@ -25,15 +33,8 @@ const LearningRoadmap = () => {
                 />
               </div>
               <div className={`${styles.roadmapContent}`}>
-                <h2>
-                  Your{" "}
-                  <span className={styles.highlight}>6-Month Learning</span>
-                  <br /> Roadmap
-                </h2>
-                <p>
-                  Your journey is strategically designed for maximum growth at
-                  every stage.
-                </p>
+                <h2>{headerTitle}</h2>
+                <p>{description}</p>
                 <div className={styles.btnAction}>
                   <a href="#" className="btnWhite">
                     Download your Journey Plan <LeftArrow color="#000" />

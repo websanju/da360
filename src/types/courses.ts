@@ -1,33 +1,31 @@
-export interface LeadCaptureData {
-  tags: string[];
-  titleOne: string;
-  titleTow: string;
-  subtitleOne: string;
-  subtitleTow: string;
-}
+import { Cohort } from "@/components/cohortDetails";
 
-export interface Cohort {
-  date: string;
-  mode: "Offline" | "Online";
-  weekday: string;
-  capacity: string;
-  campus: string;
-}
-
-export interface Highlight {
-  icon: string; // Image path
-  title: string;
-  value: string;
-}
-export interface StoryHeader {
-  headerTitle: string;
-  description: string;
-}
 export interface CoursesType {
-  leadCapture: LeadCaptureData;
-  cohorts: Cohort[];
+  leadCapture: {
+    titleOne: string;
+    titleTwo: string;
+    subtitleOne: string;
+    subtitleTwo: string;
+    tags: string[];
+  };
   cohortSectionHeading: string;
-  highlights: Highlight[];
-  StoryHeader: StoryHeader;
-  // Add other sections as needed
+  Cohort: Cohort[];
+  highlights: Array<{
+    icon: string;
+    title: string;
+    value: string;
+  }>;
+  StoryHeader: {
+    headerTitle: string;
+    description: string;
+  };
+  LifeAtDA360Header: {
+    headerTitle: string;
+    description: string;
+  };
+  LearningRoadmapProps: {
+    headerTitle: string;
+    description: string;
+  };
 }
+

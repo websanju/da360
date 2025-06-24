@@ -13,7 +13,15 @@ import LeftArrow from "@components/Ui/svg/leftArrow";
 import RightArrow from "@components/Ui/svg/rightArrowLine";
 import SectionHeader from "@components/widgets/sectionHeader";
 
-const LifeAtDA360 = () => {
+interface LifeAtDA360Header {
+  headerTitle?: string;
+  description?: string;
+}
+
+const LifeAtDA360 = ({
+  headerTitle = "#TOOB – The Creative Arena for Future Leaders",
+  description = " Break Boundaries with Skill-Driven Battles and Innovation Challenges",
+}: LifeAtDA360Header) => {
   const [playingIndex, setPlayingIndex] = useState<number | null>(null);
 
   const slides = [
@@ -53,9 +61,9 @@ const LifeAtDA360 = () => {
             <SectionHeader
               wrapperMarginBottom={{ desktop: "60px", mobile: "40px" }}
               titleMarginBottom={{ desktop: "24px", mobile: "10px" }}
-              title={<>#TOOB – The Creative Arena for Future Leaders</>}
+              title={<>{headerTitle}</>}
               maxWidth="560px"
-              description="Break Boundaries with Skill-Driven Battles and Innovation Challenges"
+              description={`${description}`}
             />
           </div>
         </div>

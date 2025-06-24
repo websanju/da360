@@ -37,6 +37,8 @@
       letter-spacing: 2%;
       color: rgba(32, 17, 22, 1);
       cursor: pointer;
+      padding-left: 15px;
+      padding-right: 15px;
 
       &.active {
         border: 2px solid rgba(255, 0, 0, 1);

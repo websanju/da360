@@ -54,22 +54,6 @@ const caseStudies = [
       "A/B Testing & Optimization",
     ],
   },
-  {
-    id: 4,
-    logo: "/images/mcdonalds-logo.png",
-    title: "McDonald's case Study",
-    description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to...",
-    tags: ["Marketing Strategy", "SEO"],
-  },
-  {
-    id: 5,
-    logo: "/images/mcdonalds-logo.png",
-    title: "McDonald's case Study",
-    description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to...",
-    tags: ["Marketing Strategy", "SEO"],
-  },
 ];
 
 export default function CaseStudiesSlider() {

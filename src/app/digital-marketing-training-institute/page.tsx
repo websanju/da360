@@ -23,7 +23,7 @@ import LiveProjectsSlider from "@components/liveProjectsSlider";
 // import ContactButtonsSticky from "@/components/widgets/contactButtonsSticky";
 import BottomNav from "@components/bottomNav";
 import digitalNarketingTrainingInstitute from "@/data/digitalNarketingTrainingInstitute";
-import { Cohort } from "@/types/courses";
+import { Cohort } from "@/components/cohortDetails";
 
 export const metadata = {
   title: "#1 Top Ranked Digital Marketing Training Institute in Asia",
@@ -58,22 +58,6 @@ export const metadata = {
   },
 };
 
-const cohortData: Cohort[] = [
-  {
-    date: "Mar 28",
-    mode: "Offline",
-    weekday: "(Mon-Fri)",
-    capacity: "30 Seats",
-    campus: "Bengaluru",
-  },
-  {
-    date: "Mar 31",
-    mode: "Online",
-    weekday: "(Mon-Fri)",
-    capacity: "30 Seats",
-    campus: "Bengaluru",
-  },
-];
 export default function courseDetail() {
   const sections = [
     { id: "section1", label: "Overview" },
@@ -84,17 +68,32 @@ export default function courseDetail() {
     { id: "section6", label: "Projects" },
     { id: "section7", label: "Rewards" },
   ];
-
+  const cohortData: Cohort[] = [
+    {
+      date: "June 16th",
+      mode: "Offline",
+      weekday: "(Mon-Fri)",
+      capacity: "30 Seats",
+      campus: "Bengaluru",
+    },
+    {
+      date: "June 16th",
+      mode: "Online",
+      weekday: "(Mon-Fri)",
+      capacity: "30 Seats",
+      campus: "Bengaluru",
+    },
+  ];
   return (
     <main>
       <LeadCaptureSection
         headingLineOne={digitalNarketingTrainingInstitute.leadCapture.titleOne}
-        headingLineTow={digitalNarketingTrainingInstitute.leadCapture.titleTow}
+        headingLineTow={digitalNarketingTrainingInstitute.leadCapture.titleTwo}
         descriptionLineOne={
           digitalNarketingTrainingInstitute.leadCapture.subtitleOne
         }
         descriptionLineTow={
-          digitalNarketingTrainingInstitute.leadCapture.subtitleTow
+          digitalNarketingTrainingInstitute.leadCapture.subtitleTwo
         }
         tags={digitalNarketingTrainingInstitute.leadCapture.tags || []}
       />
@@ -113,14 +112,28 @@ export default function courseDetail() {
         description={digitalNarketingTrainingInstitute.StoryHeader.description}
       />
       <CounterOnScroll />
-      <LifeAtDA360 />
+      <LifeAtDA360
+        headerTitle={
+          digitalNarketingTrainingInstitute.LifeAtDA360Header.headerTitle
+        }
+        description={
+          digitalNarketingTrainingInstitute.LifeAtDA360Header.description
+        }
+      />
       <TeamSection section="section4" />
       <VideoSection />
       <Highlights section="section5" />
       <TrustedByLearners
         padding={{ desktop: "140px 0 60px 0", mobile: "60px 0 0 0" }}
       />
-      <LearningRoadmap />
+      <LearningRoadmap
+        headerTitle={
+          digitalNarketingTrainingInstitute.LearningRoadmapProps.headerTitle
+        }
+        description={
+          digitalNarketingTrainingInstitute.LearningRoadmapProps.description
+        }
+      />
       <LiveProjectsSlider section="section6" />
       <CaseStudies />
       <Banner />
@@ -132,7 +145,6 @@ export default function courseDetail() {
       <LatestBlogPosts />
       <MediaAwards />
       <LearnerEnquiry />
-
       <BottomNav sections={sections} showContactButtons={true} />
     </main>
   );

@@ -5,7 +5,7 @@ import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import styles from "./style.module.scss";
 
-interface Cohort {
+export interface Cohort {
   date: string;
   mode: "Offline" | "Online";
   weekday: string;

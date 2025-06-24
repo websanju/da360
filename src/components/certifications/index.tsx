@@ -5,10 +5,15 @@ import Image from "next/image";
 import LeftArrow from "@/components/Ui/svg/leftArrow";
 
 const certData = [
-  { name: "DA360", image: "/images/da360.png" },
-  { name: "Meta", image: "/images/da360.png" },
-  { name: "Google", image: "/images/da360.png" },
-  { name: "Hubspot", image: "/images/da360.png" },
+  {
+    name: "Inbound Marketing Certification by Hubspot",
+    image: "/images/da360.png",
+  },
+  { name: "Google Ads Search Certification", image: "/images/da360.png" },
+  {
+    name: "Course Completion Certificate by DA360",
+    image: "/images/da360.png",
+  },
 ];
 
 const Certifications: React.FC = () => {

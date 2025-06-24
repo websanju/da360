@@ -30,7 +30,7 @@ const members = [
     experience: "5 Years Experience",
     img: "/images/deepak-1.png",
     companyLogo: "/images/jeet.png",
-    tab: "DA360 Faculty",
+    tab: "Guest Faculty",
     design: "default",
     icon: "star",
   },

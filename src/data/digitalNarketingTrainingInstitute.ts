@@ -2,23 +2,23 @@ import { CoursesType } from "@/types/courses";
 
 const digitalNarketingTrainingInstitute: CoursesType = {
   leadCapture: {
-    titleOne: "Post Graduate",
-    titleTow: "Certification in AI-Powered Digital Marketing & E-Commerce",
-    subtitleOne: "AI-Driven Curriculum Designed for the Next Generation of Digital Marketers",
-    subtitleTow: "Fast-Track Your Career with Future-Ready Skills",
-    tags: ["6-Month Intensive Program", "Includes 1-Month Agency Internship"],
+    titleOne: "Skill Diploma in",
+    titleTwo: "Digital Marketing & Analytics",
+    subtitleOne: "Job-Oriented Curriculum Designed for Aspiring Digital Marketers",
+    subtitleTwo: "Build In-Demand Skills & Launch Your Career with Confidence",
+    tags: ["3-Month Intensive Program", "Includes 1-Month Agency Internship"],
   },
-  cohortSectionHeading: "PG in Digital Marketing 2025 Cohort Details",
-  cohorts: [
+  cohortSectionHeading: "Skill Diploma in Digital Marketing & Analytics Cohort Details",
+  Cohort: [
     {
-      date: "Mar 28",
+      date: "June 16th",
       mode: "Offline",
       weekday: "(Mon-Fri)",
       capacity: "30 Seats",
       campus: "Bengaluru",
     },
     {
-      date: "Mar 31",
+      date: "June 16th",
       mode: "Online",
       weekday: "(Mon-Fri)",
       capacity: "30 Seats",
@@ -26,64 +26,42 @@ const digitalNarketingTrainingInstitute: CoursesType = {
     },
   ],
   highlights: [
-    { icon: "/images/icons/calendar.png", title: "Months", value: "6" },
-    { icon: "/images/icons/clock.png", title: "Time", value: "Flexible" },
+    { icon: "/images/icons/calendar.png", title: "Core Digital Marketing Modules", value: "6+" },
+    { icon: "/images/icons/clock.png", title: "Hours of Hands-On Learning", value: "190+" },
     {
       icon: "/images/icons/courses.png",
-      title: "No Of Individual Courses",
-      value: "15",
+      title: "Real-World Case Studies",
+      value: "25+ ",
     },
     {
       icon: "/images/icons/template.png",
-      title: "Template & Blueprints",
+      title: "Proven Marketing Strategy Templates",
       value: "08",
     },
-    { icon: "/images/icons/ai.png", title: "AI Learning Tools", value: "25+" },
-    {
-      icon: "/images/icons/hourglass.png",
-      title: "Total Learning Hours",
-      value: "240+ Hrs",
-    },
-    {
-      icon: "/images/icons/case-study.png",
-      title: "Live Case Studies",
-      value: "35",
-    },
-    {
-      icon: "/images/icons/interview.png",
-      title: "Interview Assistance",
-      value: "5",
-    },
-    {
-      icon: "/images/icons/internship.png",
-      title: "Internship (Optional)",
-      value: "1 Month",
-    },
-    {
-      icon: "/images/icons/project.png",
-      title: "Real Time Projects",
-      value: "6+",
-    },
+    { icon: "/images/icons/ai.png", title: "Essential AI Tools & Platforms", value: "25+" },
     {
       icon: "/images/icons/certificate.png",
-      title: "Certifications",
-      value: "18+",
+      title: "Global Certifications",
+      value: "10+",
     },
     {
       icon: "/images/icons/specialisation.png",
-      title: "Specialisation",
-      value: "4",
-    },
-    {
-      icon: "/images/icons/trainer.png",
-      title: "Domain Specialist Trainers",
-      value: "07",
+      title: "Career-Focused Curriculum",
+      value: "100%",
     },
   ],
   StoryHeader: {
     headerTitle: "Real Stories. Real Impact. Real Careers.",
-    description: "Meet the Learners Who Transformed Their Futures with AI-Powered Digital Marketing.",
-  }
+    description: "Meet the Learners Who Transformed Their Futures with AI-Powered Digital Marketing",
+  },
+  LifeAtDA360Header: {
+    headerTitle: "Life @ DA360 — Where Learning Gets Real",
+     description: "Go Beyond the Classroom with Power-Packed Competitions & Creative Showdowns",
+  },
+  LearningRoadmapProps: {
+    headerTitle: "Your 3-Month Learning",
+    description: "Your journey is strategically designed for maximum growth at every stage.",
+   }
 };
 
 export default digitalNarketingTrainingInstitute;
