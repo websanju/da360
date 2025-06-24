@@ -109,14 +109,24 @@ export default function courseDetail() {
         description={digitalMarketingLeadership.StoryHeader.description}
       />
       <CounterOnScroll />
-      <LifeAtDA360 />
+      <LifeAtDA360
+        headerTitle={digitalMarketingLeadership.LifeAtDA360Header.headerTitle}
+        description={digitalMarketingLeadership.LifeAtDA360Header.description}
+      />
       <TeamSection section="section4" />
       <VideoSection />
       <Highlights section="section5" />
       <TrustedByLearners
         padding={{ desktop: "140px 0 60px 0", mobile: "60px 0 0 0" }}
       />
-      <LearningRoadmap />
+      <LearningRoadmap
+        headerTitle={
+          digitalMarketingLeadership.LearningRoadmapProps.headerTitle
+        }
+        description={
+          digitalMarketingLeadership.LearningRoadmapProps.description
+        }
+      />
       <LiveProjectsSlider section="section6" />
       <CaseStudies />
       <Banner />

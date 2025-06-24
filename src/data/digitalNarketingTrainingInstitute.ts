@@ -56,7 +56,7 @@ const digitalNarketingTrainingInstitute: CoursesType = {
   },
   LifeAtDA360Header: {
     headerTitle: "Life @ DA360 — Where Learning Gets Real",
-     description: "Go Beyond the Classroom with Power-Packed Competitions & Creative Showdowns",
+    description: "Go Beyond the Classroom with Power-Packed Competitions & Creative Showdowns",
   },
   LearningRoadmapProps: {
     headerTitle: "Your 3-Month Learning",

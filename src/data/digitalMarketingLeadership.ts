@@ -69,8 +69,8 @@ const digitalMarketingLeadership: CoursesType = {
      description: "Go Beyond the Classroom with Power-Packed Competitions & Creative Showdowns",
   },
   LearningRoadmapProps: {
-    headerTitle: "",
-    description: ""
+    headerTitle: "Your 12-Month Learning",
+    description: "Your journey is strategically designed for maximum growth at every stage."
   }
 };
 
