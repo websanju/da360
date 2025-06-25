@@ -1,0 +1,120 @@
+
+
+.alumniWrapper {
+    border: 2px solid rgba(0, 0, 0, 1);
+    border-radius: 16px 16px 0 0;
+    padding: 60px 24px 40px;
+    background-image: url("/images/alumani-bg.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position: relative;
+    overflow: hidden;
+
+    &::after {
+        content: '';
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        background: #FFEC5E;
+    }
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(auto, 1fr));
+    gap: 16px;
+    justify-items: center;
+}
+
+.card {
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 100%;
+    max-width: 292px;
+    height: 328px;
+    box-shadow: 4px 4px 0px 0px #000000;
+
+    img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+    .cardImage {
+        height:234px;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        img {
+            height: 100%;
+            width: 100%;
+        object-fit: cover;
+        object-position: center;
+        }
+    }
+    .cardContent {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 14px 16px 25px;
+
+        h4 {
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 100%;
+            letter-spacing: 0%;
+            color: #000;
+            margin-bottom: 1px;
+        }
+
+        p {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 100%;
+            letter-spacing: 0%;
+            text-align: center;
+            color: #000;
+        }
+
+        .cardImg {
+            img {
+                height: 30px;
+            }
+        }
+    }
+}
+
+.ctaWrapper {
+    text-align: center;
+    margin-top: 40px;
+   button {
+    border-radius: 66px;
+font-weight: 600;
+font-size: 18px;
+line-height: 37px;
+letter-spacing: 2%;
+min-height: 60px;
+min-width: 200px;
+padding-left: 20px;
+padding-right: 20px;
+box-shadow: 3px 3px 0px 0px #000000;
+   }
+}
+
+.ctaBtn {
+    background: #e3000f;
+    color: #fff;
+    padding: 0.6rem 1.5rem;
+    border: none;
+    border-radius: 999px;
+    font-weight: 600;
+    cursor: pointer;
+
+    &:hover {
+        background: #c9000e;
+    }
+}
