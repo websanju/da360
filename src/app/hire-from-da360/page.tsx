@@ -3,6 +3,7 @@ import WhyHireDA360 from "@components/whyHireDA360";
 import RecruitSkills from "@components/recruitSkills";
 import AlumniGrid from "@components/alumniGrid";
 import TestimonialSlider from "@components/testimonialSlider";
+import TalentDeliverTimeline from "@components/talentDeliverTimeline";
 import BrandLogos from "@components/brandLogos";
 import HireForm from "@components/hireForm";
 import Faq from "@components/faq";
@@ -15,6 +16,7 @@ export default function HireFrom() {
       <WhyHireDA360 />
       <RecruitSkills />
       <AlumniGrid />
+      <TalentDeliverTimeline />
       <TestimonialSlider />
       <BrandLogos
         firstHeading="Trusted by 300+ Global Partners"
