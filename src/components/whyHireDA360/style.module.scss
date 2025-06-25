@@ -1,0 +1,34 @@
+.whyHireSection {
+    padding-top: 140px;
+
+    .featureGrid {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 32px;
+    
+        .card {
+          background: #fff;
+          border: 1px solid #ccc;
+          border-radius: 10px;
+          padding: 1.5rem;
+          width:284px;
+          min-height: 269px;
+          text-align: center;
+          border: 1px solid #000000;
+          .cardImg {
+            margin-bottom: 20px;
+          }
+          h4 {
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 29px;
+            letter-spacing: 0%;
+            text-align: center;
+            text-transform: capitalize;
+            color: #070707;
+
+          }
+        }
+      }
+}

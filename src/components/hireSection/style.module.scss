@@ -1,0 +1,86 @@
+.hireSection {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+
+    .row {
+        display: flex;
+        align-items: center;
+    }
+
+    .content {
+
+        h1 {
+            font-weight: 700;
+            font-style: italic;
+            font-size: 60px;
+            line-height: 110.00000000000001%;
+            letter-spacing: 0%;
+            text-transform: capitalize;
+            margin-bottom: 34px;
+
+            strong {
+                font-weight: bold;
+            }
+        }
+
+        p {
+            font-weight: 500;
+            font-size: 22px;
+            line-height: normal;
+            letter-spacing: 0%;
+            margin-bottom: 55px;
+        }
+
+        .hireBtn {
+            display: flex;
+            margin-bottom: 40px;
+            button {
+                box-shadow: 3px 3px 0px 0px #000000;
+                font-weight: 600;
+                font-size: 18px;
+                line-height: 37px;
+                letter-spacing: 2%;
+                min-width: 200px;
+                border-radius: 66px;
+            }
+        }
+
+        .hiredInfo {
+            display: flex;
+            align-items: center;
+
+            .avatars {
+                display: flex;
+                margin-right: 22px;
+                
+                img {
+                    border-radius: 50%;
+                    margin-right: -10px;
+                    border: 2px solid #fff;
+                }
+            }
+
+            span {
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 100%;
+                letter-spacing: 0%;
+                color: #000;
+            }
+        }
+    }
+
+    .imageWrap {
+     width:45vw;
+     display: flex;
+    justify-content: flex-end;
+        .studentsImg {
+            width: 100%;
+            height: auto;
+            max-width: 969px;
+    margin-top: 75px;
+        }
+    }
+}

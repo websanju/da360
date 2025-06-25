@@ -30,6 +30,7 @@ const BrandLogos: React.FC<BrandLogosProps> = ({
       <div className="container text-center d-flex justify-content-center">
         <SectionHeader
           wrapperMarginBottom={{ desktop: "60px", mobile: "40px" }}
+          maxWidthTitle="900px"
           title={
             <>
               {firstHeading}

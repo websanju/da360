@@ -1,0 +1,81 @@
+.hireForm {
+    background-color: #e3000f;
+    padding: 80px 0;
+    margin: 140px 0;
+    .row {
+        row-gap: 24px;
+        max-width: 1024px;
+        margin: 0 auto;
+    }
+    form {
+     margin: 0;
+    }
+    
+    
+    .inputGroup {
+      text-align: left;
+  
+      label {
+        display: block;
+        font-size: 0.9rem;
+        margin-bottom: 0.5rem;
+        font-weight: 500;
+      }
+  
+      input, select {
+        width: 100%;
+        padding: 0.75rem;
+        border-radius: 6px;
+        border: none;
+        font-size: 1rem;
+      }
+  
+      input[type="tel"] {
+        padding-left: 55px;
+      }
+  
+      .phoneWrapper {
+        position: relative;
+        
+        .flag {
+          position: absolute;
+          top: 50%;
+          left: 0.75rem;
+          transform: translateY(-50%);
+          display: flex;
+          align-items: center;
+          gap: 5px;
+          font-size: 0.9rem;
+        }
+      }
+    }
+  
+    .contactBtn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 40px;
+
+        .btn {
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 28px;
+            letter-spacing: 1%;
+            background: rgba(255, 236, 94, 1);
+            min-width: 200px;
+            min-height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 100px;
+            transition: all 0.3s ease;
+            color: #000;
+            &:hover {
+                background-color: #fff;
+                color: #000;
+            }
+        }
+    }
+   
+  }
+  
