@@ -28,15 +28,10 @@ const GraduationGallery: React.FC<GraduationGalleryProps> = ({ section }) => {
             <SectionHeader
               wrapperMarginBottom={{ desktop: "60px", mobile: "40px" }}
               titleMarginBottom={{ desktop: "20px", mobile: "10px" }}
-              title={
-                <>
-                  Graduation Day <br />
-                  Gallery
-                </>
-              }
+              title={<>Digital Academy 360 Convocation Ceremony</>}
               maxWidth="650px"
-              description="  Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been Ipsum is simply dummy."
+              description="A proud milestone, a moment to cherish.
+Celebrate your transformation as you receive your course completion certificate in an inspiring ceremony that honors your dedication, growth, and success."
             />
           </div>
         </div>

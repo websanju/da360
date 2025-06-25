@@ -17,9 +17,8 @@ const TOOBGrid = ({ section }: TOOBGridProps) => {
               wrapperMarginBottom={{ desktop: "60px", mobile: "40px" }}
               titleMarginBottom={{ desktop: "20px", mobile: "10px" }}
               title={<>#TOOB</>}
-              maxWidth="650px"
-              description=" Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been Lorem Ipsum has been."
+              maxWidth="750px"
+              description="Get ready for a game-changing experience that goes beyond the classroom! TOOB (Think Out of the Box) is a high-impact event designed to give you real-time exposure, unlock your creative potential, and push your skills to industry-ready levels."
             />
             {/* <div className={styles.grid}>
               <div className={styles.colume}>

@@ -10,7 +10,7 @@ import LifeAtDA360Gallery from "@components/lifeAtDA360Gallery";
 import GraduationGallery from "@components/graduationGallery";
 import CallToActionBanner from "@components/callToActionBanner";
 import ToobGrid from "@components/toobGrid";
-import FreelancerSteps from "@components/freelancerSteps";
+// import FreelancerSteps from "@components/freelancerSteps";
 import BottomNav from "@components/bottomNav";
 
 export default function Lifeda360() {
@@ -43,15 +43,15 @@ export default function Lifeda360() {
       <SportsEvent section="section7" />
       <LifeAtDA360Gallery
         title="Digital Marketing Meetups"
-        description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been."
+        description="At DA360, we’re building India’s largest network of digital disruptors. Connect, collaborate, and grow alongside top industry professionals, mentors, and future leaders — all in one powerful community designed to supercharge your career."
         bgColor="rgba(245, 245, 245, 1);"
         section="section8"
       />
       <ToobGrid section="section9" />
-      <FreelancerSteps
+      {/* <FreelancerSteps
         section="section10"
         videoUrl="/images/videos/classroom-video-2.mp4"
-      />
+      /> */}
       <GraduationGallery section="section11" />
       <CallToActionBanner />
       <BottomNav sections={sections} />

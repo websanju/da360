@@ -10,9 +10,9 @@ const TextContent = ({ section }: TextContentGridProps) => {
           <div className="col-lg-4"></div>
           <div className="col-lg-8">
             <h2>
-              Get a glimpse into the vibrant student life, collaborative
-              learning, and inspiring culture that make Digital Academy 360 more
-              than just a classroom.
+              Step Into a World Beyond the Classroom — Where Learning Meets Life
+              at Digital Academy 360. Dive Into a Dynamic Culture That Makes
+              Learning Truly Unforgettable.
             </h2>
           </div>
         </div>

@@ -9,13 +9,12 @@ const HeroSection = () => {
         <div className="row">
           <div className="col-lg-12">
             <div className={styles.content}>
-              <h1>Meet Our Trainers</h1>
+              <h1>Mentors Who Make a Difference</h1>
               <p>
-                With more than 500,000 learners under our wing, IIDE’s digital
-                marketing trainers are seasoned experts in their respective
-                fields, each bringing years of industry experience. This
-                commitment to practical learning has helped us stand out in the
-                field of digital education.
+                At Digital Academy 360, our expert trainers have guided over
+                500,000 learners to success. With deep industry experience and a
+                passion for teaching, they bring real-world insights into every
+                session — making learning practical, relevant, and impactful.
               </p>
             </div>
           </div>

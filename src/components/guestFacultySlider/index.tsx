@@ -93,8 +93,7 @@ const GuestFacultySection = ({ section }: GuestFacultySectionProps) => {
               titleMarginBottom={{ desktop: "16px", mobile: "10px" }}
               title={<>Guest Faculty</>}
               maxWidth="650px"
-              description="Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry."
+              description="Gain Insights from World-Class Guest Faculty"
             />
           </div>
         </div>

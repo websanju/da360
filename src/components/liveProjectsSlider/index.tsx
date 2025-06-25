@@ -147,11 +147,11 @@ export default function LiveProjectsSlider({ section }: ProjectSectionProps) {
           <div className="col-lg-12">
             <SectionHeader
               wrapperMarginBottom={{ desktop: "60px", mobile: "40px" }}
-              title={
-                <>
-                  Digital Marketing <br /> Live Projects
-                </>
+              titleMarginBottom={{ desktop: "20px", mobile: "20px" }}
+              description={
+                "Put your skills to the test with real-world digital marketing challenges. Collaborate, create, and conquer — this is where learning turns into leadership."
               }
+              title={<>Digital Marketing Live Projects</>}
             />
           </div>
         </div>

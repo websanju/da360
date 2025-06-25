@@ -150,7 +150,11 @@ export default function Career() {
           <div className="row">
             <div className="col-lg-12">
               <SectionHeader
-                title={"Featured Super Session Experts"}
+                title={"Industry Leaders as Your Guest Mentors"}
+                titleMarginBottom={{ desktop: "20px", mobile: "24px" }}
+                description={
+                  "Learn from those who’ve walked the path — and led the way."
+                }
                 wrapperMarginBottom={{ desktop: "60px", mobile: "24px" }}
               />
             </div>

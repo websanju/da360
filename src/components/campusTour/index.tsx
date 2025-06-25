@@ -107,11 +107,11 @@ const CampusTour = ({
             </div>
 
             <div className={styles.infoSection}>
-              <h3>Experience Life at DA360 Up Close</h3>
+              <h3>DA360 Unplugged: Real Stories. Real People. Real Growth.</h3>
               <p>
-                Take a tour of our campus, meet students, and discover why IIDE
-                is <br />
-                the perfect place for your journey.
+                Step inside the action — explore our vibrant campus, connect
+                with our passionate learners, and see why Digital Academy 360 is
+                the launchpad for future digital leaders
               </p>
               <div className={styles.scheduleButton}>
                 <a href="#" className="btn btnRed">

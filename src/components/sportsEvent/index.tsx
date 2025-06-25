@@ -74,9 +74,7 @@ export default function SportsGrid({ section }: SportsGridProps) {
               titleColor="#fff"
               descriptionColor="#fff"
               maxWidth="600px"
-              description=" Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. text of the printing and typesetting
-                industry"
+              description=" From festive celebrations like Diwali, Holi, and Onam to adrenaline-filled cricket tournaments and weekend outings, life at Digital Academy 360 is always buzzing with energy. "
             />
           </div>
         </div>
