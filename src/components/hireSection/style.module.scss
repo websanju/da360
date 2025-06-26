@@ -75,7 +75,7 @@
     .imageWrap {
      width:45vw;
      display: flex;
-    justify-content: flex-end;
+     justify-content: flex-end;
         .studentsImg {
             width: 100%;
             height: auto;
@@ -83,4 +83,88 @@
     margin-top: 75px;
         }
     }
+
+    .imageWrapMobile {
+        display: none;
+    }
 }
+
+@media (width <=991px) {
+    .hireSection {
+        padding-top: 80px;
+        .content {
+                
+        h1 {
+            font-size: 32px;
+            margin-bottom: 15px;
+            text-align: center;
+            strong {
+                font-weight: bold;
+            }
+        }
+
+        p {
+            font-weight: 500;
+            font-size:14px;
+            line-height: normal;
+            letter-spacing: 0%;
+            text-align: center;
+            max-width: 400px;
+            margin: 0 auto 24px;
+        }
+
+        .hireBtn {
+            display: flex;
+            margin-bottom: 30px;
+            justify-content: center;
+            button {
+                box-shadow: 3px 3px 0px 0px #000000;
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 37px;
+                letter-spacing: 2%;
+                min-width: 180px;
+                border-radius: 66px;
+                height: 40px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+
+        .hiredInfo {
+            align-items: center;
+            justify-content: center;
+            .avatars {
+                display: flex;
+                margin-right: 22px;
+                
+                img {
+                    margin-right: -10px;
+                    width: 36px;
+                    height: 36px;
+                    min-width: 36px;
+                }
+            }
+
+            span {
+                font-size: 12px;
+            }
+        }
+         }
+         .imageWrap {
+            display: none;
+          }
+          .imageWrapMobile {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width:100vw;
+            padding-top: 45px;
+            img {
+                width: 100%;
+                height: auto;
+            }
+          }
+    }
+ }

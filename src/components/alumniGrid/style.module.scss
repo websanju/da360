@@ -1,5 +1,3 @@
-
-
 .alumniWrapper {
     border: 2px solid rgba(0, 0, 0, 1);
     border-radius: 16px 16px 0 0;
@@ -43,19 +41,22 @@
         height: auto;
         object-fit: cover;
     }
+
     .cardImage {
-        height:234px;
+        height: 234px;
         overflow: hidden;
         display: flex;
         align-items: center;
         justify-content: center;
+
         img {
             height: 100%;
             width: 100%;
-        object-fit: cover;
-        object-position: center;
+            object-fit: cover;
+            object-position: center;
         }
     }
+
     .cardContent {
         display: flex;
         justify-content: space-between;
@@ -91,18 +92,19 @@
 .ctaWrapper {
     text-align: center;
     margin-top: 40px;
-   button {
-    border-radius: 66px;
-font-weight: 600;
-font-size: 18px;
-line-height: 37px;
-letter-spacing: 2%;
-min-height: 60px;
-min-width: 200px;
-padding-left: 20px;
-padding-right: 20px;
-box-shadow: 3px 3px 0px 0px #000000;
-   }
+
+    button {
+        border-radius: 66px;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 37px;
+        letter-spacing: 2%;
+        min-height: 60px;
+        min-width: 200px;
+        padding-left: 20px;
+        padding-right: 20px;
+        box-shadow: 3px 3px 0px 0px #000000;
+    }
 }
 
 .ctaBtn {
@@ -118,3 +120,75 @@ box-shadow: 3px 3px 0px 0px #000000;
         background: #c9000e;
     }
 }
+
+@media (width <=991px) {
+    .alumniWrapper {
+        border-radius: 10px 10px 0 0;
+        padding: 24px 15px 24px;
+        background-repeat: repeat;
+        .grid {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+        }
+        .card {
+            border-radius: 10px;
+            width: 100%;
+            max-width: 176px;
+            height: 225px;
+        
+            .cardImage {
+                height: 119px;
+            }
+        
+            .cardContent {
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-start;
+                padding:12px;
+                flex-direction: column;
+                gap: 9px;
+        
+                h4 {
+                    font-size: 14px;
+                }
+        
+                p {
+                  
+                    font-size: 12px;
+                }
+        
+                .cardImg {
+                    img {
+                        height: 22px;
+                    }
+                }
+            }
+        }
+    }
+ }
+
+ @media (width <=768px) {
+    .alumniWrapper {
+        .grid {
+            gap: 10px;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+    }
+  }
+
+  @media (width <=460px) {
+    .alumniWrapper {
+        .grid {
+            gap: 10px;
+            display: grid;
+            grid-template-columns: repeat(2, minmax(auto, 1fr));
+            gap: 10px;
+        }
+    }
+  }

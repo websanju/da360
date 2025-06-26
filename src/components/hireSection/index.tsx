@@ -72,6 +72,15 @@ const HireSection = () => {
                 className={styles.studentsImg}
               />
             </div>
+            <div className={styles.imageWrapMobile}>
+              <Image
+                src="/images/students-m.png"
+                alt="Students"
+                width={969}
+                height={570}
+                className={styles.studentsImg}
+              />
+            </div>
           </div>
         </div>
       </div>

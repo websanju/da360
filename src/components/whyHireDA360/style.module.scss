@@ -16,6 +16,7 @@
           min-height: 269px;
           text-align: center;
           border: 1px solid #000000;
+        
           .cardImg {
             margin-bottom: 20px;
           }
@@ -32,3 +33,36 @@
         }
       }
 }
+@media (width <=991px) {
+  .whyHireSection {
+    padding-top: 60px;
+    .featureGrid { 
+      gap: 16px;
+      .card {
+        width:100%;
+        max-width: 360px;
+        min-height: 100px;
+        display: flex;
+        gap: 20px;
+        .cardImg {
+          margin-bottom:0;
+          img {
+            max-width: 59px;
+            width: 59px;
+            height: auto;
+          }
+        }
+        h4 {
+          font-weight: 600;
+          font-size: 18px;
+          line-height: 25px;
+          letter-spacing: 0%;
+          text-align: left;
+          text-transform: capitalize;
+          color: #070707;
+
+        }
+       }
+    }
+   }
+ }

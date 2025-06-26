@@ -84,18 +84,26 @@ const RecruitSkills = () => {
               }
               wrapperMarginBottom={{ desktop: "60px", mobile: "24px" }}
             />
-            {categories.map((category, idx) => (
-              <div className={styles.card} key={idx}>
-                <h3>{category.title}</h3>
-                <div className={styles.tagList}>
-                  {category.tags.map((tag, index) => (
-                    <span className={styles.tag} key={index}>
-                      {tag}
-                    </span>
-                  ))}
+          </div>
+        </div>
+      </div>
+      <div className={styles.skillsCards}>
+        <div className="container">
+          <div className="row">
+            <div className="col-lg-12">
+              {categories.map((category, idx) => (
+                <div className={styles.card} key={idx}>
+                  <h3>{category.title}</h3>
+                  <div className={styles.tagList}>
+                    {category.tags.map((tag, index) => (
+                      <span className={styles.tag} key={index}>
+                        {tag}
+                      </span>
+                    ))}
+                  </div>
                 </div>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
         </div>
       </div>
