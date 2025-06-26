@@ -1,4 +1,3 @@
-
 .footerSection {
   background-color: #1C1D21;
   padding-top: 80px;
@@ -8,6 +7,7 @@
 
     .accredited {
       margin-bottom: 62px;
+
       h6 {
         margin-bottom: 11px;
         font-weight: 400;
@@ -36,6 +36,7 @@
       .footerContactLink {
         display: flex;
         flex-direction: column;
+
         a {
           font-weight: 400;
           font-size: 14px;
@@ -47,7 +48,7 @@
         }
       }
     }
-    
+
     .quickLinkRow {
       display: flex;
       gap: 28px;
@@ -85,21 +86,23 @@
       }
     }
 
-   
+
   }
 
   .footerMarketingCourses {
     border-top: 1px solid rgba(243, 243, 243, 0.2);
     padding: 40px 0;
+
     h6 {
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 100%;
-        letter-spacing: 5%;
-        color: #ffffff;
-        margin-bottom: 20px;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 100%;
+      letter-spacing: 5%;
+      color: #ffffff;
+      margin-bottom: 20px;
     }
-     p {
+
+    p {
       font-weight: 400;
       font-size: 14px;
       line-height: 32px;
@@ -108,25 +111,29 @@
       opacity: 60%;
       font-family: var(--font-inter);
       margin: 0;
-     }
+    }
   }
 
   .footerBottom {
     border-top: 1px solid rgba(243, 243, 243, 0.2);
     padding: 40px 0;
+
     .footerCopyright {
       display: flex;
       gap: 60px;
       flex-wrap: wrap;
     }
+
     .footerCopyrightLink {
       display: flex;
       gap: 40px;
+
       a {
         color: #F3F3F3;
         opacity: 60%;
       }
     }
+
     p {
       font-weight: 400;
       font-size: 16px;
@@ -142,48 +149,46 @@
 
       a {
         color: #F3F3F3;
-      opacity: 60%;
+        opacity: 60%;
       }
     }
   }
 
-  .signUp {
-    max-width: 320px;
+  // .signUp {
+  //   max-width: 320px;
 
-    button {
-      border: none;
-      height: 50px;
-    }
+  //   button {
+  //     border: none;
+  //     height: 50px;
+  //   }
 
-    input:not([type=checkbox]):not([type=radio]) {
-      border: solid 1px #ffffff !important;
-    }
+  //   input:not([type=checkbox]):not([type=radio]) {
+  //     border: solid 1px #ffffff !important;
+  //   }
 
-    p {
-      color: #f3f3f3;
-      font-size: 0.87rem;
-      opacity: 0.6;
-      margin-bottom: 15px;
-    }
-  }
-
-  .followUs {
-    margin-top: 20px;
-    margin-bottom: 20px;
-
-    h6 {
-      font-size: 1.25rem;
-      opacity: 0.8;
-      padding-bottom: 0.25rem;
-      margin-bottom: 8px;
-      color: #ffffff;
-      font-weight: 500;
-    }
-  }
+  //   p {
+  //     color: #f3f3f3;
+  //     font-size: 0.87rem;
+  //     opacity: 0.6;
+  //     margin-bottom: 15px;
+  //   }
+  // }
 
 }
-.footerLogo {
-  margin-bottom: 30px;
+@media (width <=1092px) { 
+  .footerSection {
+    .footerBottom {
+      .footerLink {
+        gap: 30px;
+      }
+      .footerCopyright {
+        gap: 20px;
+      }
+      p {
+        line-height: normal;
+      }
+    }
+  }
 }
 
 @media (width <=992px) {
@@ -192,31 +197,43 @@
 
     .footerTop {
       .row {
-        --bs-gutter-y: 40px;
+        --bs-gutter-y: 25px;
       }
-    }
 
-    .footerLogo {
+      .accredited {
+        margin-bottom: 25px;
+      }
+
+      .quickLinkRow {
+        display: flex;
+        gap: 20px;
+        flex-direction: column;
+        margin-bottom: 0;
+      }
+
+      .quickrow {
+        display: flex;
+        gap: 20px;
+      }
+
+
       .quickLink {
         h6 {
-          font-size: 1.25rem;
-          opacity: 0.8;
-          padding-bottom: 0.25rem;
-          margin-bottom: 8px;
-          color: #ffffff;
+          margin-bottom: 10px;
         }
 
         ul {
           li {
-            padding-bottom: 5px;
+            padding-bottom: 0px;
             max-width: 356px;
 
             a {
-              font-weight: 400;
+              color: #f3f3f3;
               font-size: 14px;
-              line-height: 31px;
-              color: #F3F3F3 !important;
-              opacity: 60%;
+              line-height: 28px;
+              opacity: 80%;
+              font-family: var(--font-inter);
+              font-weight: 400;
             }
 
             :last-child {
@@ -226,17 +243,30 @@
         }
       }
 
-      margin-bottom: 30px;
+    }
 
-      img {
-        min-width: 130px;
 
+    .footerMarketingCourses {
+      padding: 30px 0;
+
+      h6 {
+        font-size: 14px;
+        color: #ffffff;
+        margin-bottom: 10px;
+      }
+
+      p {
+        font-size: 12px;
+        line-height: 24px;
+        color: #F3F3F3;
       }
     }
 
-    .footerBottom {
-      text-align: left;
+   
 
+    .footerBottom {
+      padding: 30px 0;
+      
       p {
         font-weight: 400;
         font-size: 12px;
@@ -244,13 +274,43 @@
       }
 
       .row {
-        flex-direction: column;
         gap: 20px;
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
       }
-
+      .footerCopyright {
+        display: flex;
+        gap: 10px;
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+      }
+  
+      .footerCopyrightLink {
+        display: flex;
+        gap: 20px;
+  
+        a {
+          color: #F3F3F3;
+          opacity: 60%;
+          font-size: 14px;
+        }
+      }
+  
+      p {
+        font-size: 14px;
+        color: #F3F3F3;
+      }
+  
       .footerLink {
-        justify-content: flex-start;
+        gap: 17px;
+  
+        a {
+          color: #F3F3F3;
+          opacity: 60%;
+          font-size: 14px;
+        }
       }
     }
+
   }
 }

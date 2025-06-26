@@ -19,7 +19,7 @@ const Footer = () => {
         <div className={styles.footerTop}>
           <div className={`${styles.row} row gy-4`}>
             {/* Logo & Social */}
-            <div className="col-lg-4 col-md-6">
+            <div className="col-lg-4 col-md-4">
               <div className={styles.accredited}>
                 <h6>Accredited by</h6>
                 <div className={styles.accreditedImg}>
@@ -94,8 +94,8 @@ const Footer = () => {
                 </div>
               </div> */}
             </div>
-            <div className="col-lg-8 col-md-6">
-              <div className="row">
+            <div className="col-lg-8 col-md-8">
+              <div className={`${styles.quickrow} row`}>
                 {/* Quick Links */}
                 <div className={`${styles.quickLinkRow} col-lg-5 col-md-6`}>
                   <div className={styles.quickLink}>
@@ -165,9 +165,8 @@ const Footer = () => {
                     </ul>
                   </div>
                 </div>
-
                 {/* Programs */}
-                <div className="col-lg-2 col-md-6">
+                <div className="col-lg-2 col-md-3">
                   <div className={styles.quickLink}>
                     <h6>Company</h6>
                     <ul>
@@ -198,9 +197,8 @@ const Footer = () => {
                     </ul>
                   </div>
                 </div>
-
                 {/* Centers */}
-                <div className="col-lg-2 col-md-6">
+                <div className="col-lg-2 col-md-3">
                   <div className={styles.quickLink}>
                     <h6>Resources</h6>
                     <ul>
@@ -232,7 +230,7 @@ const Footer = () => {
                   </div>
                 </div>
                 {/* Centers */}
-                <div className="col-lg-2 col-md-6">
+                <div className="col-lg-2 col-md-3">
                   <div className={styles.quickLink}>
                     <h6>Career</h6>
                     <ul>
