@@ -196,41 +196,31 @@ export default function LearnersSection() {
                     </span>
                   </span> */}
                   <span>
-                    10 Years of{" "}
-                    <Image
+                    Be A Skilled Professional
+                    {/* <Image
                       src="/images/green-star.svg"
                       alt="Learners Group"
                       width={48}
                       height={48}
                       className="object-cover"
                       priority
-                    />
+                    /> */}
                   </span>
-                  <p>Excellence</p>
+                  <p>Learn Today. Lead Tomorrow</p>
                 </div>
 
                 <div className={styles.infoNumbers}>
                   <div className={styles.companies}>
                     <h5>50,000+</h5>
-                    <small>
-                      Careers Elevated Turning Ambition into Achievement
-                    </small>
+                    <small>Companies our learners work in</small>
                   </div>
                   <div className={styles.companies}>
                     <h5>25,000+</h5>
-                    <small>
-                      Learners Successfully Placed From Learning to Earning
-                    </small>
+                    <small>Learners placed on average</small>
                   </div>
                   <div className={styles.companies}>
-                    <h5>1,000+</h5>
-                    <small>
-                      Trusted Hiring Partners Top Brands Choose Our Talent
-                    </small>
-                  </div>
-                  <div className={styles.companies}>
-                    <h5>300+</h5>
-                    <small>Entrepreneurs & Freelancers Success Stories</small>
+                    <h5>4000+</h5>
+                    <small>Companies our learners work in</small>
                   </div>
                 </div>
               </div>
