@@ -1,6 +1,7 @@
 // import WhoJoin from "@components/whoJoin";
 import Faq from "@components/faq";
 import EventSponsors from "@components/eventSponsors";
+import LocationMap from "@components/locationMap";
 // import PaddingWrapper from "@components/widgets/PaddingWrapper";
 import styles from "./style.module.scss";
 import TeamCard from "@/components/widgets/teamCard";
@@ -16,6 +17,7 @@ export default function HackathonDetail() {
     <main>
       <HackathonHero />
       <HackathonIntro />
+      <LocationMap />
       <EventSchedule />
       <MarqueeBanner />
       <Prizes />

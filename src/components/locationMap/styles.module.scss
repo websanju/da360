@@ -1,0 +1,67 @@
+.locationSection {
+    padding-top: 140px;
+
+    .infoBox {
+        background: #000;
+        color: #fff;
+        padding: 32px 32px 43px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        align-items: flex-end;
+
+        h2 {
+            font-weight: 600;
+            font-size: 32px;
+            line-height: 100%;
+            letter-spacing: 0%;
+            text-align: left;
+            margin-bottom: 12px;
+        }
+
+        p {
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 100%;
+            letter-spacing: 0%;
+            margin-bottom: 24px;
+        }
+
+        address {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 23px;
+            letter-spacing: 0%;
+            margin-bottom: 0;
+
+        }
+    }
+
+    .contactBox {
+        display: flex;
+        text-align: right;
+        gap: 60px;
+        width: max-content;
+
+        a {
+            color: #fff;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 23px;
+            letter-spacing: 0%;
+            margin-bottom: 0;
+            text-decoration: none;
+            font-weight: 500;
+        }
+    }
+
+    .mapWrapper {
+        width: 100%;
+
+        iframe {
+            display: block;
+            width: 100%;
+            border: none;
+        }
+    }
+}
