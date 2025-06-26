@@ -1,3 +1,4 @@
+import Link from "next/link";
 import styles from "./styles.module.scss";
 import Image from "next/image";
 
@@ -55,7 +56,9 @@ const HeroBanner = () => {
         </div>
 
         <div className={styles.buttonWrap}>
-          <button className={`${styles.applyBtn} btn btnRed`}>Apply Now</button>
+          <Link href={"/"} className={`${styles.applyBtn} btn btnRed`}>
+            Apply Now
+          </Link>
         </div>
       </div>
     </section>

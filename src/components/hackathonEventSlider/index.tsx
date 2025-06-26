@@ -12,6 +12,7 @@ import RightArrow from "@components/Ui/svg/rightArrowLine";
 import SectionHeader from "@components/widgets/sectionHeader";
 import Image from "next/image";
 import { Black_Han_Sans } from "next/font/google";
+import Link from "next/link";
 // import LeftArrow from "@components/Ui/svg/leftArrow";
 const BlackHanSans = Black_Han_Sans({
   subsets: ["latin"],
@@ -109,11 +110,12 @@ export default function HackathonEventSlider() {
                                   {event.duration}
                                 </span>
                               </div>
-                              <button
+                              <Link
+                                href={"/hackathon-detail"}
                                 className={`${styles.knowMore} btn btn-danger`}
                               >
                                 Know More
-                              </button>
+                              </Link>
                             </div>
                           </div>
                           <div
