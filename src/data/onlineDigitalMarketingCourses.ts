@@ -26,31 +26,43 @@ const onlineDigitalMarketingCourses: CoursesType = {
     },
   ],
   highlights: [
+    { icon: "/images/icons/calendar.png", title: "Months", value: "6+" },
+    { icon: "/images/icons/clock.png", title: "Time", value: "Flexible" },
     {
       icon: "/images/icons/courses.png",
-      title: "Modules",
-      value: "15+",
+      title: "No Of Individual Courses",
+      value: "15",
     },
     {
-      icon: "/images/icons/hourglass.png",
+      icon: "/images/icons/template.png",
+      title: "Template & Blueprints ",
+      value: "08",
+    },
+    { icon: "/images/icons/ai.png", title: "AI Learning Tools", value: "25+" },
+    {
+      icon: "/images/icons/certificate.png",
       title: "Total Learning Hours",
       value: "240+ Hrs",
+    },
+    {
+      icon: "/images/icons/case-study.png",
+      title: "Live Case Studies",
+      value: "35",
+    },
+    {
+      icon: "/images/icons/interview.png",
+      title: "Interview Assistance",
+      value: "5",
+    },
+    {
+      icon: "/images/icons/internship.png",
+      title: "Internship (Optional)",
+      value: "1 Month",
     },
     {
       icon: "/images/icons/project.png",
       title: "Real Time Projects",
       value: "6+",
-    },
-    {
-      icon: "/images/icons/case-study.png",
-      title: "Live Case Studies",
-      value: "35+",
-    },
-    { icon: "/images/icons/ai.png", title: "AI Tools", value: "25+" },
-    {
-      icon: "/images/icons/template.png",
-      title: "Template & Blueprints",
-      value: "08",
     },
     {
       icon: "/images/icons/certificate.png",
@@ -59,8 +71,8 @@ const onlineDigitalMarketingCourses: CoursesType = {
     },
     {
       icon: "/images/icons/specialisation.png",
-      title: "Specializations",
-      value: "04",
+      title: "Specialisation",
+      value: "4",
     },
     {
       icon: "/images/icons/trainer.png",

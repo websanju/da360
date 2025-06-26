@@ -26,28 +26,58 @@ const digitalNarketingTrainingInstitute: CoursesType = {
     },
   ],
   highlights: [
-    { icon: "/images/icons/calendar.png", title: "Core Digital Marketing Modules", value: "6+" },
-    { icon: "/images/icons/clock.png", title: "Hours of Hands-On Learning", value: "190+" },
+    { icon: "/images/icons/calendar.png", title: "Months", value: "6+" },
+    { icon: "/images/icons/clock.png", title: "Time", value: "Flexible" },
     {
       icon: "/images/icons/courses.png",
-      title: "Real-World Case Studies",
-      value: "25+ ",
+      title: "No Of Individual Courses",
+      value: "15",
     },
     {
       icon: "/images/icons/template.png",
-      title: "Proven Marketing Strategy Templates",
+      title: "Template & Blueprints ",
       value: "08",
     },
-    { icon: "/images/icons/ai.png", title: "Essential AI Tools & Platforms", value: "25+" },
+    { icon: "/images/icons/ai.png", title: "AI Learning Tools", value: "25+" },
     {
       icon: "/images/icons/certificate.png",
-      title: "Global Certifications",
-      value: "10+",
+      title: "Total Learning Hours",
+      value: "240+ Hrs",
+    },
+    {
+      icon: "/images/icons/case-study.png",
+      title: "Live Case Studies",
+      value: "35",
+    },
+    {
+      icon: "/images/icons/interview.png",
+      title: "Interview Assistance",
+      value: "5",
+    },
+    {
+      icon: "/images/icons/internship.png",
+      title: "Internship (Optional)",
+      value: "1 Month",
+    },
+    {
+      icon: "/images/icons/project.png",
+      title: "Real Time Projects",
+      value: "6+",
+    },
+    {
+      icon: "/images/icons/certificate.png",
+      title: "Certifications",
+      value: "18+",
     },
     {
       icon: "/images/icons/specialisation.png",
-      title: "Career-Focused Curriculum",
-      value: "100%",
+      title: "Specialisation",
+      value: "4",
+    },
+    {
+      icon: "/images/icons/trainer.png",
+      title: "Domain Specialist Trainers",
+      value: "07",
     },
   ],
   StoryHeader: {
