@@ -1,17 +1,67 @@
+
 .footerSection {
-  background-color: #000;
+  background-color: #1C1D21;
   padding-top: 80px;
 
   .footerTop {
     margin-bottom: 30px;
 
+    .accredited {
+      margin-bottom: 62px;
+      h6 {
+        margin-bottom: 11px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 100%;
+        letter-spacing: 5%;
+        color: #fff;
+      }
+
+      .accreditedImg {
+        display: flex;
+        gap: 30px;
+      }
+    }
+
+    .footerContact {
+      h6 {
+        margin-bottom: 20px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 100%;
+        letter-spacing: 5%;
+        color: #fff;
+      }
+
+      .footerContactLink {
+        display: flex;
+        flex-direction: column;
+        a {
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 24px;
+          letter-spacing: 2%;
+          font-family: var(--font-inter);
+          color: #f3f3f3;
+          opacity: 80%;
+        }
+      }
+    }
+    
+    .quickLinkRow {
+      display: flex;
+      gap: 28px;
+      flex-direction: column;
+    }
+
     .quickLink {
       h6 {
-        font-size: 1.25rem;
-        opacity: 0.8;
-        padding-bottom: 0.25rem;
-        margin-bottom: 8px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 100%;
+        letter-spacing: 5%;
         color: #ffffff;
+        margin-bottom: 20px;
       }
 
       ul {
@@ -22,7 +72,10 @@
           a {
             color: #f3f3f3;
             font-size: 14px;
-            opacity: 0.6;
+            line-height: 32px;
+            opacity: 80%;
+            font-family: var(--font-inter);
+            font-weight: 400;
           }
 
           :last-child {
@@ -32,38 +85,64 @@
       }
     }
 
-    .accredited {
-      margin-top: 40px;
+   
+  }
 
-      h6 {
-        font-size: 1.25rem;
-        opacity: 0.8;
-        padding-bottom: 0.25rem;
-        margin-bottom: 12px;
+  .footerMarketingCourses {
+    border-top: 1px solid rgba(243, 243, 243, 0.2);
+    padding: 40px 0;
+    h6 {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 100%;
+        letter-spacing: 5%;
         color: #ffffff;
-      }
+        margin-bottom: 20px;
     }
-
+     p {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 32px;
+      letter-spacing: 2%;
+      color: #F3F3F3;
+      opacity: 60%;
+      font-family: var(--font-inter);
+      margin: 0;
+     }
   }
 
   .footerBottom {
-    border-top: 0.01rem solid rgba(243, 243, 243, 0.1);
-    padding: 30px 0;
-
+    border-top: 1px solid rgba(243, 243, 243, 0.2);
+    padding: 40px 0;
+    .footerCopyright {
+      display: flex;
+      gap: 60px;
+      flex-wrap: wrap;
+    }
+    .footerCopyrightLink {
+      display: flex;
+      gap: 40px;
+      a {
+        color: #F3F3F3;
+        opacity: 60%;
+      }
+    }
     p {
       font-weight: 400;
-      font-size: 18px;
+      font-size: 16px;
       line-height: 100%;
       letter-spacing: 0%;
       color: #F3F3F3;
-      opacity: 80%;
+      opacity: 60%;
+      font-family: var(--font-inter);
     }
 
     .footerLink {
       gap: 47px;
 
       a {
-        color: rgba(243, 243, 243, 0.4);
+        color: #F3F3F3;
+      opacity: 60%;
       }
     }
   }
@@ -133,11 +212,9 @@
             max-width: 356px;
 
             a {
-
               font-weight: 400;
               font-size: 14px;
               line-height: 31px;
-              letter-spacing: 0%;
               color: #F3F3F3 !important;
               opacity: 60%;
             }

@@ -3,16 +3,66 @@
 import Image from "next/image";
 import Link from "next/link";
 import styles from "./style.module.scss";
+import { Inter } from "next/font/google";
+
+// Font configuration for Sora
+const inter = Inter({
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-inter", // This will create the CSS variable
+});
 
 const Footer = () => {
   return (
-    <footer className={styles.footerSection}>
+    <footer className={`${styles.footerSection} ${inter.variable}`}>
       <div className="container">
         <div className={styles.footerTop}>
           <div className={`${styles.row} row gy-4`}>
             {/* Logo & Social */}
             <div className="col-lg-4 col-md-6">
-              <div className={styles.footerLogo}>
+              <div className={styles.accredited}>
+                <h6>Accredited by</h6>
+                <div className={styles.accreditedImg}>
+                  <div>
+                    <Image
+                      src="/images/footer-skill.svg"
+                      alt="Skill India"
+                      width={61}
+                      height={61}
+                      className="mb-lg-3"
+                    />
+                  </div>
+                  <div>
+                    <Image
+                      src="/images/mesc.svg"
+                      alt="Mesc"
+                      width={61}
+                      height={61}
+                      className="mb-lg-3"
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <div className={styles.footerContact}>
+                <h6>Contact Us for any query</h6>
+                <div className={styles.footerContactLink}>
+                  <Link
+                    href="tel:+917353515515"
+                    className="text-decoration-none"
+                  >
+                    +91 7353 515 515
+                  </Link>
+
+                  <Link
+                    href="mailto:info@digitalacademy360.com"
+                    className="text-decoration-none"
+                  >
+                    info@digitalacademy360.com
+                  </Link>
+                </div>
+              </div>
+              {/* <div className={styles.footerLogo}>
                 <Image
                   src="/images/footer-logo.svg"
                   alt="Digital Academy 360"
@@ -20,9 +70,9 @@ const Footer = () => {
                   height={50}
                   className="mb-lg-3"
                 />
-              </div>
+              </div> */}
 
-              <div className={styles.signUp}>
+              {/* <div className={styles.signUp}>
                 <p>
                   Sign Up to get notified about our programs, offers & discounts
                 </p>
@@ -42,118 +92,229 @@ const Footer = () => {
                     />
                   </button>
                 </div>
-              </div>
+              </div> */}
             </div>
+            <div className="col-lg-8 col-md-6">
+              <div className="row">
+                {/* Quick Links */}
+                <div className={`${styles.quickLinkRow} col-lg-5 col-md-6`}>
+                  <div className={styles.quickLink}>
+                    <h6>Digital Marketing Programmes</h6>
+                    <ul>
+                      <li>
+                        <Link
+                          href="#"
+                          className="text-white text-decoration-none"
+                        >
+                          Post Graduation in Digital Marketing
+                        </Link>
+                      </li>
+                      <li>
+                        <Link
+                          href="#"
+                          className="text-white text-decoration-none"
+                        >
+                          Online Digital Marketing Courses
+                        </Link>
+                      </li>
+                      <li>
+                        <Link
+                          href="#"
+                          className="text-white text-decoration-none"
+                        >
+                          UG in Digital Business & Entrepreneurship
+                        </Link>
+                      </li>
+                      <li>
+                        <Link
+                          href="#"
+                          className="text-white text-decoration-none"
+                        >
+                          Short Term Certifications
+                        </Link>
+                      </li>
+                      <li>
+                        <Link
+                          href="#"
+                          className="text-white text-decoration-none"
+                        >
+                          Free Digital Marketing Courses Online
+                        </Link>
+                      </li>
+                      <li>
+                        <Link
+                          href="#"
+                          className="text-white text-decoration-none"
+                        >
+                          Digital Marketing Courses
+                        </Link>
+                      </li>
+                    </ul>
+                  </div>
+                  <div className={`${styles.quickLink} `}>
+                    <h6>Placement Preparation</h6>
+                    <ul>
+                      <li>
+                        <Link
+                          href="#"
+                          className="text-white text-decoration-none"
+                        >
+                          Interview Preparation Course
+                        </Link>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
 
-            {/* Quick Links */}
-            <div className="col-lg-2 col-md-6">
-              <div className={styles.quickLink}>
-                <h6>Quick Links</h6>
-                <ul>
-                  <li>
-                    <Link href="#" className="text-white text-decoration-none">
-                      About Us
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="#" className="text-white text-decoration-none">
-                      Hire From Us
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="#" className="text-white text-decoration-none">
-                      Success Stories
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="#" className="text-white text-decoration-none">
-                      Contact Us
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="#" className="text-white text-decoration-none">
-                      Our Centers
-                    </Link>
-                  </li>
-                </ul>
-              </div>
-            </div>
+                {/* Programs */}
+                <div className="col-lg-2 col-md-6">
+                  <div className={styles.quickLink}>
+                    <h6>Company</h6>
+                    <ul>
+                      <li>
+                        <Link
+                          href="#"
+                          className="text-white text-decoration-none"
+                        >
+                          About Us
+                        </Link>
+                      </li>
+                      <li>
+                        <Link
+                          href="#"
+                          className="text-white text-decoration-none"
+                        >
+                          Contact Us
+                        </Link>
+                      </li>
+                      <li>
+                        <Link
+                          href="#"
+                          className="text-white text-decoration-none"
+                        >
+                          Refer & Earn
+                        </Link>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
 
-            {/* Programs */}
-            <div className="col-lg-4 col-md-6">
-              <div className={styles.quickLink}>
-                <h6>Our Programs</h6>
-                <ul>
-                  <li>
-                    <Link href="#" className="text-white text-decoration-none">
-                      PG Programme in Digital Marketing with AI
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="#" className="text-white text-decoration-none">
-                      PG Programme in UI/UX & Design Thinking
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="#" className="text-white text-decoration-none">
-                      PG Programme in Full Stack Development
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="#" className="text-white text-decoration-none">
-                      Skill Diploma in Digital Marketing Program
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="#" className="text-white text-decoration-none">
-                      Skill Diploma in UI/UX & Design Thinking
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="#" className="text-white text-decoration-none">
-                      Skill Diploma in Content Writing
-                    </Link>
-                  </li>
-                </ul>
-              </div>
-            </div>
-
-            {/* Centers */}
-            <div className="col-lg-2 col-md-6">
-              <div className={styles.quickLink}>
-                <h6>Our Centers</h6>
-                <ul>
-                  <li>
-                    <Link href="#" className="text-white text-decoration-none">
-                      Bangalore
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="#" className="text-white text-decoration-none">
-                      Jayanagar
-                    </Link>
-                  </li>
-                </ul>
-              </div>
-              <div className={styles.accredited}>
-                <h6>Accredited by</h6>
-                <Image
-                  src="/images/form-gov-logo-footer-updated.svg"
-                  alt="Accredited Logo"
-                  width={141}
-                  height={73}
-                />
+                {/* Centers */}
+                <div className="col-lg-2 col-md-6">
+                  <div className={styles.quickLink}>
+                    <h6>Resources</h6>
+                    <ul>
+                      <li>
+                        <Link
+                          href="#"
+                          className="text-white text-decoration-none"
+                        >
+                          Blogs
+                        </Link>
+                      </li>
+                      <li>
+                        <Link
+                          href="#"
+                          className="text-white text-decoration-none"
+                        >
+                          Case Studies
+                        </Link>
+                      </li>
+                      <li>
+                        <Link
+                          href="#"
+                          className="text-white text-decoration-none"
+                        >
+                          Presentations
+                        </Link>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                {/* Centers */}
+                <div className="col-lg-2 col-md-6">
+                  <div className={styles.quickLink}>
+                    <h6>Career</h6>
+                    <ul>
+                      <li>
+                        <Link
+                          href="#"
+                          className="text-white text-decoration-none"
+                        >
+                          Hire From Us
+                        </Link>
+                      </li>
+                      <li>
+                        <Link
+                          href="#"
+                          className="text-white text-decoration-none"
+                        >
+                          Work With Us
+                        </Link>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
+
+        {/* Digital Marketing Courses Across The World */}
+        <div className={styles.footerMarketingCourses}>
+          <div className={`${styles.row} row`}>
+            <div className="col-lg-12">
+              <h6>Digital Marketing Courses Across The World</h6>
+              <p>
+                Digital Marketing Courses In Mumbai | Digital Marketing Courses
+                In Nepal | Digital Marketing Courses In Dubai | Digital
+                Marketing Courses In Bangalore | Digital Marketing Courses In
+                Pune |Digital Marketing Courses In Hyderabad | Digital Marketing
+                Courses In Kolkata | Digital Marketing Courses In Jaipur |
+                Digital Marketing Courses In Ahmedabad | Best Digital Marketing
+                Courses | Digital Marketing Courses In Chandigarh | Digital
+                Marketing Courses In Chennai | Digital Marketing Courses In
+                Kochi | Digital Marketing Courses In Lucknow | Digital Marketing
+                Courses In Surat | Digital Marketing Courses In Indore | Digital
+                Marketing Courses In Nagpur | Digital Marketing Courses In
+                Coimbatore | Digital Marketing Courses In Noida | Digital
+                Marketing Courses In Gurgaon | Digital Marketing Courses In
+                Dehradun | Digital Marketing Courses In Thrissur | Digital
+                Marketing Courses In Faridabad | Digital Marketing Courses In
+                Patna |Digital Marketing Courses In Thane |  Digital Marketing
+                Courses In Nashik | Digital Marketing Courses In
+                Udaipur |Digital Marketing Courses Navi Mumbai | Digital
+                Marketing Courses In Ghaziabad | Digital Marketing Courses In
+                South Delhi | Digital Marketing Courses In Dadar | Digital
+                Marketing Courses In Andheri | Digital Marketing Courses In
+                Meerut | Digital Marketing Courses In Borivali | Digital
+                Marketing Courses In Vashi | Digital Marketing Courses In Kalyan
+                | Digital Marketing Courses In Panvel | Digital Marketing
+                Courses In Mulund | Digital Marketing Courses In Virar | Digital
+                Marketing Courses In Bandra | Digital Marketing Courses In
+                Rohini | Digital Marketing Courses In Kozhikode
+              </p>
+            </div>
+          </div>
+        </div>
+
         {/* Bottom Line */}
         <div className={styles.footerBottom}>
           <div className={`${styles.row} row`}>
-            <div className="col-lg-6">
-              <p>© 2025 Digitalacademy360 Inc. All rights reserved.</p>
+            <div className="col-lg-9">
+              <div className={styles.footerCopyright}>
+                <p>
+                  Copyright © 2025 Digital Academy 360. All rights reserved.
+                </p>
+                <div
+                  className={`${styles.footerCopyrightLink} d-flex align-items-center justify-content-lg-end`}
+                >
+                  <Link href={"#"}>Privacy Policy</Link>
+                  <Link href={"#"}>Term of Use</Link>
+                </div>
+              </div>
             </div>
-            <div className="col-lg-6 ">
+            <div className="col-lg-3">
               <div
                 className={`${styles.footerLink} d-flex align-items-center justify-content-lg-end`}
               >
@@ -167,7 +328,7 @@ const Footer = () => {
                 </Link>
                 <Link href="#" className=" text-decoration-none">
                   <Image
-                    src="/images/twitter.svg"
+                    src="/images/social/twitter.svg"
                     alt="facebook"
                     width={28}
                     height={28}
@@ -175,7 +336,7 @@ const Footer = () => {
                 </Link>
                 <Link href="#" className=" text-decoration-none">
                   <Image
-                    src="/images/instagram.svg"
+                    src="/images/social/instagram.svg"
                     alt="instagram"
                     width={28}
                     height={28}
@@ -183,7 +344,7 @@ const Footer = () => {
                 </Link>
                 <Link href="#" className=" text-decoration-none">
                   <Image
-                    src="/images/linkedin.svg"
+                    src="/images/social/linkedin.svg"
                     alt="instagram"
                     width={28}
                     height={28}
