@@ -88,6 +88,7 @@ const Timeline = () => {
                     <div className={styles.label}>{step.title}</div>
                     <div className={styles.dot}></div>
                     <div className={styles.text}>
+                      <div className={styles.labelMobile}>{step.title}</div>
                       <ul>
                         {Array.isArray(step.content) ? (
                           step.content.map((item, idx) => (
