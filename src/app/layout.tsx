@@ -7,6 +7,7 @@ import Header from "@/components/header";
 import Footer from "@/components/footer";
 import LenisScroll from "@/components/LenisScroll"; // Import the new LenisScroll
 import { Poppins } from "next/font/google";
+import { PopupProvider } from "@components/widgets/popup/PopupContext";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -28,12 +29,14 @@ export default function RootLayout({
   return (
     <html lang="en" className={poppins.className}>
       <body>
-        <LenisScroll />
-        <BootstrapClient />
-        <Topbar />
-        <Header />
-        <main>{children}</main>
-        <Footer />
+        <PopupProvider>
+          <LenisScroll />
+          <BootstrapClient />
+          <Topbar />
+          <Header />
+          <main>{children}</main>
+          <Footer />
+        </PopupProvider>
       </body>
     </html>
   );

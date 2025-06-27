@@ -65,87 +65,87 @@
     }
   }
 
-  .formBox {
-    border-radius: 16px;
-    position: relative;
-    z-index: 1;
-    width: 413px;
-    padding: 30px;
-    right: 15px;
-
-    &::before {
-      background: rgb(255, 255, 255);
-      border: 2px solid rgb(0, 0, 0);
-      border-radius: 16px;
-      content: "";
-      position: absolute;
-      top: 0px;
-      left: 0px;
-      right: 0;
-      bottom: 0;
-      transform-origin: top right;
-      z-index: 1;
-      width: 413px;
-    }
-
-    &::after {
-      background: rgb(255, 255, 255);
-      border: 2px solid rgb(0, 0, 0);
-      border-radius: 16px;
-      content: "";
-      position: absolute;
-      top: -9px;
-      left: -9px;
-      right: 0;
-      bottom: 0;
-      transform: rotate(-2.09deg);
-      transform-origin: top right;
-      width: 413px;
-      height: 99.99%;
-    }
-
-    h3 {
-      position: relative;
-      z-index: 1;
-      font-weight: 500;
-      font-size: 18px;
-      line-height: 100%;
-      letter-spacing: 0%;
-      margin-bottom: 24px;
-      color: rgba(15, 11, 49, 1);
-
-    }
-
-    form {
-      position: relative;
-      z-index: 1;
-    }
-  }
-
-  .phoneCodefield {
-    .phoneCode {
-      border-right: none;
-
-      select {
-        border-radius: 8px 0 0 8px;
-        min-width: fit-content !important;
-        border-right: none !important;
-        width: auto;
-        max-width: fit-content !important;
-      }
-
-    }
-
-    input {
-      border-radius: 0 8px 8px 0;
-      border-left: none !important;
-    }
-  }
 
 
   .form-control,
   .form-select {
     border-radius: 0 8px 8px 0;
+  }
+}
+.formBox {
+  border-radius: 16px;
+  position: relative;
+  z-index: 1;
+  width: 413px;
+  padding: 30px;
+  right: 15px;
+
+  &::before {
+    background: rgb(255, 255, 255);
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 16px;
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0;
+    bottom: 0;
+    transform-origin: top right;
+    z-index: 1;
+    width: 413px;
+  }
+
+  &::after {
+    background: rgb(255, 255, 255);
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 16px;
+    content: "";
+    position: absolute;
+    top: -9px;
+    left: -9px;
+    right: 0;
+    bottom: 0;
+    transform: rotate(-2.09deg);
+    transform-origin: top right;
+    width: 413px;
+    height: 99.99%;
+  }
+
+  h3 {
+    position: relative;
+    z-index: 1;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    margin-bottom: 24px;
+    color: rgba(15, 11, 49, 1);
+
+  }
+
+  form {
+    position: relative;
+    z-index: 1;
+  }
+}
+
+.phoneCodefield {
+  .phoneCode {
+    border-right: none;
+
+    select {
+      border-radius: 8px 0 0 8px;
+      min-width: fit-content !important;
+      border-right: none !important;
+      width: auto;
+      max-width: fit-content !important;
+    }
+
+  }
+
+  input {
+    border-radius: 0 8px 8px 0;
+    border-left: none !important;
   }
 }
 
