@@ -19,7 +19,7 @@ const ApplyForm = ({}: LeadCaptureFormProps) => {
     phoneCode: "+91",
     phone: "",
     experience: "",
-    mode: "",
+    mode2: "",
     consent: false,
   });
 
@@ -158,7 +158,7 @@ const ApplyForm = ({}: LeadCaptureFormProps) => {
                   type="radio"
                   name="mode2"
                   value="online"
-                  checked={formData.mode === "online"}
+                  checked={formData.mode2 === "online"}
                   onChange={handleChange}
                   id="online"
                 />
@@ -172,7 +172,7 @@ const ApplyForm = ({}: LeadCaptureFormProps) => {
                   type="radio"
                   name="mode2"
                   value="offline"
-                  checked={formData.mode === "offline"}
+                  checked={formData.mode2 === "offline"}
                   onChange={handleChange}
                   id="offline"
                 />
