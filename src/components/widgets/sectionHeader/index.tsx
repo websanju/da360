@@ -39,8 +39,8 @@ function useResponsiveMargin(margin?: MarginValue): string {
 export default function SectionHeader({
   title,
   description,
-  wrapperMarginBottom = "0",
-  titleMarginBottom = "0",
+  wrapperMarginBottom = "",
+  titleMarginBottom = "",
   titleColor,
   descriptionColor,
   maxWidth,

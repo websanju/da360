@@ -1,0 +1,130 @@
+.reviewHighlightsSection {
+    background: #000002;
+    padding: 100px 0 50px;
+
+    .row {
+        display: flex;
+        gap: 60px;
+        justify-content: space-between;
+    }
+
+    .left {
+        max-width: 550px;
+
+        h1 {
+
+            font-weight: 700;
+            font-style: italic;
+            font-size: 80px;
+            line-height: 110.00000000000001%;
+            text-align: left;
+            text-transform: capitalize;
+            color: #fff;
+            margin-bottom: 24px;
+        }
+
+        p {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 150%;
+            letter-spacing: 0%;
+            text-transform: capitalize;
+            color: #fff;
+            margin-bottom: 45px;
+            max-width: 506px;
+        }
+       
+    }
+
+    .right {
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        .reviewContent {
+            h1 {
+                font-weight: 400;
+                font-size: 28px;
+                line-height: 150%;
+                letter-spacing: 0%;
+                text-transform: capitalize;
+                color: #FFFFFF;
+                margin-bottom: 23px;
+            }
+    
+            .grid {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                column-gap: 50px;
+                row-gap: 18px;
+                justify-content: end;
+            }
+    
+            .platform {
+                display: flex;
+                gap: 22px;
+                padding: 14px 0;
+               
+                .platformImg {
+                    display: flex;
+                    align-items: center;
+                  
+                }
+                .platformInfo {
+                    display: flex;
+                    flex-direction: column;
+    
+                    span {
+                        font-weight: 700;
+                        font-size: 32px;
+                        line-height: 100%;
+                        letter-spacing: 0%;
+                        text-align: left;
+                        color: #fff;
+                        margin-bottom: 5px;
+                    }
+    
+                    small {
+                        font-weight: 500;
+                        font-size: 16px;
+                        line-height: 100%;
+                        letter-spacing: 0%;
+                        text-align: center;
+                        color: #fff;
+                    }
+                }
+            }
+        }
+       
+    }
+    .reviewer {
+        display: flex;
+        gap: 40px;
+        align-items: center;
+        .reviewerVideo {
+            width: 145px;
+            height: 145px;
+            overflow: hidden;
+            border-radius: 100%;
+            min-width: 145px;
+            cursor: pointer;
+            img {
+              border-radius: 100%;
+            }
+        }
+
+        .link {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+            span {
+                font-weight: 300;
+                font-size: 20px;
+                line-height: 110.00000000000001%;
+                letter-spacing: 0%;
+                text-transform: capitalize;
+                color: #fff;
+            }
+        }
+    }
+    
+}

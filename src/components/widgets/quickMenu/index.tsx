@@ -28,7 +28,11 @@ const QuickMenu: React.FC<{ toggleQuickMenu: () => void }> = ({
           <h4>Careers</h4>
           <p>Work with us</p>
         </Link>
-        <Link href="#" className={styles.linkItem} onClick={toggleQuickMenu}>
+        <Link
+          href="/testimonial"
+          className={styles.linkItem}
+          onClick={toggleQuickMenu}
+        >
           <h4>Testimonials</h4>
           <p>Proven success, real voices</p>
         </Link>
