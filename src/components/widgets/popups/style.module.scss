@@ -33,6 +33,15 @@
     }
 }
 
+.closeForm {
+    position: absolute;
+    right: 30px;
+    top: 20px;
+   
+        background-color: transparent;
+        border: none;
+}
+
 .formHeader {
     display: none;
     align-items: center;
@@ -45,6 +54,9 @@
 }
 
 @media (width <=991px) {
+    .closeForm {
+        display: none;
+    }
     .applyForm {
         display: flex;
         align-items: flex-start;

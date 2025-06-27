@@ -46,6 +46,14 @@ const ApplyForm = ({}: LeadCaptureFormProps) => {
 
   return (
     <div className={style.applyForm}>
+      <button type="button" className={style.closeForm} onClick={closePopup}>
+        <Image
+          src="/images/icons/close.svg"
+          alt="logo"
+          width={14}
+          height={14}
+        />
+      </button>
       <div className={style.formBanner}>
         <Image
           width={338}
@@ -148,7 +156,7 @@ const ApplyForm = ({}: LeadCaptureFormProps) => {
                 <input
                   className="form-radio-input"
                   type="radio"
-                  name="mode"
+                  name="mode2"
                   value="online"
                   checked={formData.mode === "online"}
                   onChange={handleChange}
@@ -162,7 +170,7 @@ const ApplyForm = ({}: LeadCaptureFormProps) => {
                 <input
                   className="form-radio-input"
                   type="radio"
-                  name="mode"
+                  name="mode2"
                   value="offline"
                   checked={formData.mode === "offline"}
                   onChange={handleChange}
