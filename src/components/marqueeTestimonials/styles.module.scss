@@ -52,4 +52,8 @@
       transform: translateX(0);
     }
   }
-  
+  @media (width <=1260px) {
+    .testimonialSection {
+      padding: 60px 0 30px;
+     }
+   }                                                                                                                                                                                                                            

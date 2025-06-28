@@ -1,8 +1,4 @@
 
-.sectionGrid {
-    margin-bottom: 140px;
-}
-
 .gridWrapper {
     display: flex;
     gap: 24px;
@@ -173,6 +169,7 @@
   }
   
   @keyframes scale-up-center {
+    
     0% {
       transform: scale(0.5);
     }
@@ -181,4 +178,13 @@
       transform: scale(1);
     }
   }
-  
+  @media (width <=1260px) {
+
+    .gridWrapper {
+      display: flex;
+      gap: 24px;
+      align-items: flex-start;
+      flex-direction: column;
+    }
+    
+   }
