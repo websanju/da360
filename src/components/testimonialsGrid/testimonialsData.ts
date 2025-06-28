@@ -27,7 +27,7 @@ export type Testimonial = {
       name: "Sanjay Lal",
       rating: 5,
       avatar: "/images/rating/video6.jpg",
-      videoUrl: "/videos/testimonial1.mp4",
+      videoUrl: "/images/rating/digital-academy-360-testimonials-deepak.mp4",
     },
     {
       id: 3,
@@ -54,7 +54,7 @@ export type Testimonial = {
       name: "Sanjay Lal",
       rating: 5,
       avatar: "/images/rating/video6.jpg",
-      videoUrl: "/videos/testimonial2.mp4",
+      videoUrl: "/images/rating/digital-academy-360-testimonials-deepak.mp4",
       },
       {
         id: 6,
