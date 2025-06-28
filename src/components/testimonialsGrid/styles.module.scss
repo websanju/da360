@@ -24,10 +24,19 @@
     flex-direction: column;
     height: auto;
   }
-  
-  .quoteIcon {
-    margin-bottom: 12px;
+
+  .cardHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    .quoteIcon {
+        position: relative;
+      }
+      margin-bottom: 12px;
   }
+  
+ 
   
   .review {
     font-weight: 500;

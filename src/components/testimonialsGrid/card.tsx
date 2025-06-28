@@ -17,14 +17,53 @@ const Card = ({ item }: { item: Testimonial }) => (
   <div className={styles.card}>
     {item.type === "text" ? (
       <>
-        <div className={styles.quoteIcon}>
-          <Image
-            src={"images/rating/tquote-filled.svg"}
-            width={53}
-            height={53}
-            alt={item.name}
-            className={styles.avatar}
-          />{" "}
+        <div className={styles.cardHeader}>
+          <div className={styles.quoteIcon}>
+            <Image
+              src={"images/rating/tquote-filled.svg"}
+              width={53}
+              height={53}
+              alt={item.name}
+              className={styles.avatar}
+            />{" "}
+          </div>
+          <div className={styles.star}>
+            <Image
+              src="/images/rating/round-star.svg"
+              alt="Platform"
+              width={24}
+              height={24}
+              unoptimized
+            />
+            <Image
+              src="/images/rating/round-star.svg"
+              alt="Platform"
+              width={24}
+              height={24}
+              unoptimized
+            />
+            <Image
+              src="/images/rating/round-star.svg"
+              alt="Platform"
+              width={24}
+              height={24}
+              unoptimized
+            />
+            <Image
+              src="/images/rating/round-star.svg"
+              alt="Platform"
+              width={24}
+              height={24}
+              unoptimized
+            />
+            <Image
+              src="/images/rating/round-star.svg"
+              alt="Platform"
+              width={24}
+              height={24}
+              unoptimized
+            />
+          </div>
         </div>
         <p className={styles.review}>{item.review}</p>
       </>
