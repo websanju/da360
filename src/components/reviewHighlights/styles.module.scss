@@ -33,13 +33,14 @@
             margin-bottom: 45px;
             max-width: 506px;
         }
-       
+
     }
 
     .right {
         width: 100%;
         display: flex;
         justify-content: flex-end;
+
         .reviewContent {
             h1 {
                 font-weight: 400;
@@ -50,7 +51,7 @@
                 color: #FFFFFF;
                 margin-bottom: 23px;
             }
-    
+
             .grid {
                 display: grid;
                 grid-template-columns: repeat(3, 1fr);
@@ -58,21 +59,22 @@
                 row-gap: 18px;
                 justify-content: end;
             }
-    
+
             .platform {
                 display: flex;
                 gap: 22px;
                 padding: 14px 0;
-               
+
                 .platformImg {
                     display: flex;
                     align-items: center;
-                  
+
                 }
+
                 .platformInfo {
                     display: flex;
                     flex-direction: column;
-    
+
                     span {
                         font-weight: 700;
                         font-size: 32px;
@@ -82,7 +84,7 @@
                         color: #fff;
                         margin-bottom: 5px;
                     }
-    
+
                     small {
                         font-weight: 500;
                         font-size: 16px;
@@ -94,13 +96,14 @@
                 }
             }
         }
-       
+
     }
+
     .reviewer {
         display: flex;
         gap: 40px;
         align-items: center;
-       
+
         .reviewerVideo {
             width: 145px;
             height: 145px;
@@ -112,34 +115,38 @@
             background-color: #655def;
             transition: filter .3s ease, opacity .3s ease;
             cursor: pointer;
+
             video {
                 width: 100%;
                 height: 100%;
                 object-fit: cover;
                 transition: filter .3s ease, opacity .3s ease;
             }
+
             .playVideo {
                 display: none;
             }
+
             &:hover {
                 .playVideo {
-                   display: block;
-                 
-                   background-color: #ffffff69;
-                   opacity: .8;
-                   width: 100%;
-                   height: 100%;
-                   position: absolute;
-                   top: 0;
-                   left: 0;
-                   display: flex;
-                   align-items: center;
-                   justify-content: center;
+                    display: block;
+
+                    background-color: #ffffff69;
+                    opacity: .8;
+                    width: 100%;
+                    height: 100%;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
                 }
             }
+
             img {
-              border-radius: 100%;
-              width: 35px;
+                border-radius: 100%;
+                width: 35px;
             }
         }
 
@@ -147,6 +154,7 @@
             display: flex;
             gap: 20px;
             align-items: center;
+
             span {
                 font-weight: 300;
                 font-size: 20px;
@@ -157,5 +165,243 @@
             }
         }
     }
-    
+
+}
+
+@media (width <=1260px) {
+    .reviewHighlightsSection {
+        padding:40px 0 40px;
+        .row {
+            display: flex;
+            gap: 20px;
+            justify-content: space-between;
+        }
+
+        .left {
+            max-width: 550px;
+            width: 100%;
+
+            h1 {
+
+                font-size: 60px;
+                line-height: normal;
+                margin-bottom: 14px;
+            }
+
+            p {
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 150%;
+                letter-spacing: 0%;
+                text-transform: capitalize;
+                color: #fff;
+                margin-bottom: 45px;
+                max-width: 506px;
+            }
+
+        }
+
+        .right {
+            .reviewContent {
+                h1 {
+                    font-size: 24px;
+                    line-height: normal;
+                    letter-spacing: 0%;
+                    text-transform: capitalize;
+                    color: #FFFFFF;
+                    margin-bottom: 23px;
+                }
+
+                .grid {
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: flex-start;
+                    column-gap: 30px;
+                }
+
+                .platform {
+                    display: flex;
+                    gap: 22px;
+                    padding: 14px 0;
+
+                    .platformImg {
+                        display: flex;
+                        align-items: center;
+
+                        img {
+                            width: 30px;
+                        }
+
+                    }
+
+                    .platformInfo {
+                        display: flex;
+                        flex-direction: column;
+
+                        span {
+                            font-size: 20px;
+                            line-height: normal;
+                        }
+
+                        small {
+                            font-size: 12px;
+                            line-height: 12px;
+                            color: #fff;
+                        }
+                    }
+                }
+            }
+        }
+
+        .reviewer {
+            display: flex;
+            gap: 40px;
+            align-items: center;
+
+            .reviewerVideo {
+                width: 115px;
+                height: 115px;
+                min-width: 115px;
+                cursor: pointer;
+
+                video {}
+
+                .playVideo {
+                    display: none;
+                }
+
+                &:hover {
+                    .playVideo {}
+                }
+
+                img {
+                    border-radius: 100%;
+                    width: 35px;
+                }
+            }
+
+            .link {
+
+                align-items: center;
+
+                span {
+                    font-size: 20px;
+                    line-height: normal;
+                }
+            }
+        }
+    }
+}
+
+@media (width <=991px) {
+    .reviewHighlightsSection {
+        padding:40px 0 40px;
+        .row {
+            display: flex;
+            gap: 40px;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .left {
+            max-width: 550px;
+            width: 100%;
+
+            h1 {
+
+                font-size: 32px;
+                line-height: normal;
+                margin-bottom: 12px;
+            }
+
+            p {
+                font-size: 12px;
+                margin-bottom: 28px;
+            }
+
+        }
+
+        .right {
+            justify-content: flex-start;
+            .reviewContent {
+                h1 {
+                    font-size: 16px;
+                    line-height: normal;
+                    letter-spacing: 0%;
+                    text-transform: capitalize;
+                    color: #FFFFFF;
+                    margin-bottom: 23px;
+                }
+
+                .grid {
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: flex-start;
+                    column-gap: 14px;
+                    row-gap: 14px;
+                }
+
+                .platform {
+                    display: flex;
+                    gap: 12px;
+                    padding: 7px 0;
+
+                    .platformImg {
+                        display: flex;
+                        align-items: center;
+                        img {
+                            width: 24px;
+                        }
+
+                    }
+
+                    .platformInfo {
+                        display: flex;
+                        flex-direction: column;
+
+                        span {
+                            font-size: 16px;
+                            line-height: normal;
+                        }
+
+                        small {
+                            font-size: 9px;
+                            line-height: 10px;
+                            color: #fff;
+                        }
+                    }
+                }
+            }
+        }
+
+        .reviewer {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+
+            .reviewerVideo {
+                width: 80px;
+                height: 80px;
+                min-width: 80px;
+                cursor: pointer;
+                .playVideo {
+                    display: none;
+                }
+                img {
+                    border-radius: 100%;
+                    width: 35px;
+                }
+            }
+
+            .link {
+
+                align-items: center;
+
+                span {
+                    font-size: 16px;
+                    line-height: normal;
+                }
+            }
+        }
+    }
 }
