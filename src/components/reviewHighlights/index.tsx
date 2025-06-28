@@ -33,14 +33,30 @@ const ReviewHighlights = () => {
                 </p>
                 <div className={styles.reviewer}>
                   <div className={styles.reviewerVideo}>
-                    <Image
-                      src="/images/rating/video.jpg"
-                      alt="Reviewer"
-                      width={145}
-                      height={145}
-                      unoptimized
-                      className={styles.avatar}
-                    />
+                    <video
+                      playsInline
+                      autoPlay
+                      loop
+                      muted
+                      preload="metadata"
+                      className={styles.video}
+                    >
+                      <source
+                        src={"/images/rating/reviewVideo2.mp4"}
+                        type="video/mp4"
+                      />
+                      Your browser does not support the video tag.
+                    </video>
+                    <div className={styles.playVideo}>
+                      <span>
+                        <Image
+                          src={"/images/play-btn.svg"}
+                          alt={"slide.title"}
+                          width={72}
+                          height={72}
+                        />
+                      </span>
+                    </div>
                   </div>
                   <Link className={styles.link} href={""}>
                     <span>
