@@ -1,0 +1,116 @@
+.jobDetailsSection {
+    padding: 140px 0;
+
+    .breadcrumb {
+        display: flex;
+        gap: 7px;
+        margin-bottom: 20px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 100%;
+        letter-spacing: 1%;
+        color: #000;
+
+        a {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 100%;
+            letter-spacing: 1%;
+            color: #000;
+
+        }
+
+        span {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 100%;
+            letter-spacing: 1%;
+            color: #000;
+        }
+    }
+
+    .jobDetails {
+        display: flex;
+        flex-direction: column;
+        .jobHeader {
+            margin-bottom: 24px;
+            h1 {
+                font-weight: 700;
+                font-style: italic;
+                font-size: 40px;
+                line-height: 110.00000000000001%;
+                letter-spacing: 0%;
+                text-transform: capitalize;
+                color: #000;
+            }
+            span {
+                font-weight: 500;
+                font-size: 24px;
+                line-height: 100%;
+                letter-spacing: 0%;
+                color: #000;
+                margin-top: 10px;
+                display: block;
+            }
+        }
+        .descriptionList {
+            padding-left: 20px;
+            color: #000;
+            li {
+              margin-bottom: 8px;
+              font-weight: 500;
+              font-size: 16px;
+              line-height: 180%;
+              letter-spacing: 0%;
+              text-transform: capitalize;
+              color: #000;
+              list-style-type: disc;
+            }
+          }
+    }
+}
+
+.talkUs {
+    background: #FFD105;
+    padding: 24px;
+    max-width: 350px;
+    height: fit-content;
+
+    span {
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 100%;
+        letter-spacing: 0%;
+        margin-bottom: 24px;
+        display: flex;
+    }
+
+    .link {
+        margin-bottom: 80px;
+
+        a {
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 100%;
+            letter-spacing: 0%;
+            color: #000;
+        }
+    }
+
+    .applyNow {
+        a {
+            background: #000000;
+            color: #fff;
+            max-width: 256px;
+            height: 44px;
+            margin: 0 auto;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 70px;
+        }
+    }
+}
+
+@media (width <=992px) {}
