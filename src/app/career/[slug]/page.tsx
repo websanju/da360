@@ -4,7 +4,8 @@ import style from "./style.module.scss";
 import Link from "next/link";
 import Image from "next/image";
 
-export default function JobDetailPage({
+// ✅ Mark function as async to avoid `params` error
+export default async function JobDetailPage({
   params,
 }: {
   params: { slug: string };
@@ -16,6 +17,7 @@ export default function JobDetailPage({
   return (
     <section className={style.jobDetailsSection}>
       <div className="container">
+        {/* ✅ Breadcrumb */}
         <div className="row">
           <div className="col-lg-12">
             <nav className={style.breadcrumb}>
@@ -33,6 +35,7 @@ export default function JobDetailPage({
           </div>
         </div>
 
+        {/* ✅ Job Detail Section */}
         <div className="row">
           <div className="col-lg-8">
             <div className={style.jobDetails}>
@@ -40,6 +43,8 @@ export default function JobDetailPage({
                 <h1>{job.title}</h1>
                 <span>{job.location}</span>
               </div>
+
+              {/* ✅ Render description as bullet list */}
               <ul className={style.descriptionList}>
                 {job.description.map((point, index) => (
                   <li key={index}>{point}</li>
@@ -48,6 +53,7 @@ export default function JobDetailPage({
             </div>
           </div>
 
+          {/* ✅ Sidebar with Contact Info */}
           <div className="col-lg-4 d-flex justify-content-end">
             <div className={style.talkUs}>
               <span>Talk to us</span>
