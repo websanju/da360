@@ -4,13 +4,11 @@ import style from "./style.module.scss";
 import Link from "next/link";
 import Image from "next/image";
 
-interface PageProps {
-  params: {
-    slug: string;
-  };
-}
-
-export default function JobDetailPage({ params }: PageProps) {
+export default function JobDetailPage({
+  params,
+}: {
+  params: { slug: string };
+}) {
   const job = jobList.find((job) => job.slug === params.slug);
 
   if (!job) return notFound();
@@ -52,8 +50,10 @@ export default function JobDetailPage({ params }: PageProps) {
             <div className={style.talkUs}>
               <span>Talk to us</span>
               <div className={style.link}>
-                <Link href="#">+91 7353 515 515</Link>
-                <Link href="#">info@digitalacademy360.com</Link>
+                <Link href="tel:+917353515515">+91 7353 515 515</Link>
+                <Link href="mailto:info@digitalacademy360.com">
+                  info@digitalacademy360.com
+                </Link>
               </div>
               <div className={style.applyNow}>
                 <Link href="#">Apply Now</Link>
