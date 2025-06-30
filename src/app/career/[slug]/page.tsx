@@ -4,11 +4,13 @@ import style from "./style.module.scss";
 import Link from "next/link";
 import Image from "next/image";
 
-type Props = {
-  params: { slug: string };
-};
+interface PageProps {
+  params: {
+    slug: string;
+  };
+}
 
-export default function JobDetailPage({ params }: Props) {
+export default function JobDetailPage({ params }: PageProps) {
   const job = jobList.find((job) => job.slug === params.slug);
 
   if (!job) return notFound();
@@ -19,7 +21,7 @@ export default function JobDetailPage({ params }: Props) {
         <div className="row">
           <div className="col-lg-12">
             <nav className={style.breadcrumb}>
-              <Link href="/career">Career</Link>{" "}
+              <Link href="/career">Career</Link>
               <span>
                 <Image
                   alt="arrow"
@@ -40,8 +42,8 @@ export default function JobDetailPage({ params }: Props) {
                 <span>{job.location}</span>
               </div>
               <ul className={style.descriptionList}>
-                {job.description.map((point, idx) => (
-                  <li key={idx}>{point}</li>
+                {job.description.map((point, index) => (
+                  <li key={index}>{point}</li>
                 ))}
               </ul>
             </div>
@@ -50,11 +52,11 @@ export default function JobDetailPage({ params }: Props) {
             <div className={style.talkUs}>
               <span>Talk to us</span>
               <div className={style.link}>
-                <Link href={"#"}>+91 7353 515 515</Link>
-                <Link href={"#"}>info@digitalacademy360.com</Link>
+                <Link href="#">+91 7353 515 515</Link>
+                <Link href="#">info@digitalacademy360.com</Link>
               </div>
               <div className={style.applyNow}>
-                <Link href={"#"}>Apply Now</Link>
+                <Link href="#">Apply Now</Link>
               </div>
             </div>
           </div>
