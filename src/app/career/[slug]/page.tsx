@@ -25,13 +25,14 @@ export default function JobDetailPage({
                   alt="arrow"
                   width={6}
                   height={10}
-                  src={"/images/icons/blackleftArrow.svg"}
+                  src="/images/icons/blackleftArrow.svg"
                 />
               </span>
               <span>{job.title}</span>
             </nav>
           </div>
         </div>
+
         <div className="row">
           <div className="col-lg-8">
             <div className={style.jobDetails}>
@@ -46,6 +47,7 @@ export default function JobDetailPage({
               </ul>
             </div>
           </div>
+
           <div className="col-lg-4 d-flex justify-content-end">
             <div className={style.talkUs}>
               <span>Talk to us</span>
