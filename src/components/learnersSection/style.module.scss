@@ -59,6 +59,7 @@
         font-size: 32px;
         line-height: 40px;
       }
+
       p {
         font-weight: 700;
         font-size: 32px;
@@ -70,6 +71,7 @@
     .companies {
       text-align: left;
       max-width: 158px;
+
       h5 {
         font-weight: 600;
         font-size: 32px;
@@ -82,7 +84,7 @@
       small {
         font-weight: 400;
         font-size: 16px;
-        line-height:100%;
+        line-height: 100%;
         color: #535353;
         text-align: left;
       }
@@ -185,29 +187,43 @@
 
 .cardThree {
   position: absolute;
-  bottom: 400px;
-  left: 350px;
-
-  .studentName {
-    color: #000;
+  bottom: 180px;
+  left: 630px;
+  align-items: flex-start;
+  .studentBlock {
+    flex-direction: row;
+    margin-left: -40px;
+    .studentName {
+      color: #000;
+     }
+    .studentIcon {
+      transform: rotate(260deg);
+      top: -27px;
+      position: relative;
+      left: 6px;
+    }
   }
 }
 
+
+
+
+
 .cardOne {
   position: absolute;
-  bottom: 500px;
-  left: 0;
+  bottom: 400px;
+  left: -180px;
 }
 
 .cardTwo {
   position: absolute;
-  top: 320px;
-  left: 27%;
+  bottom: 402px;
+  left: 13%;
 }
 
 .cardFour {
   position: absolute;
-  right: 260px;
+  right: -230px;
   top: 510px;
   align-items: flex-start;
 
@@ -227,8 +243,8 @@
 
 .cardFive {
   position: absolute;
-  right: 0;
-  bottom: 348px;
+  right: -140px;
+    bottom: 188px;
   align-items: flex-start;
 
   .studentBlock {
@@ -243,6 +259,12 @@
     }
   }
 
+}
+
+.cardSix {
+  position: absolute;
+  bottom: 602px;
+  right:30%;
 }
 
 .accreditationSection {
@@ -277,7 +299,7 @@
         gap: 47px;
 
         .infoLable {
-        
+
           span {
             font-weight: 400;
             font-size: 18px;

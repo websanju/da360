@@ -72,6 +72,14 @@ const students: Student[] = [
     iconColor: "#E53F43",
     cardClass: "cardFive",
   },
+  {
+    name: "Anjali",
+    designation: "Ass. Manager - Marketing",
+    company: "INTELLIPAT",
+    bgColor: "#4CCE6D",
+    iconColor: "#4CCE6D",
+    cardClass: "cardSix",
+  },
 ];
 
 // Student Card Component
@@ -148,10 +156,10 @@ export default function LearnersSection() {
       <div className={styles.imageContainer}>
         <div className={styles.imageBox}>
           <Image
-            src="/images/hero-section.png"
+            src="/images/hero-section.jpg"
             alt="Learners Group"
-            width={1456}
-            height={1456}
+            width={2880}
+            height={1900}
             className="object-cover"
             priority
           />
