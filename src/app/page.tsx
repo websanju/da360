@@ -69,14 +69,14 @@ export default function HomePage() {
         <BrandLogos />
       </PaddingWrapper>
       <CommunityMeetupSlider />
+      <GuestFacultySlider />
       <GlobalCommunity />
       <MarqueeBanner />
       <Comparison />
-      <GuestFacultySlider />
       <LifeAtDA360 />
-      <LatestBlogPosts />
+      <MediaAwards />
       <PaddingWrapper desktopPaddingBottom="130px" mobilePaddingBottom="60px">
-        <MediaAwards />
+        <LatestBlogPosts />
       </PaddingWrapper>
     </main>
   );
