@@ -6,7 +6,7 @@
   box-shadow: none;
   transition: all 1s cubic-bezier(.23, 1, .32, 1);
   background-color: #F5F5F5;
-
+  position: relative;
   &.sticky {
     position: sticky;
     top: 0px;
@@ -166,7 +166,7 @@
 
   .dropdownContainer {
     position: absolute;
-    top: 140px;
+    top: 100px;
     left: 50%;
     z-index: 1000;
     width: 100%;
