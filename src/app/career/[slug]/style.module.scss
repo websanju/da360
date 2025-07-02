@@ -87,13 +87,14 @@
 
     .link {
         margin-bottom: 80px;
-
+        display: flex;
+        flex-direction: column;
         a {
             font-weight: 500;
             font-size: 16px;
             line-height: 100%;
-            letter-spacing: 0%;
             color: #000;
+            margin-bottom: 5px;
         }
     }
 
