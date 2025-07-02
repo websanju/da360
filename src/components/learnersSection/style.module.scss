@@ -33,7 +33,7 @@
 
   .infoBar {
     background: #FFEC5E;
-    padding: 80px 0;
+    padding: 40px 0;
     font-family: var(--font-sora);
 
     .infobox {
@@ -70,7 +70,7 @@
 
     .companies {
       text-align: left;
-      max-width: 158px;
+      max-width: max-content;
 
       h5 {
         font-weight: 600;

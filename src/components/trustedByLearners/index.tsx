@@ -42,14 +42,16 @@ const TrustedByLearners = ({
                   <Image
                     src="/images/skill-india.svg"
                     alt="Skill India"
-                    width={106}
-                    height={126}
+                    width={74}
+                    height={98}
+                    unoptimized
                   />
                   <Image
                     src="/images/media.svg"
                     alt="Media Skill Council India"
-                    width={107}
-                    height={102}
+                    width={95}
+                    height={84}
+                    unoptimized
                   />
                 </div>
               </div>
@@ -61,6 +63,7 @@ const TrustedByLearners = ({
                     alt="Facebook"
                     width={43}
                     height={43}
+                    unoptimized
                   />
                 </div>
                 <div className={styles.reviewDetails}>
@@ -71,6 +74,7 @@ const TrustedByLearners = ({
                       width={24}
                       height={24}
                       src="images/icons/round-star.svg"
+                      unoptimized
                     />
                   </div>
                   <p className={styles.reviewText}>4.8* 143+ reviews</p>
@@ -84,6 +88,7 @@ const TrustedByLearners = ({
                     alt="Google"
                     width={43}
                     height={43}
+                    unoptimized
                   />
                 </div>
                 <div className={styles.reviewDetails}>
@@ -94,6 +99,7 @@ const TrustedByLearners = ({
                       width={24}
                       height={24}
                       src="images/icons/round-star.svg"
+                      unoptimized
                     />
                   </div>
                   <p className={styles.reviewText}>4.7* 750+ reviews</p>
@@ -108,6 +114,7 @@ const TrustedByLearners = ({
                     alt="TrustPilot"
                     width={43}
                     height={43}
+                    unoptimized
                   />
                 </div>
                 <div className={styles.reviewDetails}>
@@ -118,6 +125,7 @@ const TrustedByLearners = ({
                       width={24}
                       height={24}
                       src="images/icons/round-star.svg"
+                      unoptimized
                     />
                   </div>
                   <p className={styles.reviewText}>4.5* 30+ reviews</p>

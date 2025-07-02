@@ -220,15 +220,15 @@ export default function LearnersSection() {
                 <div className={styles.infoNumbers}>
                   <div className={styles.companies}>
                     <h5>50,000+</h5>
-                    <small>Companies our learners work in</small>
+                    <small>Careers transformed</small>
                   </div>
                   <div className={styles.companies}>
-                    <h5>25,000+</h5>
-                    <small>Learners placed on average</small>
+                    <h5>30,000+</h5>
+                    <small>Successfully Placed</small>
                   </div>
                   <div className={styles.companies}>
-                    <h5>4000+</h5>
-                    <small>Companies our learners work in</small>
+                    <h5>2000+</h5>
+                    <small>Hiring Partners</small>
                   </div>
                 </div>
               </div>

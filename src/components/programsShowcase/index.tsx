@@ -35,7 +35,7 @@ const ProgramsShowcase: React.FC = () => {
           scrollTrigger: {
             trigger: wrapper,
             start: `top ${120 + 30 * i}`,
-            end: "bottom 680",
+            end: "bottom 600",
             endTrigger: ".wrapper",
             scrub: true,
             pin: wrapper,
@@ -89,8 +89,8 @@ const ProgramsShowcase: React.FC = () => {
                     label: "15+ Live Agency-Style Projects",
                   },
                 ]}
-                buttonText="Download Curriculum"
-                expertText="Talk to Our Expert"
+                buttonText="View Course"
+                expertText="Avail Scholarship"
                 image="/images/skill-1.png"
               />
             </div>
@@ -121,8 +121,8 @@ const ProgramsShowcase: React.FC = () => {
                     label: "8+ Real-Time Marketing Projects",
                   },
                 ]}
-                buttonText="Download Curriculum"
-                expertText="Talk to Our Expert"
+                buttonText="View Course"
+                expertText="Avail Scholarship"
                 image="/images/skill-2.png"
               />
             </div>
@@ -153,8 +153,8 @@ const ProgramsShowcase: React.FC = () => {
                     label: "2+ Live Marketing Case Projects",
                   },
                 ]}
-                buttonText="Download Curriculum"
-                expertText="Talk to Our Expert"
+                buttonText="View Course"
+                expertText="Avail Scholarship"
                 image="/images/skill-3.png"
               />
             </div>
