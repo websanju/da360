@@ -810,3 +810,8 @@ select {
 .iti--inline-dropdown {
   width: 100%;
 }
+@media (min-width: 1292px) {
+.caseStudiessection .swiper-wrapper {
+  justify-content: center;
+}
+}

@@ -7,10 +7,9 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import styles from "./style.module.scss";
-import { auto } from "@popperjs/core";
 import CaseStudiesCard from "@components/widgets/caseStudiesCard";
-import LeftArrow from "@components/Ui/svg/leftArrow";
-import RightArrow from "@components/Ui/svg/rightArrowLine";
+// import LeftArrow from "@components/Ui/svg/leftArrow";
+// import RightArrow from "@components/Ui/svg/rightArrowLine";
 import SectionHeader from "@components/widgets/sectionHeader";
 // import LeftArrow from "@components/Ui/svg/leftArrow";
 
@@ -20,7 +19,7 @@ const caseStudies = [
     logo: "/images/mcdonalds-logo.png",
     title: "McDonald’s India – Localizing a Global Brand",
     description:
-      "McDonald’s India adapted its global brand strategy to meet local market preferences—replacing beef-based offerings, introducing aloo tikki burgers, and launching value pricing to capture the price-sensitive Indian audience. Their digital marketing focused on regional content, hyper-local social media campaigns, and app-based loyalty programs.",
+      "McDonald’s India adapted its global brand strategy to meet local market preferences—replacing beef-based offerings, introducing aloo tikki burgers, and launching value pricing to capture the price-sensitive  ",
     tags: [
       "Marketing Strategy",
       "Consumer Segmentation",
@@ -33,7 +32,7 @@ const caseStudies = [
     logo: "/images/motherdairy-logo.png",
     title: "Mother Dairy – Building Trust Through Content",
     description:
-      "Mother Dairy strengthened its brand presence by focusing on emotional storytelling and purpose-driven marketing. Campaigns like `Rishton Ka Swad Badhaiye` positioned the brand as a part of Indian family life. It leveraged SEO, blog content, influencer tie-ups, and YouTube storytelling to increase brand engagement and product awareness.",
+      "Mother Dairy strengthened its brand presence by focusing on emotional storytelling and purpose-driven marketing. Campaigns like `Rishton Ka Swad Badhaiye` positioned the brand as a part of Indian family life.",
     tags: [
       "Content Marketing",
       "SEO & Organic Reach",
@@ -46,7 +45,7 @@ const caseStudies = [
     logo: "/images/mcdonalds-logo.png",
     title: "Zomato – Data-Driven Performance Marketing",
     description:
-      "Zomato scaled its customer acquisition by running high-performing campaigns during IPL seasons, using data-backed insights to target users based on cuisine preferences, location, and time of day. They executed geo-targeted Google and Meta ads, retargeting sequences, and meme-based creatives to boost engagement and app installs.",
+      "Zomato scaled its customer acquisition by running high-performing campaigns during IPL seasons, using data-backed insights to target users based on cuisine preferences, location, and time of day. ",
     tags: [
       "Performance Marketing",
       "Google & Meta Ad Strategy",
@@ -58,7 +57,7 @@ const caseStudies = [
 
 export default function CaseStudiesSlider() {
   return (
-    <section className={styles.caseStudiessection}>
+    <section className={`${styles.caseStudiessection} caseStudiessection `}>
       <div className="container">
         <div className="row">
           <div className="col-md-12">
@@ -80,13 +79,22 @@ export default function CaseStudiesSlider() {
           <Swiper
             modules={[Navigation, Scrollbar]}
             spaceBetween={20}
-            slidesPerView={auto}
-            scrollbar={{ draggable: true, el: "#customScrollbar5" }}
-            navigation={{
-              prevEl: "#customPrev5",
-              nextEl: "#customNext5",
-            }}
-            pagination={{ clickable: false }}
+            slidesPerView="auto"
+            centeredSlides={caseStudies.length <= 2}
+            loop={false}
+            scrollbar={
+              caseStudies.length > 2
+                ? { draggable: true, el: "#customScrollbar5" }
+                : false
+            }
+            navigation={
+              caseStudies.length > 2
+                ? {
+                    prevEl: "#customPrev5",
+                    nextEl: "#customNext5",
+                  }
+                : false
+            }
             slidesOffsetBefore={16}
             slidesOffsetAfter={16}
             breakpoints={{
@@ -132,7 +140,7 @@ export default function CaseStudiesSlider() {
       </div>
       {/* Custom scrollbar */}
 
-      <div className={`${styles.controls} controls`}>
+      {/* <div className={`${styles.controls} controls`}>
         <button id="customPrev5" className={`prevBtn ${styles.navBtn}`}>
           {" "}
           <RightArrow width={16} height={16} color="#000" />
@@ -145,7 +153,7 @@ export default function CaseStudiesSlider() {
           {" "}
           <LeftArrow width={16} height={16} color="#000" />
         </button>
-      </div>
+      </div> */}
     </section>
   );
 }
