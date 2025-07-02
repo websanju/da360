@@ -58,13 +58,29 @@ export default function Header() {
     };
   }, []);
   // Check scroll position to toggle sticky class
+
   useEffect(() => {
+    let lastScrollTop = window.scrollY;
+
     const handleScroll = () => {
-      if (window.scrollY > 0) {
-        setIsSticky(true); // Add sticky class when scrolling
-      } else {
-        setIsSticky(false); // Remove sticky class when at top
+      const currentScrollTop = window.scrollY;
+
+      if (currentScrollTop <= 0) {
+        // At the very top — remove sticky
+        setIsSticky(false);
+        lastScrollTop = 0;
+        return;
       }
+
+      if (currentScrollTop < lastScrollTop) {
+        // Scrolling up
+        setIsSticky(true);
+      } else if (currentScrollTop > lastScrollTop) {
+        // Scrolling down
+        setIsSticky(false);
+      }
+
+      lastScrollTop = currentScrollTop;
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -73,6 +89,7 @@ export default function Header() {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+
   const router = useRouter();
 
   const handleClickMasterDigital = () => {
