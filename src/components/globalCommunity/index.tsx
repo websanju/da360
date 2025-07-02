@@ -76,8 +76,8 @@ export default function GlobalCommunity() {
                     src="/images/icons/professionals-trained.svg"
                   />
                 </div>
-                <h3>50000+</h3>
-                <p>Professionals Trained</p>
+                <h3>50,000+</h3>
+                <p>Careers transformed</p>
               </div>
               <div className={styles.statItem}>
                 <div className={styles.icon + " " + styles.green}>
@@ -88,8 +88,8 @@ export default function GlobalCommunity() {
                     src="/images/icons/enterprise-clients.svg"
                   />
                 </div>
-                <h3>1000+</h3>
-                <p>Enterprise Clients</p>
+                <h3>30,000+</h3>
+                <p>Successfully Placed</p>
               </div>
               <div className={styles.statItem}>
                 <div className={styles.icon + " " + styles.purple}>
@@ -100,8 +100,8 @@ export default function GlobalCommunity() {
                     src="/images/icons/countries-counting.svg"
                   />
                 </div>
-                <h3>35+</h3>
-                <p>Countries and Counting</p>
+                <h3>2000+</h3>
+                <p>Hiring Partners</p>
               </div>
             </div>
             <div className={styles.mapContainer}>

@@ -5,23 +5,17 @@ const counters: CounterProps[] = [
   {
     to: 50000,
     suffix: "+",
-    label: "Careers Elevated Turning Ambition into Achievement",
+    label: "Careers transformed",
   },
   {
-    to: 25000,
+    to: 30000,
     suffix: "+",
-    label: "Learners Successfully Placed From Learning to Earning",
+    label: "Successfully Placed",
   },
   {
-    to: 1000,
+    to: 2000,
     suffix: "+",
-    label: "Trusted Hiring Partners Top Brands Choose Our Talent",
-  },
-  {
-    to: 300,
-    suffix: "+",
-    label:
-      "Entrepreneurs & Freelancers Launched Fueling Independent Success Stories",
+    label: "Hiring Partners",
   },
 ];
 // import Image from "next/image";
@@ -76,11 +70,10 @@ const VisionMissionStats = () => {
                 </h2>
                 <p>
                   Our mission is to deliver industry-driven, immersive learning
-                  experiences that combine cutting-edge digital marketing with
-                  AI-powered tools. We aim to create a global community of
-                  skilled professionals, entrepreneurs, and leaders through
-                  practical training, real-world projects, and a 360° approach
-                  to career success.
+                  experiences. We aim to create a global community of skilled
+                  professionals, entrepreneurs, and leaders through practical
+                  training, real-world projects, and a 360° approach to career
+                  success.
                 </p>
               </div>
             </div>
