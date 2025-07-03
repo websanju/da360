@@ -1,6 +1,6 @@
 // components/CohortDetails.tsx
 "use client";
-import Image from "next/image";
+// import Image from "next/image";
 import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import styles from "./style.module.scss";
@@ -136,7 +136,7 @@ export default function CohortDetails({
           </div>
 
           {/* Accreditation Section */}
-          <div className="col-lg-12 d-flex justify-content-center">
+          {/* <div className="col-lg-12 d-flex justify-content-center">
             <div className={styles.accredited}>
               <div>
                 <label>
@@ -163,7 +163,7 @@ export default function CohortDetails({
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </section>
