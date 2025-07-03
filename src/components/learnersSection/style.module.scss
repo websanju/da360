@@ -187,14 +187,14 @@
 
 .cardThree {
   position: absolute;
-  bottom: 180px;
+  bottom: 310px;
   left: 630px;
   align-items: flex-start;
   .studentBlock {
     flex-direction: row;
     margin-left: -40px;
     .studentName {
-      color: #000;
+      color: #fff;
      }
     .studentIcon {
       transform: rotate(260deg);
@@ -212,19 +212,19 @@
 .cardOne {
   position: absolute;
   bottom: 400px;
-  left: -180px;
+  left: -105px;
 }
 
 .cardTwo {
   position: absolute;
-  bottom: 402px;
-  left: 13%;
+  bottom: 370px;
+  left: 22%;
 }
 
 .cardFour {
   position: absolute;
-  right: -230px;
-  top: 510px;
+  right: -190px;
+  top: 680px;
   align-items: flex-start;
 
   .studentBlock {
@@ -243,7 +243,7 @@
 
 .cardFive {
   position: absolute;
-  right: -140px;
+  right: 40px;
     bottom: 188px;
   align-items: flex-start;
 
@@ -263,8 +263,14 @@
 
 .cardSix {
   position: absolute;
-  bottom: 602px;
-  right:30%;
+  bottom: 532px;
+  right:26%;
+  .studentBlock {
+    
+    .studentName {
+      color: #000;
+     } 
+    }
 }
 
 .accreditationSection {

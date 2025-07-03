@@ -52,8 +52,8 @@ const students: Student[] = [
     name: "Mayank",
     designation: "Ass. Manager - Marketing",
     company: "INTELLIPAT",
-    bgColor: "#FFCD5E",
-    iconColor: "#FFCD5E",
+    bgColor: "#E53F43",
+    iconColor: "#E53F43",
     cardClass: "cardThree",
   },
   {
@@ -76,8 +76,8 @@ const students: Student[] = [
     name: "Anjali",
     designation: "Ass. Manager - Marketing",
     company: "INTELLIPAT",
-    bgColor: "#4CCE6D",
-    iconColor: "#4CCE6D",
+    bgColor: "#ffcd5e",
+    iconColor: "#ffcd5e",
     cardClass: "cardSix",
   },
 ];
