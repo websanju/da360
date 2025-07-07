@@ -1,6 +1,6 @@
 // import styles from "./style.module.scss";
 import TrainersHeroSection from "@components/trainersHeroSection";
-import CallToActionBanner from "@/components/callToActionBanner";
+import CareerBanner from "@/components/careerBanner";
 import GuestFacultyCard from "@components/widgets/guestFacultyCard";
 import styles from "./style.module.scss";
 import SectionHeader from "@/components/widgets/sectionHeader";
@@ -168,6 +168,7 @@ export default function Career() {
           </div>
         </div>
       </section>
+      <CareerBanner />
       <section className={styles.featuredSuperSection}>
         <div className="container">
           <div className="row">
@@ -187,7 +188,6 @@ export default function Career() {
           </div>
         </div>
       </section>
-      <CallToActionBanner />
     </main>
   );
 }
