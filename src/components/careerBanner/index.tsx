@@ -12,7 +12,7 @@ const CareerBanner: React.FC = () => {
             <div className={styles.banner}>
               <h2>Ready to Transform your Career?</h2>
               <p>
-                Take the first step toward digital leadership with our <br />
+                Take the first step toward digital leadership with our
                 future-ready courses and programmes.
               </p>
               <div className={styles.actionBtn}>
