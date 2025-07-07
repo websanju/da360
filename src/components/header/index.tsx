@@ -5,7 +5,8 @@ import Link from "next/link";
 import styles from "./style.module.scss";
 import DownArrow from "@/components/Ui/svg/downArrow";
 import QuickMenu from "@/components/widgets/quickMenu";
-import { useRouter } from "next/navigation";
+import MegaMenu from "./megaMenu";
+// import { useRouter } from "next/navigation";
 
 export default function Header() {
   const [isCoursesOpen, setIsCoursesOpen] = useState(false);
@@ -90,22 +91,22 @@ export default function Header() {
     };
   }, []);
 
-  const router = useRouter();
+  // const router = useRouter();
 
-  const handleClickMasterDigital = () => {
-    toggleCourses(); // call your custom function
-    router.push("/master-digital-marketing-leadership-course");
-  };
+  // const handleClickMasterDigital = () => {
+  //   toggleCourses(); // call your custom function
+  //   router.push("/master-digital-marketing-leadership-course");
+  // };
 
-  const handleClickOline = () => {
-    toggleCourses(); // call your custom function
-    router.push("/online-digital-marketing-courses");
-  };
+  // const handleClickOline = () => {
+  //   toggleCourses(); // call your custom function
+  //   router.push("/online-digital-marketing-courses");
+  // };
 
-  const handleClickDigitalMarketing = () => {
-    toggleCourses(); // call your custom function
-    router.push("/digital-marketing-training-institute");
-  };
+  // const handleClickDigitalMarketing = () => {
+  //   toggleCourses(); // call your custom function
+  //   router.push("/digital-marketing-training-institute");
+  // };
 
   return (
     <header className={`${styles.header} ${isSticky ? styles.sticky : ""}`}>
@@ -152,100 +153,128 @@ export default function Header() {
                     isCoursesOpen ? styles.open : ""
                   }`}
                 >
-                  <div className={styles.dropdownContainerHeader}>
-                    <h3>Digital Marketing Programs & Skills To Master</h3>
-                  </div>
-                  <div className={styles.dropdownColumnGroup}>
-                    <div
-                      onClick={handleClickMasterDigital}
-                      className={`${styles.navbarDropdownColumn}`}
-                    >
-                      <h4>Leadership & AI Course</h4>
-                      <span className={styles.dropdownTag}>9 Months</span>
-                      <div className={styles.navbarDropdownList}>
-                        <span className={styles.navbarTitle}>
-                          Leadership in Digital Marketing, <br /> AI &
-                          Entrepreneurship
-                        </span>
-                        <ul>
-                          <li>
-                            <Link href={"#"}> Masters Level Certification</Link>
-                          </li>
-                          <li>
-                            <Link href={"#"}> 10 Advanced Specialisations</Link>
-                          </li>
-                          <li>
-                            <Link href={"#"}> 30 Courses in 1 Program</Link>
-                          </li>
-                          <li>
-                            <Link href={"#"}>15+ Projects & Case Studies</Link>
-                          </li>
-                          <li>
-                            <Link href={"#"}>22+ Certifications</Link>
-                          </li>
-                        </ul>
-                      </div>
+                  <MegaMenu />
+                  {/* <div>
+                    <div className={styles.dropdownContainerHeader}>
+                      <h3>Digital Marketing Programs & Skills To Master</h3>
                     </div>
+                    <div className={styles.dropdownColumnGroup}>
+                      <div
+                        onClick={handleClickMasterDigital}
+                        className={`${styles.navbarDropdownColumn}`}
+                      >
+                        <h4>Leadership & AI Course</h4>
+                        <span className={styles.dropdownTag}>9 Months</span>
+                        <div className={styles.navbarDropdownList}>
+                          <span className={styles.navbarTitle}>
+                            Leadership in Digital Marketing, <br /> AI &
+                            Entrepreneurship
+                          </span>
+                          <ul>
+                            <li>
+                              <Link href={"#"}>
+                                {" "}
+                                Masters Level Certification
+                              </Link>
+                            </li>
+                            <li>
+                              <Link href={"#"}>
+                                {" "}
+                                10 Advanced Specialisations
+                              </Link>
+                            </li>
+                            <li>
+                              <Link href={"#"}> 30 Courses in 1 Program</Link>
+                            </li>
+                            <li>
+                              <Link href={"#"}>
+                                15+ Projects & Case Studies
+                              </Link>
+                            </li>
+                            <li>
+                              <Link href={"#"}>22+ Certifications</Link>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
 
-                    <div
-                      onClick={handleClickOline}
-                      className={`${styles.navbarDropdownColumn}`}
-                    >
-                      <h4>PGCP Course</h4>
-                      <span className={styles.dropdownTag}>9 Months</span>
-                      <div className={styles.navbarDropdownList}>
-                        <span className={styles.navbarTitle}>
-                          PGCP In Digital Marketing & <br /> E-Commerce
-                        </span>
-                        <ul>
-                          <li>
-                            <Link href={"#"}> Masters Level Certification</Link>
-                          </li>
-                          <li>
-                            <Link href={"#"}> 10 Advanced Specialisations</Link>
-                          </li>
-                          <li>
-                            <Link href={"#"}> 30 Courses in 1 Program</Link>
-                          </li>
-                          <li>
-                            <Link href={"#"}>15+ Projects & Case Studies</Link>
-                          </li>
-                          <li>
-                            <Link href={"#"}>22+ Certifications</Link>
-                          </li>
-                        </ul>
+                      <div
+                        onClick={handleClickOline}
+                        className={`${styles.navbarDropdownColumn}`}
+                      >
+                        <h4>PGCP Course</h4>
+                        <span className={styles.dropdownTag}>9 Months</span>
+                        <div className={styles.navbarDropdownList}>
+                          <span className={styles.navbarTitle}>
+                            PGCP In Digital Marketing & <br /> E-Commerce
+                          </span>
+                          <ul>
+                            <li>
+                              <Link href={"#"}>
+                                {" "}
+                                Masters Level Certification
+                              </Link>
+                            </li>
+                            <li>
+                              <Link href={"#"}>
+                                {" "}
+                                10 Advanced Specialisations
+                              </Link>
+                            </li>
+                            <li>
+                              <Link href={"#"}> 30 Courses in 1 Program</Link>
+                            </li>
+                            <li>
+                              <Link href={"#"}>
+                                15+ Projects & Case Studies
+                              </Link>
+                            </li>
+                            <li>
+                              <Link href={"#"}>22+ Certifications</Link>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div
+                        onClick={handleClickDigitalMarketing}
+                        className={`${styles.navbarDropdownColumn}`}
+                      >
+                        <h4>SDCP Course</h4>
+                        <span className={styles.dropdownTag}>9 Months</span>
+                        <div className={styles.navbarDropdownList}>
+                          <span className={styles.navbarTitle}>
+                            Skill Diploma in Digital Marketing <br /> &
+                            Analytics
+                          </span>
+                          <ul>
+                            <li>
+                              <Link href={"#"}>
+                                {" "}
+                                Masters Level Certification
+                              </Link>
+                            </li>
+                            <li>
+                              <Link href={"#"}>
+                                {" "}
+                                10 Advanced Specialisations
+                              </Link>
+                            </li>
+                            <li>
+                              <Link href={"#"}> 30 Courses in 1 Program</Link>
+                            </li>
+                            <li>
+                              <Link href={"#"}>
+                                15+ Projects & Case Studies
+                              </Link>
+                            </li>
+                            <li>
+                              <Link href={"#"}>22+ Certifications</Link>
+                            </li>
+                          </ul>
+                        </div>
                       </div>
                     </div>
-                    <div
-                      onClick={handleClickDigitalMarketing}
-                      className={`${styles.navbarDropdownColumn}`}
-                    >
-                      <h4>SDCP Course</h4>
-                      <span className={styles.dropdownTag}>9 Months</span>
-                      <div className={styles.navbarDropdownList}>
-                        <span className={styles.navbarTitle}>
-                          Skill Diploma in Digital Marketing <br /> & Analytics
-                        </span>
-                        <ul>
-                          <li>
-                            <Link href={"#"}> Masters Level Certification</Link>
-                          </li>
-                          <li>
-                            <Link href={"#"}> 10 Advanced Specialisations</Link>
-                          </li>
-                          <li>
-                            <Link href={"#"}> 30 Courses in 1 Program</Link>
-                          </li>
-                          <li>
-                            <Link href={"#"}>15+ Projects & Case Studies</Link>
-                          </li>
-                          <li>
-                            <Link href={"#"}>22+ Certifications</Link>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
+                  </div> */}
                 </div>
               </div>
               {/* End Courses Dropdown */}
