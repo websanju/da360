@@ -3,6 +3,9 @@
 import React from "react";
 import Image from "next/image";
 import styles from "./style.module.scss";
+import { usePopup } from "@components/widgets/popup/PopupContext";
+import CaseStudyPopup from "@components/widgets/popups/CaseStudyPopup";
+import Link from "next/link";
 
 export interface CaseStudy {
   id: number;
@@ -13,6 +16,8 @@ export interface CaseStudy {
 }
 
 export default function Card({ study }: { study: CaseStudy }) {
+  const { openPopup } = usePopup();
+
   return (
     <div className={styles.card}>
       <div className={styles.cardImg}>
@@ -27,7 +32,17 @@ export default function Card({ study }: { study: CaseStudy }) {
       <div className={styles.cardDescription}>
         <h3>{study.title}</h3>
         <p className={styles.desc}>
-          {study.description} <a href="#">Know More</a>
+          {study.description.slice(0, 120)}...
+          <Link
+            href="#"
+            onClick={(e) => {
+              e.preventDefault(); // Prevents jumping to the top
+              openPopup(<CaseStudyPopup study={study} />, study.title);
+            }}
+            className={styles.knowMore}
+          >
+            Know More
+          </Link>
         </p>
       </div>
       <div className={styles.separator}></div>
