@@ -16,7 +16,7 @@ const PersonCard: React.FC<PersonCardProps> = ({
   return (
     <div className={styles.card}>
       <div className={styles.imageWrapper}>
-        <Image src={image} alt={name} width={200} height={200} />
+        <Image src={image} alt={name} width={200} unoptimized height={200} />
       </div>
       <div className={styles.info}>
         <div className={styles.contactInfo}>
