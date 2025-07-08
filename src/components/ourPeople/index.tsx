@@ -73,12 +73,12 @@ const people = [
   {
     name: "Somujit Biswas",
     designation: "Sr. Mis Analyst",
-    image: "/images/staff/Somujit-biswas.png",
+    image: "/images/staff/somujit-biswas.png",
   },
   {
     name: "G. ChandraSekhar",
     designation: "Digital Marketing Team Lead",
-    image: "/images/staff/g-ChandraSekhar.png",
+    image: "/images/staff/g-chandraSekhar.png",
   },
   {
     name: "Madhuraj P",
@@ -163,7 +163,7 @@ const people = [
   {
     name: "Vignesh K",
     designation: "System Administrator",
-    image: "/images/staff/vignesh-K.png",
+    image: "/images/staff/vignesh-k.png",
   },
   {
     name: "Ritika Agrawal",
