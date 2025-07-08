@@ -58,7 +58,7 @@ const people = [
   {
     name: "Ashwini J",
     designation: "Senior Executive - Student Success",
-    image: "/images/staff/ashwinij.png",
+    image: "/images/staff/ashwini.png",
   },
   {
     name: "Rashmi r",
@@ -78,7 +78,7 @@ const people = [
   {
     name: "G. ChandraSekhar",
     designation: "Digital Marketing Team Lead",
-    image: "/images/staff/g-chandraSekhar.png",
+    image: "/images/staff/chandraSekhar.png",
   },
   {
     name: "Madhuraj P",
@@ -118,7 +118,7 @@ const people = [
   {
     name: "Bhavyansh Jain",
     designation: "Executive Learning Advisor",
-    image: "/images/staff/bhavyansh-jain.png",
+    image: "/images/staff/bhavyansh.png",
   },
   {
     name: "Harshita Agarwal",
