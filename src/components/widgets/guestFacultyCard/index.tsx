@@ -33,6 +33,7 @@ const GuestFacultyCard: React.FC<GuestFacultyCardProps> = ({
             width={399}
             height={350}
             className="card-img-top"
+            unoptimized
             alt={name}
           />
         </picture>
