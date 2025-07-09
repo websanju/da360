@@ -5,10 +5,9 @@
   transition: all 0.3s ease;
   height: 100%;
   overflow: hidden;
-  min-height: 470px;
+  min-height:auto;
 
   img {
-    border-radius: 16px 16px 0 0;
     object-fit: cover;
     height: 234px;
     width: 100%;
@@ -27,19 +26,23 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      margin-bottom: 13px;
+      margin-bottom: 11px;
       padding: 0 10px;
     }
 
     .studentImg {
       padding: 0 10px;
       text-align: center;
-      margin-bottom: 26px;
+      margin-bottom: 11px;
+      min-height: 65px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
 
       img {
         height: auto;
         width: auto;
-        max-height: 80px;
+        max-height: 65px;
       }
     }
 

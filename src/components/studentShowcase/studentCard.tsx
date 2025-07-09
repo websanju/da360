@@ -7,7 +7,7 @@ type Student = {
   name: string;
   company: string;
   designation: string;
-  package: string;
+  package?: string; // ✅ make it optional
   image: string;
   background?: string;
   icon: string;
@@ -53,14 +53,20 @@ const StudentCard: React.FC<Props> = ({ student }) => {
               height={26}
               src={"/images/student-arrow.svg"}
               alt={"studentInfo"}
+              unoptimized
             />
           </div>
           <p className={styles.designation}>{student.designation}</p>
         </div>
-        <div className={styles.seprater}></div>
-        <div className={styles.package}>
-          Package: <span> {student.package}</span>
-        </div>
+
+        {student.package && (
+          <>
+            <div className={styles.seprater}></div>
+            <div className={styles.package}>
+              Package: <span>{student.package}</span>
+            </div>
+          </>
+        )}
       </div>
     </div>
   );
