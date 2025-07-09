@@ -350,7 +350,7 @@ const StudentShowcase = () => {
         <div className={styles.studentContainer}>
           <div className={`row ${styles.row}`}>
             {students.slice(0, visibleCount).map((student, i) => (
-              <div key={i} className="col-sm-6 col-md-4">
+              <div key={i} className="col-sm-6 col-md-4 col-6">
                 <StudentCard student={student} />
               </div>
             ))}

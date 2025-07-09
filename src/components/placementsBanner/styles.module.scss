@@ -95,3 +95,19 @@
         }
     }
 }
+
+@media (max-width: 991px) {
+    .hero {
+        .heroContentBox {
+            .content {
+                position: relative;
+                text-align: center;
+        
+                h1 {
+                    font-size: 40px;
+                    line-height: normal;
+                 }
+            }
+         }
+    }
+ }

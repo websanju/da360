@@ -40,3 +40,15 @@
     }
   }
 }
+
+@media (max-width: 991px) {
+  .showcaseSection {
+    padding: 60px 0;
+    .studentContainer {
+      .row {
+        --bs-gutter-x: 15px;
+        --bs-gutter-y: 15px;
+      }
+    }
+   }
+ }

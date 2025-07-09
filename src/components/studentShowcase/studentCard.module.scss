@@ -5,7 +5,7 @@
   transition: all 0.3s ease;
   height: 100%;
   overflow: hidden;
-  min-height:auto;
+  min-height: auto;
 
   img {
     object-fit: cover;
@@ -65,7 +65,7 @@
       }
 
       .designation {
-        max-width:max-content;
+        max-width: max-content;
         font-weight: 600;
         font-size: 16px;
         line-height: 100%;
@@ -79,6 +79,7 @@
         }
       }
     }
+
     .seprater {
       height: 1px;
       width: 100%;
@@ -87,6 +88,7 @@
       max-width: 332px;
       margin: 0 auto;
     }
+
     .package {
       color: #141414;
       font-weight: 400;
@@ -95,11 +97,23 @@
       letter-spacing: 0%;
       text-align: center;
       padding: 12px 0 19px;
+
       span {
         font-weight: 700;
         font-size: 16px;
         line-height: 120%;
         letter-spacing: 0%;
+        text-align: center;
+      }
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  .card {
+    .studentInfo {
+      flex-direction: column;
+      .designation {
         text-align: center;
       }
     }
