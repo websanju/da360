@@ -158,7 +158,7 @@ const people = [
     name: "Vishwajeet B",
     designation: "Senior Learning Advisor",
     image: "/images/staff/vishwajeet-b.png",
-    profileLink: "",
+    profileLink: "https://www.linkedin.com/in/vishwajeet-biradar-3b812624b",
   },
   {
     name: "Aishwarya Raj",
