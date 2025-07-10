@@ -26,15 +26,11 @@ import BottomNav from "@/components/bottomNav";
 import TrustedByLearners from "@/components/trustedByLearners";
 
 export const metadata = {
-  title: "#1 Top Ranked Digital Marketing Training Institute in Asia",
+  title: "Digital Marketing & AI Leadership Course | MBA Level Program",
   description:
-    "Join the #1 Top-Ranked AI Digital Marketing Training Institute in India, Asia. Approved by NSDC & Skill India. Learn AI Digital Marketing & Get Certified Today",
+    "Leadership in Digital Marketing, AI & Entrepreneurship To Master Digital Marketing Projects & Strategies In 12 Mo With Interview & Paid Internship",
   keywords: [
-    "Digital Academy 360",
-    "Digital Marketing Courses in India",
-    "Digital Marketing Training in India",
-    "Digital Marketing Institute in India",
-    "Learn Digital Marketing",
+    "Master Degree In Digital Marketing, Masters In Digital Marketing, Digital Marketing Masters Programs, Digital Marketing Master Course, Digital Marketing With AI Course",
   ],
   robots:
     "index, follow, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
@@ -42,9 +38,9 @@ export const metadata = {
     canonical: "https://digitalacademy360.com/",
   },
   openGraph: {
-    title: "#1 Top Ranked Digital Marketig Training Instiute in Asia",
+    title: "Digital Marketing & AI Leadership Course | MBA Level Program",
     description:
-      "Join the #1 Top-Ranked AI Digital Marketing Training Institute in India, Asia. Approved by NSDC & Skill India. Learn AI Digital Marketing & Get Certified Today",
+      "Leadership in Digital Marketing, AI & Entrepreneurship To Master Digital Marketing Projects & Strategies In 12 Mo With Interview & Paid Internship",
     url: "https://digitalacademy360.com/",
     siteName: "Digital Academy 360",
     locale: "en_US",
@@ -52,9 +48,9 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "#1 Top Ranked Digital Marketig Training Instiute in Asia",
+    title: "Digital Marketing & AI Leadership Course | MBA Level Program",
     description:
-      "Join the #1 Top-Ranked AI Digital Marketing Training Institute in India, Asia. Approved by NSDC & Skill India. Learn AI Digital Marketing & Get Certified Today",
+      "Leadership in Digital Marketing, AI & Entrepreneurship To Master Digital Marketing Projects & Strategies In 12 Mo With Interview & Paid Internship",
   },
 };
 
