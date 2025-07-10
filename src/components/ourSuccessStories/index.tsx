@@ -31,49 +31,76 @@ interface StoryHeader {
 
 const stories: Story[] = [
   {
-    name: "Akshita M",
-    companyLogo: "/images/jeet.png",
+    name: "Khushi Surana",
     companyName: "Jeet",
-    previousRole: "BSc Student",
-    newRole: "SEO Executive",
-    packageLPA: "6 LPA",
-    profileImage: "/images/akshita.png",
+    previousRole: "Advertising Ops Specialist",
+    packageLPA: "5 LPA",
+    profileImage: "/images/students/khushi-surana.png",
+    companyLogo: "/images/company/amazon.png",
+    newRole: "Modelling",
   },
   {
-    name: "Rahul Sharma",
-    companyLogo: "/images/jeet.png",
+    name: "Vishnu",
     companyName: "Jeet",
-    previousRole: "Fashion Model",
-    newRole: "Digital Marketing Executive",
+    previousRole: "AdWords Strategist",
     packageLPA: "6 LPA",
-    profileImage: "/images/rahul.png",
+    profileImage: "/images/students/vishnu.png",
+    companyLogo: "/images/company/google.png",
+    newRole: "Fresher",
   },
   {
-    name: "Rahul Sharma",
-    companyLogo: "/images/jeet.png",
-    companyName: "Jeet",
-    previousRole: "Fashion Model",
-    newRole: "Digital Marketing Executive",
-    packageLPA: "6 LPA",
-    profileImage: "/images/rahul.png",
-  },
-  {
-    name: "Rahul Sharma",
-    companyLogo: "/images/jeet.png",
-    companyName: "Jeet",
-    previousRole: "Fashion Model",
-    newRole: "Digital Marketing Executive",
-    packageLPA: "6 LPA",
-    profileImage: "/images/rahul.png",
-  },
-  {
-    name: "Sharmila",
-    companyLogo: "/images/value.png",
+    name: "Adarsh Gupta",
     companyName: "Valueleaf",
-    previousRole: "Fashion Model",
-    newRole: "Digital Marketing Executive",
-    packageLPA: "6 LPA",
-    profileImage: "/images/sharmila.png",
+    previousRole: "Digital Marketing Executive",
+    packageLPA: "4.2 LPA",
+    profileImage: "/images/students/adarsh-gupta.png",
+    companyLogo: "/images/company/tula.png",
+    newRole: "Fresher",
+  },
+  {
+    name: "Pooja . M",
+    companyName: "Jeet",
+    previousRole: "Digital Marketing Analyst",
+    packageLPA: "4.7 LPA",
+    profileImage: "/images/students/pooja-m.png",
+    companyLogo: "/images/company/anteriad.png",
+    newRole: "Fresher",
+  },
+  {
+    name: "Amala Sharika",
+    companyName: "Jeet",
+    previousRole: "Senior Executive Marketing",
+    packageLPA: "4 LPA",
+    profileImage: "/images/students/amala-sharika.png",
+    companyLogo: "/images/company/vg.png",
+    newRole: "Fresher",
+  },
+  {
+    name: "Megha Lodha",
+    companyName: "Valueleaf",
+    previousRole: "Campaign Specialist",
+    packageLPA: "3.28 LPA",
+    profileImage: "/images/students/megha-lodha.png",
+    companyLogo: "/images/company/eat-repeat.png",
+    newRole: "Fresher",
+  },
+  {
+    name: "Krithik Kumar",
+    companyName: "Jeet",
+    previousRole: "Digital Marketing Executive",
+    packageLPA: "3 LPA",
+    profileImage: "/images/students/krithik-kumar.png",
+    companyLogo: "/images/company/masscoders.png",
+    newRole: "Fresher",
+  },
+  {
+    name: "Sanjay H R",
+    companyName: "Jeet",
+    previousRole: "SEO Analyst",
+    packageLPA: "5.2 LPA",
+    profileImage: "/images/students/sanjay-hr.png",
+    companyLogo: "/images/company/rollingrock.png",
+    newRole: "Fresher",
   },
 ];
 
@@ -104,6 +131,7 @@ const SuccessStories: React.FC<StoryHeader> = ({
                       alt="user"
                       width={50}
                       height={50}
+                      unoptimized
                     />
                     {i === 4 && (
                       <div className={styles.userItemNumber}>
@@ -149,6 +177,7 @@ const SuccessStories: React.FC<StoryHeader> = ({
                         alt={story.name}
                         width={370}
                         height={234}
+                        unoptimized
                       />
                     </div>
                     <div className={styles.studentInfo}>
@@ -159,11 +188,12 @@ const SuccessStories: React.FC<StoryHeader> = ({
                           alt={story.companyName}
                           width={120}
                           height={35}
+                          unoptimized
                         />
                       </div>
                       <div className={styles.jobRole}>
                         <span className={styles.previousRole}>
-                          {story.previousRole}
+                          {story.newRole}
                         </span>
                         <span className={styles.iconRole}>
                           <Image
@@ -173,7 +203,9 @@ const SuccessStories: React.FC<StoryHeader> = ({
                             height={12}
                           />
                         </span>
-                        <span className={styles.newRole}>{story.newRole}</span>
+                        <span className={styles.newRole}>
+                          {story.previousRole}
+                        </span>
                       </div>
                     </div>
                     <div className={styles.packageLPA}>

@@ -106,7 +106,13 @@
     }
 
     .companyLogo {
-      margin-bottom: 21px;
+      padding: 0 10px;
+    text-align: center;
+    margin-bottom: 11px;
+    min-height: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
      
     }
 
@@ -150,8 +156,9 @@
 
   .companyLogo {
     img {
-      width: max-content;
       height: auto;
+      width: auto;
+      max-height: 65px;
     }
   }
 }
@@ -237,12 +244,12 @@
       }
 
       .companyLogo {
-        margin-bottom: 16px;
+        margin-bottom: 11px;
       }
 
       .jobRole {
         gap: 12px;
-
+        flex-direction: column;
         .iconRole {
           width: 26px;
           height: 26px;
