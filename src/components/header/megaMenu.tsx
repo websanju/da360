@@ -263,7 +263,9 @@ export default function Header() {
           </div>
         )}
         {activeTab === 2 && (
-          <div className={styles.dropdownColumnGroup}>
+          <div
+            className={`${styles.dropdownColumnGroup} ${styles.leadershipColumnGroup}`}
+          >
             <div
               onClick={handleClickMasterDigital}
               className={`${styles.navbarDropdownColumn}`}
