@@ -77,19 +77,19 @@ export default function Header() {
               <div className={styles.navbarDropdownList}>
                 <ul>
                   <li>
-                    <Link href={"#"}> Masters Level Certification</Link>
+                    <Link href={"#"}> Advance Specialist Certification</Link>
                   </li>
                   <li>
-                    <Link href={"#"}> 10 Advanced Specialisations</Link>
+                    <Link href={"#"}> 80+ Hours of Learning</Link>
                   </li>
                   <li>
-                    <Link href={"#"}> 30 Courses in 1 Program</Link>
+                    <Link href={"#"}> 8+ Case Studies</Link>
                   </li>
                   <li>
-                    <Link href={"#"}>15+ Projects & Case Studies</Link>
+                    <Link href={"#"}>10+ Tools</Link>
                   </li>
                   <li>
-                    <Link href={"#"}>22+ Certifications</Link>
+                    <Link href={"#"}>2 AI Flows</Link>
                   </li>
                 </ul>
               </div>
@@ -110,19 +110,19 @@ export default function Header() {
               <div className={styles.navbarDropdownList}>
                 <ul>
                   <li>
-                    <Link href={"#"}> Masters Level Certification</Link>
+                    <Link href={"#"}>Advance Specialist Certification</Link>
                   </li>
                   <li>
-                    <Link href={"#"}> 10 Advanced Specialisations</Link>
+                    <Link href={"#"}>80+ Hours of Learning</Link>
                   </li>
                   <li>
-                    <Link href={"#"}> 30 Courses in 1 Program</Link>
+                    <Link href={"#"}>8+ Case Studies</Link>
                   </li>
                   <li>
-                    <Link href={"#"}>15+ Projects & Case Studies</Link>
+                    <Link href={"#"}>5+ Specialised Tools</Link>
                   </li>
                   <li>
-                    <Link href={"#"}>22+ Certifications</Link>
+                    <Link href={"#"}>2 Creator Flow</Link>
                   </li>
                 </ul>
               </div>
@@ -142,19 +142,19 @@ export default function Header() {
               <div className={styles.navbarDropdownList}>
                 <ul>
                   <li>
-                    <Link href={"#"}> Masters Level Certification</Link>
+                    <Link href={"#"}> Advance Specialist Certification</Link>
                   </li>
                   <li>
-                    <Link href={"#"}> 10 Advanced Specialisations</Link>
+                    <Link href={"#"}>80+ Hours of Learning</Link>
                   </li>
                   <li>
-                    <Link href={"#"}> 30 Courses in 1 Program</Link>
+                    <Link href={"#"}>8+ Case Studies</Link>
                   </li>
                   <li>
-                    <Link href={"#"}>15+ Projects & Case Studies</Link>
+                    <Link href={"#"}>10+ Tools</Link>
                   </li>
                   <li>
-                    <Link href={"#"}>22+ Certifications</Link>
+                    <Link href={"#"}>2 Linkedin Outreach Flow</Link>
                   </li>
                 </ul>
               </div>
@@ -167,30 +167,30 @@ export default function Header() {
               onClick={handleClickMasterDigital}
               className={`${styles.navbarDropdownColumn}`}
             >
-              <h4>MarTech / Video</h4>
+              <h4>PGCP in Digital Marketing, E‑Comm & AI</h4>
               <span className={styles.navbarTitle}>
-                AI Vibe Marketing Certification Course
+                PGCP in Digital Marketing, E‑Comm & AI
               </span>
               <div className={styles.navbarTags}>
-                <span className={styles.dropdownTag}>2 Months</span>
-                <span className={styles.dropdownTag}>Online</span>
+                <span className={styles.dropdownTag}>6 Months</span>
+                <span className={styles.dropdownTag}>Online / Classroom</span>
               </div>
               <div className={styles.navbarDropdownList}>
                 <ul>
                   <li>
-                    <Link href={"#"}> Masters Level Certification</Link>
+                    <Link href={"#"}> PG Level Certification</Link>
                   </li>
                   <li>
-                    <Link href={"#"}> 10 Advanced Specialisations</Link>
+                    <Link href={"#"}>240+ Hours of Learning</Link>
                   </li>
                   <li>
-                    <Link href={"#"}> 30 Courses in 1 Program</Link>
+                    <Link href={"#"}>20+ Case Studies</Link>
                   </li>
                   <li>
-                    <Link href={"#"}>15+ Projects & Case Studies</Link>
+                    <Link href={"#"}>30+ Tools</Link>
                   </li>
                   <li>
-                    <Link href={"#"}>22+ Certifications</Link>
+                    <Link href={"#"}>15+ Certifications</Link>
                   </li>
                 </ul>
               </div>
@@ -200,30 +200,30 @@ export default function Header() {
               onClick={handleClickOline}
               className={`${styles.navbarDropdownColumn}`}
             >
-              <h4>Marketing</h4>
+              <h4>PGCP in Social Media & Influencer Marketing</h4>
               <span className={styles.navbarTitle}>
-                Youtube & Instagram Influencer Certification Course
+                PGCP in Social Media & Influencer Marketing
               </span>
               <div className={styles.navbarTags}>
-                <span className={styles.dropdownTag}>2 Months</span>
+                <span className={styles.dropdownTag}>6 Months</span>
                 <span className={styles.dropdownTag}>Online</span>
               </div>
               <div className={styles.navbarDropdownList}>
                 <ul>
                   <li>
-                    <Link href={"#"}> Masters Level Certification</Link>
+                    <Link href={"#"}>PG Level Certification</Link>
                   </li>
                   <li>
-                    <Link href={"#"}> 10 Advanced Specialisations</Link>
+                    <Link href={"#"}>240+ Hours of Learning</Link>
                   </li>
                   <li>
-                    <Link href={"#"}> 30 Courses in 1 Program</Link>
+                    <Link href={"#"}>20+ Case Studies</Link>
                   </li>
                   <li>
-                    <Link href={"#"}>15+ Projects & Case Studies</Link>
+                    <Link href={"#"}>18+ Specialised Tools</Link>
                   </li>
                   <li>
-                    <Link href={"#"}>22+ Certifications</Link>
+                    <Link href={"#"}>15+ Certifications</Link>
                   </li>
                 </ul>
               </div>
@@ -232,30 +232,30 @@ export default function Header() {
               onClick={handleClickDigitalMarketing}
               className={`${styles.navbarDropdownColumn}`}
             >
-              <h4>Bootcamp</h4>
+              <h4>PGCP in Performance Marketing & Media Buying</h4>
               <span className={styles.navbarTitle}>
-                LinkedIn & Personal Branding Certification Course
+                PGCP in Performance Marketing & Media Buying
               </span>
               <div className={styles.navbarTags}>
-                <span className={styles.dropdownTag}>2 Months</span>
+                <span className={styles.dropdownTag}>6 Months</span>
                 <span className={styles.dropdownTag}>Online</span>
               </div>
               <div className={styles.navbarDropdownList}>
                 <ul>
                   <li>
-                    <Link href={"#"}> Masters Level Certification</Link>
+                    <Link href={"#"}>PG Level Certification</Link>
                   </li>
                   <li>
-                    <Link href={"#"}> 10 Advanced Specialisations</Link>
+                    <Link href={"#"}>240+ Hours of Learning</Link>
                   </li>
                   <li>
-                    <Link href={"#"}> 30 Courses in 1 Program</Link>
+                    <Link href={"#"}>20+ Case Studies</Link>
                   </li>
                   <li>
-                    <Link href={"#"}>15+ Projects & Case Studies</Link>
+                    <Link href={"#"}>20+ Specialised Tools</Link>
                   </li>
                   <li>
-                    <Link href={"#"}>22+ Certifications</Link>
+                    <Link href={"#"}>15+ Certifications</Link>
                   </li>
                 </ul>
               </div>
@@ -268,30 +268,30 @@ export default function Header() {
               onClick={handleClickMasterDigital}
               className={`${styles.navbarDropdownColumn}`}
             >
-              <h4>AI Marketing / MarTech / Video</h4>
+              <h4>Leadership in Digital Marketing, AI & Entrepreneurship</h4>
               <span className={styles.navbarTitle}>
-                AI Vibe Marketing Certification Course
+                Leadership in Digital Marketing, AI & Entrepreneurship
               </span>
               <div className={styles.navbarTags}>
-                <span className={styles.dropdownTag}>2 Months</span>
-                <span className={styles.dropdownTag}>Online</span>
+                <span className={styles.dropdownTag}>12 Months</span>
+                {/* <span className={styles.dropdownTag}>Online</span> */}
               </div>
               <div className={styles.navbarDropdownList}>
                 <ul>
                   <li>
-                    <Link href={"#"}> Masters Level Certification</Link>
+                    <Link href={"#"}>3 Months Internship Included</Link>
                   </li>
                   <li>
-                    <Link href={"#"}> 10 Advanced Specialisations</Link>
+                    <Link href={"#"}>1920+ Hours of Learning</Link>
                   </li>
                   <li>
-                    <Link href={"#"}> 30 Courses in 1 Program</Link>
+                    <Link href={"#"}>50+ Case Studies</Link>
                   </li>
                   <li>
-                    <Link href={"#"}>15+ Projects & Case Studies</Link>
+                    <Link href={"#"}>70+ Tools</Link>
                   </li>
                   <li>
-                    <Link href={"#"}>22+ Certifications</Link>
+                    <Link href={"#"}>25+ Certifications</Link>
                   </li>
                 </ul>
               </div>
@@ -301,35 +301,35 @@ export default function Header() {
               onClick={handleClickOline}
               className={`${styles.navbarDropdownColumn}`}
             >
-              <h4>Influencer Marketing</h4>
+              <h4>Leadership in Social Content Creator & Video Production</h4>
               <span className={styles.navbarTitle}>
-                Youtube & Instagram Influencer Certification Course
+                Leadership in Social Content Creator & Video Production
               </span>
               <div className={styles.navbarTags}>
-                <span className={styles.dropdownTag}>2 Months</span>
-                <span className={styles.dropdownTag}>Online</span>
+                <span className={styles.dropdownTag}>12 Months</span>
+                {/* <span className={styles.dropdownTag}>Online</span> */}
               </div>
               <div className={styles.navbarDropdownList}>
                 <ul>
                   <li>
-                    <Link href={"#"}> Masters Level Certification</Link>
+                    <Link href={"#"}>3 Months Internship Included</Link>
                   </li>
                   <li>
-                    <Link href={"#"}> 10 Advanced Specialisations</Link>
+                    <Link href={"#"}>1920+ Hours of Learning</Link>
                   </li>
                   <li>
-                    <Link href={"#"}> 30 Courses in 1 Program</Link>
+                    <Link href={"#"}>50+ Case Studies</Link>
                   </li>
                   <li>
-                    <Link href={"#"}>15+ Projects & Case Studies</Link>
+                    <Link href={"#"}>55+ Specialised Tools</Link>
                   </li>
                   <li>
-                    <Link href={"#"}>22+ Certifications</Link>
+                    <Link href={"#"}>20+ Certifications</Link>
                   </li>
                 </ul>
               </div>
             </div>
-            <div
+            {/* <div
               onClick={handleClickDigitalMarketing}
               className={`${styles.navbarDropdownColumn}`}
             >
@@ -360,7 +360,7 @@ export default function Header() {
                   </li>
                 </ul>
               </div>
-            </div>
+            </div> */}
           </div>
         )}
       </div>
