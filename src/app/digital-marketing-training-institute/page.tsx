@@ -26,15 +26,11 @@ import digitalNarketingTrainingInstitute from "@/data/digitalNarketingTrainingIn
 import { Cohort } from "@/components/cohortDetails";
 
 export const metadata = {
-  title: "#1 Top Ranked Digital Marketing Training Institute in Asia",
+  title: "Best Digital Marketing Training Institute Online & Classroom",
   description:
-    "Join the #1 Top-Ranked AI Digital Marketing Training Institute in India, Asia. Approved by NSDC & Skill India. Learn AI Digital Marketing & Get Certified Today",
+    "Enroll In Job-Oriented Diploma Certification In Digital Marketing Training With Project & Interview Assistance From Best Online Digital Marketing Institute",
   keywords: [
-    "Digital Academy 360",
-    "Digital Marketing Courses in India",
-    "Digital Marketing Training in India",
-    "Digital Marketing Institute in India",
-    "Learn Digital Marketing",
+    "Digital Marketing Institute, Institute of Digital Marketing, Digital Marketing Training, Digital Marketing Training Institute, Best Online Digital Marketing Training",
   ],
   robots:
     "index, follow, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
@@ -42,9 +38,9 @@ export const metadata = {
     canonical: "https://digitalacademy360.com/",
   },
   openGraph: {
-    title: "#1 Top Ranked Digital Marketig Training Instiute in Asia",
+    title: "Best Digital Marketing Training Institute Online & Classroom",
     description:
-      "Join the #1 Top-Ranked AI Digital Marketing Training Institute in India, Asia. Approved by NSDC & Skill India. Learn AI Digital Marketing & Get Certified Today",
+      "Enroll In Job-Oriented Diploma Certification In Digital Marketing Training With Project & Interview Assistance From Best Online Digital Marketing Institute",
     url: "https://digitalacademy360.com/",
     siteName: "Digital Academy 360",
     locale: "en_US",
@@ -52,9 +48,9 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "#1 Top Ranked Digital Marketig Training Instiute in Asia",
+    title: "Best Digital Marketing Training Institute Online & Classroom",
     description:
-      "Join the #1 Top-Ranked AI Digital Marketing Training Institute in India, Asia. Approved by NSDC & Skill India. Learn AI Digital Marketing & Get Certified Today",
+      "Enroll In Job-Oriented Diploma Certification In Digital Marketing Training With Project & Interview Assistance From Best Online Digital Marketing Institute",
   },
 };
 
