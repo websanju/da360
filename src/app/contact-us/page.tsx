@@ -22,7 +22,7 @@ export const metadata = {
     title: "Help & Support Details Of Digital Academy 360 | Contact Us",
     description:
       "Toll Free Number To Get In Touch With Digital Academy 360 Dedicated Team For Enquiry, Admission, Help Or Support. You Are Just A Click Away. Contact Us Now!",
-    url: "https://digitalacademy360.com/contact-uss",
+    url: "https://digitalacademy360.com/contact-us",
     siteName: "Digital Academy 360",
     locale: "en_US",
     type: "website",
