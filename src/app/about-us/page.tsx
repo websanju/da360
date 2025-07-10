@@ -11,6 +11,35 @@ import CareerWidget from "@components/widgets/careerWidget";
 import VisionMissionStats from "@components/visionMissionStats";
 import styles from "./style.module.scss";
 
+export const metadata = {
+  title: "Digital Academy 360 | Industry Leaders Since 2015",
+  description:
+    "Digital Academy 360 Pvt Ltd is India's Largest Digital Learning Center Located in Bangalore, India. Enroll today for certification and career growth",
+  keywords: [
+    "About Digital Academy 360, Digital Academy 360 Pvt Ltd, DA360, Digital Academy 360 Structure",
+  ],
+  robots:
+    "index, follow, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
+  alternates: {
+    canonical: "https://digitalacademy360.com/about-us",
+  },
+  openGraph: {
+    title: "Digital Academy 360 | Industry Leaders Since 2015",
+    description:
+      "Digital Academy 360 Pvt Ltd is India's Largest Digital Learning Center Located in Bangalore, India. Enroll today for certification and career growth",
+    url: "https://digitalacademy360.com/about-us",
+    siteName: "Digital Academy 360",
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Digital Academy 360 | Industry Leaders Since 2015",
+    description:
+      "Digital Academy 360 Pvt Ltd is India's Largest Digital Learning Center Located in Bangalore, India. Enroll today for certification and career growth",
+  },
+};
+
 export default function About() {
   return (
     <main>

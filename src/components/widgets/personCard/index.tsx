@@ -29,6 +29,7 @@ const PersonCard: React.FC<PersonCardProps> = ({
         <Link
           href={profileLink}
           className={styles.button}
+          target="_blank"
           aria-label={`View ${name}'s LinkedIn`}
         >
           <Image
