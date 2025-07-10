@@ -26,35 +26,31 @@ import { Cohort } from "@/components/cohortDetails";
 import TrustedByLearners from "@/components/trustedByLearners";
 
 export const metadata = {
-  title: "#1 Top Ranked Digital Marketing Training Institute in Asia",
+  title: "Digital Marketing PG Program | Ranked #1 Academy & Class",
   description:
-    "Join the #1 Top-Ranked AI Digital Marketing Training Institute in India, Asia. Approved by NSDC & Skill India. Learn AI Digital Marketing & Get Certified Today",
+    "Elevate your skills at #1 Digital Marketing Academy. Our PG Digital Marketing program offers live coaching, internships, and placement support",
   keywords: [
-    "Digital Academy 360",
-    "Digital Marketing Courses in India",
-    "Digital Marketing Training in India",
-    "Digital Marketing Institute in India",
-    "Learn Digital Marketing",
+    "PG Digital Marketing, Digital Marketing Programs, Digital Marketing Academy, Digital Marketing Coaching, Digital Marketing Class, Digital Marketing Degree",
   ],
   robots:
     "index, follow, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
   alternates: {
-    canonical: "https://digitalacademy360.com/",
+    canonical: "https://digitalacademy360.com/online-digital-marketing-courses",
   },
   openGraph: {
-    title: "#1 Top Ranked Digital Marketig Training Instiute in Asia",
+    title: "Digital Marketing PG Program | Ranked #1 Academy & Class",
     description:
-      "Join the #1 Top-Ranked AI Digital Marketing Training Institute in India, Asia. Approved by NSDC & Skill India. Learn AI Digital Marketing & Get Certified Today",
-    url: "https://digitalacademy360.com/",
+      "Elevate your skills at #1 Digital Marketing Academy. Our PG Digital Marketing program offers live coaching, internships, and placement support",
+    url: "https://digitalacademy360.com/online-digital-marketing-courses",
     siteName: "Digital Academy 360",
     locale: "en_US",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "#1 Top Ranked Digital Marketig Training Instiute in Asia",
+    title: "Digital Marketing PG Program | Ranked #1 Academy & Class",
     description:
-      "Join the #1 Top-Ranked AI Digital Marketing Training Institute in India, Asia. Approved by NSDC & Skill India. Learn AI Digital Marketing & Get Certified Today",
+      "Elevate your skills at #1 Digital Marketing Academy. Our PG Digital Marketing program offers live coaching, internships, and placement support",
   },
 };
 
