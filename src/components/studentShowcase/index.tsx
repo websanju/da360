@@ -178,7 +178,7 @@ const students = [
     designation: "Social Media Manager",
     package: ":  4.8 LPA",
     image: "/images/students/sahil-ganju.png",
-    icon: "/images/company/ki.png",
+    icon: "/images/company/entellus.png",
     standard: "Fresher",
   },
   {
@@ -187,7 +187,7 @@ const students = [
     designation: "Digital Strategist",
     package: ":  4.23 LPA",
     image: "/images/students/rakesh.png",
-    icon: "/images/company/ki.png",
+    icon: "/images/company/valuele.png",
     standard: "Fresher",
   },
   {
@@ -196,7 +196,7 @@ const students = [
     designation: "Brand Marketing Associate",
     package: ":  3.6 LPA",
     image: "/images/students/gagana-hs.png",
-    icon: "/images/company/ki.png",
+    icon: "/images/company/seller-circle.png",
     standard: "Fresher",
   },
   {

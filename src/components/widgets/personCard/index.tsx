@@ -1,17 +1,20 @@
 import React from "react";
 import styles from "./style.module.scss";
 import Image from "next/image";
+import Link from "next/link";
 
 type PersonCardProps = {
   name: string;
   image: string;
   designation: string;
+  profileLink: string;
 };
 
 const PersonCard: React.FC<PersonCardProps> = ({
   name,
   image,
   designation,
+  profileLink,
 }) => {
   return (
     <div className={styles.card}>
@@ -23,14 +26,18 @@ const PersonCard: React.FC<PersonCardProps> = ({
           <span>{name}</span>
           <p>{designation}</p>
         </div>
-        <button className={styles.button} aria-label="View Profile">
+        <Link
+          href={profileLink}
+          className={styles.button}
+          aria-label={`View ${name}'s LinkedIn`}
+        >
           <Image
             src="images/icons/devicon_linkedin.svg"
             alt={name}
             width={32}
             height={32}
           />
-        </button>
+        </Link>
       </div>
     </div>
   );
