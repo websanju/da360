@@ -10,13 +10,14 @@ import styles from "./style.module.scss";
 import { auto } from "@popperjs/core";
 import LeftArrow from "@components/Ui/svg/leftArrow";
 import RightArrow from "@components/Ui/svg/rightArrowLine";
+import Link from "next/link";
 
 interface Member {
   name: string;
   role: string;
   experience: string;
   img: string;
-  companyLogo?: string | null;
+  linkedinLink?: string | null;
   design?: string; // new field
   icon?: string; // new field
   iconPosition?: string;
@@ -163,16 +164,19 @@ const TeamSlider = ({ members }: TeamSliderProps) => {
                   <div className={styles.cardContent}>
                     <div className={styles.memberContent}>
                       <h5>{member.name}</h5>
-                      {member.companyLogo && (
-                        <div className={styles.companyLogo}>
+                      {member.linkedinLink && (
+                        <Link
+                          href={member.linkedinLink}
+                          className={styles.companyLogo}
+                        >
                           <Image
-                            src={member.companyLogo}
+                            src={"/images/devicon_linkedin.svg"}
                             alt="Company Logo"
                             width={80}
                             height={40}
                             className="img-fluid"
                           />
-                        </div>
+                        </Link>
                       )}
                     </div>
                     <div className={styles.memberInfo}>
