@@ -10,7 +10,7 @@ const dataItem = [
     name: `Deepak Soni`,
     title: "Digital Marketing Trainer",
     experience: "12+ years Experience",
-    logo: "/images/jeet.png",
+    linkedinLink: "/images/jeet.png",
     bgColor: "bgPink",
     image: {
       desktop: "/images/akshita.png",
@@ -21,7 +21,7 @@ const dataItem = [
     name: `Deepak Soni`,
     title: "Digital Marketing Trainer",
     experience: "5+ years Experience",
-    logo: "/images/zer.png",
+    linkedinLink: "/images/zer.png",
     bgColor: "bgBlue",
     image: {
       desktop: "/images/rahul.png",
@@ -32,7 +32,7 @@ const dataItem = [
     name: `Deepak Soni`,
     title: "Digital Marketing Trainer",
     experience: "5+ years Experience",
-    logo: "/images/value.png",
+    linkedinLink: "/images/value.png",
     bgColor: "bgGreen",
     image: {
       desktop: "/images/sharmila.png",
@@ -43,7 +43,7 @@ const dataItem = [
     name: `Deepak Soni`,
     title: "Digital Marketing Trainer",
     experience: "5+ years Experience",
-    logo: "/images/jeet.png",
+    linkedinLink: "/images/jeet.png",
     bgColor: "bgPink",
     image: {
       desktop: "/images/akshita.png",
@@ -54,7 +54,7 @@ const dataItem = [
     name: `Deepak Soni`,
     title: "Digital Marketing Trainer",
     experience: "5+ years Experience",
-    logo: "/images/zer.png",
+    linkedinLink: "/images/zer.png",
     bgColor: "bgBlue",
     image: {
       desktop: "/images/rahul.png",
@@ -65,7 +65,7 @@ const dataItem = [
     name: `Deepak Soni`,
     title: "Digital Marketing Trainer",
     experience: "5+ years Experience",
-    logo: "/images/value.png",
+    linkedinLink: "/images/value.png",
     bgColor: "bgGreen",
     image: {
       desktop: "/images/sharmila.png",
@@ -78,7 +78,7 @@ const data = [
     name: `Deepak <br/> Soni`,
     title: "Digital Marketing Trainer",
     experience: "12+ years Experience",
-    logo: "/images/devicon_linkedin.svg",
+    linkedinLink: "/images/devicon_linkedin.svg",
     bgColor: "bgPink",
     image: {
       desktop: "/images/trainers/deepak.png",
@@ -89,7 +89,7 @@ const data = [
     name: `Madhuraj P`,
     title: "Digital Marketing Trainer",
     experience: "8+ years Experience",
-    logo: "/images/devicon_linkedin.svg",
+    linkedinLink: "/images/devicon_linkedin.svg",
     bgColor: "bgBlue",
     image: {
       desktop: "/images/trainers/madhu.png",
@@ -100,7 +100,7 @@ const data = [
     name: `Sathiyaseelan S`,
     title: "Digital Marketing Trainer",
     experience: "3+ years Experience",
-    logo: "/images/devicon_linkedin.svg",
+    linkedinLink: "/images/devicon_linkedin.svg",
     bgColor: "bgGreen",
     image: {
       desktop: "/images/trainers/sathya.png",
@@ -111,7 +111,7 @@ const data = [
     name: `Monisha <br/>Jain S S`,
     title: "Digital Marketing Trainer",
     experience: "3+ years Experience",
-    logo: "/images/devicon_linkedin.svg",
+    linkedinLink: "/images/devicon_linkedin.svg",
     bgColor: "bgGreen",
     image: {
       desktop: "/images/trainers/monisha.png",
@@ -122,7 +122,7 @@ const data = [
     name: `Anush <br/> Raj K`,
     title: "Digital Marketing Trainer",
     experience: "5+ years Experience",
-    logo: "/images/devicon_linkedin.svg",
+    linkedinLink: "/images/devicon_linkedin.svg",
     bgColor: "bgGreen",
     image: {
       desktop: "/images/trainers/anush.png",
@@ -133,7 +133,7 @@ const data = [
     name: `Swanand <br/> Patwardhan`,
     title: "Digital Marketing Trainer",
     experience: "8+ years Experience",
-    logo: "/images/devicon_linkedin.svg",
+    linkedinLink: "/images/devicon_linkedin.svg",
     bgColor: "bgGreen",
     image: {
       desktop: "/images/trainers/swanand.png",
@@ -144,7 +144,7 @@ const data = [
     name: `Sujeeth H D`,
     title: "Digital Marketing Trainer",
     experience: "5+ years Experience",
-    logo: "/images/devicon_linkedin.svg",
+    linkedinLink: "/images/devicon_linkedin.svg",
     bgColor: "bgGreen",
     image: {
       desktop: "/images/trainers/sujeeth.png",

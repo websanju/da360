@@ -2,12 +2,13 @@ import React from "react";
 import styles from "./styles.module.scss";
 
 import Image from "next/image";
+import Link from "next/link";
 
 interface GuestFacultyCardProps {
   name: string;
   title: string;
   experience: string;
-  logo: string;
+  linkedinLink: string;
   bgColor: string;
   image: {
     mobile: string;
@@ -19,7 +20,7 @@ const GuestFacultyCard: React.FC<GuestFacultyCardProps> = ({
   name,
   title,
   experience,
-  logo,
+  linkedinLink,
   bgColor,
   image,
 }) => {
@@ -41,15 +42,15 @@ const GuestFacultyCard: React.FC<GuestFacultyCardProps> = ({
       <div className={`${styles.cardBody} cardBody`}>
         <div className={styles.facultyName}>
           <h5 dangerouslySetInnerHTML={{ __html: name }} />
-          <span>
+          <Link href={linkedinLink}>
             <Image
               width={100}
               height={100}
-              src={logo}
+              src={"/images/devicon_linkedin.svg"}
               alt="Logo"
               className={styles.logo}
             />
-          </span>
+          </Link>
         </div>
         <div className={styles.facultyInfo}>
           <div className={styles.title}>{title}</div>
