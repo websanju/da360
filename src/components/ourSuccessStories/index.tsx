@@ -12,7 +12,6 @@ import ArrowUp from "@/components/Ui/svg/arrowUp";
 import LeftArrow from "@components/Ui/svg/leftArrow";
 import RightArrow from "@components/Ui/svg/rightArrowLine";
 import SectionHeader from "@components/widgets/sectionHeader";
-// import { header } from "framer-motion/client";
 
 interface Story {
   name: string;
@@ -103,12 +102,16 @@ const stories: Story[] = [
     newRole: "Fresher",
   },
 ];
+type StoryCard = Story | { type: "final" };
+
+// Add this line before return():
 
 const SuccessStories: React.FC<StoryHeader> = ({
   headerTitle,
   description,
   section,
 }) => {
+  const storySlides: StoryCard[] = [...stories, { type: "final" }];
   return (
     <section className={styles.successSection} id={section}>
       <div className="container">
@@ -143,13 +146,8 @@ const SuccessStories: React.FC<StoryHeader> = ({
               )}
             </div>
           </div>
-          <div className={styles.sliderWrapper}>
-            {/* <div className={styles.sliderNavigation}>
-              <button className="swiper-button-prev" id="customPrev7"></button>
-              <button className="swiper-button-next" id="customNext7"></button>
-            </div> */}
 
-            {/* Swiper Here */}
+          <div className={styles.sliderWrapper}>
             <Swiper
               modules={[Navigation, Scrollbar]}
               scrollbar={{ draggable: true, el: "#customScrollbar3" }}
@@ -167,58 +165,81 @@ const SuccessStories: React.FC<StoryHeader> = ({
                 992: { slidesPerView: 3.3 },
               }}
             >
-              {stories.map((story, index) => (
-                <SwiperSlide key={index}>
-                  <div className={`${styles.storyCard} h-100`}>
-                    <div className={styles.studentPic}>
-                      <Image
-                        src={story.profileImage}
-                        className={`${styles.mainProfile} mb-3`}
-                        alt={story.name}
-                        width={370}
-                        height={234}
-                        unoptimized
-                      />
-                    </div>
-                    <div className={styles.studentInfo}>
-                      <h5>{story.name}</h5>
-                      <div className={styles.companyLogo}>
+              {storySlides.map((story, index) => {
+                if ("type" in story && story.type === "final") {
+                  return (
+                    <SwiperSlide key="final-card">
+                      <div
+                        className={`${styles.storyCard} ${styles.finalCard}`}
+                      >
+                        <p className="mb-3">
+                          Want to see more inspiring stories?
+                        </p>
+                        <Link
+                          href="/placements"
+                          className={`${styles.downloadBtn} btn-white rounded-pill`}
+                        >
+                          View All Success Stories <ArrowUp />
+                        </Link>
+                      </div>
+                    </SwiperSlide>
+                  );
+                }
+
+                const student = story as Story;
+
+                return (
+                  <SwiperSlide key={index}>
+                    <div className={`${styles.storyCard} h-100`}>
+                      <div className={styles.studentPic}>
                         <Image
-                          src={story.companyLogo}
-                          alt={story.companyName}
-                          width={120}
-                          height={35}
+                          src={student.profileImage}
+                          className={`${styles.mainProfile} mb-3`}
+                          alt={student.name}
+                          width={370}
+                          height={234}
                           unoptimized
                         />
                       </div>
-                      <div className={styles.jobRole}>
-                        <span className={styles.previousRole}>
-                          {story.newRole}
-                        </span>
-                        <span className={styles.iconRole}>
+                      <div className={styles.studentInfo}>
+                        <h5>{student.name}</h5>
+                        <div className={styles.companyLogo}>
                           <Image
-                            src="/images/icons/leftArrow.svg"
-                            alt="arrow"
-                            width={10}
-                            height={12}
+                            src={student.companyLogo}
+                            alt={student.companyName}
+                            width={120}
+                            height={35}
+                            unoptimized
                           />
-                        </span>
-                        <span className={styles.newRole}>
-                          {story.previousRole}
-                        </span>
+                        </div>
+                        <div className={styles.jobRole}>
+                          <span className={styles.previousRole}>
+                            {student.newRole}
+                          </span>
+                          <span className={styles.iconRole}>
+                            <Image
+                              src="/images/icons/leftArrow.svg"
+                              alt="arrow"
+                              width={10}
+                              height={12}
+                            />
+                          </span>
+                          <span className={styles.newRole}>
+                            {student.previousRole}
+                          </span>
+                        </div>
+                      </div>
+                      <div className={styles.packageLPA}>
+                        Package: <span>{student.packageLPA}</span>
                       </div>
                     </div>
-                    <div className={styles.packageLPA}>
-                      Package: <span>{story.packageLPA}</span>
-                    </div>
-                  </div>
-                </SwiperSlide>
-              ))}
+                  </SwiperSlide>
+                );
+              })}
             </Swiper>
 
             <div className={`${styles.controls} controls`}>
               <button id="customPrev7" className={`prevBtn ${styles.navBtn}`}>
-                {" "}
                 <RightArrow width={16} height={16} color="#000" />
               </button>
               <div
@@ -226,13 +247,11 @@ const SuccessStories: React.FC<StoryHeader> = ({
                 className={`${styles.scrollbar} customScrollbar swiper-scrollbar drag-white`}
               ></div>
               <button id="customNext7" className={`nextBtn ${styles.navBtn}`}>
-                {" "}
                 <LeftArrow width={16} height={16} color="#000" />
               </button>
             </div>
           </div>
-          {/* Custom scrollbar */}
-          {/* <div id="customScrollbar3" className="swiper-scrollbar"></div> */}
+
           <div className={styles.downloadBtnAction}>
             <Link
               href="#"
