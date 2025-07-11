@@ -58,36 +58,36 @@ const CounterOnScroll = () => {
         <div className="row g-4">
           <div className="col-6 col-md-3">
             <Counter
-              from={0}
+              from={100}
               to={1000}
-              duration={2}
+              duration={1}
               suffix="+"
               label="Companies Our Learners Work In"
             />
           </div>
           <div className="col-6 col-md-3">
             <Counter
-              from={0}
+              from={10}
               to={93}
-              duration={2}
+              duration={1}
               suffix="%"
               label="Learners Placed On Average"
             />
           </div>
           <div className="col-6 col-md-3">
             <Counter
-              from={0}
+              from={100}
               to={300}
-              duration={2}
+              duration={1}
               suffix="+"
               label="Entrepreneurs & Freelancers Created"
             />
           </div>
           <div className="col-6 col-md-3">
             <Counter
-              from={0}
+              from={10000}
               to={50000}
-              duration={2}
+              duration={1}
               suffix="+"
               label="Careers  Transformed"
             />
