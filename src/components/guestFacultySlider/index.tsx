@@ -91,7 +91,7 @@ const GuestFacultySection = ({ section }: GuestFacultySectionProps) => {
             <SectionHeader
               wrapperMarginBottom={{ desktop: "60px", mobile: "40px" }}
               titleMarginBottom={{ desktop: "16px", mobile: "10px" }}
-              title={<>DA360 Mentors</>}
+              title={<>Industry Leaders as Your Guest Mentors</>}
               maxWidth="650px"
               description="Gain Insights from World-Class Guest Faculty"
             />
