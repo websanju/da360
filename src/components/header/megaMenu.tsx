@@ -4,28 +4,27 @@ import Link from "next/link";
 import styles from "./style.module.scss";
 import { useRouter } from "next/navigation";
 import Image from "next/image";
-
-export default function Header() {
+type MegaMenuProps = {
+  closeMenu: () => void;
+};
+export default function MegaMenu({ closeMenu }: MegaMenuProps) {
   const [activeTab, setActiveTab] = useState(0);
   const tabs = ["Certification Courses", "PGCP Courses", "Leadership Courses"];
-  const toggleCourses = (e?: React.MouseEvent) => {
-    e?.stopPropagation(); // works only if e exists
-  };
 
   const router = useRouter();
 
   const handleClickMasterDigital = () => {
-    toggleCourses(); // call your custom function
+    closeMenu(); // call your custom function
     router.push("/master-digital-marketing-leadership-course");
   };
 
   const handleClickOline = () => {
-    toggleCourses(); // call your custom function
+    closeMenu(); // call your custom function
     router.push("/online-digital-marketing-courses");
   };
 
   const handleClickDigitalMarketing = () => {
-    toggleCourses(); // call your custom function
+    closeMenu(); // call your custom function
     router.push("/digital-marketing-training-institute");
   };
   return (

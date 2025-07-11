@@ -15,8 +15,13 @@ export default function Header() {
   const dropdownRef = useRef<HTMLDivElement>(null);
   const dropdownQuickRef = useRef<HTMLDivElement>(null);
 
-  const toggleCourses = (e?: React.MouseEvent) => {
-    e?.stopPropagation(); // works only if e exists
+  const toggleCourses = (e?: React.MouseEvent | boolean) => {
+    if (typeof e === "boolean") {
+      setIsCoursesOpen(e);
+      return;
+    }
+
+    e?.stopPropagation();
     setIsCoursesOpen((prev) => !prev);
   };
 
@@ -153,7 +158,7 @@ export default function Header() {
                     isCoursesOpen ? styles.open : ""
                   }`}
                 >
-                  <MegaMenu />
+                  <MegaMenu closeMenu={() => toggleCourses(false)} />
                   {/* <div>
                     <div className={styles.dropdownContainerHeader}>
                       <h3>Digital Marketing Programs & Skills To Master</h3>
