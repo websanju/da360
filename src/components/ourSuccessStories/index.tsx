@@ -121,7 +121,6 @@ const SuccessStories: React.FC<StoryHeader & { study: CaseStudy }> = ({
   headerTitle,
   description,
   section,
-  study,
 }) => {
   const storySlides: StoryCard[] = [...stories, { type: "final" }];
   const { openPopup } = usePopup();
@@ -270,10 +269,7 @@ const SuccessStories: React.FC<StoryHeader & { study: CaseStudy }> = ({
               href="#"
               onClick={(e) => {
                 e.preventDefault(); // Prevents jumping to the top
-                openPopup(
-                  <DownloadPlacementReport study={study} />,
-                  "Apply Now"
-                );
+                openPopup(<DownloadPlacementReport />, "Apply Now");
               }}
               className={`${styles.downloadBtn} btn-white rounded-pill`}
             >

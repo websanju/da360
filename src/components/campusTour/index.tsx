@@ -3,6 +3,10 @@
 import { useState } from "react";
 import Image from "next/image";
 import styles from "./style.module.scss";
+import Link from "next/link";
+
+import { usePopup } from "@components/widgets/popup/PopupContext";
+import ScheduleCampusTour from "@components/widgets/popups/ScheduleCampusTour";
 
 interface VideoCardProps {
   videoUrl: string;
@@ -23,7 +27,7 @@ const CampusTour = ({
     e.stopPropagation();
     setIsPlaying(false);
   };
-
+  const { openPopup } = usePopup();
   return (
     <section className={styles.campusTourSection} id={section}>
       <div className="container">
@@ -114,9 +118,16 @@ const CampusTour = ({
                 the launchpad for future digital leaders
               </p>
               <div className={styles.scheduleButton}>
-                <a href="#" className="btn btnRed">
+                <Link
+                  href="#"
+                  onClick={(e) => {
+                    e.preventDefault(); // Prevents jumping to the top
+                    openPopup(<ScheduleCampusTour />, "Apply Now");
+                  }}
+                  className="btn btnRed"
+                >
                   Schedule Campus Tour
-                </a>
+                </Link>
               </div>
             </div>
           </div>

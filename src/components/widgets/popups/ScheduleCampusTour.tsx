@@ -5,7 +5,7 @@ import styles from "./style.module.scss";
 import { usePopup } from "@components/widgets/popup/PopupContext";
 import Image from "next/image";
 
-export default function DownloadPlacementReportPopup({}) {
+export default function ScheduleCampusTourPopup({}) {
   const { closePopup } = usePopup();
   return (
     <div className={styles.caseStudyPopup}>
@@ -17,7 +17,7 @@ export default function DownloadPlacementReportPopup({}) {
           height={14}
         />
       </button>
-      <div className={styles.body}>Download Placement Report</div>
+      <div className={styles.body}>ScheduleCampusTour</div>
     </div>
   );
 }
