@@ -117,7 +117,7 @@ type StoryCard = Story | { type: "final" };
 
 // Add this line before return():
 
-const SuccessStories: React.FC<StoryHeader & { study: CaseStudy }> = ({
+const SuccessStories: React.FC<StoryHeader & {}> = ({
   headerTitle,
   description,
   section,

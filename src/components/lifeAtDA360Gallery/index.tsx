@@ -36,7 +36,7 @@ const meetups: MeetupGroup[] = [
     items: [
       {
         id: 1,
-        image: "/images/community-metup/meetup1.jpg",
+        image: "/images/community-metup/9-min.jpg",
         title: "Gen-AI Meet Up",
         location: "Bengaluru",
         highlight: true,
@@ -45,13 +45,13 @@ const meetups: MeetupGroup[] = [
       },
       {
         id: 2,
-        image: "/images/community-metup/meetup2.jpg",
+        image: "/images/community-metup/12-min.jpg",
         title: "ML Meetup",
         location: "Chennai",
       },
       {
         id: 3,
-        image: "/images/community-metup/meetup3.jpg",
+        image: "/images/community-metup/18-min.jpg",
         title: "Vision Meetup",
         location: "Delhi",
       },
@@ -63,7 +63,7 @@ const meetups: MeetupGroup[] = [
       {
         id: 4,
         title: "Join our next offline event!",
-        image: "/images/community-metup/meetup4.jpg",
+        image: "/images/community-metup/10-min.jpg",
         location: "Mumbai",
       },
     ],
@@ -73,19 +73,19 @@ const meetups: MeetupGroup[] = [
     items: [
       {
         id: 5,
-        image: "/images/community-metup/meetup5.jpg",
+        image: "/images/community-metup/15-min.jpg",
         title: "Robotics Meetup",
         location: "Mumbai",
       },
       {
         id: 6,
-        image: "/images/community-metup/meetup6.jpg",
+        image: "/images/community-metup/13-min.jpg",
         title: "Edge AI Meetup",
         location: "Hyderabad",
       },
       {
         id: 7,
-        image: "/images/community-metup/meetup7.jpg",
+        image: "/images/community-metup/17-min.jpg",
         title: "Deep Learning Meetup",
         location: "Pune",
       },
@@ -97,31 +97,7 @@ const meetups: MeetupGroup[] = [
       {
         id: 8,
         title: "Join our next offline event!",
-        image: "/images/community-metup/meetup4.jpg",
-      },
-    ],
-  },
-  {
-    type: "firstItems",
-    items: [
-      {
-        id: 9,
-        image: "/images/community-metup/meetup1.jpg",
-        title: "Gen-AI Meet Up",
-        location: "Bengaluru",
-        highlight: true,
-      },
-      {
-        id: 10,
-        image: "/images/community-metup/meetup2.jpg",
-        title: "ML Meetup",
-        location: "Chennai",
-      },
-      {
-        id: 11,
-        image: "/images/community-metup/meetup3.jpg",
-        title: "Vision Meetup",
-        location: "Delhi",
+        image: "/images/community-metup/19-min.jpg",
       },
     ],
   },
@@ -130,19 +106,19 @@ const meetups: MeetupGroup[] = [
     items: [
       {
         id: 12,
-        image: "/images/community-metup/meetup5.jpg",
+        image: "/images/community-metup/14-min.jpg",
         title: "Robotics Meetup",
         location: "Mumbai",
       },
       {
         id: 13,
-        image: "/images/community-metup/meetup6.jpg",
+        image: "/images/community-metup/11-min.jpg",
         title: "Edge AI Meetup",
         location: "Hyderabad",
       },
       {
         id: 14,
-        image: "/images/community-metup/meetup7.jpg",
+        image: "/images/community-metup/16-min.jpg",
         title: "Deep Learning Meetup",
         location: "Pune",
       },
