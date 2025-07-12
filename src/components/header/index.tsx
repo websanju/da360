@@ -294,11 +294,11 @@ export default function Header() {
                       Life@da360
                     </Link>
                   </li>
-                  <li>
+                  {/* <li>
                     <Link href="/" className={styles.navItem}>
                       #TOOB
                     </Link>
-                  </li>
+                  </li> */}
                   <li>
                     <Link href="/trainers" className={styles.navItem}>
                       Trainers
@@ -307,6 +307,11 @@ export default function Header() {
                   <li>
                     <Link href="/hackathon" className={styles.navItem}>
                       Hackathon
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/hire-from-da360" className={styles.navItem}>
+                      Hire From Us
                     </Link>
                   </li>
                   <li>
