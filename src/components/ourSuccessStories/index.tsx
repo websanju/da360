@@ -13,6 +13,9 @@ import LeftArrow from "@components/Ui/svg/leftArrow";
 import RightArrow from "@components/Ui/svg/rightArrowLine";
 import SectionHeader from "@components/widgets/sectionHeader";
 
+import { usePopup } from "@components/widgets/popup/PopupContext";
+import DownloadPlacementReport from "@components/widgets/popups/DownloadPlacementReport";
+
 interface Story {
   name: string;
   companyLogo: string;
@@ -26,6 +29,14 @@ interface StoryHeader {
   headerTitle: string;
   description: string;
   section?: string;
+}
+
+export interface CaseStudy {
+  id: number;
+  logo: string;
+  title: string;
+  description: string;
+  tags: string[];
 }
 
 const stories: Story[] = [
@@ -106,12 +117,14 @@ type StoryCard = Story | { type: "final" };
 
 // Add this line before return():
 
-const SuccessStories: React.FC<StoryHeader> = ({
+const SuccessStories: React.FC<StoryHeader & { study: CaseStudy }> = ({
   headerTitle,
   description,
   section,
+  study,
 }) => {
   const storySlides: StoryCard[] = [...stories, { type: "final" }];
+  const { openPopup } = usePopup();
   return (
     <section className={styles.successSection} id={section}>
       <div className="container">
@@ -255,6 +268,13 @@ const SuccessStories: React.FC<StoryHeader> = ({
           <div className={styles.downloadBtnAction}>
             <Link
               href="#"
+              onClick={(e) => {
+                e.preventDefault(); // Prevents jumping to the top
+                openPopup(
+                  <DownloadPlacementReport study={study} />,
+                  "Apply Now"
+                );
+              }}
               className={`${styles.downloadBtn} btn-white rounded-pill`}
             >
               Download Placement Report <ArrowUp />
