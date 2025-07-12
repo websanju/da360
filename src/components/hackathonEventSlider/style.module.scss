@@ -152,6 +152,31 @@
   box-shadow: none;
 }
 
+.controls {
+  margin-top: 27px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.pagination {
+   display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.pagination :global(.swiper-pagination-bullet) {
+  background: #000;
+  opacity: 0.2;
+  transition: opacity 0.3s ease;
+  width: 10px;
+  height: 10px;
+}
+
+.pagination :global(.swiper-pagination-bullet-active) {
+  opacity: 1;
+  background: #000000; // or any accent color
+}
+
 @media (width <=992px) {
   .hackathonEventSlider {
     margin-top: 60px;

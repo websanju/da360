@@ -46,7 +46,7 @@ const data = [
     },
   },
   {
-    name: `Monisha <br/>Jain S S`,
+    name: `Monisha Jain S S`,
     title: "Digital Marketing Trainer",
     experience: "3+ years Experience",
     linkedinLink: "#",
@@ -57,7 +57,7 @@ const data = [
     },
   },
   {
-    name: `Anush <br/> Raj K`,
+    name: `Anush Raj K`,
     title: "Digital Marketing Trainer",
     experience: "5+ years Experience",
     linkedinLink: "#",

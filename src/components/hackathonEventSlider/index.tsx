@@ -2,13 +2,13 @@
 import React from "react";
 // import React, { useRef, useState, useEffect } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Scrollbar } from "swiper/modules";
+import { Navigation, Scrollbar, Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import styles from "./style.module.scss";
-import LeftArrow from "@components/Ui/svg/leftArrow";
-import RightArrow from "@components/Ui/svg/rightArrowLine";
+// import LeftArrow from "@components/Ui/svg/leftArrow";
+// import RightArrow from "@components/Ui/svg/rightArrowLine";
 import SectionHeader from "@components/widgets/sectionHeader";
 import Image from "next/image";
 import { Black_Han_Sans } from "next/font/google";
@@ -61,19 +61,22 @@ export default function HackathonEventSlider() {
             <div className={styles.sliderWrapper}>
               <div className={styles.sliderInnerc}>
                 <Swiper
-                  modules={[Navigation, Scrollbar]}
+                  modules={[Navigation, Scrollbar, Pagination]}
                   spaceBetween={20}
                   slidesPerView={1}
                   autoplay={{
-                    delay: 2000,
+                    delay: 1000,
                     disableOnInteraction: false,
                   }}
                   scrollbar={{ draggable: true, el: "#customScrollbar55" }}
-                  navigation={{
-                    prevEl: "#customPrev55",
-                    nextEl: "#customNext55",
+                  pagination={{
+                    clickable: true,
+                    el: ".custom-pagination",
                   }}
-                  pagination={{ clickable: false }}
+                  // navigation={{
+                  //   prevEl: "#customPrev55",
+                  //   nextEl: "#customNext55",
+                  // }}
                   className={styles.swiper}
                 >
                   {events.map((event) => (
@@ -145,19 +148,20 @@ export default function HackathonEventSlider() {
 
       {/* Custom scrollbar */}
 
-      <div className={`${styles.controls} controls`}>
-        <button id="customPrev55" className={`prevBtn ${styles.navBtn}`}>
+      <div className={`${styles.controls}`}>
+        {/* <button id="customPrev55" className={`prevBtn ${styles.navBtn}`}>
           {" "}
           <RightArrow width={16} height={16} color="#000" />
-        </button>
-        <div
+        </button> */}
+        <div className={`custom-pagination ${styles.pagination}`}></div>
+        {/* <div
           id="customScrollbar55"
           className={`${styles.scrollbar} customScrollbar swiper-scrollbar`}
-        ></div>
-        <button id="customNext55" className={`nextBtn ${styles.navBtn}`}>
+        ></div> */}
+        {/* <button id="customNext55" className={`nextBtn ${styles.navBtn}`}>
           {" "}
           <LeftArrow width={16} height={16} color="#000" />
-        </button>
+        </button> */}
       </div>
     </section>
   );
