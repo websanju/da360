@@ -212,7 +212,7 @@ const people = [
     profileLink: "https://www.linkedin.com/in/%20ritika-agrawal-%2084b647261",
   },
 ];
-const ITEMS_PER_PAGE = 6;
+const ITEMS_PER_PAGE = 9;
 const OurPeople = () => {
   const [visibleCount, setVisibleCount] = useState(ITEMS_PER_PAGE);
   const handleLoadMore = () => {
