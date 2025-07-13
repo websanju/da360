@@ -333,7 +333,7 @@ const StudentShowcase = () => {
   const [visibleCount, setVisibleCount] = useState(9);
 
   const handleLoadMore = () => {
-    setVisibleCount((prev) => prev + 3);
+    setVisibleCount((prev) => prev + 9);
   };
 
   return (
