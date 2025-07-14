@@ -17,7 +17,7 @@ export interface CounterProps {
 const Counter = ({
   from = 0,
   to,
-  duration = 2,
+  duration = 0.5,
   suffix = "",
   label,
 }: CounterProps) => {

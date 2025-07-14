@@ -4,16 +4,19 @@ import Counter, { CounterProps } from "@components/widgets/counter";
 const counters: CounterProps[] = [
   {
     to: 50000,
+    from: 40000,
     suffix: "+",
     label: "Careers transformed",
   },
   {
     to: 30000,
+    from: 20000,
     suffix: "+",
     label: "Successfully Placed",
   },
   {
     to: 2000,
+    from: 1500,
     suffix: "+",
     label: "Hiring Partners",
   },
