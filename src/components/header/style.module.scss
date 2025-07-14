@@ -275,16 +275,38 @@
       background-color: #fff;
       border-radius: 10px;
       margin-right: 40px;
+      position: relative;
+
 
       .navbarDropdownColumn {
         border: 1px solid #fff;
         cursor: pointer;
         min-width: 280px;
-       
-
+        position: relative;
+         transition: border-radius 0.3s ease;
+         &:last-child {
+          &::after {
+            display: none;
+          } 
+         }
+         &::after {
+          content: '';
+          width: 1px;
+          height: 100%;
+          background-color: #000000;
+          opacity: 20%;
+          right: -5px;
+          top: 0;
+          position: absolute;
+         }
         &:hover {
           // border: 1px solid #000000;
           border-radius: 12px;
+          
+          h4 {
+            text-decoration: underline;
+             transition: text-decoration 0.3s ease;
+          }
         }
 
         h4 {
@@ -323,9 +345,6 @@
         }
         .navbarDropdownList {
           margin-top: 24px;
-
-         
-
           ul {
             list-style: none;
             padding: 0;

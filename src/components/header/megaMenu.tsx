@@ -62,7 +62,7 @@ export default function MegaMenu({ closeMenu }: MegaMenuProps) {
         {activeTab === 2 && (
           <div className={styles.dropdownColumnGroup}>
             <div
-              onClick={handleClickMasterDigital}
+              onClick={handleClickOline}
               className={`${styles.navbarDropdownColumn}`}
             >
               <h4>AI Marketing / MarTech / Video</h4>
@@ -93,7 +93,6 @@ export default function MegaMenu({ closeMenu }: MegaMenuProps) {
                 </ul>
               </div>
             </div>
-
             <div
               onClick={handleClickOline}
               className={`${styles.navbarDropdownColumn}`}
@@ -127,7 +126,7 @@ export default function MegaMenu({ closeMenu }: MegaMenuProps) {
               </div>
             </div>
             <div
-              onClick={handleClickDigitalMarketing}
+              onClick={handleClickOline}
               className={`${styles.navbarDropdownColumn}`}
             >
               <h4>LinkedIn Marketing Bootcamp</h4>
@@ -163,7 +162,7 @@ export default function MegaMenu({ closeMenu }: MegaMenuProps) {
         {activeTab === 1 && (
           <div className={styles.dropdownColumnGroup}>
             <div
-              onClick={handleClickMasterDigital}
+              onClick={handleClickDigitalMarketing}
               className={`${styles.navbarDropdownColumn}`}
             >
               <h4>PGCP in Digital Marketing, E‑Comm & AI</h4>
@@ -196,7 +195,7 @@ export default function MegaMenu({ closeMenu }: MegaMenuProps) {
             </div>
 
             <div
-              onClick={handleClickOline}
+              onClick={handleClickDigitalMarketing}
               className={`${styles.navbarDropdownColumn}`}
             >
               <h4>PGCP in Social Media & Influencer Marketing</h4>
@@ -299,7 +298,7 @@ export default function MegaMenu({ closeMenu }: MegaMenuProps) {
             </div>
 
             <div
-              onClick={handleClickOline}
+              onClick={handleClickMasterDigital}
               className={`${styles.navbarDropdownColumn}`}
             >
               <h4>Leadership in Social Content Creator & Video Production</h4>
@@ -330,38 +329,6 @@ export default function MegaMenu({ closeMenu }: MegaMenuProps) {
                 </ul>
               </div>
             </div>
-            {/* <div
-              onClick={handleClickDigitalMarketing}
-              className={`${styles.navbarDropdownColumn}`}
-            >
-              <h4>LinkedIn Marketing Bootcamp</h4>
-              <span className={styles.navbarTitle}>
-                LinkedIn & Personal Branding Certification Course
-              </span>
-              <div className={styles.navbarTags}>
-                <span className={styles.dropdownTag}>2 Months</span>
-                <span className={styles.dropdownTag}>Online</span>
-              </div>
-              <div className={styles.navbarDropdownList}>
-                <ul>
-                  <li>
-                    <Link href={"#"}> Masters Level Certification</Link>
-                  </li>
-                  <li>
-                    <Link href={"#"}> 10 Advanced Specialisations</Link>
-                  </li>
-                  <li>
-                    <Link href={"#"}> 30 Courses in 1 Program</Link>
-                  </li>
-                  <li>
-                    <Link href={"#"}>15+ Projects & Case Studies</Link>
-                  </li>
-                  <li>
-                    <Link href={"#"}>22+ Certifications</Link>
-                  </li>
-                </ul>
-              </div>
-            </div> */}
           </div>
         )}
       </div>
