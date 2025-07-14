@@ -61,8 +61,8 @@ const MediaAwards = () => {
                   <Image
                     src={logo.src}
                     alt={logo.alt}
-                    width={150}
-                    height={60}
+                    width={283}
+                    height={99}
                     className="img-fluid"
                   />
                 </div>
@@ -79,8 +79,8 @@ const MediaAwards = () => {
                   <Image
                     src={logo.src}
                     alt={logo.alt}
-                    width={150}
-                    height={60}
+                    width={283}
+                    height={99}
                     className="img-fluid"
                   />
                 </div>
