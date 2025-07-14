@@ -2,7 +2,7 @@
 import React from "react";
 import styles from "./style.module.scss";
 import Image from "next/image";
-import Link from "next/link";
+// import Link from "next/link";
 
 const HireSection = () => {
   return (
@@ -19,9 +19,8 @@ const HireSection = () => {
                 Academy 360
               </p>
               <div className={styles.hireBtn}>
-                <Link
+                <button
                   className="btn btn-danger"
-                  href="#"
                   onClick={(e) => {
                     e.preventDefault();
                     const target = document.getElementById("hireForm");
@@ -31,7 +30,7 @@ const HireSection = () => {
                   }}
                 >
                   Start Hiring
-                </Link>
+                </button>
               </div>
 
               <div className={styles.hiredInfo}>

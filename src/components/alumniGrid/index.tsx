@@ -2,7 +2,7 @@
 import Image from "next/image";
 import styles from "./style.module.scss";
 import SectionHeader from "@components/widgets/sectionHeader";
-import Link from "next/link";
+// import Link from "next/link";
 
 const alumni = [
   {
@@ -131,9 +131,8 @@ const AlumniGrid = () => {
               </div>
 
               <div className={styles.ctaWrapper}>
-                <Link
+                <button
                   className="btn btn-danger"
-                  href="#"
                   onClick={(e) => {
                     e.preventDefault();
                     const target = document.getElementById("hireForm");
@@ -143,7 +142,7 @@ const AlumniGrid = () => {
                   }}
                 >
                   Start Hiring
-                </Link>
+                </button>
               </div>
             </div>
           </div>
