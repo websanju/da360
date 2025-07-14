@@ -4,6 +4,17 @@
     gap: 24px;
     align-items: flex-start;
     margin-bottom: 140px;
+    .logobox {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .footerBox {
+      display: flex;
+      justify-content: space-between;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
   }
   
   .column {

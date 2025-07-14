@@ -1,7 +1,7 @@
 // testimonialsData.ts
 export type Testimonial = {
     id: number;
-    type: "text" | "video";
+    type:"text" | "video" | "logo";
     name: string;
     review?: string;
     rating: number;
@@ -31,9 +31,9 @@ export type Testimonial = {
     },
     {
       id: 3,
-      type: "text",
+      type: "logo",
       name: "Sanjay Lal",
-      review: "Highly recommend this to anyone looking to upskill.",
+      review: "Highly recommend this to anyone looking to upskill.d",
       rating: 5,
       avatar: "/images/rating/video6.jpg",
       source: "LinkedIn",
