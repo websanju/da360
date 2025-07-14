@@ -2,6 +2,7 @@
 import React from "react";
 import styles from "./style.module.scss";
 import Image from "next/image";
+import Link from "next/link";
 
 const HireSection = () => {
   return (
@@ -18,7 +19,19 @@ const HireSection = () => {
                 Academy 360
               </p>
               <div className={styles.hireBtn}>
-                <button className="btn btn-danger">Start Hiring</button>
+                <Link
+                  className="btn btn-danger"
+                  href="#"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    const target = document.getElementById("hireForm");
+                    if (target) {
+                      target.scrollIntoView({ behavior: "smooth" });
+                    }
+                  }}
+                >
+                  Start Hiring
+                </Link>
               </div>
 
               <div className={styles.hiredInfo}>
