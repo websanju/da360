@@ -2,17 +2,18 @@
 import React, { useRef, useState } from "react";
 import styles from "./styles.module.scss";
 import Image from "next/image";
+import { usePopup } from "@components/widgets/popup/PopupContext";
 
 type Testimonial = {
   id: number;
-  type: "text" | "video" | "logo"; // Added "logo" type
+  type: "text" | "video" | "logo";
   name: string;
   review?: string;
   rating: number;
   avatar: string;
   source?: string;
   videoUrl?: string;
-  logoUrl?: string; // Optional for logo cards
+  logoUrl?: string;
 };
 
 const Card = ({ item }: { item: Testimonial }) => {
@@ -20,6 +21,8 @@ const Card = ({ item }: { item: Testimonial }) => {
   const [isPlaying, setIsPlaying] = useState(false);
   const [hovered, setHovered] = useState(false);
 
+  const { openPopup } = usePopup();
+  const { closePopup } = usePopup();
   const handlePlay = () => {
     videoRef.current?.play();
     setIsPlaying(true);
@@ -31,6 +34,27 @@ const Card = ({ item }: { item: Testimonial }) => {
       videoRef.current.currentTime = 0;
     }
     setIsPlaying(false);
+  };
+
+  const handleReviewClick = (e: React.MouseEvent) => {
+    e.stopPropagation();
+    if (item.review) {
+      openPopup(
+        <div className={styles.popupContent}>
+          <button className={styles.closeButton} onClick={() => closePopup()}>
+            <Image
+              src="/images/icons/close.svg"
+              alt="logo"
+              width={14}
+              height={14}
+            />
+          </button>
+          <h3>{item.name}</h3>
+          <p>{item.review}</p>
+        </div>,
+        "Review"
+      );
+    }
   };
 
   return (
@@ -60,7 +84,9 @@ const Card = ({ item }: { item: Testimonial }) => {
               ))}
             </div>
           </div>
-          <p className={styles.review}>{item.review}</p>
+          <p className={styles.review} onClick={handleReviewClick}>
+            {item.review}
+          </p>
           <div className={styles.footer}>
             <Image
               src={item.avatar}
@@ -137,7 +163,7 @@ const Card = ({ item }: { item: Testimonial }) => {
                 <button className={styles.plaYbtn} onClick={handlePlay}>
                   <Image
                     src={"/images/play-btn.svg"}
-                    alt={"slide.title"}
+                    alt={"Play"}
                     width={72}
                     height={72}
                   />
@@ -148,7 +174,7 @@ const Card = ({ item }: { item: Testimonial }) => {
                 <button className={styles.plaYbtn} onClick={handleStop}>
                   <Image
                     src={"/images/push-btn.svg"}
-                    alt={"slide.title"}
+                    alt={"Pause"}
                     width={72}
                     height={72}
                   />
@@ -187,7 +213,9 @@ const Card = ({ item }: { item: Testimonial }) => {
               />
             </div>
           </div>
-          <p className={styles.review}>{item.review}</p>
+          <p className={styles.review} onClick={handleReviewClick}>
+            {item.review}
+          </p>
           <div className={styles.footerBox}>
             <div className={styles.footer}>
               <Image

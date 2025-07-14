@@ -19,7 +19,7 @@ export type Testimonial = {
         "Amazing experience at Digital Academy 360. Learnt all the ins and outs of Digital Marketing, enough to land me a job at my first interview ever. The faculty is highly experienced and will clear all your doubts and guide you when needed. If you want to become a professional Digital Marketer then DA360 is the perfect option.",
       rating: 5,
       avatar: "/images/rating/video6.jpg",
-      source: "Google",
+      source: "SEO Analyst",
     },
     {
       id: 2,
@@ -46,7 +46,7 @@ export type Testimonial = {
           "Amazing experience at Digital Academy 360. Learnt all the ins and outs of Digital Marketing, enough to land me a job at my first interview ever. The faculty is highly experienced and will clear all your doubts and guide you when needed. If you want to become a professional Digital Marketer then DA360 is the perfect option.",
         rating: 5,
         avatar: "/images/rating/video6.jpg",
-        source: "Google",
+        source: "SEO Analyst",
       },
     {
       id: 5,
@@ -64,7 +64,7 @@ export type Testimonial = {
           "Amazing experience at Digital Academy 360. Learnt all the ins and outs of Digital Marketing, enough to land me a job at my first interview ever. The faculty is highly experienced and will clear all your doubts and guide you when needed. If you want to become a professional Digital Marketer then DA360 is the perfect option.",
         rating: 5,
         avatar: "/images/rating/video6.jpg",
-        source: "Google",
+        source: "SEO Analyst",
       },
   ];
   
