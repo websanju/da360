@@ -33,7 +33,6 @@
     overflow: hidden;
     width: 100%;
     max-width: 292px;
-    height: 328px;
     box-shadow: 4px 4px 0px 0px #000000;
 
     img {
@@ -60,12 +59,12 @@
     .cardContent {
         display: flex;
         justify-content: space-between;
-        align-items: center;
+        align-items: flex-start;
         padding: 14px 16px 25px;
-
+        gap: 10px;
         h4 {
             font-weight: 600;
-            font-size: 20px;
+            font-size: 18px;
             line-height: 100%;
             letter-spacing: 0%;
             color: #000;
@@ -74,16 +73,16 @@
 
         p {
             font-weight: 400;
-            font-size: 16px;
-            line-height: 100%;
+            font-size: 14px;
+            line-height: 16px;
             letter-spacing: 0%;
-            text-align: center;
+            text-align: left;
             color: #000;
         }
 
         .cardImg {
             img {
-                height: 30px;
+                max-height: 30px;
             }
         }
     }
@@ -93,7 +92,7 @@
     text-align: center;
     margin-top: 40px;
 
-    button {
+    a {
         border-radius: 66px;
         font-weight: 600;
         font-size: 18px;

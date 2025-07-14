@@ -2,79 +2,80 @@
 import Image from "next/image";
 import styles from "./style.module.scss";
 import SectionHeader from "@components/widgets/sectionHeader";
+import Link from "next/link";
 
 const alumni = [
   {
-    name: "Akshita M",
-    role: "SEO Executive",
-    image: "/images/akshita.png",
-    companyLogo: "/images/jeet.png",
+    name: "Khushi Surana",
+    role: "Advertising Ops Specialist",
+    image: "/images/students/khushi-surana.png",
+    companyLogo: "/images/company/amazon.png",
   },
   {
-    name: "Akshita M",
-    role: "SEO Executive",
-    image: "/images/rahul.png",
-    companyLogo: "/images/jeet.png",
+    name: "Vishnu",
+    role: "AdWords Strategist",
+    image: "/images/students/vishnu.png",
+    companyLogo: "images/company/google.png",
   },
   {
-    name: "Akshita M",
-    role: "SEO Executive",
-    image: "/images/sharmila.png",
-    companyLogo: "/images/jeet.png",
+    name: "Adarsh Gupta",
+    role: "Digital Marketing Executive",
+    image: "/images/students/adarsh-gupta.png",
+    companyLogo: "/images/company/tula.png",
   },
   {
-    name: "Akshita M",
-    role: "SEO Executive",
-    image: "/images/sanjau.png",
-    companyLogo: "/images/jeet.png",
+    name: "Pooja . M",
+    role: "Digital Marketing Analyst",
+    image: "/images/students/pooja-m.png",
+    companyLogo: "/images/company/anteriad.png",
   },
   {
-    name: "Akshita M",
-    role: "SEO Executive",
-    image: "/images/sharmila.png",
-    companyLogo: "/images/jeet.png",
+    name: "Amala Sharika",
+    role: "Senior Executive Marketing",
+    image: "/images/students/amala-sharika.png",
+    companyLogo: "/images/company/vg.png",
   },
   {
-    name: "Akshita M",
-    role: "SEO Executive",
-    image: "/images/rahul.png",
-    companyLogo: "/images/jeet.png",
+    name: "Megha Lodha",
+    role: "Campaign Specialist",
+    image: "/images/students/megha-lodha.png",
+    companyLogo: "/images/company/eat-repeat.png",
   },
   {
-    name: "Akshita M",
-    role: "SEO Executive",
-    image: "/images/akshita.png",
-    companyLogo: "/images/jeet.png",
+    name: "Krithik Kumar",
+    role: "Digital Marketing Executive",
+    image: "/images/students/krithik-kumar.png",
+    companyLogo: "/images/company/masscoders.png",
   },
   {
-    name: "Akshita M",
-    role: "SEO Executive",
-    image: "/images/sharmila.png",
-    companyLogo: "/images/jeet.png",
+    name: "Sanjay H R",
+    role: "SEO Analyst",
+    image: "/images/students/sanjay-hr.png",
+    companyLogo: "/images/company/rollingrock.png",
   },
   {
-    name: "Akshita M",
-    role: "SEO Executive",
-    image: "/images/sanjau.png",
-    companyLogo: "/images/jeet.png",
+    name: "Kiran B",
+    role: "Digital Marketer",
+    image: "/images/students/kiran-b.png",
+    companyLogo: "/images/company/smartneta.png",
   },
   {
-    name: "Akshita M",
-    role: "SEO Executive",
-    image: "/images/sharmila.png",
-    companyLogo: "/images/jeet.png",
+    name: "Arpitha",
+    role: "Brand Marketing Executive",
+    image: "/images/students/arpitha.png",
+    companyLogo: "/images/company/ki.png",
   },
   {
-    name: "Akshita M",
-    role: "SEO Executive",
-    image: "/images/rahul.png",
-    companyLogo: "/images/jeet.png",
+    name: "Hemanth B",
+    role: "Marketing Manager",
+    image: "/images/students/hemanth-b.png",
+    companyLogo: "/images/company/devel-up.png",
   },
   {
-    name: "Akshita M",
-    role: "SEO Executive",
-    image: "/images/akshita.png",
-    companyLogo: "/images/jeet.png",
+    name: "Dhikshith R",
+    role: "Brand Marketing Executive",
+    image: "/images/students/dhikshith-r.png",
+    companyLogo: "/images/company/smartneta.png",
   },
 ];
 
@@ -130,7 +131,9 @@ const AlumniGrid = () => {
               </div>
 
               <div className={styles.ctaWrapper}>
-                <button className={"btn btn-danger"}>Start Hiring</button>
+                <Link className={"btn btn-danger"} href={"/hire-from-da360"}>
+                  Start Hiring
+                </Link>
               </div>
             </div>
           </div>
