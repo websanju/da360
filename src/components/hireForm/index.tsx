@@ -31,7 +31,7 @@ const HireForm = () => {
   };
 
   return (
-    <section className={style.hireForm}>
+    <section id="hireForm" className={style.hireForm}>
       <div className="container">
         <div>
           <div>

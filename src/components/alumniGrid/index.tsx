@@ -131,7 +131,17 @@ const AlumniGrid = () => {
               </div>
 
               <div className={styles.ctaWrapper}>
-                <Link className={"btn btn-danger"} href={"/hire-from-da360"}>
+                <Link
+                  className="btn btn-danger"
+                  href="#"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    const target = document.getElementById("hireForm");
+                    if (target) {
+                      target.scrollIntoView({ behavior: "smooth" });
+                    }
+                  }}
+                >
                   Start Hiring
                 </Link>
               </div>
