@@ -13,7 +13,7 @@ const data = [
     name: `Deepak <br/> Soni`,
     title: "Digital Marketing Trainer",
     experience: "12+ years Experience",
-    linkedinLink: "/images/devicon_linkedin.svg",
+    linkedinLink: "#",
     bgColor: "bgPink",
     image: {
       desktop: "/images/trainers/deepak.png",
@@ -24,7 +24,7 @@ const data = [
     name: `Madhuraj P`,
     title: "Digital Marketing Trainer",
     experience: "8+ years Experience",
-    linkedinLink: "/images/devicon_linkedin.svg",
+    linkedinLink: "https://www.linkedin.com/in/madhuraj-p/",
     bgColor: "bgBlue",
     image: {
       desktop: "/images/trainers/madhu.png",
@@ -35,7 +35,7 @@ const data = [
     name: `Sathiyaseelan S`,
     title: "Digital Marketing Trainer",
     experience: "3+ years Experience",
-    linkedinLink: "/images/devicon_linkedin.svg",
+    linkedinLink: "https://www.linkedin.com/in/sathiyaseelan1/",
     bgColor: "bgGreen",
     image: {
       desktop: "/images/trainers/sathya.png",
@@ -43,14 +43,36 @@ const data = [
     },
   },
   {
-    name: `Monisha Jain S S`,
+    name: `Swanand <br/> Patwardhan`,
+    title: "Digital Marketing Trainer",
+    experience: "8+ years Experience",
+    linkedinLink: "https://www.linkedin.com/in/swanand-p/",
+    bgColor: "bgGreen",
+    image: {
+      desktop: "/images/trainers/swanand.png",
+      mobile: "/images/trainers/swanand.png",
+    },
+  },
+  {
+    name: `Monisha Jain`,
     title: "Digital Marketing Trainer",
     experience: "3+ years Experience",
-    linkedinLink: "/images/devicon_linkedin.svg",
+    linkedinLink: "https://www.linkedin.com/in/monishajainss/",
     bgColor: "bgGreen",
     image: {
       desktop: "/images/trainers/monisha.png",
       mobile: "/images/trainers/monisha.png",
+    },
+  },
+  {
+    name: `Sujeeth H D`,
+    title: "Digital Marketing Trainer",
+    experience: "5+ years Experience",
+    linkedinLink: "https://www.linkedin.com/in/sujeeth-hd-7988921b8/",
+    bgColor: "bgGreen",
+    image: {
+      desktop: "/images/trainers/sujeeth.png",
+      mobile: "/images/trainers/sujeeth.png",
     },
   },
   {
@@ -62,28 +84,6 @@ const data = [
     image: {
       desktop: "/images/trainers/anush.png",
       mobile: "/images/trainers/anush.png",
-    },
-  },
-  {
-    name: `Swanand <br/> Patwardhan`,
-    title: "Digital Marketing Trainer",
-    experience: "8+ years Experience",
-    linkedinLink: "/images/devicon_linkedin.svg",
-    bgColor: "bgGreen",
-    image: {
-      desktop: "/images/trainers/swanand.png",
-      mobile: "/images/trainers/swanand.png",
-    },
-  },
-  {
-    name: `Sujeeth H D`,
-    title: "Digital Marketing Trainer",
-    experience: "5+ years Experience",
-    linkedinLink: "/images/devicon_linkedin.svg",
-    bgColor: "bgGreen",
-    image: {
-      desktop: "/images/trainers/sujeeth.png",
-      mobile: "/images/trainers/sujeeth.png",
     },
   },
 ];
