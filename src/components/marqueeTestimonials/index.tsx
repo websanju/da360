@@ -18,6 +18,7 @@ const MarqueeTestimonials = () => {
                 alt={`Student Row 1 - ${index + 1}`}
                 width={100}
                 height={100}
+                unoptimized
               />
             </div>
           ))}
@@ -34,6 +35,7 @@ const MarqueeTestimonials = () => {
                 alt={`Student Row 2 - ${index + 1}`}
                 width={100}
                 height={100}
+                unoptimized
               />
             </div>
           ))}
