@@ -7,8 +7,10 @@ const ContentBlock: React.FC = ({}) => {
       <div className="container">
         <div className="row">
           <div className="col-lg-12">
-            <p>Digital Academy 360</p>
-            <p>Asia’s Leading AI-Powered Digital Marketing Institute</p>
+            <p className={styles.contentTitle}>
+              Digital Academy 360 Asia’s Leading AI-Powered Digital Marketing
+              Institute
+            </p>
             <p>
               Founded in 2015 and based in Bangalore, Digital Academy 360 is
               Asia’s largest AI-driven digital marketing training center. We

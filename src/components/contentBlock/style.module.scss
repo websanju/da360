@@ -1,18 +1,27 @@
 .contentSection {
   padding-top: 100px;
 
+
+  .contentTitle {
+     font-weight: 500;
+     font-size: 40px;
+     line-height: normal;
+     max-width: 780px;
+     margin-bottom: 30px;
+  }
+
   p {
     font-weight: 400;
-    font-size: 32px;
-    line-height: 52px;
+    font-size: 20px;
+    line-height: normal;
     text-align: center;
-    max-width: 1000px;
-    margin: 0 auto 15px;
-    &:first-child {
-      margin-bottom: 0;
-    }
+     max-width: 780px;
+    margin: 0 auto 24px;
+   
+   
     &:last-child {
       margin-bottom: 0;
+       max-width: 726px;
     }
     span {
       font-weight: 600;
