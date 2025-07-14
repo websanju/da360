@@ -47,8 +47,31 @@
         max-width: 456px;
         margin-bottom: 27px;
     }
+.button {        
+        background: #fff;
+        border: 2px solid #000;
+        border-radius: 10px;
+        font-weight: 600;
+        cursor: pointer;
+        transition: all 0.2s ease;
+        box-shadow: 4px 4px 0px 0px #000000;
+        min-width: 240px;
+        min-height: 60px;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 24px;
+        letter-spacing: 0%;
+        text-align: center;
+        justify-content: center;
+        display: flex;
+        align-items: center;
+          max-width: max-content;
 
-    button {
+        &:hover {
+            background-color: #f3f3f3;
+        }
+    }
+    button {        
         background: #fff;
         border: 2px solid #000;
         border-radius: 10px;

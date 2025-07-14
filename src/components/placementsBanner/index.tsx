@@ -34,7 +34,10 @@ const HeroSection = () => {
                     DA360 and are now thriving in top companies.
                   </p>
                   <div className={styles.applyAction}>
-                    <Link href="#" className="btn btn-danger btn-lg px-4">
+                    <Link
+                      href="/hire-from-da360"
+                      className="btn btn-danger btn-lg px-4"
+                    >
                       Hire from DA360
                     </Link>
                   </div>

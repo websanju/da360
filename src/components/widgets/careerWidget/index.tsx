@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./style.module.scss";
 import Image from "next/image";
+import Link from "next/link";
 
 type Variant = "red" | "yellow";
 type VariantColor = "blackColor" | "whiteColor";
@@ -25,7 +26,13 @@ const CareerWidget: React.FC<CareerWidgetProps> = ({
       <div className={`${styles.left} ${styles[variantColor]}`}>
         <h2 dangerouslySetInnerHTML={{ __html: title }} />
         <p>{description}</p>
-        <button aria-label={buttonText}>{buttonText}</button>
+        <Link
+          href={"/career"}
+          className={styles.button}
+          aria-label={buttonText}
+        >
+          {buttonText}
+        </Link>
       </div>
       <div className={styles.right}>
         <Image

@@ -2,6 +2,7 @@
 import styles from "./styles.module.scss";
 import Image from "next/image";
 import magnifierIcon from "@public/images/talent-search-new.svg";
+import Link from "next/link";
 
 const HireTalentBanner = () => {
   return (
@@ -21,7 +22,9 @@ const HireTalentBanner = () => {
                   directly to start hiring from our trained talent pool.
                 </p>
                 <div className={styles.buttonAction}>
-                  <button className={styles.hireButton}>Hire Now</button>
+                  <Link href={"/hire-from-da360"} className={styles.hireButton}>
+                    Hire Now
+                  </Link>
                 </div>
               </div>
               <div className={styles.icon}>
