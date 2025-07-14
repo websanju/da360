@@ -41,8 +41,6 @@
     }
 
     .ctaBtn {
-        display: inline-flex;
-        align-items: center;
         gap: 10px;
         color: #fff;
         text-decoration: none;
@@ -53,12 +51,23 @@
         font-size: 20px;
         line-height: 24px;
         text-align: center;
-
+        border: solid 1px #fff; 
+        min-width: 194px;
+        height: 52px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 20px;
         &:hover {
             text-decoration: none;
-
+            background-color: #fff;
+           color: #e5003d;
+           border: solid 1px #fff; 
             .arrow {
                 transform: translateX(5px);
+                svg path{
+                    fill: #e5003d;
+                }
             }
         }
 

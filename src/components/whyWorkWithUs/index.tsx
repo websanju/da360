@@ -48,7 +48,6 @@ export default function WhyWorkWithUs() {
               <a href="#" className={styles.ctaBtn}>
                 Apply Now{" "}
                 <span className={styles.arrow}>
-                  {" "}
                   <ArrowUp width={32} height={32} color="#fff" />{" "}
                 </span>
               </a>
