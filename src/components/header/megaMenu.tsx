@@ -9,7 +9,7 @@ type MegaMenuProps = {
 };
 export default function MegaMenu({ closeMenu }: MegaMenuProps) {
   const [activeTab, setActiveTab] = useState(0);
-  const tabs = ["Certification Courses", "PGCP Courses", "Leadership Courses"];
+  const tabs = ["Leadership Courses", "PGCP Courses", "Certification Courses"];
 
   const router = useRouter();
 
@@ -55,11 +55,11 @@ export default function MegaMenu({ closeMenu }: MegaMenuProps) {
       </div>
 
       <div className={styles.dropdownColumnBox}>
-        <div className={styles.dropdownContainerHeader}>
+        {/* <div className={styles.dropdownContainerHeader}>
           <h3>Digital Marketing Programs & Skills To Master</h3>
-        </div>
+        </div> */}
         {/* tab content */}
-        {activeTab === 0 && (
+        {activeTab === 2 && (
           <div className={styles.dropdownColumnGroup}>
             <div
               onClick={handleClickMasterDigital}
@@ -261,7 +261,7 @@ export default function MegaMenu({ closeMenu }: MegaMenuProps) {
             </div>
           </div>
         )}
-        {activeTab === 2 && (
+        {activeTab === 0 && (
           <div
             className={`${styles.dropdownColumnGroup} ${styles.leadershipColumnGroup}`}
           >
