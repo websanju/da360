@@ -167,8 +167,7 @@ const GuestFacultySection = ({ section }: { section?: string }) => {
                 <div
                   onClick={() =>
                     openPopup(<CaseStudyPopup study={item} />, {
-                      className: "myCustomPopupClass",
-                      width: "900px",
+                      className: `${styles.guestFacultyPopup}`,
                     })
                   }
                 >

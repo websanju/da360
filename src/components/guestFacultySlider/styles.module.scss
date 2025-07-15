@@ -11,6 +11,12 @@
     max-width: 370px;
 }
 
+.guestFacultyPopup {
+    padding: 0 !important;
+    width: 100%;
+    max-width: 500px!important;
+}
+
 @media (width <=992px) {
     .guestFaculty {
         padding-top: 60px;

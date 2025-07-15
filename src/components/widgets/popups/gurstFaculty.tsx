@@ -37,39 +37,43 @@ export default function CaseStudyPopup({ study }: Props) {
       </button>
 
       <div className={styles.body}>
-        <div className={styles.top}>
-          <Image
-            src={study.image.desktop}
-            alt={study.name}
-            width={80}
-            height={80}
-          />
-          <div>
+        <div className={styles.facultyBox}>
+          <div className={styles.facultyImg}>
+            <Image
+              src={study.image.desktop}
+              alt={study.name}
+              width={428}
+              height={375}
+            />
+          </div>
+          <div className={styles.facultyInfo}>
             <h3 dangerouslySetInnerHTML={{ __html: study.name }} />
             <p>{study.title}</p>
-            <p>{study.experience}</p>
           </div>
         </div>
 
-        <div className={styles.details}>
-          <p>{study.description}</p>
-          <p>
-            <strong>Expertise:</strong> {study.expertise}
-          </p>
-          {study.logos && study.logos.length > 0 && (
-            <div className={styles.logos}>
-              {study.logos.map((logo, idx) => (
-                <Image
-                  key={idx}
-                  src={logo}
-                  alt={`Logo ${idx + 1}`}
-                  width={60}
-                  height={30}
-                  className={styles.logo}
-                />
-              ))}
-            </div>
-          )}
+        <div className={styles.facultyDetails}>
+          <div className={styles.description}>{study.description}</div>
+          <div className={styles.facultyExpertise}>
+            <span>Expertise:</span> <br /> {study.expertise}
+          </div>
+          <div className={styles.facultyBrand}>
+            <span>Brands Worked with</span>
+            {study.logos && study.logos.length > 0 && (
+              <div className={styles.logos}>
+                {study.logos.map((logo, idx) => (
+                  <Image
+                    key={idx}
+                    src={logo}
+                    alt={`Logo ${idx + 1}`}
+                    width={60}
+                    height={30}
+                    className={styles.logo}
+                  />
+                ))}
+              </div>
+            )}
+          </div>
         </div>
       </div>
     </div>

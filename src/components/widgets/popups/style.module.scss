@@ -37,9 +37,9 @@
     position: absolute;
     right: 30px;
     top: 20px;
-   
-        background-color: transparent;
-        border: none;
+
+    background-color: transparent;
+    border: none;
 }
 
 .formHeader {
@@ -47,9 +47,84 @@
     align-items: center;
     justify-content: space-between;
     margin-bottom: 50px;
+
     button {
         background-color: transparent;
         border: none;
+    }
+}
+
+.facultyBox {
+    background-color: #ACACAC;
+    max-width: 500px !important;
+    width: 500px;
+    display: flex;
+    align-items: center;
+
+    .facultyImg {
+        img {
+            max-width: 181px;
+            height: auto;
+        }
+    }
+
+    .facultyInfo {
+        h3 {
+            font-weight: 700;
+            font-style: Italic;
+            font-size: 28px;
+            line-height: 24px;
+            letter-spacing: 0%;
+            text-transform: uppercase;
+            margin-bottom: 4px;
+        }
+    }
+}
+
+.facultyDetails {
+    padding: 40px;
+
+    .description {
+        margin-bottom: 20px;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: normal;
+        letter-spacing: 2%;
+        text-transform: capitalize;
+    }
+
+    .facultyExpertise {
+        margin-bottom: 21px;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: normal;
+        text-transform: capitalize;
+
+        span {
+            font-weight: 700;
+            font-style: Italic;
+            font-size: 16px;
+            line-height: normals;
+            letter-spacing: 2%;
+            text-transform: capitalize;
+            margin-bottom: 4px;
+        }
+    }
+
+    .facultyBrand {
+        span {
+             font-weight: 700;
+            font-style: Italic;
+            font-size: 16px;
+            line-height: normals;
+            letter-spacing: 2%;
+            text-transform: capitalize;
+             margin-bottom: 4px;
+        }
+
+        img {
+            height: auto;
+        }
     }
 }
 
@@ -57,16 +132,19 @@
     .closeForm {
         display: none;
     }
+
     .applyForm {
         display: flex;
         align-items: flex-start;
         justify-content: center;
         gap: 30px;
     }
+
     .formHeader {
         display: flex;
-      
+
     }
+
     .formBanner {
         display: none;
     }
