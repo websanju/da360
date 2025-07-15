@@ -6,8 +6,10 @@ import styles from "./style.module.scss";
 import DownArrow from "@/components/Ui/svg/downArrow";
 import QuickMenu from "@/components/widgets/quickMenu";
 import MegaMenu from "./megaMenu";
+import { usePathname } from "next/navigation";
 
 export default function Header() {
+  const pathname = usePathname();
   const [isCoursesOpen, setIsCoursesOpen] = useState(false);
   const [isQuickOpen, setIsQuickOpen] = useState(false);
   const [isSticky, setIsSticky] = useState(false);
@@ -150,27 +152,52 @@ export default function Header() {
               <nav className="d-none d-lg-block">
                 <ul>
                   <li>
-                    <Link href="/life@da360" className={styles.navItem}>
+                    <Link
+                      href="/life@da360"
+                      className={`${styles.navItem} ${
+                        pathname === "/life@da360" ? styles.active : ""
+                      }`}
+                    >
                       Life@da360
                     </Link>
                   </li>
                   <li>
-                    <Link href="/trainers" className={styles.navItem}>
+                    <Link
+                      href="/trainers"
+                      className={`${styles.navItem} ${
+                        pathname === "/trainers" ? styles.active : ""
+                      }`}
+                    >
                       Trainers
                     </Link>
                   </li>
                   <li>
-                    <Link href="/hackathon" className={styles.navItem}>
+                    <Link
+                      href="/hackathon"
+                      className={`${styles.navItem} ${
+                        pathname === "/hackathon" ? styles.active : ""
+                      }`}
+                    >
                       Hackathon
                     </Link>
                   </li>
                   <li>
-                    <Link href="/hire-from-da360" className={styles.navItem}>
+                    <Link
+                      href="/hire-from-da360"
+                      className={`${styles.navItem} ${
+                        pathname === "/hire-from-da360" ? styles.active : ""
+                      }`}
+                    >
                       Hire From Us
                     </Link>
                   </li>
                   <li>
-                    <Link href="/placements" className={styles.navItem}>
+                    <Link
+                      href="/placements"
+                      className={`${styles.navItem} ${
+                        pathname === "/placements" ? styles.active : ""
+                      }`}
+                    >
                       Placements
                     </Link>
                   </li>

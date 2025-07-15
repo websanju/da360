@@ -62,6 +62,12 @@
           line-height: 100%;
           letter-spacing: 1%;
           color: rgba(0, 0, 0, 1);
+          &:hover {
+            text-decoration: underline;
+          }
+          &.active {
+            font-weight: 700;
+          }
         }
       }
     }
