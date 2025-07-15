@@ -39,7 +39,11 @@ const ContactButtons = () => {
         <div className={styles.contactButtons}>
           <button
             className={styles.applyButton}
-            onClick={() => openPopup(<ApplyForm />, "Apply Now")}
+            onClick={() =>
+              openPopup(<ApplyForm />, {
+                title: `"Apply Now"`,
+              })
+            }
           >
             Apply Now
           </button>

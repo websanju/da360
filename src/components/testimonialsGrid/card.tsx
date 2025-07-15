@@ -52,7 +52,9 @@ const Card = ({ item }: { item: Testimonial }) => {
           <h3>{item.name}</h3>
           <p>{item.review}</p>
         </div>,
-        "Review"
+        {
+          title: `Review`,
+        }
       );
     }
   };

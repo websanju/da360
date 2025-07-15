@@ -120,10 +120,11 @@ const CampusTour = ({
               <div className={styles.scheduleButton}>
                 <Link
                   href="#"
-                  onClick={(e) => {
-                    e.preventDefault(); // Prevents jumping to the top
-                    openPopup(<ScheduleCampusTour />, "Apply Now");
-                  }}
+                  onClick={() =>
+                    openPopup(<ScheduleCampusTour />, {
+                      title: `"Apply Now"`,
+                    })
+                  }
                   className="btn btnRed"
                 >
                   Schedule Campus Tour

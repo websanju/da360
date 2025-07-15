@@ -35,10 +35,11 @@ export default function Card({ study }: { study: CaseStudy }) {
           {study.description.slice(0, 120)}...
           <Link
             href="#"
-            onClick={(e) => {
-              e.preventDefault(); // Prevents jumping to the top
-              openPopup(<CaseStudyPopup study={study} />, study.title);
-            }}
+            onClick={() =>
+              openPopup(<CaseStudyPopup study={study} />, {
+                title: `${study.title}`,
+              })
+            }
             className={styles.knowMore}
           >
             Know More

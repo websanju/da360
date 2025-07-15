@@ -32,7 +32,11 @@ export default function HeroSection() {
             <div className={styles.applyAction}>
               <Link
                 href="#"
-                onClick={() => openPopup(<ApplyForm />, "Apply Now")}
+                onClick={() =>
+                  openPopup(<ApplyForm />, {
+                    title: `"Apply Now"`,
+                  })
+                }
                 className="btn btn-danger btn-lg px-4"
               >
                 Apply Now

@@ -267,10 +267,11 @@ const SuccessStories: React.FC<StoryHeader & {}> = ({
           <div className={styles.downloadBtnAction}>
             <Link
               href="#"
-              onClick={(e) => {
-                e.preventDefault(); // Prevents jumping to the top
-                openPopup(<DownloadPlacementReport />, "Apply Now");
-              }}
+              onClick={() =>
+                openPopup(<DownloadPlacementReport />, {
+                  title: `"Apply Now"`,
+                })
+              }
               className={`${styles.downloadBtn} btn-white rounded-pill`}
             >
               Download Placement Report <ArrowUp />
