@@ -183,6 +183,16 @@ export default function LearnersSection() {
             </Link>
           </div>
         </div>
+        <div className={styles.imageToppers}>
+          <Image
+            src="/images/toppers.svg"
+            alt="Learners Group"
+            width={670}
+            height={286}
+            className="object-cover"
+            priority
+          />
+        </div>
       </div>
 
       {/* Information Bar */}

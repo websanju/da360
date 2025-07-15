@@ -1,7 +1,14 @@
 .learnersSection {
   overflow: hidden;
   border-radius: 0px;
-
+  .imageContainer {
+    position: relative;
+    .imageToppers {
+      position: absolute;
+      left: 50px;
+      bottom: -10px;
+    }
+  }
   .imageBox {
     position: relative;
 
@@ -290,7 +297,16 @@ bottom: 420px;
     margin-bottom: 40px;
     margin-top: 0;
   }
-
+.imageContainer {
+    position: relative;
+    .imageToppers {
+      left: 0 !important;
+      img {
+        max-width: 250px;
+        height: auto;
+      }
+    }
+  }
   .learnersSection {
     border-radius: 0;
     .imageBoxMobile {
