@@ -9,9 +9,19 @@ type PopupProps = {
   title?: string;
   children: ReactNode;
   width?: string;
+  className?: string;
 };
+function mergeClassNames(...classes: (string | undefined | false)[]) {
+  return classes.filter(Boolean).join(" ");
+}
 
-const Popup: React.FC<PopupProps> = ({ isOpen, onClose, children, width }) => {
+const Popup: React.FC<PopupProps> = ({
+  isOpen,
+  onClose,
+  children,
+  width,
+  className,
+}) => {
   useEffect(() => {
     const handleEsc = (e: KeyboardEvent) => {
       if (e.key === "Escape") onClose();
@@ -49,9 +59,9 @@ const Popup: React.FC<PopupProps> = ({ isOpen, onClose, children, width }) => {
   if (!isOpen) return null;
 
   return (
-    <div className={styles.overlay} onClick={onClose}>
+    <div className={`${styles.overlay}`} onClick={onClose}>
       <div
-        className={styles.popup}
+        className={mergeClassNames(styles.popup, className)}
         style={{ width: width || "800px" }}
         onClick={(e) => e.stopPropagation()}
       >

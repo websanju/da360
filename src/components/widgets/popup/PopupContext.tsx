@@ -2,8 +2,15 @@
 import React, { createContext, useContext, useState, ReactNode } from "react";
 import Popup from "./index";
 
+// Define optional popup options
+type PopupOptions = {
+  title?: string;
+  className?: string;
+  width?: string;
+};
+
 type PopupContextType = {
-  openPopup: (content: ReactNode, title?: string) => void;
+  openPopup: (content: ReactNode, options?: PopupOptions) => void;
   closePopup: () => void;
 };
 
@@ -19,11 +26,15 @@ export const usePopup = (): PopupContextType => {
 
 export const PopupProvider = ({ children }: { children: ReactNode }) => {
   const [isOpen, setIsOpen] = useState(false);
-  const [title, setTitle] = useState<string>("");
+  const [title, setTitle] = useState<string | undefined>();
+  const [className, setClassName] = useState<string | undefined>();
+  const [width, setWidth] = useState<string | undefined>();
   const [content, setContent] = useState<ReactNode>(null);
 
-  const openPopup = (popupContent: ReactNode, popupTitle = "") => {
-    setTitle(popupTitle);
+  const openPopup = (popupContent: ReactNode, options?: PopupOptions) => {
+    setTitle(options?.title);
+    setClassName(options?.className);
+    setWidth(options?.width);
     setContent(popupContent);
     setIsOpen(true);
   };
@@ -31,13 +42,21 @@ export const PopupProvider = ({ children }: { children: ReactNode }) => {
   const closePopup = () => {
     setIsOpen(false);
     setContent(null);
-    setTitle("");
+    setTitle(undefined);
+    setClassName(undefined);
+    setWidth(undefined);
   };
 
   return (
     <PopupContext.Provider value={{ openPopup, closePopup }}>
       {children}
-      <Popup isOpen={isOpen} onClose={closePopup} title={title}>
+      <Popup
+        isOpen={isOpen}
+        onClose={closePopup}
+        title={title}
+        className={className}
+        width={width}
+      >
         {content}
       </Popup>
     </PopupContext.Provider>

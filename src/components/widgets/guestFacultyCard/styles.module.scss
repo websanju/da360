@@ -5,6 +5,7 @@
     min-height: 518px;
     display: flex;
     justify-content: space-between;
+    cursor: pointer;
 
     .cardImg {
         height: 350px;
@@ -105,6 +106,19 @@
 
 .cardBody {
     background: #FFFFFF;
+}
+
+.logoRow {
+    margin-top: 24px;
+    img {
+        width: auto;
+        height: auto;
+    }
+}
+
+.singleLogo {
+    width: auto;
+    height: auto;
 }
 
 @media (width <=991px) { 
