@@ -68,17 +68,9 @@ const students: Student[] = [
     name: "Mayank",
     designation: "Ass. Manager - Marketing",
     company: "INTELLIPAT",
-    bgColor: "#E53F43",
-    iconColor: "#E53F43",
+    bgColor: "#FFEC5E",
+    iconColor: "#FFEC5E",
     cardClass: "cardFive",
-  },
-  {
-    name: "Anjali",
-    designation: "Ass. Manager - Marketing",
-    company: "INTELLIPAT",
-    bgColor: "#ffcd5e",
-    iconColor: "#ffcd5e",
-    cardClass: "cardSix",
   },
 ];
 
@@ -179,7 +171,7 @@ export default function LearnersSection() {
 
           {/* View All Button */}
           <div className="container position-relative">
-            <Link href="#" className={styles.viewAllBtn}>
+            <Link href="/placements" className={styles.viewAllBtn}>
               View All <UpArrow color="#fff" />
             </Link>
           </div>

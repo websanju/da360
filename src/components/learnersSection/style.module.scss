@@ -187,8 +187,8 @@
 
 .cardThree {
   position: absolute;
-  bottom: 310px;
-  left: 630px;
+bottom: 420px;
+    right: 350px;
   align-items: flex-start;
   .studentBlock {
     flex-direction: row;
@@ -211,20 +211,20 @@
 
 .cardOne {
   position: absolute;
-  bottom: 400px;
-  left: -105px;
+     top: 360px;
+    left: 245px;
 }
 
 .cardTwo {
   position: absolute;
-  bottom: 370px;
-  left: 22%;
+      bottom: 360px;
+    left: 170px;
 }
 
 .cardFour {
   position: absolute;
-  right: -190px;
-  top: 680px;
+      right: 180px;
+    top: 342px;
   align-items: flex-start;
 
   .studentBlock {
@@ -243,14 +243,16 @@
 
 .cardFive {
   position: absolute;
-  right: 40px;
-    bottom: 188px;
+     right: 20px;
+    bottom: 388px;
   align-items: flex-start;
 
   .studentBlock {
     flex-direction: row;
     margin-left: -40px;
-
+     .studentName {
+      color: #000;
+     } 
     .studentIcon {
       transform: rotate(260deg);
       top: -27px;
