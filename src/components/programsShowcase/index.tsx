@@ -7,44 +7,112 @@ import ScrollTrigger from "gsap/ScrollTrigger";
 import SectionHeader from "@components/widgets/sectionHeader";
 
 const ProgramsShowcase: React.FC = () => {
+  // useEffect(() => {
+  //   console.clear();
+  //   gsap.registerPlugin(ScrollTrigger);
+
+  //   const wrappers = gsap.utils.toArray<HTMLElement>(".card-wrapper");
+  //   const cards = gsap.utils.toArray<HTMLElement>(".card1, .card2, .card3");
+
+  //   wrappers.forEach((wrapper, i) => {
+  //     const card = cards[i];
+
+  //     gsap.fromTo(
+  //       card,
+  //       {
+  //         scaleX: 1,
+  //         scaleY: 1,
+  //         scaleZ: 1,
+  //         transformOrigin: "center center",
+  //       },
+  //       {
+  //         scaleX: 0.8,
+  //         scaleY: 0.8,
+  //         scaleZ: 0.8,
+  //         ease: "power2.out",
+  //         scrollTrigger: {
+  //           trigger: wrapper,
+  //           start: `top ${120 + 30 * i}`,
+  //           end: "bottom 600",
+  //           endTrigger: ".wrapper",
+  //           scrub: true,
+  //           pin: wrapper,
+  //           pinSpacing: false,
+  //           markers: false,
+  //           id: `card-${i + 1}`,
+  //         },
+  //       }
+  //     );
+  //   });
+
   useEffect(() => {
     console.clear();
     gsap.registerPlugin(ScrollTrigger);
 
-    // const isMobile = window.innerWidth <= 768;
-
+    const isMobile = window.innerWidth <= 768;
     const wrappers = gsap.utils.toArray<HTMLElement>(".card-wrapper");
     const cards = gsap.utils.toArray<HTMLElement>(".card1, .card2, .card3");
 
     wrappers.forEach((wrapper, i) => {
       const card = cards[i];
 
-      gsap.fromTo(
-        card,
-        {
-          scaleX: 1,
-          scaleY: 1,
-          scaleZ: 1,
-          transformOrigin: "center center",
-        },
-        {
-          scaleX: 0.8,
-          scaleY: 0.8,
-          scaleZ: 0.8,
-          ease: "power2.out",
-          scrollTrigger: {
-            trigger: wrapper,
-            start: `top ${120 + 30 * i}`,
-            end: "bottom 600",
-            endTrigger: ".wrapper",
-            scrub: true,
-            pin: wrapper,
-            pinSpacing: false,
-            markers: false, // turn true if you want to debug
-            id: `card-${i + 1}`,
+      if (isMobile) {
+        // ✅ Mobile: Simple fade-in + slide-up on scroll
+        gsap.fromTo(
+          card,
+          {
+            scaleX: 0.8,
+            scaleY: 0.8,
+            scaleZ: 0.8,
+            transformOrigin: "top center",
           },
-        }
-      );
+          {
+            scaleX: 0.8,
+            scaleY: 0.8,
+            scaleZ: 0.8,
+            ease: "power2.out",
+            scrollTrigger: {
+              trigger: wrapper,
+              start: `top ${80 + 30 * i}`,
+              end: "bottom 860",
+              endTrigger: ".wrapper",
+              scrub: true,
+              pin: wrapper,
+              pinSpacing: false,
+              markers: false,
+              id: `card-${i + 1}`,
+            },
+          }
+        );
+      } else {
+        // ✅ Desktop: Scale + Pin with ScrollTrigger
+        gsap.fromTo(
+          card,
+          {
+            scaleX: 1,
+            scaleY: 1,
+            scaleZ: 1,
+            transformOrigin: "center center",
+          },
+          {
+            scaleX: 0.8,
+            scaleY: 0.8,
+            scaleZ: 0.8,
+            ease: "power2.out",
+            scrollTrigger: {
+              trigger: wrapper,
+              start: `top ${120 + 30 * i}`,
+              end: "bottom 600",
+              endTrigger: ".wrapper",
+              scrub: true,
+              pin: wrapper,
+              pinSpacing: false,
+              markers: false,
+              id: `card-${i + 1}`,
+            },
+          }
+        );
+      }
     });
 
     return () => {
