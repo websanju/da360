@@ -115,9 +115,7 @@ export default function courseDetail() {
       <TeamSection section="section4" />
       <VideoSection />
       <Highlights section="section5" />
-      <TrustedByLearners
-        padding={{ desktop: "140px 0 60px 0", mobile: "60px 0 0 0" }}
-      />
+
       <LearningRoadmap
         headerTitle={
           digitalMarketingLeadership.LearningRoadmapProps.headerTitle

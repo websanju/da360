@@ -13,80 +13,25 @@ import "swiper/css";
 
 const data = [
   {
-    name: `Deepak <br/> Soni`,
-    title: "Digital Marketing Trainer",
+    name: `Riya <br/> Tiwari`,
+    title: "Founder at Authique",
     experience: "12+ years Experience",
     linkedinLink: "#",
-    bgColor: "bgPink",
+    bgColor: "bgGreay",
     image: {
-      desktop: "/images/trainers/deepak.png",
-      mobile: "/images/trainers/deepak.png",
+      desktop: "/images/guestMentor/riya-tiwari.png",
+      mobile: "/images/guestMentor/riya-tiwari.png",
     },
   },
   {
-    name: `Madhuraj P`,
-    title: "Digital Marketing Trainer",
+    name: `Rajesh Choudhury`,
+    title: "DGM Digital Marketing at Purvankara",
     experience: "8+ years Experience",
     linkedinLink: "#",
-    bgColor: "bgBlue",
+    bgColor: "bgGreay",
     image: {
-      desktop: "/images/trainers/madhu.png",
-      mobile: "/images/trainers/madhu.png",
-    },
-  },
-  {
-    name: `Sathiyaseelan S`,
-    title: "Digital Marketing Trainer",
-    experience: "3+ years Experience",
-    linkedinLink: "#",
-    bgColor: "bgGreen",
-    image: {
-      desktop: "/images/trainers/sathya.png",
-      mobile: "/images/trainers/sathya.png",
-    },
-  },
-  {
-    name: `Monisha Jain S S`,
-    title: "Digital Marketing Trainer",
-    experience: "3+ years Experience",
-    linkedinLink: "#",
-    bgColor: "bgGreen",
-    image: {
-      desktop: "/images/trainers/monisha.png",
-      mobile: "/images/trainers/monisha.png",
-    },
-  },
-  {
-    name: `Anush Raj K`,
-    title: "Digital Marketing Trainer",
-    experience: "5+ years Experience",
-    linkedinLink: "#",
-    bgColor: "bgGreen",
-    image: {
-      desktop: "/images/trainers/anush.png",
-      mobile: "/images/trainers/anush.png",
-    },
-  },
-  {
-    name: `Swanand <br/> Patwardhan`,
-    title: "Digital Marketing Trainer",
-    experience: "8+ years Experience",
-    linkedinLink: "#",
-    bgColor: "bgGreen",
-    image: {
-      desktop: "/images/trainers/swanand.png",
-      mobile: "/images/trainers/swanand.png",
-    },
-  },
-  {
-    name: `Sujeeth H D`,
-    title: "Digital Marketing Trainer",
-    experience: "5+ years Experience",
-    linkedinLink: "#",
-    bgColor: "bgGreen",
-    image: {
-      desktop: "/images/trainers/sujeeth.png",
-      mobile: "/images/trainers/sujeeth.png",
+      desktop: "/images/guestMentor/rajesh-choudhury.png",
+      mobile: "/images/guestMentor/rajesh-choudhury.png",
     },
   },
 ];
@@ -102,7 +47,7 @@ const GuestFacultySection = ({ section }: GuestFacultySectionProps) => {
             <SectionHeader
               wrapperMarginBottom={{ desktop: "60px", mobile: "40px" }}
               titleMarginBottom={{ desktop: "16px", mobile: "10px" }}
-              title={<>Industry Leaders as Your Guest Mentors</>}
+              title={<> Guest Mentors</>}
               maxWidth="650px"
               description="Gain Insights from World-Class Guest Faculty"
             />

@@ -1,7 +1,7 @@
 // import styles from "./style.module.scss";
 import TrainersHeroSection from "@components/trainersHeroSection";
 import CareerBanner from "@/components/careerBanner";
-import GuestFacultyCard from "@components/widgets/guestFacultyCard";
+import TrainersFacultyCard from "@components/widgets/trainersFacultyCard";
 import styles from "./style.module.scss";
 import SectionHeader from "@/components/widgets/sectionHeader";
 
@@ -173,7 +173,7 @@ export default function Career() {
           <div className={`${styles.row} row d-md-flex`}>
             {dataItem.map((item, index) => (
               <div className="col-md-4 col-lg-4 col-6" key={index}>
-                <GuestFacultyCard {...item} />
+                <TrainersFacultyCard {...item} />
               </div>
             ))}
           </div>
@@ -193,7 +193,7 @@ export default function Career() {
           <div className={`${styles.row} row d-md-flex`}>
             {data.map((item, index) => (
               <div className="col-md-4 col-lg-4 col-6" key={index}>
-                <GuestFacultyCard {...item} />
+                <TrainersFacultyCard {...item} />
               </div>
             ))}
           </div>
