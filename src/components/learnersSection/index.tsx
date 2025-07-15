@@ -143,6 +143,16 @@ export default function LearnersSection() {
       {/* <LearnSlider /> */}
 
       <div className={styles.imageContainer}>
+        <div className={styles.imageBoxMobile}>
+          <Image
+            src="/images/hero-section-mobile.jpg"
+            alt="Learners Group"
+            width={786}
+            height={640}
+            className="object-cover"
+            priority
+          />
+        </div>
         <div className={styles.imageBox}>
           <Image
             src="/images/hero-section.jpg"

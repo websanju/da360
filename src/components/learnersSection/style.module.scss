@@ -111,6 +111,7 @@
     transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
 
     &:hover {
+      border: 2px solid #E53F43;
       background: #E53F43;
     }
   }
@@ -279,6 +280,10 @@ bottom: 420px;
   display: none;
 }
 
+.imageBoxMobile {
+  display: none;
+}
+
 @media (width <=1224px) {
   .accreditationSection {
     display: block;
@@ -288,7 +293,13 @@ bottom: 420px;
 
   .learnersSection {
     border-radius: 0;
-
+    .imageBoxMobile {
+      display: block;
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
     .imageBox {
       display: none;
     }
