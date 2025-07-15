@@ -102,6 +102,9 @@ export default function courseDetail() {
         section="section2"
         highlights={digitalNarketingTrainingInstitute.highlights}
       />
+      <TrustedByLearners
+        padding={{ desktop: "40px 0 140px 0", mobile: "0 0 60px 0" }}
+      />
       <OurSuccessStories
         section="section3"
         headerTitle={digitalNarketingTrainingInstitute.StoryHeader.headerTitle}
@@ -119,9 +122,7 @@ export default function courseDetail() {
       <TeamSection section="section4" />
       <VideoSection />
       <Highlights section="section5" />
-      <TrustedByLearners
-        padding={{ desktop: "140px 0 60px 0", mobile: "60px 0 0 0" }}
-      />
+
       <LearningRoadmap
         headerTitle={
           digitalNarketingTrainingInstitute.LearningRoadmapProps.headerTitle

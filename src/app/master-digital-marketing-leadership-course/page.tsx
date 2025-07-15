@@ -99,6 +99,9 @@ export default function courseDetail() {
         section="section2"
         highlights={digitalMarketingLeadership.highlights}
       />
+      <TrustedByLearners
+        padding={{ desktop: "40px 0 140px 0", mobile: "0 0 60px 0" }}
+      />
       <OurSuccessStories
         section="section3"
         headerTitle={digitalMarketingLeadership.StoryHeader.headerTitle}
