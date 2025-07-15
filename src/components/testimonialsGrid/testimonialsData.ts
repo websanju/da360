@@ -13,7 +13,7 @@ export type Testimonial = {
   export const testimonials: Testimonial[] = [
     {
       id: 1,
-      type: "text",
+      type: "logo",
       name: "Sanjay Lal",
       review:
         "Amazing experience at Digital Academy 360. Learnt all the ins and outs of Digital Marketing, enough to land me a job at my first interview ever. The faculty is highly experienced and will clear all your doubts and guide you when needed. If you want to become a professional Digital Marketer then DA360 is the perfect option.",
@@ -40,7 +40,7 @@ export type Testimonial = {
       },
       {
         id: 4,
-        type: "text",
+         type: "logo",
         name: "Sanjay Lal",
         review:
           "Amazing experience at Digital Academy 360. Learnt all the ins and outs of Digital Marketing, enough to land me a job at my first interview ever. The faculty is highly experienced and will clear all your doubts and guide you when needed. If you want to become a professional Digital Marketer then DA360 is the perfect option.",
@@ -58,7 +58,7 @@ export type Testimonial = {
       },
       {
         id: 6,
-        type: "text",
+         type: "logo",
         name: "Sanjay Lal",
         review:
           "Amazing experience at Digital Academy 360. Learnt all the ins and outs of Digital Marketing, enough to land me a job at my first interview ever. The faculty is highly experienced and will clear all your doubts and guide you when needed. If you want to become a professional Digital Marketer then DA360 is the perfect option.",
