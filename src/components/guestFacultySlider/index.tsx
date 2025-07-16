@@ -14,7 +14,7 @@ import "swiper/css";
 
 const data: Study[] = [
   {
-    name: "Riya Tiwari",
+    name: "Riya <br/> Tiwari",
     title: "Founder at Authique",
     experience: "12+ years Experience",
     linkedinLink: "#",
@@ -42,7 +42,7 @@ const data: Study[] = [
     logos: ["/images/zer.png"],
   },
   {
-    name: "Gopal Raj",
+    name: "Gopal <br/> Raj",
     title: "Founder at Verycom",
     experience: "8+ years Experience",
     linkedinLink: "#",
@@ -69,7 +69,7 @@ const data: Study[] = [
       desktop: "/images/guestMentor/aditya-agarwal.png",
       mobile: "/images/guestMentor/aditya-agarwal.png",
     },
-    logos: ["/images/zer.png"],
+    logos: ["/images/guestMentor/qilin.svg"],
   },
   {
     name: "Shantanu Sharma",
@@ -87,7 +87,7 @@ const data: Study[] = [
     logos: ["/images/zer.png"],
   },
   {
-    name: "Harshvardhan S",
+    name: "Harshvardhan <br/> S",
     title: "Digital Lead at H&M",
     experience: "8+ years Experience",
     linkedinLink: "#",
@@ -102,7 +102,7 @@ const data: Study[] = [
     logos: ["/images/zer.png"],
   },
   {
-    name: "Jonas Prasanna",
+    name: "Jonas <br/> Prasanna",
     title: "Ex Global HR at Boeing",
     experience: "8+ years Experience",
     linkedinLink: "#",
@@ -114,7 +114,31 @@ const data: Study[] = [
       desktop: "/images/guestMentor/jonas-prasanna.png",
       mobile: "/images/guestMentor/jonas-prasanna.png",
     },
-    logos: ["/images/zer.png"],
+    logos: [
+      "/images/guestMentor/boeing.svg",
+      "/images/guestMentor/capgemini.svg",
+      "/images/guestMentor/philips.svg",
+      "/images/guestMentor/disnephotstar.svg",
+    ],
+  },
+  {
+    name: "Deben <br/> Rath",
+    title: "Associate Account Manager at Adobe",
+    experience: "8+ years Experience",
+    linkedinLink: "#",
+    expertise:
+      "Programmatic ads, performance analytics, campaign optimization & digital ad-tech integrations.",
+    description:
+      "Associate Account Manager at Adobe with strong foundations in programmatic advertising and analytics. Known for simplifying complex data into actionable marketing insights.",
+    image: {
+      desktop: "/images/guestMentor/deben-rath.png",
+      mobile: "/images/guestMentor/deben-rath.png",
+    },
+    logos: [
+      "/images/guestMentor/adob.svg",
+      "/images/guestMentor/yahoo.svg",
+      "/images/guestMentor/thermo.svg",
+    ],
   },
 ];
 

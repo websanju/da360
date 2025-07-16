@@ -58,7 +58,7 @@ const CounterOnScroll = () => {
         <div className="row g-4">
           <div className="col-6 col-md-3">
             <Counter
-              from={100}
+              from={800}
               to={1000}
               duration={1}
               suffix="+"
@@ -67,7 +67,7 @@ const CounterOnScroll = () => {
           </div>
           <div className="col-6 col-md-3">
             <Counter
-              from={10}
+              from={50}
               to={93}
               duration={1}
               suffix="%"
@@ -76,7 +76,7 @@ const CounterOnScroll = () => {
           </div>
           <div className="col-6 col-md-3">
             <Counter
-              from={100}
+              from={200}
               to={300}
               duration={1}
               suffix="+"
@@ -85,7 +85,7 @@ const CounterOnScroll = () => {
           </div>
           <div className="col-6 col-md-3">
             <Counter
-              from={10000}
+              from={30000}
               to={50000}
               duration={1}
               suffix="+"

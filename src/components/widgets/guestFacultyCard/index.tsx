@@ -63,7 +63,7 @@ const GuestFacultyCard: React.FC<GuestFacultyCardProps> = ({
               {hasSingleLogo && (
                 <Image
                   width={50}
-                  height={24}
+                  height={30}
                   src={logos[0]}
                   alt="Logo"
                   className={styles.singleLogo}
