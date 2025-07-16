@@ -25,7 +25,7 @@ const data: Study[] = [
       desktop: "/images/guestMentor/riya-tiwari.png",
       mobile: "/images/guestMentor/riya-tiwari.png",
     },
-    logos: ["/images/zerozilla.png", "/images/zerozilla.png"],
+    logos: [""],
   },
   {
     name: "Rajesh Choudhury",
@@ -39,7 +39,12 @@ const data: Study[] = [
       desktop: "/images/guestMentor/rajesh-choudhury.png",
       mobile: "/images/guestMentor/rajesh-choudhury.png",
     },
-    logos: ["/images/zer.png"],
+    logos: [
+      "/images/guestMentor/amazon.svg",
+      "/images/guestMentor/puravankara.svg",
+      "/images/guestMentor/anarock.svg",
+      "/images/guestMentor/landmark.svg",
+    ],
   },
   {
     name: "Gopal <br/> Raj",
@@ -54,7 +59,7 @@ const data: Study[] = [
       desktop: "/images/guestMentor/gopalraj.png",
       mobile: "/images/guestMentor/gopalraj.png",
     },
-    logos: ["/images/zer.png"],
+    logos: ["/images/guestMentor/ddb.svg", "/images/guestMentor/juut.svg"],
   },
   {
     name: "Aditya Agarwal",
@@ -84,7 +89,11 @@ const data: Study[] = [
       desktop: "/images/guestMentor/shantanu-sharma.png",
       mobile: "/images/guestMentor/shantanu-sharma.png",
     },
-    logos: ["/images/zer.png"],
+    logos: [
+      "/images/guestMentor/arehies.svg",
+      "/images/guestMentor/easeMytrip.svg",
+      "/images/guestMentor/pepsico.svg",
+    ],
   },
   {
     name: "Harshvardhan <br/> S",
@@ -99,7 +108,12 @@ const data: Study[] = [
       desktop: "/images/guestMentor/harshvardhan.png",
       mobile: "/images/guestMentor/harshvardhan.png",
     },
-    logos: ["/images/zer.png"],
+    logos: [
+      "/images/guestMentor/hm.svg",
+      "/images/guestMentor/innopark.svg",
+      "/images/guestMentor/taks.svg",
+      "/images/guestMentor/airstobrat.svg",
+    ],
   },
   {
     name: "Jonas <br/> Prasanna",
