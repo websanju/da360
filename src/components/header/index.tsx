@@ -8,6 +8,7 @@ import QuickMenu from "@/components/widgets/quickMenu";
 import MegaMenu from "./megaMenu";
 import { usePathname } from "next/navigation";
 import MobileMenu from "./mobileMenu";
+import MegaMenuMobile from "./megaMenuMobile";
 
 export default function Header() {
   const pathname = usePathname();
@@ -17,6 +18,7 @@ export default function Header() {
   const dropdownRef = useRef<HTMLDivElement>(null);
   const dropdownQuickRef = useRef<HTMLDivElement>(null);
   const [menuOpen, setMenuOpen] = useState(false);
+  const [megaMenuOpen, setMegaMenuOpen] = useState(false);
 
   const toggleCourses = (e?: React.MouseEvent | boolean) => {
     if (typeof e === "boolean") {
@@ -122,10 +124,28 @@ export default function Header() {
                 <div
                   className={`${styles.dropdownToggle} ${
                     isCoursesOpen ? styles.open : ""
-                  }`}
+                  } ${styles.hamburgerdesktopMenu}`}
                   onClick={(e) => {
                     e.stopPropagation();
                     toggleCourses();
+                  }}
+                >
+                  <span>Courses</span>
+                  <span
+                    className={`${styles.arrow} ${
+                      isCoursesOpen ? styles.open : ""
+                    }`}
+                  >
+                    <DownArrow />
+                  </span>
+                </div>
+                <div
+                  className={`${styles.dropdownToggle} ${
+                    isCoursesOpen ? styles.open : ""
+                  } ${styles.hamburgermobileMenu}`}
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    setMegaMenuOpen(true);
                   }}
                 >
                   <span>Courses</span>
@@ -236,6 +256,10 @@ export default function Header() {
                     height={11}
                   />
                 </div>
+
+                {megaMenuOpen && (
+                  <MegaMenuMobile onClose={() => setMegaMenuOpen(false)} />
+                )}
                 {menuOpen && <MobileMenu onClose={() => setMenuOpen(false)} />}
                 <div
                   className={`${styles.dropdownMenu} ${
