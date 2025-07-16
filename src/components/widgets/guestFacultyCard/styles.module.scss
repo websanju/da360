@@ -143,7 +143,7 @@
     .card {
         min-height: 338px;
         .cardImg {
-            height: 171px;
+            height: 230px;
             width: 100%;
             img {
                 object-fit: cover;
@@ -154,7 +154,7 @@
         .cardBody {
             justify-content:flex-start;
             padding: 16px 24px;
-            min-height:  167px;
+            min-height:  157px;
     
             .facultyName {
                 display: flex;
@@ -162,15 +162,15 @@
                 align-items: flex-start;
                 flex-direction: column;
                 gap: 8px;
-                margin-bottom: 15px;
+                margin-bottom: 5px;
                 h5 {
                     font-size: 20px;
                     line-height: normal;
                     color: #000;
                     max-width: 100%;
                       white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
                 }
                 a {
                     img {
@@ -203,4 +203,10 @@
             }
         }
      }
+     .logoRow {
+            margin-top: 14px;
+        img {
+            height: 25px;
+        }
+      }
  }
