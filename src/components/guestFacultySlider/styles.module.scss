@@ -15,6 +15,9 @@
     padding: 0 !important;
     width: 100%;
     max-width: 500px!important;
+    button {
+        display: block;
+    }
 }
 
 @media (width <=992px) {
