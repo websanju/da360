@@ -76,7 +76,11 @@ const ProgramsShowcase: React.FC = () => {
         <SectionHeader
           wrapperMarginBottom={{ desktop: "60px", mobile: "40px" }}
           titleMarginBottom={{ desktop: "20px", mobile: "10px" }}
-          title={<>Programs Crafted for Real-World Success</>}
+          title={
+            <>
+              Programs Crafted for <br /> Real-World Success
+            </>
+          }
           description="Get Certified. Get Hired."
         />
 
