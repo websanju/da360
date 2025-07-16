@@ -321,17 +321,17 @@ bottom: 420px;
     }
 
     .infoBar {
-      padding: 40px 0 50px;
+      padding: 40px 0 40px;
 
       .infoNumbers {
         flex-wrap: wrap;
         gap: 20px;
-        row-gap: 40px;
+        row-gap: 24px;
       }
 
       .infobox {
         flex-direction: column;
-        gap: 47px;
+        gap: 24px;
 
         .infoLable {
 

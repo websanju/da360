@@ -48,28 +48,14 @@ const GuestFacultyCard: React.FC<GuestFacultyCardProps> = ({
         <div className={styles.facultyName}>
           <h5 dangerouslySetInnerHTML={{ __html: name }} />
 
-          {!hasMultipleLogos && (
-            <>
-              {/* <Link href={linkedinLink}>
-                <Image
-                  width={16}
-                  height={16}
-                  src="/images/devicon_linkedin.svg"
-                  alt="LinkedIn"
-                  className={styles.linkedinIcon}
-                />
-              </Link> */}
-
-              {hasSingleLogo && (
-                <Image
-                  width={50}
-                  height={30}
-                  src={logos[0]}
-                  alt="Logo"
-                  className={styles.singleLogo}
-                />
-              )}
-            </>
+          {hasSingleLogo && logos[0] && (
+            <Image
+              width={50}
+              height={30}
+              src={logos[0]}
+              alt="Logo"
+              className={styles.singleLogo}
+            />
           )}
         </div>
 
