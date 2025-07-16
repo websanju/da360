@@ -42,7 +42,7 @@ const MediaAwards = () => {
         />
         {isMobile ? (
           <Swiper
-            spaceBetween={20}
+            spaceBetween={10}
             slidesPerView={auto}
             breakpoints={{
               320: {
@@ -61,8 +61,8 @@ const MediaAwards = () => {
                   <Image
                     src={logo.src}
                     alt={logo.alt}
-                    width={283}
-                    height={99}
+                    width={183}
+                    height={64}
                     className="img-fluid"
                   />
                 </div>
