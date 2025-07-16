@@ -50,7 +50,6 @@ const MobileMenu: React.FC<Props> = ({ onClose }) => {
           className={`${styles.columnGroup} ${styles.leadershipColumnGroup}`}
         >
           <h3>Leadership Courses</h3>
-
           <div
             onClick={() =>
               handleClick("/master-digital-marketing-leadership-course")
@@ -127,6 +126,23 @@ const MobileMenu: React.FC<Props> = ({ onClose }) => {
               {renderListItem("15+ Certifications")}
             </ul>
           </div>
+          <div
+            onClick={() => handleClick("/social-influencer-pgcp")}
+            className={styles.navbarDropdownColumn}
+          >
+            <h4>PGCP in Performance Marketing & Media Buying</h4>
+            <div className={styles.navbarTags}>
+              <span className={styles.dropdownTag}>6 Months</span>
+              <span className={styles.dropdownTag}>Online</span>
+            </div>
+            <ul className={styles.navbarDropdownList}>
+              {renderListItem("PG Level Certification")}
+              {renderListItem("240+ Hours of Learning")}
+              {renderListItem("20+ Case Studies")}
+              {renderListItem("20+ Specialised Tools")}
+              {renderListItem("15+ Certifications")}
+            </ul>
+          </div>
         </div>
 
         {/* === Certification Courses === */}
@@ -166,6 +182,24 @@ const MobileMenu: React.FC<Props> = ({ onClose }) => {
               {renderListItem("8+ Case Studies")}
               {renderListItem("5+ Specialised Tools")}
               {renderListItem("2 Creator Flow")}
+            </ul>
+          </div>
+
+          <div
+            onClick={() => handleClick("/online-digital-marketing-courses")}
+            className={styles.navbarDropdownColumn}
+          >
+            <h4>LinkedIn Marketing Bootcamp</h4>
+            <div className={styles.navbarTags}>
+              <span className={styles.dropdownTag}>2 Months</span>
+              <span className={styles.dropdownTag}>Online</span>
+            </div>
+            <ul className={styles.navbarDropdownList}>
+              {renderListItem("Advance Specialist Certification")}
+              {renderListItem("80+ Hours of Learning")}
+              {renderListItem("8+ Case Studies")}
+              {renderListItem("10+ Tools")}
+              {renderListItem("2 Linkedin Outreach Flow")}
             </ul>
           </div>
         </div>
