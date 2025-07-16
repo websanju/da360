@@ -6,8 +6,8 @@ interface GuestFacultyCardProps {
   name: string;
   title: string;
   bgColor: string;
-  profileImage: string; // <-- NEW: Profile image for the card
-  logos?: string[]; // Logos to be shown (up to 3)
+  profileImage: string;
+  logos?: string[];
 }
 
 const GuestFacultyCard: React.FC<GuestFacultyCardProps> = ({
@@ -17,7 +17,6 @@ const GuestFacultyCard: React.FC<GuestFacultyCardProps> = ({
   profileImage,
   logos = [],
 }) => {
-  // Show only up to 3 logos
   const displayedLogos = logos.slice(0, 3);
 
   return (
@@ -43,20 +42,21 @@ const GuestFacultyCard: React.FC<GuestFacultyCardProps> = ({
         <div className={styles.facultyInfo}>
           <div className={styles.title}>{title}</div>
         </div>
-
-        {displayedLogos.map(
-          (logo, index) =>
-            logo && (
-              <Image
-                key={index}
-                width={60}
-                height={24}
-                src={logo}
-                alt={`Logo ${index + 1}`}
-                className={styles.multiLogo}
-              />
-            )
-        )}
+        <div className={styles.logoRow}>
+          {displayedLogos.map(
+            (logo, index) =>
+              logo && (
+                <Image
+                  key={index}
+                  width={60}
+                  height={24}
+                  src={logo}
+                  alt={`Logo ${index + 1}`}
+                  className={styles.multiLogo}
+                />
+              )
+          )}
+        </div>
       </div>
     </div>
   );

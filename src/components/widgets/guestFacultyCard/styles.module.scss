@@ -2,7 +2,7 @@
     border-radius: 20px;
     overflow: hidden;
     border: 2px solid #000000;
-    min-height: 518px;
+    min-height: 418px;
     display: flex;
     justify-content: space-between;
     cursor: pointer;
@@ -22,7 +22,7 @@
         flex-direction: column;
         justify-content: flex-start;
         padding: 28px 32px;
-        min-height:auto;
+        min-height:160px;
 
         .facultyName {
             display: flex;

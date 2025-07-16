@@ -29,7 +29,7 @@ const data: Study[] = [
     expertise: "Performance Marketing, SEO, Campaign Planning",
     description:
       "Specialist in performance marketing and digital analytics with a proven track record in real estate and FMCG.",
-    profileImage: "/images/guestMentor/riya-tiwari.png",
+    profileImage: "/images/guestMentor/rajesh-choudhury.png",
 
     logos: [
       "/images/guestMentor/amazon.svg",
@@ -45,7 +45,7 @@ const data: Study[] = [
       "Brand strategy, integrated marketing communications, creative campaign development, and multi-sector brand positioning.",
     description:
       "15+ years of experience across leading advertising agencies in India and overseas. Has successfully led campaigns for top-tier brands across diverse industries.",
-    profileImage: "/images/guestMentor/riya-tiwari.png",
+    profileImage: "/images/guestMentor/gopalraj.png",
 
     logos: ["/images/guestMentor/ddb.svg", "/images/guestMentor/juut.svg"],
   },
@@ -81,14 +81,14 @@ const data: Study[] = [
     profileImage: "/images/guestMentor/harshvardhan.png",
   },
   {
-    name: "Jonas <br/> Prasanna",
+    name: "Jonas Prasanna",
     title: "Ex Global HR at Boeing",
 
     expertise:
       "Executive coaching, strategic HR transformation, culture design, psychological safety, and leadership development.",
     description:
       "Global HR & Leadership Coach with 16+ years in talent strategy across leading global companies. Featured on HR podcasts and a passionate advocate of workplace transformation.",
-    profileImage: "/images/guestMentor/boeing.svg",
+    profileImage: "/images/guestMentor/jonas-prasanna.png",
     logos: [
       "/images/guestMentor/boeing.svg",
       "/images/guestMentor/capgemini.svg",
@@ -97,13 +97,13 @@ const data: Study[] = [
     ],
   },
   {
-    name: "Deben <br/> Rath",
+    name: "Deben Rath",
     title: "Associate Account Manager at Adobe",
     expertise:
       "Programmatic ads, performance analytics, campaign optimization & digital ad-tech integrations.",
     description:
       "Associate Account Manager at Adobe with strong foundations in programmatic advertising and analytics. Known for simplifying complex data into actionable marketing insights.",
-    profileImage: "/images/guestMentor/riya-tiwari.png",
+    profileImage: "/images/guestMentor/deben-rath.png",
     logos: [
       "/images/guestMentor/adob.svg",
       "/images/guestMentor/yahoo.svg",
