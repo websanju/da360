@@ -2,8 +2,8 @@
 "use client";
 import Image from "next/image";
 import React, { useState } from "react";
-import Link from "next/link";
 import styles from "./mega.module.scss";
+import { useRouter } from "next/navigation";
 
 type Props = {
   onClose: () => void;
@@ -11,14 +11,25 @@ type Props = {
 
 const MobileMenu: React.FC<Props> = ({ onClose }) => {
   const [isClosing, setIsClosing] = useState(false);
-
+  const router = useRouter();
+  const handleClick = (url: string) => {
+    setIsClosing(true);
+    setTimeout(() => {
+      onClose();
+      router.push(url);
+    }, 300);
+  };
   const handleClose = () => {
     setIsClosing(true);
     setTimeout(() => {
       onClose();
-    }, 300); // match animation duration
+    }, 300);
   };
-
+  const renderListItem = (text: string) => (
+    <li>
+      <span>{text}</span>
+    </li>
+  );
   return (
     <div
       className={`${styles.mobileMenu} ${
@@ -33,68 +44,132 @@ const MobileMenu: React.FC<Props> = ({ onClose }) => {
           height={14}
         />
       </button>
-      <ul>
-        <li>
-          <Link href="/life@da360" onClick={handleClose}>
-            Life@DA360 mega menu
-          </Link>
-        </li>
-        <li>
-          <Link href="/trainers" onClick={handleClose}>
-            Trainers
-          </Link>
-        </li>
-        <li>
-          <Link href="/hackathon" onClick={handleClose}>
-            Hackaton
-          </Link>
-        </li>
-        <li>
-          <Link href="/hire-from-da360" onClick={handleClose}>
-            Hire From Us
-          </Link>
-        </li>
-        <li>
-          <Link href="/placements" onClick={handleClose}>
-            Placements
-          </Link>
-        </li>
-        <li>
-          <Link href="/about-us" onClick={handleClose}>
-            About Us
-          </Link>
-        </li>
-        <li>
-          <Link href="/testimonial" onClick={handleClose}>
-            Testimonial
-          </Link>
-        </li>
-        <li>
-          <Link href="/career" onClick={handleClose}>
-            Careers
-          </Link>
-        </li>
-        <li>
-          <Link href="/refer-and-earn" onClick={handleClose}>
-            Refer & Earn
-          </Link>
-        </li>
-        <li>
-          <Link href="/blogs" onClick={handleClose}>
-            Blogs
-          </Link>
-        </li>
-        <li>
-          <Link href="/contact-us" onClick={handleClose}>
-            Contact Us
-          </Link>
-        </li>
-        <li>
-          <Link href="/webinars" onClick={handleClose}>
-            Webinars
-          </Link>
-        </li>
-      </ul>
+      <div className={styles.columnBox}>
+        {/* === Leadership Courses === */}
+        <div
+          className={`${styles.columnGroup} ${styles.leadershipColumnGroup}`}
+        >
+          <h3>Leadership Courses</h3>
+
+          <div
+            onClick={() =>
+              handleClick("/master-digital-marketing-leadership-course")
+            }
+            className={styles.navbarDropdownColumn}
+          >
+            <h4>Leadership in Digital Marketing, AI & Entrepreneurship</h4>
+            <div className={styles.navbarTags}>
+              <span className={styles.dropdownTag}>12 Months</span>
+            </div>
+            <ul className={styles.navbarDropdownList}>
+              {renderListItem("3 Months Internship Included")}
+              {renderListItem("1920+ Hours of Learning")}
+              {renderListItem("50+ Case Studies")}
+              {renderListItem("70+ Tools")}
+              {renderListItem("25+ Certifications")}
+            </ul>
+          </div>
+
+          <div
+            onClick={() => handleClick("/social-video-leadership-course")}
+            className={styles.navbarDropdownColumn}
+          >
+            <h4>Leadership in Social Content Creator & Video Production</h4>
+            <div className={styles.navbarTags}>
+              <span className={styles.dropdownTag}>12 Months</span>
+            </div>
+            <ul className={styles.navbarDropdownList}>
+              {renderListItem("3 Months Internship Included")}
+              {renderListItem("1920+ Hours of Learning")}
+              {renderListItem("50+ Case Studies")}
+              {renderListItem("55+ Specialised Tools")}
+              {renderListItem("20+ Certifications")}
+            </ul>
+          </div>
+        </div>
+
+        {/* === PGCP Courses === */}
+        <div className={styles.columnGroup}>
+          <h3>PGCP Courses</h3>
+
+          <div
+            onClick={() => handleClick("/digital-marketing-training-institute")}
+            className={styles.navbarDropdownColumn}
+          >
+            <h4>PGCP in Digital Marketing, E‑Comm & AI</h4>
+            <div className={styles.navbarTags}>
+              <span className={styles.dropdownTag}>6 Months</span>
+              <span className={styles.dropdownTag}>Online / Classroom</span>
+            </div>
+            <ul className={styles.navbarDropdownList}>
+              {renderListItem("PG Level Certification")}
+              {renderListItem("240+ Hours of Learning")}
+              {renderListItem("20+ Case Studies")}
+              {renderListItem("30+ Tools")}
+              {renderListItem("15+ Certifications")}
+            </ul>
+          </div>
+
+          <div
+            onClick={() => handleClick("/social-influencer-pgcp")}
+            className={styles.navbarDropdownColumn}
+          >
+            <h4>PGCP in Social Media & Influencer Marketing</h4>
+            <div className={styles.navbarTags}>
+              <span className={styles.dropdownTag}>6 Months</span>
+              <span className={styles.dropdownTag}>Online</span>
+            </div>
+            <ul className={styles.navbarDropdownList}>
+              {renderListItem("PG Level Certification")}
+              {renderListItem("240+ Hours of Learning")}
+              {renderListItem("20+ Case Studies")}
+              {renderListItem("18+ Specialised Tools")}
+              {renderListItem("15+ Certifications")}
+            </ul>
+          </div>
+        </div>
+
+        {/* === Certification Courses === */}
+        <div className={styles.columnGroup}>
+          <h3>Certification Courses</h3>
+
+          <div
+            onClick={() => handleClick("/online-digital-marketing-courses")}
+            className={styles.navbarDropdownColumn}
+          >
+            <h4>AI Marketing / MarTech / Video</h4>
+            <div className={styles.navbarTags}>
+              <span className={styles.dropdownTag}>2 Months</span>
+              <span className={styles.dropdownTag}>Online</span>
+            </div>
+            <ul className={styles.navbarDropdownList}>
+              {renderListItem("Advance Specialist Certification")}
+              {renderListItem("80+ Hours of Learning")}
+              {renderListItem("8+ Case Studies")}
+              {renderListItem("10+ Tools")}
+              {renderListItem("2 AI Flows")}
+            </ul>
+          </div>
+
+          <div
+            onClick={() => handleClick("/online-digital-marketing-courses")}
+            className={styles.navbarDropdownColumn}
+          >
+            <h4>Influencer Marketing</h4>
+            <div className={styles.navbarTags}>
+              <span className={styles.dropdownTag}>2 Months</span>
+              <span className={styles.dropdownTag}>Online</span>
+            </div>
+            <ul className={styles.navbarDropdownList}>
+              {renderListItem("Advance Specialist Certification")}
+              {renderListItem("80+ Hours of Learning")}
+              {renderListItem("8+ Case Studies")}
+              {renderListItem("5+ Specialised Tools")}
+              {renderListItem("2 Creator Flow")}
+            </ul>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };

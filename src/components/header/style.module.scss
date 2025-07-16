@@ -196,11 +196,11 @@
   margin-left: 20px;
 
   .hamburgerdesktopMenu {
-    display: flex;
+    display: flex !important;
   }
 
   .hamburgermobileMenu {
-    display: none;
+    display: none !important;
   }
   .dropdownToggle {
     cursor: pointer;
@@ -547,11 +547,11 @@
 @media (max-width: 1024px) {
   .courseDropdown {
      .hamburgerdesktopMenu {
-    display: none;
+    display: none !important;
   }
 
   .hamburgermobileMenu {
-    display: flex;
+    display: flex !important;
   }
     .dropdownContainer {
       .dropdownColumnGroup {
