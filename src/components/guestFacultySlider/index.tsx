@@ -17,9 +17,10 @@ const data: Study[] = [
     name: "Riya iwari",
     namePopup: "Riya <br/> iwari",
     title: "Founder at Authique",
-    expertise: "Brand Strategy, Integrated Marketing, Campaigns",
+    expertise:
+      "Organic LinkedIn growth, storytelling, personal brand positioning, and full-funnel content strategies focused on trust, visibility & monetization.",
     description:
-      "12+ years of experience in brand management and digital strategy. Led teams for Fortune 500 clients.",
+      "Personal Branding Strategist known for helping B2B founders build LinkedIn authority and visibility. Has mentored 300+ freelancers and conducted 250+ client calls generating lakhs in revenue.",
     profileImage: "/images/guestMentor/riya-tiwari.jpg",
     profileImagePopup: "/images/guestMentor/riya-tiwari.png",
     logos: [""],
