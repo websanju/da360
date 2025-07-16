@@ -20,7 +20,7 @@ const Comparison = () => {
           </div>
         </div>
       </div>
-      <div className="container">
+      <div className={`${styles.container} container`}>
         <div className="row">
           <div className="col-lg-12">
             <div className={styles.cards}>
@@ -102,7 +102,7 @@ const Comparison = () => {
                         src={"/images/icons/tick-circle.svg"}
                       />
                     </span>
-                    Real-world, ready for 2029 & beyond
+                    3 to 12 Months (Flexible Options)
                   </li>
                   <li>
                     <span>
@@ -113,7 +113,7 @@ const Comparison = () => {
                         src={"/images/icons/tick-circle.svg"}
                       />
                     </span>{" "}
-                    Worked at Google, Meta, Metasoft…
+                    Online & Classroom
                   </li>
                   <li>
                     <span>
@@ -124,7 +124,7 @@ const Comparison = () => {
                         src={"/images/icons/tick-circle.svg"}
                       />
                     </span>{" "}
-                    50+ Apps and products to be coded
+                    40+ In-Depth Modules
                   </li>
                   <li>
                     <span>
@@ -135,7 +135,7 @@ const Comparison = () => {
                         src={"/images/icons/tick-circle.svg"}
                       />
                     </span>{" "}
-                    Mentorship session with top industry professionals
+                    7 Domain Specialist
                   </li>
                   <li>
                     <span>
@@ -146,7 +146,7 @@ const Comparison = () => {
                         src={"/images/icons/tick-circle.svg"}
                       />
                     </span>{" "}
-                    Compulsory paid internship for 1 year
+                    240–1900+ Hours (Hands-On Learning)
                   </li>
                   <li>
                     <span>
@@ -157,7 +157,7 @@ const Comparison = () => {
                         src={"/images/icons/tick-circle.svg"}
                       />
                     </span>{" "}
-                    Ready to work at Top Tech Companies
+                    5 to 20+ (Incl. Google, Meta, HubSpot, etc.)
                   </li>
                   <li>
                     <span>
@@ -168,7 +168,115 @@ const Comparison = () => {
                         src={"/images/icons/tick-circle.svg"}
                       />
                     </span>{" "}
-                    Senior SDE
+                    5–15 Advanced Career Tracks
+                  </li>
+
+                  <li>
+                    <span>
+                      <Image
+                        width={30}
+                        height={30}
+                        alt="close"
+                        src={"/images/icons/tick-circle.svg"}
+                      />
+                    </span>{" "}
+                    8–15+ Real-Time Agency Projects
+                  </li>
+
+                  <li>
+                    <span>
+                      <Image
+                        width={30}
+                        height={30}
+                        alt="close"
+                        src={"/images/icons/tick-circle.svg"}
+                      />
+                    </span>{" "}
+                    50+ Industry Tools
+                  </li>
+
+                  <li>
+                    <span>
+                      <Image
+                        width={30}
+                        height={30}
+                        alt="close"
+                        src={"/images/icons/tick-circle.svg"}
+                      />
+                    </span>{" "}
+                    Dedicated Career Services + 100% Placements
+                  </li>
+
+                  <li>
+                    <span>
+                      <Image
+                        width={30}
+                        height={30}
+                        alt="close"
+                        src={"/images/icons/tick-circle.svg"}
+                      />
+                    </span>{" "}
+                    1000+ Global Brands
+                  </li>
+
+                  <li>
+                    <span>
+                      <Image
+                        width={30}
+                        height={30}
+                        alt="close"
+                        src={"/images/icons/tick-circle.svg"}
+                      />
+                    </span>{" "}
+                    Mentoring, Startup Guidance, Freelancer Support
+                  </li>
+
+                  <li>
+                    <span>
+                      <Image
+                        width={30}
+                        height={30}
+                        alt="close"
+                        src={"/images/icons/tick-circle.svg"}
+                      />
+                    </span>{" "}
+                    Events, Competitions, Celebrations, Networking
+                  </li>
+
+                  <li>
+                    <span>
+                      <Image
+                        width={30}
+                        height={30}
+                        alt="close"
+                        src={"/images/icons/tick-circle.svg"}
+                      />
+                    </span>{" "}
+                    Mandatory with Portfolio Review
+                  </li>
+
+                  <li>
+                    <span>
+                      <Image
+                        width={30}
+                        height={30}
+                        alt="close"
+                        src={"/images/icons/tick-circle.svg"}
+                      />
+                    </span>{" "}
+                    Available
+                  </li>
+
+                  <li>
+                    <span>
+                      <Image
+                        width={30}
+                        height={30}
+                        alt="close"
+                        src={"/images/icons/tick-circle.svg"}
+                      />
+                    </span>{" "}
+                    50,000+ Careers Transformed + Proof of offer Letters
                   </li>
                 </ul>
               </div>
