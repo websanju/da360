@@ -10,6 +10,7 @@ export interface Study {
   description: string;
   expertise: string;
   profileImage: string;
+  profileImagePopup: string;
   logos?: string[];
 }
 
@@ -35,7 +36,7 @@ export default function CaseStudyPopup({ study }: Props) {
         <div className={styles.facultyBox}>
           <div className={styles.facultyImg}>
             <Image
-              src={study.profileImage}
+              src={study.profileImagePopup}
               alt={study.name}
               width={428}
               height={375}
@@ -56,16 +57,20 @@ export default function CaseStudyPopup({ study }: Props) {
             <span>Brands Worked with</span>
             {study.logos && study.logos.length > 0 && (
               <div className={styles.logos}>
-                {study.logos.map((logo, idx) => (
-                  <Image
-                    key={idx}
-                    src={logo}
-                    alt={`Logo ${idx + 1}`}
-                    width={60}
-                    height={30}
-                    className={styles.logo}
-                  />
-                ))}
+                {study.logos
+                  .filter(
+                    (logo) => typeof logo === "string" && logo.trim() !== ""
+                  )
+                  .map((logo, idx) => (
+                    <Image
+                      key={idx}
+                      src={logo}
+                      alt={`Logo ${idx + 1}`}
+                      width={60}
+                      height={30}
+                      className={styles.logo}
+                    />
+                  ))}
               </div>
             )}
           </div>

@@ -19,23 +19,24 @@ const data: Study[] = [
     expertise: "Brand Strategy, Integrated Marketing, Campaigns",
     description:
       "12+ years of experience in brand management and digital strategy. Led teams for Fortune 500 clients.",
-    profileImage: "/images/guestMentor/riya-tiwari.png",
+    profileImage: "/images/guestMentor/riya-tiwari.jpg",
+    profileImagePopup: "/images/guestMentor/riya-tiwari.png",
     logos: [""],
   },
   {
     name: "Rajesh Choudhury",
     title: "DGM Digital Marketing at Purvankara",
 
-    expertise: "Performance Marketing, SEO, Campaign Planning",
+    expertise:
+      "Media planning, SEO/SEM, PPC, content strategy, ORM, analytics, and digital training for high-growth performance marketing.",
     description:
-      "Specialist in performance marketing and digital analytics with a proven track record in real estate and FMCG.",
-    profileImage: "/images/guestMentor/rajesh-choudhury.png",
-
+      "Deputy General Manager – Digital Marketing at Puravankara Ltd. with 18+ years of experience in digital strategy across real estate, retail & e-commerce sectors.",
+    profileImage: "/images/guestMentor/rajesh-choudhury.jpg",
+    profileImagePopup: "/images/guestMentor/rajesh-choudhury.png",
     logos: [
       "/images/guestMentor/amazon.svg",
       "/images/guestMentor/puravankara.svg",
       "/images/guestMentor/anarock.svg",
-      "/images/guestMentor/landmark.svg",
     ],
   },
   {
@@ -45,8 +46,8 @@ const data: Study[] = [
       "Brand strategy, integrated marketing communications, creative campaign development, and multi-sector brand positioning.",
     description:
       "15+ years of experience across leading advertising agencies in India and overseas. Has successfully led campaigns for top-tier brands across diverse industries.",
-    profileImage: "/images/guestMentor/gopalraj.png",
-
+    profileImage: "/images/guestMentor/gopalraj.jpg",
+    profileImagePopup: "/images/guestMentor/gopalraj.png",
     logos: ["/images/guestMentor/ddb.svg", "/images/guestMentor/juut.svg"],
   },
   {
@@ -57,28 +58,39 @@ const data: Study[] = [
       "AI-powered personalization, martech infrastructure, campaign automation, cloud-native performance marketing systems.",
     description:
       "Cloud Optimization Expert & Founder of Qilin Lab, helping SaaS and fintech founders build scalable AI marketing stacks.",
-    profileImage: "/images/guestMentor/aditya-agarwal.png",
+    profileImage: "/images/guestMentor/aditya-agarwal.jpg",
+    profileImagePopup: "/images/guestMentor/aditya-agarwal.png",
     logos: ["/images/guestMentor/qilin.svg"],
   },
   {
     name: "Shantanu Sharma",
     title: "AVP Digital Marketing at Casagrand",
-
     expertise:
       "Expert in Google Ads, Meta, LinkedIn & programmatic channels—manages multi-million-dollar budgets with automation, CRM integration & full-funnel optimization.",
     description:
       "8+ years of experience in performance marketing across US, UK & APAC. Has successfully trained over 1,000 digital marketers and led high-ROI campaigns for brands like Archies, EasyMyTrip & PepsiCo.",
-    profileImage: "/images/guestMentor/shantanu-sharma.png",
+    profileImage: "/images/guestMentor/shantanu-sharma.jpg",
+    profileImagePopup: "/images/guestMentor/shantanu-sharma.png",
+    logos: [
+      "/images/guestMentor/arehies.svg",
+      "/images/guestMentor/easeMytrip.svg",
+      "/images/guestMentor/pepsico.svg",
+    ],
   },
   {
     name: "Harshvardhan S",
     title: "Digital Lead at H&M",
-
     expertise:
       "Quick commerce campaigns, performance analysis, vendor onboarding, product optimization, and fashion e-commerce scaling.",
     description:
       "Digital Lead – Merch at H&M India with proven experience across digital merchandising, e-commerce strategy, and marketplace execution.",
-    profileImage: "/images/guestMentor/harshvardhan.png",
+    profileImage: "/images/guestMentor/harshvardhan.jpg",
+    profileImagePopup: "/images/guestMentor/harshvardhan.png",
+    logos: [
+      "/images/guestMentor/hm.svg",
+      "/images/guestMentor/innopark.svg",
+      "/images/guestMentor/airstobrat.svg",
+    ],
   },
   {
     name: "Jonas Prasanna",
@@ -88,12 +100,12 @@ const data: Study[] = [
       "Executive coaching, strategic HR transformation, culture design, psychological safety, and leadership development.",
     description:
       "Global HR & Leadership Coach with 16+ years in talent strategy across leading global companies. Featured on HR podcasts and a passionate advocate of workplace transformation.",
-    profileImage: "/images/guestMentor/jonas-prasanna.png",
+    profileImage: "/images/guestMentor/jonas-prasanna.jpg",
+    profileImagePopup: "/images/guestMentor/jonas-prasanna.png",
     logos: [
       "/images/guestMentor/boeing.svg",
       "/images/guestMentor/capgemini.svg",
       "/images/guestMentor/philips.svg",
-      "/images/guestMentor/disnephotstar.svg",
     ],
   },
   {
@@ -103,7 +115,8 @@ const data: Study[] = [
       "Programmatic ads, performance analytics, campaign optimization & digital ad-tech integrations.",
     description:
       "Associate Account Manager at Adobe with strong foundations in programmatic advertising and analytics. Known for simplifying complex data into actionable marketing insights.",
-    profileImage: "/images/guestMentor/deben-rath.png",
+    profileImage: "/images/guestMentor/deben-rath.jpg",
+    profileImagePopup: "/images/guestMentor/deben-rath.png",
     logos: [
       "/images/guestMentor/adob.svg",
       "/images/guestMentor/yahoo.svg",

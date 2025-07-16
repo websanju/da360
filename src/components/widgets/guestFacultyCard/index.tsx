@@ -43,19 +43,22 @@ const GuestFacultyCard: React.FC<GuestFacultyCardProps> = ({
           <div className={styles.title}>{title}</div>
         </div>
         <div className={styles.logoRow}>
-          {displayedLogos.map(
-            (logo, index) =>
-              logo && (
-                <Image
-                  key={index}
-                  width={60}
-                  height={24}
-                  src={logo}
-                  alt={`Logo ${index + 1}`}
-                  className={styles.multiLogo}
-                />
-              )
-          )}
+          <span>Brands worked with:</span>
+          <div className={styles.logos}>
+            {displayedLogos.map(
+              (logo, index) =>
+                logo && (
+                  <Image
+                    key={index}
+                    width={60}
+                    height={24}
+                    src={logo}
+                    alt={`Logo ${index + 1}`}
+                    className={styles.multiLogo}
+                  />
+                )
+            )}
+          </div>
         </div>
       </div>
     </div>
