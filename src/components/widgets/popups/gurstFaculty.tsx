@@ -7,14 +7,9 @@ import Image from "next/image";
 export interface Study {
   name: string;
   title: string;
-  experience: string;
   description: string;
   expertise: string;
-  linkedinLink: string;
-  image: {
-    desktop: string;
-    mobile: string;
-  };
+  profileImage: string;
   logos?: string[];
 }
 
@@ -40,7 +35,7 @@ export default function CaseStudyPopup({ study }: Props) {
         <div className={styles.facultyBox}>
           <div className={styles.facultyImg}>
             <Image
-              src={study.image.desktop}
+              src={study.profileImage}
               alt={study.name}
               width={428}
               height={375}

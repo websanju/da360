@@ -14,31 +14,23 @@ import "swiper/css";
 
 const data: Study[] = [
   {
-    name: "Riya <br/> Tiwari",
+    name: "Riya iwari",
     title: "Founder at Authique",
-    experience: "12+ years Experience",
-    linkedinLink: "#",
     expertise: "Brand Strategy, Integrated Marketing, Campaigns",
     description:
       "12+ years of experience in brand management and digital strategy. Led teams for Fortune 500 clients.",
-    image: {
-      desktop: "/images/guestMentor/riya-tiwari.png",
-      mobile: "/images/guestMentor/riya-tiwari.png",
-    },
+    profileImage: "/images/guestMentor/riya-tiwari.png",
     logos: [""],
   },
   {
     name: "Rajesh Choudhury",
     title: "DGM Digital Marketing at Purvankara",
-    experience: "8+ years Experience",
-    linkedinLink: "#",
+
     expertise: "Performance Marketing, SEO, Campaign Planning",
     description:
       "Specialist in performance marketing and digital analytics with a proven track record in real estate and FMCG.",
-    image: {
-      desktop: "/images/guestMentor/rajesh-choudhury.png",
-      mobile: "/images/guestMentor/rajesh-choudhury.png",
-    },
+    profileImage: "/images/guestMentor/riya-tiwari.png",
+
     logos: [
       "/images/guestMentor/amazon.svg",
       "/images/guestMentor/puravankara.svg",
@@ -47,87 +39,56 @@ const data: Study[] = [
     ],
   },
   {
-    name: "Gopal <br/> Raj",
+    name: "Gopal Raj",
     title: "Founder at Verycom",
-    experience: "8+ years Experience",
-    linkedinLink: "#",
     expertise:
       "Brand strategy, integrated marketing communications, creative campaign development, and multi-sector brand positioning.",
     description:
       "15+ years of experience across leading advertising agencies in India and overseas. Has successfully led campaigns for top-tier brands across diverse industries.",
-    image: {
-      desktop: "/images/guestMentor/gopalraj.png",
-      mobile: "/images/guestMentor/gopalraj.png",
-    },
+    profileImage: "/images/guestMentor/riya-tiwari.png",
+
     logos: ["/images/guestMentor/ddb.svg", "/images/guestMentor/juut.svg"],
   },
   {
     name: "Aditya Agarwal",
     title: "Founder at Qilin Lab",
-    experience: "8+ years Experience",
-    linkedinLink: "#",
+
     expertise:
       "AI-powered personalization, martech infrastructure, campaign automation, cloud-native performance marketing systems.",
     description:
       "Cloud Optimization Expert & Founder of Qilin Lab, helping SaaS and fintech founders build scalable AI marketing stacks.",
-    image: {
-      desktop: "/images/guestMentor/aditya-agarwal.png",
-      mobile: "/images/guestMentor/aditya-agarwal.png",
-    },
+    profileImage: "/images/guestMentor/aditya-agarwal.png",
     logos: ["/images/guestMentor/qilin.svg"],
   },
   {
     name: "Shantanu Sharma",
     title: "AVP Digital Marketing at Casagrand",
-    experience: "8+ years Experience",
-    linkedinLink: "#",
+
     expertise:
       "Expert in Google Ads, Meta, LinkedIn & programmatic channels—manages multi-million-dollar budgets with automation, CRM integration & full-funnel optimization.",
     description:
       "8+ years of experience in performance marketing across US, UK & APAC. Has successfully trained over 1,000 digital marketers and led high-ROI campaigns for brands like Archies, EasyMyTrip & PepsiCo.",
-    image: {
-      desktop: "/images/guestMentor/shantanu-sharma.png",
-      mobile: "/images/guestMentor/shantanu-sharma.png",
-    },
-    logos: [
-      "/images/guestMentor/arehies.svg",
-      "/images/guestMentor/easeMytrip.svg",
-      "/images/guestMentor/pepsico.svg",
-    ],
+    profileImage: "/images/guestMentor/shantanu-sharma.png",
   },
   {
-    name: "Harshvardhan <br/> S",
+    name: "Harshvardhan S",
     title: "Digital Lead at H&M",
-    experience: "8+ years Experience",
-    linkedinLink: "#",
+
     expertise:
       "Quick commerce campaigns, performance analysis, vendor onboarding, product optimization, and fashion e-commerce scaling.",
     description:
       "Digital Lead – Merch at H&M India with proven experience across digital merchandising, e-commerce strategy, and marketplace execution.",
-    image: {
-      desktop: "/images/guestMentor/harshvardhan.png",
-      mobile: "/images/guestMentor/harshvardhan.png",
-    },
-    logos: [
-      "/images/guestMentor/hm.svg",
-      "/images/guestMentor/innopark.svg",
-      "/images/guestMentor/taks.svg",
-      "/images/guestMentor/airstobrat.svg",
-    ],
+    profileImage: "/images/guestMentor/harshvardhan.png",
   },
   {
     name: "Jonas <br/> Prasanna",
     title: "Ex Global HR at Boeing",
-    experience: "8+ years Experience",
-    linkedinLink: "#",
+
     expertise:
       "Executive coaching, strategic HR transformation, culture design, psychological safety, and leadership development.",
     description:
       "Global HR & Leadership Coach with 16+ years in talent strategy across leading global companies. Featured on HR podcasts and a passionate advocate of workplace transformation.",
-    image: {
-      desktop: "/images/guestMentor/jonas-prasanna.png",
-      mobile: "/images/guestMentor/jonas-prasanna.png",
-    },
+    profileImage: "/images/guestMentor/boeing.svg",
     logos: [
       "/images/guestMentor/boeing.svg",
       "/images/guestMentor/capgemini.svg",
@@ -138,16 +99,11 @@ const data: Study[] = [
   {
     name: "Deben <br/> Rath",
     title: "Associate Account Manager at Adobe",
-    experience: "8+ years Experience",
-    linkedinLink: "#",
     expertise:
       "Programmatic ads, performance analytics, campaign optimization & digital ad-tech integrations.",
     description:
       "Associate Account Manager at Adobe with strong foundations in programmatic advertising and analytics. Known for simplifying complex data into actionable marketing insights.",
-    image: {
-      desktop: "/images/guestMentor/deben-rath.png",
-      mobile: "/images/guestMentor/deben-rath.png",
-    },
+    profileImage: "/images/guestMentor/riya-tiwari.png",
     logos: [
       "/images/guestMentor/adob.svg",
       "/images/guestMentor/yahoo.svg",

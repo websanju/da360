@@ -1,72 +1,52 @@
 import React from "react";
 import styles from "./styles.module.scss";
-
 import Image from "next/image";
-// import Link from "next/link";
 
 interface GuestFacultyCardProps {
   name: string;
   title: string;
-  experience: string;
-  // linkedinLink: string;
   bgColor: string;
-  image: {
-    mobile: string;
-    desktop: string;
-  };
-  logos?: string[]; // <-- NEW
+  profileImage: string; // <-- NEW: Profile image for the card
+  logos?: string[]; // Logos to be shown (up to 3)
 }
+
 const GuestFacultyCard: React.FC<GuestFacultyCardProps> = ({
   name,
   title,
-  experience,
-  // linkedinLink,
   bgColor,
-  image,
+  profileImage,
   logos = [],
 }) => {
-  const hasMultipleLogos = logos.length > 1;
-  const hasSingleLogo = logos.length === 1;
+  // Show only up to 3 logos
+  const displayedLogos = logos.slice(0, 3);
 
   return (
     <div className={`card ${styles.card} ${styles[bgColor]}`}>
       <div className={`${styles.cardImg} cardImg`}>
-        <picture>
-          <source media="(max-width: 767px)" srcSet={image.mobile} />
-          <Image
-            src={image.desktop}
-            width={399}
-            height={350}
-            className="card-img-top"
-            unoptimized
-            alt={name}
-          />
-        </picture>
+        <Image
+          src={profileImage}
+          width={399}
+          height={350}
+          className="card-img-top"
+          unoptimized
+          alt={name}
+        />
       </div>
 
       <div className={`${styles.cardBody} cardBody`}>
+        {/* Profile Image */}
+
         <div className={styles.facultyName}>
           <h5 dangerouslySetInnerHTML={{ __html: name }} />
-
-          {hasSingleLogo && logos[0] && (
-            <Image
-              width={50}
-              height={30}
-              src={logos[0]}
-              alt="Logo"
-              className={styles.singleLogo}
-            />
-          )}
         </div>
 
         <div className={styles.facultyInfo}>
           <div className={styles.title}>{title}</div>
-          <div className={styles.experience}>{experience}</div>
         </div>
 
-        {hasMultipleLogos && (
-          <div className={styles.logoRow}>
-            {logos.map((logo, index) => (
+        {displayedLogos.map(
+          (logo, index) =>
+            logo && (
               <Image
                 key={index}
                 width={60}
@@ -75,8 +55,7 @@ const GuestFacultyCard: React.FC<GuestFacultyCardProps> = ({
                 alt={`Logo ${index + 1}`}
                 className={styles.multiLogo}
               />
-            ))}
-          </div>
+            )
         )}
       </div>
     </div>

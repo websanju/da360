@@ -22,7 +22,7 @@
         flex-direction: column;
         justify-content: flex-start;
         padding: 28px 32px;
-        min-height: 172px;
+        min-height:auto;
 
         .facultyName {
             display: flex;
@@ -38,7 +38,7 @@
                 text-transform: uppercase;
                 color: #000;
                 max-width: max-content;
-                min-height: 54px;
+                min-height: auto;
             }
             a {
                 min-width: 30px;
@@ -58,7 +58,7 @@
                 font-size: 14px;
                 line-height: 100%;
                 color: #000;
-                margin-bottom: 15px;
+                margin-bottom: 0;
             }
             .experience {
                 font-weight: 400;

@@ -7,15 +7,19 @@ import ScrollTrigger from "gsap/ScrollTrigger";
 import SectionHeader from "@components/widgets/sectionHeader";
 
 const ProgramsShowcase: React.FC = () => {
-  const [isMobile, setIsMobile] = useState<boolean>(window.innerWidth <= 768);
+  const [isMobile, setIsMobile] = useState<boolean>(false);
 
   // Handle resize to update isMobile
   useEffect(() => {
     const handleResize = () => {
-      setIsMobile(window.innerWidth <= 768);
+      if (typeof window !== "undefined") {
+        setIsMobile(window.innerWidth <= 768);
+      }
     };
 
+    handleResize(); // Initialize on first render
     window.addEventListener("resize", handleResize);
+
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
