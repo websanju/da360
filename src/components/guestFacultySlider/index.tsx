@@ -15,6 +15,7 @@ import "swiper/css";
 const data: Study[] = [
   {
     name: "Riya iwari",
+    namePopup: "Riya <br/> iwari",
     title: "Founder at Authique",
     expertise: "Brand Strategy, Integrated Marketing, Campaigns",
     description:
@@ -25,6 +26,7 @@ const data: Study[] = [
   },
   {
     name: "Rajesh Choudhury",
+    namePopup: "Rajesh <br/> Choudhury",
     title: "DGM Digital Marketing at Purvankara",
 
     expertise:
@@ -41,6 +43,7 @@ const data: Study[] = [
   },
   {
     name: "Gopal Raj",
+    namePopup: "Gopal <br/> Raj",
     title: "Founder at Verycom",
     expertise:
       "Brand strategy, integrated marketing communications, creative campaign development, and multi-sector brand positioning.",
@@ -52,6 +55,7 @@ const data: Study[] = [
   },
   {
     name: "Aditya Agarwal",
+    namePopup: "Aditya <br/> Agarwal",
     title: "Founder at Qilin Lab",
 
     expertise:
@@ -64,6 +68,7 @@ const data: Study[] = [
   },
   {
     name: "Shantanu Sharma",
+    namePopup: "Shantanu <br/> Sharma",
     title: "AVP Digital Marketing at Casagrand",
     expertise:
       "Expert in Google Ads, Meta, LinkedIn & programmatic channels—manages multi-million-dollar budgets with automation, CRM integration & full-funnel optimization.",
@@ -79,6 +84,7 @@ const data: Study[] = [
   },
   {
     name: "Harshvardhan S",
+    namePopup: "Harshvardhan <br/> S",
     title: "Digital Lead at H&M",
     expertise:
       "Quick commerce campaigns, performance analysis, vendor onboarding, product optimization, and fashion e-commerce scaling.",
@@ -94,6 +100,7 @@ const data: Study[] = [
   },
   {
     name: "Jonas Prasanna",
+    namePopup: "Jonas <br/> Prasanna",
     title: "Ex Global HR at Boeing",
 
     expertise:
@@ -110,6 +117,7 @@ const data: Study[] = [
   },
   {
     name: "Deben Rath",
+    namePopup: "Deben <br/> Rath",
     title: "Associate Account Manager at Adobe",
     expertise:
       "Programmatic ads, performance analytics, campaign optimization & digital ad-tech integrations.",

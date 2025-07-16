@@ -69,6 +69,7 @@
     }
 
     .facultyInfo {
+        margin-top: 20px;
         h3 {
             font-weight: 700;
             font-style: Italic;
@@ -77,6 +78,7 @@
             letter-spacing: 0%;
             text-transform: uppercase;
             margin-bottom: 4px;
+           
         }
     }
 }
@@ -148,7 +150,29 @@
     .formBanner {
         display: none;
     }
-
+    .facultyBox {
+        .facultyInfo {
+            margin-top: 15px;
+            h3 {
+                 white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                font-size: 24px;
+            }
+            p {
+               width: 200px;
+    overflow-wrap: break-word; 
+    font-size: 13px;
+    line-height: 14px;
+            }
+         }
+         .facultyImg {
+        img {
+            max-width: 131px;
+            height: auto;
+        }
+    }
+     }
     .formBox {
         height: calc(100% - 150px);
 

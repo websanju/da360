@@ -168,6 +168,9 @@
                     line-height: normal;
                     color: #000;
                     max-width: 100%;
+                      white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
                 }
                 a {
                     img {
@@ -187,6 +190,9 @@
                     letter-spacing: 0%;
                     color: #000;
                     margin-bottom: 5px;
+                      white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
                 }
                 .experience {
                     font-weight: 400;

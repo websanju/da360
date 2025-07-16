@@ -5,6 +5,7 @@ import { usePopup } from "@components/widgets/popup/PopupContext";
 import Image from "next/image";
 
 export interface Study {
+  namePopup: string;
   name: string;
   title: string;
   description: string;
@@ -43,7 +44,7 @@ export default function CaseStudyPopup({ study }: Props) {
             />
           </div>
           <div className={styles.facultyInfo}>
-            <h3 dangerouslySetInnerHTML={{ __html: study.name }} />
+            <h3 dangerouslySetInnerHTML={{ __html: study.namePopup }} />
             <p>{study.title}</p>
           </div>
         </div>
