@@ -7,6 +7,7 @@ import DownArrow from "@/components/Ui/svg/downArrow";
 import QuickMenu from "@/components/widgets/quickMenu";
 import MegaMenu from "./megaMenu";
 import { usePathname } from "next/navigation";
+import MobileMenu from "./mobileMenu";
 
 export default function Header() {
   const pathname = usePathname();
@@ -15,6 +16,7 @@ export default function Header() {
   const [isSticky, setIsSticky] = useState(false);
   const dropdownRef = useRef<HTMLDivElement>(null);
   const dropdownQuickRef = useRef<HTMLDivElement>(null);
+  const [menuOpen, setMenuOpen] = useState(false);
 
   const toggleCourses = (e?: React.MouseEvent | boolean) => {
     if (typeof e === "boolean") {
@@ -214,7 +216,7 @@ export default function Header() {
                     e.stopPropagation(); // Prevent bubbling
                     toggleQuickMenu();
                   }}
-                  className={styles.hamburgerMenu}
+                  className={`${styles.hamburgerMenu} ${styles.hamburgerdesktopMenu}`}
                 >
                   <Image
                     src="/images/hamburger.svg"
@@ -223,6 +225,18 @@ export default function Header() {
                     height={11}
                   />
                 </div>
+                <div
+                  className={`${styles.hamburgerMenu} ${styles.hamburgermobileMenu}`}
+                  onClick={() => setMenuOpen(true)}
+                >
+                  <Image
+                    src="/images/hamburger.svg"
+                    alt="menu"
+                    width={17}
+                    height={11}
+                  />
+                </div>
+                {menuOpen && <MobileMenu onClose={() => setMenuOpen(false)} />}
                 <div
                   className={`${styles.dropdownMenu} ${
                     isQuickOpen ? styles.open : ""
