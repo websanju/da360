@@ -32,11 +32,16 @@
 @media (width <=991px) {
   .contentSection {
     padding-top:60px;
+     .contentTitle {
+         font-weight: 500;
+    font-size: 22px;
+    margin-bottom: 16px;
+  }
     p {
       font-weight: 400;
       font-size: 14px;
       line-height: 23px;
-      margin: 0 auto;
+      margin: 0 auto 16px;
     }
   }
 }
