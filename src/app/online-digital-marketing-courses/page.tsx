@@ -9,7 +9,7 @@ import VideoSection from "@components/videoSection";
 import LearnerEnquiry from "@components/learnerEnquiry";
 import MediaAwards from "@components/mediaAwards";
 import LatestBlogPosts from "@components/latestBlogPosts";
-import UnlockBonuses from "@components/unlockBonuses";
+// import UnlockBonuses from "@components/unlockBonuses";
 import Highlights from "./highlights";
 import LearningRoadmap from "@components/learningRoadmap";
 import RewardGrid from "@components/rewardGrid";
@@ -123,7 +123,7 @@ export default function courseDetail() {
       <AlumniSlider />
       <BrandLogos />
       <RewardGrid section="section7" />
-      <UnlockBonuses />
+      {/* <UnlockBonuses /> */}
       <LatestBlogPosts />
       <MediaAwards />
       <LearnerEnquiry />
