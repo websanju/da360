@@ -1,5 +1,3 @@
-
-
 .digitalToolsSection {
   margin-bottom: 115px;
 
@@ -51,6 +49,14 @@
   gap: 12px;
   margin-bottom: 20px;
   overflow-y: auto;
+  /* For Firefox */
+      -ms-overflow-style: none;
+      /* For Internet Explorer and Edge */
+
+      &::-webkit-scrollbar {
+        display: none;
+        /* For Chrome, Safari, and Opera */
+      }
 }
 
 .tabButton {
@@ -78,50 +84,51 @@
     color: rgb(255, 0, 0);
   }
 }
+
 @media (width <=992px) {
   .digitalToolsSection {
-  margin-bottom: 40px;
+    margin-bottom: 40px;
 
-  .sectionTitle {
-    font-style: italic;
-    font-size: 24px;
-    line-height: 32px;
-    letter-spacing: 0%;
-    max-width: 581px;
-    margin-bottom: 16px;
-  }
+    .sectionTitle {
+      font-style: italic;
+      font-size: 24px;
+      line-height: 32px;
+      letter-spacing: 0%;
+      max-width: 581px;
+      margin-bottom: 16px;
+    }
 
-  .sectionDescription {
-font-weight: 500;
-font-size: 12px;
-line-height: 17px;
-letter-spacing: 0%;
-    color: rgba(15, 11, 49, 1);
-    margin-bottom: 27px;
-    max-width: 870px;
-  }
+    .sectionDescription {
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 17px;
+      letter-spacing: 0%;
+      color: rgba(15, 11, 49, 1);
+      margin-bottom: 27px;
+      max-width: 870px;
+    }
 
-  .digitalToolList {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    gap: 20px;
+    .digitalToolList {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      gap: 10px;
 
-    .digitalTooItem {
-      height: 50px;
-      background: rgba(245, 245, 245, 1);
-      border-radius: 10px;
-
-      img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
+      .digitalTooItem {
+        height: 50px;
+        background: rgba(245, 245, 245, 1);
         border-radius: 10px;
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          border-radius: 10px;
+        }
       }
     }
+
+
   }
-
-
-}
 
 }

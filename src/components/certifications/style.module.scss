@@ -15,6 +15,7 @@
       line-height: 60px;
       letter-spacing: 0%;
       color: rgba(0, 0, 0, 1);
+      min-width: max-content;
     }
   }
 
@@ -39,6 +40,7 @@
       cursor: pointer;
       padding-left: 15px;
       padding-right: 15px;
+      min-width: max-content;
 
       &.active {
         border: 2px solid rgba(255, 0, 0, 1);
@@ -109,6 +111,7 @@
         font-size: 16px;
         line-height: 32px;
         font-style: normal;
+        min-width: max-content;
       }
     }
 
@@ -143,6 +146,7 @@
         letter-spacing: 2%;
         color: rgba(32, 17, 22, 1);
         cursor: pointer;
+         min-width: max-content;
 
         &.active {
           border: 2px solid rgba(255, 0, 0, 1);
