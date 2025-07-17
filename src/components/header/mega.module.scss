@@ -76,12 +76,12 @@
         h3 {
             font-weight: 600;
             font-style: Italic;
-            font-size: 22px;
+            font-size: 16px;
             line-height: 100%;
             letter-spacing: 0%;
-            border-bottom: 0.5px solid #000000;
-            padding-bottom: 8px;
-            margin-bottom: 12px;
+            border-bottom: 0.5px solid #0000001e;
+            padding-bottom: 10px;
+            margin-bottom: 14px;
         }
 
         .navbarDropdownColumn {
@@ -101,16 +101,16 @@
                 }
             }
 
-            &::after {
-                content: '';
-                width: 1px;
-                height: 100%;
-                background-color: #000000;
-                opacity: 20%;
-                right: -5px;
-                top: 0;
-                position: absolute;
-            }
+            // &::after {
+            //     content: '';
+            //     width: 1px;
+            //     height: 100%;
+            //     background-color: #000000;
+            //     opacity: 20%;
+            //     right: -5px;
+            //     top: 0;
+            //     position: absolute;
+            // }
 
             &:hover {
                 // border: 1px solid #000000;
@@ -125,12 +125,12 @@
             h4 {
                 font-weight: 700;
                 font-style: italic;
-                font-size: 20px;
+                font-size: 14px;
                 line-height: normal;
                 letter-spacing: 2%;
                 color: #000;
-                margin-bottom: 6px;
-                min-height: 60px;
+                margin-bottom: 8px;
+                min-height: auto;
             }
 
             .dropdownTag {
@@ -150,12 +150,12 @@
 
             .navbarTitle {
                 font-weight: 500;
-                font-size: 14px;
+                font-size: 12px;
                 line-height: normal;
                 color: #000000;
-                margin-bottom: 18px;
+                margin-bottom: 10px;
                 display: block;
-                max-width: 260px;
+                max-width: 100%;
             }
 
             .navbarDropdownList {
@@ -165,7 +165,7 @@
                 gap: 8px;
                 padding-bottom: 20px;
                 margin-bottom: 10px;
-                border-bottom: 0.5px solid #000000;
+                border-bottom: 0.5px solid #0000001e;
 
                 li {
                     position: relative;
@@ -186,6 +186,16 @@
                         left: 0;
                         top: 50%;
                         transform: translateY(-50%);
+                    }
+
+                    span {
+
+                        font-weight: 500;
+                        font-style: Medium;
+                        font-size: 12px;
+                        line-height: normal;
+                        letter-spacing: 2%;
+
                     }
                 }
             }

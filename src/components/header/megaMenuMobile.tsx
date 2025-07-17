@@ -57,6 +57,9 @@ const MobileMenu: React.FC<Props> = ({ onClose }) => {
             className={styles.navbarDropdownColumn}
           >
             <h4>Leadership in Digital Marketing, AI & Entrepreneurship</h4>
+            <span className={styles.navbarTitle}>
+              Leadership in Digital Marketing, AI & Entrepreneurship
+            </span>
             <div className={styles.navbarTags}>
               <span className={styles.dropdownTag}>12 Months</span>
             </div>
@@ -74,6 +77,9 @@ const MobileMenu: React.FC<Props> = ({ onClose }) => {
             className={styles.navbarDropdownColumn}
           >
             <h4>Leadership in Social Content Creator & Video Production</h4>
+            <span className={styles.navbarTitle}>
+              Leadership in Social Content Creator & Video Production
+            </span>
             <div className={styles.navbarTags}>
               <span className={styles.dropdownTag}>12 Months</span>
             </div>
@@ -96,6 +102,9 @@ const MobileMenu: React.FC<Props> = ({ onClose }) => {
             className={styles.navbarDropdownColumn}
           >
             <h4>PGCP in Digital Marketing, E‑Comm & AI</h4>
+            <span className={styles.navbarTitle}>
+              PGCP in Digital Marketing, E‑Comm & AI
+            </span>
             <div className={styles.navbarTags}>
               <span className={styles.dropdownTag}>6 Months</span>
               <span className={styles.dropdownTag}>Online / Classroom</span>
@@ -114,6 +123,9 @@ const MobileMenu: React.FC<Props> = ({ onClose }) => {
             className={styles.navbarDropdownColumn}
           >
             <h4>PGCP in Social Media & Influencer Marketing</h4>
+            <span className={styles.navbarTitle}>
+              PGCP in Social Media & Influencer Marketing
+            </span>
             <div className={styles.navbarTags}>
               <span className={styles.dropdownTag}>6 Months</span>
               <span className={styles.dropdownTag}>Online</span>
@@ -131,6 +143,9 @@ const MobileMenu: React.FC<Props> = ({ onClose }) => {
             className={styles.navbarDropdownColumn}
           >
             <h4>PGCP in Performance Marketing & Media Buying</h4>
+            <span className={styles.navbarTitle}>
+              PGCP in Performance Marketing & Media Buying
+            </span>
             <div className={styles.navbarTags}>
               <span className={styles.dropdownTag}>6 Months</span>
               <span className={styles.dropdownTag}>Online</span>
@@ -154,6 +169,9 @@ const MobileMenu: React.FC<Props> = ({ onClose }) => {
             className={styles.navbarDropdownColumn}
           >
             <h4>AI Marketing / MarTech / Video</h4>
+            <span className={styles.navbarTitle}>
+              AI Vibe Marketing Certification Course
+            </span>
             <div className={styles.navbarTags}>
               <span className={styles.dropdownTag}>2 Months</span>
               <span className={styles.dropdownTag}>Online</span>
@@ -172,6 +190,9 @@ const MobileMenu: React.FC<Props> = ({ onClose }) => {
             className={styles.navbarDropdownColumn}
           >
             <h4>Influencer Marketing</h4>
+            <span className={styles.navbarTitle}>
+              Youtube & Instagram Influencer Certification Course
+            </span>
             <div className={styles.navbarTags}>
               <span className={styles.dropdownTag}>2 Months</span>
               <span className={styles.dropdownTag}>Online</span>
@@ -190,6 +211,9 @@ const MobileMenu: React.FC<Props> = ({ onClose }) => {
             className={styles.navbarDropdownColumn}
           >
             <h4>LinkedIn Marketing Bootcamp</h4>
+            <span className={styles.navbarTitle}>
+              LinkedIn & Personal Branding Certification Course
+            </span>
             <div className={styles.navbarTags}>
               <span className={styles.dropdownTag}>2 Months</span>
               <span className={styles.dropdownTag}>Online</span>
