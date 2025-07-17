@@ -87,9 +87,11 @@
 
     .grid {
       display: grid;
-      row-gap: 16px;
-      column-gap: 16px;
-      grid-template-columns: repeat(2, minmax(152px, 1fr));
+      row-gap: 14px;
+      column-gap: 14px;
+      justify-content: space-between;
+      align-items: center;
+      grid-template-columns: repeat(2, minmax(172px, 1fr));
     }
   }
   .loadMoreWrapper {
