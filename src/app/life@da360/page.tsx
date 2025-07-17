@@ -2,8 +2,8 @@ import HeroVideoSection from "@components/heroVideoSection";
 import TextContent from "@components/textContent";
 import CourseJourney from "@components/courseJourney";
 import CampusTour from "@components/campusTour";
-import LiveProjectsSlider from "@components/liveProjectsSlider";
-import GuestFaculty from "@components/guestFaculty";
+// import LiveProjectsSlider from "@components/liveProjectsSlider";
+// import GuestFaculty from "@components/guestFaculty";
 import TrendReportsSlider from "@components/trendReportsSlider";
 import SportsEvent from "@components/sportsEvent";
 import LifeAtDA360Gallery from "@components/lifeAtDA360Gallery";
@@ -18,8 +18,8 @@ export default function Lifeda360() {
     { id: "section1", label: "Overview" },
     { id: "section2", label: "Journey" },
     { id: "section3", label: "Campus Tour" },
-    { id: "section4", label: "Projects" },
-    { id: "section5", label: "Faculty" },
+    // { id: "section4", label: "Projects" },
+    // { id: "section5", label: "Faculty" },
     { id: "section6", label: "Case Studies" },
     { id: "section7", label: "Sports" },
     { id: "section8", label: "Meetups" },
@@ -37,8 +37,9 @@ export default function Lifeda360() {
         section="section3"
         videoUrl="/images/videos/classroom-video-3.mp4"
       />
-      <LiveProjectsSlider section="section4" />
-      <GuestFaculty section="section5" />
+      <ToobGrid section="section9" />
+      {/* <LiveProjectsSlider section="section4" /> */}
+      {/* <GuestFaculty section="section5" /> */}
       <TrendReportsSlider section="section6" />
       <SportsEvent section="section7" />
       <LifeAtDA360Gallery
@@ -47,7 +48,7 @@ export default function Lifeda360() {
         bgColor="rgba(245, 245, 245, 1);"
         section="section8"
       />
-      <ToobGrid section="section9" />
+
       {/* <FreelancerSteps
         section="section10"
         videoUrl="/images/videos/classroom-video-2.mp4"

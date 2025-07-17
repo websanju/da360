@@ -1,5 +1,6 @@
 .toobSection {
     padding-top: 140px;
+    padding-bottom: 140px;
 
     .headerSection {
         margin-bottom: 40px;
@@ -24,80 +25,6 @@
             margin: 0 auto;
         }
     }
-
-    // .grid {
-    //     display: flex;
-    //     gap: 18px;
-    //     .colume {
-    //         display: flex;
-    //         flex-direction: column;
-    //         gap: 18px;
-    //     }
-    //     .row {
-    //         gap: 18px;
-    //         display: flex;
-    //     }
-    //     .item {
-    //        border-radius: 10px;
-    //     }
-
-    //     .green {
-    //         width: 294px;
-    //         height: 475px;
-    //         background: rgba(0, 147, 102, 1);
-    //     }
-    //     .purple {
-    //         height: 453px;
-    //         width: 294px;
-    //         background: rgba(143, 55, 232, 1);
-    //     }
-
-    //     .pink {
-    //         height: 262px;
-    //         width: 311px;
-    //         background: rgba(232, 147, 214, 1);
-    //     }
-
-    //     .orange {
-    //         height: 262px;
-    //         width: 323px;
-    //         background: rgba(253, 85, 23, 1);
-    //     }
-
-    //     .imageCard {
-    //         height: 489px;
-    //         width:  293px;
-    //         background-color: #fff;
-    //     }
-
-
-    //     .blue {
-    //         height: 422px;
-    //         width: 654px;
-    //         background: rgba(82, 55, 232, 1);
-    //     }
-
-    //     .lime {
-    //         height: 192px;
-    //         width:  293px;
-    //         background: rgba(194, 215, 34, 1);
-
-    //     }
-
-    //     .yellow {
-    //         height: 222px;
-    //         width:  331px;
-    //         background: rgba(250, 189, 49, 1);
-    //     }
-
-    //     .brown {
-    //         height: 222px;
-    //         width: 618px;
-    //         background: rgba(102, 47, 47, 1);
-    //     }
-    // }
-
-
 
     /* Cards with correct spans and background */
     .grid {
@@ -280,12 +207,15 @@
         background: rgba(82, 55, 232, 1);
         grid-column: 2 / 4;
         grid-row: 2 / 4;
+
         .ditemImg {
             display: block;
         }
+
         .mitemImg {
             display: none;
         }
+
         .itemContent {
             margin-top: 15px;
             margin-left: 30px;
@@ -387,20 +317,23 @@
 @media (width <=991px) {
     .toobSection {
         padding-top: 60px;
+        padding-bottom: 60px;
+
         .headerSection {
-                margin-bottom: 24px;
+            margin-bottom: 24px;
 
-                h2 {
-                    font-size: 24px;
-                    line-height: normal;
-                    margin-bottom: 0;
-                }
+            h2 {
+                font-size: 24px;
+                line-height: normal;
+                margin-bottom: 0;
+            }
 
-                p {
-                    font-size: 16px;
-                    line-height: normal;
-                }
+            p {
+                font-size: 16px;
+                line-height: normal;
+            }
         }
+
         .grid {
             display: flex;
             flex-direction: column;
@@ -426,34 +359,37 @@
 
             }
         }
-      
+
         /* Digital Marketing Quiz League */
 
         .blue {
             display: flex;
             align-items: center;
             justify-content: space-between;
+
             .ditemImg {
                 display: none;
             }
+
             .mitemImg {
                 display: flex;
                 position: absolute;
             }
+
             .itemContent {
                 margin-top: 0;
                 margin-left: 0;
-    
+
                 h3 {
                     font-size: 24px;
                     margin-bottom: 0;
                 }
-    
+
                 p {
                     font-size: 16px;
                 }
             }
-    
+
             .itemImg {
                 width: 107px;
                 height: 154px;
@@ -467,6 +403,7 @@
                 }
             }
         }
+
         .green {
             background: rgba(0, 147, 102, 1);
             display: flex;
@@ -587,11 +524,13 @@
         .brown {
             display: none;
         }
+
         .viewAll {
             display: flex;
             align-items: flex-end;
             justify-content: flex-end;
             width: 100%;
+
             a {
                 font-weight: 500;
                 font-size: 14px;
