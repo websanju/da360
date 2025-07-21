@@ -100,3 +100,78 @@
         }
     }
 }
+
+@media (max-width: 991px) {
+    .timeline {
+        padding: 40px 0;
+
+        .sectionHeader {
+            margin-bottom: 40px;
+            width: 100%;
+
+            h2 {
+                font-size: 24px;
+                line-height: normal;
+                text-align: center;
+            }
+        }
+
+        .container {
+            row-gap: 40px;
+
+            &::before {
+                content: '';
+                left: 45px;
+                        top: 20px;
+            }
+        }
+
+        .step {
+            width: 100%;
+            flex-direction: column;
+            left: 30px;
+            .label {
+                width: 100%;
+                text-align: left;
+                color: #fff;
+                opacity: 0.5;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: normal;
+                max-width: max-content;
+            }
+
+            .dot {
+               left: -28px;
+        position: relative;
+        top: -20px;
+        margin: 0;
+            }
+
+            .text {
+                width: 90%;
+                color: #fff;
+                opacity: 0.5;
+                font-weight: 400;
+                font-size: 12px;
+                line-height: normal;
+                letter-spacing: 2%;
+                max-width: 431px;
+            }
+
+            &.active .dot {
+                background: #fff;
+            }
+
+            &.active .label {
+                transform: translateY(0);
+                opacity: 1;
+            }
+
+            &.active .text {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+    }
+}

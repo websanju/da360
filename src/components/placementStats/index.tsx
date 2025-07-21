@@ -16,7 +16,7 @@ const PlacementStats = () => {
   return (
     <section className={`${styles.placementStats}`}>
       <div className="container">
-        <div className="row text-center">
+        <div className={`row ${styles.row} text-center`}>
           {stats.map((stat, index) => (
             <div className="col-6 col-md-4 col-lg" key={index}>
               <div className={styles.statBox}>

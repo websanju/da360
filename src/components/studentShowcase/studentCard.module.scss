@@ -113,9 +113,51 @@
   .card {
     .studentInfo {
       flex-direction: column;
+
       .designation {
         text-align: center;
       }
     }
+
+    .cardBody {
+      .studentName {
+        font-size: 14px;
+        line-height: normal;
+      }
+
+      .studentImg {
+
+        min-height: 35px;
+
+        img {
+
+          max-height: 25px;
+        }
+      }
+
+       .studentInfo {
+      justify-content: center;
+      margin-bottom: 22px;      
+
+      .standard {
+        font-size: 12px;
+      }
+
+      .designation {
+        max-width: 86%;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 20px;
+      }
+
+      .studentArrow {
+        img {
+          max-width: 16px;
+          max-height: 16px;
+        }
+      }
+    }
+    }
   }
+
 }

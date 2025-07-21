@@ -21,7 +21,7 @@ const HeroSection = () => {
         </div>
         <div className={styles.heroContentBox}>
           <div className="container">
-            <div className="row">
+            <div className={`row`}>
               <div className="col-lg-12">
                 <div className={styles.content}>
                   <h1>
