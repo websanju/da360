@@ -8,7 +8,7 @@ const HeroSection = () => {
       <div className={styles.heroInner}>
         <div className={styles.heroImage}>
           <Image
-            src="/images/students.jpg"
+            src="/images/palcements.svg"
             alt="Students"
             width={1440}
             objectFit="cover"
@@ -44,6 +44,15 @@ const HeroSection = () => {
                 </div>
               </div>
             </div>
+          </div>
+          <div className={styles.heroPlacements}>
+            <Image
+              src="/images/placement-desk-min.png"
+              width={2880}
+              height={1278}
+              alt="Students"
+              unoptimized
+            />
           </div>
         </div>
       </div>
