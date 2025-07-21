@@ -39,7 +39,7 @@ Hackathon event."
       </div>
       <section className={styles.meettheorganizers}>
         <div className="container">
-          <div className="row">
+          <div className={`row ${styles.row}`}>
             <div className="col-lg-12">
               <SectionHeader
                 wrapperMarginBottom={{ desktop: "60px", mobile: "40px" }}
@@ -47,7 +47,7 @@ Hackathon event."
               ></SectionHeader>
             </div>
           </div>
-          <div className="row">
+          <div className={`row ${styles.row}`}>
             <div className="col-lg-4">
               <TeamCard
                 member={{

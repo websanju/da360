@@ -16,16 +16,22 @@
 
 .meettheorganizers {
     padding-bottom: 140px;
+     .row {
+            row-gap: 40px;
+        }
 }
 
 @media (width <=992px) {
     .accordionSection {
-        padding-bottom: 60px;
+        padding-bottom: 0;
          padding-top: 60px;
     }
 
     .meettheorganizers {
         padding-bottom: 60px;
+        .row {
+            row-gap: 40px;
+        }
     }
 
 }
