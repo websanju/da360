@@ -52,6 +52,15 @@ const HeroSection = () => {
               height={1278}
               alt="Students"
               unoptimized
+              className={styles.deskPlacements}
+            />
+            <Image
+              src="/images/placement-mobile-min.png"
+              width={824}
+              height={366}
+              alt="Students"
+              unoptimized
+              className={styles.mobilePlacements}
             />
           </div>
         </div>
