@@ -65,3 +65,29 @@
         }
     }
 }
+
+@media (width <=991px) {
+    .locationSection {
+        padding-top: 60px;
+        .infoBox {
+            padding: 30px;
+        }
+        .contactBox {
+            gap: 20px;
+            width: max-content;
+            flex-direction: column;
+            margin-top: 20px;
+
+            a {
+                color: #fff;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 23px;
+                letter-spacing: 0%;
+                margin-bottom: 0;
+                text-decoration: none;
+                font-weight: 500;
+            }
+        }
+    }
+}

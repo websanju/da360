@@ -124,3 +124,92 @@
         }
     }
 }
+
+@media (width <=991px) {
+    .prizesSection {
+        padding: 60px 0;
+
+        .grandPrize {
+            border-radius: 10px;
+            padding: 30px;
+            margin: 0 auto 16px;
+
+            h3 {
+                font-weight: 700;
+                font-size: 20px;
+                line-height: 20px;
+                text-align: center;
+                color: #ffff;
+                margin-bottom: 10px;
+            }
+
+            p {
+                font-size: 12px;
+                line-height: normal;
+            }
+
+            .prizeBox {
+                margin-top: 27px;
+                gap: 24px;
+                justify-content: space-between;
+
+                .prizeItem {
+                    .prizeIcons {
+                        margin-bottom: 7px;
+                    }
+
+                    span {
+                        font-size: 24px;
+                        line-height: 24px;
+                    }
+                }
+            }
+
+            .prizeIcons {
+                margin-top: 20px;
+            }
+        }
+
+        .prizeCards {
+            gap: 10px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            .card {
+                border: 2px solid #000000;
+                background: #FFFFFF;
+                border-radius: 8px;
+                padding: 20px;
+                display: flex;
+                h4 {
+                    font-size: 20px;
+                    text-align: left;
+                    margin-bottom: 10px;
+                }
+
+                p {
+                    font-size: 12px;
+                    line-height: 150%;
+                    text-align: left;
+                    max-width: max-content;
+                    margin: 0 auto 8px;
+                }
+
+                .cardImg {
+                    img {
+                        width: 50px;
+                        height: 50px;
+                    }
+                }
+
+                .amount {
+                    font-weight: 700;
+                    font-size: 20px;
+                    line-height:30px;
+                    text-align: left;
+                }
+            }
+        }
+
+    }
+}

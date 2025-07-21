@@ -49,7 +49,7 @@ const ScheduleTimeline = () => {
         <div className="row">
           <div className="col-lg-12">
             <SectionHeader
-              wrapperMarginBottom={{ desktop: "32px", mobile: "20px" }}
+              wrapperMarginBottom={{ desktop: "32px", mobile: "10px" }}
               title={"Schedule of Events"}
             />
           </div>

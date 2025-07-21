@@ -1,16 +1,17 @@
-
 .accordionSection {
     padding-top: 140px;
+
     section {
         h2 {
             text-align: left !important;
         }
+
         p {
-            text-align: left !important; 
+            text-align: left !important;
             margin: 0;
         }
     }
-  
+
 }
 
 .meettheorganizers {
@@ -20,9 +21,11 @@
 @media (width <=992px) {
     .accordionSection {
         padding-bottom: 60px;
-     }
+         padding-top: 60px;
+    }
+
     .meettheorganizers {
         padding-bottom: 60px;
     }
-    
- }
+
+}

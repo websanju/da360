@@ -11,7 +11,7 @@ const PrizesSection = () => {
           <div className="col-lg-12">
             <SectionHeader
               title={"Prizes!"}
-              wrapperMarginBottom={{ desktop: "60px", mobile: "20px" }}
+              wrapperMarginBottom={{ desktop: "60px", mobile: "24px" }}
               titleMarginBottom={"20px"}
               description={
                 <>
@@ -71,17 +71,21 @@ const PrizesSection = () => {
                 },
               ].map((item, index) => (
                 <div key={index} className={styles.card}>
-                  <h4>{item.title}</h4>
-                  <p>{item.desc}</p>
-                  <div className={styles.cardImg}>
-                    <Image
-                      src="/images/money.svg"
-                      alt="Money Icon"
-                      width={40}
-                      height={40}
-                    />
+                  <div>
+                    <h4>{item.title}</h4>
+                    <p>{item.desc}</p>
                   </div>
-                  <div className={styles.amount}>₹25,000</div>
+                  <div>
+                    <div className={styles.cardImg}>
+                      <Image
+                        src="/images/money.svg"
+                        alt="Money Icon"
+                        width={40}
+                        height={40}
+                      />
+                    </div>
+                    <div className={styles.amount}>₹25,000</div>
+                  </div>
                 </div>
               ))}
             </div>
