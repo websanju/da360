@@ -133,25 +133,33 @@ const data: Study[] = [
     ],
   },
 ];
-
-const GuestFacultySection = ({ section }: { section?: string }) => {
+interface GuestFacultySectionProps {
+  section?: string;
+  showHeader?: boolean;
+}
+const GuestFacultySection = ({
+  section,
+  showHeader = true,
+}: GuestFacultySectionProps) => {
   const { openPopup } = usePopup();
 
   return (
-    <section className={styles.guestFaculty} id={section}>
-      <div className="container">
-        <div className="row">
-          <div className="col-lg-12">
-            <SectionHeader
-              wrapperMarginBottom={{ desktop: "60px", mobile: "40px" }}
-              titleMarginBottom={{ desktop: "16px", mobile: "10px" }}
-              title={<> Guest Mentors</>}
-              maxWidth="650px"
-              description="Gain Insights from World-Class Guest Faculty"
-            />
+    <section className={showHeader ? styles.guestFaculty : ""} id={section}>
+      {showHeader && (
+        <div className="container">
+          <div className="row">
+            <div className="col-lg-12">
+              <SectionHeader
+                wrapperMarginBottom={{ desktop: "60px", mobile: "40px" }}
+                titleMarginBottom={{ desktop: "16px", mobile: "10px" }}
+                title={<> Guest Mentors </>}
+                maxWidth="650px"
+                description="Gain Insights from World-Class Guest Faculty"
+              />
+            </div>
           </div>
         </div>
-      </div>
+      )}
 
       <div className={styles.sliderWrapper}>
         <div className={styles.sliderInnerWrapper}>

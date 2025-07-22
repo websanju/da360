@@ -31,20 +31,6 @@ interface TeamSliderProps {
 
 const TeamSlider = ({ members }: TeamSliderProps) => {
   const containerRef = useRef<HTMLDivElement>(null);
-  // const [containerPaddingLeft, setContainerPaddingLeft] = useState(20);
-
-  // useEffect(() => {
-  //   function updatePadding() {
-  //     if (containerRef.current) {
-  //       const rect = containerRef.current.getBoundingClientRect();
-  //       setContainerPaddingLeft(rect.left);
-  //     }
-  //   }
-  //   updatePadding();
-  //   window.addEventListener("resize", updatePadding);
-  //   return () => window.removeEventListener("resize", updatePadding);
-  // }, []);
-
   if (members.length === 0) {
     return (
       <div className={styles.teamnoavailable}>No team members available.</div>
@@ -53,21 +39,7 @@ const TeamSlider = ({ members }: TeamSliderProps) => {
 
   return (
     <div ref={containerRef} className={styles.sliderWrapper}>
-      <div
-        className={styles.sliderInnerWrapper}
-        // style={{
-        //   width: "100vw",
-        //   marginLeft: `-${containerPaddingLeft}px`,
-        //   paddingLeft: containerPaddingLeft,
-        //   boxSizing: "border-box",
-        // }}
-      >
-        {/* <div className="container position-relative">
-          <div className={styles.sliderNavigation}>
-            <button className="swiper-button-prev" id="customPrev9"></button>
-            <button className="swiper-button-next" id="customNext9"></button>
-          </div>
-        </div> */}
+      <div className={styles.sliderInnerWrapper}>
         <Swiper
           slidesPerView={auto}
           spaceBetween={10}
@@ -192,11 +164,9 @@ const TeamSlider = ({ members }: TeamSliderProps) => {
       </div>
 
       {/* Custom scrollbar */}
-      {/* <div id="customScrollbar" className="swiper-scrollbar"></div> */}
 
       <div className={`${styles.controls} controls`}>
         <button id="customPrev9" className={`prevBtn ${styles.navBtn}`}>
-          {" "}
           <RightArrow width={16} height={16} color="#000" />
         </button>
         <div
@@ -204,7 +174,6 @@ const TeamSlider = ({ members }: TeamSliderProps) => {
           className={`${styles.scrollbar} customScrollbar swiper-scrollbar`}
         ></div>
         <button id="customNext9" className={`nextBtn ${styles.navBtn}`}>
-          {" "}
           <LeftArrow width={16} height={16} color="#000" />
         </button>
       </div>

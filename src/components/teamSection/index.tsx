@@ -4,6 +4,7 @@ import { useState } from "react";
 import TeamSlider from "./teamSlider";
 import styles from "./style.module.scss";
 import SectionHeader from "@components/widgets/sectionHeader";
+import GuestFacultySlider from "../guestFacultySlider";
 
 const tabs = [
   "Guest Faculty",
@@ -165,7 +166,13 @@ const TeamSection = ({ section }: TeamSectionProps) => {
           </div>
         </div>
       </div>
-      <TeamSlider members={filteredMembers} />
+
+      {/* 👇 Use different slider based on tab */}
+      {activeTab === "Guest Faculty" ? (
+        <GuestFacultySlider showHeader={false} />
+      ) : (
+        <TeamSlider members={filteredMembers} />
+      )}
     </section>
   );
 };
