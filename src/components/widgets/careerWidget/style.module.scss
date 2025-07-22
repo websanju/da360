@@ -144,6 +144,7 @@
             font-size: 26px;
             line-height: 32px;
             margin-bottom: 17px;
+            max-width: 230px;
         }
     
         p {
@@ -175,12 +176,14 @@
     
         .right {
           display: block;
-          position: relative;
-          right: -90px;
+           position: absolute;
+             right: 20px;
           img {
-            width: 116px;
-            height: 116px;
+            width: 60px;
+            height: 60px;
           }
         }
     }
 }
+
+
