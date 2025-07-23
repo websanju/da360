@@ -6,6 +6,7 @@ import GuestFacultyCard from "@components/widgets/guestFacultyCard";
 import styles from "./style.module.scss";
 import SectionHeader from "@/components/widgets/sectionHeader";
 import CaseStudyPopup, { Study } from "@components/widgets/popups/gurstFaculty";
+import TrainersFacultyPopup from "@components/widgets/popups/trainersFaculty";
 import { usePopup } from "@components/widgets/popup/PopupContext";
 const dataItem: Study[] = [
   {
@@ -129,83 +130,118 @@ const dataItem: Study[] = [
     logos: [""],
   },
 ];
-const data = [
+export interface Trainer {
+  name: string;
+  namePopup: string;
+  title: string;
+  experience: string;
+  linkedinLink: string;
+  bgColor: string;
+  profileImage: string;
+  profileImagePopup: string;
+  expertise: string;
+  description: string;
+}
+
+export type TrainerType = Trainer[];
+const data: TrainerType = [
   {
     name: `Deepak <br/> Soni`,
+    namePopup: "Deepak <br/> Soni",
     title: "Digital Marketing Trainer",
     experience: "12+ years Experience",
     linkedinLink: "/images/devicon_linkedin.svg",
     bgColor: "bgPink",
-    image: {
-      desktop: "/images/trainers/deepak.png",
-      mobile: "/images/trainers/deepak.png",
-    },
+    profileImage: "/images/trainers/deepak.png",
+    profileImagePopup: "/images/trainers/deepak.png",
+    expertise:
+      "Media planning, SEO/SEM, PPC, content strategy, ORM, analytics, and digital training for high-growth performance marketing.",
+    description:
+      "Deputy General Manager – Digital Marketing at Puravankara Ltd. with 18+ years of experience in digital strategy across real estate, retail & e-commerce sectors.",
   },
   {
     name: `Madhuraj P`,
+    namePopup: "Madhuraj P",
     title: "Digital Marketing Trainer",
     experience: "8+ years Experience",
     linkedinLink: "/images/devicon_linkedin.svg",
     bgColor: "bgBlue",
-    image: {
-      desktop: "/images/trainers/madhu.png",
-      mobile: "/images/trainers/madhu.png",
-    },
+    profileImage: "/images/trainers/madhu.png",
+    profileImagePopup: "/images/trainers/madhu.png",
+    expertise:
+      "Media planning, SEO/SEM, PPC, content strategy, ORM, analytics, and digital training for high-growth performance marketing.",
+    description:
+      "Deputy General Manager – Digital Marketing at Puravankara Ltd. with 18+ years of experience in digital strategy across real estate, retail & e-commerce sectors.",
   },
   {
     name: `Sathiyaseelan S`,
+    namePopup: "Sathiyaseelan S",
     title: "Digital Marketing Trainer",
     experience: "3+ years Experience",
     linkedinLink: "/images/devicon_linkedin.svg",
     bgColor: "bgGreen",
-    image: {
-      desktop: "/images/trainers/sathya.png",
-      mobile: "/images/trainers/sathya.png",
-    },
+    profileImage: "/images/trainers/sathya.png",
+    profileImagePopup: "/images/trainers/sathya.png",
+    expertise:
+      "Media planning, SEO/SEM, PPC, content strategy, ORM, analytics, and digital training for high-growth performance marketing.",
+    description:
+      "Deputy General Manager – Digital Marketing at Puravankara Ltd. with 18+ years of experience in digital strategy across real estate, retail & e-commerce sectors.",
   },
   {
     name: `Monisha Jain S S`,
+    namePopup: "Monisha Jain S S",
     title: "Digital Marketing Trainer",
     experience: "3+ years Experience",
     linkedinLink: "/images/devicon_linkedin.svg",
     bgColor: "bgGreen",
-    image: {
-      desktop: "/images/trainers/monisha.png",
-      mobile: "/images/trainers/monisha.png",
-    },
+    profileImage: "/images/trainers/monisha.png",
+    profileImagePopup: "/images/trainers/monisha.png",
+    expertise:
+      "Media planning, SEO/SEM, PPC, content strategy, ORM, analytics, and digital training for high-growth performance marketing.",
+    description:
+      "Deputy General Manager – Digital Marketing at Puravankara Ltd. with 18+ years of experience in digital strategy across real estate, retail & e-commerce sectors.",
   },
   {
     name: `Anush Raj K`,
+    namePopup: "Anush Raj K",
     title: "Digital Marketing Trainer",
     experience: "5+ years Experience",
     linkedinLink: "/images/devicon_linkedin.svg",
     bgColor: "bgGreen",
-    image: {
-      desktop: "/images/trainers/anush.png",
-      mobile: "/images/trainers/anush.png",
-    },
+    profileImage: "/images/trainers/anush.png",
+    profileImagePopup: "/images/trainers/anush.png",
+    expertise:
+      "Media planning, SEO/SEM, PPC, content strategy, ORM, analytics, and digital training for high-growth performance marketing.",
+    description:
+      "Deputy General Manager – Digital Marketing at Puravankara Ltd. with 18+ years of experience in digital strategy across real estate, retail & e-commerce sectors.",
   },
   {
     name: `Swanand <br/> Patwardhan`,
+    namePopup: "Swanand <br/> Patwardhan",
     title: "Digital Marketing Trainer",
     experience: "8+ years Experience",
     linkedinLink: "/images/devicon_linkedin.svg",
     bgColor: "bgGreen",
-    image: {
-      desktop: "/images/trainers/swanand.png",
-      mobile: "/images/trainers/swanand.png",
-    },
+    profileImage: "/images/trainers/swanand.png",
+    profileImagePopup: "/images/trainers/swanand.png",
+    expertise:
+      "Media planning, SEO/SEM, PPC, content strategy, ORM, analytics, and digital training for high-growth performance marketing.",
+    description:
+      "Deputy General Manager – Digital Marketing at Puravankara Ltd. with 18+ years of experience in digital strategy across real estate, retail & e-commerce sectors.",
   },
   {
     name: `Sujeeth H D`,
+    namePopup: "Sujeeth H D",
     title: "Digital Marketing Trainer",
     experience: "5+ years Experience",
     linkedinLink: "/images/devicon_linkedin.svg",
     bgColor: "bgGreen",
-    image: {
-      desktop: "/images/trainers/sujeeth.png",
-      mobile: "/images/trainers/sujeeth.png",
-    },
+    profileImage: "/images/trainers/sujeeth.png",
+    profileImagePopup: "/images/trainers/sujeeth.png",
+    expertise:
+      "Media planning, SEO/SEM, PPC, content strategy, ORM, analytics, and digital training for high-growth performance marketing.",
+    description:
+      "Deputy General Manager – Digital Marketing at Puravankara Ltd. with 18+ years of experience in digital strategy across real estate, retail & e-commerce sectors.",
   },
 ];
 export default function Career() {
@@ -258,7 +294,15 @@ export default function Career() {
           <div className={`${styles.row} row d-md-flex`}>
             {data.map((item, index) => (
               <div className="col-md-4 col-lg-4 col-6" key={index}>
-                <TrainersFacultyCard {...item} />
+                <div
+                  onClick={() =>
+                    openPopup(<TrainersFacultyPopup study={item} />, {
+                      className: `${styles.guestFacultyPopup}`,
+                    })
+                  }
+                >
+                  <TrainersFacultyCard {...item} />
+                </div>
               </div>
             ))}
           </div>
