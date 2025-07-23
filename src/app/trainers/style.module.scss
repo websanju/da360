@@ -5,7 +5,14 @@
         row-gap: 36px;
     }
 }
-
+.guestFacultyPopup {
+    padding: 0 !important;
+    width: 100%;
+    max-width: 500px!important;
+    button {
+        display: block;
+    }
+}
 @media (width <=991px) {
     .featuredSuperSection {
         padding-bottom: 60px;
