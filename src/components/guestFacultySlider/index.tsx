@@ -14,18 +14,6 @@ import "swiper/css";
 
 const data: Study[] = [
   {
-    name: "Riya iwari",
-    namePopup: "Riya <br/> iwari",
-    title: "Founder at Authique",
-    expertise:
-      "Organic LinkedIn growth, storytelling, personal brand positioning, and full-funnel content strategies focused on trust, visibility & monetization.",
-    description:
-      "Personal Branding Strategist known for helping B2B founders build LinkedIn authority and visibility. Has mentored 300+ freelancers and conducted 250+ client calls generating lakhs in revenue.",
-    profileImage: "/images/guestMentor/riya-tiwari.jpg",
-    profileImagePopup: "/images/guestMentor/riya-tiwari.png",
-    logos: [""],
-  },
-  {
     name: "Rajesh Choudhury",
     namePopup: "Rajesh <br/> Choudhury",
     title: "DGM Digital Marketing at Purvankara",
@@ -42,31 +30,7 @@ const data: Study[] = [
       "/images/guestMentor/anarock.svg",
     ],
   },
-  {
-    name: "Gopal Raj",
-    namePopup: "Gopal <br/> Raj",
-    title: "Founder at Verycom",
-    expertise:
-      "Brand strategy, integrated marketing communications, creative campaign development, and multi-sector brand positioning.",
-    description:
-      "15+ years of experience across leading advertising agencies in India and overseas. Has successfully led campaigns for top-tier brands across diverse industries.",
-    profileImage: "/images/guestMentor/gopalraj.jpg",
-    profileImagePopup: "/images/guestMentor/gopalraj.png",
-    logos: ["/images/guestMentor/ddb.svg", "/images/guestMentor/juut.svg"],
-  },
-  {
-    name: "Aditya Agarwal",
-    namePopup: "Aditya <br/> Agarwal",
-    title: "Founder at Qilin Lab",
 
-    expertise:
-      "AI-powered personalization, martech infrastructure, campaign automation, cloud-native performance marketing systems.",
-    description:
-      "Cloud Optimization Expert & Founder of Qilin Lab, helping SaaS and fintech founders build scalable AI marketing stacks.",
-    profileImage: "/images/guestMentor/aditya-agarwal.jpg",
-    profileImagePopup: "/images/guestMentor/aditya-agarwal.png",
-    logos: ["/images/guestMentor/qilin.svg"],
-  },
   {
     name: "Shantanu Sharma",
     namePopup: "Shantanu <br/> Sharma",
@@ -131,6 +95,43 @@ const data: Study[] = [
       "/images/guestMentor/yahoo.svg",
       "/images/guestMentor/thermo.svg",
     ],
+  },
+  {
+    name: "Gopal Raj",
+    namePopup: "Gopal <br/> Raj",
+    title: "Founder at Verycom",
+    expertise:
+      "Brand strategy, integrated marketing communications, creative campaign development, and multi-sector brand positioning.",
+    description:
+      "15+ years of experience across leading advertising agencies in India and overseas. Has successfully led campaigns for top-tier brands across diverse industries.",
+    profileImage: "/images/guestMentor/gopalraj.jpg",
+    profileImagePopup: "/images/guestMentor/gopalraj.png",
+    logos: ["/images/guestMentor/ddb.svg", "/images/guestMentor/juut.svg"],
+  },
+  {
+    name: "Aditya Agarwal",
+    namePopup: "Aditya <br/> Agarwal",
+    title: "Founder at Qilin Lab",
+
+    expertise:
+      "AI-powered personalization, martech infrastructure, campaign automation, cloud-native performance marketing systems.",
+    description:
+      "Cloud Optimization Expert & Founder of Qilin Lab, helping SaaS and fintech founders build scalable AI marketing stacks.",
+    profileImage: "/images/guestMentor/aditya-agarwal.jpg",
+    profileImagePopup: "/images/guestMentor/aditya-agarwal.png",
+    logos: ["/images/guestMentor/qilin.svg"],
+  },
+  {
+    name: "Riya iwari",
+    namePopup: "Riya <br/> iwari",
+    title: "Founder at Authique",
+    expertise:
+      "Organic LinkedIn growth, storytelling, personal brand positioning, and full-funnel content strategies focused on trust, visibility & monetization.",
+    description:
+      "Personal Branding Strategist known for helping B2B founders build LinkedIn authority and visibility. Has mentored 300+ freelancers and conducted 250+ client calls generating lakhs in revenue.",
+    profileImage: "/images/guestMentor/riya-tiwari.jpg",
+    profileImagePopup: "/images/guestMentor/riya-tiwari.png",
+    logos: [""],
   },
 ];
 interface GuestFacultySectionProps {
