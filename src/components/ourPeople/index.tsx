@@ -6,16 +6,34 @@ import ArrowUp from "@/components/Ui/svg/arrowUp";
 
 const people = [
   {
+    name: "Abhishek",
+    designation: "Board of directors",
+    image: "/images/staff/abhishek.png",
+    profileLink: "#",
+  },
+  {
+    name: "Himanshu",
+    designation: "Board of directors",
+    image: "/images/staff/himanshu.png",
+    profileLink: "#",
+  },
+  {
+    name: "Ashish",
+    designation: "Board of directors",
+    image: "/images/staff/ashish.png",
+    profileLink: "#",
+  },
+  {
     name: "Amit Singh",
     designation: "coo",
     image: "/images/staff/amit-singh.png",
-    profileLink: "",
+    profileLink: "#",
   },
   {
     name: "Deepika R",
     designation: "Director - Sales",
     image: "/images/staff/deepika-r.png",
-    profileLink: "",
+    profileLink: "#",
   },
   {
     name: "Lalit Agarwalla",

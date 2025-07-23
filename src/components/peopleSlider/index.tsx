@@ -1,6 +1,6 @@
 "use client";
 // import React, { useRef, useState, useEffect } from "react";
-import React, { useState, useRef } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Scrollbar } from "swiper/modules";
 import "swiper/css";
@@ -32,11 +32,11 @@ const slides: SlideContent[] = [
   [
     {
       id: 1,
-      name: "Nishank Koushak",
-      image: "/images/nishank.png",
-      designation: "Digital Marketing Trainer",
+      name: "Nivedth",
+      image: "/images/video-testimonials/nivedth.jpg",
+      designation: "Marketing Executive",
       type: "video",
-      videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+      videoUrl: "/images/video-testimonials/nivedth.mp4",
       bgColor: "#E9492D",
     },
     {
@@ -57,11 +57,11 @@ const slides: SlideContent[] = [
   [
     {
       id: 3,
-      name: "Nishank Koushak",
-      image: "/images/nishank1.png",
-      designation: "Digital Marketing Trainer",
+      name: "Vinayak V",
+      image: "/images/video-testimonials/vinayakvv.jpg",
+      designation: "Social Media Marketing Specialist",
       type: "video",
-      videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+      videoUrl: "/images/video-testimonials/vinayak.mp4",
       bgColor: "#9554CA",
       textColor: "#fff",
     },
@@ -85,11 +85,11 @@ const slides: SlideContent[] = [
   [
     {
       id: 5,
-      name: "Nishank Koushak",
-      image: "/images/nishank2.png",
+      name: "Megha Lodha",
+      image: "/images/video-testimonials/meghalodha.jpg",
       type: "video",
-      videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
-      designation: "Digital Marketing Trainer",
+      videoUrl: "/images/video-testimonials/megha-lodha.mp4",
+      designation: "Marketing Executive",
       bgColor: "#3ACFAF",
       textColor: "#fff",
     },
@@ -127,12 +127,12 @@ const slides: SlideContent[] = [
   [
     {
       id: 1,
-      name: "Nishank Koushak",
-      image: "/images/nishank.png",
+      name: "Megha Lodha",
+      image: "/images/video-testimonials/meghalodha.jpg",
       type: "video",
-      videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+      videoUrl: "/images/video-testimonials/megha-lodha.mp4",
       bgColor: "#8588E6",
-      designation: "Digital Marketing Trainer",
+      designation: "Marketing Executive",
       textColor: "#fff",
     },
     {
@@ -184,7 +184,17 @@ type PeopleSliderProps = {
 const PeopleSlider: React.FC<PeopleSliderProps> = ({ title, description }) => {
   const [selected, setSelected] = useState<Person | null>(null);
   const containerRef = useRef<HTMLDivElement>(null);
+  const videoRef = useRef<HTMLVideoElement>(null);
 
+  useEffect(() => {
+    if (selected?.type === "video" && videoRef.current) {
+      const video = videoRef.current;
+      video.muted = false;
+      video.play().catch((err) => {
+        console.log("Autoplay with sound failed", err);
+      });
+    }
+  }, [selected]);
   return (
     <>
       <section className={styles.peopleSliderSection}>
@@ -371,7 +381,12 @@ const PeopleSlider: React.FC<PeopleSliderProps> = ({ title, description }) => {
         >
           <div className="modal-dialog modal-dialog-centered">
             <div
-              className={`${styles.modalContent} modal-content`}
+              className={`${styles.modalContent} modal-content ${
+                selected?.type === "video" &&
+                !selected.videoUrl?.startsWith("http")
+                  ? styles.customVideoModal
+                  : ""
+              }`}
               style={
                 selected.type === "text"
                   ? { backgroundColor: selected.bgColor }
@@ -415,13 +430,32 @@ const PeopleSlider: React.FC<PeopleSliderProps> = ({ title, description }) => {
                 )}
 
                 {selected.type === "video" && selected.videoUrl && (
-                  <div className="ratio ratio-16x9">
-                    <iframe
-                      src={selected.videoUrl}
-                      title={selected.name}
-                      allowFullScreen
-                      style={{ width: "100%", height: "100%", border: "none" }}
-                    ></iframe>
+                  <div className={styles.videoBox}>
+                    {selected.videoUrl.startsWith("http") ? (
+                      <div className="ratio ratio-16x9">
+                        <iframe
+                          src={selected.videoUrl}
+                          title={selected.name}
+                          allowFullScreen
+                          style={{
+                            width: "100%",
+                            height: "100%",
+                            border: "none",
+                          }}
+                        ></iframe>
+                      </div>
+                    ) : (
+                      <video
+                        ref={videoRef}
+                        autoPlay
+                        controls
+                        playsInline
+                        style={{ width: "100%", height: "100%" }}
+                        src={selected.videoUrl}
+                      >
+                        Your browser does not support the video tag.
+                      </video>
+                    )}
                   </div>
                 )}
               </div>

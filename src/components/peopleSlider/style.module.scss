@@ -245,11 +245,24 @@
   padding: 0;
   overflow: hidden;
   border: none;
+  .videoBox {
+    display: flex;
+    align-items: center;
+  }
+
+   video {
+    max-width: 370px;
+    height: 100%;
+   }
 }
 
 .modalContent {
   border-radius: 12px;
   overflow: hidden;
+  &.customVideoModal {
+    max-width: max-content;
+    min-width: 370px;
+  }
 }
 
 .modalFooter {
@@ -447,7 +460,11 @@
   .customSlide {
     max-width: 243px;
   }
-
+.modalContent {
+  &.customVideoModal {
+    min-width: 320px;
+  }
+}
   .peopleSliderSection {
     margin-top: 60px;
 
