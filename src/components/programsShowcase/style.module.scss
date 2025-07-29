@@ -32,6 +32,26 @@
   transition: opacity 0.5s ease;
 }
 
+.exploreBtn {
+  margin-top: 140px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  a {
+    border: none;
+    background-color: transparent;
+    box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0);
+    border: 1.5px solid rgba(0, 0, 0, 0);
+
+    &:hover {
+      border: 1.5px solid rgb(0, 0, 0);
+      background-color: rgb(255, 255, 255);
+      box-shadow: 3px 3px 0px 0px rgb(0, 0, 0);
+      color: #000000;
+    }
+  }
+}
 
 @media (width <=991px) {
   .programsShowcaseSection {

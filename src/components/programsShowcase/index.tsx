@@ -5,6 +5,8 @@ import styles from "./style.module.scss";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import SectionHeader from "@components/widgets/sectionHeader";
+import Link from "next/link";
+import ArrowUp from "@/components/Ui/svg/arrowUp";
 
 const ProgramsShowcase: React.FC = () => {
   const [isMobile, setIsMobile] = useState<boolean>(false);
@@ -181,6 +183,17 @@ const ProgramsShowcase: React.FC = () => {
                 expertText="Avail Scholarship"
                 image="/images/skill-3.png"
               />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="container">
+        <div className="row">
+          <div className="col-12">
+            <div className={styles.exploreBtn}>
+              <Link href="/courses" className="btn btnWhite btn-lg px-4">
+                Explore Programs <ArrowUp />
+              </Link>
             </div>
           </div>
         </div>
