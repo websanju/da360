@@ -55,6 +55,10 @@
     max-width: 350px;
 }
 
+.row {
+        --bs-gutter-x: 10px;
+}
+
 @media (width <=991px) {
     .selfPacedProgramsSection {
         padding-bottom: 60px;

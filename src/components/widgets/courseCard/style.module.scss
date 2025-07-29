@@ -6,7 +6,7 @@
   overflow: hidden;
 
   .cardImg {
-    width: 350px;
+    max-width: 310px;
     height: 250px;
     overflow: hidden;
 
@@ -22,16 +22,18 @@
     background: #FFFFFF;
     border-radius: 12px;
     padding: 20px 24px;
-    margin: 0 26px 29px;
+    margin: 0 12px 29px;
     position: relative;
     z-index: 11;
+    min-height: 196px;
 
     h3 {
       font-weight: 600;
-      font-size: 20px;
+      font-size: 18px;
       line-height: 120%;
       letter-spacing: 2%;
       margin-bottom: 14px;
+      min-height: 44px;
     }
 
     ul {
@@ -64,8 +66,8 @@
       border-radius: 100px;
       min-width: 44px;
       background: #000000;
-      bottom: 12px;
-      right: 12px;
+      bottom: 10px;
+      right: 10px;
       border: none;
       transition: background-color 0.3s, transform 0.3s;
 
@@ -88,7 +90,6 @@
 @media (width <=991px) {
 
   .card {
-    height: 400px;
     min-height: 400px;
 
     .cardInfo {
