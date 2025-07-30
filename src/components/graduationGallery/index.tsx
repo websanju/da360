@@ -10,10 +10,14 @@ import LeftArrow from "@components/Ui/svg/leftArrow";
 import RightArrow from "@components/Ui/svg/rightArrowLine";
 import SectionHeader from "@components/widgets/sectionHeader";
 const images = [
-  "/images/graduation/graduation-1.jpg",
-  "/images/graduation/graduation-2.jpg",
-  "/images/graduation/graduation-3.jpg",
-  "/images/graduation/graduation-3.jpg",
+  "/images/graduation/Con01-min.jpg",
+  "/images/graduation/Con02-min.jpg",
+  "/images/graduation/Con03-min.jpg",
+  "/images/graduation/Con04-min.jpg",
+  "/images/graduation/Con05-min.jpg",
+  "/images/graduation/Con06-min.jpg",
+  "/images/graduation/Con07-min.jpg",
+  "/images/graduation/Con08-min.jpg",
 ];
 
 interface GraduationGalleryProps {
