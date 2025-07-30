@@ -21,9 +21,17 @@ const CourseCard: React.FC<CourseCardProps> = ({
   imgSrc,
 }) => {
   return (
-    <div className={styles.card} style={{ backgroundColor: bgColor }}>
+    <div
+      className={styles.card}
+      style={{
+        backgroundColor: bgColor,
+        backgroundImage: imgSrc ? `url(${imgSrc})` : undefined,
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+      }}
+    >
       <div className={styles.cardImg}>
-        {imgSrc && (
+        {/* {imgSrc && (
           <Image
             src={imgSrc}
             alt={title}
@@ -31,7 +39,7 @@ const CourseCard: React.FC<CourseCardProps> = ({
             height={250}
             objectFit="cover"
           />
-        )}
+        )} */}
       </div>
       <div className={styles.cardInfo}>
         <h3>{title}</h3>

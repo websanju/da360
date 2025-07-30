@@ -10,8 +10,8 @@ const courses = [
     duration: "2 Month Course",
     assignments: "80+ Hours of Learning",
     projects: "10+ Tools",
-    bgColor: "#FFEAB2",
-    imgSrc: "/images/self-1.png",
+    bgColor: "#8BBAE3",
+    imgSrc: "/images/bootcamps/course01.jpg",
   },
   {
     title: "Influencer Marketing",
@@ -19,7 +19,7 @@ const courses = [
     assignments: "80+ Hours of Learning",
     projects: "5+ Specialised Tools",
     bgColor: "#93EABF",
-    imgSrc: "/images/self-2.png",
+    imgSrc: "/images/bootcamps/course02.jpg",
   },
   {
     title: "LinkedIn Marketing Bootcamp",
@@ -27,7 +27,7 @@ const courses = [
     assignments: "80+ Hours of Learning",
     projects: "10+ Tools",
     bgColor: "#FFEAB2",
-    imgSrc: "/images/self-3.png",
+    imgSrc: "/images/bootcamps/course03.jpg",
   },
   {
     title: "AI Marketing / MarTech / Video",
@@ -35,7 +35,7 @@ const courses = [
     assignments: "Online",
     projects: "Live Projects",
     bgColor: "#FFD6DA",
-    imgSrc: "/images/self-4.png",
+    imgSrc: "",
   },
 ];
 
