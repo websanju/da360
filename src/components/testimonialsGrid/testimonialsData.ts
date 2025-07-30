@@ -24,10 +24,10 @@ export type Testimonial = {
     {
       id: 2,
       type: "video",
-      name: "Sanjay Lal",
+      name: "Akshay",
       rating: 5,
       avatar: "/images/testimonials/video6.webp",
-      videoUrl: "/images/testimonials/digital-academy-360-testimonials-deepak.mp4",
+      videoUrl: "/images/video-testimonials/akshay.mp4",
     },
     {
       id: 3,
