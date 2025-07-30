@@ -141,7 +141,7 @@ const Card = ({ item }: { item: Testimonial }) => {
               {!isPlaying && (
                 <div className={styles.videoThumbs}>
                   <Image
-                    src="/images/testimonials/digital-academy-360-testimonials-deepak.png"
+                    src="/images/testimonials/video-thumb.png"
                     alt="thumbnail"
                     width={500}
                     height={300}
