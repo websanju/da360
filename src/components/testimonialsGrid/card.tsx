@@ -66,11 +66,11 @@ const Card = ({ item }: { item: Testimonial }) => {
           <div className={styles.cardHeader}>
             <div className={styles.quoteIcon}>
               <Image
-                src="images/rating/tquote-filled.svg"
+                src="/images/icons/tquote.svg"
                 width={53}
                 height={53}
-                alt={item.name}
-                className={styles.avatar}
+                alt={"tquote"}
+                unoptimized
               />
             </div>
             <div className={styles.star}>
@@ -117,11 +117,10 @@ const Card = ({ item }: { item: Testimonial }) => {
             <div className={styles.cardHeader}>
               <div className={styles.quoteIcon}>
                 <Image
-                  src="images/rating/tquote-filled.svg"
+                  src="/images/icons/tquote.png"
                   width={53}
                   height={53}
                   alt={item.name}
-                  className={styles.avatar}
                 />
               </div>
               <div className={styles.star}>
@@ -142,7 +141,7 @@ const Card = ({ item }: { item: Testimonial }) => {
               {!isPlaying && (
                 <div className={styles.videoThumbs}>
                   <Image
-                    src="/images/rating/digital-academy-360-testimonials-deepak.png"
+                    src="/images/testimonials/digital-academy-360-testimonials-deepak.png"
                     alt="thumbnail"
                     width={500}
                     height={300}
@@ -155,7 +154,7 @@ const Card = ({ item }: { item: Testimonial }) => {
                 playsInline
                 preload="metadata"
                 className={styles.video}
-                poster="/images/rating/digital-academy-360-testimonials-deepak.png"
+                poster="/images/testimonials/digital-academy-360-testimonials-deepak.png"
               >
                 <source src={item.videoUrl} type="video/mp4" />
                 Your browser does not support the video tag.
@@ -207,11 +206,10 @@ const Card = ({ item }: { item: Testimonial }) => {
           <div className={styles.cardHeader}>
             <div className={styles.quoteIcon}>
               <Image
-                src="images/rating/tquote-filled.svg"
+                src="/images/icons/tquote.png"
                 width={53}
                 height={53}
-                alt={item.name}
-                className={styles.avatar}
+                alt={"item.name"}
               />
             </div>
           </div>
@@ -237,7 +235,7 @@ const Card = ({ item }: { item: Testimonial }) => {
             <div className={styles.logobox}>
               <div className={styles.logoWrapper}>
                 <Image
-                  src={"images/devicon_google.svg"}
+                  src={"/images/devicon_google.svg"}
                   alt={item.name}
                   width={32}
                   height={32}
