@@ -6,16 +6,32 @@ import Image from "next/image";
 
 const ReviewHighlights = () => {
   const platforms = [
-    { icon: "images/rating/facebook.svg", rating: "4.9", reviews: "700+" },
-    { icon: "/images/rating/google.svg", rating: "4.8", reviews: "700+" },
-    { icon: "/images/rating/trustpilot.svg", rating: "5", reviews: "700+" },
-    { icon: "/images/rating/sulekha.svg", rating: "4.9", reviews: "700+" },
     {
-      icon: "/images/rating/justdial.svg",
+      icon: "images/testimonials/facebook.svg",
+      rating: "4.9",
+      reviews: "700+",
+    },
+    { icon: "/images/testimonials/google.svg", rating: "4.8", reviews: "700+" },
+    {
+      icon: "/images/testimonials/trustpilot.svg",
+      rating: "5",
+      reviews: "700+",
+    },
+    {
+      icon: "/images/testimonials/sulekha.svg",
+      rating: "4.9",
+      reviews: "700+",
+    },
+    {
+      icon: "/images/testimonials/justdial.svg",
       rating: "4.8",
       reviews: "700+",
     },
-    { icon: "/images/rating/urbanpro.svg", rating: "5", reviews: "700+" },
+    {
+      icon: "/images/testimonials/glassdoor.svg",
+      rating: "5",
+      reviews: "700+",
+    },
   ];
 
   return (
@@ -63,7 +79,7 @@ const ReviewHighlights = () => {
                       Read All <br /> Reviews
                     </span>
                     <Image
-                      src="/images/rating/iconoir_arrow-up.svg"
+                      src="/images/testimonials/iconoir_arrow-up.svg"
                       alt="Reviewer"
                       width={24}
                       height={24}
@@ -93,7 +109,7 @@ const ReviewHighlights = () => {
                           <span>
                             {item.rating}
                             <Image
-                              src="/images/rating/round-star.svg"
+                              src="/images/icons/rating.svg"
                               alt="Platform"
                               width={24}
                               height={24}

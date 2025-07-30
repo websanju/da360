@@ -83,6 +83,9 @@
                         text-align: left;
                         color: #fff;
                         margin-bottom: 5px;
+                        display: flex;
+                        align-items: center;
+                        gap: 10px;
                     }
 
                     small {
@@ -170,7 +173,8 @@
 
 @media (width <=1260px) {
     .reviewHighlightsSection {
-        padding:40px 0 40px;
+        padding: 40px 0 40px;
+
         .row {
             display: flex;
             gap: 20px;
@@ -295,7 +299,8 @@
 
 @media (width <=991px) {
     .reviewHighlightsSection {
-        padding:40px 0 40px;
+        padding: 40px 0 40px;
+
         .row {
             display: flex;
             gap: 40px;
@@ -323,6 +328,7 @@
 
         .right {
             justify-content: flex-start;
+
             .reviewContent {
                 h1 {
                     font-size: 16px;
@@ -349,6 +355,7 @@
                     .platformImg {
                         display: flex;
                         align-items: center;
+
                         img {
                             width: 24px;
                         }
@@ -384,9 +391,11 @@
                 height: 80px;
                 min-width: 80px;
                 cursor: pointer;
+
                 .playVideo {
                     display: none;
                 }
+
                 img {
                     border-radius: 100%;
                     width: 35px;
