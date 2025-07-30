@@ -77,7 +77,7 @@ const Card = ({ item }: { item: Testimonial }) => {
               {[...Array(item.rating)].map((_, i) => (
                 <Image
                   key={i}
-                  src="/images/rating/round-star.svg"
+                  src="/images/icons/rating.svg"
                   alt="star"
                   width={24}
                   height={24}
@@ -128,7 +128,7 @@ const Card = ({ item }: { item: Testimonial }) => {
                 {[...Array(item.rating)].map((_, i) => (
                   <Image
                     key={i}
-                    src="/images/rating/round-star.svg"
+                    src="/images/icons/rating.svg"
                     alt="star"
                     width={24}
                     height={24}
@@ -249,7 +249,7 @@ const Card = ({ item }: { item: Testimonial }) => {
                 {[...Array(item.rating)].map((_, i) => (
                   <Image
                     key={i}
-                    src="/images/rating/round-star.svg"
+                    src="/images/icons/rating.svg"
                     alt="star"
                     width={24}
                     height={24}
