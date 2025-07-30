@@ -19,7 +19,7 @@ type Person = {
   designation?: string;
   image: string;
   profileImage?: string;
-  type: "text" | "video";
+  type: "text" | "video" | "noBgVideo";
   modalHTML?: string;
   videoUrl?: string;
   bgColor: string;
@@ -36,7 +36,7 @@ const slides: SlideContent[] = [
       image: "/images/video-testimonials/nivedth.jpg",
       designation: "Marketing Executive",
       type: "video",
-      videoUrl: "/images/video-testimonials/nivedth.mp4",
+      videoUrl: "/images/video-testimonials/nivedh.mp4",
       bgColor: "#E9492D",
     },
     {
@@ -88,12 +88,13 @@ const slides: SlideContent[] = [
       name: "Megha Lodha",
       image: "/images/video-testimonials/meghalodha.jpg",
       type: "video",
-      videoUrl: "/images/video-testimonials/meghalodha.mp4",
+      videoUrl: "/images/video-testimonials/megha.mp4",
       designation: "Marketing Executive",
       bgColor: "#3ACFAF",
       textColor: "#fff",
     },
   ],
+
   [
     {
       id: 6,
@@ -126,14 +127,41 @@ const slides: SlideContent[] = [
   ],
   [
     {
-      id: 1,
-      name: "Megha Lodha",
+      id: 8,
+      name: "Akshay",
       image: "/images/video-testimonials/meghalodha.jpg",
-      type: "video",
-      videoUrl: "/images/video-testimonials/meghalodha.mp4",
-      bgColor: "#8588E6",
+      type: "noBgVideo",
+      videoUrl: "/images/video-testimonials/akshay.mp4",
       designation: "Marketing Executive",
+      bgColor: "#3ACFAF",
       textColor: "#fff",
+    },
+  ],
+  [
+    {
+      id: 9,
+      name: "Sonal Lal",
+      designation: "SEO Analyst",
+      image: "/images/Ambitious/text-2.png",
+      profileImage: "/images/Ambitious/default-avatar.svg",
+      type: "text",
+      modalHTML: `
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s...</p>
+      `,
+      bgColor: "#C5EBD4",
+      textColor: "#000",
+    },
+  ],
+  [
+    {
+      id: 1,
+      name: "Ankita",
+      image: "/images/video-testimonials/nivedth.jpg",
+      designation: "Marketing Executive",
+      type: "video",
+      videoUrl: "/images/video-testimonials/ankita.mp4",
+      bgColor: "#E9492D",
     },
     {
       id: 2,
@@ -152,26 +180,225 @@ const slides: SlideContent[] = [
   ],
   [
     {
-      id: 5,
-      name: "Nishank Koushak",
-      image: "/images/nishank1.png",
-      designation: "Digital Marketing Trainer",
+      id: 3,
+      name: "kesar",
+      image: "/images/video-testimonials/vinayakvv.jpg",
+      designation: "Social Media Marketing Specialist",
       type: "video",
-      videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+      videoUrl: "/images/video-testimonials/kesar.mp4",
+      bgColor: "#9554CA",
+      textColor: "#fff",
+    },
+  ],
+  [
+    {
+      id: 4,
+      name: "Sonal Lal",
+      designation: "SEO Analyst",
+      image: "/images/Ambitious/text-2.png",
+      profileImage: "/images/Ambitious/default-avatar.svg",
+      type: "text",
+      modalHTML: `
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s...</p>
+      `,
+      bgColor: "#FED3DA",
+      textColor: "#000",
+    },
+  ],
+  [
+    {
+      id: 5,
+      name: "Madhu",
+      image: "/images/video-testimonials/meghalodha.jpg",
+      type: "video",
+      videoUrl: "/images/video-testimonials/madhu.mp4",
+      designation: "Marketing Executive",
+      bgColor: "#3ACFAF",
+      textColor: "#fff",
+    },
+  ],
+
+  [
+    {
+      id: 6,
+      name: "Sonal Lal",
+      designation: "SEO Analyst",
+      image: "/images/Ambitious/text-3.png",
+      profileImage: "/images/Ambitious/default-avatar.svg",
+      type: "text",
+      modalHTML: `
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s...</p>
+      `,
+      bgColor: "#063F2E",
+      textColor: "#fff",
+    },
+    {
+      id: 7,
+      name: "Sonal Lal",
+      designation: "SEO Analyst",
+      image: "/images/Ambitious/text-4.png",
+      profileImage: "/images/Ambitious/default-avatar.svg",
+      type: "text",
+      modalHTML: `
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s...</p>
+      `,
+      bgColor: "#8588E6",
+      textColor: "#fff",
+    },
+  ],
+  [
+    {
+      id: 8,
+      name: "Nayil",
+      image: "/images/video-testimonials/meghalodha.jpg",
+      type: "noBgVideo",
+      videoUrl: "/images/video-testimonials/nayil.mp4",
+      designation: "Marketing Executive",
       bgColor: "#F6B39F",
       textColor: "#fff",
     },
   ],
   [
     {
-      id: 5,
-      name: "Nishank Koushak",
-      image: "/images/nishank1.png",
-      designation: "Digital Marketing Trainer",
+      id: 9,
+      name: "Sonal Lal",
+      designation: "SEO Analyst",
+      image: "/images/Ambitious/text-2.png",
+      profileImage: "/images/Ambitious/default-avatar.svg",
+      type: "text",
+      modalHTML: `
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s...</p>
+      `,
+      bgColor: "#C5EBD4",
+      textColor: "#000",
+    },
+  ],
+  [
+    {
+      id: 1,
+      name: "Ruchika",
+      image: "/images/video-testimonials/nivedth.jpg",
+      designation: "Marketing Executive",
       type: "video",
-      videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
-      bgColor: "#F6B39F",
+      videoUrl: "/images/video-testimonials/ruchika.mp4",
+      bgColor: "#E9492D",
+    },
+    {
+      id: 2,
+      name: "Sonal Lal",
+      designation: "SEO Analyst",
+      image: "/images/Ambitious/text-1.png",
+      profileImage: "/images/Ambitious/default-avatar.svg",
+      type: "text",
+      modalHTML: `
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s...</p>
+      `,
+      bgColor: "#4b896a",
       textColor: "#fff",
+    },
+  ],
+  [
+    {
+      id: 3,
+      name: "Sanyam",
+      image: "/images/video-testimonials/vinayakvv.jpg",
+      designation: "Social Media Marketing Specialist",
+      type: "video",
+      videoUrl: "/images/video-testimonials/sanyam.mp4",
+      bgColor: "#9554CA",
+      textColor: "#fff",
+    },
+  ],
+  [
+    {
+      id: 4,
+      name: "Sonal Lal",
+      designation: "SEO Analyst",
+      image: "/images/Ambitious/text-2.png",
+      profileImage: "/images/Ambitious/default-avatar.svg",
+      type: "text",
+      modalHTML: `
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s...</p>
+      `,
+      bgColor: "#F6B39F",
+      textColor: "#000",
+    },
+  ],
+  [
+    {
+      id: 5,
+      name: "Snehal",
+      image: "/images/video-testimonials/meghalodha.jpg",
+      type: "video",
+      videoUrl: "/images/video-testimonials/snehal.mp4",
+      designation: "Marketing Executive",
+      bgColor: "#3ACFAF",
+      textColor: "#fff",
+    },
+  ],
+
+  [
+    {
+      id: 6,
+      name: "Sonal Lal",
+      designation: "SEO Analyst",
+      image: "/images/Ambitious/text-3.png",
+      profileImage: "/images/Ambitious/default-avatar.svg",
+      type: "text",
+      modalHTML: `
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s...</p>
+      `,
+      bgColor: "#063F2E",
+      textColor: "#fff",
+    },
+    {
+      id: 7,
+      name: "Sonal Lal",
+      designation: "SEO Analyst",
+      image: "/images/Ambitious/text-4.png",
+      profileImage: "/images/Ambitious/default-avatar.svg",
+      type: "text",
+      modalHTML: `
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s...</p>
+      `,
+      bgColor: "#8588E6",
+      textColor: "#fff",
+    },
+  ],
+  [
+    {
+      id: 8,
+      name: "Zeenath",
+      image: "/images/video-testimonials/meghalodha.jpg",
+      type: "noBgVideo",
+      videoUrl: "/images/video-testimonials/zeenath.mp4",
+      designation: "Marketing Executive",
+      bgColor: "#3ACFAF",
+      textColor: "#fff",
+    },
+  ],
+  [
+    {
+      id: 9,
+      name: "Sonal Lal",
+      designation: "SEO Analyst",
+      image: "/images/Ambitious/text-2.png",
+      profileImage: "/images/Ambitious/default-avatar.svg",
+      type: "text",
+      modalHTML: `
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s...</p>
+      `,
+      bgColor: "#C5EBD4",
+      textColor: "#000",
     },
   ],
 ];
@@ -292,16 +519,6 @@ const PeopleSlider: React.FC<PeopleSliderProps> = ({ title, description }) => {
                                 <p>{person.designation}</p>
                               </div>
                             </div>
-                            {/* <iframe
-                              src={person.videoUrl}
-                              title={person.name}
-                              allowFullScreen
-                              style={{
-                                width: "100%",
-                                height: "100%",
-                                border: "none",
-                              }}
-                            /> */}
                           </div>
                         ) : person.type === "text" ? (
                           <div
@@ -337,6 +554,34 @@ const PeopleSlider: React.FC<PeopleSliderProps> = ({ title, description }) => {
                                 __html: person.modalHTML as string,
                               }}
                             />
+                          </div>
+                        ) : person.type === "noBgVideo" ? (
+                          <div
+                            className={`${styles.videoContainer} ${styles.videoBgBox}`}
+                          >
+                            <div className={styles.videoImg}>
+                              <Image
+                                src={person.image}
+                                width={243}
+                                height={193}
+                                alt={person.name}
+                                className={styles.image}
+                              />
+                              <div className={styles.videoIConBox}>
+                                <div className={styles.videoIcon}>
+                                  <Image
+                                    alt="play icon"
+                                    width={22}
+                                    height={22}
+                                    src="images/play-btn.svg"
+                                  />
+                                </div>
+                              </div>
+                            </div>
+                            <div className={styles.videoDetails}>
+                              <strong>{person.name}</strong>
+                              <p>{person.designation}</p>
+                            </div>
                           </div>
                         ) : (
                           <Image
@@ -379,10 +624,13 @@ const PeopleSlider: React.FC<PeopleSliderProps> = ({ title, description }) => {
           tabIndex={-1}
           style={{ backgroundColor: "rgba(0,0,0,0.6)" }}
         >
-          <div className="modal-dialog modal-dialog-centered">
+          <div
+            className={`modal-dialog modal-dialog-centered ${styles.modalDialogCentered}`}
+          >
             <div
               className={`${styles.modalContent} modal-content ${
-                selected?.type === "video" &&
+                (selected?.type === "video" ||
+                  selected?.type === "noBgVideo") &&
                 !selected.videoUrl?.startsWith("http")
                   ? styles.customVideoModal
                   : ""
@@ -431,6 +679,36 @@ const PeopleSlider: React.FC<PeopleSliderProps> = ({ title, description }) => {
 
                 {selected.type === "video" && selected.videoUrl && (
                   <div className={styles.videoBox}>
+                    {selected.videoUrl.startsWith("http") ? (
+                      <div className="ratio ratio-16x9">
+                        <iframe
+                          src={selected.videoUrl}
+                          title={selected.name}
+                          allowFullScreen
+                          style={{
+                            width: "100%",
+                            height: "100%",
+                            border: "none",
+                          }}
+                        ></iframe>
+                      </div>
+                    ) : (
+                      <video
+                        ref={videoRef}
+                        autoPlay
+                        controls
+                        playsInline
+                        style={{ width: "100%", height: "100%" }}
+                        src={selected.videoUrl}
+                      >
+                        Your browser does not support the video tag.
+                      </video>
+                    )}
+                  </div>
+                )}
+
+                {selected.type === "noBgVideo" && selected.videoUrl && (
+                  <div className={styles.noBgVideo}>
                     {selected.videoUrl.startsWith("http") ? (
                       <div className="ratio ratio-16x9">
                         <iframe
