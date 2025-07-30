@@ -33,7 +33,7 @@
 }
 
 .exploreBtn {
-  margin-top: 140px;
+  margin-top: 90px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -42,12 +42,19 @@
     border: none;
     background-color: transparent;
     box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0);
-    border: 1.5px solid rgba(0, 0, 0, 0);
-
+    border: 2px solid rgba(0, 0, 0, 0);
+    border-radius: 0;
+     background-color:transparent;
+    padding: 0 0;
+    transition: border-color 0.3s ease;
+    border-color: transparent !important;
+    &:focus {
+       border-bottom: 2px solid rgb(0, 0, 0);
+       outline: none;
+    }
     &:hover {
-      border: 1.5px solid rgb(0, 0, 0);
-      background-color: rgb(255, 255, 255);
-      box-shadow: 3px 3px 0px 0px rgb(0, 0, 0);
+      border-bottom: 2px solid rgb(0, 0, 0) !important;
+      background-color:transparent;
       color: #000000;
     }
   }

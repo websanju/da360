@@ -191,7 +191,7 @@ const ProgramsShowcase: React.FC = () => {
         <div className="row">
           <div className="col-12">
             <div className={styles.exploreBtn}>
-              <Link href="/courses" className="btn btnWhite btn-lg px-4">
+              <Link href="/courses" className="btn btnWhite btn-lg">
                 Explore Programs <ArrowUp />
               </Link>
             </div>
