@@ -24,6 +24,7 @@ type Person = {
   videoUrl?: string;
   bgColor: string;
   textColor?: string;
+  calssName?: string;
 };
 
 type SlideContent = Person[];
@@ -47,8 +48,7 @@ const slides: SlideContent[] = [
       profileImage: "/images/Ambitious/default-avatar.svg",
       type: "text",
       modalHTML: `
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s...</p>
+        <p>I leveraged the new skills in landing a good job...</p>
       `,
       bgColor: "#4b896a",
       textColor: "#fff",
@@ -75,11 +75,11 @@ const slides: SlideContent[] = [
       profileImage: "/images/Ambitious/default-avatar.svg",
       type: "text",
       modalHTML: `
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s...</p>
+        <p>Its a good place to learn if you are starting out in Digital Marketing field. Trainers are well-experienced and if you are diligent, they will help you in every way possible...</p>
       `,
       bgColor: "#F6B39F",
       textColor: "#000",
+      calssName: "threeCards",
     },
   ],
   [
@@ -104,11 +104,11 @@ const slides: SlideContent[] = [
       profileImage: "/images/Ambitious/default-avatar.svg",
       type: "text",
       modalHTML: `
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s...</p>
+        <p>Trainers help a lot to understand the concept and clear all your doubts and make the learning easy...</p>
       `,
       bgColor: "#063F2E",
       textColor: "#fff",
+      calssName: "greenCard",
     },
     {
       id: 7,
@@ -118,8 +118,7 @@ const slides: SlideContent[] = [
       profileImage: "/images/Ambitious/default-avatar.svg",
       type: "text",
       modalHTML: `
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s...</p>
+        <p>I leveraged the new skills in landing a good job...</p>
       `,
       bgColor: "#8588E6",
       textColor: "#fff",
@@ -171,8 +170,7 @@ const slides: SlideContent[] = [
       profileImage: "/images/Ambitious/default-avatar.svg",
       type: "text",
       modalHTML: `
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s...</p>
+        <p>I leveraged the new skills in landing a good job...</p>
       `,
       bgColor: "#4b896a",
       textColor: "#fff",
@@ -228,11 +226,11 @@ const slides: SlideContent[] = [
       profileImage: "/images/Ambitious/default-avatar.svg",
       type: "text",
       modalHTML: `
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s...</p>
+        <p>Trainers help a lot to understand the concept and clear all your doubts and make the learning easy...</p>
       `,
       bgColor: "#063F2E",
       textColor: "#fff",
+      calssName: "greenCard",
     },
     {
       id: 7,
@@ -242,8 +240,7 @@ const slides: SlideContent[] = [
       profileImage: "/images/Ambitious/default-avatar.svg",
       type: "text",
       modalHTML: `
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s...</p>
+        <p>I leveraged the new skills in landing a good job...</p>
       `,
       bgColor: "#8588E6",
       textColor: "#fff",
@@ -295,8 +292,7 @@ const slides: SlideContent[] = [
       profileImage: "/images/Ambitious/default-avatar.svg",
       type: "text",
       modalHTML: `
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s...</p>
+        <p>I leveraged the new skills in landing a good job...</p>
       `,
       bgColor: "#4b896a",
       textColor: "#fff",
@@ -323,8 +319,7 @@ const slides: SlideContent[] = [
       profileImage: "/images/Ambitious/default-avatar.svg",
       type: "text",
       modalHTML: `
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s...</p>
+        <p>Its a good place to learn if you are starting out in Digital Marketing field. Trainers are well-experienced and if you are diligent, they will help you in every way possible...</p>
       `,
       bgColor: "#F6B39F",
       textColor: "#000",
@@ -352,11 +347,11 @@ const slides: SlideContent[] = [
       profileImage: "/images/Ambitious/default-avatar.svg",
       type: "text",
       modalHTML: `
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s...</p>
+        <p>Trainers help a lot to understand the concept and clear all your doubts and make the learning easy...</p>
       `,
       bgColor: "#063F2E",
       textColor: "#fff",
+      calssName: "greenCard",
     },
     {
       id: 7,
@@ -366,8 +361,7 @@ const slides: SlideContent[] = [
       profileImage: "/images/Ambitious/default-avatar.svg",
       type: "text",
       modalHTML: `
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s...</p>
+        <p>I leveraged the new skills in landing a good job...</p>
       `,
       bgColor: "#8588E6",
       textColor: "#fff",
@@ -492,7 +486,9 @@ const PeopleSlider: React.FC<PeopleSliderProps> = ({ title, description }) => {
                         {person.type === "video" ? (
                           <div
                             style={{ backgroundColor: person.bgColor }}
-                            className={styles.videoContainer}
+                            className={`${styles.videoContainer} ${
+                              person.calssName ? styles[person.calssName] : ""
+                            }`}
                           >
                             <div className={styles.videoItem}>
                               <div className={styles.videoImg}>
@@ -522,7 +518,9 @@ const PeopleSlider: React.FC<PeopleSliderProps> = ({ title, description }) => {
                           </div>
                         ) : person.type === "text" ? (
                           <div
-                            className={styles.textContainer}
+                            className={` ${styles.textContainer} ${
+                              person.calssName ? styles[person.calssName] : ""
+                            }`}
                             style={{ backgroundColor: person.bgColor }}
                           >
                             <div className={styles.profileInfo}>

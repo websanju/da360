@@ -1,5 +1,6 @@
 .peopleSliderSection {
   margin-top: 140px;
+
   .peopleItem {
     display: flex;
     flex-direction: column;
@@ -21,26 +22,30 @@
     border: 2px solid #000000;
     overflow: hidden;
     padding: 16px 16px 64px;
+
     &.videoBgBox {
       padding: 0;
       position: relative;
-       min-height: 417px;
-       &::before {
+      min-height: 417px;
+
+      &::before {
         background-image: none;
-       }
-      
-      .videoImg { 
+      }
+
+      .videoImg {
         height: 417px;
         display: flex;
         width: 100%;
         align-items: center;
         justify-content: center;
+
         img {
           object-fit: cover;
           height: 100%;
           width: 100%;
           object-position: top;
         }
+
         .videoIConBox {
           position: absolute;
           top: 0;
@@ -100,6 +105,7 @@
 
         }
       }
+
       .videoDetails {
         position: absolute;
         bottom: 30px;
@@ -135,6 +141,7 @@
         }
       }
     }
+
     & div {
       position: relative;
       z-index: 1;
@@ -339,6 +346,19 @@
       }
     }
   }
+
+  .threeCards {
+    .textContent {
+      p {
+        font-size: 14px;
+        line-height: 20px;
+      }
+    }
+  }
+
+  .greenCard {
+    min-height: 335px;
+  }
 }
 
 .btnClose {
@@ -358,31 +378,36 @@
   padding: 0;
   overflow: hidden;
   border: none;
+
   .videoBox {
     display: flex;
     align-items: center;
   }
 
-   video {
+  video {
     max-width: 370px;
     height: 100%;
-   }
+  }
 }
+
 .modalDialogCentered {
-   max-width: 370px;
+  max-width: 370px;
 }
+
 .modalContent {
   border-radius: 12px;
   overflow: hidden;
+
   &.customVideoModal {
     max-width: max-content;
     min-width: 370px;
-        background-color: #000;
+    background-color: #000;
   }
+
   button {
     &:focus {
       outline: none;
-      box-shadow:none;
+      box-shadow: none;
     }
   }
 }
@@ -548,6 +573,8 @@
   }
 }
 
+
+
 @keyframes pulse-border {
   0% {
     transform: translate(-50%, -50%) scale(1);
@@ -582,28 +609,32 @@
   .customSlide {
     max-width: 243px;
   }
-.modalContent {
-  &.customVideoModal {
-    min-width: 320px;
+
+  .modalContent {
+    &.customVideoModal {
+      min-width: 320px;
+    }
   }
-}
+
   .peopleSliderSection {
     margin-top: 60px;
 
     .videoContainer {
       border-radius: 10px;
-     }
-     .textContainer {
+    }
+
+    .textContainer {
       border-radius: 10px;
+
       .textContent {
-      
+
         p {
           font-size: 14px;
           line-height: normal;
         }
-       }
-     }
-    
+      }
+    }
+
 
     .videoIcon {
 
