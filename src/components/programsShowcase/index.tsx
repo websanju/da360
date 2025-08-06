@@ -98,7 +98,7 @@ const ProgramsShowcase: React.FC = () => {
                 stats={[
                   {
                     icon: "/images/icons/certification.svg",
-                    label: "40+ Power-Packed Modules",
+                    label: "50+ Case Studies",
                   },
                   {
                     icon: "/images/icons/certification.svg",
@@ -106,11 +106,11 @@ const ProgramsShowcase: React.FC = () => {
                   },
                   {
                     icon: "/images/icons/certification.svg",
-                    label: "15 Specialized Career Tracks",
+                    label: "70+ Tools",
                   },
                   {
                     icon: "/images/icons/certification.svg",
-                    label: "15+ Live Agency-Style Projects",
+                    label: "25+ Certifications",
                   },
                 ]}
                 buttonText="View Course"
@@ -123,27 +123,27 @@ const ProgramsShowcase: React.FC = () => {
           <div className="card-wrapper">
             <div className="card2">
               <WidgetCard
-                title="PGCP in Digital Marketing & E-Commerce"
+                title="Leadership in Social Content Creator & Video Production"
                 category={[
-                  "6.5-Month Flagship Program",
+                  "12-Month Flagship Program",
                   "Available Online & On-Campus",
                 ]}
                 stats={[
                   {
                     icon: "/images/icons/certification.svg",
-                    label: "15+ Dynamic Learning Modules",
+                    label: "50+ Case Studies",
                   },
                   {
                     icon: "/images/icons/certification.svg",
-                    label: "260+ Hours of Experiential Learning",
+                    label: "1920+ Hours of Learning",
                   },
                   {
                     icon: "/images/icons/certification.svg",
-                    label: "5 Specialisation",
+                    label: "55+ Specialised Tools",
                   },
                   {
                     icon: "/images/icons/certification.svg",
-                    label: "8+ Real-Time Marketing Projects",
+                    label: "20+ Certifications",
                   },
                 ]}
                 buttonText="View Course"
@@ -156,27 +156,27 @@ const ProgramsShowcase: React.FC = () => {
           <div className="card-wrapper">
             <div className="card3">
               <WidgetCard
-                title="Skill Diploma in Digital Marketing & Analytics"
+                title="PGCP in Performance Marketing & Media Buying"
                 category={[
-                  "3-Month Certification Program",
+                  "6-Month Certification Program",
                   "Online Learning Only",
                 ]}
                 stats={[
                   {
                     icon: "/images/icons/certification.svg",
-                    label: " 5+ Impact-Driven Modules",
+                    label: "20+ Case Studies",
                   },
                   {
                     icon: "/images/icons/certification.svg",
-                    label: "120+ hrs Hands-On Learning",
+                    label: "240+ Hours of Learning",
                   },
                   {
                     icon: "/images/icons/certification.svg",
-                    label: " 5+ Professional Certifications",
+                    label: "20+ Specialised Tools",
                   },
                   {
                     icon: "/images/icons/certification.svg",
-                    label: "2+ Live Marketing Case Projects",
+                    label: "15+ Certifications",
                   },
                 ]}
                 buttonText="View Course"
