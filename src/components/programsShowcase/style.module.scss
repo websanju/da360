@@ -43,19 +43,26 @@
     background-color: transparent;
     box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0);
     border: 2px solid rgba(0, 0, 0, 0);
-    border-radius: 0;
-     background-color:transparent;
-    padding: 0 0;
+    border-radius: 50px;
+     background-color:#000000;
+    padding: 8px 28px;
     transition: border-color 0.3s ease;
-    border-color: transparent !important;
+    border-color: #000000 !important;
+    color: #fff;
+    svg path{
+        fill: #fff;
+      }
     &:focus {
        border-bottom: 2px solid rgb(0, 0, 0);
        outline: none;
     }
     &:hover {
       border-bottom: 2px solid rgb(0, 0, 0) !important;
-      background-color:transparent;
-      color: #000000;
+      background-color:#2A2A2A;
+      color: #fff;
+      svg path{
+        fill: #fff;
+      }
     }
   }
 }

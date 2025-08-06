@@ -65,10 +65,8 @@ export default function MegaMenu({ closeMenu }: MegaMenuProps) {
               onClick={handleClickOline}
               className={`${styles.navbarDropdownColumn}`}
             >
-              <h4>AI Marketing / MarTech / Video</h4>
-              <span className={styles.navbarTitle}>
-                AI Vibe Marketing Certification Course
-              </span>
+              <h4>AI Vibe Marketing</h4>
+
               <div className={styles.navbarTags}>
                 <span className={styles.dropdownTag}>2 Months</span>
                 <span className={styles.dropdownTag}>Online</span>
@@ -97,10 +95,7 @@ export default function MegaMenu({ closeMenu }: MegaMenuProps) {
               onClick={handleClickOline}
               className={`${styles.navbarDropdownColumn}`}
             >
-              <h4>Influencer Marketing</h4>
-              <span className={styles.navbarTitle}>
-                Youtube & Instagram Influencer Certification Course
-              </span>
+              <h4>Youtube & Instagram Influencer</h4>
               <div className={styles.navbarTags}>
                 <span className={styles.dropdownTag}>2 Months</span>
                 <span className={styles.dropdownTag}>Online</span>
@@ -129,10 +124,8 @@ export default function MegaMenu({ closeMenu }: MegaMenuProps) {
               onClick={handleClickOline}
               className={`${styles.navbarDropdownColumn}`}
             >
-              <h4>LinkedIn Marketing Bootcamp</h4>
-              <span className={styles.navbarTitle}>
-                LinkedIn & Personal Branding Certification Course
-              </span>
+              <h4>LinkedIn & Personal Branding</h4>
+
               <div className={styles.navbarTags}>
                 <span className={styles.dropdownTag}>2 Months</span>
                 <span className={styles.dropdownTag}>Online</span>
@@ -166,9 +159,7 @@ export default function MegaMenu({ closeMenu }: MegaMenuProps) {
               className={`${styles.navbarDropdownColumn}`}
             >
               <h4>PGCP in Digital Marketing, E‑Comm & AI</h4>
-              <span className={styles.navbarTitle}>
-                PGCP in Digital Marketing, E‑Comm & AI
-              </span>
+
               <div className={styles.navbarTags}>
                 <span className={styles.dropdownTag}>6 Months</span>
                 <span className={styles.dropdownTag}>Online / Classroom</span>
@@ -199,9 +190,7 @@ export default function MegaMenu({ closeMenu }: MegaMenuProps) {
               className={`${styles.navbarDropdownColumn}`}
             >
               <h4>PGCP in Social Media & Influencer Marketing</h4>
-              <span className={styles.navbarTitle}>
-                PGCP in Social Media & Influencer Marketing
-              </span>
+
               <div className={styles.navbarTags}>
                 <span className={styles.dropdownTag}>6 Months</span>
                 <span className={styles.dropdownTag}>Online</span>
@@ -231,9 +220,7 @@ export default function MegaMenu({ closeMenu }: MegaMenuProps) {
               className={`${styles.navbarDropdownColumn}`}
             >
               <h4>PGCP in Performance Marketing & Media Buying</h4>
-              <span className={styles.navbarTitle}>
-                PGCP in Performance Marketing & Media Buying
-              </span>
+
               <div className={styles.navbarTags}>
                 <span className={styles.dropdownTag}>6 Months</span>
                 <span className={styles.dropdownTag}>Online</span>
@@ -269,9 +256,7 @@ export default function MegaMenu({ closeMenu }: MegaMenuProps) {
               className={`${styles.navbarDropdownColumn}`}
             >
               <h4>Leadership in Digital Marketing, AI & Entrepreneurship</h4>
-              <span className={styles.navbarTitle}>
-                Leadership in Digital Marketing, AI & Entrepreneurship
-              </span>
+
               <div className={styles.navbarTags}>
                 <span className={styles.dropdownTag}>12 Months</span>
                 {/* <span className={styles.dropdownTag}>Online</span> */}
@@ -302,9 +287,7 @@ export default function MegaMenu({ closeMenu }: MegaMenuProps) {
               className={`${styles.navbarDropdownColumn}`}
             >
               <h4>Leadership in Social Content Creator & Video Production</h4>
-              <span className={styles.navbarTitle}>
-                Leadership in Social Content Creator & Video Production
-              </span>
+
               <div className={styles.navbarTags}>
                 <span className={styles.dropdownTag}>12 Months</span>
                 {/* <span className={styles.dropdownTag}>Online</span> */}
