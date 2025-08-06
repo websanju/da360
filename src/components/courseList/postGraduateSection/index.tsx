@@ -3,7 +3,7 @@ import styles from "../style.module.scss";
 import Image from "next/image";
 
 const LeadershipSection = ({ section }: { section: CourseSection }) => (
-  <section>
+  <section className={styles.postCertification}>
     <div className="container">
       <div className="row">
         <div className="col-lg-12">
@@ -38,7 +38,17 @@ const LeadershipSection = ({ section }: { section: CourseSection }) => (
                     </div>
                     <ul>
                       {course.features.map((f, i) => (
-                        <li key={i}>{f}</li>
+                        <li key={i}>
+                          <span>
+                            <Image
+                              src={"/images/icons/tick-solid.svg"}
+                              alt={"tick"}
+                              width={20}
+                              height={20}
+                            />
+                          </span>{" "}
+                          {f}
+                        </li>
                       ))}
                     </ul>
                   </div>

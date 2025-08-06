@@ -36,7 +36,17 @@ const LeadershipSection = ({ section }: { section: CourseSection }) => (
                     </div>
                     <ul>
                       {course.features.map((f, i) => (
-                        <li key={i}>{f}</li>
+                        <li key={i}>
+                          <span>
+                            <Image
+                              src={"/images/icons/tick-solid.svg"}
+                              alt={"tick"}
+                              width={20}
+                              height={20}
+                            />
+                          </span>{" "}
+                          {f}
+                        </li>
                       ))}
                     </ul>
                     <button className={styles.btnCourse}>

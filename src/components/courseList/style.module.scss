@@ -56,8 +56,12 @@
 }
 
 .certificationSection {
-    margin-top: 80px;
-    margin-bottom: 80px;
+    margin-top: 132px;
+    margin-bottom: 162px;
+}
+
+.postCertification {
+     margin-top: 132px;
 }
 
 .sectionHeader {
@@ -127,6 +131,9 @@
                 font-size: 14px;
                 line-height: 18px;
                 letter-spacing: 1%;
+                display: flex;
+                align-items: center;
+                gap: 8px;
             }
         }
     }
