@@ -150,6 +150,36 @@ export default function MegaMenu({ closeMenu }: MegaMenuProps) {
                 </ul>
               </div>
             </div>
+            <div
+              onClick={handleClickOline}
+              className={`${styles.navbarDropdownColumn}`}
+            >
+              <h4>Performance Marketing & MarTech</h4>
+
+              <div className={styles.navbarTags}>
+                <span className={styles.dropdownTag}>2 Months</span>
+                <span className={styles.dropdownTag}>Online</span>
+              </div>
+              <div className={styles.navbarDropdownList}>
+                <ul>
+                  <li>
+                    <Link href={"#"}>Advance Specialist Certification</Link>
+                  </li>
+                  <li>
+                    <Link href={"#"}>80+ Hours of Learning</Link>
+                  </li>
+                  <li>
+                    <Link href={"#"}>8+ Case Studies</Link>
+                  </li>
+                  <li>
+                    <Link href={"#"}>10+ Tools</Link>
+                  </li>
+                  <li>
+                    <Link href={"#"}>2 Funnel Blueprints</Link>
+                  </li>
+                </ul>
+              </div>
+            </div>
           </div>
         )}
         {activeTab === 1 && (

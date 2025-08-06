@@ -115,7 +115,7 @@ const ProgramsShowcase: React.FC = () => {
                 ]}
                 buttonText="View Course"
                 expertText="Avail Scholarship"
-                image="/images/skill-1.png"
+                image="/images/course-list/leadeship-course-min.png"
               />
             </div>
           </div>
@@ -148,7 +148,7 @@ const ProgramsShowcase: React.FC = () => {
                 ]}
                 buttonText="View Course"
                 expertText="Avail Scholarship"
-                image="/images/skill-2.png"
+                image="/images/course-list/pgcp-in-digital-marketing.png"
               />
             </div>
           </div>
@@ -181,7 +181,7 @@ const ProgramsShowcase: React.FC = () => {
                 ]}
                 buttonText="View Course"
                 expertText="Avail Scholarship"
-                image="/images/skill-3.png"
+                image="/images/course-list/skill-diploma-in-digital-marketing.png"
               />
             </div>
           </div>

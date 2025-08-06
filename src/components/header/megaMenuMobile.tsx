@@ -158,10 +158,8 @@ const MobileMenu: React.FC<Props> = ({ onClose }) => {
             onClick={() => handleClick("/online-digital-marketing-courses")}
             className={styles.navbarDropdownColumn}
           >
-            <h4>AI Marketing / MarTech / Video</h4>
-            <span className={styles.navbarTitle}>
-              AI Vibe Marketing Certification Course
-            </span>
+            <h4> AI Vibe Marketing</h4>
+
             <div className={styles.navbarTags}>
               <span className={styles.dropdownTag}>2 Months</span>
               <span className={styles.dropdownTag}>Online</span>
@@ -197,10 +195,27 @@ const MobileMenu: React.FC<Props> = ({ onClose }) => {
             onClick={() => handleClick("/online-digital-marketing-courses")}
             className={styles.navbarDropdownColumn}
           >
-            <h4>LinkedIn Marketing Bootcamp</h4>
-            <span className={styles.navbarTitle}>
-              LinkedIn & Personal Branding Certification Course
-            </span>
+            <h4>LinkedIn & Personal Branding </h4>
+
+            <div className={styles.navbarTags}>
+              <span className={styles.dropdownTag}>2 Months</span>
+              <span className={styles.dropdownTag}>Online</span>
+            </div>
+            <ul className={styles.navbarDropdownList}>
+              {renderListItem("Advance Specialist Certification")}
+              {renderListItem("80+ Hours of Learning")}
+              {renderListItem("8+ Case Studies")}
+              {renderListItem("10+ Tools")}
+              {renderListItem("2 Linkedin Outreach Flow")}
+            </ul>
+          </div>
+
+          <div
+            onClick={() => handleClick("/online-digital-marketing-courses")}
+            className={styles.navbarDropdownColumn}
+          >
+            <h4>Performance Marketing & MarTech</h4>
+
             <div className={styles.navbarTags}>
               <span className={styles.dropdownTag}>2 Months</span>
               <span className={styles.dropdownTag}>Online</span>
