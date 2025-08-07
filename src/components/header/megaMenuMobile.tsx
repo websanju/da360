@@ -71,7 +71,9 @@ const MobileMenu: React.FC<Props> = ({ onClose }) => {
           </div>
 
           <div
-            onClick={() => handleClick("/social-video-leadership-course")}
+            onClick={() =>
+              handleClick("/social-content-creator-and-video-production")
+            }
             className={styles.navbarDropdownColumn}
           >
             <h4>Leadership in Social Content Creator & Video Production</h4>
@@ -113,7 +115,9 @@ const MobileMenu: React.FC<Props> = ({ onClose }) => {
           </div>
 
           <div
-            onClick={() => handleClick("/social-influencer-pgcp")}
+            onClick={() =>
+              handleClick("/social-media-and-Influencer-marketing")
+            }
             className={styles.navbarDropdownColumn}
           >
             <h4>PGCP in Social Media & Influencer Marketing</h4>
@@ -131,7 +135,9 @@ const MobileMenu: React.FC<Props> = ({ onClose }) => {
             </ul>
           </div>
           <div
-            onClick={() => handleClick("/social-influencer-pgcp")}
+            onClick={() =>
+              handleClick("/performance-marketing-and-media-buying")
+            }
             className={styles.navbarDropdownColumn}
           >
             <h4>PGCP in Performance Marketing & Media Buying</h4>

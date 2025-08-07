@@ -13,8 +13,6 @@
     top: 0px;
     background-color: #fff;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-
-
   }
 
   .dropdownColumnBox {
@@ -56,6 +54,9 @@
       align-items: center;
 
       li {
+        font-weight: 500;
+          font-size: 14px;
+          line-height: 100%;
         a {
           font-weight: 500;
           font-size: 14px;
@@ -202,6 +203,7 @@
   .hamburgermobileMenu {
     display: none !important;
   }
+
   .dropdownToggle {
     cursor: pointer;
     width: 117px;
@@ -400,6 +402,8 @@
               align-items: center;
               justify-content: space-between;
               padding-left: 20px;
+               font-weight: 500;
+                font-size: 12px;
 
               a {
                 font-weight: 500;
@@ -480,13 +484,16 @@
   display: flex;
   flex-direction: column;
   transition: transform 0.3s ease-in-out;
+
   ul {
     flex-direction: column;
     gap: 10px !important;
     padding-top: 50px;
+
     li {
-       width: 100%;
-       border-bottom: 1px solid #CFCFCF;
+      width: 100%;
+      border-bottom: 1px solid #CFCFCF;
+
       a {
         width: 100%;
         display: flex;
@@ -499,11 +506,12 @@
       }
     }
   }
+
   .closeBtn {
-        top: 45px;
+    top: 45px;
     right: 30px;
-  font-size: 0;
-  position: fixed;
+    font-size: 0;
+    position: fixed;
   }
 }
 
@@ -548,13 +556,14 @@
 
 @media (max-width: 1024px) {
   .courseDropdown {
-     .hamburgerdesktopMenu {
-    display: none !important;
-  }
+    .hamburgerdesktopMenu {
+      display: none !important;
+    }
 
-  .hamburgermobileMenu {
-    display: flex !important;
-  }
+    .hamburgermobileMenu {
+      display: flex !important;
+    }
+
     .dropdownContainer {
       .dropdownColumnGroup {
         padding: 22px 21px;
