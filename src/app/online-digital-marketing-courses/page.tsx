@@ -21,7 +21,7 @@ import PeopleSlider from "@components/peopleSlider";
 import LiveProjectsSlider from "@components/liveProjectsSlider";
 
 import BottomNav from "@components/bottomNav";
-import onlineDigitalMarketingCourses from "@/data/onlineDigitalMarketingCourses";
+import onlineDigitalMarketingCourses from "@/data/courses/onlineDigitalMarketingCourses";
 import { Cohort } from "@/components/cohortDetails";
 import TrustedByLearners from "@/components/trustedByLearners";
 

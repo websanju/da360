@@ -22,7 +22,7 @@ import TrustedByLearners from "@components/trustedByLearners";
 import LiveProjectsSlider from "@components/liveProjectsSlider";
 // import ContactButtonsSticky from "@/components/widgets/contactButtonsSticky";
 import BottomNav from "@components/bottomNav";
-import digitalNarketingTrainingInstitute from "@/data/digitalNarketingTrainingInstitute";
+import digitalNarketingTrainingInstitute from "@/data/courses/digitalNarketingTrainingInstitute";
 import { Cohort } from "@/components/cohortDetails";
 
 export const metadata = {

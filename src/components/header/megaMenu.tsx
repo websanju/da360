@@ -13,10 +13,17 @@ export default function MegaMenu({ closeMenu }: MegaMenuProps) {
 
   const router = useRouter();
 
-  const handleClickMasterDigital = () => {
+  const handleClickMasterDigitalMarketingLeadershipCourse = () => {
     closeMenu(); // call your custom function
     router.push("/master-digital-marketing-leadership-course");
   };
+
+  const handleClickMasterSocialContentCreatorAndVideoProduction = () => {
+    closeMenu(); // call your custom function
+    router.push("/social-content-creator-and-video-production");
+  };
+
+  //
 
   const handleClickOline = () => {
     closeMenu(); // call your custom function
@@ -27,6 +34,17 @@ export default function MegaMenu({ closeMenu }: MegaMenuProps) {
     closeMenu(); // call your custom function
     router.push("/digital-marketing-training-institute");
   };
+
+  const handleClickPerformanceMarketingAndMediaBuying = () => {
+    closeMenu(); // call your custom function
+    router.push("/performance-marketing-and-media-buying");
+  };
+
+  const handleClickSocialMediaInfluencerMarketing = () => {
+    closeMenu(); // call your custom function
+    router.push("/social-media-and-Influencer-marketing");
+  };
+
   return (
     <div className={styles.megaMenu}>
       {/* tabs */}
@@ -55,10 +73,7 @@ export default function MegaMenu({ closeMenu }: MegaMenuProps) {
       </div>
 
       <div className={styles.dropdownColumnBox}>
-        {/* <div className={styles.dropdownContainerHeader}>
-          <h3>Digital Marketing Programs & Skills To Master</h3>
-        </div> */}
-        {/* tab content */}
+        {/* Leadership Courses */}
         {activeTab === 2 && (
           <div className={styles.dropdownColumnGroup}>
             <div
@@ -182,6 +197,8 @@ export default function MegaMenu({ closeMenu }: MegaMenuProps) {
             </div>
           </div>
         )}
+
+        {/* PGCP Courses */}
         {activeTab === 1 && (
           <div className={styles.dropdownColumnGroup}>
             <div
@@ -196,27 +213,17 @@ export default function MegaMenu({ closeMenu }: MegaMenuProps) {
               </div>
               <div className={styles.navbarDropdownList}>
                 <ul>
-                  <li>
-                    <Link href={"#"}> PG Level Certification</Link>
-                  </li>
-                  <li>
-                    <Link href={"#"}>240+ Hours of Learning</Link>
-                  </li>
-                  <li>
-                    <Link href={"#"}>20+ Case Studies</Link>
-                  </li>
-                  <li>
-                    <Link href={"#"}>30+ Tools</Link>
-                  </li>
-                  <li>
-                    <Link href={"#"}>15+ Certifications</Link>
-                  </li>
+                  <li>PG Level Certification</li>
+                  <li>240+ Hours of Learning</li>
+                  <li>20+ Case Studies</li>
+                  <li>30+ Tools</li>
+                  <li>15+ Certifications</li>
                 </ul>
               </div>
             </div>
 
             <div
-              onClick={handleClickDigitalMarketing}
+              onClick={handleClickSocialMediaInfluencerMarketing}
               className={`${styles.navbarDropdownColumn}`}
             >
               <h4>PGCP in Social Media & Influencer Marketing</h4>
@@ -227,26 +234,16 @@ export default function MegaMenu({ closeMenu }: MegaMenuProps) {
               </div>
               <div className={styles.navbarDropdownList}>
                 <ul>
-                  <li>
-                    <Link href={"#"}>PG Level Certification</Link>
-                  </li>
-                  <li>
-                    <Link href={"#"}>240+ Hours of Learning</Link>
-                  </li>
-                  <li>
-                    <Link href={"#"}>20+ Case Studies</Link>
-                  </li>
-                  <li>
-                    <Link href={"#"}>18+ Specialised Tools</Link>
-                  </li>
-                  <li>
-                    <Link href={"#"}>15+ Certifications</Link>
-                  </li>
+                  <li>PG Level Certification</li>
+                  <li>240+ Hours of Learning</li>
+                  <li>20+ Case Studies</li>
+                  <li>18+ Specialised Tools</li>
+                  <li>15+ Certifications</li>
                 </ul>
               </div>
             </div>
             <div
-              onClick={handleClickDigitalMarketing}
+              onClick={handleClickPerformanceMarketingAndMediaBuying}
               className={`${styles.navbarDropdownColumn}`}
             >
               <h4>PGCP in Performance Marketing & Media Buying</h4>
@@ -257,32 +254,24 @@ export default function MegaMenu({ closeMenu }: MegaMenuProps) {
               </div>
               <div className={styles.navbarDropdownList}>
                 <ul>
-                  <li>
-                    <Link href={"#"}>PG Level Certification</Link>
-                  </li>
-                  <li>
-                    <Link href={"#"}>240+ Hours of Learning</Link>
-                  </li>
-                  <li>
-                    <Link href={"#"}>20+ Case Studies</Link>
-                  </li>
-                  <li>
-                    <Link href={"#"}>20+ Specialised Tools</Link>
-                  </li>
-                  <li>
-                    <Link href={"#"}>15+ Certifications</Link>
-                  </li>
+                  <li>PG Level Certification</li>
+                  <li>240+ Hours of Learning</li>
+                  <li>20+ Case Studies</li>
+                  <li>20+ Specialised Tools</li>
+                  <li>15+ Certifications</li>
                 </ul>
               </div>
             </div>
           </div>
         )}
+
+        {/* Certification Courses */}
         {activeTab === 0 && (
           <div
             className={`${styles.dropdownColumnGroup} ${styles.leadershipColumnGroup}`}
           >
             <div
-              onClick={handleClickMasterDigital}
+              onClick={handleClickMasterDigitalMarketingLeadershipCourse}
               className={`${styles.navbarDropdownColumn}`}
             >
               <h4>Leadership in Digital Marketing, AI & Entrepreneurship</h4>
@@ -313,7 +302,7 @@ export default function MegaMenu({ closeMenu }: MegaMenuProps) {
             </div>
 
             <div
-              onClick={handleClickMasterDigital}
+              onClick={handleClickMasterSocialContentCreatorAndVideoProduction}
               className={`${styles.navbarDropdownColumn}`}
             >
               <h4>Leadership in Social Content Creator & Video Production</h4>

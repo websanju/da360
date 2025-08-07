@@ -159,7 +159,7 @@ function useResponsiveMargin(margin?: MarginValue): string {
 const LifeAtDA360Gallery = ({
   title = "#LifeAtDA360 Gallery",
   description,
-  bgColor = "#ffffff",
+  // bgColor = "#ffffff",
   section,
   paddingBottom,
 }: LifeAtDA360GalleryProps) => {
@@ -324,7 +324,7 @@ const LifeAtDA360Gallery = ({
     <section
       className={styles.communityMeetupSection}
       style={{
-        backgroundColor: bgColor,
+        // backgroundColor: bgColor,
         paddingBottom: useResponsiveMargin(paddingBottom),
       }}
       id={section}

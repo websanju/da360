@@ -20,7 +20,7 @@ import AlumniSlider from "@components/alumniSlider";
 import PeopleSlider from "@components/peopleSlider";
 import LiveProjectsSlider from "@components/liveProjectsSlider";
 
-import digitalMarketingLeadership from "@/data/courses/digitalMarketingLeadership";
+import socialContentCreatorAndVideoProduction from "@/data/courses/socialContentCreatorAndVideoProduction";
 import { Cohort } from "@/components/cohortDetails";
 import BottomNav from "@/components/bottomNav";
 import TrustedByLearners from "@/components/trustedByLearners";
@@ -84,33 +84,49 @@ export default function courseDetail() {
   return (
     <main>
       <LeadCaptureSection
-        headingLineOne={digitalMarketingLeadership.leadCapture.titleOne}
-        headingLineTow={digitalMarketingLeadership.leadCapture.titleTwo}
-        descriptionLineOne={digitalMarketingLeadership.leadCapture.subtitleOne}
-        descriptionLineTow={digitalMarketingLeadership.leadCapture.subtitleTwo}
-        tags={digitalMarketingLeadership.leadCapture.tags || []}
+        headingLineOne={
+          socialContentCreatorAndVideoProduction.leadCapture.titleOne
+        }
+        headingLineTow={
+          socialContentCreatorAndVideoProduction.leadCapture.titleTwo
+        }
+        descriptionLineOne={
+          socialContentCreatorAndVideoProduction.leadCapture.subtitleOne
+        }
+        descriptionLineTow={
+          socialContentCreatorAndVideoProduction.leadCapture.subtitleTwo
+        }
+        tags={socialContentCreatorAndVideoProduction.leadCapture.tags || []}
       />
       <CohortDetails
         section="section1"
         cohorts={cohortData}
-        heading={digitalMarketingLeadership.cohortSectionHeading}
+        heading={socialContentCreatorAndVideoProduction.cohortSectionHeading}
       />
       <CourseHighlights
         section="section2"
-        highlights={digitalMarketingLeadership.highlights}
+        highlights={socialContentCreatorAndVideoProduction.highlights}
       />
       <TrustedByLearners
         padding={{ desktop: "40px 0 140px 0", mobile: "0 0 60px 0" }}
       />
       <OurSuccessStories
         section="section3"
-        headerTitle={digitalMarketingLeadership.StoryHeader.headerTitle}
-        description={digitalMarketingLeadership.StoryHeader.description}
+        headerTitle={
+          socialContentCreatorAndVideoProduction.StoryHeader.headerTitle
+        }
+        description={
+          socialContentCreatorAndVideoProduction.StoryHeader.description
+        }
       />
       <CounterOnScroll />
       <LifeAtDA360
-        headerTitle={digitalMarketingLeadership.LifeAtDA360Header.headerTitle}
-        description={digitalMarketingLeadership.LifeAtDA360Header.description}
+        headerTitle={
+          socialContentCreatorAndVideoProduction.LifeAtDA360Header.headerTitle
+        }
+        description={
+          socialContentCreatorAndVideoProduction.LifeAtDA360Header.description
+        }
       />
       <TeamSection section="section4" />
       <VideoSection />
@@ -118,10 +134,12 @@ export default function courseDetail() {
 
       <LearningRoadmap
         headerTitle={
-          digitalMarketingLeadership.LearningRoadmapProps.headerTitle
+          socialContentCreatorAndVideoProduction.LearningRoadmapProps
+            .headerTitle
         }
         description={
-          digitalMarketingLeadership.LearningRoadmapProps.description
+          socialContentCreatorAndVideoProduction.LearningRoadmapProps
+            .description
         }
       />
       <LiveProjectsSlider section="section6" />

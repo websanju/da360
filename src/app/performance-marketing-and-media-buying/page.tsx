@@ -18,19 +18,19 @@ import CaseStudies from "@components/caseStudies";
 import Banner from "@components/banner";
 import AlumniSlider from "@components/alumniSlider";
 import PeopleSlider from "@components/peopleSlider";
+import TrustedByLearners from "@components/trustedByLearners";
 import LiveProjectsSlider from "@components/liveProjectsSlider";
-
-import digitalMarketingLeadership from "@/data/courses/digitalMarketingLeadership";
+// import ContactButtonsSticky from "@/components/widgets/contactButtonsSticky";
+import BottomNav from "@components/bottomNav";
+import performanceMarketingAndMediaBuying from "@/data/courses/performanceMarketingAndMediaBuying";
 import { Cohort } from "@/components/cohortDetails";
-import BottomNav from "@/components/bottomNav";
-import TrustedByLearners from "@/components/trustedByLearners";
 
 export const metadata = {
-  title: "Digital Marketing & AI Leadership Course | MBA Level Program",
+  title: "Best Digital Marketing Training Institute Online & Classroom",
   description:
-    "Leadership in Digital Marketing, AI & Entrepreneurship To Master Digital Marketing Projects & Strategies In 12 Mo With Interview & Paid Internship",
+    "Enroll In Job-Oriented Diploma Certification In Digital Marketing Training With Project & Interview Assistance From Best Online Digital Marketing Institute",
   keywords: [
-    "Master Degree In Digital Marketing, Masters In Digital Marketing, Digital Marketing Masters Programs, Digital Marketing Master Course, Digital Marketing With AI Course",
+    "Digital Marketing Institute, Institute of Digital Marketing, Digital Marketing Training, Digital Marketing Training Institute, Best Online Digital Marketing Training",
   ],
   robots:
     "index, follow, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
@@ -38,9 +38,9 @@ export const metadata = {
     canonical: "https://digitalacademy360.com/",
   },
   openGraph: {
-    title: "Digital Marketing & AI Leadership Course | MBA Level Program",
+    title: "Best Digital Marketing Training Institute Online & Classroom",
     description:
-      "Leadership in Digital Marketing, AI & Entrepreneurship To Master Digital Marketing Projects & Strategies In 12 Mo With Interview & Paid Internship",
+      "Enroll In Job-Oriented Diploma Certification In Digital Marketing Training With Project & Interview Assistance From Best Online Digital Marketing Institute",
     url: "https://digitalacademy360.com/",
     siteName: "Digital Academy 360",
     locale: "en_US",
@@ -48,28 +48,12 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Digital Marketing & AI Leadership Course | MBA Level Program",
+    title: "Best Digital Marketing Training Institute Online & Classroom",
     description:
-      "Leadership in Digital Marketing, AI & Entrepreneurship To Master Digital Marketing Projects & Strategies In 12 Mo With Interview & Paid Internship",
+      "Enroll In Job-Oriented Diploma Certification In Digital Marketing Training With Project & Interview Assistance From Best Online Digital Marketing Institute",
   },
 };
 
-const cohortData: Cohort[] = [
-  {
-    date: "June 16th",
-    mode: "Offline",
-    weekday: "(Mon-Fri)",
-    capacity: "30 Seats",
-    campus: "Bengaluru",
-  },
-  {
-    date: "June 16th",
-    mode: "Online",
-    weekday: "(Mon-Fri)",
-    capacity: "30 Seats",
-    campus: "Bengaluru",
-  },
-];
 export default function courseDetail() {
   const sections = [
     { id: "section1", label: "Overview" },
@@ -80,37 +64,60 @@ export default function courseDetail() {
     { id: "section6", label: "Projects" },
     { id: "section7", label: "Rewards" },
   ];
-
+  const cohortData: Cohort[] = [
+    {
+      date: "June 16th",
+      mode: "Offline",
+      weekday: "(Mon-Fri)",
+      capacity: "30 Seats",
+      campus: "Bengaluru",
+    },
+    {
+      date: "June 16th",
+      mode: "Online",
+      weekday: "(Mon-Fri)",
+      capacity: "30 Seats",
+      campus: "Bengaluru",
+    },
+  ];
   return (
     <main>
       <LeadCaptureSection
-        headingLineOne={digitalMarketingLeadership.leadCapture.titleOne}
-        headingLineTow={digitalMarketingLeadership.leadCapture.titleTwo}
-        descriptionLineOne={digitalMarketingLeadership.leadCapture.subtitleOne}
-        descriptionLineTow={digitalMarketingLeadership.leadCapture.subtitleTwo}
-        tags={digitalMarketingLeadership.leadCapture.tags || []}
+        headingLineOne={performanceMarketingAndMediaBuying.leadCapture.titleOne}
+        headingLineTow={performanceMarketingAndMediaBuying.leadCapture.titleTwo}
+        descriptionLineOne={
+          performanceMarketingAndMediaBuying.leadCapture.subtitleOne
+        }
+        descriptionLineTow={
+          performanceMarketingAndMediaBuying.leadCapture.subtitleTwo
+        }
+        tags={performanceMarketingAndMediaBuying.leadCapture.tags || []}
       />
       <CohortDetails
         section="section1"
         cohorts={cohortData}
-        heading={digitalMarketingLeadership.cohortSectionHeading}
+        heading={performanceMarketingAndMediaBuying.cohortSectionHeading}
       />
       <CourseHighlights
         section="section2"
-        highlights={digitalMarketingLeadership.highlights}
+        highlights={performanceMarketingAndMediaBuying.highlights}
       />
       <TrustedByLearners
         padding={{ desktop: "40px 0 140px 0", mobile: "0 0 60px 0" }}
       />
       <OurSuccessStories
         section="section3"
-        headerTitle={digitalMarketingLeadership.StoryHeader.headerTitle}
-        description={digitalMarketingLeadership.StoryHeader.description}
+        headerTitle={performanceMarketingAndMediaBuying.StoryHeader.headerTitle}
+        description={performanceMarketingAndMediaBuying.StoryHeader.description}
       />
       <CounterOnScroll />
       <LifeAtDA360
-        headerTitle={digitalMarketingLeadership.LifeAtDA360Header.headerTitle}
-        description={digitalMarketingLeadership.LifeAtDA360Header.description}
+        headerTitle={
+          performanceMarketingAndMediaBuying.LifeAtDA360Header.headerTitle
+        }
+        description={
+          performanceMarketingAndMediaBuying.LifeAtDA360Header.description
+        }
       />
       <TeamSection section="section4" />
       <VideoSection />
@@ -118,10 +125,10 @@ export default function courseDetail() {
 
       <LearningRoadmap
         headerTitle={
-          digitalMarketingLeadership.LearningRoadmapProps.headerTitle
+          performanceMarketingAndMediaBuying.LearningRoadmapProps.headerTitle
         }
         description={
-          digitalMarketingLeadership.LearningRoadmapProps.description
+          performanceMarketingAndMediaBuying.LearningRoadmapProps.description
         }
       />
       <LiveProjectsSlider section="section6" />
