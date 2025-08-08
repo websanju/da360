@@ -33,11 +33,11 @@ const slides: SlideContent[] = [
   [
     {
       id: 1,
-      name: "Nivedth",
-      image: "/images/video-testimonials/nivedth.jpg",
+      name: "Ankita MN",
+      image: "/images/video-testimonials/ankita.jpg",
       designation: "Marketing Executive",
       type: "video",
-      videoUrl: "/images/video-testimonials/nivedh.mp4",
+      videoUrl: "/images/video-testimonials/ankita.mp4",
       bgColor: "#E9492D",
     },
     {
@@ -57,11 +57,11 @@ const slides: SlideContent[] = [
   [
     {
       id: 3,
-      name: "Vinayak V",
-      image: "/images/video-testimonials/vinayakvv.jpg",
+      name: "Madhu Bhargavi",
+      image: "/images/video-testimonials/madhu.jpg",
       designation: "Social Media Marketing Specialist",
       type: "video",
-      videoUrl: "/images/video-testimonials/vinayak.mp4",
+      videoUrl: "/images/video-testimonials/madhu.mp4",
       bgColor: "#9554CA",
       textColor: "#fff",
     },
@@ -85,10 +85,10 @@ const slides: SlideContent[] = [
   [
     {
       id: 5,
-      name: "Megha Lodha",
-      image: "/images/video-testimonials/meghalodha.jpg",
+      name: "Nivedh Ullas",
+      image: "/images/video-testimonials/nivedh.jpg",
       type: "video",
-      videoUrl: "/images/video-testimonials/megha.mp4",
+      videoUrl: "/images/video-testimonials/nivedh.mp4",
       designation: "Marketing Executive",
       bgColor: "#3ACFAF",
       textColor: "#fff",
@@ -127,10 +127,10 @@ const slides: SlideContent[] = [
   [
     {
       id: 8,
-      name: "Akshay",
-      image: "/images/video-testimonials/meghalodha.jpg",
+      name: "Snehal",
+      image: "/images/video-testimonials/snehal.jpg",
       type: "noBgVideo",
-      videoUrl: "/images/video-testimonials/akshay.mp4",
+      videoUrl: "/images/video-testimonials/snehal.mp4",
       designation: "Marketing Executive",
       bgColor: "#3ACFAF",
       textColor: "#fff",
@@ -155,11 +155,11 @@ const slides: SlideContent[] = [
   [
     {
       id: 1,
-      name: "Ankita",
-      image: "/images/video-testimonials/nivedth.jpg",
+      name: "Vinayak",
+      image: "/images/video-testimonials/vinayak.jpg",
       designation: "Marketing Executive",
       type: "video",
-      videoUrl: "/images/video-testimonials/ankita.mp4",
+      videoUrl: "/images/video-testimonials/vinayak.mp4",
       bgColor: "#E9492D",
     },
     {
@@ -180,7 +180,7 @@ const slides: SlideContent[] = [
     {
       id: 3,
       name: "kesar",
-      image: "/images/video-testimonials/vinayakvv.jpg",
+      image: "/images/video-testimonials/kesar.jpg",
       designation: "Social Media Marketing Specialist",
       type: "video",
       videoUrl: "/images/video-testimonials/kesar.mp4",
@@ -207,10 +207,10 @@ const slides: SlideContent[] = [
   [
     {
       id: 5,
-      name: "Madhu",
-      image: "/images/video-testimonials/meghalodha.jpg",
+      name: "Mohammed Nayil",
+      image: "/images/video-testimonials/nayil.jpg",
       type: "video",
-      videoUrl: "/images/video-testimonials/madhu.mp4",
+      videoUrl: "/images/video-testimonials/nayil.mp4",
       designation: "Marketing Executive",
       bgColor: "#3ACFAF",
       textColor: "#fff",
@@ -249,10 +249,10 @@ const slides: SlideContent[] = [
   [
     {
       id: 8,
-      name: "Nayil",
-      image: "/images/video-testimonials/meghalodha.jpg",
+      name: "Sanyam",
+      image: "/images/video-testimonials/sanyam.jpg",
       type: "noBgVideo",
-      videoUrl: "/images/video-testimonials/nayil.mp4",
+      videoUrl: "/images/video-testimonials/sanyam.mp4",
       designation: "Marketing Executive",
       bgColor: "#F6B39F",
       textColor: "#fff",
@@ -277,11 +277,11 @@ const slides: SlideContent[] = [
   [
     {
       id: 1,
-      name: "Ruchika",
-      image: "/images/video-testimonials/nivedth.jpg",
+      name: "Zeenath",
+      image: "/images/video-testimonials/zeenath.jpg",
       designation: "Marketing Executive",
       type: "video",
-      videoUrl: "/images/video-testimonials/ruchika.mp4",
+      videoUrl: "/images/video-testimonials/zeenath.mp4",
       bgColor: "#E9492D",
     },
     {
@@ -300,87 +300,6 @@ const slides: SlideContent[] = [
   ],
   [
     {
-      id: 3,
-      name: "Sanyam",
-      image: "/images/video-testimonials/vinayakvv.jpg",
-      designation: "Social Media Marketing Specialist",
-      type: "video",
-      videoUrl: "/images/video-testimonials/sanyam.mp4",
-      bgColor: "#9554CA",
-      textColor: "#fff",
-    },
-  ],
-  [
-    {
-      id: 4,
-      name: "Sonal Lal",
-      designation: "SEO Analyst",
-      image: "/images/Ambitious/text-2.png",
-      profileImage: "/images/Ambitious/default-avatar.svg",
-      type: "text",
-      modalHTML: `
-        <p>Its a good place to learn if you are starting out in Digital Marketing field. Trainers are well-experienced and if you are diligent, they will help you in every way possible...</p>
-      `,
-      bgColor: "#F6B39F",
-      textColor: "#000",
-    },
-  ],
-  [
-    {
-      id: 5,
-      name: "Snehal",
-      image: "/images/video-testimonials/meghalodha.jpg",
-      type: "video",
-      videoUrl: "/images/video-testimonials/snehal.mp4",
-      designation: "Marketing Executive",
-      bgColor: "#3ACFAF",
-      textColor: "#fff",
-    },
-  ],
-
-  [
-    {
-      id: 6,
-      name: "Sonal Lal",
-      designation: "SEO Analyst",
-      image: "/images/Ambitious/text-3.png",
-      profileImage: "/images/Ambitious/default-avatar.svg",
-      type: "text",
-      modalHTML: `
-        <p>Trainers help a lot to understand the concept and clear all your doubts and make the learning easy...</p>
-      `,
-      bgColor: "#063F2E",
-      textColor: "#fff",
-      calssName: "greenCard",
-    },
-    {
-      id: 7,
-      name: "Sonal Lal",
-      designation: "SEO Analyst",
-      image: "/images/Ambitious/text-4.png",
-      profileImage: "/images/Ambitious/default-avatar.svg",
-      type: "text",
-      modalHTML: `
-        <p>I leveraged the new skills in landing a good job...</p>
-      `,
-      bgColor: "#8588E6",
-      textColor: "#fff",
-    },
-  ],
-  [
-    {
-      id: 8,
-      name: "Zeenath",
-      image: "/images/video-testimonials/meghalodha.jpg",
-      type: "noBgVideo",
-      videoUrl: "/images/video-testimonials/zeenath.mp4",
-      designation: "Marketing Executive",
-      bgColor: "#3ACFAF",
-      textColor: "#fff",
-    },
-  ],
-  [
-    {
       id: 9,
       name: "Sonal Lal",
       designation: "SEO Analyst",
@@ -391,7 +310,7 @@ const slides: SlideContent[] = [
         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
         Lorem Ipsum has been the industry's standard dummy text ever since the 1500s...</p>
       `,
-      bgColor: "#C5EBD4",
+      bgColor: "#F6B39F",
       textColor: "#000",
     },
   ],
@@ -696,7 +615,8 @@ const PeopleSlider: React.FC<PeopleSliderProps> = ({ title, description }) => {
                         autoPlay
                         controls
                         playsInline
-                        style={{ width: "100%", height: "100%" }}
+                        className={styles.videoEmployee}
+                        style={{ width: "368px", height: "650px" }}
                         src={selected.videoUrl}
                       >
                         Your browser does not support the video tag.
