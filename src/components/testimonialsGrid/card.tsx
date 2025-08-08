@@ -138,7 +138,7 @@ const Card = ({ item }: { item: Testimonial }) => {
             </div>
 
             <div className={styles.videoContainer}>
-              {!isPlaying && (
+              {/* {!isPlaying && (
                 <div className={styles.videoThumbs}>
                   <Image
                     src="/images/testimonials/video-thumb.png"
@@ -148,13 +148,13 @@ const Card = ({ item }: { item: Testimonial }) => {
                     unoptimized
                   />
                 </div>
-              )}
+              )} */}
               <video
                 ref={videoRef}
                 playsInline
                 preload="metadata"
                 className={styles.video}
-                poster="/images/testimonials/digital-academy-360-testimonials-deepak.png"
+                // poster="/images/testimonials/digital-academy-360-testimonials-deepak.png"
               >
                 <source src={item.videoUrl} type="video/mp4" />
                 Your browser does not support the video tag.
