@@ -11,7 +11,7 @@ import { auto } from "@popperjs/core";
 import LeftArrow from "@components/Ui/svg/leftArrow";
 import RightArrow from "@components/Ui/svg/rightArrowLine";
 import SectionHeader from "@components/widgets/sectionHeader";
-import { slides, Person } from "@/data/video-testimonial";
+import { slides, Person } from "@/data/videoTestimonial";
 
 // ----- COMPONENT -----
 type PeopleSliderProps = {
