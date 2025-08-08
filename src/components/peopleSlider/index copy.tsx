@@ -1,4 +1,5 @@
 "use client";
+// import React, { useRef, useState, useEffect } from "react";
 import React, { useState, useEffect, useRef } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Scrollbar } from "swiper/modules";
@@ -12,7 +13,6 @@ import LeftArrow from "@components/Ui/svg/leftArrow";
 import RightArrow from "@components/Ui/svg/rightArrowLine";
 import SectionHeader from "@components/widgets/sectionHeader";
 
-// ----- TYPES -----
 type Person = {
   id: number;
   name: string;
@@ -29,7 +29,6 @@ type Person = {
 
 type SlideContent = Person[];
 
-// ----- SLIDES DATA -----
 const slides: SlideContent[] = [
   [
     {
@@ -317,7 +316,6 @@ const slides: SlideContent[] = [
   ],
 ];
 
-// ----- COMPONENT -----
 type PeopleSliderProps = {
   title?: string;
   description?: string;
@@ -328,12 +326,8 @@ const PeopleSlider: React.FC<PeopleSliderProps> = ({ title, description }) => {
   const containerRef = useRef<HTMLDivElement>(null);
   const videoRef = useRef<HTMLVideoElement>(null);
 
-  // Play video when modal opens
   useEffect(() => {
-    if (
-      (selected?.type === "video" || selected?.type === "noBgVideo") &&
-      videoRef.current
-    ) {
+    if (selected?.type === "video" && videoRef.current) {
       const video = videoRef.current;
       video.muted = false;
       video.play().catch((err) => {
@@ -341,7 +335,6 @@ const PeopleSlider: React.FC<PeopleSliderProps> = ({ title, description }) => {
       });
     }
   }, [selected]);
-
   return (
     <>
       <section className={styles.peopleSliderSection}>
@@ -364,7 +357,6 @@ const PeopleSlider: React.FC<PeopleSliderProps> = ({ title, description }) => {
             </div>
           </div>
         </div>
-
         <div className={styles.sliderWrapper}>
           <div
             ref={containerRef}
@@ -378,16 +370,27 @@ const PeopleSlider: React.FC<PeopleSliderProps> = ({ title, description }) => {
               className={styles.slider}
               slidesOffsetBefore={20}
               slidesOffsetAfter={20}
+              // slidesOffsetAfter={250}
               navigation={{
                 prevEl: "#customPrev6",
                 nextEl: "#customNext6",
               }}
               breakpoints={{
-                0: { spaceBetween: 16 },
-                768: { spaceBetween: 16 },
-                992: { spaceBetween: 20 },
-                1440: { spaceBetween: 20 },
-                1840: { spaceBetween: 20 },
+                0: {
+                  spaceBetween: 16,
+                },
+                768: {
+                  spaceBetween: 16,
+                },
+                992: {
+                  spaceBetween: 20,
+                },
+                1440: {
+                  spaceBetween: 20,
+                },
+                1840: {
+                  spaceBetween: 20,
+                },
               }}
             >
               {slides.map((group, index) => (
@@ -514,9 +517,10 @@ const PeopleSlider: React.FC<PeopleSliderProps> = ({ title, description }) => {
             </Swiper>
           </div>
         </div>
-
+        {/* <div id="customScrollbar6" className="swiper-scrollbar"></div> */}
         <div className={`${styles.controls} controls`}>
           <button id="customPrev6" className={`prevBtn ${styles.navBtn}`}>
+            {" "}
             <RightArrow width={16} height={16} color="#000" />
           </button>
           <div
@@ -524,43 +528,13 @@ const PeopleSlider: React.FC<PeopleSliderProps> = ({ title, description }) => {
             className={`${styles.scrollbar} customScrollbar swiper-scrollbar`}
           ></div>
           <button id="customNext6" className={`nextBtn ${styles.navBtn}`}>
+            {" "}
             <LeftArrow width={16} height={16} color="#000" />
           </button>
         </div>
       </section>
 
-      {/* --- HIDDEN PRELOAD SECTION --- */}
-      {/* <div style={{ display: "none" }}>
-        {slides.flat().map(
-          (person) =>
-            (person.type === "video" || person.type === "noBgVideo") &&
-            person.videoUrl && (
-              <video key={person.id} preload="auto">
-                <source src={person.videoUrl} type="video/mp4" />
-              </video>
-            )
-        )}
-      </div> */}
-
-      <div style={{ display: "none" }}>
-        {[
-          ...new Map(
-            slides
-              .flat()
-              .filter(
-                (p) =>
-                  (p.type === "video" || p.type === "noBgVideo") && p.videoUrl
-              )
-              .map((p) => [p.videoUrl, p]) // use videoUrl as unique key
-          ).values(),
-        ].map((person, index) => (
-          <video key={`${index}-${person.id}`} preload="auto">
-            <source src={person.videoUrl} type="video/mp4" />
-          </video>
-        ))}
-      </div>
-
-      {/* --- MODAL --- */}
+      {/* Modal */}
       {selected && (
         <div
           className="modal show d-block"
@@ -620,44 +594,67 @@ const PeopleSlider: React.FC<PeopleSliderProps> = ({ title, description }) => {
                   </div>
                 )}
 
-                {(selected.type === "video" || selected.type === "noBgVideo") &&
-                  selected.videoUrl && (
-                    <div
-                      className={
-                        selected.type === "noBgVideo"
-                          ? styles.noBgVideo
-                          : styles.videoBox
-                      }
-                    >
-                      {selected.videoUrl.startsWith("http") ? (
-                        <div className="ratio ratio-16x9">
-                          <iframe
-                            src={selected.videoUrl}
-                            title={selected.name}
-                            allowFullScreen
-                            style={{
-                              width: "100%",
-                              height: "100%",
-                              border: "none",
-                            }}
-                          ></iframe>
-                        </div>
-                      ) : (
-                        <video
-                          ref={videoRef}
-                          preload="auto"
-                          autoPlay
-                          controls
-                          playsInline
-                          className={styles.videoEmployee}
-                          style={{ width: "368px", height: "650px" }}
+                {selected.type === "video" && selected.videoUrl && (
+                  <div className={styles.videoBox}>
+                    {selected.videoUrl.startsWith("http") ? (
+                      <div className="ratio ratio-16x9">
+                        <iframe
                           src={selected.videoUrl}
-                        >
-                          Your browser does not support the video tag.
-                        </video>
-                      )}
-                    </div>
-                  )}
+                          title={selected.name}
+                          allowFullScreen
+                          style={{
+                            width: "100%",
+                            height: "100%",
+                            border: "none",
+                          }}
+                        ></iframe>
+                      </div>
+                    ) : (
+                      <video
+                        ref={videoRef}
+                        autoPlay
+                        controls
+                        playsInline
+                        className={styles.videoEmployee}
+                        style={{ width: "368px", height: "650px" }}
+                        src={selected.videoUrl}
+                      >
+                        Your browser does not support the video tag.
+                      </video>
+                    )}
+                  </div>
+                )}
+
+                {selected.type === "noBgVideo" && selected.videoUrl && (
+                  <div className={styles.noBgVideo}>
+                    {selected.videoUrl.startsWith("http") ? (
+                      <div className="ratio ratio-16x9">
+                        <iframe
+                          src={selected.videoUrl}
+                          title={selected.name}
+                          allowFullScreen
+                          style={{
+                            width: "100%",
+                            height: "100%",
+                            border: "none",
+                          }}
+                        ></iframe>
+                      </div>
+                    ) : (
+                      <video
+                        ref={videoRef}
+                        autoPlay
+                        controls
+                        playsInline
+                        className={styles.videoEmployee}
+                        style={{ width: "368px", height: "650px" }}
+                        src={selected.videoUrl}
+                      >
+                        Your browser does not support the video tag.
+                      </video>
+                    )}
+                  </div>
+                )}
               </div>
             </div>
           </div>
