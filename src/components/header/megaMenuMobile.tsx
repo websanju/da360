@@ -161,7 +161,7 @@ const MobileMenu: React.FC<Props> = ({ onClose }) => {
           <h3>Certification Courses</h3>
 
           <div
-            onClick={() => handleClick("/online-digital-marketing-courses")}
+            onClick={() => handleClick("/ai-vibe-marketing")}
             className={styles.navbarDropdownColumn}
           >
             <h4> AI Vibe Marketing</h4>
@@ -180,7 +180,7 @@ const MobileMenu: React.FC<Props> = ({ onClose }) => {
           </div>
 
           <div
-            onClick={() => handleClick("/online-digital-marketing-courses")}
+            onClick={() => handleClick("/youtube-and-instagram-and-influencer")}
             className={styles.navbarDropdownColumn}
           >
             <h4>Youtube & Instagram Influencer</h4>
@@ -198,7 +198,7 @@ const MobileMenu: React.FC<Props> = ({ onClose }) => {
           </div>
 
           <div
-            onClick={() => handleClick("/online-digital-marketing-courses")}
+            onClick={() => handleClick("/linkedIn-and-personal-branding")}
             className={styles.navbarDropdownColumn}
           >
             <h4>LinkedIn & Personal Branding </h4>
@@ -217,7 +217,7 @@ const MobileMenu: React.FC<Props> = ({ onClose }) => {
           </div>
 
           <div
-            onClick={() => handleClick("/online-digital-marketing-courses")}
+            onClick={() => handleClick("/performance-marketing-and-martech")}
             className={styles.navbarDropdownColumn}
           >
             <h4>Performance Marketing & MarTech</h4>

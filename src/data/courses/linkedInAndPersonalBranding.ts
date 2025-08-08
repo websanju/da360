@@ -1,24 +1,24 @@
 import { CoursesType } from "@/types/courses";
 
-const AiVibeMarketing: CoursesType = {
+const PerformanceMarketingAndMediaBuying: CoursesType = {
   leadCapture: {
-    titleOne: "India’s First ",
-    titleTwo: "Advanced Certification in AI-Powered Vibe Marketing",
-    subtitleOne: "Harness the power of Artificial Intelligence to create viral campaigns, design",
-    subtitleTwo: "Fast-Track Your Career with AI-First, Vibe-Driven Expertise",
-    tags: ["2-Month Specialist Program", "80+ Hours of Practical Learning","8+ Case Studies"],
+    titleOne: "Advanced ",
+    titleTwo: "Certification for Professionals & Entrepreneurs",
+    subtitleOne: "AI-Driven Curriculum Designed for Tomorrow’s Creators & Social Media Leaders",
+    subtitleTwo: "Fast-Track Your Career with Future-Ready Expertise",
+    tags: ["2-Month Specialist Program |", "80+ Hours of Learning ", "8+ Case Studies","10+ Tools"],
   },
-  cohortSectionHeading: "AI Vibe Marketing Cohort Details",
+  cohortSectionHeading: "LinkedIn & Personal Branding Cohort Details",
   Cohort: [
     {
-      date: "August 20th",
+      date: "August 16th",
       mode: "Offline",
       weekday: "(Mon-Fri)",
       capacity: "30 Seats",
       campus: "Bengaluru",
     },
     {
-      date: "August 20th",
+      date: "August 16th",
       mode: "Online",
       weekday: "(Mon-Fri)",
       capacity: "30 Seats",
@@ -26,57 +26,57 @@ const AiVibeMarketing: CoursesType = {
     },
   ],
   highlights: [
-    { icon: "/images/icons/calendar.png", title: "Months", value: "6+" },
+     { icon: "/images/icons/calendar.png", title: "Months", value: "6+" },
     { icon: "/images/icons/clock.png", title: "Time", value: "Flexible" },
     {
       icon: "/images/icons/courses.png",
-      title: "Industry-Relevant Modules",
-      value: "30+",
+      title: "Monetization Models: Ads, Affiliates, Sponsorships & More",
+      value: "+",
     },
     {
       icon: "/images/icons/template.png",
-      title: "Complete AI Vibe Campaign Flows",
-      value: "2",
+      title: "Build & Pitch Your Media Kit to Brands",
+      value: "",
     },
-    { icon: "/images/icons/ai.png", title: "Cutting-Edge AI Marketing Tools", value: "10+" },
+    { icon: "/images/icons/ai.png", title: "Tools for LinkedIn Growth & Lead Generation", value: "10+" },
     {
       icon: "/images/icons/certificate.png",
-      title: "Hours of Immersive Learning",
+      title: "Hours of Practical, Hands-On Training",
       value: "80+ Hrs",
     },
     {
       icon: "/images/icons/case-study.png",
-      title: "Brand-Centered Case Studies",
+      title: "Real-World Case Studies & Brand Scenarios",
       value: "8+",
     },
     {
       icon: "/images/icons/interview.png",
-      title: "Interview Assistance",
-      value: "5",
+      title: "Complete Creator Flow Projects",
+      value: "2 ",
     },
     {
       icon: "/images/icons/internship.png",
-      title: "Internship (Optional)",
-      value: "1 Month",
+      title: "Build Thought Leadership with AI-Powered Content",
+      value: "",
     },
     {
       icon: "/images/icons/project.png",
-      title: "Hands-On Projects with Real Brand Scenarios",
-      value: "5+",
+      title: " Personal Brand Audit & Profile Optimization ",
+      value: "2",
     },
     {
       icon: "/images/icons/certificate.png",
-      title: "Certification Designed for Tomorrow’s AI Marketers",
+      title: "Learn Lead Generation, Networking & Monetization Strategies",
       value: "",
     },
     {
       icon: "/images/icons/specialisation.png",
-      title: "Mentorship with Industry Practitioners",
+      title: "Mentorship with Influencer Marketing Experts",
       value: "1:1",
     },
     {
       icon: "/images/icons/trainer.png",
-      title: "Career-Oriented Curriculum",
+      title: "Career-Focused Curriculum",
       value: "100%",
     },
   ],
@@ -94,4 +94,4 @@ const AiVibeMarketing: CoursesType = {
    }
 };
 
-export default AiVibeMarketing;
+export default PerformanceMarketingAndMediaBuying;

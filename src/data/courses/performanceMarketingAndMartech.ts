@@ -1,24 +1,24 @@
 import { CoursesType } from "@/types/courses";
 
-const AiVibeMarketing: CoursesType = {
+const PerformanceMarketingAndMediaBuying: CoursesType = {
   leadCapture: {
-    titleOne: "India’s First ",
-    titleTwo: "Advanced Certification in AI-Powered Vibe Marketing",
-    subtitleOne: "Harness the power of Artificial Intelligence to create viral campaigns, design",
-    subtitleTwo: "Fast-Track Your Career with AI-First, Vibe-Driven Expertise",
-    tags: ["2-Month Specialist Program", "80+ Hours of Practical Learning","8+ Case Studies"],
+    titleOne: "PGCP in Social Media",
+    titleTwo: "& Influencer Marketing",
+    subtitleOne: "AI-Driven Curriculum Designed for Tomorrow’s Creators & Social Media Leaders",
+    subtitleTwo: "Fast-Track Your Career with Future-Ready Expertise",
+    tags: ["6-Month Intensive Program", "Includes Capstone Projects & Live Brand Campaigns"],
   },
-  cohortSectionHeading: "AI Vibe Marketing Cohort Details",
+  cohortSectionHeading: "PGCP In Social Media & Influencer Marketing",
   Cohort: [
     {
-      date: "August 20th",
+      date: "June 16th",
       mode: "Offline",
       weekday: "(Mon-Fri)",
       capacity: "30 Seats",
       campus: "Bengaluru",
     },
     {
-      date: "August 20th",
+      date: "June 16th",
       mode: "Online",
       weekday: "(Mon-Fri)",
       capacity: "30 Seats",
@@ -35,19 +35,19 @@ const AiVibeMarketing: CoursesType = {
     },
     {
       icon: "/images/icons/template.png",
-      title: "Complete AI Vibe Campaign Flows",
-      value: "2",
+      title: "Template & Blueprints ",
+      value: "08",
     },
-    { icon: "/images/icons/ai.png", title: "Cutting-Edge AI Marketing Tools", value: "10+" },
+    { icon: "/images/icons/ai.png", title: "AI Learning Tools", value: "25+" },
     {
       icon: "/images/icons/certificate.png",
-      title: "Hours of Immersive Learning",
-      value: "80+ Hrs",
+      title: "Total Learning Hours",
+      value: "240+ Hrs",
     },
     {
       icon: "/images/icons/case-study.png",
-      title: "Brand-Centered Case Studies",
-      value: "8+",
+      title: "Brand-Focused Case Studies",
+      value: "20+",
     },
     {
       icon: "/images/icons/interview.png",
@@ -61,23 +61,23 @@ const AiVibeMarketing: CoursesType = {
     },
     {
       icon: "/images/icons/project.png",
-      title: "Hands-On Projects with Real Brand Scenarios",
+      title: "Capstone Projects with Real Brands",
       value: "5+",
     },
     {
       icon: "/images/icons/certificate.png",
-      title: "Certification Designed for Tomorrow’s AI Marketers",
-      value: "",
+      title: "Globally Recognized Certifications",
+      value: "15+",
     },
     {
       icon: "/images/icons/specialisation.png",
-      title: "Mentorship with Industry Practitioners",
-      value: "1:1",
+      title: "Specialized Social & AI Tools in Action",
+      value: "20+",
     },
     {
       icon: "/images/icons/trainer.png",
-      title: "Career-Oriented Curriculum",
-      value: "100%",
+      title: "Domain Specialist Trainers",
+      value: "07",
     },
   ],
   StoryHeader: {
@@ -94,4 +94,4 @@ const AiVibeMarketing: CoursesType = {
    }
 };
 
-export default AiVibeMarketing;
+export default PerformanceMarketingAndMediaBuying;

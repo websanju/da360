@@ -22,7 +22,7 @@ import PeopleSlider from "@components/peopleSlider";
 import LiveProjectsSlider from "@components/liveProjectsSlider";
 // import ContactButtonsSticky from "@/components/widgets/contactButtonsSticky";
 import BottomNav from "@components/bottomNav";
-import aiVibeMarketing from "@/data/courses/aiVibeMarketing";
+import performanceMarketingAndMartech from "@/data/courses/performanceMarketingAndMartech";
 import { Cohort } from "@/components/cohortDetails";
 
 export const metadata = {
@@ -83,20 +83,24 @@ export default function courseDetail() {
   return (
     <main>
       <LeadCaptureSection
-        headingLineOne={aiVibeMarketing.leadCapture.titleOne}
-        headingLineTow={aiVibeMarketing.leadCapture.titleTwo}
-        descriptionLineOne={aiVibeMarketing.leadCapture.subtitleOne}
-        descriptionLineTow={aiVibeMarketing.leadCapture.subtitleTwo}
-        tags={aiVibeMarketing.leadCapture.tags || []}
+        headingLineOne={performanceMarketingAndMartech.leadCapture.titleOne}
+        headingLineTow={performanceMarketingAndMartech.leadCapture.titleTwo}
+        descriptionLineOne={
+          performanceMarketingAndMartech.leadCapture.subtitleOne
+        }
+        descriptionLineTow={
+          performanceMarketingAndMartech.leadCapture.subtitleTwo
+        }
+        tags={performanceMarketingAndMartech.leadCapture.tags || []}
       />
       <CohortDetails
         section="section1"
         cohorts={cohortData}
-        heading={aiVibeMarketing.cohortSectionHeading}
+        heading={performanceMarketingAndMartech.cohortSectionHeading}
       />
       <CourseHighlights
         section="section2"
-        highlights={aiVibeMarketing.highlights}
+        highlights={performanceMarketingAndMartech.highlights}
       />
       {/* <TrustedByLearners
         padding={{ desktop: "40px 0 140px 0", mobile: "0 0 60px 0" }}
@@ -105,10 +109,10 @@ export default function courseDetail() {
       <CounterOnScroll />
       {/* <LifeAtDA360
         headerTitle={
-          aiVibeMarketing.LifeAtDA360Header.headerTitle
+          youtubeAndInstagramInfluencer.LifeAtDA360Header.headerTitle
         }
         description={
-          aiVibeMarketing.LifeAtDA360Header.description
+          youtubeAndInstagramInfluencer.LifeAtDA360Header.description
         }
       /> */}
       <TeamSection section="section4" />
@@ -117,10 +121,10 @@ export default function courseDetail() {
 
       {/* <LearningRoadmap
         headerTitle={
-          aiVibeMarketing.LearningRoadmapProps.headerTitle
+          youtubeAndInstagramInfluencer.LearningRoadmapProps.headerTitle
         }
         description={
-          aiVibeMarketing.LearningRoadmapProps.description
+          youtubeAndInstagramInfluencer.LearningRoadmapProps.description
         }
       /> */}
       <LiveProjectsSlider section="section6" />

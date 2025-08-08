@@ -80,7 +80,7 @@ export const coursesData: Record<string, CourseItem[]> = {
       title: "AI Vibe Marketing",
       duration: "2 Months",
       mode: "Online",
-      onClick: "/online-digital-marketing-courses",
+      onClick: "/ai-vibe-marketing",
       list: [
         "Advance Specialist Certification",
         "80+ Hours of Learning",
@@ -93,7 +93,7 @@ export const coursesData: Record<string, CourseItem[]> = {
       title: "Youtube & Instagram Influencer",
       duration: "2 Months",
       mode: "Online",
-      onClick: "/online-digital-marketing-courses",
+      onClick: "/youtube-and-instagram-and-influencer",
       list: [
         "Advance Specialist Certification",
         "80+ Hours of Learning",
@@ -106,7 +106,7 @@ export const coursesData: Record<string, CourseItem[]> = {
       title: "LinkedIn & Personal Branding",
       duration: "2 Months",
       mode: "Online",
-      onClick: "/online-digital-marketing-courses",
+      onClick: "/linkedIn-and-personal-branding",
       list: [
         "Advance Specialist Certification",
         "80+ Hours of Learning",
@@ -119,7 +119,7 @@ export const coursesData: Record<string, CourseItem[]> = {
       title: "Performance Marketing & MarTech",
       duration: "2 Months",
       mode: "Online",
-      onClick: "/online-digital-marketing-courses",
+      onClick: "/performance-marketing-and-martech",
       list: [
         "Advance Specialist Certification",
         "80+ Hours of Learning",
