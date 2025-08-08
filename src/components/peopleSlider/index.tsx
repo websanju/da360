@@ -646,7 +646,8 @@ const PeopleSlider: React.FC<PeopleSliderProps> = ({ title, description }) => {
                         autoPlay
                         controls
                         playsInline
-                        style={{ width: "100%", height: "100%" }}
+                        className={styles.videoEmployee}
+                        style={{ width: "368px", height: "650px" }}
                         src={selected.videoUrl}
                       >
                         Your browser does not support the video tag.
