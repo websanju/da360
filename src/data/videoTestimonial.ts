@@ -3,9 +3,9 @@ export type Person = {
   id: number;
   name: string;
   designation?: string;
-  image: string;
+  image?: string;
   profileImage?: string;
-  type: "text" | "video" | "noBgVideo";
+  type: "text" | "video" | "noBgVideo" | "viewMore";
   modalHTML?: string;
   videoUrl?: string;
   bgColor: string;
@@ -288,16 +288,9 @@ export const slides: SlideContent[] = [
   [
     {
       id: 9,
-      name: "Sonal Lal",
-      designation: "SEO Analyst",
-      image: "/images/Ambitious/text-2.png",
-      profileImage: "/images/Ambitious/default-avatar.svg",
-      type: "text",
-      modalHTML: `
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s...</p>
-      `,
-      bgColor: "#F6B39F",
+      name: "viewMore",
+      type: "viewMore",
+      bgColor: "#E4E4E4",
       textColor: "#000",
     },
   ],

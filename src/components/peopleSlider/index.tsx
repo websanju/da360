@@ -12,6 +12,7 @@ import LeftArrow from "@components/Ui/svg/leftArrow";
 import RightArrow from "@components/Ui/svg/rightArrowLine";
 import SectionHeader from "@components/widgets/sectionHeader";
 import { slides, Person } from "@/data/videoTestimonial";
+import Link from "next/link";
 
 // ----- COMPONENT -----
 type PeopleSliderProps = {
@@ -93,7 +94,11 @@ const PeopleSlider: React.FC<PeopleSliderProps> = ({ title, description }) => {
                       <div
                         key={`${index}-${person.id}`}
                         className={styles.card}
-                        onClick={() => setSelected(person)}
+                        onClick={() => {
+                          if (person.type !== "viewMore") {
+                            setSelected(person);
+                          }
+                        }}
                       >
                         {person.type === "video" ? (
                           <div
@@ -105,7 +110,7 @@ const PeopleSlider: React.FC<PeopleSliderProps> = ({ title, description }) => {
                             <div className={styles.videoItem}>
                               <div className={styles.videoImg}>
                                 <Image
-                                  src={person.image}
+                                  src={person.image as string}
                                   width={243}
                                   height={193}
                                   alt={person.name}
@@ -171,7 +176,7 @@ const PeopleSlider: React.FC<PeopleSliderProps> = ({ title, description }) => {
                           >
                             <div className={styles.videoImg}>
                               <Image
-                                src={person.image}
+                                src={person.image as string}
                                 width={243}
                                 height={193}
                                 alt={person.name}
@@ -193,9 +198,16 @@ const PeopleSlider: React.FC<PeopleSliderProps> = ({ title, description }) => {
                               <p>{person.designation}</p>
                             </div>
                           </div>
+                        ) : person.type === "viewMore" ? (
+                          <div
+                            className={styles.viewMoreCard}
+                            style={{ backgroundColor: person.bgColor }}
+                          >
+                            <Link href={"/testimonial"}>View all</Link>
+                          </div>
                         ) : (
                           <Image
-                            src={person.image}
+                            src={person.image as string}
                             width={243}
                             height={193}
                             alt={person.name}
