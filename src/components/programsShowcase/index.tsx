@@ -114,6 +114,7 @@ const ProgramsShowcase: React.FC = () => {
                   },
                 ]}
                 buttonText="View Course"
+                courseLink="/master-digital-marketing-leadership-course"
                 expertText="Avail Scholarship"
                 image="/images/course-list/leadeship-course-min.png"
               />
@@ -147,6 +148,7 @@ const ProgramsShowcase: React.FC = () => {
                   },
                 ]}
                 buttonText="View Course"
+                courseLink="/social-content-creator-and-video-production"
                 expertText="Avail Scholarship"
                 image="/images/course-list/pgcp-in-digital-marketing.png"
               />
@@ -180,6 +182,8 @@ const ProgramsShowcase: React.FC = () => {
                   },
                 ]}
                 buttonText="View Course"
+                courseLink="/performance-marketing-and-media-buying"
+                //
                 expertText="Avail Scholarship"
                 image="/images/course-list/skill-diploma-in-digital-marketing.png"
               />

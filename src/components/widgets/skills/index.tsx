@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./style.module.scss";
 import Image from "next/image";
+import Link from "next/link";
 
 interface StatItem {
   icon: string; // icon path
@@ -13,6 +14,8 @@ interface WidgetCardProps {
   stats: StatItem[]; // changed from fixed structure
   buttonText: string;
   expertText: string;
+  courseLink?: string; // new optional prop
+  expertLink?: string; // new optional prop
   image: string;
 }
 
@@ -23,6 +26,8 @@ const WidgetCard: React.FC<WidgetCardProps> = ({
   buttonText,
   expertText,
   image,
+  courseLink,
+  expertLink,
 }) => {
   return (
     <div className={`${styles.widgetCard} widget-card`}>
@@ -50,8 +55,12 @@ const WidgetCard: React.FC<WidgetCardProps> = ({
         </div>
 
         <div className={styles.actions}>
-          <button className={styles.viewCourse}>{buttonText}</button>
-          <button className={styles.talkExpert}>{expertText}</button>
+          <Link href={courseLink || "#"} className={styles.viewCourse}>
+            {buttonText}
+          </Link>
+          <Link href={expertLink || "#"} className={styles.talkExpert}>
+            {expertText}
+          </Link>
         </div>
       </div>
       <div className={styles.cardImage}>
