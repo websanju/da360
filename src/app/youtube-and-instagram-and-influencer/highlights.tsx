@@ -6,6 +6,7 @@ import AIDigital from "@components/aIDigital";
 import DigitalMarketingTools from "@components/digitalMarketingTools";
 import AiTools from "@components/aiTools";
 import Certifications from "@components/certifications";
+import youtubeAndInstagramInfluencer from "@/data/courses/youtubeAndInstagramInfluencer";
 interface HighlightsProps {
   section?: string;
 }
@@ -16,7 +17,18 @@ const Highlights = ({ section }: HighlightsProps) => {
         <div className="row">
           <div className="col-lg-12">
             <div className={styles.highlightBox}>
-              <Highlightss />
+              <Highlightss
+                heading={
+                  youtubeAndInstagramInfluencer.programSkills?.heading ?? ""
+                }
+                skills={
+                  Array.isArray(
+                    youtubeAndInstagramInfluencer.programSkills?.skills
+                  )
+                    ? youtubeAndInstagramInfluencer.programSkills.skills
+                    : []
+                }
+              />
               <Curriculum />
               <AIDigital />
               <DigitalMarketingTools />

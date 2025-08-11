@@ -6,6 +6,7 @@ import AIDigital from "@components/aIDigital";
 import DigitalMarketingTools from "@components/digitalMarketingTools";
 import AiTools from "@components/aiTools";
 import Certifications from "@components/certifications";
+import socialContentCreatorAndVideoProduction from "@/data/courses/socialContentCreatorAndVideoProduction";
 interface HighlightsProps {
   section?: string;
 }
@@ -16,7 +17,20 @@ const Highlights = ({ section }: HighlightsProps) => {
         <div className="row">
           <div className="col-lg-12">
             <div className={styles.highlightBox}>
-              <Highlightss />
+              <Highlightss
+                heading={
+                  socialContentCreatorAndVideoProduction.programSkills
+                    ?.heading ?? ""
+                }
+                skills={
+                  Array.isArray(
+                    socialContentCreatorAndVideoProduction.programSkills?.skills
+                  )
+                    ? socialContentCreatorAndVideoProduction.programSkills
+                        .skills
+                    : []
+                }
+              />
               <Curriculum />
               <AIDigital />
               <DigitalMarketingTools />

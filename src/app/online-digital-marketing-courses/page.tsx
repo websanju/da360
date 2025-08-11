@@ -22,7 +22,6 @@ import LiveProjectsSlider from "@components/liveProjectsSlider";
 
 import BottomNav from "@components/bottomNav";
 import onlineDigitalMarketingCourses from "@/data/courses/onlineDigitalMarketingCourses";
-import { Cohort } from "@/components/cohortDetails";
 import TrustedByLearners from "@/components/trustedByLearners";
 
 export const metadata = {
@@ -54,22 +53,6 @@ export const metadata = {
   },
 };
 
-const cohortData: Cohort[] = [
-  {
-    date: "Mar 28",
-    mode: "Offline",
-    weekday: "(Mon-Fri)",
-    capacity: "30 Seats",
-    campus: "Bengaluru",
-  },
-  {
-    date: "Mar 31",
-    mode: "Online",
-    weekday: "(Mon-Fri)",
-    capacity: "30 Seats",
-    campus: "Bengaluru",
-  },
-];
 export default function courseDetail() {
   const sections = [
     { id: "section1", label: "Overview" },
@@ -95,7 +78,7 @@ export default function courseDetail() {
       />
       <CohortDetails
         section="section1"
-        cohorts={cohortData}
+        cohorts={onlineDigitalMarketingCourses.Cohort}
         heading={onlineDigitalMarketingCourses.cohortSectionHeading}
       />
       <CourseHighlights

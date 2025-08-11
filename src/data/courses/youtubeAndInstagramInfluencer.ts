@@ -1,4 +1,24 @@
 import { CoursesType } from "@/types/courses";
+import { HighlightSkill } from "@components/highlights";
+
+const highlightSkills: HighlightSkill[] = [
+  { name: "Instagram Growth" },
+  { name: "YouTube Growth" },
+  { name: "Reel Mastery" },
+  { name: "Influencer Campaign" },
+  { name: "Negotiation & Pitching" },
+  { name: "YouTube SEO" },
+  { name: "Youtube Monetization Tactics" },
+  { name: "AI Video Editing" },
+  { name: "Automation Tools" },
+  { name: "Personal Branding" },
+  { name: "On-Camera Confidence" },
+  { name: "Building Media Kits" },
+  { name: "Closing Brand Deals" },
+  { name: "Community Building" },
+  { name: "Retention Strategies" },
+];
+
 
 const PerformanceMarketingAndMediaBuying: CoursesType = {
   leadCapture: {
@@ -91,7 +111,12 @@ const PerformanceMarketingAndMediaBuying: CoursesType = {
   LearningRoadmapProps: {
     headerTitle: "Your 3-Month Learning",
     description: "Your journey is strategically designed for maximum growth at every stage.",
-   }
+  },
+  programSkills: {
+    heading: "Key Highlights of Our AI-Driven Digital Marketing Program",
+    subheading: "Digital Marketing Skills You’ll Master to Lead the Future",
+    skills: highlightSkills,
+  },
 };
 
 export default PerformanceMarketingAndMediaBuying;

@@ -1,53 +1,41 @@
+// components/Highlights.tsx
 "use client";
 
 import React from "react";
 import styles from "./style.module.scss";
 import TickMark from "@/components/Ui/svg/tickMark";
 
-const Highlights = () => {
-  const skills = [
-    "Digital Marketing",
-    "WordPress Website Designing",
-    "Ad Copy Writing",
-    "Creative Designing",
-    "Affiliate Marketing",
-    "Content Marketing",
-    "SEO Auditing",
-    "Google Ads",
-    "Bing Ads",
-    "Mobile App Advertising",
-    "Remarketing",
-    "SEO",
-    "Facebook",
-    "Linkedin",
-    "Instagram",
-    "Youtube",
-    "Quora",
-    "Adsense",
-    "Twitter",
-    "Email Marketing",
-    "Google Analytics",
-    "Marketing Automation",
-    "Whatsapp Marketing",
-  ];
+// Define the type for a single skill
+export interface HighlightSkill {
+  name: string;
+}
 
+interface HighlightsProps {
+  heading: string;
+  subheading?: string;
+  skills: HighlightSkill[];
+}
+
+export default function Highlights({
+  heading,
+  subheading,
+  skills,
+}: HighlightsProps) {
   return (
     <section className={styles.highlightsSection}>
-      <h2>Key Highlights of Our AI-Driven Digital Marketing Program</h2>
-      <p>Digital Marketing Skills You’ll Master to Lead the Future</p>
+      <h2>{heading}</h2>
+      {subheading && <p>{subheading}</p>}
 
       <div className={styles.highlightsList}>
-        {skills.map((skill, index) => (
+        {(skills ?? []).map((skill, index) => (
           <div key={index} className={styles.highlightItem}>
             <span className={styles.checkIcon}>
               <TickMark />
             </span>
-            {skill}
+            {skill.name}
           </div>
         ))}
       </div>
     </section>
   );
-};
-
-export default Highlights;
+}

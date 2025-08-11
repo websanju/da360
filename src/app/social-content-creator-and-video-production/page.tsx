@@ -21,7 +21,6 @@ import PeopleSlider from "@components/peopleSlider";
 import LiveProjectsSlider from "@components/liveProjectsSlider";
 
 import socialContentCreatorAndVideoProduction from "@/data/courses/socialContentCreatorAndVideoProduction";
-import { Cohort } from "@/components/cohortDetails";
 import BottomNav from "@/components/bottomNav";
 import TrustedByLearners from "@/components/trustedByLearners";
 
@@ -54,22 +53,6 @@ export const metadata = {
   },
 };
 
-const cohortData: Cohort[] = [
-  {
-    date: "June 16th",
-    mode: "Offline",
-    weekday: "(Mon-Fri)",
-    capacity: "30 Seats",
-    campus: "Bengaluru",
-  },
-  {
-    date: "June 16th",
-    mode: "Online",
-    weekday: "(Mon-Fri)",
-    capacity: "30 Seats",
-    campus: "Bengaluru",
-  },
-];
 export default function courseDetail() {
   const sections = [
     { id: "section1", label: "Overview" },
@@ -100,7 +83,7 @@ export default function courseDetail() {
       />
       <CohortDetails
         section="section1"
-        cohorts={cohortData}
+        cohorts={socialContentCreatorAndVideoProduction.Cohort}
         heading={socialContentCreatorAndVideoProduction.cohortSectionHeading}
       />
       <CourseHighlights

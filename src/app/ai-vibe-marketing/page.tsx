@@ -23,7 +23,6 @@ import LiveProjectsSlider from "@components/liveProjectsSlider";
 // import ContactButtonsSticky from "@/components/widgets/contactButtonsSticky";
 import BottomNav from "@components/bottomNav";
 import aiVibeMarketing from "@/data/courses/aiVibeMarketing";
-import { Cohort } from "@/components/cohortDetails";
 
 export const metadata = {
   title: "Best Digital Marketing Training Institute Online & Classroom",
@@ -64,22 +63,7 @@ export default function courseDetail() {
     { id: "section6", label: "Projects" },
     { id: "section7", label: "Rewards" },
   ];
-  const cohortData: Cohort[] = [
-    {
-      date: "June 16th",
-      mode: "Offline",
-      weekday: "(Mon-Fri)",
-      capacity: "30 Seats",
-      campus: "Bengaluru",
-    },
-    {
-      date: "June 16th",
-      mode: "Online",
-      weekday: "(Mon-Fri)",
-      capacity: "30 Seats",
-      campus: "Bengaluru",
-    },
-  ];
+
   return (
     <main>
       <LeadCaptureSection
@@ -91,7 +75,7 @@ export default function courseDetail() {
       />
       <CohortDetails
         section="section1"
-        cohorts={cohortData}
+        cohorts={aiVibeMarketing.Cohort}
         heading={aiVibeMarketing.cohortSectionHeading}
       />
       <CourseHighlights

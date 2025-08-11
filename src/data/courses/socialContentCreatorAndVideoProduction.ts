@@ -1,9 +1,28 @@
 import { CoursesType } from "@/types/courses";
+import { HighlightSkill } from "@components/highlights";
+
+const highlightSkills: HighlightSkill[] = [
+  { name: "Viral Content Strategy" },
+  { name: "Video Production" },
+  { name: "Instagram Reels" },
+  { name: "YouTube Shorts" },
+  { name: "LinkedIn Thought Leadership" },
+  { name: "Influencer Marketing Campaigns" },
+  { name: "Meme Marketing" },
+  { name: "Social Virality" },
+  { name: "Monetization Strategies" },
+  { name: "AI-Powered Tools" },
+  { name: "Content Creation" },
+  { name: "Negotiation" },
+  { name: "Soft Skills" },
+  { name: "Leadership" },
+];
+
 
 const digitalMarketingLeadership: CoursesType = {
   leadCapture: {
-    titleOne: "India's First",
-    titleTwo: "Leadership in Social Content Creator & Video Production",
+    titleOne: "Leadership in Social",
+    titleTwo: "Content Creator & Video Production",
     subtitleOne: "AI-Driven Curriculum Tailored for Aspiring Content Leaders & Video Entrepreneurs",
     subtitleTwo: "Fast-Track Your Career as a Social Media Influencer, Creator, and Brand Strategist",
     tags: ["12-Month Intensive Program", "Includes 3-Month Agency Internship"],
@@ -26,8 +45,8 @@ const digitalMarketingLeadership: CoursesType = {
     },
   ],
   highlights: [
-    { icon: "/images/icons/calendar.png", title: "Months", value: "6+" },
-    { icon: "/images/icons/clock.png", title: "Time", value: "Flexible" },
+    // { icon: "/images/icons/calendar.png", title: "Months", value: "6+" },
+    // { icon: "/images/icons/clock.png", title: "Time", value: "Flexible" },
     {
       icon: "/images/icons/courses.png",
       title: "Industry-Relevant Modules",
@@ -82,16 +101,21 @@ const digitalMarketingLeadership: CoursesType = {
   ],
   StoryHeader: {
     headerTitle: "Real Stories. Real Impact. Real Careers.",
-    description: "Meet the Learners Who Transformed Their Futures with AI-Powered Digital Marketing.",
+    description: "Meet the Content Creators Who Transformed Their Futures with DA360",
   },
   LifeAtDA360Header: {
     headerTitle: "Life @ DA360 — Where Learning Gets Real",
-     description: "Go Beyond the Classroom with Power-Packed Competitions & Creative Showdowns",
+    description: "Go Beyond the Classroom with Power-Packed Competitions & Creative Showdowns",
   },
   LearningRoadmapProps: {
     headerTitle: "Your 12-Month Learning",
     description: "Your journey is strategically designed for maximum growth at every stage."
-  }
+  },
+   programSkills: {
+    heading: "Key Highlights of Our AI-Driven Digital Marketing Program",
+    subheading: "Digital Marketing Skills You’ll Master to Lead the Future",
+    skills: highlightSkills,
+  },
 };
 
 export default digitalMarketingLeadership;

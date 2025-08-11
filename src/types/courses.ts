@@ -1,5 +1,5 @@
 import { Cohort } from "@/components/cohortDetails";
-
+import { HighlightSkill } from "@components/highlights";
 export interface CoursesType {
   leadCapture: {
     titleOne: string;
@@ -26,6 +26,11 @@ export interface CoursesType {
   LearningRoadmapProps: {
     headerTitle: string;
     description: string;
+  };
+   programSkills?: {
+    heading: string;
+    subheading?: string;
+    skills: HighlightSkill[];
   };
 }
 

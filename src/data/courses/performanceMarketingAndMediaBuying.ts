@@ -1,11 +1,27 @@
 import { CoursesType } from "@/types/courses";
+import { HighlightSkill } from "@components/highlights";
+
+const highlightSkills: HighlightSkill[] = [
+  { name: "Digital Marketing" },
+  { name: "Media Buying Fundamentals" },
+  { name: "Full-Funnel Paid Ad" },
+  { name: "Conversion Rate Optimization SEO" },
+  { name: "Content-Driven Campaign" },
+  { name: "Programmatic Media Planning" },
+  { name: "AI-Powered Consumer Insights" },
+  { name: "Ad Personalization" },
+  { name: "Analytics" },
+  { name: "Attribution" },
+  { name: "ROI Reporting" },
+];
+
 
 const PerformanceMarketingAndMediaBuying: CoursesType = {
   leadCapture: {
-    titleOne: "PGCP in ",
-    titleTwo: "Performance Marketing & Media Buying",
-    subtitleOne: "AI-Powered Curriculum Designed for Next-Gen Performance Marketers",
-    subtitleTwo: " Fast-Track Your Career with Advanced Media Buying & Ad Management Expertise",
+    titleOne: "PGCP in Performance",
+    titleTwo: "Marketing & Media Buying",
+    subtitleOne: "AI-Powered Curriculum Designed for Next-Gen Performance Marketers for Advanced Media",
+    subtitleTwo: "Buying & Ad Management Expertise",
     tags: ["6-Month Intensive Program", " Includes Real-World Agency Projects"],
   },
   cohortSectionHeading: "PGCP In Performance Marketing & Media Buying",
@@ -26,8 +42,8 @@ const PerformanceMarketingAndMediaBuying: CoursesType = {
     },
   ],
   highlights: [
-    { icon: "/images/icons/calendar.png", title: "Months", value: "6+" },
-    { icon: "/images/icons/clock.png", title: "Time", value: "Flexible" },
+    // { icon: "/images/icons/calendar.png", title: "Months", value: "6+" },
+    // { icon: "/images/icons/clock.png", title: "Time", value: "Flexible" },
     {
       icon: "/images/icons/courses.png",
       title: "Industry-Relevant Modules",
@@ -46,38 +62,38 @@ const PerformanceMarketingAndMediaBuying: CoursesType = {
     },
     {
       icon: "/images/icons/case-study.png",
-      title: "Brand-Focused Case Studies",
+      title: "Case Studies",
       value: "20+",
     },
-    {
-      icon: "/images/icons/interview.png",
-      title: "Interview Assistance",
-      value: "5",
-    },
+    // {
+    //   icon: "/images/icons/interview.png",
+    //   title: "Interview Assistance",
+    //   value: "5",
+    // },
     {
       icon: "/images/icons/internship.png",
-      title: "Internship (Optional)",
-      value: "1 Month",
+      title: "Mentorship",
+      value: "1:1",
     },
     {
       icon: "/images/icons/project.png",
-      title: "Capstone Projects with Real Brands",
+      title: "Capstone Projects",
       value: "5+",
     },
     {
       icon: "/images/icons/certificate.png",
-      title: "Globally Recognized Certifications",
+      title: "Global Certifications",
       value: "15+",
     },
     {
       icon: "/images/icons/specialisation.png",
-      title: "Specialized Social & AI Tools in Action",
+      title: "Specialized AI Tools",
       value: "20+",
     },
     {
       icon: "/images/icons/trainer.png",
-      title: "Domain Specialist Trainers",
-      value: "07",
+      title: "Outcome-Focused Curriculum",
+      value: "100%",
     },
   ],
   StoryHeader: {
@@ -91,7 +107,12 @@ const PerformanceMarketingAndMediaBuying: CoursesType = {
   LearningRoadmapProps: {
     headerTitle: "Your 3-Month Learning",
     description: "Your journey is strategically designed for maximum growth at every stage.",
-   }
+  },
+  programSkills: {
+    heading: "Key Highlights of Our AI-Driven Digital Marketing Program",
+    subheading: "Digital Marketing Skills You’ll Master to Lead the Future",
+    skills: highlightSkills,
+  },
 };
 
 export default PerformanceMarketingAndMediaBuying;

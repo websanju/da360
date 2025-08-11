@@ -1,11 +1,30 @@
 import { CoursesType } from "@/types/courses";
+import { HighlightSkill } from "@components/highlights";
+
+const highlightSkills: HighlightSkill[] = [
+  { name: "AI-Powered Content Creation" },
+  { name: "Storytelling" },
+  { name: "Conversational Marketing" },
+  { name: "Chatbots & Voice AI" },
+  { name: "Vibe Marketing Psychology" },
+  { name: "Viral Hooks" },
+  { name: "Dynamic Creative" },
+  { name: "Programmatic Media Buying" },
+  { name: "Predictive Media Buying" },
+  { name: "Social Listening" },
+  { name: "Sentiment Analysis with AI" },
+  { name: "Real-Time Personalization" },
+  { name: "AI SEO" },
+  { name: "Smart Content Discovery" },
+];
+
 
 const AiVibeMarketing: CoursesType = {
   leadCapture: {
-    titleOne: "India’s First ",
-    titleTwo: "Advanced Certification in AI-Powered Vibe Marketing",
-    subtitleOne: "Harness the power of Artificial Intelligence to create viral campaigns, design",
-    subtitleTwo: "Fast-Track Your Career with AI-First, Vibe-Driven Expertise",
+    titleOne: "AI Vibe Marketing",
+    titleTwo: "Certification Course",
+    subtitleOne: "Artificial Intelligence to create viral campaigns, design hyper-personalized customer experiences, and master Vibe Marketing — the future of digital storytelling.",
+    subtitleTwo: "",
     tags: ["2-Month Specialist Program", "80+ Hours of Practical Learning","8+ Case Studies"],
   },
   cohortSectionHeading: "AI Vibe Marketing Cohort Details",
@@ -91,7 +110,12 @@ const AiVibeMarketing: CoursesType = {
   LearningRoadmapProps: {
     headerTitle: "Your 3-Month Learning",
     description: "Your journey is strategically designed for maximum growth at every stage.",
-   }
+  },
+   programSkills: {
+    heading: "Key Highlights of Our AI-Driven Digital Marketing Program",
+    subheading: "Digital Marketing Skills You’ll Master to Lead the Future",
+    skills: highlightSkills,
+  },
 };
 
 export default AiVibeMarketing;

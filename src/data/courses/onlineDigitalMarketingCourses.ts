@@ -1,4 +1,32 @@
 import { CoursesType } from "@/types/courses";
+import { HighlightSkill } from "@components/highlights";
+
+const highlightSkills: HighlightSkill[] = [
+  { name: "Digital Marketing" },
+  { name: "WordPress Website Designing" },
+  { name: "Ad Copy Writing" },
+  { name: "Creative Designing" },
+  { name: "Affiliate Marketing" },
+  { name: "Content Marketing" },
+  { name: "SEO Auditing" },
+  { name: "Google Ads" },
+  { name: "Bing Ads" },
+  { name: "Mobile App Advertising" },
+  { name: "Remarketing" },
+  { name: "SEO" },
+  { name: "Facebook" },
+  { name: "Linkedin" },
+  { name: "Instagram" },
+  { name: "Youtube" },
+  { name: "Quora" },
+  { name: "Adsense" },
+  { name: "Twitter" },
+  { name: "Email Marketing" },
+  { name: "Google Analytics" },
+  { name: "Marketing Automation" },
+  { name: "Whatsapp Marketing" },
+];
+
 
 const onlineDigitalMarketingCourses: CoursesType = {
   leadCapture: {
@@ -91,7 +119,12 @@ const onlineDigitalMarketingCourses: CoursesType = {
   LearningRoadmapProps: {
     headerTitle: "",
     description: ""
-  }
+  },
+   programSkills: {
+    heading: "Key Highlights of Our AI-Driven Digital Marketing Program",
+    subheading: "Digital Marketing Skills You’ll Master to Lead the Future",
+    skills: highlightSkills,
+  },
 };
 
 export default onlineDigitalMarketingCourses;

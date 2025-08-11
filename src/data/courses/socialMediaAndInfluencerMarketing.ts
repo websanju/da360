@@ -1,4 +1,19 @@
 import { CoursesType } from "@/types/courses";
+import { HighlightSkill } from "@components/highlights";
+
+const highlightSkills: HighlightSkill[] = [
+  { name: "Influencer Marketing" },
+  { name: "Brand Collaborations" },
+  { name: "Instagram Reels" },
+  { name: "YouTube Shorts" },
+  { name: "LinkedIn Thought Leadership" },
+  { name: "Social Media Paid Ads" },
+  { name: "Content Creation" },
+  { name: "Personal Branding" },
+  { name: "Client Communication" },
+  { name: "Freelancing Skills" },
+];
+
 
 const PerformanceMarketingAndMediaBuying: CoursesType = {
   leadCapture: {
@@ -26,18 +41,18 @@ const PerformanceMarketingAndMediaBuying: CoursesType = {
     },
   ],
   highlights: [
-    { icon: "/images/icons/calendar.png", title: "Months", value: "6+" },
-    { icon: "/images/icons/clock.png", title: "Time", value: "Flexible" },
+    // { icon: "/images/icons/calendar.png", title: "Months", value: "6+" },
+    // { icon: "/images/icons/clock.png", title: "Time", value: "Flexible" },
     {
       icon: "/images/icons/courses.png",
       title: "Industry-Relevant Modules",
       value: "30+",
     },
-    {
-      icon: "/images/icons/template.png",
-      title: "Template & Blueprints ",
-      value: "08",
-    },
+    // {
+    //   icon: "/images/icons/template.png",
+    //   title: "Template & Blueprints ",
+    //   value: "08",
+    // },
     { icon: "/images/icons/ai.png", title: "AI Learning Tools", value: "25+" },
     {
       icon: "/images/icons/certificate.png",
@@ -46,38 +61,38 @@ const PerformanceMarketingAndMediaBuying: CoursesType = {
     },
     {
       icon: "/images/icons/case-study.png",
-      title: "Brand-Focused Case Studies",
+      title: "Case Studies",
       value: "20+",
     },
-    {
-      icon: "/images/icons/interview.png",
-      title: "Interview Assistance",
-      value: "5",
-    },
+    // {
+    //   icon: "/images/icons/interview.png",
+    //   title: "Interview Assistance",
+    //   value: "5",
+    // },
     {
       icon: "/images/icons/internship.png",
-      title: "Internship (Optional)",
-      value: "1 Month",
+      title: "Mentorship ",
+      value: "1:1 ",
     },
     {
       icon: "/images/icons/project.png",
-      title: "Capstone Projects with Real Brands",
+      title: "Capstone Projects",
       value: "5+",
     },
     {
       icon: "/images/icons/certificate.png",
-      title: "Globally Recognized Certifications",
+      title: "Global Certifications",
       value: "15+",
     },
     {
       icon: "/images/icons/specialisation.png",
-      title: "Specialized Social & AI Tools in Action",
+      title: "Specialized AI Tools",
       value: "20+",
     },
     {
       icon: "/images/icons/trainer.png",
-      title: "Domain Specialist Trainers",
-      value: "07",
+      title: "Outcome-Focused Curriculum",
+      value: "100%",
     },
   ],
   StoryHeader: {
@@ -91,7 +106,12 @@ const PerformanceMarketingAndMediaBuying: CoursesType = {
   LearningRoadmapProps: {
     headerTitle: "Your 3-Month Learning",
     description: "Your journey is strategically designed for maximum growth at every stage.",
-   }
+  },
+   programSkills: {
+    heading: "Key Highlights of Our AI-Driven Digital Marketing Program",
+    subheading: "Digital Marketing Skills You’ll Master to Lead the Future",
+    skills: highlightSkills,
+  },
 };
 
 export default PerformanceMarketingAndMediaBuying;
