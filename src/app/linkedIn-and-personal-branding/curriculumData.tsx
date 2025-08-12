@@ -1,0 +1,175 @@
+import Live from "@/components/Ui/svg/live";
+import type { CurriculumProps } from "@/types/curriculum";
+
+export const curriculumData: CurriculumProps = {
+  heading: "Latest Curriculum Reviewed by Industry Leaders",
+  description:
+    "Cutting-edge digital marketing syllabus—designed by Expert trainers and endorsed by top recruiters and domain experts.",
+  learningMode: "Online",
+  batchTimings: [
+    {
+      label: "Online (Certification)",
+      slots: [
+        "07:30 AM to 09:30 AM",
+        "10:30 AM to 12:30 PM",
+        "09:00 PM to 10:30 PM",
+      ],
+    },
+  ],
+  modules: [
+    {
+      number: 1,
+      title: "Foundations of Personal Branding & LinkedIn",
+      badges: [
+        { icon: <Live />, label: "8 Live Sessions" },
+        { icon: <Live />, label: "2 Assignments" },
+        { icon: <Live />, label: "1 Case Study" },
+      ],
+      topics: [
+        "Understanding the Power of Personal Branding",
+        "Psychology Behind Influence and Authority",
+        "Niche Selection and Audience Targeting",
+        "Components of a Powerful Brand Identity",
+        "LinkedIn as a Personal Branding Tool",
+        "Comparison with Other Platforms (Twitter, Instagram, Medium)",
+        "The 5 Pillars of a Strong Personal Brand",
+        "Understanding the LinkedIn Algorithm",
+        "Personal Branding Case Studies (Indian & Global Influencers)",
+      ],
+    },
+    {
+      number: 2,
+      title: "LinkedIn Profile Optimization",
+      badges: [
+        { icon: <Live />, label: "6 Live Sessions" },
+        { icon: <Live />, label: "2 Assignments" },
+        { icon: <Live />, label: "1 Assessment" },
+      ],
+      topics: [
+        "Creating a Professional All-Star Profile",
+        "Optimizing Headline, About, and Experience Sections",
+        "Writing a High-Impact Summary (Using AI Tools)",
+        "Crafting a Value-Driven Banner & Profile Picture",
+        "Using Keywords for Better Discoverability (SEO for LinkedIn)",
+        "Creating a Custom LinkedIn URL",
+        "Profile Sections: Projects, Certifications, Featured, Skills",
+        "Social Proof: Recommendations & Endorsements",
+        "Setting Up Creator Mode & Services Page",
+      ],
+    },
+    {
+      number: 3,
+      title: "Content Creation & Thought Leadership",
+      badges: [
+        { icon: <Live />, label: "7 Live Sessions" },
+        { icon: <Live />, label: "3 Assignments" },
+      ],
+      topics: [
+        "Types of LinkedIn Posts: Text, Carousel, Polls, Articles, Video",
+        "Content Buckets: Educational, Inspirational, Authority, Relatable",
+        "Using AI Tools (ChatGPT, Jasper) for Ideation",
+        "Hook-Writing & Storytelling Frameworks",
+        "Hashtag Strategy and Timing Optimization",
+        "Using Content Pillars for Consistency",
+        "Writing Viral Carousels (Using Canva, Google Slides)",
+        "Building a Content Calendar",
+        "Repurposing Content for Instagram/Twitter",
+      ],
+    },
+    {
+      number: 4,
+      title: "Video Creation & Visual Branding",
+      badges: [
+        { icon: <Live />, label: "6 Live Sessions" },
+        { icon: <Live />, label: "2 Assignments" },
+      ],
+      topics: [
+        "On-Camera Confidence & Scripting for LinkedIn Video",
+        "Recording Reels & Talking Head Videos for Professionals",
+        "Editing Basics Using CapCut / InShot / Descript",
+        "Creating Branded Carousels in Canva",
+        "Creating a Personal Brand Logo & Brand Kit",
+        "Adding Subtitles & Hooks for Retention",
+        "Thumbnails for Video Posts",
+        "Tools for Video Repurposing (Pictory, Wisecut)",
+        "Visual Consistency Across Platforms",
+      ],
+    },
+    {
+      number: 5,
+      title: "Audience Building, Engagement & Growth Hacks",
+      badges: [
+        { icon: <Live />, label: "7 Live Sessions" },
+        { icon: <Live />, label: "2 Assignments" },
+      ],
+      topics: [
+        "How the LinkedIn Algorithm Works in 2025",
+        "Strategies to Increase Visibility & Engagement",
+        "Commenting Strategy to Gain Targeted Reach",
+        "Connection Strategy: Targeting, Messaging, Building Networks",
+        "Leveraging LinkedIn DMs for Community Building",
+        "Analytics Tools: Shield App, Native LinkedIn Insights",
+        "How to Build a Newsletter on LinkedIn",
+        "Growing a Follower Base Organically",
+        "Hosting & Promoting LinkedIn Events",
+      ],
+    },
+    {
+      number: 6,
+      title: "Lead Generation, Offers & Monetization",
+      badges: [
+        { icon: <Live />, label: "8 Live Sessions" },
+        { icon: <Live />, label: "3 Assignments" },
+      ],
+      topics: [
+        "Creating a Personal Landing Page for Lead Capture",
+        "Building Lead Magnets: Freebies, E-books, Webinars",
+        "Funnel Strategy for LinkedIn Creators",
+        "Setting Up Calendly & Email Integrations",
+        "Turning Profile Visitors into Leads",
+        "Using LinkedIn Services Page to Sell Skills",
+        "Monetizing Thought Leadership via Courses, Coaching, Consulting",
+        "Collaborations & Affiliate Opportunities",
+        "Building a Portfolio Website using WordPress",
+      ],
+    },
+    {
+      number: 7,
+      title: "Personal Development, Soft Skills & Influence",
+      badges: [
+        { icon: <Live />, label: "6 Live Sessions" },
+        { icon: <Live />, label: "2 Assignments" },
+      ],
+      topics: [
+        "Enhancing Communication & Storytelling",
+        "Public Speaking for Authority Building",
+        "Emotional Intelligence in Personal Branding",
+        "Handling Criticism & Trolling",
+        "Negotiation & Influencer Pricing Strategy",
+        "Building Thought Leadership in Communities",
+        "Productivity Tips for Creators",
+        "LinkedIn Etiquette & Professionalism",
+        "Leveraging Events & Summits for Visibility",
+      ],
+    },
+    {
+      number: 8,
+      title: "Freelancing, Career Growth & Business Expansion",
+      badges: [
+        { icon: <Live />, label: "6 Live Sessions" },
+        { icon: <Live />, label: "2 Assignments" },
+      ],
+      topics: [
+        "Becoming a Personal Brand Strategist",
+        "How to Get Clients via LinkedIn",
+        "Pitching & Proposal Writing for LinkedIn Clients",
+        "Starting a Personal Branding Freelance Agency",
+        "Managing Projects Using Notion / Trello",
+        "Personal Brand Audit Checklist",
+        "Leveraging LinkedIn for Job Opportunities",
+        "Building a High-Ticket Brand Positioning",
+        "Long-Term Vision: Author, Speaker, Consultant",
+      ],
+    },
+  ],
+};

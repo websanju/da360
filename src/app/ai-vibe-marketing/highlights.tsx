@@ -1,12 +1,14 @@
 import React from "react";
 import styles from "./style.module.scss";
 import Highlightss from "@components/highlights";
-import Curriculum from "@components/curriculum";
+
 import AIDigital from "@components/aIDigital";
 import DigitalMarketingTools from "@components/digitalMarketingTools";
 import AiTools from "@components/aiTools";
 import Certifications from "@components/certifications";
 import aiVibeMarketing from "@/data/courses/aiVibeMarketing";
+import Curriculum from "@components/curriculum";
+import { curriculumData } from "./curriculumData";
 interface HighlightsProps {
   section?: string;
 }
@@ -25,7 +27,7 @@ const Highlights = ({ section }: HighlightsProps) => {
                     : []
                 }
               />
-              <Curriculum />
+              <Curriculum {...curriculumData} />
               <AIDigital />
               <DigitalMarketingTools />
               <AiTools />

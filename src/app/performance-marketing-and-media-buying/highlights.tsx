@@ -7,6 +7,7 @@ import DigitalMarketingTools from "@components/digitalMarketingTools";
 import AiTools from "@components/aiTools";
 import Certifications from "@components/certifications";
 import performanceMarketingAndMediaBuying from "@/data/courses/performanceMarketingAndMediaBuying";
+import { curriculumData } from "./curriculumData";
 interface HighlightsProps {
   section?: string;
 }
@@ -30,7 +31,7 @@ const Highlights = ({ section }: HighlightsProps) => {
                     : []
                 }
               />
-              <Curriculum />
+              <Curriculum {...curriculumData} />
               <AIDigital />
               <DigitalMarketingTools />
               <AiTools />

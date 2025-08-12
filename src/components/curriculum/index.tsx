@@ -2,136 +2,51 @@
 
 import React, { useState } from "react";
 import styles from "./style.module.scss";
-import Live from "@/components/Ui/svg/live";
 import Plus from "@/components/Ui/svg/plus";
 import Minus from "@/components/Ui/svg/minus";
+import type { CurriculumProps } from "@/types/curriculum";
 
-const modulesData = [
-  {
-    number: 1,
-    title: "Digital Marketing Introduction & Fundamentals",
-    badges: [
-      { icon: <Live />, label: "10 Live Sessions" },
-      { icon: <Live />, label: "2 Assignments" },
-      { icon: <Live />, label: "1 Case Study" },
-      { icon: <Live />, label: "2 Assessments" },
-    ],
-    topics: [
-      "Marketing & Principles of Marketing",
-      "Introduction to Digital Marketing",
-      "Branding, Designing & Business Fundamentals",
-      "Owned, Earned & Paid Media",
-      "Market Research & Analysis",
-      "Customer Journey & Building Customer Persona",
-      "Advanced Level Keyword Research",
-      "AI Keyword Research Tools",
-      "Importance of AI in Digital Marketing",
-      "AI Content Generation",
-    ],
-  },
-  {
-    number: 2,
-    title: "Website Planning & WordPress Development",
-    badges: [
-      { icon: <Live />, label: "8 Live Sessions" },
-      { icon: <Live />, label: "3 Assignments" },
-      { icon: <Live />, label: "2 Case Studies" },
-      { icon: <Live />, label: "1 Assessment" },
-    ],
-    topics: [
-      "Website Planning",
-      "Domain, Hosting, and CMS",
-      "Installing WordPress",
-      "WordPress Theme Selection",
-      "Plugin Installation and Setup",
-      "Building a Website with WordPress",
-      "SEO Settings for WordPress",
-      "Website Launch Checklist",
-    ],
-  },
-  {
-    number: 3,
-    title: "Search Engine Optimization (SEO)",
-    badges: [
-      { icon: <Live />, label: "12 Live Sessions" },
-      { icon: <Live />, label: "4 Assignments" },
-      { icon: <Live />, label: "1 Case Study" },
-      { icon: <Live />, label: "2 Assessments" },
-    ],
-    topics: [
-      "Introduction to SEO",
-      "Keyword Research Techniques",
-      "On-Page SEO",
-      "Technical SEO",
-      "Off-Page SEO",
-      "SEO Tools Overview",
-      "Google Algorithm Updates",
-      "Content Strategy for SEO",
-    ],
-  },
-  {
-    number: 4,
-    title: "Paid Media Marketing (Google Ads & Facebook Ads)",
-    badges: [
-      { icon: <Live />, label: "15 Live Sessions" },
-      { icon: <Live />, label: "5 Assignments" },
-      { icon: <Live />, label: "2 Case Studies" },
-      { icon: <Live />, label: "3 Assessments" },
-    ],
-    topics: [
-      "Introduction to Paid Media",
-      "Creating Google Search Campaigns",
-      "Google Display & Video Campaigns",
-      "Facebook Ads Setup",
-      "Audience Targeting",
-      "Retargeting Campaigns",
-      "Analyzing Campaign Performance",
-    ],
-  },
-];
-
-const Curriculum = () => {
+export default function Curriculum({
+  heading,
+  description,
+  learningMode,
+  batchTimings,
+  modules,
+}: CurriculumProps) {
   const [activeModule, setActiveModule] = useState<number>(1);
 
   const toggleModule = (moduleNumber: number) => {
-    if (activeModule === moduleNumber) {
-      setActiveModule(0);
-    } else {
-      setActiveModule(moduleNumber);
-    }
+    setActiveModule((prev) => (prev === moduleNumber ? 0 : moduleNumber));
   };
 
   return (
     <section className={styles.curriculumSection}>
-      <h2>Latest Curriculum Reviewed by Industry Leaders</h2>
-      <p>
-        Cutting-edge digital marketing syllabus—designed by Expert trainers and
-        endorsed by top recruiters and domain experts.
-      </p>
+      <h2>{heading}</h2>
+      <p>{description}</p>
 
       <div className={styles["info-line"]}>
         <div className={styles["Learning"]}>
-          <label>Learning Mode </label>
-          <p>Online / Offline</p>
+          <label>Learning Mode</label>
+          <p>{learningMode}</p>
         </div>
+
         <div className={styles["timings"]}>
-          <label> Batch Timings</label>
-          <p className={styles.batchTimings}>
-            <span>Online (PGCP & SDP)</span>
-            <span>07:30 AM to 09:30 AM | </span>
-            <span>10:30 AM to 12:30 PM | </span>
-            <span>09:00 PM to 10:30 PM</span>
-          </p>
-          <p className={styles.batchTimings}>
-            <span>Classroom (PGCP & SDP)</span>
-            <span>11:00 AM to 1:00 PM | </span>
-            <span>05:00 PM to 07:00 PM </span>
-          </p>
+          <label>Batch Timings</label>
+          {batchTimings.map((batch, idx) => (
+            <p key={idx} className={styles.batchTimings}>
+              <span>{batch.label}</span>
+              {batch.slots.map((slot, slotIdx) => (
+                <span key={slotIdx}>
+                  {slot}
+                  {slotIdx < batch.slots.length - 1 && " | "}
+                </span>
+              ))}
+            </p>
+          ))}
         </div>
       </div>
 
-      {/* Modules */}
-      {modulesData.map((module) => (
+      {modules.map((module) => (
         <div
           key={module.number}
           className={`${styles.module} ${
@@ -168,7 +83,6 @@ const Curriculum = () => {
             </div>
           </div>
 
-          {/* Expanded content */}
           {activeModule === module.number && (
             <div className={styles["module-content"]}>
               <div className={styles.contentLeft}></div>
@@ -184,6 +98,4 @@ const Curriculum = () => {
       ))}
     </section>
   );
-};
-
-export default Curriculum;
+}
