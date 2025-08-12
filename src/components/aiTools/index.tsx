@@ -1,68 +1,34 @@
+// components/AiTools.tsx
 "use client";
+
 import React, { useState } from "react";
 import styles from "./style.module.scss";
 import Image from "next/image";
+import { ToolCategories, CategoryName } from "@/types/aiTools";
 
-const toolCategories = {
-  All: [
-    { name: "Canva", logo: "/images/aitools/canva.png" },
-    { name: "Pixlr", logo: "/images/aitools/pixlr.png" },
-    { name: "Designify", logo: "/images/aitools/designify.png" },
-    { name: "Crello", logo: "/images/aitools/crello.png" },
-    { name: "Hatchful", logo: "/images/aitools/hatchful.png" },
-    { name: "Wix", logo: "/images/aitools/wix.png" },
-    { name: "Weebly", logo: "/images/aitools/weebly.png" },
-    { name: "Strikingly", logo: "/images/aitools/strikingly.png" },
-    { name: "Carrd", logo: "/images/aitools/carrd.png" },
-    { name: "Writesonic", logo: "/images/aitools/writesonic.png" },
-    { name: "QuillBot", logo: "/images/aitools/quillbot.png" },
-    { name: "Hemingway", logo: "/images/aitools/hemingway.png" },
-    { name: "Rytr", logo: "/images/aitools/rytr.png" },
-    { name: "Kapwing", logo: "/images/aitools/kapwing.png" },
-    { name: "VEED.IO", logo: "/images/aitools/veedio.png" },
-    { name: "Shortcut", logo: "/images/aitools/shortcut.png" },
-  ],
-  Design: [
-    { name: "Canva", logo: "/images/aitools/canva.png" },
-    { name: "Pixlr", logo: "/images/aitools/pixlr.png" },
-    { name: "Designify", logo: "/images/aitools/designify.png" },
-    { name: "Crello", logo: "/images/aitools/crello.png" },
-    { name: "Hatchful", logo: "/images/aitools/hatchful.png" },
-  ],
-  Website: [
-    { name: "Wix", logo: "/images/aitools/wix.png" },
-    { name: "Weebly", logo: "/images/aitools/weebly.png" },
-    { name: "Strikingly", logo: "/images/aitools/strikingly.png" },
-    { name: "Carrd", logo: "/images/aitools/carrd.png" },
-  ],
-  Writing: [
-    { name: "Writesonic", logo: "/images/aitools/writesonic.png" },
-    { name: "QuillBot", logo: "/images/aitools/quillbot.png" },
-    { name: "Hemingway", logo: "/images/aitools/hemingway.png" },
-    { name: "Rytr", logo: "/images/aitools/rytr.png" },
-  ],
-  Video: [
-    { name: "Kapwing", logo: "/images/aitools/kapwing.png" },
-    { name: "VEED.IO", logo: "/images/aitools/veedio.png" },
-    { name: "Shortcut", logo: "/images/aitools/shortcut.png" },
-  ],
-} as const;
+interface AiToolsProps {
+  heading: string;
+  description?: string;
+  categories: ToolCategories;
+}
 
-type CategoryName = keyof typeof toolCategories;
-
-const AiTools: React.FC = () => {
-  const categoryNames = Object.keys(toolCategories) as CategoryName[];
+export default function AiTools({
+  heading,
+  description,
+  categories = {},
+}: AiToolsProps) {
+  const categoryNames = Object.keys(categories) as CategoryName[];
   const [activeTab, setActiveTab] = useState<CategoryName>("All");
-
+  if (categoryNames.length === 0) {
+    return null; // or some fallback UI
+  }
   return (
     <section className={styles.digitalToolsSection}>
       <div className="container">
-        <h2 className={styles.sectionTitle}>Next-Gen AI-Powered Tools</h2>
-        <p className={styles.sectionDescription}>
-          Modern digital marketers thrive on automation and insights—master the
-          latest AI-driven tools used by top brands in Digital Academy 360’s
-          online marketing course.
-        </p>
+        <h2 className={styles.sectionTitle}>{heading}</h2>
+        {description && (
+          <p className={styles.sectionDescription}>{description}</p>
+        )}
 
         {/* Tabs */}
         <div className={styles.tabs}>
@@ -81,7 +47,7 @@ const AiTools: React.FC = () => {
 
         {/* Tab Content */}
         <div className={styles.digitalToolList}>
-          {toolCategories[activeTab].map((tool, index) => (
+          {categories[activeTab].map((tool, index) => (
             <div className={styles.digitalTooItems} key={index}>
               <div className={styles.digitalTooItem}>
                 <Image
@@ -98,6 +64,4 @@ const AiTools: React.FC = () => {
       </div>
     </section>
   );
-};
-
-export default AiTools;
+}

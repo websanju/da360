@@ -9,6 +9,9 @@ import Certifications from "@components/certifications";
 import aiVibeMarketing from "@/data/courses/aiVibeMarketing";
 import Curriculum from "@components/curriculum";
 import { curriculumData } from "./curriculumData";
+import { toolCategories } from "./aiToolsData";
+import { certificationsData } from "./certificationsData";
+
 interface HighlightsProps {
   section?: string;
 }
@@ -30,8 +33,16 @@ const Highlights = ({ section }: HighlightsProps) => {
               <Curriculum {...curriculumData} />
               <AIDigital />
               <DigitalMarketingTools />
-              <AiTools />
-              <Certifications />
+              <AiTools
+                heading="Next-Gen AI-Powered Tools"
+                description="From ChatGPT and Jasper for content creation to Midjourney and Synthesia for visuals — master the tools that define the future of Vibe Marketing."
+                categories={toolCategories}
+              />
+              <Certifications
+                heading="Get Industry-Recognised Certifications"
+                subheading="(Government of India)"
+                certifications={certificationsData}
+              />
             </div>
           </div>
         </div>

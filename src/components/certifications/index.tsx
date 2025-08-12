@@ -1,42 +1,53 @@
 "use client";
+
 import React, { useState } from "react";
 import styles from "./style.module.scss";
 import Image from "next/image";
 import LeftArrow from "@/components/Ui/svg/leftArrow";
 
-const certData = [
-  {
-    name: "Inbound Marketing Certification by Hubspot",
-    image: "/images/da360.png",
-  },
-  { name: "Google Ads Search Certification", image: "/images/da360.png" },
-  {
-    name: "Course Completion Certificate by DA360",
-    image: "/images/da360.png",
-  },
-];
+export interface Certification {
+  name: string;
+  image: string;
+}
 
-const Certifications: React.FC = () => {
-  const [activeTab, setActiveTab] = useState(certData[0].name);
+interface CertificationsProps {
+  heading: string;
+  subheading?: string;
+  certifications: Certification[];
+}
+
+export default function Certifications({
+  heading,
+  subheading,
+  certifications,
+}: CertificationsProps) {
+  // Initialize activeTab safely if certifications is empty or undefined
+  const [activeTab, setActiveTab] = useState<string>(
+    certifications?.[0]?.name ?? ""
+  );
+
+  // Handle case if certifications is empty or undefined
+  if (!certifications || certifications.length === 0) {
+    return " ";
+  }
 
   const handleTabClick = (name: string) => setActiveTab(name);
 
-  const activeCert = certData.find((cert) => cert.name === activeTab);
+  const activeCert = certifications.find((cert) => cert.name === activeTab);
 
   return (
     <section className={styles.certificationsSection}>
       <div className={styles.certificationsInner}>
         <h2>
-          Get Industry-Recognised Certifications
-          <span>(Government of India)</span>
+          {heading} {subheading && <span>{subheading}</span>}
         </h2>
 
         <div className={styles.certDataList}>
-          {certData.map((cert) => (
+          {certifications.map((cert) => (
             <span
               key={cert.name}
               className={`cert-chip ${
-                activeTab === cert.name ? `${styles.active}` : ""
+                activeTab === cert.name ? styles.active : ""
               }`}
               onClick={() => handleTabClick(cert.name)}
             >
@@ -57,6 +68,7 @@ const Certifications: React.FC = () => {
             />
           </div>
         )}
+
         <div className={styles.btnAction}>
           <a href="#" className="btnRed">
             Download Detail Curriculum{" "}
@@ -68,6 +80,4 @@ const Certifications: React.FC = () => {
       </div>
     </section>
   );
-};
-
-export default Certifications;
+}
