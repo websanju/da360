@@ -17,68 +17,118 @@ const caseStudies = [
   {
     id: 1,
     logo: "/images/mcdonalds-logo.png",
-    title: "McDonald's case Study",
+    title: "Netflix India — Driving Engagement with Short-Form Video",
     description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry...",
-    tags: ["Marketing Strategy", "SEO"],
+      "Netflix India revolutionized its social media strategy by leveraging Reels and meme collaborations to connect with Gen Z and millennial audiences. Through witty short-form storytelling, trending audio, and influencer tie-ups, Netflix maximized engagement for show launches and campaigns like Sacred Games and Money Heist.",
+    tags: [
+      "Short-Form Video Storytelling",
+      "Meme Collaborations",
+      "Influencer Tie-Ups",
+      "Trend-Based Content Planning",
+    ],
   },
 
   {
     id: 2,
     logo: "/images/oneplus.png",
-    title: "Oneplus's case Study",
+    title: "Zomato — Using Humor & Meme Marketing for Virality",
     description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry...",
-    tags: ["Marketing Strategy", "SEO"],
+      "Zomato redefined digital engagement by adopting a meme-first strategy. With witty tweets, meme-based creatives, and relatable Reels, the brand saw a 10x boost in social engagement. Their campaigns during IPL and cricket series showcased the power of humor in building viral momentum.",
+    tags: [
+      "Meme Marketing Strategy",
+      "Humor-Driven Engagement",
+      "Real-Time Content Creation",
+      "Viral Marketing Frameworks",
+    ],
   },
   {
     id: 3,
     logo: "/images/rolex.png",
-    title: "Rolex case Study",
+    title: "CRED — Creator-Driven Influencer Collaborations",
     description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry...",
-    tags: ["Marketing Strategy", "SEO"],
+      "CRED built credibility and brand trust by collaborating with high-profile creators and celebrities. Their campaigns blended quirk, authority, and storytelling—turning influencer-led videos into national conversations. Creators like Rahul Dravid and Tanmay Bhat were instrumental in CRED’s viral brand recall.",
+    tags: [
+      "Influencer Marketing Campaign Planning",
+      "Creator Collaborations",
+      "Brand Storytelling via Authority Figures",
+      "High-ROI Content Production",
+    ],
   },
   {
     id: 4,
     logo: "/images/cocacola.png",
-    title: "Cocacola case Study",
+    title: "McDonald’s India – Localizing a Global Brand",
     description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry...",
-    tags: ["Marketing Strategy", "SEO"],
+      "McDonald’s India adapted its global brand strategy to meet local market preferences—replacing beef-based offerings, introducing aloo tikki burgers, and launching value pricing to capture the price-sensitive Indian audience. Their digital marketing focused on regional content, hyper-local social media campaigns, and app-based loyalty programs.",
+    tags: [
+      "Marketing Strategy",
+      "Consumer Segmentation",
+      "Localization in Campaigns",
+      "Social Media Planning",
+    ],
   },
   {
     id: 5,
     logo: "/images/nextflix.png",
-    title: "Nextflix case Study",
+    title: "Mother Dairy – Building Trust Through Content",
     description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry...",
-    tags: ["Marketing Strategy", "SEO"],
+      "Mother Dairy strengthened its brand presence by focusing on emotional storytelling and purpose-driven marketing. Campaigns like 'Rishton Ka Swad Badhaiye' positioned the brand as a part of Indian family life. It leveraged SEO, blog content, influencer tie-ups, and YouTube storytelling to increase brand engagement and product awareness.",
+    tags: [
+      "Content Marketing",
+      "SEO & Organic Reach",
+      "Video Marketing Strategy",
+      "Influencer Marketing",
+    ],
   },
 
   {
     id: 6,
     logo: "/images/durex.png",
-    title: "Durex case Study",
+    title: "Zomato – Data-Driven Performance Marketing",
     description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry...",
-    tags: ["Marketing Strategy", "SEO"],
+      "Zomato scaled its customer acquisition by running high-performing campaigns during IPL seasons, using data-backed insights to target users based on cuisine preferences, location, and time of day. They executed geo-targeted Google and Meta ads, retargeting sequences, and meme-based creatives to boost engagement and app installs.",
+    tags: [
+      "Performance Marketing",
+      "Google & Meta Ad Strategy",
+      "Retargeting Campaigns",
+      "A/B Testing & Optimization",
+    ],
   },
   {
     id: 7,
     logo: "/images/whatsup.png",
-    title: "Whatsapp case Study",
+    title: "Swiggy – Data-Driven Campaign Optimization",
     description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry...",
-    tags: ["Marketing Strategy", "SEO"],
+      "Swiggy leveraged data analytics and AI-driven insights to optimize campaigns in real-time, increasing both conversions and order value.",
+    tags: [
+      "Multi-channel attribution tracking.",
+      "AI-based campaign optimization.",
+      "Hyper-local targeting strategies.",
+    ],
   },
   {
     id: 8,
     logo: "/images/cadbury.png",
-    title: "Cadbury case Study",
+    title: "Nykaa – Influencer & Social Ads Funnel",
     description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry...",
-    tags: ["Marketing Strategy", "SEO"],
+      "Nykaa executed a full-funnel influencer + paid ads strategy to launch a new beauty product line and boost online sales.",
+    tags: [
+      "Influencer funnel integration with paid ads.",
+      "Social commerce and shoppable content.",
+      "Dynamic creative testing for high engagement.",
+    ],
+  },
+  {
+    id: 9,
+    logo: "/images/cadbury.png",
+    title: "MakeMyTrip – Seasonal PPC Campaign Strategy",
+    description:
+      "MakeMyTrip tapped into seasonal travel trends to design high-converting PPC campaigns across Google and Meta platforms.",
+    tags: [
+      "Seasonal campaign planning & keyword research.",
+      "Search + display remarketing funnels.",
+      "Offer-driven PPC strategies.",
+    ],
   },
 ];
 
