@@ -1,6 +1,54 @@
 import { CoursesType } from "@/types/courses";
 import { HighlightSkill } from "@components/highlights";
 
+import { CaseStudiesSection } from "@/types/caseStudies";
+
+const aiVibeCaseStudies: CaseStudiesSection = {
+  heading: "Glimpse of Brand Case Studies",
+  subheading: "Learn Through Real Business Challenges from Industry-Leading Brands",
+  items: [
+    {
+      id: 1,
+      logo: "/images/mcdonalds-logo.png",
+      title: "McDonald’s India – Localizing a Global Brand",
+      description:
+        "McDonald’s India adapted its global brand strategy to meet local market preferences—replacing beef-based offerings, introducing aloo tikki burgers, and launching value pricing to capture the price-sensitive",
+      tags: [
+        "Marketing Strategy",
+        "Consumer Segmentation",
+        "Localization in Campaigns",
+        "Social Media Planning",
+      ],
+    },
+    {
+      id: 2,
+      logo: "/images/motherdairy-logo.png",
+      title: "Mother Dairy – Building Trust Through Content",
+      description:
+        "Mother Dairy strengthened its brand presence by focusing on emotional storytelling and purpose-driven marketing. Campaigns like `Rishton Ka Swad Badhaiye` positioned the brand as a part of Indian family life.",
+      tags: [
+        "Content Marketing",
+        "SEO & Organic Reach",
+        "Video Marketing Strategy",
+        "Influencer Marketing",
+      ],
+    },
+    {
+      id: 3,
+      logo: "/images/mcdonalds-logo.png",
+      title: "Zomato – Data-Driven Performance Marketing",
+      description:
+        "Zomato scaled its customer acquisition by running high-performing campaigns during IPL seasons, using data-backed insights to target users based on cuisine preferences, location, and time of day.",
+      tags: [
+        "Performance Marketing",
+        "Google & Meta Ad Strategy",
+        "Retargeting Campaigns",
+        "A/B Testing & Optimization",
+      ],
+    },
+  ],
+};
+
 const highlightSkills: HighlightSkill[] = [
   { name: "LinkedIn Profile Optimization" },
   { name: "Linkedin Branding" },
@@ -107,14 +155,15 @@ const PerformanceMarketingAndMediaBuying: CoursesType = {
     description: "Go Beyond the Classroom with Power-Packed Competitions & Creative Showdowns",
   },
   LearningRoadmapProps: {
-    headerTitle: "Your 3-Month Learning",
-    description: "Your journey is strategically designed for maximum growth at every stage.",
+    headerTitle: "Your 2-Month Creator Journey",
+    description: "A step-by-step roadmap designed for working professionals, coaches, consultants, and entrepreneurs who want to stand out and monetize their personal brand.",
   },
    programSkills: {
     heading: "Key Highlights of Our AI-Driven Digital Marketing Program",
     subheading: "Digital Marketing Skills You’ll Master to Lead the Future",
     skills: highlightSkills,
   },
+   caseStudies: aiVibeCaseStudies,
 };
 
 export default PerformanceMarketingAndMediaBuying;

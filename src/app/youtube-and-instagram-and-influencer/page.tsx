@@ -112,7 +112,7 @@ export default function courseDetail() {
         }
       /> */}
       <LiveProjectsSlider section="section6" />
-      <CaseStudies />
+      <CaseStudies data={youtubeAndInstagramInfluencer.caseStudies} />
       {/* <Banner /> */}
       <PeopleSlider />
       <AlumniSlider />

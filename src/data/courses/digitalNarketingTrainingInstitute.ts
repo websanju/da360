@@ -1,6 +1,52 @@
 import { CoursesType } from "@/types/courses";
 import { HighlightSkill } from "@components/highlights";
+import { CaseStudiesSection } from "@/types/caseStudies";
 
+const aiVibeCaseStudies: CaseStudiesSection = {
+  heading: "Glimpse of Brand Case Studies",
+  subheading: "Learn Through Real Business Challenges from Industry-Leading Brands",
+  items: [
+    {
+      id: 1,
+      logo: "/images/mcdonalds-logo.png",
+      title: "McDonald’s India – Localizing a Global Brand",
+      description:
+        "McDonald’s India adapted its global brand strategy to meet local market preferences—replacing beef-based offerings, introducing aloo tikki burgers, and launching value pricing to capture the price-sensitive",
+      tags: [
+        "Marketing Strategy",
+        "Consumer Segmentation",
+        "Localization in Campaigns",
+        "Social Media Planning",
+      ],
+    },
+    {
+      id: 2,
+      logo: "/images/motherdairy-logo.png",
+      title: "Mother Dairy – Building Trust Through Content",
+      description:
+        "Mother Dairy strengthened its brand presence by focusing on emotional storytelling and purpose-driven marketing. Campaigns like `Rishton Ka Swad Badhaiye` positioned the brand as a part of Indian family life.",
+      tags: [
+        "Content Marketing",
+        "SEO & Organic Reach",
+        "Video Marketing Strategy",
+        "Influencer Marketing",
+      ],
+    },
+    {
+      id: 3,
+      logo: "/images/mcdonalds-logo.png",
+      title: "Zomato – Data-Driven Performance Marketing",
+      description:
+        "Zomato scaled its customer acquisition by running high-performing campaigns during IPL seasons, using data-backed insights to target users based on cuisine preferences, location, and time of day.",
+      tags: [
+        "Performance Marketing",
+        "Google & Meta Ad Strategy",
+        "Retargeting Campaigns",
+        "A/B Testing & Optimization",
+      ],
+    },
+  ],
+};
 
 const highlightSkills: HighlightSkill[] = [
   { name: "Digital Marketing" },
@@ -125,6 +171,7 @@ const digitalNarketingTrainingInstitute: CoursesType = {
     subheading: "Digital Marketing Skills You’ll Master to Lead the Future",
     skills: highlightSkills,
   },
+   caseStudies: aiVibeCaseStudies,
 };
 
 export default digitalNarketingTrainingInstitute;

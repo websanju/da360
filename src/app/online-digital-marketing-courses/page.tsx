@@ -100,7 +100,7 @@ export default function courseDetail() {
       <Highlights section="section5" />
       <LearningRoadmap />
       <LiveProjectsSlider section="section6" />
-      <CaseStudies />
+      <CaseStudies data={onlineDigitalMarketingCourses.caseStudies} />
       <Banner />
       <PeopleSlider />
       <AlumniSlider />

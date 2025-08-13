@@ -1,6 +1,7 @@
 import { Cohort } from "@/components/cohortDetails";
 import { HighlightSkill } from "@components/highlights";
 export interface CoursesType {
+  caseStudies: CaseStudiesSection;
   leadCapture: {
     titleOne: string;
     titleTwo: string;

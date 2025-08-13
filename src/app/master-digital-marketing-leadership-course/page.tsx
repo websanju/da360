@@ -108,7 +108,7 @@ export default function courseDetail() {
         }
       />
       <LiveProjectsSlider section="section6" />
-      <CaseStudies />
+      <CaseStudies data={digitalMarketingLeadership.caseStudies} />
       <Banner />
       <PeopleSlider />
       <AlumniSlider />

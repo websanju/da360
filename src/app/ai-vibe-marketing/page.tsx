@@ -23,6 +23,7 @@ import LiveProjectsSlider from "@components/liveProjectsSlider";
 // import ContactButtonsSticky from "@/components/widgets/contactButtonsSticky";
 import BottomNav from "@components/bottomNav";
 import aiVibeMarketing from "@/data/courses/aiVibeMarketing";
+import AiVibeMarketing from "@/data/courses/aiVibeMarketing";
 
 export const metadata = {
   title: "Best Digital Marketing Training Institute Online & Classroom",
@@ -108,7 +109,7 @@ export default function courseDetail() {
         }
       /> */}
       <LiveProjectsSlider section="section6" />
-      <CaseStudies />
+      <CaseStudies data={AiVibeMarketing.caseStudies} />
       {/* <Banner /> */}
       <PeopleSlider />
       <AlumniSlider />

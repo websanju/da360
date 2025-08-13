@@ -1,6 +1,51 @@
 import { CoursesType } from "@/types/courses";
 import { HighlightSkill } from "@components/highlights";
 
+import { CaseStudiesSection } from "@/types/caseStudies";
+
+const aiVibeCaseStudies: CaseStudiesSection = {
+  heading: "Glimpse of Brand Case Studies",
+  subheading: "Learn Through Real Business Challenges from Industry-Leading Brands",
+  items: [
+    {
+      id: 1,
+      logo: "/images/mcdonalds-logo.png",
+      title: "Swiggy – Data-Driven Campaign Optimization",
+      description:
+        "Swiggy leveraged data analytics and AI-driven insights to optimize campaigns in real-time, increasing both conversions and order value.",
+      tags: [
+        "Multi-channel attribution tracking.",
+        "AI-based campaign optimization.",
+        "Hyper-local targeting strategies.",
+      ],
+    },
+    {
+      id: 2,
+      logo: "/images/motherdairy-logo.png",
+      title: "Nykaa – Influencer & Social Ads Funnel",
+      description:
+        "Nykaa executed a full-funnel influencer + paid ads strategy to launch a new beauty product line and boost online sales.",
+      tags: [
+        "Influencer funnel integration with paid ads.",
+        "Social commerce and shoppable content.",
+        "Dynamic creative testing for high engagement.",
+      ],
+    },
+    {
+      id: 3,
+      logo: "/images/mcdonalds-logo.png",
+      title: "MakeMyTrip – Seasonal PPC Campaign Strategy",
+      description:
+        "MakeMyTrip tapped into seasonal travel trends to design high-converting PPC campaigns across Google and Meta platforms.",
+      tags: [
+        "Seasonal campaign planning & keyword research.",
+        "Search + display remarketing funnels.",
+        "Offer-driven PPC strategies.",
+      ],
+    },
+  ],
+};
+
 const highlightSkills: HighlightSkill[] = [
   { name: "Performance Marketing" },
   { name: "PPC Campaign" },
@@ -106,14 +151,15 @@ const PerformanceMarketingAndMediaBuying: CoursesType = {
     description: "Go Beyond the Classroom with Power-Packed Competitions & Creative Showdowns",
   },
   LearningRoadmapProps: {
-    headerTitle: "Your 3-Month Learning",
-    description: "Your journey is strategically designed for maximum growth at every stage.",
+    headerTitle: "Your 2-Month Creator Journey",
+    description: "A step-by-step roadmap designed for working professionals, coaches, consultants, and entrepreneurs who want to stand out and monetize their personal brand.",
   },
    programSkills: {
     heading: "Key Highlights of Our AI-Driven Digital Marketing Program",
     subheading: "Digital Marketing Skills You’ll Master to Lead the Future",
     skills: highlightSkills,
   },
+   caseStudies: aiVibeCaseStudies,
 };
 
 export default PerformanceMarketingAndMediaBuying;
