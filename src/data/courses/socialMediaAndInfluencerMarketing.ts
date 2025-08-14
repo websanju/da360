@@ -1,6 +1,110 @@
 import { CoursesType } from "@/types/courses";
 import { HighlightSkill } from "@components/highlights";
 import { CaseStudiesSection } from "@/types/caseStudies";
+import { Project } from "@/components/liveProjectsSlider";
+
+const liveProjectsData: Project[] = [
+   {
+    id: 1,
+    title: " Personal Portfolio Website Development",
+    duration: "15 Hours (±15 Days of Live Campaign)",
+    heading:
+      "In this hands-on project, you’ll build and launch a fully functional portfolio website showcasing your personal brand and campaign work:",
+    details: [
+      "Understand personal branding goals and digital requirements",
+      "Research audience persona and define content strategy",
+      "Plan site structure, layout, and user experience",
+    ],
+    steps: [
+      "Design and develop using WordPress best practices",
+      "Embed Instagram Reels, YouTube Shorts, Carousels & Testimonials",
+      "Participate in live briefings with industry mentors",
+      "Optimize site for SEO, mobile, and performance",
+      "Submit the final website with case studies and media kit",
+      "Present your work & face mock interview evaluations",
+    ],
+    note: "",
+    logos: ["meta.png", "google-ads.png", "analytics.png"],
+    bgGradient:
+      "linear-gradient(280deg, rgba(255, 217, 205, 0) 0%, #CDFFDE 53.35%)",
+    bgsolid: "#CDFFDE",
+  },
+  {
+    id: 2,
+    title: "Meta Ads Campaign Execution",
+    duration: "15 Hours (±15 Days of Live Campaign)",
+    heading:
+      "This project puts you in charge of designing, launching, and optimizing a Meta Ads full-funnel campaign for one brand",
+    details: [
+      "Analyze brand goals, buyer journey, and funnel objectives",
+      "Define audience targeting, custom audiences & lookalikes",
+      "Craft conversion-focused creatives and ad copies",
+    ],
+    steps: [
+      "Build a complete media plan including bidding & placement strategy",
+      "Attend expert-led workshops on campaign optimization",
+      "Launch a budget-controlled Meta Ads campaign",
+      "Monitor performance and optimize for CTR, CPC & ROAS",
+      "Submit detailed analytics reports with key learnings",
+      "Present campaign results & recommendations in a mock interview session",
+    ],
+    note: "",
+    logos: ["meta.png", "google-ads.png", "analytics.png"],
+    bgGradient:
+      "linear-gradient(280deg, rgba(255, 240, 205, 0) 0%, #FFD9CD 53.35%)",
+    bgsolid: "#FFD9CD",
+  },
+  {
+    id: 3,
+    title: "Instagram & YouTube Influencer Campaign Execution",
+    duration: "15 Hours (±15 Days of Live Campaign)",
+    heading:
+      "In this practical project, you’ll plan, launch, and manage a full-scale influencer marketing campaign across Instagram and YouTube:",
+    details: [
+      "Deep-dive into brand objectives and target audience",
+      "Shortlist nano/micro influencers using Heepsy, Winkl, or One Impression",
+      "Design compelling content briefs and collaboration templates",
+    ],
+    steps: [
+      "Negotiate deliverables and timelines with influencers",
+      "Attend expert-led briefings and influencer onboarding sessions",
+      "Go live with Instagram Reels & YouTube Shorts campaigns",
+      "Monitor campaign engagement (views, shares, conversions) in real-time",
+      "Submit final campaign analytics report with ROI & insights",
+      "Present campaign outcomes during a mock client presentation",
+    ],
+    note: "",
+    logos: ["meta.png", "google-ads.png", "analytics.png"],
+    bgGradient:
+      "linear-gradient(280deg, rgba(205, 255, 236, 0) 0%, #FFD9CD 53.35%)",
+    bgsolid: "#FFD9CD",
+  },
+  {
+    id: 4,
+    title: "SEO & Content Marketing Strategy Implementation",
+    duration: "15 Hours (±15 Days of Live Campaign)",
+    heading:
+      "In this end-to-end SEO & content project, you’ll research, plan, and execute a digital growth strategy for one brand:",
+    details: [
+      "Analyze the brand’s online presence and search performance",
+      "Conduct keyword research for social discovery & website ranking",
+      "Develop content clusters and pillar blogs with AI tools",
+    ],
+    steps: [
+      "Perform on-page SEO: titles, meta tags, schema, and internal linking",
+      "Execute off-page SEO with influencer collaborations and backlinks",
+      "Use AI-powered tools like SEMrush, Ahrefs & Jasper for optimization",
+      "Join expert-led sessions to refine SEO & content marketing approach",
+      "Submit a strategic SEO + content roadmap with ROI projections",
+      "Present final strategy in a mock client pitch with Q&A"
+    ],
+    note: "",
+    logos: ["meta.png", "google-ads.png", "analytics.png"],
+    bgGradient:
+      "linear-gradient(280deg, rgba(205, 255, 236, 0) 0%, #CECDFF 53.35%)",
+    bgsolid: "#CECDFF",
+  },
+];
 
 const aiVibeCaseStudies: CaseStudiesSection = {
   heading: "Glimpse of Brand Case Studies",
@@ -159,7 +263,14 @@ const PerformanceMarketingAndMediaBuying: CoursesType = {
     subheading: "Digital Marketing Skills You’ll Master to Lead the Future",
     skills: highlightSkills,
   },
-   caseStudies: aiVibeCaseStudies,
+  caseStudies: aiVibeCaseStudies,
+   liveProjects: {
+    sectionId: "section6",
+    heading: "AI Vibe Marketing Live Projects",
+    description:
+      "Practical, hands-on projects to apply AI marketing skills in real-world brand scenarios.",
+    projects: liveProjectsData,
+  },
 };
 
 export default PerformanceMarketingAndMediaBuying;

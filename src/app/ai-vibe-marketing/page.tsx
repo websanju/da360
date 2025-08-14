@@ -108,7 +108,13 @@ export default function courseDetail() {
           aiVibeMarketing.LearningRoadmapProps.description
         }
       /> */}
-      <LiveProjectsSlider section="section6" />
+
+      <LiveProjectsSlider
+        sectionId={AiVibeMarketing.liveProjects!.sectionId}
+        heading={AiVibeMarketing.liveProjects!.heading}
+        description={AiVibeMarketing.liveProjects!.description}
+        projects={AiVibeMarketing.liveProjects!.projects}
+      />
       <CaseStudies data={AiVibeMarketing.caseStudies} />
       {/* <Banner /> */}
       <PeopleSlider />

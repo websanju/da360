@@ -1,7 +1,111 @@
 import { CoursesType } from "@/types/courses";
 import { HighlightSkill } from "@components/highlights";
-
 import { CaseStudiesSection } from "@/types/caseStudies";
+import { Project } from "@/components/liveProjectsSlider";
+
+const liveProjectsData: Project[] = [
+   {
+    id: 1,
+    title: "Landing Page & Portfolio Website Developmen",
+    duration: "15 Hours (±15 Days of Live Campaign)",
+    heading:
+      "In this hands-on project, you’ll design and launch a high-converting landing page and portfolio website for one Brand, covering every critical phase:",
+    details: [
+      "Define brand objectives and lead-generation goals",
+      "Research audience persona and funnel positioning",
+      "Structure landing pages with optimized CTAs and lead magnets",
+    ],
+    steps: [
+      "Design & develop using WordPress/Unbounce best practices",
+      "Integrate CRM and tracking with Google Tag Manager",
+      "Conduct A/B testing for headlines and conversion elements",
+      "Ensure speed, SEO, and mobile responsiveness",
+      "Submit final website along with conversion insights",
+      "Present your work & face mock interview evaluations",
+    ],
+    note: "",
+    logos: ["meta.png", "google-ads.png", "analytics.png"],
+    bgGradient:
+      "linear-gradient(280deg, rgba(255, 217, 205, 0) 0%, #CDFFDE 53.35%)",
+    bgsolid: "#CDFFDE",
+  },
+  {
+    id: 2,
+    title: "Meta Ads Full-Funnel Campaign Execution",
+    duration: "15 Hours (±15 Days of Live Campaign)",
+    heading:
+      "In this practical project, you’ll plan, launch, and manage a full-funnel performance campaign for one Brand across Meta platforms:",
+    details: [
+      "Analyze brand goals and map customer journey stages",
+      "Define precise audience targeting, custom & lookalike segments",
+      "Develop compelling ad creatives and copy for each funnel stage",
+    ],
+    steps: [
+      "Build a complete media plan with budgeting & placement strategy",
+      "Participate in expert-led campaign setup workshops",
+      "Execute a real-time Meta Ads campaign with controlled budget",
+      "Monitor campaign analytics and optimize delivery in real-time",
+      "Submit detailed performance reports with actionable insights",
+      "Present campaign outcomes and undergo mock interview review",
+    ],
+    note: "",
+    logos: ["meta.png", "google-ads.png", "analytics.png"],
+    bgGradient:
+      "linear-gradient(280deg, rgba(255, 240, 205, 0) 0%, #FFD9CD 53.35%)",
+    bgsolid: "#FFD9CD",
+  },
+  {
+    id: 3,
+    title: "Google Ads Performance Campaign Execution",
+    duration: "15 Hours (±15 Days of Live Campaign)",
+    heading:
+      "This project puts you in charge of planning, launching, and optimizing a high-impact Google Ads campaign for one Brand",
+    details: [
+      "Identify brand objectives, product positioning & buyer intent",
+      "Perform advanced keyword research and targeting strategy",
+      "Create ad groups with persuasive ad copies and extensions",
+    ],
+    steps: [
+      "Develop bidding & budgeting strategy with ROAS targets",
+      "Join strategy briefings with industry experts",
+      "Execute a live Google Ads campaign within assigned budget",
+      "Analyze data for CTR, CPC, Conversion Rate, and ROI",
+      "Optimize campaigns for maximum performance and efficiency",
+      "Submit final campaign performance reports with insights",
+      "Present your campaign results during a mock client pitch session",
+    ],
+    note: "",
+    logos: ["meta.png", "google-ads.png", "analytics.png"],
+    bgGradient:
+      "linear-gradient(280deg, rgba(205, 255, 236, 0) 0%, #FFD9CD 53.35%)",
+    bgsolid: "#FFD9CD",
+  },
+  {
+    id: 4,
+    title: "Analytics, Attribution & CRO Implementation",
+    duration: "15 Hours (±15 Days of Live Campaign)",
+    heading:
+      "In this end-to-end project, you’ll measure, analyze, and optimize a complete digital campaign with advanced analytics tools:",
+    details: [
+      "Implement GA4 & Google Tag Manager for full funnel tracking",
+      "Set up event tracking for key conversion actions",
+      "Use heatmaps & scroll maps (Hotjar/Clarity) for behavior analysis",
+    ],
+    steps: [
+      "Apply attribution models (First Click, Last Click, Linear, Time Decay)",
+      "Develop a Conversion Rate Optimization (CRO) framework",
+      "Test landing page variants for headlines, CTAs, and layouts",
+      "Generate detailed dashboards for ROAS, CTR, CPC, and CPA",
+      "Submit an in-depth CRO & Attribution Report with insights",
+      "Present findings and optimization roadmap in a mock client review",
+    ],
+    note: "",
+    logos: ["meta.png", "google-ads.png", "analytics.png"],
+    bgGradient:
+      "linear-gradient(280deg, rgba(205, 255, 236, 0) 0%, #CECDFF 53.35%)",
+    bgsolid: "#CECDFF",
+  },
+];
 
 const aiVibeCaseStudies: CaseStudiesSection = {
   heading: "Glimpse of Brand Case Studies",
@@ -162,6 +266,13 @@ const PerformanceMarketingAndMediaBuying: CoursesType = {
     skills: highlightSkills,
   },
   caseStudies: aiVibeCaseStudies,
+  liveProjects: {
+    sectionId: "section6",
+    heading: "AI Vibe Marketing Live Projects",
+    description:
+      "Practical, hands-on projects to apply AI marketing skills in real-world brand scenarios.",
+    projects: liveProjectsData,
+  },
 };
 
 export default PerformanceMarketingAndMediaBuying;
