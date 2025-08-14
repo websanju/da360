@@ -115,7 +115,14 @@ export default function courseDetail() {
           digitalNarketingTrainingInstitute.LearningRoadmapProps.description
         }
       />
-      <LiveProjectsSlider section="section6" />
+      <LiveProjectsSlider
+        section={digitalNarketingTrainingInstitute.liveProjects!.section}
+        heading={digitalNarketingTrainingInstitute.liveProjects!.heading}
+        description={
+          digitalNarketingTrainingInstitute.liveProjects!.description
+        }
+        projects={digitalNarketingTrainingInstitute.liveProjects!.projects}
+      />
       <CaseStudies data={digitalNarketingTrainingInstitute.caseStudies} />
       <Banner />
       <PeopleSlider />

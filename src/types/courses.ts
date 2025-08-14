@@ -4,7 +4,7 @@ import { CaseStudiesSection } from "./caseStudies";
 import { Project } from "@/components/liveProjectsSlider";
 export interface CoursesType {
   liveProjects?: {
-    sectionId: string;
+    section: string;
     heading: string;
     description?: string;
     projects: Project[];

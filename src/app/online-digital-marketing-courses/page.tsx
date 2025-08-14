@@ -99,7 +99,12 @@ export default function courseDetail() {
       <VideoSection />
       <Highlights section="section5" />
       <LearningRoadmap />
-      <LiveProjectsSlider section="section6" />
+      <LiveProjectsSlider
+        section={onlineDigitalMarketingCourses.liveProjects!.section}
+        heading={onlineDigitalMarketingCourses.liveProjects!.heading}
+        description={onlineDigitalMarketingCourses.liveProjects!.description}
+        projects={onlineDigitalMarketingCourses.liveProjects!.projects}
+      />
       <CaseStudies data={onlineDigitalMarketingCourses.caseStudies} />
       <Banner />
       <PeopleSlider />

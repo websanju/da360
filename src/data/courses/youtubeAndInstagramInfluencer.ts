@@ -268,7 +268,7 @@ const PerformanceMarketingAndMediaBuying: CoursesType = {
   },
   caseStudies: aiVibeCaseStudies,
   liveProjects: {
-    sectionId: "section6",
+    section: "section6",
     heading: "AI Vibe Marketing Live Projects",
     description:
       "Practical, hands-on projects to apply AI marketing skills in real-world brand scenarios.",

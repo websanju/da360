@@ -28,14 +28,14 @@ export interface Project {
 }
 
 interface LiveProjectsSliderProps {
-  sectionId?: string;
+  section?: string;
   heading: string;
   description?: string;
   projects: Project[];
 }
 
 export default function LiveProjectsSlider({
-  sectionId,
+  section,
   heading,
   description,
   projects,
@@ -48,7 +48,7 @@ export default function LiveProjectsSlider({
   };
 
   return (
-    <section className={styles.liveProjectsSlider} id={sectionId}>
+    <section className={styles.liveProjectsSlider} id={section}>
       <div className="container">
         <SectionHeader
           wrapperMarginBottom={{ desktop: "60px", mobile: "40px" }}

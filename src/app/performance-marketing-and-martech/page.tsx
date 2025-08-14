@@ -111,7 +111,12 @@ export default function courseDetail() {
           youtubeAndInstagramInfluencer.LearningRoadmapProps.description
         }
       /> */}
-      <LiveProjectsSlider section="section6" />
+      <LiveProjectsSlider
+        section={performanceMarketingAndMartech.liveProjects!.section}
+        heading={performanceMarketingAndMartech.liveProjects!.heading}
+        description={performanceMarketingAndMartech.liveProjects!.description}
+        projects={performanceMarketingAndMartech.liveProjects!.projects}
+      />
       <CaseStudies data={performanceMarketingAndMartech.caseStudies} />
       {/* <Banner /> */}
       <PeopleSlider />

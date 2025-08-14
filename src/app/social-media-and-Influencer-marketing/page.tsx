@@ -115,7 +115,14 @@ export default function courseDetail() {
           SocialMediaAndInfluencerMarketing.LearningRoadmapProps.description
         }
       />
-      <LiveProjectsSlider section="section6" />
+      <LiveProjectsSlider
+        section={SocialMediaAndInfluencerMarketing.liveProjects!.section}
+        heading={SocialMediaAndInfluencerMarketing.liveProjects!.heading}
+        description={
+          SocialMediaAndInfluencerMarketing.liveProjects!.description
+        }
+        projects={SocialMediaAndInfluencerMarketing.liveProjects!.projects}
+      />
       <CaseStudies data={SocialMediaAndInfluencerMarketing.caseStudies} />
       <Banner />
       <PeopleSlider />

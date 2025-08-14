@@ -125,7 +125,14 @@ export default function courseDetail() {
             .description
         }
       />
-      <LiveProjectsSlider section="section6" />
+      <LiveProjectsSlider
+        section={socialContentCreatorAndVideoProduction.liveProjects!.section}
+        heading={socialContentCreatorAndVideoProduction.liveProjects!.heading}
+        description={
+          socialContentCreatorAndVideoProduction.liveProjects!.description
+        }
+        projects={socialContentCreatorAndVideoProduction.liveProjects!.projects}
+      />
       <CaseStudies data={socialContentCreatorAndVideoProduction.caseStudies} />
       <Banner />
       <PeopleSlider />

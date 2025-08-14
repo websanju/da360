@@ -115,7 +115,14 @@ export default function courseDetail() {
           performanceMarketingAndMediaBuying.LearningRoadmapProps.description
         }
       />
-      <LiveProjectsSlider section="section6" />
+      <LiveProjectsSlider
+        section={performanceMarketingAndMediaBuying.liveProjects!.section}
+        heading={performanceMarketingAndMediaBuying.liveProjects!.heading}
+        description={
+          performanceMarketingAndMediaBuying.liveProjects!.description
+        }
+        projects={performanceMarketingAndMediaBuying.liveProjects!.projects}
+      />
       <CaseStudies data={performanceMarketingAndMediaBuying.caseStudies} />
       <Banner />
       <PeopleSlider />

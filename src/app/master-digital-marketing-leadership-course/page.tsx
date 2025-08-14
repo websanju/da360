@@ -107,7 +107,12 @@ export default function courseDetail() {
           digitalMarketingLeadership.LearningRoadmapProps.description
         }
       />
-      <LiveProjectsSlider section="section6" />
+      <LiveProjectsSlider
+        section={digitalMarketingLeadership.liveProjects!.section}
+        heading={digitalMarketingLeadership.liveProjects!.heading}
+        description={digitalMarketingLeadership.liveProjects!.description}
+        projects={digitalMarketingLeadership.liveProjects!.projects}
+      />
       <CaseStudies data={digitalMarketingLeadership.caseStudies} />
       <Banner />
       <PeopleSlider />

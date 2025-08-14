@@ -110,7 +110,7 @@ export default function courseDetail() {
       /> */}
 
       <LiveProjectsSlider
-        sectionId={AiVibeMarketing.liveProjects!.sectionId}
+        section={AiVibeMarketing.liveProjects!.section}
         heading={AiVibeMarketing.liveProjects!.heading}
         description={AiVibeMarketing.liveProjects!.description}
         projects={AiVibeMarketing.liveProjects!.projects}
