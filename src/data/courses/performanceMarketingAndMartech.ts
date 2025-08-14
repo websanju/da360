@@ -6,21 +6,16 @@ import { Project } from "@/components/liveProjectsSlider";
 const liveProjectsData: Project[] = [
    {
     id: 1,
-    title: "WordPress Website Development",
+    title: "Complete Google Ads Campaign",
     duration: "15 Hours (±15 Days of Live Campaign)",
     heading:
-      "In this hands-on project, you’ll build and launch a fully functional website for one Brand, covering every critical phase",
+      "",
     details: [
-      "Understand brand goals and digital requirements",
-      "Research audience persona and define content strategy",
-      "Plan site structure, layout, and user experience",
+      "",
     ],
     steps: [
-      "Design and develop using WordPress best practices",
-      "Participate in live briefings with industry experts",
-      "Build the site within the project scope and deadline",
-      "Submit final website along with optimization insights",
-      "Present your work & face mock interview evaluations",
+      "Set up, optimize & report on a multi-ad group campaign",
+      "Implement conversion tracking with GA4 & GTM",
     ],
     note: "",
     logos: ["meta.png", "google-ads.png", "analytics.png"],
@@ -30,22 +25,17 @@ const liveProjectsData: Project[] = [
   },
   {
     id: 2,
-    title: "Meta Ads Campaign Execution",
+    title: "High-Converting Landing Page",
     duration: "15 Hours (±15 Days of Live Campaign)",
     heading:
-      "In this practical project, you’ll plan, launch, and manage a full-funnel advertising campaign for one Brand across Meta platforms:",
+      "",
     details: [
-      "Deep-dive into brand objectives and customer journey",
-      "Define precise audience targeting and segmentation",
-      "Craft compelling ad creatives and conversion-focused copies",
+      "",
+     
     ],
     steps: [
-      "Develop complete media plan with bidding & placement strategy",
-      "Attend expert-led briefings and campaign launch walkthrough",
-      "Go live with budget-controlled Meta Ads campaign",
-      "Monitor performance and optimize delivery in real-time",
-      "Submit final analytics reports with insights and recommendations",
-      "Present campaign outcomes and undergo mock interview review",
+      "Build & design a landing page for lead generation",
+      "Test variations for maximum conversion rate",
     ],
     note: "",
     logos: ["meta.png", "google-ads.png", "analytics.png"],
@@ -55,22 +45,16 @@ const liveProjectsData: Project[] = [
   },
   {
     id: 3,
-    title: "Google Ads Campaign Execution",
+    title: "Social Media Ad Funnel",
     duration: "15 Hours (±15 Days of Live Campaign)",
     heading:
-      "This project puts you in charge of planning, launching, and optimizing a performance-driven Google Ads campaign for one Brand:",
+      "",
     details: [
-      "Understand brand goals, products, and market positioning",
-      "Identify high-intent keywords and create target segments",
-      "Develop ad groups with compelling headlines and ad copies",
+      "",
     ],
     steps: [
-      "Build a complete media plan including bidding & budgeting strategy",
-      "Participate in strategy meetings with industry experts",
-      "Execute a real-time Google Ads campaign within the assigned budget",
-      "Analyze campaign data and optimize for conversions & ROI",
-      "Submit final performance reports with key metrics and takeaways",
-      "Present your campaign results during a mock interview session",
+      "Plan & execute a paid ads funnel",
+      "Optimize creatives & copy using analytics insights",
     ],
     note: "",
     logos: ["meta.png", "google-ads.png", "analytics.png"],
@@ -80,21 +64,16 @@ const liveProjectsData: Project[] = [
   },
   {
     id: 4,
-    title: "SEO Strategy & Implementation",
+    title: "SEO Content Plan & Execution",
     duration: "15 Hours (±15 Days of Live Campaign)",
     heading:
-      "In this end-to-end SEO project, you'll research, plan, and execute a full-stack Search Engine Optimization strategy for one Brand:",
+      "",
     details: [
-      "Analyze the brand’s current online presence and search performance",
-      "Conduct keyword research to identify ranking opportunities",
-      "Perform complete on-page SEO including meta tags, URL structure & content optimization",
+      "",
     ],
     steps: [
-      "Execute off-page SEO through backlink strategy and outreach plans",
-      "Conduct a detailed SEO audit using industry tools (Ahrefs, SEMrush, etc.)",
-      "Join expert-led sessions to refine your optimization approach",
-      "Submit a strategic SEO roadmap with implementation checklist",
-      "Present your SEO plan and audit report in a mock client pitch session",
+      "Build a keyword-driven content strategy",
+      "Implement on-page optimization & measure results",
     ],
     note: "",
     logos: ["meta.png", "google-ads.png", "analytics.png"],
