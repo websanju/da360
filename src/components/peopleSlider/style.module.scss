@@ -383,6 +383,9 @@
 .modalDialogCentered {
   max-width: 370px;
 }
+// .modalDialogText {
+//   max-width: 370px;
+// }
 
 .modalContent {
   border-radius: 12px;
@@ -413,7 +416,6 @@
       font-size: 16px;
       line-height: 20px;
       letter-spacing: 1%;
-      color: #ffffff;
     }
 
     p {
@@ -421,7 +423,6 @@
       font-size: 10px;
       line-height: 100%;
       letter-spacing: 0%;
-      color: #ffffff;
     }
   }
 }
@@ -457,7 +458,10 @@
       font-size: 16px;
       line-height: 26px;
       letter-spacing: 1%;
-      color: #ffffff;
+      margin-bottom: 10px;
+      :last-child {
+        margin-bottom: 0;
+      }
     }
   }
 }

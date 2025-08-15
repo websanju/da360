@@ -29,13 +29,16 @@ export const slides: SlideContent[] = [
     },
     {
       id: 2,
-      name: "Sonal Lal",
-      designation: "SEO Analyst",
+      name: "Madhu Bhargavi",
+      designation: "Digital Marketing",
       image: "/images/Ambitious/text-1.png",
-      profileImage: "/images/Ambitious/default-avatar.svg",
+      profileImage: "/images/video-testimonials/madhu-bhargavi.png",
       type: "text",
       modalHTML: `
-        <p>I leveraged the new skills in landing a good job...</p>
+        <p>I should Thank DA360, for helping me in rewriting my story</p>
+        <p>Switching from law to digital marketing wasn’t an easy decision. I had doubts, fears, and questions. But joining Digital Academy 360 turned out to be one of the best choices I’ve made. Their structured training, real-world projects, and constant support helped me not only learn digital marketing from scratch but also land a job in the field.</p>
+        <p>What sets DA360 apart is how they truly care about your growth. From personal mentorship to placement assistance, they walk with you every step of the way. I’m proud to say that I changed my career path with confidence — and it started here.</p>
+        <p>To anyone thinking of starting fresh or upgrading your skills, DA 360 is the Best Choice ✨💯</p>
       `,
       bgColor: "#4b896a",
       textColor: "#fff",
@@ -56,13 +59,13 @@ export const slides: SlideContent[] = [
   [
     {
       id: 4,
-      name: "Sonal Lal",
-      designation: "SEO Analyst",
+      name: "Pooja M Reddy",
+      designation: "Digital Marketing",
       image: "/images/Ambitious/text-2.png",
       profileImage: "/images/Ambitious/default-avatar.svg",
       type: "text",
       modalHTML: `
-        <p>Its a good place to learn if you are starting out in Digital Marketing field. Trainers are well-experienced and if you are diligent, they will help you in every way possible...</p>
+        <p>This place was more than just a learning institute. Happy with placement support and guidance i got through out my journey at DA 360. This could be your wise choice to start your carrier in the field of Digital Marketing.</p>
       `,
       bgColor: "#F6B39F",
       textColor: "#000",

@@ -20,6 +20,20 @@ type PeopleSliderProps = {
   description?: string;
 };
 
+const truncateHTML = (html: string, maxLength: number) => {
+  if (!html) return "";
+
+  // Remove all HTML tags to get plain text
+  const text = html.replace(/<[^>]*>?/gm, "");
+
+  // Truncate if needed
+  if (text.length <= maxLength) {
+    return text;
+  }
+
+  return text.substring(0, maxLength) + "...";
+};
+
 const PeopleSlider: React.FC<PeopleSliderProps> = ({ title, description }) => {
   const [selected, setSelected] = useState<Person | null>(null);
   const containerRef = useRef<HTMLDivElement>(null);
@@ -166,7 +180,10 @@ const PeopleSlider: React.FC<PeopleSliderProps> = ({ title, description }) => {
                               style={{ color: person.textColor }}
                               className={styles.textContent}
                               dangerouslySetInnerHTML={{
-                                __html: person.modalHTML as string,
+                                __html: truncateHTML(
+                                  person.modalHTML as string,
+                                  120
+                                ), // ~2–3 lines worth
                               }}
                             />
                           </div>
@@ -276,7 +293,11 @@ const PeopleSlider: React.FC<PeopleSliderProps> = ({ title, description }) => {
           style={{ backgroundColor: "rgba(0,0,0,0.6)" }}
         >
           <div
-            className={`modal-dialog modal-dialog-centered ${styles.modalDialogCentered}`}
+            className={`modal-dialog modal-dialog-centered ${
+              selected.type === "text"
+                ? styles.modalDialogText // new class for text modals
+                : styles.modalDialogCentered
+            }`}
           >
             <div
               className={`${styles.modalContent} modal-content ${
