@@ -11,6 +11,8 @@ export type Person = {
   bgColor: string;
   textColor?: string;
   calssName?: string;
+  maxLength?: number;
+
 };
 
 type SlideContent = Person[];
@@ -88,27 +90,28 @@ export const slides: SlideContent[] = [
   [
     {
       id: 6,
-      name: "Sonal Lal",
-      designation: "SEO Analyst",
+      name: "Avinash Aralappanavar",
+      designation: "Full Stack Developer",
       image: "/images/Ambitious/text-3.png",
-      profileImage: "/images/Ambitious/default-avatar.svg",
+      profileImage: "/images/video-testimonials/avinash_aralappanavar.jpg",
       type: "text",
       modalHTML: `
-        <p>Trainers help a lot to understand the concept and clear all your doubts and make the learning easy...</p>
+        <p>I highly recommend Digital Academy 360's full stack development course for anyone looking to enter the software development field. The course provided me with a strong foundation in software development and a job-oriented curriculum that prepared me for the corporate world. The instructors were highly knowledgeable and always available to answer questions. What impressed me the most was that they delivered on their promise of 100% placement. Thanks to Digital Academy 360, I am now a successful full stack developer.</p>
       `,
       bgColor: "#063F2E",
       textColor: "#fff",
       calssName: "greenCard",
+      maxLength: 190,
     },
     {
       id: 7,
-      name: "Sonal Lal",
-      designation: "SEO Analyst",
+      name: "Aswin J Prakash",
+      designation: "Digital Marketing",
       image: "/images/Ambitious/text-4.png",
       profileImage: "/images/Ambitious/default-avatar.svg",
       type: "text",
       modalHTML: `
-        <p>I leveraged the new skills in landing a good job...</p>
+        <p>Learning at Digital Academy 360 was a great experience. The training was practical, the mentors were supportive, and I got hands-on exposure to real digital marketing tools and campaigns. It really helped me grow and I made some amazing friends along the way.</p>
       `,
       bgColor: "#8588E6",
       textColor: "#fff",
@@ -129,14 +132,15 @@ export const slides: SlideContent[] = [
   [
     {
       id: 9,
-      name: "Sonal Lal",
-      designation: "SEO Analyst",
+      name: "Megha Jain",
+      designation: "Digital Marketing",
       image: "/images/Ambitious/text-2.png",
       profileImage: "/images/Ambitious/default-avatar.svg",
       type: "text",
       modalHTML: `
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s...</p>
+        <p>Digital Academy 360 is the best place to learn and grow in digital marketing! I joined their new Leadership & AI program, a 9-month course with an internship opportunity, and it has been an amazing experience. The trainers are highly knowledgeable, supportive, and teach everything from scratch, making it easy for beginners to understand.</p>
+        <p>The academy provides a well-structured curriculum, hands-on training, and real-time projects that help in gaining practical skills. The learning environment is friendly, and the trainers are always ready to clear doubts.</p>
+        <p>I am truly grateful to my trainers and batchmates for their continuous support throughout this journey. If you want to build and grow your career in digital marketing with the best guidance, Digital Academy 360 is the perfect place to start</p>
       `,
       bgColor: "#C5EBD4",
       textColor: "#000",
@@ -154,13 +158,13 @@ export const slides: SlideContent[] = [
     },
     {
       id: 2,
-      name: "Sonal Lal",
-      designation: "SEO Analyst",
+      name: "Chandana Chandu",
+      designation: "Digital Marketing",
       image: "/images/Ambitious/text-1.png",
-      profileImage: "/images/Ambitious/default-avatar.svg",
+      profileImage: "/images/video-testimonials/chandana-chandu.png",
       type: "text",
       modalHTML: `
-        <p>I leveraged the new skills in landing a good job...</p>
+        <p>I was completely new to digital marketing, but this course made it so easy to learn, The lessons were well structured and covered all the important topics. I learned how to use social media for business, how to create ads, and how to attract more customers online. The trainers were friendly and explained everything in simple words. Thank to Digital Academy 360 for the Great Learning experience</p>
       `,
       bgColor: "#4b896a",
       textColor: "#fff",
@@ -181,14 +185,13 @@ export const slides: SlideContent[] = [
   [
     {
       id: 4,
-      name: "Sonal Lal",
-      designation: "SEO Analyst",
+      name: "Anjali B",
+      designation: "Digital Marketing",
       image: "/images/Ambitious/text-2.png",
       profileImage: "/images/Ambitious/default-avatar.svg",
       type: "text",
       modalHTML: `
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s...</p>
+        <p>I was an introvert and wanted to learn Digital Marketing, so I joined the 6 month course at Digital Academy 360. In the beginning, it was very difficult for me when the trainers asked us to present in class. I had no hope of completing the course because I used to get very nervous. But later, the trainers encouraged me a lot, and with their support, I improved. Eventually, I even won the Best Performer for Presentation award. After completing the course, I got placed as a Performance Marketer. It was a life changing experience for me.</p>
       `,
       bgColor: "#FED3DA",
       textColor: "#000",
@@ -210,27 +213,29 @@ export const slides: SlideContent[] = [
   [
     {
       id: 6,
-      name: "Sonal Lal",
-      designation: "SEO Analyst",
+      name: "Parimitha A Pari",
+      designation: "Digital Marketing",
       image: "/images/Ambitious/text-3.png",
       profileImage: "/images/Ambitious/default-avatar.svg",
       type: "text",
       modalHTML: `
-        <p>Trainers help a lot to understand the concept and clear all your doubts and make the learning easy...</p>
+        <p>I have completed digital marketing course at digital academy 360 and it was greatful experience. The trainers provided hands on guidence that helped me to build strong practical skills in SEO, Google ads, and social media marketing.</p>
+        <p>Thank you, Digital Academy 360, for such a valuable learning experience.</p>
       `,
       bgColor: "#063F2E",
       textColor: "#fff",
       calssName: "greenCard",
+      maxLength: 190,
     },
     {
       id: 7,
-      name: "Sonal Lal",
-      designation: "SEO Analyst",
+      name: "Darshana Das",
+      designation: "Digital Marketing",
       image: "/images/Ambitious/text-4.png",
       profileImage: "/images/Ambitious/default-avatar.svg",
       type: "text",
       modalHTML: `
-        <p>I leveraged the new skills in landing a good job...</p>
+        <p>I joined Digital Academy 360 for a Digital Marketing course after doing a lot of research. During the course, I got the chance to work on freelancing projects with the help of the trainers. After completing the course, I gained more experience and became a freelancer. I am thankful to Digital Academy 360 for their support.</p>
       `,
       bgColor: "#8588E6",
       textColor: "#fff",
@@ -251,14 +256,14 @@ export const slides: SlideContent[] = [
   [
     {
       id: 9,
-      name: "Sonal Lal",
+      name: "Atul Kumar",
       designation: "SEO Analyst",
       image: "/images/Ambitious/text-2.png",
       profileImage: "/images/Ambitious/default-avatar.svg",
       type: "text",
       modalHTML: `
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s...</p>
+        <p>Digital academy 360 is the best institute for digital marketing training. The trainers are well versed to provide you a quality training with real-time examples. They are always ready to clear even the basic doubt about what we ask them. They are very friendly and experienced trainers. I would like to thank my trainer Rohith sir, Kamlesh sir & Subash sir for helping and supporting me throughout the learning period.</p>
+        <p>I also like to thank Sandhya ma'am and Ashwin sir as both was so helpful and kind throughout the admission process to internship & placements.</p>
       `,
       bgColor: "#C5EBD4",
       textColor: "#000",
@@ -276,13 +281,14 @@ export const slides: SlideContent[] = [
     },
     {
       id: 2,
-      name: "Sonal Lal",
-      designation: "SEO Analyst",
+      name: "Sunil Sharma",
+      designation: "Digital Marketing",
       image: "/images/Ambitious/text-1.png",
       profileImage: "/images/Ambitious/default-avatar.svg",
       type: "text",
       modalHTML: `
-        <p>I leveraged the new skills in landing a good job...</p>
+        <p>My experience with Digital Academy 360 was amazing . The Faculty was an expert and was very good in communicating and even  the method of teaching. They help you a lot with the placements and internships. I am working with a good organization now just because  Digital Academy 360 Jayanagar branch. Special thanks teachers and faculties I'm extremely happy !!</p>
+        <p>Thank you Digital Academy 360 Jayanagar branch.</p>
       `,
       bgColor: "#4b896a",
       textColor: "#fff",

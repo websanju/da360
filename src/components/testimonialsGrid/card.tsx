@@ -2,9 +2,11 @@
 import React, { useRef, useState } from "react";
 import styles from "./styles.module.scss";
 import Image from "next/image";
-import { usePopup } from "@components/widgets/popup/PopupContext";
+import { logoMap } from "./logoMap";
+// import { usePopup } from "@components/widgets/popup/PopupContext";
 
 type Testimonial = {
+  brand?: string;
   id: number;
   type: "text" | "video" | "logo";
   name: string;
@@ -20,9 +22,9 @@ const Card = ({ item }: { item: Testimonial }) => {
   const videoRef = useRef<HTMLVideoElement>(null);
   const [isPlaying, setIsPlaying] = useState(false);
   const [hovered, setHovered] = useState(false);
-
-  const { openPopup } = usePopup();
-  const { closePopup } = usePopup();
+  const logoKey = item.brand?.toLowerCase() || "";
+  // const { openPopup } = usePopup();
+  // const { closePopup } = usePopup();
   const handlePlay = () => {
     videoRef.current?.play();
     setIsPlaying(true);
@@ -36,28 +38,28 @@ const Card = ({ item }: { item: Testimonial }) => {
     setIsPlaying(false);
   };
 
-  const handleReviewClick = (e: React.MouseEvent) => {
-    e.stopPropagation();
-    if (item.review) {
-      openPopup(
-        <div className={styles.popupContent}>
-          <button className={styles.closeButton} onClick={() => closePopup()}>
-            <Image
-              src="/images/icons/close.svg"
-              alt="logo"
-              width={14}
-              height={14}
-            />
-          </button>
-          <h3>{item.name}</h3>
-          <p>{item.review}</p>
-        </div>,
-        {
-          title: `Review`,
-        }
-      );
-    }
-  };
+  // const handleReviewClick = (e: React.MouseEvent) => {
+  //   e.stopPropagation();
+  //   if (item.review) {
+  //     openPopup(
+  //       <div className={styles.popupContent}>
+  //         <button className={styles.closeButton} onClick={() => closePopup()}>
+  //           <Image
+  //             src="/images/icons/close.svg"
+  //             alt="logo"
+  //             width={14}
+  //             height={14}
+  //           />
+  //         </button>
+  //         <h3>{item.name}</h3>
+  //         <p>{item.review}</p>
+  //       </div>,
+  //       {
+  //         title: `Review`,
+  //       }
+  //     );
+  //   }
+  // };
 
   return (
     <div className={styles.card}>
@@ -86,9 +88,8 @@ const Card = ({ item }: { item: Testimonial }) => {
               ))}
             </div>
           </div>
-          <p className={styles.review} onClick={handleReviewClick}>
-            {item.review}
-          </p>
+          {/* onClick={handleReviewClick} */}
+          <p className={styles.review}>{item.review}</p>
           <div className={styles.footer}>
             <Image
               src={item.avatar}
@@ -213,18 +214,22 @@ const Card = ({ item }: { item: Testimonial }) => {
               />
             </div>
           </div>
-          <p className={styles.review} onClick={handleReviewClick}>
-            {item.review}
-          </p>
+          {/* onClick={handleReviewClick} */}
+          <div
+            className={styles.review}
+            dangerouslySetInnerHTML={{ __html: item.review || "" }}
+          />
           <div className={styles.footerBox}>
             <div className={styles.footer}>
-              <Image
-                src={item.avatar}
-                width={40}
-                height={40}
-                alt={item.name}
-                className={styles.avatar}
-              />
+              <span>
+                <Image
+                  src={item.avatar}
+                  width={40}
+                  height={40}
+                  alt={item.name}
+                  className={styles.avatar}
+                />
+              </span>
               <div>
                 <div className={styles.name}>{item.name}</div>
                 {item.source && (
@@ -235,8 +240,8 @@ const Card = ({ item }: { item: Testimonial }) => {
             <div className={styles.logobox}>
               <div className={styles.logoWrapper}>
                 <Image
-                  src={"/images/devicon_google.svg"}
-                  alt={item.name}
+                  src={logoMap[logoKey] || "/images/devicon_google.svg"}
+                  alt={item.brand || item.name}
                   width={32}
                   height={32}
                   className={styles.logo}

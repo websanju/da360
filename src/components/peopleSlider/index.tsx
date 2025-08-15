@@ -19,19 +19,20 @@ type PeopleSliderProps = {
   title?: string;
   description?: string;
 };
-
+type ExtendedPerson = Person & {
+  maxLength?: number;
+};
 const truncateHTML = (html: string, maxLength: number) => {
   if (!html) return "";
-
-  // Remove all HTML tags to get plain text
   const text = html.replace(/<[^>]*>?/gm, "");
-
-  // Truncate if needed
-  if (text.length <= maxLength) {
-    return text;
-  }
-
+  if (text.length <= maxLength) return text;
   return text.substring(0, maxLength) + "...";
+};
+
+// ✅ Optional helper for responsive or per-card truncation
+const getDynamicMaxLength = (person: ExtendedPerson) => {
+  if (person.maxLength) return person.maxLength;
+  return 120;
 };
 
 const PeopleSlider: React.FC<PeopleSliderProps> = ({ title, description }) => {
@@ -182,8 +183,8 @@ const PeopleSlider: React.FC<PeopleSliderProps> = ({ title, description }) => {
                               dangerouslySetInnerHTML={{
                                 __html: truncateHTML(
                                   person.modalHTML as string,
-                                  120
-                                ), // ~2–3 lines worth
+                                  getDynamicMaxLength(person) // ✅ now dynamic
+                                ),
                               }}
                             />
                           </div>
@@ -339,7 +340,10 @@ const PeopleSlider: React.FC<PeopleSliderProps> = ({ title, description }) => {
                           className={styles.profileImage}
                         />
                       </div>
-                      <div className={styles.modaldesignation}>
+                      <div
+                        className={styles.modaldesignation}
+                        style={{ color: selected.textColor }}
+                      >
                         <strong>{selected.name}</strong>
                         <p className={styles.designation}>
                           {selected.designation}

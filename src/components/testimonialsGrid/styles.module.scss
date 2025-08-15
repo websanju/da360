@@ -54,7 +54,6 @@
   margin-bottom: 12px;
 }
 
-
 .popupContent {
   position: relative;
 
@@ -72,16 +71,20 @@
   }
 }
 
-
-
 .review {
   font-weight: 500;
-  font-size: 16px;
-  line-height: 156%;
   letter-spacing: 0%;
   text-transform: capitalize;
-  color: #000;
   margin-bottom: 30px;
+  p {
+    font-size: 16px;
+    line-height: 156%;
+    color: #000;
+    margin-bottom: 10px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
 }
 
 .videoWrapper {
@@ -101,6 +104,11 @@
   display: flex;
   align-items: center;
   gap: 16px;
+  span {
+    background-color: #f2f2f2;
+    border-radius: 100px;
+    padding: 2px;
+  }
 }
 
 .avatar {
@@ -181,12 +189,12 @@
   }
 
   &::before {
-    background: #1D1D1D;
+    background: #1d1d1d;
     animation: pulse-border 1500ms ease-out infinite;
   }
 
   &::after {
-    background: #1D1D1D;
+    background: #1d1d1d;
     z-index: 1;
     transition: all 200ms;
   }
@@ -224,7 +232,6 @@
 }
 
 @keyframes scale-up-center {
-
   0% {
     transform: scale(0.5);
   }
@@ -235,7 +242,6 @@
 }
 
 @media (width <=1260px) {
-
   .gridWrapper {
     display: flex;
     gap: 24px;
@@ -243,5 +249,4 @@
     flex-direction: column;
     margin-bottom: 60px;
   }
-
 }
