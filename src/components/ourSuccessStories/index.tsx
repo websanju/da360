@@ -29,6 +29,8 @@ interface StoryHeader {
   headerTitle: string;
   description: string;
   section?: string;
+  className?: string; //
+  className2?: string; //
 }
 
 export interface CaseStudy {
@@ -121,13 +123,18 @@ const SuccessStories: React.FC<StoryHeader & {}> = ({
   headerTitle,
   description,
   section,
+  className,
+  className2,
 }) => {
   const storySlides: StoryCard[] = [...stories, { type: "final" }];
   const { openPopup } = usePopup();
   return (
-    <section className={styles.successSection} id={section}>
+    <section
+      className={`${styles.successSection} ${className || ""}`}
+      id={section}
+    >
       <div className="container">
-        <div className={styles.successWrapper}>
+        <div className={`${styles.successWrapper} ${className2 || ""}`}>
           <div className={styles.storiesHeader}>
             <SectionHeader
               wrapperMarginBottom={{ desktop: "24px", mobile: "40px" }}

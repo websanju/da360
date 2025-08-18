@@ -1,14 +1,14 @@
 "use client";
 import { useEffect } from "react";
 import styles from "./style.module.scss";
-import Image from "next/image";
-import Link from "next/link";
+// import Image from "next/image";
+// import Link from "next/link";
 import { Sora } from "next/font/google";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
-import UpArrow from "@/components/Ui/svg/arrowUp";
-import StudentArrow from "@/components/Ui/svg/studentArrow";
+// import UpArrow from "@/components/Ui/svg/arrowUp";
+// import StudentArrow from "@/components/Ui/svg/studentArrow";
 // import LearnSlider from "@components/learnSlider";
 
 // Font configuration for Sora
@@ -20,86 +20,86 @@ const sora = Sora({
 });
 
 // Define TypeScript interface for student data
-interface Student {
-  name: string;
-  designation: string;
-  company: string;
-  bgColor: string;
-  iconColor: string;
-  cardClass: string;
-}
+// interface Student {
+//   name: string;
+//   designation: string;
+//   company: string;
+//   bgColor: string;
+//   iconColor: string;
+//   cardClass: string;
+// }
 
 // Sample student data
-const students: Student[] = [
-  {
-    name: "Praveen",
-    designation: "Ass. Manager - Marketing",
-    company: "INTELLIPAT",
-    bgColor: "#4A6EE6",
-    iconColor: "#4A6EE6",
-    cardClass: "cardOne",
-  },
-  {
-    name: "Anjali",
-    designation: "PPC TRAINEE",
-    company: "VALUELEAF",
-    bgColor: "#4CCE6D",
-    iconColor: "#4CCE6D",
-    cardClass: "cardTwo",
-  },
-  {
-    name: "Mayank",
-    designation: "Ass. Manager - Marketing",
-    company: "INTELLIPAT",
-    bgColor: "#E53F43",
-    iconColor: "#E53F43",
-    cardClass: "cardThree",
-  },
-  {
-    name: "Mayank",
-    designation: "Ass. Manager - Marketing",
-    company: "INTELLIPAT",
-    bgColor: "#945EFF",
-    iconColor: "#945EFF",
-    cardClass: "cardFour",
-  },
-  {
-    name: "Mayank",
-    designation: "Ass. Manager - Marketing",
-    company: "INTELLIPAT",
-    bgColor: "#FFEC5E",
-    iconColor: "#FFEC5E",
-    cardClass: "cardFive",
-  },
-];
+// const students: Student[] = [
+//   {
+//     name: "Praveen",
+//     designation: "Ass. Manager - Marketing",
+//     company: "INTELLIPAT",
+//     bgColor: "#4A6EE6",
+//     iconColor: "#4A6EE6",
+//     cardClass: "cardOne",
+//   },
+//   {
+//     name: "Anjali",
+//     designation: "PPC TRAINEE",
+//     company: "VALUELEAF",
+//     bgColor: "#4CCE6D",
+//     iconColor: "#4CCE6D",
+//     cardClass: "cardTwo",
+//   },
+//   {
+//     name: "Mayank",
+//     designation: "Ass. Manager - Marketing",
+//     company: "INTELLIPAT",
+//     bgColor: "#E53F43",
+//     iconColor: "#E53F43",
+//     cardClass: "cardThree",
+//   },
+//   {
+//     name: "Mayank",
+//     designation: "Ass. Manager - Marketing",
+//     company: "INTELLIPAT",
+//     bgColor: "#945EFF",
+//     iconColor: "#945EFF",
+//     cardClass: "cardFour",
+//   },
+//   {
+//     name: "Mayank",
+//     designation: "Ass. Manager - Marketing",
+//     company: "INTELLIPAT",
+//     bgColor: "#FFEC5E",
+//     iconColor: "#FFEC5E",
+//     cardClass: "cardFive",
+//   },
+// ];
 
 // Student Card Component
-const StudentCard = ({
-  name,
-  designation,
-  company,
-  bgColor,
-  iconColor,
-  cardClass,
-}: Student) => (
-  <div
-    className={`${styles.studentCard} ${cardClass}`}
-    data-parallax-strength="0.1"
-  >
-    <div className={styles.studentBlock}>
-      <div className={styles.studentIcon}>
-        <StudentArrow color={iconColor} />
-      </div>
-      <div className={styles.studentName} style={{ backgroundColor: bgColor }}>
-        {name}
-      </div>
-    </div>
-    <div className={`${styles.studentDetails} ${sora.className}`}>
-      <p>{designation}</p>
-      <span>{company}</span>
-    </div>
-  </div>
-);
+// const StudentCard = ({
+//   name,
+//   designation,
+//   company,
+//   bgColor,
+//   iconColor,
+//   cardClass,
+// }: Student) => (
+//   <div
+//     className={`${styles.studentCard} ${cardClass}`}
+//     data-parallax-strength="0.1"
+//   >
+//     <div className={styles.studentBlock}>
+//       <div className={styles.studentIcon}>
+//         <StudentArrow color={iconColor} />
+//       </div>
+//       <div className={styles.studentName} style={{ backgroundColor: bgColor }}>
+//         {name}
+//       </div>
+//     </div>
+//     <div className={`${styles.studentDetails} ${sora.className}`}>
+//       <p>{designation}</p>
+//       <span>{company}</span>
+//     </div>
+//   </div>
+// );
 
 export default function LearnersSection() {
   useEffect(() => {
@@ -142,7 +142,7 @@ export default function LearnersSection() {
 
       {/* <LearnSlider /> */}
 
-      <div className={styles.imageContainer}>
+      {/* <div className={styles.imageContainer}>
         <div className={styles.imageBoxMobile}>
           <Image
             src="/images/hero-section-mobile.jpg"
@@ -163,7 +163,6 @@ export default function LearnersSection() {
             priority
           />
 
-          {/* Student Names Container */}
           <div className={styles.studentNames}>
             <div className={`container position-relative ${styles.container}`}>
               {students.map((student, index) => (
@@ -176,7 +175,6 @@ export default function LearnersSection() {
             </div>
           </div>
 
-          {/* View All Button */}
           <div className="container position-relative">
             <Link href="/placements" className={styles.viewAllBtn}>
               View All <UpArrow color="#fff" />
@@ -193,7 +191,7 @@ export default function LearnersSection() {
             priority
           />
         </div>
-      </div>
+      </div> */}
 
       {/* Information Bar */}
       <div className={`${styles.infoBar} ${sora.className}`}>

@@ -5,6 +5,7 @@ import BrandLogos from "@components/brandLogos";
 import ProgramsShowcase from "@components/programsShowcase";
 import SelfPacedPrograms from "@components/selfPacedPrograms";
 import OurSuccessStories from "@components/ourSuccessStories";
+import styles from "./page.module.scss";
 import TrustedByLearners from "@components/trustedByLearners";
 import CommunityMeetupSlider from "@components/communityMeetupSlider";
 import GlobalCommunity from "@components/globalCommunity";
@@ -54,6 +55,12 @@ export default function HomePage() {
     <main>
       <HeroSection />
       <PaddingWrapper desktopPaddingBottom="130px" mobilePaddingBottom="60px">
+        <OurSuccessStories
+          headerTitle={"Our Alumni Achievements"}
+          description={"Real People, Real Transitions, Real Success"}
+          className={styles.ourSuccessStorieshome}
+          className2={styles.successWrapperHome}
+        />
         <LearnersSection />
       </PaddingWrapper>
       <TrustedByLearners padding={{ desktop: "0 0 0 0", mobile: "0 0 0 0" }} />
@@ -61,10 +68,7 @@ export default function HomePage() {
 
       <ProgramsShowcase />
       <SelfPacedPrograms />
-      <OurSuccessStories
-        headerTitle={"Our Alumni Achievements"}
-        description={"Real People, Real Transitions, Real Success"}
-      />
+
       <PaddingWrapper desktopPaddingBottom="130px" mobilePaddingBottom="60px">
         <BrandLogos />
       </PaddingWrapper>

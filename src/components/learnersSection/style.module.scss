@@ -39,7 +39,7 @@
   }
 
   .infoBar {
-    background: #FFEC5E;
+    background: #fff;
     padding: 40px 0;
     font-family: var(--font-sora);
 
@@ -96,13 +96,12 @@
         text-align: left;
       }
     }
-
   }
 
   .viewAllBtn {
     border: 2px solid #000000;
     background: #000000;
-    color: #FFFFFF;
+    color: #ffffff;
     height: 40px;
     min-width: 140px;
     margin-bottom: 76px;
@@ -115,11 +114,12 @@
     font-size: 16px;
     line-height: 25px;
     text-align: center;
-    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+      border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 
     &:hover {
-      border: 2px solid #E53F43;
-      background: #E53F43;
+      border: 2px solid #e53f43;
+      background: #e53f43;
     }
   }
 }
@@ -166,7 +166,7 @@
 
   .studentDetails {
     border: 1px solid #000000;
-    background: #FFFFFF;
+    background: #ffffff;
     border-radius: 4px;
     padding: 6px 14px;
     max-width: max-content;
@@ -195,15 +195,15 @@
 
 .cardThree {
   position: absolute;
-bottom: 420px;
-    right: 350px;
+  bottom: 420px;
+  right: 350px;
   align-items: flex-start;
   .studentBlock {
     flex-direction: row;
     margin-left: -40px;
     .studentName {
       color: #fff;
-     }
+    }
     .studentIcon {
       transform: rotate(260deg);
       top: -27px;
@@ -213,26 +213,22 @@ bottom: 420px;
   }
 }
 
-
-
-
-
 .cardOne {
   position: absolute;
-     top: 360px;
-    left: 245px;
+  top: 360px;
+  left: 245px;
 }
 
 .cardTwo {
   position: absolute;
-      bottom: 360px;
-    left: 170px;
+  bottom: 360px;
+  left: 170px;
 }
 
 .cardFour {
   position: absolute;
-      right: 180px;
-    top: 342px;
+  right: 180px;
+  top: 342px;
   align-items: flex-start;
 
   .studentBlock {
@@ -246,21 +242,20 @@ bottom: 420px;
       left: 6px;
     }
   }
-
 }
 
 .cardFive {
   position: absolute;
-     right: 20px;
-    bottom: 388px;
+  right: 20px;
+  bottom: 388px;
   align-items: flex-start;
 
   .studentBlock {
     flex-direction: row;
     margin-left: -40px;
-     .studentName {
+    .studentName {
       color: #000;
-     } 
+    }
     .studentIcon {
       transform: rotate(260deg);
       top: -27px;
@@ -268,19 +263,17 @@ bottom: 420px;
       left: 6px;
     }
   }
-
 }
 
 .cardSix {
   position: absolute;
   bottom: 532px;
-  right:26%;
+  right: 26%;
   .studentBlock {
-    
     .studentName {
       color: #000;
-     } 
     }
+  }
 }
 
 .accreditationSection {
@@ -297,7 +290,7 @@ bottom: 420px;
     margin-bottom: 40px;
     margin-top: 0;
   }
-.imageContainer {
+  .imageContainer {
     position: relative;
     .imageToppers {
       left: 0 !important;
@@ -334,7 +327,6 @@ bottom: 420px;
         gap: 24px;
 
         .infoLable {
-
           span {
             font-weight: 400;
             font-size: 18px;
@@ -358,18 +350,10 @@ bottom: 420px;
             font-size: 14px;
           }
         }
-
       }
     }
-
   }
-
-  
 }
 
-
 @media (width <=991px) {
-
-
-
 }
