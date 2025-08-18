@@ -21,14 +21,14 @@ const courses = [
     bgColor: "#93EABF",
     imgSrc: "/images/bootcamps/course02.jpg",
   },
-  {
-    title: "LinkedIn Marketing Bootcamp",
-    duration: "2 Month Course",
-    assignments: "80+ Hours of Learning",
-    projects: "10+ Tools",
-    bgColor: "#FFEAB2",
-    imgSrc: "/images/bootcamps/course03.jpg",
-  },
+  // {
+  //   title: "LinkedIn Marketing Bootcamp",
+  //   duration: "2 Month Course",
+  //   assignments: "80+ Hours of Learning",
+  //   projects: "10+ Tools",
+  //   bgColor: "#FFEAB2",
+  //   imgSrc: "/images/bootcamps/course03.jpg",
+  // },
   {
     title: "AI Marketing / MarTech / Video",
     duration: "2 Month Course",
