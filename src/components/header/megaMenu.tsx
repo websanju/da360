@@ -74,16 +74,14 @@ export default function MegaMenu({ closeMenu }: MegaMenuProps) {
         </ul>
       </div>
 
-      <div className={`${styles.dropdownColumnBox}`}>
-        <div
-          className={`${styles.dropdownColumnGroup} ${
-            tabs[activeTab].key === "leadership"
-              ? styles.leadershipColumnGroup
-              : ""
-          }`}
-        >
-          {renderCourses()}
-        </div>
+      <div
+        className={`${styles.dropdownColumnGroup} ${
+          coursesData[tabs[activeTab].key].length === 2
+            ? styles.leadershipColumnGroup
+            : ""
+        }`}
+      >
+        {renderCourses()}
       </div>
     </div>
   );

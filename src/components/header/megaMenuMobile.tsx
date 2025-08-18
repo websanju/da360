@@ -92,7 +92,9 @@ const MobileMenu: React.FC<Props> = ({ onClose }) => {
         </div>
 
         {/* === PGCP Courses === */}
-        <div className={styles.columnGroup}>
+        <div
+          className={`${styles.columnGroup} ${styles.leadershipColumnGroup}`}
+        >
           <h3>PGCP Courses</h3>
 
           <div
@@ -114,7 +116,7 @@ const MobileMenu: React.FC<Props> = ({ onClose }) => {
             </ul>
           </div>
 
-          <div
+          {/* <div
             onClick={() =>
               handleClick("/social-media-and-Influencer-marketing")
             }
@@ -133,7 +135,7 @@ const MobileMenu: React.FC<Props> = ({ onClose }) => {
               {renderListItem("18+ Specialised Tools")}
               {renderListItem("15+ Certifications")}
             </ul>
-          </div>
+          </div> */}
           <div
             onClick={() =>
               handleClick("/performance-marketing-and-media-buying")
@@ -197,7 +199,7 @@ const MobileMenu: React.FC<Props> = ({ onClose }) => {
             </ul>
           </div>
 
-          <div
+          {/* <div
             onClick={() => handleClick("/linkedIn-and-personal-branding")}
             className={styles.navbarDropdownColumn}
           >
@@ -214,7 +216,7 @@ const MobileMenu: React.FC<Props> = ({ onClose }) => {
               {renderListItem("10+ Tools")}
               {renderListItem("2 Linkedin Outreach Flow")}
             </ul>
-          </div>
+          </div> */}
 
           <div
             onClick={() => handleClick("/performance-marketing-and-martech")}
