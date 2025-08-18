@@ -59,7 +59,13 @@ export default function HomePage() {
           headerTitle={"Our Alumni Achievements"}
           description={"Real People, Real Transitions, Real Success"}
           className={styles.ourSuccessStorieshome}
+          fullWidth
           className2={styles.successWrapperHome}
+          breakpoints={{
+            480: { slidesPerView: 1.3 },
+            768: { slidesPerView: 2.3 },
+            1200: { slidesPerView: 4.3 },
+          }}
         />
         <LearnersSection />
       </PaddingWrapper>

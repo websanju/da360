@@ -29,8 +29,10 @@ interface StoryHeader {
   headerTitle: string;
   description: string;
   section?: string;
-  className?: string; //
-  className2?: string; //
+  className?: string;
+  className2?: string;
+  fullWidth?: boolean;
+  breakpoints?: Record<number, { slidesPerView: number }>;
 }
 
 export interface CaseStudy {
@@ -125,6 +127,8 @@ const SuccessStories: React.FC<StoryHeader & {}> = ({
   section,
   className,
   className2,
+  fullWidth,
+  breakpoints,
 }) => {
   const storySlides: StoryCard[] = [...stories, { type: "final" }];
   const { openPopup } = usePopup();
@@ -133,7 +137,7 @@ const SuccessStories: React.FC<StoryHeader & {}> = ({
       className={`${styles.successSection} ${className || ""}`}
       id={section}
     >
-      <div className="container">
+      <div className={fullWidth ? "" : "container"}>
         <div className={`${styles.successWrapper} ${className2 || ""}`}>
           <div className={styles.storiesHeader}>
             <SectionHeader
@@ -178,11 +182,13 @@ const SuccessStories: React.FC<StoryHeader & {}> = ({
                 prevEl: "#customPrev7",
                 nextEl: "#customNext7",
               }}
-              breakpoints={{
-                576: { slidesPerView: 1.3 },
-                768: { slidesPerView: 2.3 },
-                992: { slidesPerView: 3.3 },
-              }}
+              breakpoints={
+                breakpoints || {
+                  576: { slidesPerView: 1.3 },
+                  768: { slidesPerView: 2.3 },
+                  992: { slidesPerView: 3.3 },
+                }
+              }
             >
               {storySlides.map((story, index) => {
                 if ("type" in story && story.type === "final") {
