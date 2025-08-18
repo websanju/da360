@@ -16,14 +16,14 @@ const LeadershipSection = ({ section }: { section: CourseSection }) => (
           </div>
           <div className="row">
             {section.courses.map((course) => (
-              <div key={course.id} className={` col-12 col-md-4`}>
+              <div key={course.id} className={` col-12 col-md-6`}>
                 <div className={`${styles.courseListCard}`}>
                   <div className={styles.courseImg}>
                     <Image
                       src={course.thumb}
                       alt={course.title}
-                      width={422}
-                      height={250}
+                      width={630}
+                      height={350}
                     />
                   </div>
                   <div className={`${styles.cardContent}`}>
