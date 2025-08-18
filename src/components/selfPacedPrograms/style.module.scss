@@ -1,71 +1,71 @@
 .selfPacedProgramsSection {
-    padding-bottom: 140px;
-    padding-top: 80px;
+  padding-bottom: 0;
+  padding-top: 80px;
 }
 
 .sliderWrapper {
-    position: relative;
+  position: relative;
 
-    &:hover {
-        .sliderNavigation {
-            position: absolute;
-            opacity: 1;
-        }
-    }
-
+  &:hover {
     .sliderNavigation {
-        position: absolute;
-        opacity: 0;
-        top: calc(60% - 50px);
-        width: 100%;
-        transition: 0.2s ease-in-out;
-
-        button {
-            width: 50px;
-            height: 50px;
-            right: 25px;
-            border-radius: 50px;
-            box-shadow: none;
-            border: none;
-        }
+      position: absolute;
+      opacity: 1;
     }
+  }
+
+  .sliderNavigation {
+    position: absolute;
+    opacity: 0;
+    top: calc(60% - 50px);
+    width: 100%;
+    transition: 0.2s ease-in-out;
+
+    button {
+      width: 50px;
+      height: 50px;
+      right: 25px;
+      border-radius: 50px;
+      box-shadow: none;
+      border: none;
+    }
+  }
 }
 
 .sliderNavigation {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-    /* Optional: Adjust the space between buttons */
-    position: absolute !important;
-    top: 270px !important;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 10;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  /* Optional: Adjust the space between buttons */
+  position: absolute !important;
+  top: 270px !important;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
 }
 
 .swiperPrev {
-    left: 0px !important;
+  left: 0px !important;
 }
 
 .swiperNext {
-    right: 0px !important;
+  right: 0px !important;
 }
 
 .customSlide {
-    max-width: 350px;
+  max-width: 350px;
 }
 
 .row {
-        --bs-gutter-x: 10px;
+  --bs-gutter-x: 10px;
 }
 
 @media (width <=991px) {
-    .selfPacedProgramsSection {
-        padding-bottom: 60px;
-        padding-top: 60px;
-    }
+  .selfPacedProgramsSection {
+    padding-bottom: 60px;
+    padding-top: 60px;
+  }
 
-    .customSlide {
-        max-width: 300px;
-    }
+  .customSlide {
+    max-width: 300px;
+  }
 }
