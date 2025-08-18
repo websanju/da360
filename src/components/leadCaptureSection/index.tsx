@@ -3,6 +3,7 @@ import styles from "./style.module.scss";
 import Image from "next/image";
 import React from "react";
 import LeadCaptureForm from "@components/widgets/leadCaptureForm";
+import Link from "next/link";
 
 interface LeadCaptureSectionProps {
   headingLineOne: React.ReactNode;
@@ -12,6 +13,9 @@ interface LeadCaptureSectionProps {
   descriptionLineOne: string;
   descriptionLineTow: string;
   gifSrc?: string;
+  applyLabel?: string;
+  applyHref?: string;
+  onApplyClick?: () => void;
 }
 
 const LeadCaptureSection: React.FC<LeadCaptureSectionProps> = ({
@@ -21,6 +25,9 @@ const LeadCaptureSection: React.FC<LeadCaptureSectionProps> = ({
   tags,
   descriptionLineOne,
   descriptionLineTow,
+  applyHref,
+  applyLabel,
+  onApplyClick,
   gifSrc = "/images/face.gif",
 }) => {
   return (
@@ -49,7 +56,18 @@ const LeadCaptureSection: React.FC<LeadCaptureSectionProps> = ({
             <p>{descriptionLineOne}</p>
             <p>{descriptionLineTow}</p>
             <div className={styles.btnAction}>
-              <button className={`${styles.btnRed} btnRed`}>Apply Now</button>
+              {applyHref ? (
+                <Link href={applyHref} className={`${styles.btnRed} btnRed`}>
+                  {applyLabel || "Apply Now"}
+                </Link>
+              ) : (
+                <button
+                  onClick={onApplyClick}
+                  className={`${styles.btnRed} btnRed`}
+                >
+                  {applyLabel || "Apply Now"}
+                </button>
+              )}
               <button className={`${styles.btnWhite} btnWhite`}>
                 Download Brochure
               </button>

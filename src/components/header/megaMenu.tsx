@@ -52,25 +52,35 @@ export default function MegaMenu({ closeMenu }: MegaMenuProps) {
     <div className={styles.megaMenu}>
       <div className={styles.megaMenuTab}>
         <ul>
-          {tabs.map((tab, index) => (
-            <li
-              key={index}
-              className={index === activeTab ? styles.active : ""}
-              onClick={() => setActiveTab(index)}
-            >
-              <div className={styles.menuItem}>
-                {tab.name}
-                <span>
-                  <Image
-                    alt="leftArrow"
-                    height={11}
-                    width={7}
-                    src="/images/leftArrow.svg"
-                  />
-                </span>
-              </div>
-            </li>
-          ))}
+          {tabs.map((tab, index) => {
+            // pick the first course for this tab (or undefined if none)
+            const firstCourse = coursesData[tab.key]?.[0];
+
+            return (
+              <li
+                key={index}
+                className={index === activeTab ? styles.active : ""}
+                onClick={() => setActiveTab(index)}
+              >
+                <div className={styles.menuItem}>
+                  {tab.name}
+                  <span className={styles.navbarTags}>
+                    {firstCourse?.duration && (
+                      <span className={styles.dropdownTag}>
+                        {firstCourse.duration}
+                      </span>
+                    )}
+                    <Image
+                      alt="leftArrow"
+                      height={11}
+                      width={7}
+                      src="/images/leftArrow.svg"
+                    />
+                  </span>
+                </div>
+              </li>
+            );
+          })}
         </ul>
       </div>
 
