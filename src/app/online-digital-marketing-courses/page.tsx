@@ -3,9 +3,9 @@ import CohortDetails from "@components/cohortDetails";
 import CourseHighlights from "@components/courseHighlights";
 import OurSuccessStories from "@components/ourSuccessStories";
 import CounterOnScroll from "@components/counterOnScroll";
-import LifeAtDA360 from "@components/lifeAtDA360";
+// import LifeAtDA360 from "@components/lifeAtDA360";
 import TeamSection from "@components/teamSection";
-import VideoSection from "@components/videoSection";
+// import VideoSection from "@components/videoSection";
 import LearnerEnquiry from "@components/learnerEnquiry";
 import MediaAwards from "@components/mediaAwards";
 import LatestBlogPosts from "@components/latestBlogPosts";
@@ -94,9 +94,9 @@ export default function courseDetail() {
         description={onlineDigitalMarketingCourses.StoryHeader.description}
       />
       <CounterOnScroll />
-      <LifeAtDA360 />
+      {/* <LifeAtDA360 /> */}
       <TeamSection section="section4" />
-      <VideoSection />
+      {/* <VideoSection /> */}
       <Highlights section="section5" />
       <LearningRoadmap />
       <LiveProjectsSlider

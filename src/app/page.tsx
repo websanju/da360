@@ -11,7 +11,7 @@ import CommunityMeetupSlider from "@components/communityMeetupSlider";
 import GlobalCommunity from "@components/globalCommunity";
 import MarqueeBanner from "@components/widgets/marqueeBanner";
 import Comparison from "@components/comparison";
-import LifeAtDA360 from "@components/lifeAtDA360";
+// import LifeAtDA360 from "@components/lifeAtDA360";
 import LatestBlogPosts from "@components/latestBlogPosts";
 import MediaAwards from "@components/mediaAwards";
 import PaddingWrapper from "@components/widgets/PaddingWrapper";
@@ -83,7 +83,7 @@ export default function HomePage() {
       <GlobalCommunity />
       <MarqueeBanner />
       <Comparison />
-      <LifeAtDA360 />
+      {/* <LifeAtDA360 /> */}
       <MediaAwards />
       <PaddingWrapper desktopPaddingBottom="130px" mobilePaddingBottom="60px">
         <LatestBlogPosts />

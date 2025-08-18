@@ -103,63 +103,59 @@ const Footer = () => {
                     <ul>
                       <li>
                         <Link
-                          href="#"
+                          href="/master-digital-marketing-leadership-course"
                           className="text-white text-decoration-none"
                         >
-                          Post Graduation in Digital Marketing
+                          Leadership in Digital Marketing, AI & Entrepreneurship
                         </Link>
                       </li>
                       <li>
                         <Link
-                          href="#"
+                          href="/social-content-creator-and-video-production"
                           className="text-white text-decoration-none"
                         >
-                          Online Digital Marketing Courses
+                          Leadership in Social Content Creator & Video
+                          Production
                         </Link>
                       </li>
                       <li>
                         <Link
-                          href="#"
+                          href="/digital-marketing-training-institute"
                           className="text-white text-decoration-none"
                         >
-                          UG in Digital Business & Entrepreneurship
+                          PGCP in Digital Marketing, E‑Comm & AI
                         </Link>
                       </li>
                       <li>
                         <Link
-                          href="#"
+                          href="/performance-marketing-and-media-buying"
                           className="text-white text-decoration-none"
                         >
-                          Short Term Certifications
+                          PGCP in Performance Marketing & Media Buying
                         </Link>
                       </li>
                       <li>
                         <Link
-                          href="#"
+                          href="/ai-vibe-marketing"
                           className="text-white text-decoration-none"
                         >
-                          Free Digital Marketing Courses Online
+                          AI Vibe Marketing
                         </Link>
                       </li>
                       <li>
                         <Link
-                          href="#"
+                          href="/youtube-and-instagram-and-influencer"
                           className="text-white text-decoration-none"
                         >
-                          Digital Marketing Courses
+                          Youtube & Instagram Influencer
                         </Link>
                       </li>
-                    </ul>
-                  </div>
-                  <div className={`${styles.quickLink} `}>
-                    <h6>Placement Preparation</h6>
-                    <ul>
                       <li>
                         <Link
-                          href="#"
+                          href="/performance-marketing-and-martech"
                           className="text-white text-decoration-none"
                         >
-                          Interview Preparation Course
+                          Performance Marketing & MarTech
                         </Link>
                       </li>
                     </ul>
@@ -172,7 +168,7 @@ const Footer = () => {
                     <ul>
                       <li>
                         <Link
-                          href="#"
+                          href="/about-us"
                           className="text-white text-decoration-none"
                         >
                           About Us
@@ -180,7 +176,7 @@ const Footer = () => {
                       </li>
                       <li>
                         <Link
-                          href="#"
+                          href="/contact-us"
                           className="text-white text-decoration-none"
                         >
                           Contact Us
@@ -188,7 +184,7 @@ const Footer = () => {
                       </li>
                       <li>
                         <Link
-                          href="#"
+                          href="/refer-and-earn"
                           className="text-white text-decoration-none"
                         >
                           Refer & Earn
@@ -204,7 +200,7 @@ const Footer = () => {
                     <ul>
                       <li>
                         <Link
-                          href="#"
+                          href="https://blog.digitalacademy360.com/"
                           className="text-white text-decoration-none"
                         >
                           Blogs
@@ -236,7 +232,7 @@ const Footer = () => {
                     <ul>
                       <li>
                         <Link
-                          href="#"
+                          href="/hire-from-da360"
                           className="text-white text-decoration-none"
                         >
                           Hire From Us
@@ -244,7 +240,7 @@ const Footer = () => {
                       </li>
                       <li>
                         <Link
-                          href="#"
+                          href="/career"
                           className="text-white text-decoration-none"
                         >
                           Work With Us
