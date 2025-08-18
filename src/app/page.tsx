@@ -71,15 +71,14 @@ export default function HomePage() {
       </PaddingWrapper>
       <TrustedByLearners padding={{ desktop: "0 0 0 0", mobile: "0 0 0 0" }} />
       {/* <Accreditation /> */}
-
       <ProgramsShowcase />
       <SelfPacedPrograms />
-
+      x
+      <BrandLogos />
       <PaddingWrapper desktopPaddingBottom="130px" mobilePaddingBottom="60px">
-        <BrandLogos />
+        <GuestFacultySlider />
       </PaddingWrapper>
       <CommunityMeetupSlider />
-      <GuestFacultySlider />
       <GlobalCommunity />
       <MarqueeBanner />
       <Comparison />
