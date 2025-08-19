@@ -7,7 +7,7 @@ const liveProjectsData: Project[] = [
    {
     id: 1,
     title: "Landing Page & Portfolio Website Developmen",
-    duration: "15 Hours (±15 Days of Live Campaign)",
+    // duration: "15 Hours (±15 Days of Live Campaign)",
     heading:
       "In this hands-on project, you’ll design and launch a high-converting landing page and portfolio website for one Brand, covering every critical phase:",
     details: [
@@ -21,10 +21,9 @@ const liveProjectsData: Project[] = [
       "Conduct A/B testing for headlines and conversion elements",
       "Ensure speed, SEO, and mobile responsiveness",
       "Submit final website along with conversion insights",
-      "Present your work & face mock interview evaluations",
     ],
     note: "",
-    logos: ["meta.png", "google-ads.png", "analytics.png"],
+    // logos: ["meta.png", "google-ads.png", "analytics.png"],
     bgGradient:
       "linear-gradient(280deg, rgba(255, 217, 205, 0) 0%, #CDFFDE 53.35%)",
     bgsolid: "#CDFFDE",
@@ -32,7 +31,7 @@ const liveProjectsData: Project[] = [
   {
     id: 2,
     title: "Meta Ads Full-Funnel Campaign Execution",
-    duration: "15 Hours (±15 Days of Live Campaign)",
+    // duration: "15 Hours (±15 Days of Live Campaign)",
     heading:
       "In this practical project, you’ll plan, launch, and manage a full-funnel performance campaign for one Brand across Meta platforms:",
     details: [
@@ -46,10 +45,9 @@ const liveProjectsData: Project[] = [
       "Execute a real-time Meta Ads campaign with controlled budget",
       "Monitor campaign analytics and optimize delivery in real-time",
       "Submit detailed performance reports with actionable insights",
-      "Present campaign outcomes and undergo mock interview review",
     ],
     note: "",
-    logos: ["meta.png", "google-ads.png", "analytics.png"],
+    // logos: ["meta.png", "google-ads.png", "analytics.png"],
     bgGradient:
       "linear-gradient(280deg, rgba(255, 240, 205, 0) 0%, #FFD9CD 53.35%)",
     bgsolid: "#FFD9CD",
@@ -57,7 +55,7 @@ const liveProjectsData: Project[] = [
   {
     id: 3,
     title: "Google Ads Performance Campaign Execution",
-    duration: "15 Hours (±15 Days of Live Campaign)",
+    // duration: "15 Hours (±15 Days of Live Campaign)",
     heading:
       "This project puts you in charge of planning, launching, and optimizing a high-impact Google Ads campaign for one Brand",
     details: [
@@ -72,10 +70,9 @@ const liveProjectsData: Project[] = [
       "Analyze data for CTR, CPC, Conversion Rate, and ROI",
       "Optimize campaigns for maximum performance and efficiency",
       "Submit final campaign performance reports with insights",
-      "Present your campaign results during a mock client pitch session",
     ],
     note: "",
-    logos: ["meta.png", "google-ads.png", "analytics.png"],
+    // logos: ["meta.png", "google-ads.png", "analytics.png"],
     bgGradient:
       "linear-gradient(280deg, rgba(205, 255, 236, 0) 0%, #FFD9CD 53.35%)",
     bgsolid: "#FFD9CD",
@@ -83,7 +80,7 @@ const liveProjectsData: Project[] = [
   {
     id: 4,
     title: "Analytics, Attribution & CRO Implementation",
-    duration: "15 Hours (±15 Days of Live Campaign)",
+    // duration: "15 Hours (±15 Days of Live Campaign)",
     heading:
       "In this end-to-end project, you’ll measure, analyze, and optimize a complete digital campaign with advanced analytics tools:",
     details: [
@@ -97,10 +94,9 @@ const liveProjectsData: Project[] = [
       "Test landing page variants for headlines, CTAs, and layouts",
       "Generate detailed dashboards for ROAS, CTR, CPC, and CPA",
       "Submit an in-depth CRO & Attribution Report with insights",
-      "Present findings and optimization roadmap in a mock client review",
     ],
     note: "",
-    logos: ["meta.png", "google-ads.png", "analytics.png"],
+    // logos: ["meta.png", "google-ads.png", "analytics.png"],
     bgGradient:
       "linear-gradient(280deg, rgba(205, 255, 236, 0) 0%, #CECDFF 53.35%)",
     bgsolid: "#CECDFF",
@@ -121,7 +117,6 @@ const aiVibeCaseStudies: CaseStudiesSection = {
         "Marketing Strategy",
         "Consumer Segmentation",
         "Localization in Campaigns",
-        "Social Media Planning",
       ],
     },
     {
@@ -172,8 +167,8 @@ const PerformanceMarketingAndMediaBuying: CoursesType = {
   leadCapture: {
     titleOne: "PGCP in Performance",
     titleTwo: "Marketing & Media Buying",
-    subtitleOne: "AI-Powered Curriculum Designed for Next-Gen Performance Marketers for Advanced Media",
-    subtitleTwo: "Buying & Ad Management Expertise",
+    subtitleOne: "AI-Powered Curriculum Designed for Next-Gen Performance Marketers for Advanced Media Buying & Ad Management Expertise",
+    subtitleTwo: "",
     tags: ["6-Month Intensive Program", " Includes Real-World Agency Projects"],
   },
   cohortSectionHeading: "PGCP In Performance Marketing & Media Buying",
@@ -194,8 +189,8 @@ const PerformanceMarketingAndMediaBuying: CoursesType = {
     },
   ],
   highlights: [
-    // { icon: "/images/icons/calendar.png", title: "Months", value: "6+" },
-    // { icon: "/images/icons/clock.png", title: "Time", value: "Flexible" },
+    { icon: "/images/icons/calendar.png", title: "Months", value: "6+" },
+    { icon: "/images/icons/clock.png", title: "Time", value: "Flexible" },
     {
       icon: "/images/icons/courses.png",
       title: "Industry-Relevant Modules",
@@ -208,9 +203,9 @@ const PerformanceMarketingAndMediaBuying: CoursesType = {
     },
     { icon: "/images/icons/ai.png", title: "AI Learning Tools", value: "25+" },
     {
-      icon: "/images/icons/certificate.png",
-      title: "Total Learning Hours",
-      value: "240+ Hrs",
+      icon: "/images/icons/hourglass.png",
+      title: "Hours of Practical Learning",
+      value: "240+",
     },
     {
       icon: "/images/icons/case-study.png",
@@ -239,13 +234,13 @@ const PerformanceMarketingAndMediaBuying: CoursesType = {
     },
     {
       icon: "/images/icons/specialisation.png",
-      title: "Specialized AI Tools",
-      value: "20+",
+      title: "Specialized",
+      value: "4",
     },
     {
       icon: "/images/icons/trainer.png",
-      title: "Outcome-Focused Curriculum",
-      value: "100%",
+      title: "Domain Specialist Trainer",
+      value: "07",
     },
   ],
   StoryHeader: {

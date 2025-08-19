@@ -5,7 +5,7 @@ export const curriculumData: CurriculumProps = {
   heading: "Latest Curriculum Reviewed by Industry Leaders",
   description:
     "Cutting-edge digital marketing syllabus—designed by Expert trainers and endorsed by top recruiters and domain experts.",
-  learningMode: "Offline",
+  learningMode: "Online/Offline",
   batchTimings: [
     {
       label: "Online (PGCP & SDP)",

@@ -178,13 +178,13 @@ const highlightSkills: HighlightSkill[] = [
 
 const digitalNarketingTrainingInstitute: CoursesType = {
   leadCapture: {
-    titleOne: "Skill Diploma in",
-    titleTwo: "Digital Marketing & Analytics",
-    subtitleOne: "Job-Oriented Curriculum Designed for Aspiring Digital Marketers",
-    subtitleTwo: "Build In-Demand Skills & Launch Your Career with Confidence",
-    tags: ["3-Month Intensive Program", "Includes 1-Month Agency Internship"],
+    titleOne: "Post Graduate ",
+    titleTwo: "Certification in AI-Powered Digital Marketing & E-Commerce",
+    subtitleOne: "AI-Driven Curriculum Designed for the Next Generation of Digital Marketers Fast-Track Your Career with Future-Ready Skills",
+    subtitleTwo: "",
+    tags: ["6-Month Intensive Program", "Includes 1-Month Agency Internship"],
   },
-  cohortSectionHeading: "Skill Diploma in Digital Marketing & Analytics Cohort Details",
+  cohortSectionHeading: "Post Graduate Certification in AI-Powered Digital Marketing & E-Commerce Cohort Details",
   Cohort: [
     {
       date: "June 16th",
@@ -202,48 +202,48 @@ const digitalNarketingTrainingInstitute: CoursesType = {
     },
   ],
   highlights: [
-    { icon: "/images/icons/calendar.png", title: "Months", value: "6+" },
+    { icon: "/images/icons/calendar.png", title: "Months", value: "6" },
     { icon: "/images/icons/clock.png", title: "Time", value: "Flexible" },
     {
       icon: "/images/icons/courses.png",
-      title: "No Of Individual Courses",
-      value: "15",
+      title: "Industry-Relevant Modules",
+      value: "30+",
     },
     {
       icon: "/images/icons/template.png",
-      title: "Template & Blueprints ",
+      title: "Template and Blueprint",
       value: "08",
     },
     { icon: "/images/icons/ai.png", title: "AI Learning Tools", value: "25+" },
     {
-      icon: "/images/icons/certificate.png",
-      title: "Total Learning Hours",
-      value: "240+ Hrs",
+      icon: "/images/icons/hourglass.png",
+      title: "Hours of Practical Learning",
+      value: "240+",
     },
     {
       icon: "/images/icons/case-study.png",
-      title: "Live Case Studies",
-      value: "35",
+      title: "Case Studies",
+      value: "20+",
     },
     {
       icon: "/images/icons/interview.png",
-      title: "Interview Assistance",
-      value: "5",
+      title: "Mentorship ",
+      value: "1:1",
     },
-    {
-      icon: "/images/icons/internship.png",
-      title: "Internship (Optional)",
-      value: "1 Month",
-    },
+    // {
+    //   icon: "/images/icons/internship.png",
+    //   title: "Internship (Optional)",
+    //   value: "1 Month",
+    // },
     {
       icon: "/images/icons/project.png",
-      title: "Real Time Projects",
-      value: "6+",
+      title: "Capstone Projects",
+      value: "5+",
     },
     {
       icon: "/images/icons/certificate.png",
-      title: "Certifications",
-      value: "18+",
+      title: "Global Certifications",
+      value: "15+",
     },
     {
       icon: "/images/icons/specialisation.png",
@@ -252,7 +252,7 @@ const digitalNarketingTrainingInstitute: CoursesType = {
     },
     {
       icon: "/images/icons/trainer.png",
-      title: "Domain Specialist Trainers",
+      title: "Domain Specialist Trainer",
       value: "07",
     },
   ],

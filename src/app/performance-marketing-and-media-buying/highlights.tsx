@@ -8,6 +8,7 @@ import AiTools from "@components/aiTools";
 import Certifications from "@components/certifications";
 import performanceMarketingAndMediaBuying from "@/data/courses/performanceMarketingAndMediaBuying";
 import { curriculumData } from "./curriculumData";
+import { specialisationData } from "./specialisationData";
 import { toolCategories } from "./aiToolsData";
 import { certificationsData } from "./certificationsData";
 interface HighlightsProps {
@@ -34,7 +35,7 @@ const Highlights = ({ section }: HighlightsProps) => {
                 }
               />
               <Curriculum {...curriculumData} />
-              <AIDigital />
+              <AIDigital {...specialisationData} />
               <DigitalMarketingTools />
               <AiTools
                 heading="Next-Gen AI-Powered Tools"
