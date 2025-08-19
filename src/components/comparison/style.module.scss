@@ -1,7 +1,7 @@
 // components/Comparison.module.scss
 .comparisonSection {
   padding-top: 140px;
-  padding-bottom: 140px;
+  padding-bottom: 0;
 
   .sectionHeader {
     margin-bottom: 60px;
@@ -30,118 +30,113 @@
     justify-content: center;
     flex-wrap: nowrap;
 
+    .labels {
+      margin-top: 170px;
+      margin-right: 15px;
 
-  .labels {
-    margin-top: 170px;
-    margin-right: 15px;
-
-    ul {
-      display: flex;
-      flex-direction: column;
-      gap: 34px;
-
-      li {
-        font-weight: 700;
-        font-style: italic;
-        font-size: 18px;
-        line-height: normal;
-        color: #000000;
-        border-bottom: 0.5px solid rgba(0, 0, 0, 0.4);
-        min-height: 50px;
-
-        span {
-          display: flex;
-        }
-
-        &:last-child {
-          border-bottom: none;
-        }
-      }
-    }
-  }
-
-
-  .card {
-    width: 428px;
-    padding: 34px 42px;
-    border: 2px solid #000000;
-    border-radius: 16px;
-    background-color: #fff;
-
-    h3 {
-      font-weight: 800;
-      font-style: italic;
-      font-size: 24px;
-      line-height: normal;
-      margin-bottom: 18px;
-      min-height: 70px;
-    }
-
-    hr {
-      border-top: 2px solid #000000;
-      opacity: 1;
-      margin-bottom: 25px;
-    }
-
-    ul {
-      display: flex;
-      flex-direction: column;
-      gap: 36px;
-
-      li {
+      ul {
         display: flex;
-        gap: 15px;
-        font-weight: 500;
-        font-size: 16px;
-        line-height: normal;
-        color: #000000;
-        max-width: 340px;
-        min-height: 50px;
+        flex-direction: column;
+        gap: 34px;
+
+        li {
+          font-weight: 700;
+          font-style: italic;
+          font-size: 18px;
+          line-height: normal;
+          color: #000000;
+          border-bottom: 0.5px solid rgba(0, 0, 0, 0.4);
+          min-height: 50px;
+
+          span {
+            display: flex;
+          }
+
+          &:last-child {
+            border-bottom: none;
+          }
+        }
       }
     }
 
-    &.highlight {
+    .card {
+      width: 428px;
+      padding: 34px 42px;
+      border: 2px solid #000000;
+      border-radius: 16px;
+      background-color: #fff;
+
       h3 {
-        color: #fff;
+        font-weight: 800;
+        font-style: italic;
+        font-size: 24px;
+        line-height: normal;
+        margin-bottom: 18px;
+        min-height: 70px;
       }
 
       hr {
-        border-top: 2px solid #fff;
+        border-top: 2px solid #000000;
+        opacity: 1;
+        margin-bottom: 25px;
       }
-    
-      background-color: #FF4245;
-      box-shadow: 8px 8px 0px 0px #000000;
 
       ul {
+        display: flex;
+        flex-direction: column;
+        gap: 36px;
+
         li {
+          display: flex;
+          gap: 15px;
+          font-weight: 500;
+          font-size: 16px;
+          line-height: normal;
+          color: #000000;
+          max-width: 340px;
+          min-height: 50px;
+        }
+      }
+
+      &.highlight {
+        h3 {
           color: #fff;
+        }
+
+        hr {
+          border-top: 2px solid #fff;
+        }
+
+        background-color: #ff4245;
+        box-shadow: 8px 8px 0px 0px #000000;
+
+        ul {
+          li {
+            color: #fff;
+          }
         }
       }
     }
   }
-
-}
-
 }
 
 @media (width <=991px) {
-  .comparisonSection { 
+  .comparisonSection {
     padding-top: 60px;
-    padding-bottom: 60px;
+    padding-bottom: 0;
     .container {
       padding: 0;
       padding-left: 15px;
     }
     .sectionHeader {
       margin-bottom: 40px;
-  
+
       h2 {
-       
         font-size: 24px;
         line-height: normal;
         color: #201116;
         text-align: center;
-  
+
         span {
           font-size: 24px;
           font-style: normal;
@@ -153,7 +148,7 @@
     .cards::-webkit-scrollbar {
       display: none; /* For Chrome, Safari, and Opera */
     }
-    .cards { 
+    .cards {
       justify-content: flex-start;
       overflow-x: auto;
       padding-bottom: 10px;
@@ -161,7 +156,7 @@
       scrollbar-width: none; /* For Firefox */
       -ms-overflow-style: none; /* For Internet Explorer and Edge */
       gap: 10px;
-      .labels{
+      .labels {
         margin-top: 120px;
         ul {
           gap: 36px;
@@ -175,7 +170,7 @@
       .card {
         min-width: 188px;
         padding: 16px;
-        &.highlight { 
+        &.highlight {
           box-shadow: none;
           border: solid transparent;
         }
@@ -202,7 +197,7 @@
               }
             }
           }
-         }
+        }
       }
     }
   }
