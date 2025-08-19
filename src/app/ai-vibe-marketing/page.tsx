@@ -19,7 +19,7 @@ import CaseStudies from "@components/caseStudies";
 import AlumniSlider from "@components/alumniSlider";
 import PeopleSlider from "@components/peopleSlider";
 // import TrustedByLearners from "@components/trustedByLearners";
-import LiveProjectsSlider from "@components/liveProjectsSlider";
+// import LiveProjectsSlider from "@components/liveProjectsSlider";
 // import ContactButtonsSticky from "@/components/widgets/contactButtonsSticky";
 import BottomNav from "@components/bottomNav";
 import aiVibeMarketing from "@/data/courses/aiVibeMarketing";
@@ -109,12 +109,12 @@ export default function courseDetail() {
         }
       /> */}
 
-      <LiveProjectsSlider
+      {/* <LiveProjectsSlider
         section={AiVibeMarketing.liveProjects!.section}
         heading={AiVibeMarketing.liveProjects!.heading}
         description={AiVibeMarketing.liveProjects!.description}
         projects={AiVibeMarketing.liveProjects!.projects}
-      />
+      /> */}
       <CaseStudies data={AiVibeMarketing.caseStudies} />
       {/* <Banner /> */}
       <PeopleSlider />

@@ -190,58 +190,62 @@ const AiVibeMarketing: CoursesType = {
     },
   ],
   highlights: [
-    { icon: "/images/icons/calendar.png", title: "Months", value: "6+" },
-    { icon: "/images/icons/clock.png", title: "Time", value: "Flexible" },
+    { icon: "/images/icons/calendar.png", title: "", value: "" },
+    { icon: "/images/icons/clock.png", title: "", value: "" },
     {
       icon: "/images/icons/courses.png",
-      title: "Industry-Relevant Modules",
-      value: "30+",
+      title: "",
+      value: "",
     },
     {
       icon: "/images/icons/template.png",
-      title: "Complete AI Vibe Campaign Flows",
+      title: "Complete AI Flows",
       value: "2",
     },
-    { icon: "/images/icons/ai.png", title: "Cutting-Edge AI Marketing Tools", value: "10+" },
+    {
+      icon: "/images/icons/ai.png",
+      title: "AI Marketing Tools",
+      value: "10+"
+    },
     {
       icon: "/images/icons/certificate.png",
-      title: "Hours of Immersive Learning",
-      value: "80+ Hrs",
+      title: "Hours of Learning",
+      value: "80+",
     },
     {
       icon: "/images/icons/case-study.png",
-      title: "Brand-Centered Case Studies",
+      title: "Case Studies",
       value: "8+",
     },
     {
       icon: "/images/icons/interview.png",
-      title: "Interview Assistance",
-      value: "5",
-    },
-    {
-      icon: "/images/icons/internship.png",
-      title: "Internship (Optional)",
-      value: "1 Month",
-    },
-    {
-      icon: "/images/icons/project.png",
-      title: "Hands-On Projects with Real Brand Scenarios",
-      value: "5+",
-    },
-    {
-      icon: "/images/icons/certificate.png",
-      title: "Certification Designed for Tomorrow’s AI Marketers",
+      title: "",
       value: "",
     },
     {
+      icon: "/images/icons/internship.png",
+      title: "",
+      value: "",
+    },
+    {
+      icon: "/images/icons/project.png",
+      title: "Hands-On Projects",
+      value: "2+",
+    },
+    {
+      icon: "/images/icons/certificate.png",
+      title: "Certifications",
+      value: "3+",
+    },
+    {
       icon: "/images/icons/specialisation.png",
-      title: "Mentorship with Industry Practitioners",
+      title: "Mentorship",
       value: "1:1",
     },
     {
       icon: "/images/icons/trainer.png",
-      title: "Career-Oriented Curriculum",
-      value: "100%",
+      title: "",
+      value: "",
     },
   ],
   StoryHeader: {
