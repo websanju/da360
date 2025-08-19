@@ -124,33 +124,33 @@ const ProgramsShowcase: React.FC = () => {
           <div className="card-wrapper">
             <div className="card2">
               <WidgetCard
-                title="Leadership in Social Content Creator & Video Production"
+                title="PGCP in Digital Marketing, E‑Comm & AI"
                 category={[
-                  "12-Month Flagship Program",
-                  "Available Online & On-Campus",
+                  "6-Month Flagship Program",
+                  "Available Online / Classroom",
                 ]}
                 stats={[
                   {
                     icon: "/images/icons/certification.svg",
-                    label: "50+ Case Studies",
+                    label: "240+ Hours of Learning",
                   },
                   {
                     icon: "/images/icons/certification.svg",
-                    label: "1920+ Hours of Learning",
+                    label: "20+ Case Studies",
                   },
                   {
                     icon: "/images/icons/certification.svg",
-                    label: "55+ Specialised Tools",
+                    label: "30+ Tools",
                   },
                   {
                     icon: "/images/icons/certification.svg",
-                    label: "20+ Certifications",
+                    label: "15+ Certifications",
                   },
                 ]}
                 buttonText="View Course"
-                courseLink="/social-content-creator-and-video-production"
+                courseLink="/digital-marketing-training-institute"
                 expertText="Avail Scholarship"
-                image="/images/course-list/pgcp-in-digital-marketing.png"
+                image="/images/course-list/digital-marketing-6.jpg"
               />
             </div>
           </div>

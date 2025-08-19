@@ -38,7 +38,7 @@ const coursesData: CourseSection[] = [
       {
         id: 'social-content-creator-video-production',
           title: 'Leadership in Social Content Creator & Video Production',
-          tags: [ '12 Months',],
+          tags: [ '12 Months d',],
         features: [
           '3 Months Internship Included',
           '1920+ Hours of Learning',
