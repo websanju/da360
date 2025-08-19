@@ -7,7 +7,7 @@ const liveProjectsData: Project[] = [
    {
     id: 1,
     title: "WordPress Website Development",
-    duration: "15 Hours (±15 Days of Live Campaign)",
+    // duration: "15 Hours (±15 Days of Live Campaign)",
     heading:
       "In this hands-on project, you’ll build and launch a fully functional website for one Brand, covering every critical phase",
     details: [
@@ -23,7 +23,7 @@ const liveProjectsData: Project[] = [
       "Present your work & face mock interview evaluations",
     ],
     note: "",
-    logos: ["meta.png", "google-ads.png", "analytics.png"],
+    // logos: ["meta.png", "google-ads.png", "analytics.png"],
     bgGradient:
       "linear-gradient(280deg, rgba(255, 217, 205, 0) 0%, #CDFFDE 53.35%)",
     bgsolid: "#CDFFDE",
@@ -31,7 +31,7 @@ const liveProjectsData: Project[] = [
   {
     id: 2,
     title: "Meta Ads Campaign Execution",
-    duration: "15 Hours (±15 Days of Live Campaign)",
+    // duration: "15 Hours (±15 Days of Live Campaign)",
     heading:
       "In this practical project, you’ll plan, launch, and manage a full-funnel advertising campaign for one Brand across Meta platforms:",
     details: [
@@ -48,7 +48,7 @@ const liveProjectsData: Project[] = [
       "Present campaign outcomes and undergo mock interview review",
     ],
     note: "",
-    logos: ["meta.png", "google-ads.png", "analytics.png"],
+    // logos: ["meta.png", "google-ads.png", "analytics.png"],
     bgGradient:
       "linear-gradient(280deg, rgba(255, 240, 205, 0) 0%, #FFD9CD 53.35%)",
     bgsolid: "#FFD9CD",
@@ -56,7 +56,7 @@ const liveProjectsData: Project[] = [
   {
     id: 3,
     title: "Google Ads Campaign Execution",
-    duration: "15 Hours (±15 Days of Live Campaign)",
+    // duration: "15 Hours (±15 Days of Live Campaign)",
     heading:
       "This project puts you in charge of planning, launching, and optimizing a performance-driven Google Ads campaign for one Brand:",
     details: [
@@ -73,7 +73,7 @@ const liveProjectsData: Project[] = [
       "Present your campaign results during a mock interview session",
     ],
     note: "",
-    logos: ["meta.png", "google-ads.png", "analytics.png"],
+    // logos: ["meta.png", "google-ads.png", "analytics.png"],
     bgGradient:
       "linear-gradient(280deg, rgba(205, 255, 236, 0) 0%, #FFD9CD 53.35%)",
     bgsolid: "#FFD9CD",
@@ -81,7 +81,7 @@ const liveProjectsData: Project[] = [
   {
     id: 4,
     title: "SEO Strategy & Implementation",
-    duration: "15 Hours (±15 Days of Live Campaign)",
+    // duration: "15 Hours (±15 Days of Live Campaign)",
     heading:
       "In this end-to-end SEO project, you'll research, plan, and execute a full-stack Search Engine Optimization strategy for one Brand:",
     details: [
@@ -97,7 +97,7 @@ const liveProjectsData: Project[] = [
       "Present your SEO plan and audit report in a mock client pitch session",
     ],
     note: "",
-    logos: ["meta.png", "google-ads.png", "analytics.png"],
+    // logos: ["meta.png", "google-ads.png", "analytics.png"],
     bgGradient:
       "linear-gradient(280deg, rgba(205, 255, 236, 0) 0%, #CECDFF 53.35%)",
     bgsolid: "#CECDFF",
@@ -113,7 +113,7 @@ const aiVibeCaseStudies: CaseStudiesSection = {
       logo: "/images/mcdonalds-logo.png",
       title: "McDonald’s India – Localizing a Global Brand",
       description:
-        "McDonald’s India adapted its global brand strategy to meet local market preferences—replacing beef-based offerings, introducing aloo tikki burgers, and launching value pricing to capture the price-sensitive",
+        "McDonald’s India adapted its global brand strategy to meet local market preferences—replacing beef-based offerings, introducing aloo tikki burgers, and launching value pricing to capture the price-sensitive Indian audience. Their digital marketing focused on regional content, hyper-local social media campaigns, and app-based loyalty programs.",
       tags: [
         "Marketing Strategy",
         "Consumer Segmentation",
@@ -126,7 +126,7 @@ const aiVibeCaseStudies: CaseStudiesSection = {
       logo: "/images/motherdairy-logo.png",
       title: "Mother Dairy – Building Trust Through Content",
       description:
-        "Mother Dairy strengthened its brand presence by focusing on emotional storytelling and purpose-driven marketing. Campaigns like `Rishton Ka Swad Badhaiye` positioned the brand as a part of Indian family life.",
+        "Mother Dairy strengthened its brand presence by focusing on emotional storytelling and purpose-driven marketing. Campaigns like 'Rishton Ka Swad Badhaiye' positioned the brand as a part of Indian family life. It leveraged SEO, blog content, influencer tie-ups, and YouTube storytelling to increase brand engagement and product awareness.",
       tags: [
         "Content Marketing",
         "SEO & Organic Reach",
@@ -139,7 +139,7 @@ const aiVibeCaseStudies: CaseStudiesSection = {
       logo: "/images/mcdonalds-logo.png",
       title: "Zomato – Data-Driven Performance Marketing",
       description:
-        "Zomato scaled its customer acquisition by running high-performing campaigns during IPL seasons, using data-backed insights to target users based on cuisine preferences, location, and time of day.",
+        "Zomato scaled its customer acquisition by running high-performing campaigns during IPL seasons, using data-backed insights to target users based on cuisine preferences, location, and time of day. They executed geo-targeted Google and Meta ads, retargeting sequences, and meme-based creatives to boost engagement and app installs.",
       tags: [
         "Performance Marketing",
         "Google & Meta Ad Strategy",
@@ -179,10 +179,10 @@ const highlightSkills: HighlightSkill[] = [
 
 const digitalMarketingLeadership: CoursesType = {
   leadCapture: {
-    titleOne: "India's First",
-    titleTwo: "Leadership in Digital Marketing, AI & Entrepreneurship",
-    subtitleOne: "AI-Driven Curriculum Designed for Tomorrow’s Marketing Leaders",
-    subtitleTwo: "Fast-Track Your Career with Future-Ready Expertise",
+    titleOne: "Leadership in Digital",
+    titleTwo: "Marketing, AI & Entrepreneurship",
+    subtitleOne: "AI-Driven Curriculum Designed for Tomorrow’s Marketing Leaders Fast-Track Your Career with Future-Ready Expertise",
+    subtitleTwo: "",
     tags: ["9-Month Intensive Program", "Includes 3-Month Agency Internship"],
   },
   cohortSectionHeading: "Leadership in Digital Marketing, AI & Entrepreneurship Cohort Details",
@@ -203,58 +203,49 @@ const digitalMarketingLeadership: CoursesType = {
     },
   ],
   highlights: [
-    { icon: "/images/icons/calendar.png", title: "Months", value: "6+" },
+    { icon: "/images/icons/calendar.png", title: "Months", value: "9" },
     { icon: "/images/icons/clock.png", title: "Time", value: "Flexible" },
     {
       icon: "/images/icons/courses.png",
-      title: "No Of Individual Courses",
-      value: "15",
+      title: "Industry-Relevant Topics",
+      value: "30+",
     },
+    
+    { icon: "/images/icons/ai.png", title: "AI-Powered Tools in Action", value: "30+" },
     {
-      icon: "/images/icons/template.png",
-      title: "Template & Blueprints ",
-      value: "08",
-    },
-    { icon: "/images/icons/ai.png", title: "AI Learning Tools", value: "25+" },
-    {
-      icon: "/images/icons/certificate.png",
-      title: "Total Learning Hours",
-      value: "240+ Hrs",
+      icon: "/images/icons/hourglass.png",
+      title: "Hours of Practical Learning",
+      value: "1900+",
     },
     {
       icon: "/images/icons/case-study.png",
-      title: "Live Case Studies",
-      value: "35",
+      title: "Brand-Focused Case Studies",
+      value: "50+",
     },
     {
       icon: "/images/icons/interview.png",
-      title: "Interview Assistance",
-      value: "5",
+      title: "Ready-to-Use Marketing Frameworks",
+      value: "10",
     },
     {
       icon: "/images/icons/internship.png",
-      title: "Internship (Optional)",
-      value: "1 Month",
+      title: "Mentorship with Industry Experts",
+      value: "1:1",
     },
     {
       icon: "/images/icons/project.png",
-      title: "Real Time Projects",
-      value: "6+",
+      title: "Capstone-Level Projects",
+      value: "5+",
     },
     {
       icon: "/images/icons/certificate.png",
-      title: "Certifications",
-      value: "18+",
-    },
-    {
-      icon: "/images/icons/specialisation.png",
-      title: "Specialisation",
-      value: "4",
+      title: "Globally Recognized Certifications",
+      value: "22+",
     },
     {
       icon: "/images/icons/trainer.png",
-      title: "Domain Specialist Trainers",
-      value: "07",
+      title: "Outcome-Focused Curriculum",
+      value: "100%",
     },
   ],
   StoryHeader: {

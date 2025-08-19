@@ -7,7 +7,7 @@ const liveProjectsData: Project[] = [
    {
     id: 1,
     title: "Viral Instagram Reels Production",
-    duration: "15 Hours (±15 Days of Live Campaign)",
+    // duration: "15 Hours (±15 Days of Live Campaign)",
     heading:
       "In this creator-first project, you’ll conceptualize, produce, and launch a series of viral Instagram Reels for one brand, designed to maximize reach and engagement:",
     details: [
@@ -21,11 +21,9 @@ const liveProjectsData: Project[] = [
       "Create a content calendar with posting frequency & timing",
       "Publish 20 Reels targeting 10K+ reach within campaign period",
       "Monitor insights and optimize for views, saves, and shares",
-      "Submit final performance report with growth analytics",
-      "Present campaign results and undergo mock influencer review",
     ],
     note: "",
-    logos: ["meta.png", "google-ads.png", "analytics.png"],
+    // logos: ["meta.png", "google-ads.png", "analytics.png"],
     bgGradient:
       "linear-gradient(280deg, rgba(255, 217, 205, 0) 0%, #CDFFDE 53.35%)",
     bgsolid: "#CDFFDE",
@@ -33,7 +31,7 @@ const liveProjectsData: Project[] = [
   {
     id: 2,
     title: "YouTube Channel Launch & Monetization Plan",
-    duration: "15 Hours (±15 Days of Live Campaign)",
+    // duration: "15 Hours (±15 Days of Live Campaign)",
     heading:
       "This project empowers you to launch and scale a YouTube channel, focusing on both Shorts and Long-Form videos for audience growth and monetization readiness:",
     details: [
@@ -47,11 +45,9 @@ const liveProjectsData: Project[] = [
       "Implement YouTube SEO strategies to improve watch time & CTR",
       "Set up channel for monetization via YouTube Partner Program",
       "Track analytics on retention, click-through, and subscriber growth",
-      "Submit channel performance insights and monetization roadmap",
-      "Present content strategy & growth plan in a mock creator pitch",
     ],
     note: "",
-    logos: ["meta.png", "google-ads.png", "analytics.png"],
+    // logos: ["meta.png", "google-ads.png", "analytics.png"],
     bgGradient:
       "linear-gradient(280deg, rgba(255, 240, 205, 0) 0%, #FFD9CD 53.35%)",
     bgsolid: "#FFD9CD",
@@ -59,7 +55,7 @@ const liveProjectsData: Project[] = [
   {
     id: 3,
     title: "Brand Collaboration Campaign",
-    duration: "15 Hours (±15 Days of Live Campaign)",
+    // duration: "15 Hours (±15 Days of Live Campaign)",
     heading:
       "In this practical project, you’ll collaborate with a real brand to design and execute a high-ROI influencer campaign from start to finish:",
     details: [
@@ -73,11 +69,9 @@ const liveProjectsData: Project[] = [
       "Launch brand partnership content across selected platforms",
       "Monitor KPIs: reach, engagement, conversions, and ROI",
       "Collect campaign feedback and testimonials from the brand",
-      "Submit a case study with detailed insights and analytics reports",
-      "Present collaboration outcomes during a mock PR & brand review",
     ],
     note: "",
-    logos: ["meta.png", "google-ads.png", "analytics.png"],
+    // logos: ["meta.png", "google-ads.png", "analytics.png"],
     bgGradient:
       "linear-gradient(280deg, rgba(205, 255, 236, 0) 0%, #FFD9CD 53.35%)",
     bgsolid: "#FFD9CD",
@@ -85,7 +79,7 @@ const liveProjectsData: Project[] = [
   {
     id: 4,
     title: " LinkedIn Thought Leadership Profile",
-    duration: "15 Hours (±15 Days of Live Campaign)",
+    // duration: "15 Hours (±15 Days of Live Campaign)",
     heading:
       "This project positions you as a thought leader on LinkedIn through professional branding, viral content, and network growth strategies:",
     details: [
@@ -101,10 +95,9 @@ const liveProjectsData: Project[] = [
       "Implement commenting and DMs strategy for organic reach",
       "Analyze performance with Shield App and native LinkedIn analytics",
       "Submit profile audit report and growth analytics dashboard",
-      "Present LinkedIn branding results in a mock industry leadership review",
     ],
     note: "",
-    logos: ["meta.png", "google-ads.png", "analytics.png"],
+    // logos: ["meta.png", "google-ads.png", "analytics.png"],
     bgGradient:
       "linear-gradient(280deg, rgba(205, 255, 236, 0) 0%, #CECDFF 53.35%)",
     bgsolid: "#CECDFF",
@@ -112,7 +105,7 @@ const liveProjectsData: Project[] = [
 ];
 const aiVibeCaseStudies: CaseStudiesSection = {
   heading: "Glimpse of Brand Case Studies",
-  subheading: "Learn Through Real Business Challenges from Industry-Leading Brands",
+  subheading: "Learn Through Real Campaigns & Creator Journeys",
   items: [
     {
       id: 1,
@@ -124,7 +117,6 @@ const aiVibeCaseStudies: CaseStudiesSection = {
         "Short-Form Video Storytelling",
         "Meme Collaborations",
         "Influencer Tie-Ups",
-        "Trend-Based Content Planning",
       ],
     },
     {
@@ -134,10 +126,9 @@ const aiVibeCaseStudies: CaseStudiesSection = {
       description:
         "Zomato redefined digital engagement by adopting a meme-first strategy. With witty tweets, meme-based creatives, and relatable Reels, the brand saw a 10x boost in social engagement. Their campaigns during IPL and cricket series showcased the power of humor in building viral momentum.",
       tags: [
-        "Meme Marketing Strategy",
+        "Meme Marketing",
         "Humor-Driven Engagement",
         "Real-Time Content Creation",
-        "Viral Marketing Frameworks",
       ],
     },
     {
@@ -147,9 +138,8 @@ const aiVibeCaseStudies: CaseStudiesSection = {
       description:
         "CRED built credibility and brand trust by collaborating with high-profile creators and celebrities. Their campaigns blended quirk, authority, and storytelling—turning influencer-led videos into national conversations. Creators like Rahul Dravid and Tanmay Bhat were instrumental in CRED’s viral brand recall.",
       tags: [
-        "Influencer Marketing Campaign Planning",
+        "Campaign Planning",
         "Creator Collaborations",
-        "Brand Storytelling via Authority Figures",
         "High-ROI Content Production",
       ],
     },
@@ -178,11 +168,11 @@ const digitalMarketingLeadership: CoursesType = {
   leadCapture: {
     titleOne: "Leadership in Social",
     titleTwo: "Content Creator & Video Production",
-    subtitleOne: "AI-Driven Curriculum Tailored for Aspiring Content Leaders & Video Entrepreneurs",
-    subtitleTwo: "Fast-Track Your Career as a Social Media Influencer, Creator, and Brand Strategist",
+    subtitleOne: "AI-Driven Curriculum Tailored for Aspiring Content Leaders & Video Entrepreneurs Fast-Track Your Career as a Social Media Influencer, Creator, and Brand Strategist",
+    subtitleTwo: "",
     tags: ["12-Month Intensive Program", "Includes 3-Month Agency Internship"],
   },
-  cohortSectionHeading: "Leadership in Digital Marketing, AI & Entrepreneurship Cohort Details",
+  cohortSectionHeading: "Leadership in Social Content Creator & Video Production",
   Cohort: [
     {
       date: "June 16th",
@@ -200,8 +190,8 @@ const digitalMarketingLeadership: CoursesType = {
     },
   ],
   highlights: [
-    // { icon: "/images/icons/calendar.png", title: "Months", value: "6+" },
-    // { icon: "/images/icons/clock.png", title: "Time", value: "Flexible" },
+    { icon: "/images/icons/calendar.png", title: "Months", value: "12" },
+    { icon: "/images/icons/clock.png", title: "Time", value: "Flexible" },
     {
       icon: "/images/icons/courses.png",
       title: "Industry-Relevant Modules",
@@ -245,7 +235,7 @@ const digitalMarketingLeadership: CoursesType = {
     },
     {
       icon: "/images/icons/specialisation.png",
-      title: "Mentorship with Leading Influencers & Industry Experts",
+      title: "Mentorship",
       value: "1:1",
     },
     {
@@ -267,8 +257,8 @@ const digitalMarketingLeadership: CoursesType = {
     description: "Your journey is strategically designed for maximum growth at every stage."
   },
    programSkills: {
-    heading: "Key Highlights of Our AI-Driven Digital Marketing Program",
-    subheading: "Digital Marketing Skills You’ll Master to Lead the Future",
+    heading: "Key Highlights of the Program",
+    subheading: "Social Content Creation Skills You’ll Master to Lead the Creator Economy",
     skills: highlightSkills,
   },
   caseStudies: aiVibeCaseStudies,

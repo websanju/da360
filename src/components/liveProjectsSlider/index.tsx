@@ -17,12 +17,12 @@ import { auto } from "@popperjs/core";
 export interface Project {
   id: number;
   title: string;
-  duration: string;
+  duration?: string;
   heading: string;
   details: string[];
   steps: string[];
   note?: string;
-  logos: string[];
+  logos?: string[];
   bgGradient: string;
   bgsolid: string;
 }
@@ -154,10 +154,12 @@ export default function LiveProjectsSlider({
                           Project {project.id}
                         </h5>
                         <h4 className={styles.projectTitle}>{project.title}</h4>
-                        <div className={styles.duration}>
-                          <label>Duration</label>
-                          <span>{project.duration}</span>
-                        </div>
+                        {project.duration && (
+                          <div className={styles.duration}>
+                            <label>Duration</label>
+                            <span>{project.duration}</span>
+                          </div>
+                        )}
                         <div className={styles.heading}>{project.heading}</div>
                         <ul className={styles.details}>
                           {project.details.map((item, idx) => (
@@ -165,17 +167,21 @@ export default function LiveProjectsSlider({
                           ))}
                         </ul>
                       </div>
-                      <div className={`${styles.logos} ${styles.logosDesktop}`}>
-                        {project.logos.map((logo, idx) => (
-                          <Image
-                            key={idx}
-                            src={`/images/${logo}`}
-                            alt="logo"
-                            height={50}
-                            width={120}
-                          />
-                        ))}
-                      </div>
+                      {project.logos?.length ? (
+                        <div
+                          className={`${styles.logos} ${styles.logosDesktop}`}
+                        >
+                          {project.logos.map((logo, idx) => (
+                            <Image
+                              key={idx}
+                              src={`/images/${logo}`}
+                              alt="logo"
+                              height={50}
+                              width={120}
+                            />
+                          ))}
+                        </div>
+                      ) : null}
                     </div>
                   </div>
                   <div className="col-xl-6 d-flex justify-content-center">
@@ -200,17 +206,21 @@ export default function LiveProjectsSlider({
                         </ul>
                         <p>{project.note}</p>
                       </div>
-                      <div className={`${styles.logos} ${styles.mobileLogos}`}>
-                        {project.logos.map((logo, idx) => (
-                          <Image
-                            key={idx}
-                            src={`/images/${logo}`}
-                            alt="logo"
-                            height={50}
-                            width={120}
-                          />
-                        ))}
-                      </div>
+                      {project.logos?.length ? (
+                        <div
+                          className={`${styles.logos} ${styles.mobileLogos}`}
+                        >
+                          {project.logos.map((logo, idx) => (
+                            <Image
+                              key={idx}
+                              src={`/images/${logo}`}
+                              alt="logo"
+                              height={50}
+                              width={120}
+                            />
+                          ))}
+                        </div>
+                      ) : null}
                     </div>
                   </div>
                 </div>

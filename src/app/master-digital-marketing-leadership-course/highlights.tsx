@@ -2,7 +2,7 @@ import React from "react";
 import styles from "./style.module.scss";
 import Highlightss from "@components/highlights";
 import Curriculum from "@components/curriculum";
-import AIDigital from "@components/aIDigital";
+// import AIDigital from "@components/aIDigital";
 import DigitalMarketingTools from "@components/digitalMarketingTools";
 import AiTools from "@components/aiTools";
 import Certifications from "@components/certifications";
@@ -24,6 +24,9 @@ const Highlights = ({ section }: HighlightsProps) => {
                 heading={
                   digitalMarketingLeadership.programSkills?.heading ?? ""
                 }
+                subheading={
+                  digitalMarketingLeadership.programSkills?.subheading ?? ""
+                }
                 skills={
                   Array.isArray(
                     digitalMarketingLeadership.programSkills?.skills
@@ -33,7 +36,7 @@ const Highlights = ({ section }: HighlightsProps) => {
                 }
               />
               <Curriculum {...curriculumData} />
-              <AIDigital />
+              {/* <AIDigital /> */}
               <DigitalMarketingTools />
               <AiTools
                 heading="Next-Gen AI-Powered Tools"
