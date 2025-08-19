@@ -19,7 +19,7 @@ import CaseStudies from "@components/caseStudies";
 import AlumniSlider from "@components/alumniSlider";
 import PeopleSlider from "@components/peopleSlider";
 // import TrustedByLearners from "@components/trustedByLearners";
-import LiveProjectsSlider from "@components/liveProjectsSlider";
+// import LiveProjectsSlider from "@components/liveProjectsSlider";
 // import ContactButtonsSticky from "@/components/widgets/contactButtonsSticky";
 import BottomNav from "@components/bottomNav";
 import performanceMarketingAndMartech from "@/data/courses/performanceMarketingAndMartech";
@@ -111,12 +111,12 @@ export default function courseDetail() {
           youtubeAndInstagramInfluencer.LearningRoadmapProps.description
         }
       /> */}
-      <LiveProjectsSlider
+      {/* <LiveProjectsSlider
         section={performanceMarketingAndMartech.liveProjects!.section}
         heading={performanceMarketingAndMartech.liveProjects!.heading}
         description={performanceMarketingAndMartech.liveProjects!.description}
         projects={performanceMarketingAndMartech.liveProjects!.projects}
-      />
+      /> */}
       <CaseStudies data={performanceMarketingAndMartech.caseStudies} />
       {/* <Banner /> */}
       <PeopleSlider />
