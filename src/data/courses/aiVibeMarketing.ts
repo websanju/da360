@@ -105,40 +105,38 @@ const aiVibeCaseStudies: CaseStudiesSection = {
     {
       id: 1,
       logo: "/images/mcdonalds-logo.png",
-      title: "McDonald’s India – Localizing a Global Brand",
+      title: "Spotify – AI-Personalized Playlists",
       description:
-        "McDonald’s India adapted its global brand strategy to meet local market preferences—replacing beef-based offerings, introducing aloo tikki burgers, and launching value pricing to capture the price-sensitive Indian audience. Their digital marketing focused on regional content, hyper-local social media campaigns, and app-based loyalty programs.",
+        "Spotify leveraged predictive AI to deliver hyper-personalized playlists for users, making music discovery seamless and unique to each listener. Viral campaigns like “Spotify Wrapped” turned user data into shareable stories, transforming personal insights into a global social media movement",
       tags: [
-        "Marketing Strategy",
-        "Consumer Segmentation",
-        "Localization in Campaigns",
-        "Social Media Planning",
+        "Predictive Analytics",
+        "Content Personalization",
+        "Viral Campaign Design",
       ],
     },
     {
       id: 2,
       logo: "/images/motherdairy-logo.png",
-      title: "Mother Dairy – Building Trust Through Content",
+      title: "Nike – AI in Social Storytelling",
       description:
-        "Mother Dairy strengthened its brand presence by focusing on emotional storytelling and purpose-driven marketing. Campaigns like 'Rishton Ka Swad Badhaiye' positioned the brand as a part of Indian family life. It leveraged SEO, blog content, influencer tie-ups, and YouTube storytelling to increase brand engagement and product awareness.",
+        "Nike harnessed AI-powered insights to create emotion-driven campaigns that resonated deeply with their audience. During major product launches, AI was used for smart targeting—ensuring the right message reached the right audience at the right time. Their campaigns became cultural conversations rather than just advertisements.",
       tags: [
-        "Content Marketing",
-        "SEO & Organic Reach",
-        "Video Marketing Strategy",
+        "Vibe Marketing",
+        "AI-Powered Storytelling",
+        "Emotional Branding",
         "Influencer Marketing",
       ],
     },
     {
       id: 3,
       logo: "/images/mcdonalds-logo.png",
-      title: "Zomato – Data-Driven Performance Marketing",
+      title: "Zomato – AI Meme Marketing",
       description:
-        "Zomato scaled its customer acquisition by running high-performing campaigns during IPL seasons, using data-backed insights to target users based on cuisine preferences, location, and time of day. They executed geo-targeted Google and Meta ads, retargeting sequences, and meme-based creatives to boost engagement and app installs.",
+        "Zomato pioneered AI-driven meme marketing by creating real-time, trend-jacking campaigns that resonated with India’s social media culture. With geo-targeted retargeting and quick-turnaround creatives, Zomato built a brand persona that was witty, relatable, and omnipresent across platforms.",
       tags: [
-        "Performance Marketing",
-        "Google & Meta Ad Strategy",
-        "Retargeting Campaigns",
-        "A/B Testing & Optimization",
+        "Trend Hijacking",
+        "AI Performance Marketing",
+        "Geo-Targeted Retargeting",
       ],
     },
   ],
@@ -190,8 +188,8 @@ const AiVibeMarketing: CoursesType = {
     },
   ],
   highlights: [
-    { icon: "/images/icons/calendar.png", title: "", value: "" },
-    { icon: "/images/icons/clock.png", title: "", value: "" },
+    { icon: "/images/icons/calendar.png", title: "Months", value: "2" },
+    { icon: "/images/icons/clock.png", title: "Time", value: "9PM to 10:30PM" },
     {
       icon: "/images/icons/courses.png",
       title: "",
@@ -208,7 +206,7 @@ const AiVibeMarketing: CoursesType = {
       value: "10+"
     },
     {
-      icon: "/images/icons/certificate.png",
+      icon: "/images/icons/hourglass.png",
       title: "Hours of Learning",
       value: "80+",
     },

@@ -19,7 +19,7 @@ import CaseStudies from "@components/caseStudies";
 import AlumniSlider from "@components/alumniSlider";
 import PeopleSlider from "@components/peopleSlider";
 // import TrustedByLearners from "@components/trustedByLearners";
-import LiveProjectsSlider from "@components/liveProjectsSlider";
+// import LiveProjectsSlider from "@components/liveProjectsSlider";
 // import ContactButtonsSticky from "@/components/widgets/contactButtonsSticky";
 import BottomNav from "@components/bottomNav";
 import youtubeAndInstagramInfluencer from "@/data/courses/youtubeAndInstagramInfluencer";
@@ -111,12 +111,12 @@ export default function courseDetail() {
           youtubeAndInstagramInfluencer.LearningRoadmapProps.description
         }
       /> */}
-      <LiveProjectsSlider
+      {/* <LiveProjectsSlider
         section={youtubeAndInstagramInfluencer.liveProjects!.section}
         heading={youtubeAndInstagramInfluencer.liveProjects!.heading}
         description={youtubeAndInstagramInfluencer.liveProjects!.description}
         projects={youtubeAndInstagramInfluencer.liveProjects!.projects}
-      />
+      /> */}
       <CaseStudies data={youtubeAndInstagramInfluencer.caseStudies} />
       {/* <Banner /> */}
       <PeopleSlider />
