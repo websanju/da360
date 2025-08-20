@@ -54,7 +54,7 @@ export default function MegaMenu({ closeMenu }: MegaMenuProps) {
         <ul>
           {tabs.map((tab, index) => {
             // pick the first course for this tab (or undefined if none)
-            const firstCourse = coursesData[tab.key]?.[0];
+            // const firstCourse = coursesData[tab.key]?.[0];
 
             return (
               <li
@@ -65,11 +65,11 @@ export default function MegaMenu({ closeMenu }: MegaMenuProps) {
                 <div className={styles.menuItem}>
                   {tab.name}
                   <span className={styles.navbarTags}>
-                    {firstCourse?.duration && (
+                    {/* {firstCourse?.duration && (
                       <span className={styles.dropdownTag}>
                         {firstCourse.duration}
                       </span>
-                    )}
+                    )} */}
                     <Image
                       alt="leftArrow"
                       height={11}
