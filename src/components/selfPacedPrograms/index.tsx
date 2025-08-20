@@ -56,7 +56,7 @@ const SelfPacedPrograms = () => {
 
         <div className={`row ${styles.row}`}>
           {courses.map((course, index) => (
-            <div className="col-md-6 col-lg-3 mb-4" key={index}>
+            <div className="col-md-6 col-lg-4 mb-4" key={index}>
               <CourseCard
                 title={course.title}
                 duration={course.duration}

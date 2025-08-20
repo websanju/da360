@@ -1,6 +1,6 @@
 .card {
   border: 1px solid #000000;
-  max-width: 350px;
+  max-width: 550px;
   border-radius: 20px;
   min-height: 450px;
   overflow: hidden;
@@ -19,7 +19,7 @@
   .cardInfo {
     box-shadow: 4px 4px 0px 0px #000000;
     border: 2px solid #000000;
-    background: #FFFFFF;
+    background: #ffffff;
     border-radius: 12px;
     padding: 20px 24px;
     margin: 0 12px 29px;
@@ -37,7 +37,6 @@
     }
 
     ul {
-
       display: flex;
       gap: 8px;
       flex-direction: column;
@@ -84,11 +83,9 @@
       }
     }
   }
-
 }
 
 @media (width <=991px) {
-
   .card {
     min-height: 400px;
 
@@ -114,12 +111,10 @@
       height: 215px;
       overflow: hidden;
 
-
       img {
         width: 100%;
         height: auto;
       }
     }
   }
-
 }
