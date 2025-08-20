@@ -79,7 +79,7 @@ const MobileMenu: React.FC<Props> = ({ onClose }) => {
             <h4>Leadership in Social Content Creator & Video Production</h4>
 
             <div className={styles.navbarTags}>
-              <span className={styles.dropdownTag}>12 Months</span>
+              <span className={styles.dropdownTag}>Coming Soon</span>
             </div>
             <ul className={styles.navbarDropdownList}>
               {renderListItem("3 Months Internship Included")}
