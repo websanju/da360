@@ -17,7 +17,7 @@ const GuestFacultyCard: React.FC<GuestFacultyCardProps> = ({
   profileImage,
   logos = [],
 }) => {
-  const displayedLogos = logos.slice(0, 3);
+  const displayedLogos = logos.slice(0, 2);
 
   return (
     <div className={`card ${styles.card} ${styles[bgColor]}`}>

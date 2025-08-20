@@ -1,186 +1,185 @@
 .applyForm {
-    display: flex;
-    align-items: center;
-    gap: 30px;
-    height: 100%;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  height: 100%;
 }
 
 .formBox {
+  height: 100%;
+
+  form {
     height: 100%;
+  }
 
-    form {
-        height: 100%;
-    }
+  h3 {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: left;
+    margin-bottom: 24px;
+    color: #201116;
+  }
 
-    h3 {
-        font-weight: 500;
-        font-size: 20px;
-        line-height: 100%;
-        letter-spacing: 0%;
-        text-align: left;
-        margin-bottom: 24px;
-        color: #201116;
-    }
-
-    button {
-        background: #DC3545;
-    }
+  button {
+    background: #dc3545;
+  }
 }
 
 .formBanner {
-    img {
-        height: auto;
-    }
+  img {
+    height: auto;
+  }
 }
 
 .closeForm {
-    position: absolute;
-    right: 30px;
-    top: 20px;
+  position: absolute;
+  right: 30px;
+  top: 20px;
 
-    background-color: transparent;
-    border: none;
+  background-color: transparent;
+  border: none;
 }
 
 .formHeader {
-    display: none;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 50px;
+  display: none;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 50px;
 
-    button {
-        background-color: transparent;
-        border: none;
-    }
+  button {
+    background-color: transparent;
+    border: none;
+  }
 }
 
 .facultyBox {
-    background-color: #ACACAC;
-    max-width: 500px !important;
-    width: 500px;
-    display: flex;
-    align-items: center;
+  background-color: #acacac;
+  max-width: 500px !important;
+  width: 500px;
+  display: flex;
+  align-items: center;
 
-    .facultyImg {
-        img {
-            max-width: 181px;
-            height: auto;
-        }
+  .facultyImg {
+    img {
+      max-width: 181px;
+      height: auto;
     }
+  }
 
-    .facultyInfo {
-        margin-top: 20px;
-        h3 {
-            font-weight: 700;
-            font-style: Italic;
-            font-size: 28px;
-            line-height: 24px;
-            letter-spacing: 0%;
-            text-transform: uppercase;
-            margin-bottom: 4px;
-           
-        }
+  .facultyInfo {
+    margin-top: 20px;
+    h3 {
+      font-weight: 700;
+      font-style: Italic;
+      font-size: 28px;
+      line-height: 24px;
+      letter-spacing: 0%;
+      text-transform: uppercase;
+      margin-bottom: 4px;
     }
+  }
 }
 
 .facultyDetails {
-    padding: 40px;
+  padding: 40px;
 
-    .description {
-        margin-bottom: 20px;
-        font-weight: 400;
-        font-size: 16px;
-        line-height: normal;
-        letter-spacing: 2%;
-        text-transform: capitalize;
+  .description {
+    margin-bottom: 20px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: normal;
+    letter-spacing: 2%;
+    text-transform: capitalize;
+  }
+
+  .facultyExpertise {
+    margin-bottom: 21px;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: normal;
+    text-transform: capitalize;
+
+    span {
+      font-weight: 700;
+      font-style: Italic;
+      font-size: 16px;
+      line-height: normals;
+      letter-spacing: 2%;
+      text-transform: capitalize;
+      margin-bottom: 4px;
+    }
+  }
+
+  .facultyBrand {
+    span {
+      font-weight: 700;
+      font-style: Italic;
+      font-size: 16px;
+      line-height: normals;
+      letter-spacing: 2%;
+      text-transform: capitalize;
+      margin-bottom: 4px;
     }
 
-    .facultyExpertise {
-        margin-bottom: 21px;
-        font-weight: 400;
-        font-size: 13px;
-        line-height: normal;
-        text-transform: capitalize;
-
-        span {
-            font-weight: 700;
-            font-style: Italic;
-            font-size: 16px;
-            line-height: normals;
-            letter-spacing: 2%;
-            text-transform: capitalize;
-            margin-bottom: 4px;
-        }
+    img {
+      width: 112px;
+      height: auto !important;
     }
-
-    .facultyBrand {
-        span {
-             font-weight: 700;
-            font-style: Italic;
-            font-size: 16px;
-            line-height: normals;
-            letter-spacing: 2%;
-            text-transform: capitalize;
-             margin-bottom: 4px;
-        }
-
-        img {
-            height: auto;
-        }
-    }
+  }
 }
 
 @media (width <=991px) {
-    .closeForm {
-        display: none;
-    }
+  .closeForm {
+    display: none;
+  }
 
-    .applyForm {
-        display: flex;
-        align-items: flex-start;
-        justify-content: center;
-        gap: 30px;
-    }
+  .applyForm {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 30px;
+  }
 
-    .formHeader {
-        display: flex;
+  .formHeader {
+    display: flex;
+  }
 
+  .formBanner {
+    display: none;
+  }
+  .facultyBox {
+    .facultyInfo {
+      margin-top: 15px;
+      h3 {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        font-size: 24px;
+      }
+      p {
+        width: 200px;
+        overflow-wrap: break-word;
+        font-size: 13px;
+        line-height: 14px;
+      }
     }
+    .facultyImg {
+      img {
+        max-width: 131px;
+        height: auto;
+      }
+    }
+  }
+  .formBox {
+    height: calc(100% - 150px);
 
-    .formBanner {
-        display: none;
+    form {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
     }
-    .facultyBox {
-        .facultyInfo {
-            margin-top: 15px;
-            h3 {
-                 white-space: nowrap;
-                overflow: hidden;
-                text-overflow: ellipsis;
-                font-size: 24px;
-            }
-            p {
-               width: 200px;
-    overflow-wrap: break-word; 
-    font-size: 13px;
-    line-height: 14px;
-            }
-         }
-         .facultyImg {
-        img {
-            max-width: 131px;
-            height: auto;
-        }
-    }
-     }
-    .formBox {
-        height: calc(100% - 150px);
-
-        form {
-            height: 100%;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-        }
-    }
+  }
 }

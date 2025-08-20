@@ -1,212 +1,212 @@
 .card {
-    border-radius: 20px;
-    overflow: hidden;
-    border: 2px solid #000000;
-    min-height: 418px;
+  border-radius: 20px;
+  overflow: hidden;
+  border: 2px solid #000000;
+  min-height: 418px;
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+
+  .cardImg {
+    height: 350px;
+    width: 100%;
+    img {
+      object-fit: cover;
+      height: 100%;
+      width: 100%;
+    }
+  }
+
+  .cardBody {
     display: flex;
-    justify-content: space-between;
-    cursor: pointer;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 28px 32px;
+    min-height: 160px;
 
-    .cardImg {
-        height: 350px;
-        width: 100%;
+    .facultyName {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 15px;
+      margin-bottom: 10px;
+      h5 {
+        font-weight: 700;
+        font-style: italic;
+        font-size: 28px;
+        line-height: 27px;
+        text-transform: uppercase;
+        color: #000;
+        max-width: max-content;
+        min-height: auto;
+      }
+      a {
+        min-width: 30px;
         img {
-            object-fit: cover;
-            height: 100%;
-            width: 100%;
+          width: 100%;
+          height: 32px;
+          display: flex;
+          margin-top: 0;
+          height: auto;
         }
+      }
     }
 
-    .cardBody {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        padding: 28px 32px;
-        min-height:160px;
-
-        .facultyName {
-            display: flex;
-            justify-content: space-between;
-            align-items: flex-start;
-            gap: 15px;
-            margin-bottom: 10px;
-            h5 {
-                font-weight: 700;
-                font-style: italic;
-                font-size: 28px;
-                line-height: 27px;
-                text-transform: uppercase;
-                color: #000;
-                max-width: max-content;
-                min-height: auto;
-            }
-            a {
-                min-width: 30px;
-                img {
-                    width: 100%;
-                      height: 32px;
-                    display: flex;
-                    margin-top: 0;
-                    height: auto;
-                }
-            }
-        }
-
-        .facultyInfo {
-            .title {
-                font-weight: 500;
-                font-size: 14px;
-                line-height: 100%;
-                color: #000;
-                margin-bottom: 0;
-            }
-            .experience {
-                font-weight: 400;
-                font-size: 14px;
-                line-height: 100%;
-                color: #000;
-            }
-        }
+    .facultyInfo {
+      .title {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 100%;
+        color: #000;
+        margin-bottom: 0;
+      }
+      .experience {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 100%;
+        color: #000;
+      }
     }
+  }
 }
 
 .logo {
-    height: 24px;
-    margin-top: 0.5rem;
+  height: 24px;
+  margin-top: 0.5rem;
   width: auto;
 }
 
 .bgGreay {
-     background-color: #AEB7B5;
+  background-color: #aeb7b5;
 }
 
 .bgPink {
-    background-color: #FEC6CB;
+  background-color: #fec6cb;
 }
 
 .bgBlue {
-    background-color: #B1D0F1;
+  background-color: #b1d0f1;
 }
 
 .bgGreen {
-    background-color: #A3EDE4;
+  background-color: #a3ede4;
 }
 
 .bgYello {
-    background-color: #FFF186;
+  background-color: #fff186;
 }
 
 .bgOrange {
-    background-color: #F1B1B1;
+  background-color: #f1b1b1;
 }
 
 .bgPurpal {
-    background-color: #AFA3ED;
+  background-color: #afa3ed;
 }
 
 .cardBody {
-    background: #FFFFFF;
+  background: #ffffff;
 }
 
 .logoRow {
-    margin-top: 24px;
+  margin-top: 24px;
+  display: flex;
+  gap: 4px;
+  flex-wrap: wrap;
+  flex-direction: column;
+  min-height: 52px;
+  span {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 100%;
+    letter-spacing: 0%;
+  }
+  .logos {
     display: flex;
-    gap: 4px;
-    flex-wrap: wrap;
-    flex-direction: column;
-    min-height: 52px;
-     span {
-        font-weight: 400;
-        font-size: 13px;
-        line-height: 100%;
-        letter-spacing: 0%;
-        }
-    .logos {
-      display: flex;
     gap: 7px;
-   
-    }
-    img {
-        width: auto;
-        max-width: max-content;
-        height: 35px;
-    }
+  }
+  img {
+    width: auto;
+    max-width: max-content;
+    height: 41px;
+    margin-top: 10px;
+  }
 }
 
 .singleLogo {
-    width: auto;
-    max-width: 100%;
-    max-height: 30px;
+  width: auto;
+  max-width: 100%;
+  max-height: 30px;
 }
 
-@media (width <=991px) { 
-    .card {
-        min-height: 338px;
-        .cardImg {
-            height: 230px;
-            width: 100%;
-            img {
-                object-fit: cover;
-                height: 100%;
-                width: 100%;
-            }
+@media (width <=991px) {
+  .card {
+    min-height: 338px;
+    .cardImg {
+      height: 230px;
+      width: 100%;
+      img {
+        object-fit: cover;
+        height: 100%;
+        width: 100%;
+      }
+    }
+    .cardBody {
+      justify-content: flex-start;
+      padding: 16px 24px;
+      min-height: 157px;
+
+      .facultyName {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 8px;
+        margin-bottom: 5px;
+        h5 {
+          font-size: 20px;
+          line-height: normal;
+          color: #000;
+          max-width: 100%;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
         }
-        .cardBody {
-            justify-content:flex-start;
-            padding: 16px 24px;
-            min-height:  157px;
-    
-            .facultyName {
-                display: flex;
-                justify-content: space-between;
-                align-items: flex-start;
-                flex-direction: column;
-                gap: 8px;
-                margin-bottom: 5px;
-                h5 {
-                    font-size: 20px;
-                    line-height: normal;
-                    color: #000;
-                    max-width: 100%;
-                      white-space: nowrap;
-                    overflow: hidden;
-                    text-overflow: ellipsis;
-                }
-                a {
-                    img {
-                        height: 32px;
-                        width: auto;
-                        display: flex;
-                        margin-top: 0;
-                    }
-                }
-            }
-    
-            .facultyInfo {
-                .title {
-                    font-weight: 500;
-                    font-size: 12px;
-                    line-height: 100%;
-                    letter-spacing: 0%;
-                    color: #000;
-                    margin-bottom: 5px;
-                      white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-                }
-                .experience {
-                    font-weight: 400;
-                    font-size: 12px;
-                    line-height: 100%;
-                    color: #000;
-                }
-            }
-        }
-     }
-     .logoRow {
-            margin-top: 14px;
-        img {
-            height: 25px;
+        a {
+          img {
+            height: 32px;
+            width: auto;
+            display: flex;
+            margin-top: 0;
+          }
         }
       }
- }
+
+      .facultyInfo {
+        .title {
+          font-weight: 500;
+          font-size: 12px;
+          line-height: 100%;
+          letter-spacing: 0%;
+          color: #000;
+          margin-bottom: 5px;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+        }
+        .experience {
+          font-weight: 400;
+          font-size: 12px;
+          line-height: 100%;
+          color: #000;
+        }
+      }
+    }
+  }
+  .logoRow {
+    margin-top: 14px;
+    img {
+      height: 25px;
+    }
+  }
+}
