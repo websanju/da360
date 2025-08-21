@@ -12,9 +12,11 @@ export default function HeroSection() {
       <div className="container">
         <div className="row">
           <div className="col-lg-12 ">
-            <span className={styles.overline}>Asia’s Largest</span>
+            <span className={styles.overline}>
+              School of Digital Marketing 
+            </span>
             <h1>
-              Digital Marketing
+              Endorsed by
               <span className={styles.peace}>
                 {" "}
                 <Image
@@ -26,9 +28,11 @@ export default function HeroSection() {
                 />
               </span>{" "}
               <br />
-              Learning Centre
+              Marketing Leaders.
             </h1>
-            <p>School of Digital Marketing</p>
+            <p>
+              Built in Collaboration with Top Digital Marketing Professionals.
+            </p>
             <div className={styles.applyAction}>
               <Link
                 href="#"
