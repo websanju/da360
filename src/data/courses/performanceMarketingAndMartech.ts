@@ -141,8 +141,8 @@ const highlightSkills: HighlightSkill[] = [
 
 const PerformanceMarketingAndMediaBuying: CoursesType = {
   leadCapture: {
-    titleOne: "Performance Marketing & ",
-    titleTwo: "MarTech Certification Course",
+    titleOne: "Performance",
+    titleTwo: "Marketing & MarTech Certification Course",
     subtitleOne: "Master performance-driven marketing strategies, media buying, marketing technology, and analytics — designed for marketers, entrepreneurs, and creators",
     subtitleTwo: "",
     tags: ["2-Month Specialist Program", "80+ Hours of Hands-On Learning","8+ Industry Projects"],

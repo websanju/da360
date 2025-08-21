@@ -165,8 +165,8 @@ const highlightSkills: HighlightSkill[] = [
 
 const PerformanceMarketingAndMediaBuying: CoursesType = {
   leadCapture: {
-    titleOne: "PGCP in Performance",
-    titleTwo: "Marketing & Media Buying",
+    titleOne: "Post Graduate in ",
+    titleTwo: "Performance Marketing & Media Buying",
     subtitleOne: "AI-Powered Curriculum Designed for Next-Gen Performance Marketers for Advanced Media Buying & Ad Management Expertise",
     subtitleTwo: "",
     tags: ["6-Month Intensive Program", " Includes Real-World Agency Projects"],
