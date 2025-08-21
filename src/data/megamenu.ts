@@ -129,4 +129,45 @@ export const coursesData: Record<string, CourseItem[]> = {
       ],
     },
   ],
+    college: [
+    {
+      title: "MBA in AI Digital Marketing & Entrepreneurship",
+      duration: "2 Years",
+      mode: "Classroom",
+      onClick: "#",
+      list: [
+        "University Program",
+        "NAAC Grade A+",
+        "AICTE Approved",
+        "Accredited by N.S.D.C.",
+        "Job Guarantee Program*",
+      ],
+    },
+    {
+      title: "BBA in Digital Marketing & AI",
+      duration: "3 Years",
+      mode: "Classroom ",
+      onClick: "#",
+      list: [
+        "University Program ",
+        "NAAC Grade A+",
+        "AICTE Approved",
+        "Accredited by N.S.D.C.",
+        "Job Guarantee Program*",
+      ],
+    },
+    // {
+    //   title: "LinkedIn & Personal Branding",
+    //   duration: "2 Months",
+    //   mode: "Online",
+    //   onClick: "/linkedIn-and-personal-branding",
+    //   list: [
+    //     "Advance Specialist Certification",
+    //     "80+ Hours of Learning",
+    //     "8+ Case Studies",
+    //     "10+ Tools",
+    //     "2 Linkedin Outreach Flow",
+    //   ],
+    // },
+  ],
 };
