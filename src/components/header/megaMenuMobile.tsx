@@ -96,7 +96,6 @@ const MobileMenu: React.FC<Props> = ({ onClose }) => {
           className={`${styles.columnGroup} ${styles.leadershipColumnGroup}`}
         >
           <h3>PGCP Courses</h3>
-
           <div
             onClick={() => handleClick("/digital-marketing-training-institute")}
             className={styles.navbarDropdownColumn}
@@ -115,27 +114,6 @@ const MobileMenu: React.FC<Props> = ({ onClose }) => {
               {renderListItem("15+ Certifications")}
             </ul>
           </div>
-
-          {/* <div
-            onClick={() =>
-              handleClick("/social-media-and-Influencer-marketing")
-            }
-            className={styles.navbarDropdownColumn}
-          >
-            <h4>PGCP in Social Media & Influencer Marketing</h4>
-
-            <div className={styles.navbarTags}>
-              <span className={styles.dropdownTag}>6 Months</span>
-              <span className={styles.dropdownTag}>Online</span>
-            </div>
-            <ul className={styles.navbarDropdownList}>
-              {renderListItem("PG Level Certification")}
-              {renderListItem("240+ Hours of Learning")}
-              {renderListItem("20+ Case Studies")}
-              {renderListItem("18+ Specialised Tools")}
-              {renderListItem("15+ Certifications")}
-            </ul>
-          </div> */}
           <div
             onClick={() =>
               handleClick("/performance-marketing-and-media-buying")
@@ -199,25 +177,6 @@ const MobileMenu: React.FC<Props> = ({ onClose }) => {
             </ul>
           </div>
 
-          {/* <div
-            onClick={() => handleClick("/linkedIn-and-personal-branding")}
-            className={styles.navbarDropdownColumn}
-          >
-            <h4>LinkedIn & Personal Branding </h4>
-
-            <div className={styles.navbarTags}>
-              <span className={styles.dropdownTag}>2 Months</span>
-              <span className={styles.dropdownTag}>Online</span>
-            </div>
-            <ul className={styles.navbarDropdownList}>
-              {renderListItem("Advance Specialist Certification")}
-              {renderListItem("80+ Hours of Learning")}
-              {renderListItem("8+ Case Studies")}
-              {renderListItem("10+ Tools")}
-              {renderListItem("2 Linkedin Outreach Flow")}
-            </ul>
-          </div> */}
-
           <div
             onClick={() => handleClick("/performance-marketing-and-martech")}
             className={styles.navbarDropdownColumn}
@@ -234,6 +193,49 @@ const MobileMenu: React.FC<Props> = ({ onClose }) => {
               {renderListItem("8+ Case Studies")}
               {renderListItem("10+ Tools")}
               {renderListItem("2 Linkedin Outreach Flow")}
+            </ul>
+          </div>
+        </div>
+
+        {/* === College Courses === */}
+        <div
+          className={`${styles.columnGroup} ${styles.leadershipColumnGroup}`}
+        >
+          <h3>College</h3>
+          <div
+            onClick={() => handleClick("#")}
+            className={styles.navbarDropdownColumn}
+          >
+            <h4>MBA in AI Digital Marketing & Entrepreneurship</h4>
+
+            <div className={styles.navbarTags}>
+              <span className={styles.dropdownTag}>2 Years</span>
+              <span className={styles.dropdownTag}>Classroom</span>
+            </div>
+            <ul className={styles.navbarDropdownList}>
+              {renderListItem("University Program")}
+              {renderListItem("NAAC Grade A+")}
+              {renderListItem("AICTE Approved")}
+              {renderListItem("Accredited by N.S.D.C.")}
+              {renderListItem("Job Guarantee Program*")}
+            </ul>
+          </div>
+          <div
+            onClick={() => handleClick("#")}
+            className={styles.navbarDropdownColumn}
+          >
+            <h4>BBA in Digital Marketing & AI</h4>
+
+            <div className={styles.navbarTags}>
+              <span className={styles.dropdownTag}>3 Years</span>
+              <span className={styles.dropdownTag}>Classroom</span>
+            </div>
+            <ul className={styles.navbarDropdownList}>
+              {renderListItem("University Program")}
+              {renderListItem("NAAC Grade A+")}
+              {renderListItem("AICTE Approved")}
+              {renderListItem("Accredited by N.S.D.C.")}
+              {renderListItem("Job Guarantee Program*")}
             </ul>
           </div>
         </div>
