@@ -1,14 +1,25 @@
 export const certificationsData = [
   {
-    name: "Inbound Marketing Certification by Hubspot",
+    name: "Inbound Marketing Certification – HubSpot",
     image: "/images/da360.png",
   },
   {
-    name: "Google Ads Search Certification",
+    name: "Digital Advertising Certification – HubSpot",
     image: "/images/da360.png",
   },
   {
-    name: "Course Completion Certificate by DA360",
+    name: "Influencer Marketing Specialist Certification – DA360",
+    image: "/images/da360.png",
+  },
+    {
+    name: "Social Media & Video Content Certification – DA360",
+    image: "/images/da360.png",
+  },
+      {
+    name: "YouTube & Instagram Influencer Certification – DA360",
+    image: "/images/da360.png",
+  },{
+    name: "Course Completion Certificate – DA360",
     image: "/images/da360.png",
   },
 ];
