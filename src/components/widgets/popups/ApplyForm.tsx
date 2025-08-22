@@ -5,6 +5,11 @@ import styles from "@components/leadCaptureSection/style.module.scss";
 import style from "./style.module.scss";
 import Image from "next/image";
 import Link from "next/link";
+
+// ✅ Swiper imports
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay, Pagination } from "swiper/modules";
+
 interface LeadCaptureFormProps {
   title?: string;
 }
@@ -27,21 +32,16 @@ const ApplyForm = ({}: LeadCaptureFormProps) => {
     e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>
   ) => {
     const { name, value, type } = e.target;
-
     const newValue =
       type === "checkbox" ? (e.target as HTMLInputElement).checked : value;
-
-    setFormData((prev) => ({
-      ...prev,
-      [name]: newValue,
-    }));
+    setFormData((prev) => ({ ...prev, [name]: newValue }));
   };
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     console.log("Submitted data:", formData);
-    // Submit logic here
   };
+
   const experienceOptions = ["Fresher", "1-2 Years", "3+ Years"];
 
   return (
@@ -54,14 +54,51 @@ const ApplyForm = ({}: LeadCaptureFormProps) => {
           height={14}
         />
       </button>
+
+      {/* ✅ Swiper Slider */}
       <div className={style.formBanner}>
-        <Image
-          width={338}
-          height={488}
-          alt="apply"
-          src={"/images/apply-banner.jpg"}
-        />
+        <Swiper
+          modules={[Autoplay, Pagination]}
+          autoplay={{ delay: 3000, disableOnInteraction: false }}
+          pagination={{
+            clickable: true,
+            renderBullet: (_index, className) => {
+              return `<span class="${className} ${style.customBullet}"></span>`;
+            },
+          }}
+          loop={true}
+          spaceBetween={0}
+          slidesPerView={1}
+          className={style.customSwiper}
+        >
+          <SwiperSlide>
+            <Image
+              width={338}
+              height={488}
+              alt="apply-1"
+              src="/images/apply-banner.jpg"
+            />
+          </SwiperSlide>
+          <SwiperSlide>
+            <Image
+              width={338}
+              height={488}
+              alt="apply-2"
+              src="/images/apply-banner.jpg"
+            />
+          </SwiperSlide>
+          <SwiperSlide>
+            <Image
+              width={338}
+              height={488}
+              alt="apply-3"
+              src="/images/apply-banner.jpg"
+            />
+          </SwiperSlide>
+        </Swiper>
       </div>
+
+      {/* ✅ Form Section */}
       <div className={style.formBox}>
         <div className={style.formHeader}>
           <Link href="/" className={styles.logo}>
@@ -81,6 +118,7 @@ const ApplyForm = ({}: LeadCaptureFormProps) => {
             />
           </button>
         </div>
+
         <form onSubmit={handleSubmit}>
           <div>
             <h3>Apply Now</h3>

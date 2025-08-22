@@ -28,6 +28,7 @@
 }
 
 .formBanner {
+  max-width: 338px;
   img {
     height: auto;
   }
@@ -186,5 +187,37 @@
       flex-direction: column;
       justify-content: space-between;
     }
+  }
+}
+
+.customSwiper {
+  position: relative;
+
+  :global(.swiper-pagination) {
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 8px;
+    z-index: 1;
+  }
+
+  .customBullet {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.6);
+    transition: all 0.3s ease;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: solid 1px rgba(255, 255, 255, 0.6);
+  }
+
+  :global(.swiper-pagination-bullet-active) {
+    background: #ffffff;
+    transform: scale(1.2);
   }
 }
