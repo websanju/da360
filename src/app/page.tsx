@@ -5,7 +5,7 @@ import BrandLogos from "@components/brandLogos";
 import ProgramsShowcase from "@components/programsShowcase";
 import SelfPacedPrograms from "@components/selfPacedPrograms";
 import OurSuccessStories from "@components/ourSuccessStories";
-import styles from "./page.module.scss";
+// import styles from "./page.module.scss";
 import TrustedByLearners from "@components/trustedByLearners";
 import CommunityMeetupSlider from "@components/communityMeetupSlider";
 import GlobalCommunity from "@components/globalCommunity";
@@ -55,25 +55,21 @@ export default function HomePage() {
     <main>
       <HeroSection />
       <PaddingWrapper desktopPaddingBottom="130px" mobilePaddingBottom="60px">
-        <OurSuccessStories
-          headerTitle={"Our Alumni Achievements"}
-          description={"Real People, Real Transitions, Real Success"}
-          className={styles.ourSuccessStorieshome}
-          fullWidth
-          className2={styles.successWrapperHome}
-          breakpoints={{
-            480: { slidesPerView: 1.3 },
-            768: { slidesPerView: 2.3 },
-            1200: { slidesPerView: 4.3 },
-          }}
-        />
         <LearnersSection />
       </PaddingWrapper>
       <TrustedByLearners padding={{ desktop: "0 0 0 0", mobile: "0 0 0 0" }} />
       {/* <Accreditation /> */}
       <ProgramsShowcase />
       <SelfPacedPrograms />
-      x
+      <OurSuccessStories
+        headerTitle={"Our Alumni Achievements"}
+        description={"Real People, Real Transitions, Real Success"}
+        // breakpoints={{
+        //   480: { slidesPerView: 1.3 },
+        //   768: { slidesPerView: 2.3 },
+        //   1200: { slidesPerView: 4.3 },
+        // }}
+      />
       <BrandLogos />
       <PaddingWrapper desktopPaddingBottom="130px" mobilePaddingBottom="60px">
         <GuestFacultySlider />
