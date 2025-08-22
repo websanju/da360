@@ -8,19 +8,21 @@ import Link from "next/link";
 
 const blogPosts = [
   {
-    imgSrc: "/images/blog/blog1.jpg",
+    imgSrc:
+      "/images/blog/digital-marketing-as-career-in-2025-skills-salary.jpg",
     category: "Digital Marketing",
-    title: "Google Analytics for Beginners in 2024: A Complete Guide",
+    title: "Digital Marketing as a Career in 2025 - Skills, Salary...",
   },
   {
-    imgSrc: "/images/blog/blog2.jpg",
+    imgSrc: "/images/blog/top-digital-marketing-JobsinDemand-in2025.jpg",
     category: "Digital Marketing",
-    title: "Google Analytics for Beginners in 2024: A Complete Guide",
+    title: "Top Digital Marketing Jobs in Demand in 2025",
   },
   {
-    imgSrc: "/images/blog/blog3.jpg",
+    imgSrc:
+      "/images/blog/AI-vs-human-creativity-what-the -future-holds-for-digital.jpg",
     category: "Digital Marketing",
-    title: "Google Analytics for Beginners in 2024: A Complete Guide",
+    title: "AI vs Human Creativity - What the Future Holds for Digital...",
   },
 ];
 
