@@ -118,8 +118,8 @@ const dataItem: Study[] = [
     logos: ["/images/guestMentor/qilin.svg"],
   },
   {
-    name: "Riya iwari",
-    namePopup: "Riya <br/> iwari",
+    name: "Riya Tiwari",
+    namePopup: "Riya <br/> Tiwari",
     title: "Founder at Authique",
     expertise:
       "Organic LinkedIn growth, storytelling, personal brand positioning, and full-funnel content strategies focused on trust, visibility & monetization.",

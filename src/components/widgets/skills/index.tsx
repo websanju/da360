@@ -2,6 +2,7 @@ import React from "react";
 import styles from "./style.module.scss";
 import Image from "next/image";
 import Link from "next/link";
+import LeftArrow from "@/components/Ui/svg/leftArrow";
 
 interface StatItem {
   icon: string; // icon path
@@ -24,10 +25,10 @@ const WidgetCard: React.FC<WidgetCardProps> = ({
   category,
   stats,
   buttonText,
-  expertText,
+  // expertText,
   image,
   courseLink,
-  expertLink,
+  // expertLink,
 }) => {
   return (
     <div className={`${styles.widgetCard} widget-card`}>
@@ -55,12 +56,12 @@ const WidgetCard: React.FC<WidgetCardProps> = ({
         </div>
 
         <div className={styles.actions}>
-          <Link href={courseLink || "#"} className={styles.viewCourse}>
-            {buttonText}
+          <Link href={courseLink || "#"} className={styles.talkExpert}>
+            {buttonText} <LeftArrow />
           </Link>
-          <Link href={expertLink || "#"} className={styles.talkExpert}>
+          {/* <Link href={expertLink || "#"} className={styles.viewCourse}>
             {expertText}
-          </Link>
+          </Link> */}
         </div>
       </div>
       <div className={styles.cardImage}>

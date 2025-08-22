@@ -12,6 +12,7 @@ const courses = [
     projects: "10+ Tools",
     bgColor: "#8BBAE3",
     imgSrc: "/images/bootcamps/course01.jpg",
+    link: "/ai-vibe-marketing",
   },
   {
     title: "Influencer Marketing",
@@ -20,6 +21,7 @@ const courses = [
     projects: "5+ Specialised Tools",
     bgColor: "#93EABF",
     imgSrc: "/images/bootcamps/course02.jpg",
+    link: "/youtube-and-instagram-and-influencer",
   },
   // {
   //   title: "LinkedIn Marketing Bootcamp",
@@ -30,12 +32,13 @@ const courses = [
   //   imgSrc: "/images/bootcamps/course03.jpg",
   // },
   {
-    title: "AI Marketing / MarTech / Video",
+    title: "Performance Marketing & MarTech",
     duration: "2 Month Course",
     assignments: "Online",
-    projects: "Live Projects",
+    projects: "10+ Tools",
     bgColor: "#FFD6DA",
     imgSrc: "",
+    link: "/performance-marketing-and-martech",
   },
 ];
 
@@ -48,7 +51,7 @@ const SelfPacedPrograms = () => {
             <SectionHeader
               wrapperMarginBottom={{ desktop: "60px", mobile: "40px" }}
               titleMarginBottom={{ desktop: "16px", mobile: "10px" }}
-              title={<>Digital Marketing Bootcamps</>}
+              title={<>Digital Marketing Certification Courses</>}
               description="Deep Dive into Core Marketing Concepts "
             />
           </div>
@@ -64,6 +67,7 @@ const SelfPacedPrograms = () => {
                 projects={course.projects}
                 bgColor={course.bgColor}
                 imgSrc={course.imgSrc}
+                link={course.link}
               />
             </div>
           ))}

@@ -62,7 +62,7 @@ export default function GlobalCommunity() {
               title={
                 <>
                   Join Our Thriving Global <br />
-                  <span>Learning Community</span>
+                  <span>Learning Community to 2,000</span>
                 </>
               }
             />
@@ -100,7 +100,7 @@ export default function GlobalCommunity() {
                     src="/images/icons/countries-counting.svg"
                   />
                 </div>
-                <h3>2000+</h3>
+                <h3>2,000+</h3>
                 <p>Hiring Partners</p>
               </div>
             </div>

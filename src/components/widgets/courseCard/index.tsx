@@ -2,6 +2,7 @@ import React from "react";
 import styles from "./style.module.scss";
 import Image from "next/image";
 import RightArrow from "@/components/Ui/svg/rightArrow";
+import Link from "next/link";
 
 type CourseCardProps = {
   title: string;
@@ -10,6 +11,7 @@ type CourseCardProps = {
   projects: string;
   bgColor?: string;
   imgSrc?: string; // New prop for image
+  link: string;
 };
 
 const CourseCard: React.FC<CourseCardProps> = ({
@@ -19,6 +21,7 @@ const CourseCard: React.FC<CourseCardProps> = ({
   projects,
   bgColor,
   imgSrc,
+  link,
 }) => {
   return (
     <div
@@ -79,9 +82,9 @@ const CourseCard: React.FC<CourseCardProps> = ({
             {projects}
           </li>
         </ul>
-        <button className={styles.arrowButton}>
+        <Link href={link} className={styles.arrowButton}>
           <RightArrow />
-        </button>
+        </Link>
       </div>
     </div>
   );

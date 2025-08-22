@@ -83,7 +83,7 @@ const ProgramsShowcase: React.FC = () => {
               Programs Crafted for <br /> Real-World Success
             </>
           }
-          description="Get Certified. Get Hired."
+          description="Program Endorsed By Industry Leaders"
         />
 
         <div className={`${styles.container} container`}>
@@ -93,7 +93,7 @@ const ProgramsShowcase: React.FC = () => {
                 title="Leadership in Digital Marketing, AI & Entrepreneurship"
                 category={[
                   "12-Month Full Time Program",
-                  " In-Person, Immersive Learning",
+                  "Immersive Classroom Learning",
                 ]}
                 stats={[
                   {
@@ -125,10 +125,7 @@ const ProgramsShowcase: React.FC = () => {
             <div className="card2">
               <WidgetCard
                 title="PGCP in Digital Marketing, E‑Comm & AI"
-                category={[
-                  "6-Month Flagship Program",
-                  "Available Online / Classroom",
-                ]}
+                category={["6-Month Flagship Program", "Online / Classroom"]}
                 stats={[
                   {
                     icon: "/images/icons/certification.svg",
@@ -161,7 +158,7 @@ const ProgramsShowcase: React.FC = () => {
                 title="PGCP in Performance Marketing & Media Buying"
                 category={[
                   "6-Month Certification Program",
-                  "Online Learning Only",
+                  "Online / Classroom",
                 ]}
                 stats={[
                   {

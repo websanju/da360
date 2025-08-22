@@ -46,7 +46,7 @@ export default function HeroSection() {
                 Apply Now
               </Link>
 
-              <Link href="#" className="btn btnWhite btn-lg px-4">
+              <Link href="/courses" className="btn btnWhite btn-lg px-4">
                 Explore Programs
               </Link>
             </div>

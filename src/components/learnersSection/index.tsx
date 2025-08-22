@@ -234,7 +234,7 @@ export default function LearnersSection() {
                     <small>Successfully Placed</small>
                   </div>
                   <div className={styles.companies}>
-                    <h5>2000+</h5>
+                    <h5>2,000+</h5>
                     <small>Hiring Partners</small>
                   </div>
                 </div>

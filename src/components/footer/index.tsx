@@ -258,7 +258,7 @@ const Footer = () => {
         <div className={styles.footerMarketingCourses}>
           <div className={`${styles.row} row`}>
             <div className="col-lg-12">
-              <h6>Digital Marketing Courses Across The World</h6>
+              <h6>Digital Marketing Courses in India</h6>
               <p>
                 Digital Marketing Courses In Mumbai | Digital Marketing Courses
                 In Nepal | Digital Marketing Courses In Dubai | Digital
