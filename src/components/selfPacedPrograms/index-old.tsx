@@ -19,6 +19,7 @@ const courses = [
     projects: "Live Projects",
     bgColor: "#FFEAB2",
     imgSrc: "/images/self-1.png", // Update with your image path
+    link: "#",
   },
   {
     title: "Social Media Marketing & Content Creator",
@@ -27,6 +28,7 @@ const courses = [
     projects: "Live Projects",
     bgColor: "#93EABF",
     imgSrc: "/images/self-2.png", // Update with your image path
+    link: "#",
   },
   {
     title: "Meme & Influencer Marketing",
@@ -35,6 +37,7 @@ const courses = [
     projects: "Live Projects",
     bgColor: "#65B8D8",
     imgSrc: "/images/self-3.png", // Update with your image path
+    link: "#",
   },
   {
     title: "Creative Designing Video Designing",
@@ -43,6 +46,7 @@ const courses = [
     projects: "Live Projects",
     bgColor: "#FFD6DA",
     imgSrc: "/images/self-4.png", // Update with your image path
+    link: "#",
   },
   {
     title: "Social Media Marketing & Content Creator",
@@ -51,6 +55,7 @@ const courses = [
     projects: "Live Projects",
     bgColor: "#FFEAB2",
     imgSrc: "/images/self-1.png", // Update with your image path
+    link: "#",
   },
   {
     title: "Meme & Influencer Marketing",
@@ -59,6 +64,7 @@ const courses = [
     projects: "Live Projects",
     bgColor: "#93EABF",
     imgSrc: "/images/self-2.png", // Update with your image path
+    link: "#",
   },
   {
     title: "Creative Designing Video Designing",
@@ -67,6 +73,7 @@ const courses = [
     projects: "Live Projects",
     bgColor: "#65B8D8",
     imgSrc: "/images/self-3.png", // Update with your image path
+    link: "#",
   },
 ];
 
@@ -141,6 +148,7 @@ const SelfPacedPrograms = () => {
                   projects={course.projects}
                   bgColor={course.bgColor}
                   imgSrc={course.imgSrc}
+                  link={course.link}
                 />
               </SwiperSlide>
             ))}
