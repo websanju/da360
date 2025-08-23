@@ -23,7 +23,7 @@ const sora = Sora({
 interface Student {
   name: string;
   designation: string;
-  company: string;
+  // company: string;
   bgColor: string;
   iconColor: string;
   cardClass: string;
@@ -32,41 +32,41 @@ interface Student {
 // Sample student data
 const students: Student[] = [
   {
-    name: "Praveen",
-    designation: "Ass. Manager - Marketing",
-    company: "INTELLIPAT",
+    name: "Vivek",
+    designation: "SEO Topper",
+    // company: "INTELLIPAT",
     bgColor: "#4A6EE6",
     iconColor: "#4A6EE6",
     cardClass: "cardOne",
   },
   {
-    name: "Anjali",
-    designation: "PPC TRAINEE",
-    company: "VALUELEAF",
+    name: "Archie",
+    designation: "SMM Topper",
+    // company: "VALUELEAF",
     bgColor: "#4CCE6D",
     iconColor: "#4CCE6D",
     cardClass: "cardTwo",
   },
   {
-    name: "Mayank",
-    designation: "Ass. Manager - Marketing",
-    company: "INTELLIPAT",
+    name: "Diya",
+    designation: "SEO Topper",
+    // company: "INTELLIPAT",
     bgColor: "#E53F43",
     iconColor: "#E53F43",
     cardClass: "cardThree",
   },
   {
-    name: "Mayank",
-    designation: "Ass. Manager - Marketing",
-    company: "INTELLIPAT",
+    name: "Tanishq",
+    designation: "SEO Topper",
+    // company: "INTELLIPAT",
     bgColor: "#945EFF",
     iconColor: "#945EFF",
     cardClass: "cardFour",
   },
   {
-    name: "Mayank",
-    designation: "Ass. Manager - Marketing",
-    company: "INTELLIPAT",
+    name: "Tamanna",
+    designation: "SMM Topper",
+    // company: "",
     bgColor: "#FFEC5E",
     iconColor: "#FFEC5E",
     cardClass: "cardFive",
@@ -77,7 +77,7 @@ const students: Student[] = [
 const StudentCard = ({
   name,
   designation,
-  company,
+  // company,
   bgColor,
   iconColor,
   cardClass,
@@ -96,7 +96,7 @@ const StudentCard = ({
     </div>
     <div className={`${styles.studentDetails} ${sora.className}`}>
       <p>{designation}</p>
-      <span>{company}</span>
+      {/* <span>{company}</span> */}
     </div>
   </div>
 );
@@ -145,7 +145,7 @@ export default function LearnersSection() {
       <div className={styles.imageContainer}>
         <div className={styles.imageBoxMobile}>
           <Image
-            src="/images/hero-section-mobile.jpg"
+            src="/images/webtopper-min.jpg"
             alt="Learners Group"
             width={786}
             height={640}
