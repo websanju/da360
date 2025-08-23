@@ -6,36 +6,43 @@ import SectionHeader from "@components/widgets/sectionHeader";
 
 const courses = [
   {
-    title: "AI Marketing / MarTech / Video",
-    duration: "2 Month Course",
-    assignments: "80+ Hours of Learning",
-    projects: "10+ Tools",
+    title: "AI Vibe Marketing",
+    details: [
+      "2 Months / Online",
+      "Advance Specialist Certification",
+      "80+ Hours of Learning",
+      "8+ Case Studies",
+      "10+ Tools",
+      "2 AI Flows",
+    ],
     bgColor: "#8BBAE3",
     imgSrc: "/images/bootcamps/course01.jpg",
     link: "/ai-vibe-marketing",
   },
   {
-    title: "Influencer Marketing",
-    duration: "2 Month Course",
-    assignments: "80+ Hours of Learning",
-    projects: "5+ Specialised Tools",
+    title: "Youtube & Instagram Influencer",
+    details: [
+      "2 Months / Online",
+      "Advance Specialist Certification",
+      "80+ Hours of Learning",
+      "8+ Case Studies",
+      "5+ Specialised Tools",
+      "2 Creator Flow",
+    ],
     bgColor: "#93EABF",
     imgSrc: "/images/bootcamps/course02.jpg",
     link: "/youtube-and-instagram-and-influencer",
   },
-  // {
-  //   title: "LinkedIn Marketing Bootcamp",
-  //   duration: "2 Month Course",
-  //   assignments: "80+ Hours of Learning",
-  //   projects: "10+ Tools",
-  //   bgColor: "#FFEAB2",
-  //   imgSrc: "/images/bootcamps/course03.jpg",
-  // },
   {
     title: "Performance Marketing & MarTech",
-    duration: "2 Month Course",
-    assignments: "Online",
-    projects: "10+ Tools",
+    details: [
+      "2 Months / Online",
+      "Advance Specialist Certification",
+      "80+ Hours of Learning",
+      "8+ Case Studies",
+      "10+ Tools",
+      "2 Funnel Blueprints",
+    ],
     bgColor: "#FFD6DA",
     imgSrc: "",
     link: "/performance-marketing-and-martech",
@@ -62,9 +69,7 @@ const SelfPacedPrograms = () => {
             <div className="col-md-6 col-lg-4 mb-4" key={index}>
               <CourseCard
                 title={course.title}
-                duration={course.duration}
-                assignments={course.assignments}
-                projects={course.projects}
+                details={course.details}
                 bgColor={course.bgColor}
                 imgSrc={course.imgSrc}
                 link={course.link}
