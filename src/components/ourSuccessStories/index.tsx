@@ -14,7 +14,8 @@ import RightArrow from "@components/Ui/svg/rightArrowLine";
 import SectionHeader from "@components/widgets/sectionHeader";
 
 import { usePopup } from "@components/widgets/popup/PopupContext";
-import DownloadPlacementReport from "@components/widgets/popups/DownloadPlacementReport";
+// import DownloadPlacementReport from "@components/widgets/popups/DownloadPlacementReport";
+import ApplyForm from "../widgets/popups/ApplyForm";
 
 interface Story {
   name: string;
@@ -281,8 +282,8 @@ const SuccessStories: React.FC<StoryHeader & {}> = ({
             <Link
               href="#"
               onClick={() =>
-                openPopup(<DownloadPlacementReport />, {
-                  title: `"Apply Now"`,
+                openPopup(<ApplyForm title="Download Placement Report" />, {
+                  title: `"Download Placement Report"`,
                 })
               }
               className={`${styles.downloadBtn} btn-white rounded-pill`}

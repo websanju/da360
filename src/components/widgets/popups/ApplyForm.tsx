@@ -14,7 +14,7 @@ interface LeadCaptureFormProps {
   title?: string;
 }
 
-const ApplyForm = ({}: LeadCaptureFormProps) => {
+const ApplyForm = ({ title }: LeadCaptureFormProps) => {
   const { closePopup } = usePopup();
 
   const [formData, setFormData] = useState({
@@ -121,7 +121,7 @@ const ApplyForm = ({}: LeadCaptureFormProps) => {
 
         <form onSubmit={handleSubmit}>
           <div>
-            <h3>Apply Now</h3>
+            <h3>{title}</h3>
             <div className="form-field">
               <input
                 type="text"
