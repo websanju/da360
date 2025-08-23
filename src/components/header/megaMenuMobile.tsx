@@ -201,7 +201,7 @@ const MobileMenu: React.FC<Props> = ({ onClose }) => {
         <div
           className={`${styles.columnGroup} ${styles.leadershipColumnGroup}`}
         >
-          <h3>College</h3>
+          <h3>University Programs</h3>
           <div
             onClick={() => handleClick("#")}
             className={styles.navbarDropdownColumn}
