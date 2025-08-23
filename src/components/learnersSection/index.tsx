@@ -155,7 +155,7 @@ export default function LearnersSection() {
         </div>
         <div className={styles.imageBox}>
           <Image
-            src="/images/hero-section.jpg"
+            src="/images/webtopper-min.jpg"
             alt="Learners Group"
             width={2880}
             height={1900}
