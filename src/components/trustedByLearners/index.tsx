@@ -77,7 +77,7 @@ const TrustedByLearners = ({
                       unoptimized
                     />
                   </div>
-                  <p className={styles.reviewText}>4.8* 143+ reviews</p>
+                  <p className={styles.reviewText}>143+ reviews</p>
                 </div>
               </div>
               {/* Card 1 */}
@@ -102,7 +102,7 @@ const TrustedByLearners = ({
                       unoptimized
                     />
                   </div>
-                  <p className={styles.reviewText}>4.7* 750+ reviews</p>
+                  <p className={styles.reviewText}>750+ reviews</p>
                 </div>
               </div>
 
@@ -128,7 +128,7 @@ const TrustedByLearners = ({
                       unoptimized
                     />
                   </div>
-                  <p className={styles.reviewText}>4.5* 30+ reviews</p>
+                  <p className={styles.reviewText}>30+ reviews</p>
                 </div>
               </div>
             </div>
