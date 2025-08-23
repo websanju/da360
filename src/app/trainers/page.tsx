@@ -127,7 +127,7 @@ const dataItem: Study[] = [
       "Personal Branding Strategist known for helping B2B founders build LinkedIn authority and visibility. Has mentored 300+ freelancers and conducted 250+ client calls generating lakhs in revenue.",
     profileImage: "/images/guestMentor/riya-tiwari.jpg",
     profileImagePopup: "/images/guestMentor/riya-tiwari.png",
-    logos: [""],
+    logos: ["/images/guestMentor/authique.jpeg"],
   },
 ];
 export interface Trainer {
