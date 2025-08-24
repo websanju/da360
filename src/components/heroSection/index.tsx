@@ -34,13 +34,12 @@ export default function HeroSection() {
               Built in Collaboration with Top Digital Marketing Professionals.
             </p>
             <div className={styles.applyAction}>
-              <Link
-                href="#"
+              <span
                 onClick={() => openPopup(<ApplyForm title="Apply Now" />, {})}
                 className="btn btn-danger btn-lg px-4"
               >
                 Apply Now
-              </Link>
+              </span>
 
               <Link href="/courses" className="btn btnWhite btn-lg px-4">
                 Explore Programs

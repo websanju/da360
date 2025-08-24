@@ -1,10 +1,13 @@
+"use client";
 import React from "react";
 import styles from "./style.module.scss";
-
+import { usePopup } from "@components/widgets/popup/PopupContext";
+import ApplyForm from "../widgets/popups/ApplyForm";
 interface CallToActionBannerProps {
   section?: string;
 }
 const CallToActionBanner: React.FC<CallToActionBannerProps> = ({ section }) => {
+  const { openPopup } = usePopup();
   return (
     <section className={styles.callToActionBanner} id={section}>
       <div className="container">
@@ -21,8 +24,12 @@ const CallToActionBanner: React.FC<CallToActionBannerProps> = ({ section }) => {
                 your life.
               </p>
               <div className={styles.buttons}>
-                <button className={styles.btn}>Join the Experience</button>
-                <button className={styles.btn}>Book Campus Visit</button>
+                <button
+                  onClick={() => openPopup(<ApplyForm title="Apply" />, {})}
+                  className={styles.btn}
+                >
+                  Book Campus Visit
+                </button>
               </div>
             </div>
           </div>

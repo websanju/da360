@@ -74,14 +74,14 @@ const TOOBGrid = ({ section }: TOOBGridProps) => {
                 <div className={styles.itemContent}>
                   <h3> Digital Marketing Quiz League</h3>
                 </div>
-                <Link href={"#"} className={styles.itemIcon}>
+                {/* <Link href={"#"} className={styles.itemIcon}>
                   <Image
                     width={20}
                     height={20}
                     src="/images/icons/gird-right-icon.svg"
                     alt=""
                   />
-                </Link>
+                </Link> */}
               </div>
               <div className={`${styles.item} ${styles.purple}`}>
                 <div className={styles.itemContent}>
@@ -97,14 +97,14 @@ const TOOBGrid = ({ section }: TOOBGridProps) => {
                     alt="guest"
                   />
                 </div>
-                <Link href={"#"} className={styles.itemIcon}>
+                {/* <Link href={"#"} className={styles.itemIcon}>
                   <Image
                     width={20}
                     height={20}
                     src="/images/icons/gird-right-icon.svg"
                     alt=""
                   />
-                </Link>
+                </Link> */}
               </div>
               <div className={`${styles.item} ${styles.pink}`}>
                 <div className={styles.itemImg}>
@@ -119,14 +119,14 @@ const TOOBGrid = ({ section }: TOOBGridProps) => {
                   <h3>Escape Room</h3>
                   <p>The Analytics Edition</p>
                 </div>
-                <Link href={"#"} className={styles.itemIcon}>
+                {/* <Link href={"#"} className={styles.itemIcon}>
                   <Image
                     width={20}
                     height={20}
                     src="/images/icons/gird-right-icon.svg"
                     alt=""
                   />
-                </Link>
+                </Link> */}
               </div>
               <div className={`${styles.item} ${styles.orange}`}>
                 <div className={styles.itemImg}>
@@ -142,14 +142,14 @@ const TOOBGrid = ({ section }: TOOBGridProps) => {
                     Viral <br /> Marketing <br /> Lab
                   </h3>
                 </div>
-                <Link href={"#"} className={styles.itemIcon}>
+                {/* <Link href={"#"} className={styles.itemIcon}>
                   <Image
                     width={20}
                     height={20}
                     src="/images/icons/gird-right-icon.svg"
                     alt=""
                   />
-                </Link>
+                </Link> */}
               </div>
               <div className={`${styles.item} ${styles.blue}`}>
                 <div className={styles.itemContent}>
@@ -172,14 +172,14 @@ const TOOBGrid = ({ section }: TOOBGridProps) => {
                     className={styles.ditemImg}
                   />
                 </div>
-                <Link href={"#"} className={styles.itemIcon}>
+                {/* <Link href={"#"} className={styles.itemIcon}>
                   <Image
                     width={20}
                     height={20}
                     src="/images/icons/gird-right-icon.svg"
                     alt=""
                   />
-                </Link>
+                </Link> */}
               </div>
               <div className={`${styles.item} ${styles.imageCard}`}>
                 <div className={styles.itemImg}>
@@ -219,28 +219,28 @@ const TOOBGrid = ({ section }: TOOBGridProps) => {
                     alt="pitch-promote"
                   />
                 </div>
-                <Link href={"#"} className={styles.itemIcon}>
+                {/* <Link href={"#"} className={styles.itemIcon}>
                   <Image
                     width={20}
                     height={20}
                     src="/images/icons/gird-right-icon.svg"
                     alt=""
                   />
-                </Link>
+                </Link> */}
               </div>
               <div className={`${styles.item} ${styles.brown}`}>
                 <div className={styles.itemContent}>
                   <h3>Podcast Jam</h3>
                   <p>Digital Storytelling & Audio Content</p>
                 </div>
-                <Link href={"#"} className={styles.itemIcon}>
+                {/* <Link href={"#"} className={styles.itemIcon}>
                   <Image
                     width={20}
                     height={20}
                     src="/images/icons/gird-right-icon.svg"
                     alt=""
                   />
-                </Link>
+                </Link> */}
                 <div className={styles.itemImg}>
                   <Image
                     width={127}

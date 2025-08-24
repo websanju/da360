@@ -3,10 +3,11 @@
 import { useState } from "react";
 import Image from "next/image";
 import styles from "./style.module.scss";
-import Link from "next/link";
+// import Link from "next/link";
 
 import { usePopup } from "@components/widgets/popup/PopupContext";
-import ScheduleCampusTour from "@components/widgets/popups/ScheduleCampusTour";
+// import ScheduleCampusTour from "@components/widgets/popups/ScheduleCampusTour";
+import ApplyForm from "../widgets/popups/ApplyForm";
 
 interface VideoCardProps {
   videoUrl: string;
@@ -118,17 +119,14 @@ const CampusTour = ({
                 the launchpad for future digital leaders
               </p>
               <div className={styles.scheduleButton}>
-                <Link
-                  href="#"
+                <span
                   onClick={() =>
-                    openPopup(<ScheduleCampusTour />, {
-                      title: `"Apply Now"`,
-                    })
+                    openPopup(<ApplyForm title="Schedule Campus Tour" />, {})
                   }
                   className="btn btnRed"
                 >
                   Schedule Campus Tour
-                </Link>
+                </span>
               </div>
             </div>
           </div>
