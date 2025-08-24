@@ -38,7 +38,7 @@ const coursesData: CourseSection[] = [
       {
         id: 'social-content-creator-video-production',
           title: 'Leadership in Social Content Creator & Video Production',
-          tags: [ '12 Months d',],
+          tags: [ '12 Months',],
         features: [
           '3 Months Internship Included',
           '1920+ Hours of Learning',
@@ -87,7 +87,7 @@ const coursesData: CourseSection[] = [
       {
         id: 'performance-marketing-media-buying',
           title: 'Performance Marketing & Media Buying',
-         tags: [ '6 Months', 'Online'],
+         tags: [ '6 Months', 'Online / Classroom'],
         features: [
           'PG Level Certification',
           '240+ Hours of Learning',
