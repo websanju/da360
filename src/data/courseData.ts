@@ -150,6 +150,7 @@ const coursesData: CourseSection[] = [
       {
         id: 'digital-marketing-ecomm-ai-cert',
         title: 'Performance Marketing & MarTech',
+         tags: [ '2 Months', 'Online'],
         features: [
           'Advance Specialist Certification',
           '80+ Hours of Learning',
