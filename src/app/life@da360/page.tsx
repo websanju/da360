@@ -43,8 +43,8 @@ export default function Lifeda360() {
       <TrendReportsSlider section="section6" />
       <SportsEvent section="section7" />
       <LifeAtDA360Gallery
-        title="Digital Marketing Meetups"
-        description="At DA360, we’re building India’s largest network of digital disruptors. Connect, collaborate, and grow alongside top industry professionals, mentors, and future leaders — all in one powerful community designed to supercharge your career."
+        title="Life@D360"
+        description="Student life at Digital Academy 360 is far from ordinary – it’s extraordinary!"
         bgColor="rgba(245, 245, 245, 1);"
         section="section8"
       />
