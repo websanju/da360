@@ -2,6 +2,7 @@
 
 import React from "react";
 import styles from "./styles.module.scss";
+import Link from "next/link";
 
 const CareerBanner: React.FC = () => {
   return (
@@ -16,7 +17,9 @@ const CareerBanner: React.FC = () => {
                 future-ready courses and programmes.
               </p>
               <div className={styles.actionBtn}>
-                <button className={styles.cta}>Explore Courses</button>
+                <Link href="/courses" className={styles.cta}>
+                  Explore Courses
+                </Link>
               </div>
             </div>
           </div>
