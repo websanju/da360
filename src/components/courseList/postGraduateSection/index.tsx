@@ -8,11 +8,8 @@ const LeadershipSection = ({ section }: { section: CourseSection }) => (
       <div className="row">
         <div className="col-lg-12">
           <div className={styles.sectionHeader}>
-            <h2>
-              Post Graduate Certification Program
-              <br /> Courses
-            </h2>
-            <p>12 months full time program</p>
+            <h2>Post Graduate Certification Program Courses</h2>
+            <p>Designed For 12 months full time program</p>
           </div>
           <div className="row">
             {section.courses.map((course) => (
