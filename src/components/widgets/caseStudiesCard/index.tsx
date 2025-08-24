@@ -5,8 +5,7 @@ import Image from "next/image";
 import styles from "./style.module.scss";
 import { usePopup } from "@components/widgets/popup/PopupContext";
 import CaseStudyPopup from "@components/widgets/popups/CaseStudyPopup";
-import Link from "next/link";
-
+// import Link from "next/link";
 export interface CaseStudy {
   id: number;
   logo: string;
@@ -33,8 +32,7 @@ export default function Card({ study }: { study: CaseStudy }) {
         <h3>{study.title}</h3>
         <p className={styles.desc}>
           {study.description.slice(0, 120)}...
-          <Link
-            href="#"
+          <span
             onClick={() =>
               openPopup(<CaseStudyPopup study={study} />, {
                 title: `${study.title}`,
@@ -43,7 +41,7 @@ export default function Card({ study }: { study: CaseStudy }) {
             className={styles.knowMore}
           >
             Know More
-          </Link>
+          </span>
         </p>
       </div>
       <div className={styles.separator}></div>

@@ -6,7 +6,6 @@ import styles from "./style.module.scss";
 // import Link from "next/link";
 
 import { usePopup } from "@components/widgets/popup/PopupContext";
-// import ScheduleCampusTour from "@components/widgets/popups/ScheduleCampusTour";
 import ApplyForm from "../widgets/popups/ApplyForm";
 
 interface VideoCardProps {
