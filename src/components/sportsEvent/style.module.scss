@@ -1,66 +1,85 @@
 .sportCardSection {
-    background: #E10F33;
-    padding: 100px 0;
-    .gridCards {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(405px, 1fr));
-        gap: 20px;
+  background: #e10f33;
+  padding: 100px 0;
+  .gridCards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(405px, 1fr));
+    gap: 20px;
+    .specialCard {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100%;
+      width: 100%;
+      .lastCardBtn {
+        font-weight: 700;
+        font-style: Italic;
+        font-size: 48px;
+        line-height: 60px;
+        letter-spacing: 0%;
+        background-color: transparent;
+        border: none;
+        color: #fff;
+        text-align: left;
+        max-width: 300px;
+      }
     }
+  }
 }
 
 .loadMoreAction {
-    display: flex;
-    justify-content: center;
-    margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
 }
 
 .loadMoreBtn {
-    background: transparent;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 6px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    border: 2px solid rgba(255, 255, 255, 1);
-    min-height: 40px;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 25px;
-    letter-spacing: 0%;
-    text-align: center;
-    min-width: 150px;
-    border-radius: 100px;
-    display: flex;
-    gap: 10px;
-    justify-content: center;
+  background: transparent;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: 2px solid rgba(255, 255, 255, 1);
+  min-height: 40px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 25px;
+  letter-spacing: 0%;
+  text-align: center;
+  min-width: 150px;
+  border-radius: 100px;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
 
-    &:hover {
-        background: #fff;
-        color: #E10F33;
-        svg path {
-            fill: #E10F33;
-        }
+  &:hover {
+    background: #fff;
+    color: #e10f33;
+    svg path {
+      fill: #e10f33;
     }
+  }
 }
 
 @media (max-width: 991px) {
-    .sportCardSection {
-        padding: 60px 0;
-        .gridCards {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
-            gap: 20px;
-        }
+  .sportCardSection {
+    padding: 60px 0;
+    .gridCards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+      gap: 20px;
     }
+  }
 }
 
 @media (max-width: 691px) {
-    .sportCardSection {
-        .gridCards {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
-            gap: 20px;
-        }
+  .sportCardSection {
+    .gridCards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+      gap: 20px;
     }
+  }
 }

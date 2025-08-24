@@ -5,37 +5,50 @@ import styles from "./style.module.scss";
 import LeftArrow from "@components/Ui/svg/leftArrow";
 import SectionHeader from "@components/widgets/sectionHeader";
 
-const sportData = [
+type SportItem = {
+  type: "sport";
+  title: string;
+  images: string[];
+  color: string;
+};
+type ButtonItem = {
+  type: "button";
+};
+
+type SportDataItem = SportItem | ButtonItem;
+
+const sportData: SportDataItem[] = [
   {
+    type: "sport",
     title: "Cricket",
     images: ["/images/sports/cricket1.png", "/images/sports/cricket1.png"],
     color: "#FFD700",
   },
   {
+    type: "sport",
     title: "Snooker",
     images: ["/images/sports/snooker.png", "/images/sports/snooker.png"],
     color: "#00BFFF",
   },
   {
+    type: "sport",
     title: "Foosball",
     images: ["/images/sports/foosball.png"],
     color: "#32CD32",
   },
   {
+    type: "sport",
     title: "Badminton",
     images: ["/images/sports/badminton.png"],
     color: "#FFB6C1",
   },
   {
+    type: "sport",
     title: "Table Tennis",
     images: ["/images/sports/table.png"],
     color: "#FFA500",
   },
-  {
-    title: "PS5",
-    images: ["/images/sports/ps5.png", "/images/sports/ps5.png"],
-    color: "#00FFFF",
-  },
+  { type: "button" },
 ];
 
 interface SportsGridProps {
@@ -80,14 +93,26 @@ export default function SportsGrid({ section }: SportsGridProps) {
         </div>
 
         <div className={styles.gridCards}>
-          {sportData.slice(0, visibleCount).map((item, idx) => (
-            <SportCardSlider
-              key={idx}
-              title={item.title}
-              images={item.images}
-              color={item.color}
-            />
-          ))}
+          {sportData.slice(0, visibleCount).map((item, idx) => {
+            if (item.type === "button") {
+              return (
+                <div key={idx} className={styles.specialCard}>
+                  <button className={styles.lastCardBtn}>
+                    Learn While You Play
+                  </button>
+                </div>
+              );
+            }
+
+            return (
+              <SportCardSlider
+                key={idx}
+                title={item.title}
+                images={item.images}
+                color={item.color}
+              />
+            );
+          })}
         </div>
 
         {isMobile && visibleCount < sportData.length && (
