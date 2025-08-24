@@ -18,14 +18,14 @@ export default function GlobalCommunity() {
       left: "20%",
       count: "30,161",
       label: "Learners",
-      image: "/images/learnes-img.png",
+      image: "/images/map-profile/profile01.jpg",
     },
     {
       top: "5%",
       left: "45%",
       count: "24,783",
       label: "Learners",
-      image: "/images/learnes-img.png",
+      image: "/images/map-profile/profile02.jpg",
       delay: "5s",
     },
     {
@@ -33,14 +33,14 @@ export default function GlobalCommunity() {
       left: "60%",
       count: "52,001",
       label: "Learners",
-      image: "/images/learnes-img.png",
+      image: "/images/map-profile/profile03.jpg",
     },
     {
       top: "50%",
       left: "75%",
       count: "12,502",
       label: "Learners",
-      image: "/images/learnes-img.png",
+      image: "/images/map-profile/profile04.jpg",
       delay: "5s",
     },
     {
@@ -48,7 +48,7 @@ export default function GlobalCommunity() {
       left: "75%",
       count: "7,990",
       label: "Learners",
-      image: "/images/learnes-img.png",
+      image: "/images/map-profile/profile05.jpg",
     },
   ];
 
