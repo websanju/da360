@@ -97,19 +97,19 @@ const ProgramsShowcase: React.FC = () => {
                 ]}
                 stats={[
                   {
-                    icon: "/images/icons/certification.svg",
+                    icon: "/images/course-list/icons/icon01.svg",
                     label: "50+ Case Studies",
                   },
                   {
-                    icon: "/images/icons/certification.svg",
+                    icon: "/images/course-list/icons/icon02.svg",
                     label: "1900+ hrs Practical Training",
                   },
                   {
-                    icon: "/images/icons/certification.svg",
+                    icon: "/images/course-list/icons/icon03.svg",
                     label: "70+ Tools",
                   },
                   {
-                    icon: "/images/icons/certification.svg",
+                    icon: "/images/course-list/icons/icon04.svg",
                     label: "25+ Certifications",
                   },
                 ]}
@@ -128,19 +128,19 @@ const ProgramsShowcase: React.FC = () => {
                 category={["6-Month Flagship Program", "Online / Classroom"]}
                 stats={[
                   {
-                    icon: "/images/icons/certification.svg",
+                    icon: "/images/course-list/icons/icon01.svg",
                     label: "240+ Hours of Learning",
                   },
                   {
-                    icon: "/images/icons/certification.svg",
+                    icon: "/images/course-list/icons/icon02.svg",
                     label: "20+ Case Studies",
                   },
                   {
-                    icon: "/images/icons/certification.svg",
+                    icon: "/images/course-list/icons/icon03.svg",
                     label: "30+ Tools",
                   },
                   {
-                    icon: "/images/icons/certification.svg",
+                    icon: "/images/course-list/icons/icon04.svg",
                     label: "15+ Certifications",
                   },
                 ]}
@@ -162,19 +162,19 @@ const ProgramsShowcase: React.FC = () => {
                 ]}
                 stats={[
                   {
-                    icon: "/images/icons/certification.svg",
+                    icon: "/images/course-list/icons/icon01.svg",
                     label: "20+ Case Studies",
                   },
                   {
-                    icon: "/images/icons/certification.svg",
+                    icon: "/images/course-list/icons/icon02.svg",
                     label: "240+ Hours of Learning",
                   },
                   {
-                    icon: "/images/icons/certification.svg",
+                    icon: "/images/course-list/icons/icon03.svg",
                     label: "20+ Specialised Tools",
                   },
                   {
-                    icon: "/images/icons/certification.svg",
+                    icon: "/images/course-list/icons/icon04.svg",
                     label: "15+ Certifications",
                   },
                 ]}
@@ -182,7 +182,7 @@ const ProgramsShowcase: React.FC = () => {
                 courseLink="/performance-marketing-and-media-buying"
                 //
                 expertText="Avail Scholarship"
-                image="/images/course-list/skill-diploma-in-digital-marketing.png"
+                image="/images/course-list/performance-marketing-and-media-buying.jpg"
               />
             </div>
           </div>
