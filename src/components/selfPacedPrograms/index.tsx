@@ -16,7 +16,7 @@ const courses = [
       "2 AI Flows",
     ],
     bgColor: "#8BBAE3",
-    imgSrc: "/images/bootcamps/course01.jpg",
+    imgSrc: "/images/bootcamps/ai-vibe-marketing.jpg",
     link: "/ai-vibe-marketing",
   },
   {
@@ -30,7 +30,7 @@ const courses = [
       "2 Creator Flow",
     ],
     bgColor: "#93EABF",
-    imgSrc: "/images/bootcamps/course02.jpg",
+    imgSrc: "/images/bootcamps/youtube-instagram-Influencer.jpg",
     link: "/youtube-and-instagram-and-influencer",
   },
   {
@@ -44,7 +44,7 @@ const courses = [
       "2 Funnel Blueprints",
     ],
     bgColor: "#FFD6DA",
-    imgSrc: "",
+    imgSrc: "/images/bootcamps/performance-marketing-marTech.jpg",
     link: "/performance-marketing-and-martech",
   },
 ];
