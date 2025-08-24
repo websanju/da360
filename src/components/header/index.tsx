@@ -193,7 +193,7 @@ export default function Header() {
                       Trainers
                     </Link>
                   </li>
-                  <li>
+                  {/* <li>
                     <Link
                       href="/hackathon"
                       className={`${styles.navItem} ${
@@ -202,7 +202,7 @@ export default function Header() {
                     >
                       Hackathon
                     </Link>
-                  </li>
+                  </li> */}
                   <li>
                     <Link
                       href="/hire-from-da360"

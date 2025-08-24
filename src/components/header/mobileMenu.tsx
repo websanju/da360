@@ -44,11 +44,11 @@ const MobileMenu: React.FC<Props> = ({ onClose }) => {
             Trainers
           </Link>
         </li>
-        <li>
+        {/* <li>
           <Link href="/hackathon" onClick={handleClose}>
             Hackaton
           </Link>
-        </li>
+        </li> */}
         <li>
           <Link href="/hire-from-da360" onClick={handleClose}>
             Hire From Us
