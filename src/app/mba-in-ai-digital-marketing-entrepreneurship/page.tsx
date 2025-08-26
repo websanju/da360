@@ -14,6 +14,7 @@ import BrandLogos from "@/components/brandLogos";
 import FeeStructure from "@/components/feeStructure";
 import AdmissionProcess from "@/components/admissionProcess";
 import TOOBGrid from "@/components/toobGrid";
+import UniversityGallery from "@/components/universityGallery";
 
 export const metadata = {
   title: "Best Digital Marketing Training Institute Online & Classroom",
@@ -87,6 +88,7 @@ export default function courseDetail() {
         section="section3"
         videoUrl="/images/videos/classroom-video-3.mp4"
       />
+      <UniversityGallery />
       <TeamSection section="section4" />
 
       <LiveProjectsSlider

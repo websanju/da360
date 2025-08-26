@@ -1,0 +1,73 @@
+.gallerySection {
+  padding: 45px 0 140px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 1rem;
+
+  @media (min-width: 640px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (min-width: 1024px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.imageWrapper {
+  position: relative;
+  width: 100%;
+  height: 250px;
+  border-radius: 0;
+  overflow: hidden;
+  cursor: pointer;
+
+  img {
+    transition: transform 0.3s ease;
+  }
+
+  &:hover {
+    img {
+      transform: scale(1.05);
+    }
+  }
+}
+
+.image {
+  object-fit: cover;
+}
+
+.lightbox {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.85);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 111;
+}
+
+.closeBtn {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #fff;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.lightboxContent {
+  position: relative;
+  width: 90%;
+  height: 80%;
+  max-width: 900px;
+}
+
+.lightboxImage {
+  object-fit: contain;
+}
