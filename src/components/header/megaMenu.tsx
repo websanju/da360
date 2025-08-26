@@ -13,7 +13,7 @@ const tabs = [
   { name: "Leadership Courses", key: "leadership" },
   { name: "PGCP Courses", key: "pgcp" },
   { name: "Certification Courses", key: "certification" },
-  { name: "University Programs", key: "college" },
+  { name: "S-VYASA Deemed University", key: "college" },
 ];
 
 export default function MegaMenu({ closeMenu }: MegaMenuProps) {

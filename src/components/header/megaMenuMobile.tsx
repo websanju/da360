@@ -201,9 +201,11 @@ const MobileMenu: React.FC<Props> = ({ onClose }) => {
         <div
           className={`${styles.columnGroup} ${styles.leadershipColumnGroup}`}
         >
-          <h3>University Programs</h3>
+          <h3>S-VYASA Deemed University</h3>
           <div
-            onClick={() => handleClick("#")}
+            onClick={() =>
+              handleClick("/mba-in-ai-digital-marketing-entrepreneurship")
+            }
             className={styles.navbarDropdownColumn}
           >
             <h4>MBA in AI Digital Marketing & Entrepreneurship</h4>

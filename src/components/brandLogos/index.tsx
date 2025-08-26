@@ -1,15 +1,16 @@
-// components/BrandLogos.tsx
 import Image from "next/image";
 import styles from "./style.module.scss";
 import SectionHeader from "@components/widgets/sectionHeader";
+
+// Logos (1–18)
 const logos = [
   { src: "/images/brand/brand_1.jpg", alt: "Dentsu" },
   { src: "/images/brand/brand_2.jpg", alt: "Valueleaf" },
   { src: "/images/brand/brand_3.jpg", alt: "Jungle Square" },
   { src: "/images/brand/brand_4.jpg", alt: "Google" },
-  { src: "/images/brand/brand_5.jpg", alt: "TCS " },
+  { src: "/images/brand/brand_5.jpg", alt: "TCS" },
   { src: "/images/brand/brand_6.jpg", alt: "KTM" },
-  { src: "/images/brand/brand_7.jpg", alt: "Zoomcar   " },
+  { src: "/images/brand/brand_7.jpg", alt: "Zoomcar" },
   { src: "/images/brand/brand_8.jpg", alt: "Philips" },
   { src: "/images/brand/brand_9.jpg", alt: "IBM" },
   { src: "/images/brand/brand_10.jpg", alt: "Replicon" },
@@ -22,14 +23,16 @@ const logos = [
   { src: "/images/brand/brand_17.jpg", alt: "Unacademy" },
   { src: "/images/brand/brand_18.jpg", alt: "AT&T" },
 ];
+
+// Logos (19–36)
 const logosSecond = [
   { src: "/images/brand/brand_19.jpg", alt: "Dentsu" },
   { src: "/images/brand/brand_20.jpg", alt: "Valueleaf" },
   { src: "/images/brand/brand_21.jpg", alt: "Jungle Square" },
   { src: "/images/brand/brand_22.jpg", alt: "Google" },
-  { src: "/images/brand/brand_23.jpg", alt: "TCS " },
+  { src: "/images/brand/brand_23.jpg", alt: "TCS" },
   { src: "/images/brand/brand_24.jpg", alt: "KTM" },
-  { src: "/images/brand/brand_25.jpg", alt: "Zoomcar   " },
+  { src: "/images/brand/brand_25.jpg", alt: "Zoomcar" },
   { src: "/images/brand/brand_26.jpg", alt: "Philips" },
   { src: "/images/brand/brand_27.jpg", alt: "IBM" },
   { src: "/images/brand/brand_28.jpg", alt: "Replicon" },
@@ -43,19 +46,22 @@ const logosSecond = [
   { src: "/images/brand/brand_36.jpg", alt: "AT&T" },
 ];
 
-// Define the prop types
+// Props
 interface BrandLogosProps {
   firstHeading?: string;
   secondHeading?: string;
+  staticGrid?: boolean; // 👈 toggle grid vs slider
 }
 
 const BrandLogos: React.FC<BrandLogosProps> = ({
   firstHeading = "Our Alumni Work Across",
   secondHeading = "1,000+ Global Giants",
+  staticGrid = false,
 }) => {
   return (
     <section className={styles.brandSection}>
-      <div className="container text-center d-flex justify-content-center">
+      {/* Section Header */}
+      <div className="container">
         <SectionHeader
           wrapperMarginBottom={{ desktop: "60px", mobile: "40px" }}
           maxWidthTitle="900px"
@@ -68,41 +74,65 @@ const BrandLogos: React.FC<BrandLogosProps> = ({
           }
         />
       </div>
-      {/* Row 1: Right to Left */}
-      <div className={styles.slider}>
-        <div className={`${styles.slideTrack} ${styles.rightToLeft}`}>
-          {[...logos, ...logos].map((logo, index) => (
-            <div key={`rtl-${index}`} className={styles.slide}>
-              <Image
-                src={logo.src}
-                alt={logo.alt}
-                width={190}
-                height={90}
-                className="img-fluid"
-                unoptimized
-              />
-            </div>
-          ))}
-        </div>
-      </div>
 
-      {/* Row 2: Left to Right */}
-      <div className={styles.slider}>
-        <div className={`${styles.slideTrack} ${styles.leftToRight}`}>
-          {[...logosSecond, ...logosSecond].map((logo, index) => (
-            <div key={`ltr-${index}`} className={styles.slide}>
-              <Image
-                src={logo.src}
-                alt={logo.alt}
-                width={190}
-                height={90}
-                className="img-fluid"
-                unoptimized
-              />
-            </div>
-          ))}
+      {staticGrid ? (
+        // ✅ Static Grid Mode
+        <div className={`${styles.gridContainer} container`}>
+          <div className={styles.grid}>
+            {[...logos, ...logosSecond].map((logo, index) => (
+              <div key={index} className={styles.gridItem}>
+                <Image
+                  src={logo.src}
+                  alt={logo.alt}
+                  width={190}
+                  height={90}
+                  className="img-fluid"
+                  unoptimized
+                />
+              </div>
+            ))}
+          </div>
         </div>
-      </div>
+      ) : (
+        // ✅ Default Slider Mode
+        <>
+          {/* Row 1: Right to Left */}
+          <div className={styles.slider}>
+            <div className={`${styles.slideTrack} ${styles.rightToLeft}`}>
+              {[...logos, ...logos].map((logo, index) => (
+                <div key={`rtl-${index}`} className={styles.slide}>
+                  <Image
+                    src={logo.src}
+                    alt={logo.alt}
+                    width={190}
+                    height={90}
+                    className="img-fluid"
+                    unoptimized
+                  />
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Row 2: Left to Right */}
+          <div className={styles.slider}>
+            <div className={`${styles.slideTrack} ${styles.leftToRight}`}>
+              {[...logosSecond, ...logosSecond].map((logo, index) => (
+                <div key={`ltr-${index}`} className={styles.slide}>
+                  <Image
+                    src={logo.src}
+                    alt={logo.alt}
+                    width={190}
+                    height={90}
+                    className="img-fluid"
+                    unoptimized
+                  />
+                </div>
+              ))}
+            </div>
+          </div>
+        </>
+      )}
     </section>
   );
 };

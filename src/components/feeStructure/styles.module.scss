@@ -1,0 +1,93 @@
+.feeSection {
+  padding: 140px 0 0;
+}
+
+.heading {
+  font-weight: 700;
+  font-style: Italic;
+  font-size: 48px;
+  line-height: 60px;
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.subHeading {
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  max-width: 665px;
+  margin: 0 auto;
+}
+
+.tableWrapper {
+  overflow-x: auto;
+}
+
+.feeTable {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+  overflow: hidden;
+
+  th,
+  td {
+    border: none;
+    padding: 16px 10px;
+    text-align: left;
+    font-size: 15px;
+    white-space: nowrap;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 15px;
+    line-height: 20px;
+  }
+
+  th {
+    background: #333;
+    color: #fff;
+    font-weight: 600;
+  }
+
+  td {
+    color: #333;
+  }
+}
+
+.totalRow {
+  font-weight: 700;
+  td {
+    color: #000;
+    font-weight: 700;
+  }
+}
+
+.note {
+  font-size: 12px;
+  color: #666;
+  margin-top: 15px;
+  text-align: left;
+  line-height: 1.6;
+}
+.feeBox {
+  background-color: #fff;
+  padding: 40px 24px;
+  border-radius: 20px;
+}
+/* Responsive */
+@media (max-width: 768px) {
+  .heading {
+    font-size: 22px;
+  }
+
+  .subHeading {
+    font-size: 14px;
+  }
+
+  .feeTable th,
+  .feeTable td {
+    padding: 10px 12px;
+    font-size: 12px;
+  }
+}

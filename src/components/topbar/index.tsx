@@ -21,8 +21,8 @@ export default function Topbar() {
                 <label>EXCITING NEWS:</label>
                 <div className={styles.newsInner}>
                   <p>
-                    Admissions for Batch 2025 are Now Open! Visit our{" "}
-                    <Link href="/">Admissions page</Link>
+                    Admissions for Batch 2025 are Now Open! Visit our
+                    <Link href="/courses">Admissions page</Link>
                   </p>
                 </div>
               </div>
