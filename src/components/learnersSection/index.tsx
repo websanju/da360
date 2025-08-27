@@ -2,12 +2,12 @@
 import { useEffect } from "react";
 import styles from "./style.module.scss";
 import Image from "next/image";
-import Link from "next/link";
+// import Link from "next/link";
 import { Sora } from "next/font/google";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
-import UpArrow from "@/components/Ui/svg/arrowUp";
+// import UpArrow from "@/components/Ui/svg/arrowUp";
 import StudentArrow from "@/components/Ui/svg/studentArrow";
 // import LearnSlider from "@components/learnSlider";
 
@@ -175,11 +175,11 @@ export default function LearnersSection() {
             </div>
           </div>
 
-          <div className="container position-relative">
+          {/* <div className="container position-relative">
             <Link href="/placements" className={styles.viewAllBtn}>
               View All <UpArrow color="#fff" />
             </Link>
-          </div>
+          </div> */}
         </div>
         <div className={styles.imageToppers}>
           <Image
