@@ -41,7 +41,7 @@ const Comparison = () => {
                   <li>
                     <span>Total Training Hours</span>
                   </li>
-                  <li>
+                  {/* <li>
                     <span>Certifications Offered</span>
                   </li>
                   <li>
@@ -82,7 +82,7 @@ const Comparison = () => {
 
                   <li>
                     <span>Alumni Success Stories</span>
-                  </li>
+                  </li> */}
                 </ul>
               </div>
               <div
@@ -339,7 +339,7 @@ const Comparison = () => {
                     </span>{" "}
                     100–150 Hours (Mostly Theory-Based)
                   </li>
-                  <li>
+                  {/* <li>
                     <span>
                       <Image
                         width={22}
@@ -459,7 +459,7 @@ const Comparison = () => {
                       />
                     </span>{" "}
                     Few Documented Success Stories
-                  </li>
+                  </li> */}
                 </ul>
               </div>
 
@@ -530,7 +530,7 @@ const Comparison = () => {
                     </span>{" "}
                     240–1900+ Hours (Hands-On Learning)
                   </li>
-                  <li>
+                  {/* <li>
                     <span>
                       <Image
                         width={30}
@@ -659,7 +659,7 @@ const Comparison = () => {
                       />
                     </span>{" "}
                     50,000+ Careers Transformed + Proof of offer Letters
-                  </li>
+                  </li> */}
                 </ul>
               </div>
             </div>
