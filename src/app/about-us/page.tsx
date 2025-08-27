@@ -52,12 +52,12 @@ export default function About() {
       />
       <ContentBlock />
       <VisionMissionStats />
-      <ImageBanner
+      {/* <ImageBanner
         src="/images/team.jpg"
         alt="About Banner"
         width={1440}
         height={720}
-      />
+      /> */}
       {/* <DigitalAcademy /> */}
       <OurPeople />
       <BrandLogos

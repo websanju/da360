@@ -7,7 +7,7 @@ const JoinTeamSection = () => {
     <section
       className={`${styles.teamSection}`}
       style={{
-        backgroundImage: 'url("./images/join-team.png")',
+        backgroundImage: 'url("./images/my-team-min.jpg")',
       }}
     >
       <div className={`${styles.container} container`}>
