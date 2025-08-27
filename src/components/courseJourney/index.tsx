@@ -5,24 +5,24 @@ import Image from "next/image";
 
 const features = [
   {
-    icon: "/images/course/hands-on-learning.png",
+    icon: "/images/course/icon01.svg",
     title: "HANDS-ON LEARNING",
-    text: "Tired of “no experience” rejections? Learn skills that beat degrees.",
+    text: "Build real skills through projects, not just theory. Learn by doing — like pros in the field.",
   },
   {
-    icon: "/images/course/real-world-campaigns.png",
+    icon: "/images/course/icon02.svg",
     title: "REAL-WORLD CAMPAIGNS",
-    text: "Tired of “no experience” rejections? Learn skills that beat degrees.",
+    text: "Work on live campaigns that mimic agency life. Gain experience recruiters truly value.",
   },
   {
-    icon: "/images/course/soft-skills-confidence.png",
+    icon: "/images/course/icon03.svg",
     title: "SOFT SKILLS + CONFIDENCE",
-    text: "Tired of “no experience” rejections? Learn skills that beat degrees.",
+    text: "Master communication, teamwork, and presentation — skills that set you apart in interviews.",
   },
   {
-    icon: "/images/course/mentorship.png",
+    icon: "/images/course/icon04.svg",
     title: "INDUSTRY MENTORSHIP",
-    text: "Tired of “no experience” rejections? Learn skills that beat degrees.",
+    text: "Learn from professionals who’ve done it all. Get guidance, feedback, and real career insights.",
   },
 ];
 

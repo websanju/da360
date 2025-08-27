@@ -24,7 +24,7 @@ const caseStudies = [
       "Short-Form Video Storytelling",
       "Meme Collaborations",
       "Influencer Tie-Ups",
-      "Trend-Based Content Planning",
+      // "Trend-Based Content Planning",
     ],
   },
 
@@ -38,7 +38,7 @@ const caseStudies = [
       "Meme Marketing Strategy",
       "Humor-Driven Engagement",
       "Real-Time Content Creation",
-      "Viral Marketing Frameworks",
+      // "Viral Marketing Frameworks",
     ],
   },
   {
@@ -50,7 +50,7 @@ const caseStudies = [
     tags: [
       "Influencer Marketing Campaign Planning",
       "Creator Collaborations",
-      "Brand Storytelling via Authority Figures",
+      // "Brand Storytelling via Authority Figures",
       "High-ROI Content Production",
     ],
   },
@@ -64,7 +64,7 @@ const caseStudies = [
       "Marketing Strategy",
       "Consumer Segmentation",
       "Localization in Campaigns",
-      "Social Media Planning",
+      // "Social Media Planning",
     ],
   },
   {
@@ -77,7 +77,7 @@ const caseStudies = [
       "Content Marketing",
       "SEO & Organic Reach",
       "Video Marketing Strategy",
-      "Influencer Marketing",
+      // "Influencer Marketing",
     ],
   },
 
@@ -91,7 +91,7 @@ const caseStudies = [
       "Performance Marketing",
       "Google & Meta Ad Strategy",
       "Retargeting Campaigns",
-      "A/B Testing & Optimization",
+      // "A/B Testing & Optimization",
     ],
   },
   {
@@ -103,7 +103,7 @@ const caseStudies = [
     tags: [
       "Multi-channel attribution tracking.",
       "AI-based campaign optimization.",
-      "Hyper-local targeting strategies.",
+      // "Hyper-local targeting strategies.",
     ],
   },
   {
@@ -115,7 +115,7 @@ const caseStudies = [
     tags: [
       "Influencer funnel integration with paid ads.",
       "Social commerce and shoppable content.",
-      "Dynamic creative testing for high engagement.",
+      // "Dynamic creative testing for high engagement.",
     ],
   },
   {
@@ -125,7 +125,7 @@ const caseStudies = [
     description:
       "MakeMyTrip tapped into seasonal travel trends to design high-converting PPC campaigns across Google and Meta platforms.",
     tags: [
-      "Seasonal campaign planning & keyword research.",
+      // "Seasonal campaign planning & keyword research.",
       "Search + display remarketing funnels.",
       "Offer-driven PPC strategies.",
     ],
