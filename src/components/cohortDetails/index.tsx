@@ -11,11 +11,13 @@ export interface Cohort {
   weekday: string;
   capacity: string;
   campus: string;
+  campusLabel?: string;
 }
 interface CohortDetailsProps {
   heading: string;
   cohorts: Cohort[];
   section?: string;
+  campusLabel?: string;
 }
 export default function CohortDetails({
   heading,
@@ -75,13 +77,14 @@ export default function CohortDetails({
                             </span>
                           </div>
                           <div className={styles.cardItem}>
-                            <label>Campus</label>
+                            <label>{cohort.campusLabel ?? "Campus"}</label>
                             <span>{cohort.campus}</span>
                           </div>
                           <div className={`${styles.enrollBtn} `}>
                             <Link href="#" className="btn btn-danger">
                               Enroll Now
                             </Link>
+                            <span>Limited Seats</span>
                           </div>
                         </div>
                         {/* <div
@@ -119,7 +122,7 @@ export default function CohortDetails({
                           <span>{cohort.capacity}</span>
                         </div>
                         <div className={styles.cardItem}>
-                          <label>Campus</label>
+                          <label>{cohort.campusLabel ?? "Campus"}</label>
                           <span>{cohort.campus}</span>
                         </div>
                       </div>
@@ -127,6 +130,7 @@ export default function CohortDetails({
                         <Link href="#" className="btn btn-danger">
                           Enroll Now
                         </Link>
+                        <span>Limited Seats</span>
                       </div>
                     </div>
                   </div>

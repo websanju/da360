@@ -15,7 +15,9 @@ interface LeadCaptureSectionProps {
   gifSrc?: string;
   applyLabel?: string;
   applyHref?: string;
+  collageSrc?: string;
   onApplyClick?: () => void;
+  showCollageItemsBox?: boolean;
 }
 
 const LeadCaptureSection: React.FC<LeadCaptureSectionProps> = ({
@@ -29,6 +31,8 @@ const LeadCaptureSection: React.FC<LeadCaptureSectionProps> = ({
   applyLabel,
   onApplyClick,
   gifSrc = "/images/face.gif",
+  collageSrc = "/images/s-vyasa.png",
+  showCollageItemsBox = false,
 }) => {
   return (
     <section className={`${styles.leadCaptureSection}`}>
@@ -40,7 +44,13 @@ const LeadCaptureSection: React.FC<LeadCaptureSectionProps> = ({
               {headingLineOne}
               {gifSrc && (
                 <span className={styles.gifAniamtion}>
-                  <Image src={gifSrc} alt="gif" height={50} width={120} />
+                  <Image
+                    src={gifSrc}
+                    alt="gif"
+                    height={50}
+                    width={120}
+                    unoptimized
+                  />
                 </span>
               )}
               <br />
@@ -53,6 +63,40 @@ const LeadCaptureSection: React.FC<LeadCaptureSectionProps> = ({
                 <span key={idx}>{tag}</span>
               ))}
             </div>
+            {showCollageItemsBox && (
+              <div className={styles.collageBox}>
+                <div className={styles.collageImg}>
+                  <Image
+                    src={collageSrc}
+                    alt="gif"
+                    height={72}
+                    unoptimized
+                    width={292}
+                  />
+                </div>
+                <div className={styles.collageItemsBox}>
+                  <div className={styles.collageItems}>
+                    <div className={styles.collageItem}>
+                      <label>
+                        NAAC <p>A+</p>
+                      </label>
+                      <span>Accredited</span>
+                    </div>
+                    <div className={styles.collageHr}></div>
+                    <div className={styles.collageItem}>
+                      <label>UGC </label>
+                      <span>Approved</span>
+                    </div>
+                    <div className={styles.collageHr}></div>
+                    <div className={styles.collageItem}>
+                      <label>NSDC </label>
+                      <span>Accredited</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            )}
+
             <p>{descriptionLineOne}</p>
             <p>{descriptionLineTow}</p>
             <div className={styles.btnAction}>

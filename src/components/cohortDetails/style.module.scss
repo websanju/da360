@@ -51,14 +51,14 @@
         .cardDatelabel {
           font-weight: 600;
           font-size: 20px;
-          line-height: 33px;
+          line-height: 26px;
           color: rgb(0, 0, 0);
         }
 
         label {
           font-weight: 600;
           font-size: 20px;
-          line-height: 33px;
+          line-height: 26px;
           letter-spacing: 0%;
           color: rgba(0, 0, 0, 1);
           margin-bottom: 4px;
@@ -67,7 +67,7 @@
         span {
           font-weight: 400;
           font-size: 18px;
-          line-height: 32px;
+          line-height: 20px;
           letter-spacing: 0%;
         }
 
@@ -81,7 +81,6 @@
           padding: 5px 10px;
           line-height: 100%;
         }
-
       }
     }
   }
@@ -92,6 +91,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
   }
 
   .accredited {
@@ -129,7 +129,6 @@
       justify-content: space-between;
     }
   }
-
 }
 
 @media (width <=991px) {
@@ -154,7 +153,6 @@
       max-width: 285px;
       margin: 0 auto 24px;
     }
-
 
     .accredited {
       padding: 16px 12px;
@@ -258,7 +256,6 @@
               line-height: 20px;
               letter-spacing: 0%;
               text-align: left;
-
             }
 
             .cardDatelabel {
@@ -284,9 +281,6 @@
               width: 100%;
               text-align: left;
             }
-
-            
-
           }
         }
 
@@ -339,7 +333,6 @@
               line-height: 20px;
               letter-spacing: 0%;
               text-align: left;
-
             }
 
             .cardDatelabel {
@@ -365,15 +358,11 @@
               width: 100%;
               text-align: left;
             }
-
-            
-
           }
           span {
             font-weight: 600;
             font-size: 14px;
             line-height: 20px;
-
           }
           label {
             font-weight: 500;
@@ -382,7 +371,7 @@
           }
 
           .cardMode {
-            background: #FFF2E5;
+            background: #fff2e5;
             color: rgba(0, 0, 0, 1);
             border: none;
             border-radius: 50px;
@@ -391,11 +380,7 @@
             line-height: 100%;
             padding: 0;
           }
-
-
         }
-
-
       }
     }
 
@@ -405,6 +390,7 @@
       display: flex;
       align-items: center;
       justify-content: center;
+      flex-direction: column;
 
       a {
         font-size: 12px;
@@ -412,9 +398,5 @@
         padding: 6px 16px;
       }
     }
-
   }
-
-
-
 }

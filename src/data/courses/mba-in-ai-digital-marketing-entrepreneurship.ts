@@ -159,91 +159,61 @@ const highlightSkills: HighlightSkill[] = [
   { name: "Smart Content Discovery" },
 ];
 
-
-
-
 const mbaInAiDigitalMarketingEntrepreneurship: CoursesType = {
   leadCapture: {
     titleOne: "MBA in Digital",
     titleTwo: "Marketing &  AI",
     subtitleOne: "",
     subtitleTwo: "",
-    tags: ["2 Years", "On Campus Immersion Program"],
+    tags: ["Type: Degree", "Admission Deadline: 31-Aug-2025", "Duration: 24 Months"],
   },
-  cohortSectionHeading: "AI Vibe Marketing Cohort Details",
+  cohortSectionHeading: "On Campuse Immersion Program for MBA Digital Marketing Cohort Details",
   Cohort: [
     {
-      date: "August 20th",
+      date: "Mar 28th",
       mode: "Offline",
       weekday: "(Mon-Fri)",
-      capacity: "30 Seats",
-      campus: "Bengaluru",
-    },
-    {
-      date: "August 20th",
-      mode: "Online",
-      weekday: "(Mon-Fri)",
-      capacity: "30 Seats",
-      campus: "Bengaluru",
+      capacity: "120 Seats",
+      campus: "Satvva Global City Campus, Bangalore",
+      campusLabel: "Location"
     },
   ],
   highlights: [
-    { icon: "/images/icons/calendar.png", title: "Months", value: "2" },
-    { icon: "/images/icons/clock.png", title: "Time", value: "9PM to 10:30PM" },
-    {
-      icon: "/images/icons/courses.png",
-      title: "",
-      value: "",
-    },
+    { icon: "/images/icons/calendar.png", title: "Months", value: "24" },
     {
       icon: "/images/icons/template.png",
-      title: "Complete AI Flows",
-      value: "2",
+      title: "Learning Mode",
+      value: "On Campus",
     },
     {
       icon: "/images/icons/ai.png",
-      title: "AI Marketing Tools",
-      value: "10+"
-    },
-    {
-      icon: "/images/icons/hourglass.png",
-      title: "Hours of Learning",
-      value: "80+",
+      title: "AI-Powered Learning Tools",
+      value: "50+"
     },
     {
       icon: "/images/icons/case-study.png",
-      title: "Case Studies",
-      value: "8+",
-    },
-    {
-      icon: "/images/icons/interview.png",
-      title: "",
-      value: "",
+      title: "Live Case Studies",
+      value: "100+",
     },
     {
       icon: "/images/icons/internship.png",
-      title: "",
-      value: "",
+      title: "Learning Methodologies",
+      value: "10",
     },
     {
       icon: "/images/icons/project.png",
-      title: "Hands-On Projects",
-      value: "2+",
-    },
-    {
-      icon: "/images/icons/certificate.png",
-      title: "Certifications",
-      value: "3+",
+      title: "Capstone Project",
+      value: "Included",
     },
     {
       icon: "/images/icons/specialisation.png",
-      title: "Mentorship",
-      value: "1:1",
+      title: "Specialisations",
+      value: "4",
     },
     {
       icon: "/images/icons/trainer.png",
-      title: "",
-      value: "",
+      title: "Domain Specialist Trainers",
+      value: "15+",
     },
   ],
   StoryHeader: {
