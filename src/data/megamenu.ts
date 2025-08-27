@@ -147,7 +147,7 @@ export const coursesData: Record<string, CourseItem[]> = {
       title: "BBA in Digital Marketing & AI",
       duration: "3 Years",
       mode: "Classroom ",
-      onClick: "#",
+      onClick: "/bba-in-digital-marketing-and-ai",
       list: [
         "University Program ",
         "NAAC Grade A+",

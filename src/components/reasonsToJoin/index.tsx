@@ -2,7 +2,15 @@ import Image from "next/image";
 import styles from "./styles.module.scss";
 import SectionHeader from "../widgets/sectionHeader";
 
-export default function ReasonsToJoin() {
+interface ReasonsToJoinProps {
+  section?: string;
+  sectionTitle?: string;
+}
+
+export default function ReasonsToJoin({
+  section,
+  sectionTitle,
+}: ReasonsToJoinProps) {
   const reasons = [
     {
       title: "100% Job Guarantee Program",
@@ -87,14 +95,17 @@ export default function ReasonsToJoin() {
   ];
 
   return (
-    <section className={`${styles.reasonsSection}`}>
+    <section className={`${styles.reasonsSection}`} id={section}>
       <div className="container">
         <div className="row">
           <div className="col-lg-12">
             <SectionHeader
               wrapperMarginBottom={{ desktop: "60px", mobile: "40px" }}
               maxWidthTitle="650px"
-              title={"20 Reasons to Join the S-VYASA MBA in Digital Marketing"}
+              title={
+                sectionTitle ||
+                "20 Reasons to Join the S-VYASA MBA in Digital Marketing"
+              }
             />
             <div className={`${styles.reasonsBox}`}>
               <div className="row">
