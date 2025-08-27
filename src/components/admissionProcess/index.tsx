@@ -8,7 +8,7 @@ interface Step {
 }
 
 interface AdmissionProcessProps {
-  program: "MBA" | "BBA";
+  program?: "MBA" | "BBA";
 }
 
 const stepsData: Record<string, Step[]> = {
