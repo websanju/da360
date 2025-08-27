@@ -6,6 +6,7 @@ export interface ModuleBadge {
 }
 
 export interface ModuleData {
+  moduleslable?: string;
   number: number;
   title: string;
   badges: ModuleBadge[];

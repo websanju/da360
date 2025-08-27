@@ -27,83 +27,48 @@ const FeeStructure: React.FC<FeeStructureProps> = ({
                 <table className={styles.feeTable}>
                   <thead>
                     <tr>
-                      <th>Semester</th>
+                      <th>Breakup</th>
                       <th>Semester 1</th>
                       <th>Semester 2</th>
                       <th>Semester 3</th>
                       <th>Semester 4</th>
-                      <th>Semester 5</th>
-                      <th>Semester 6</th>
-                      <th>Semester 7</th>
-                      <th>Semester 8</th>
                     </tr>
                   </thead>
                   <tbody>
                     <tr>
                       <td>Block Fees</td>
-                      <td>₹50,000</td>
+                      <td>Rs. 50,000</td>
                       <td>-</td>
-                      <td>-</td>
-                      <td>-</td>
-                      <td>-</td>
-                      <td>-</td>
-                      <td>-</td>
+                      <td>Rs. 50,000</td>
                       <td>-</td>
                     </tr>
                     <tr>
                       <td>Tuition Fees</td>
-                      <td>₹1,50,000</td>
-                      <td>₹1,50,000</td>
-                      <td>₹1,50,000</td>
-                      <td>₹1,50,000</td>
-                      <td>₹1,50,000</td>
-                      <td>₹1,50,000</td>
-                      <td>₹1,50,000</td>
-                      <td>₹1,50,000</td>
+                      <td>Rs. 4,00,000</td>
+                      <td>Rs. 4,00,000</td>
+                      <td>Rs. 4,00,000</td>
+                      <td>Rs. 4,00,000</td>
                     </tr>
                     <tr>
-                      <td>Up skilling & Technology fees</td>
-                      <td>₹60,000</td>
-                      <td>₹60,000</td>
-                      <td>₹60,000</td>
-                      <td>₹60,000</td>
-                      <td>₹60,000</td>
-                      <td>₹60,000</td>
-                      <td>₹60,000</td>
-                      <td>₹60,000</td>
-                    </tr>
-                    <tr>
-                      <td>Hostel & Mess Fees*</td>
-                      <td>₹95,000</td>
-                      <td>₹95,000</td>
-                      <td>₹95,000</td>
-                      <td>₹95,000</td>
-                      <td>₹95,000</td>
-                      <td>₹95,000</td>
-                      <td>₹95,000</td>
-                      <td>₹95,000</td>
+                      <td>Upskilling &amp; Technology Fees</td>
+                      <td>Rs. 1,75,000</td>
+                      <td>Rs. 1,75,000</td>
+                      <td>Rs. 75,000</td>
+                      <td>Rs. 75,000</td>
                     </tr>
                     <tr>
                       <td>Refundable Caution Deposit (IFRSD)</td>
-                      <td>₹50,000</td>
+                      <td>Rs. 50,000</td>
                       <td>-</td>
-                      <td>-</td>
-                      <td>-</td>
-                      <td>-</td>
-                      <td>-</td>
-                      <td>-</td>
+                      <td>Rs. 50,000</td>
                       <td>-</td>
                     </tr>
                     <tr className={styles.totalRow}>
                       <td>TOTAL PAYABLE</td>
-                      <td>₹4,05,000</td>
-                      <td>₹3,05,000</td>
-                      <td>₹3,05,000</td>
-                      <td>₹3,05,000</td>
-                      <td>₹3,05,000</td>
-                      <td>₹3,05,000</td>
-                      <td>₹3,05,000</td>
-                      <td>₹3,05,000</td>
+                      <td>Rs. 6,75,000</td>
+                      <td>Rs. 5,75,000</td>
+                      <td>Rs. 5,75,000</td>
+                      <td>Rs. 4,75,000</td>
                     </tr>
                   </tbody>
                 </table>

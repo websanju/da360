@@ -9,24 +9,29 @@ interface Step {
 
 const steps: Step[] = [
   {
+    title: "Register for DA360 MBA Exam",
+    description:
+      "Sign up online for the DA360 MBA entrance test to begin your application journey.",
+  },
+  {
     title: "Personal Interview",
     description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+      "Attend a one-on-one interview with our admission panel to evaluate your skills and motivation.",
   },
   {
-    title: "Appear for a Counselling session",
+    title: "Appear for a Counselling Session",
     description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+      "Join a personalized counselling session to understand the program, curriculum, and career opportunities.",
   },
   {
-    title: "Block your seat",
+    title: "Pay Admission Fees and Block Your Seat",
     description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+      "Confirm your admission by completing the fee payment and reserving your seat in the MBA program.",
   },
   {
     title: "Document Verification",
     description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+      "Submit and verify all required academic, identity, and eligibility documents to finalize your enrollment.",
   },
 ];
 

@@ -60,7 +60,7 @@ export default function Curriculum({
             <div className={styles["module-left"]}>
               <div className={styles.moduleHeader}>
                 <div className={styles["module-number"]}>
-                  <label>Module</label>
+                  <label>{module.moduleslable || "Module"}</label>
                   <span>{module.number}</span>
                 </div>
                 <div className={styles["toggle-icon-mobile"]}>

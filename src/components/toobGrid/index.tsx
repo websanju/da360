@@ -16,9 +16,9 @@ const TOOBGrid = ({ section }: TOOBGridProps) => {
             <SectionHeader
               wrapperMarginBottom={{ desktop: "60px", mobile: "40px" }}
               titleMarginBottom={{ desktop: "20px", mobile: "10px" }}
-              title={<>#TOOB</>}
+              title={<>Campus & Program Activities</>}
               maxWidth="750px"
-              description="Get ready for a game-changing experience that goes beyond the classroom! TOOB (Think Out of the Box) is a high-impact event designed to give you real-time exposure, unlock your creative potential, and push your skills to industry-ready levels."
+              description="Our MBA program goes beyond classroom learning, offering a range of interactive workshops, live projects, networking sessions, and industry-led events."
             />
             {/* <div className={styles.grid}>
               <div className={styles.colume}>
