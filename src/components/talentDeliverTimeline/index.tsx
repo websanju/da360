@@ -72,6 +72,11 @@ const Timeline = () => {
                   <h2>
                     How We Ensure That The Talent Is <br /> Ready To Deliver
                   </h2>
+                  <p>
+                    At Digital Academy 360, we don’t just train—we prepare our
+                    learners to step into your workplace and start delivering
+                    from day one. Here’s how we make that possible:
+                  </p>
                 </div>
               </div>
               <div className={styles.container}>
