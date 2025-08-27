@@ -15,6 +15,7 @@ import FeeStructure from "@/components/feeStructure";
 import AdmissionProcess from "@/components/admissionProcess";
 import TOOBGrid from "@/components/toobGrid";
 import UniversityGallery from "@/components/universityGallery";
+import ReasonsToJoin from "@/components/reasonsToJoin";
 
 export const metadata = {
   title: "Best Digital Marketing Training Institute Online & Classroom",
@@ -82,7 +83,7 @@ export default function courseDetail() {
         section="section2"
         highlights={mbaInAiDigitalMarketingEntrepreneurship.highlights}
       />
-
+      <ReasonsToJoin />
       <Highlights section="section5" />
       <CampusTour
         section="section3"
