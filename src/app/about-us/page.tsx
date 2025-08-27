@@ -45,7 +45,7 @@ export default function About() {
     <main>
       <AboutUs />
       <ImageBanner
-        src="/images/about-banner.png"
+        src="/images/team-all-min.jpg"
         alt="About Banner"
         width={1440}
         height={720}
