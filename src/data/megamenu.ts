@@ -136,7 +136,7 @@ export const coursesData: Record<string, CourseItem[]> = {
       mode: "Classroom",
       onClick: "/mba-in-ai-digital-marketing-entrepreneurship",
       list: [
-        "University Program",
+        "S-Vyasa Deemed to be University",
         "NAAC Grade A+",
         "AICTE Approved",
         "Accredited by N.S.D.C.",
@@ -149,7 +149,7 @@ export const coursesData: Record<string, CourseItem[]> = {
       mode: "Classroom ",
       onClick: "/bba-in-digital-marketing-and-ai",
       list: [
-        "University Program ",
+        "S-Vyasa Deemed to be University",
         "NAAC Grade A+",
         "AICTE Approved",
         "Accredited by N.S.D.C.",

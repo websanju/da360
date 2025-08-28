@@ -201,7 +201,7 @@ const MobileMenu: React.FC<Props> = ({ onClose }) => {
         <div
           className={`${styles.columnGroup} ${styles.leadershipColumnGroup}`}
         >
-          <h3>S-VYASA Deemed University</h3>
+          <h3>University Program</h3>
           <div
             onClick={() =>
               handleClick("/mba-in-ai-digital-marketing-entrepreneurship")
@@ -215,7 +215,7 @@ const MobileMenu: React.FC<Props> = ({ onClose }) => {
               <span className={styles.dropdownTag}>Classroom</span>
             </div>
             <ul className={styles.navbarDropdownList}>
-              {renderListItem("University Program")}
+              {renderListItem("S-Vyasa Deemed to be University")}
               {renderListItem("NAAC Grade A+")}
               {renderListItem("AICTE Approved")}
               {renderListItem("Accredited by N.S.D.C.")}
@@ -233,7 +233,7 @@ const MobileMenu: React.FC<Props> = ({ onClose }) => {
               <span className={styles.dropdownTag}>Classroom</span>
             </div>
             <ul className={styles.navbarDropdownList}>
-              {renderListItem("University Program")}
+              {renderListItem("S-Vyasa Deemed to be University")}
               {renderListItem("NAAC Grade A+")}
               {renderListItem("AICTE Approved")}
               {renderListItem("Accredited by N.S.D.C.")}
