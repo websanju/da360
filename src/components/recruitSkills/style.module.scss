@@ -1,37 +1,106 @@
 .skillsSection {
-padding-top: 140px;
-padding-bottom: 140px;
+  padding-top: 140px;
+  padding-bottom: 140px;
+  h2 {
+    text-align: left !important;
+  }
+  p {
+    text-align: left !important;
+    margin: 0 !important;
+    max-width: 830px !important;
+  }
+  .card {
+    background: #fff;
+    border-radius: 10px;
+    padding: 32px 40px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.03);
+
+    h3 {
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 100%;
+      letter-spacing: 0%;
+      text-align: left;
+      color: #201116;
+      margin-bottom: 24px;
+    }
+
+    p {
+      margin-bottom: 20px !important;
+      font-size: 16px;
+      line-height: normal;
+      max-width: max-content !important;
+    }
+
+    .tagList {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .tag {
+      border: 1px solid #333;
+      min-height: 40px;
+      border-radius: 66px;
+      padding-left: 20px;
+      padding-right: 20px;
+      background-color: #fff;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 37px;
+      letter-spacing: 2%;
+    }
+  }
+}
+
+@media (width <=991px) {
+  .skillsSection {
+    padding-top: 60px;
+    padding-top: 60px;
     h2 {
-        text-align: left !important;
+      text-align: center !important;
     }
     p {
-        text-align: left !important;
-        margin: 0 !important;
-        max-width: 830px !important;
+      text-align: center !important;
+      margin: 0 !important;
+      max-width: 830px !important;
+    }
+    .skillsCards {
+      background: #fff;
     }
     .card {
       background: #fff;
-      border-radius: 10px;
-      padding:32px 40px;
-      margin-bottom: 20px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.03);
-  
-      h3 {
-        font-weight: 600;
-        font-size: 24px;
-        line-height: 100%;
-        letter-spacing: 0%;
-        text-align: left;
-        color: #201116;
-        margin-bottom: 24px;
+      border-radius: 0;
+      padding: 14px 18px;
+      margin-bottom: 0;
+      width: 100vw;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.03);
+      &:nth-of-type(2) {
+        border-radius: 10px 10px 0 0;
       }
-  
+      &:last-child {
+        border-radius: 0 0 10px 10px;
+      }
+
+      h3 {
+        font-size: 16px;
+        margin-bottom: 16px;
+      }
+
       .tagList {
         display: flex;
-        flex-wrap: wrap;
-        gap:10px;
+        flex-wrap: nowrap;
+        gap: 10px;
+        overflow-y: auto;
+        scrollbar-width: none; /* For Firefox */
+        -ms-overflow-style: none; /* For Internet Explorer and Edge */
+
+        &::-webkit-scrollbar {
+          display: none; /* For Chrome, Safari, and Opera */
+        }
       }
-  
+
       .tag {
         border: 1px solid #333;
         min-height: 40px;
@@ -39,75 +108,13 @@ padding-bottom: 140px;
         padding-left: 20px;
         padding-right: 20px;
         background-color: #fff;
-            font-weight: 600;
-            font-size: 16px;
-            line-height: 37px;
-            letter-spacing: 2%;
-      }
-    }
-  }
-  
-  @media (width <=991px) {
-    .skillsSection { 
-      padding-top: 60px;
-      padding-top: 60px;
-        h2 {
-          text-align: center !important;
-      }
-      p {
-          text-align: center !important;
-          margin: 0 !important;
-          max-width: 830px !important;
-      }
-      .skillsCards {
-        background: #fff;
-      }
-      .card {
-        background: #fff;
-        border-radius: 0;
-        padding:14px 18px;
-        margin-bottom: 0;
-        width: 100vw;
-        box-shadow: 0 2px 6px rgba(0,0,0,0.03);
-        &:nth-of-type(2) {
-          border-radius: 10px 10px 0 0;
-        }
-        &:last-child {
-          border-radius: 0 0 10px 10px;
-        }
-    
-        h3 {
-          font-size: 16px;
-          margin-bottom: 16px;
-        }
-    
-        .tagList {
-          display: flex;
-          flex-wrap: nowrap;
-          gap:10px;
-          overflow-y: auto;
-           scrollbar-width: none; /* For Firefox */
-  -ms-overflow-style: none; /* For Internet Explorer and Edge */
+        min-width: max-content;
 
-  &::-webkit-scrollbar {
-    display: none; /* For Chrome, Safari, and Opera */
-  }
-        }
-    
-        .tag {
-          border: 1px solid #333;
-          min-height: 40px;
-          border-radius: 66px;
-          padding-left: 20px;
-          padding-right: 20px;
-          background-color: #fff;
-          min-width: max-content;
-         
-              font-weight: 600;
-              font-size: 16px;
-              line-height: 37px;
-              letter-spacing: 2%;
-        }
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 37px;
+        letter-spacing: 2%;
       }
     }
   }
+}

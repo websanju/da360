@@ -6,6 +6,8 @@ import SectionHeader from "@/components/widgets/sectionHeader";
 const categories = [
   {
     title: "Digital Marketing",
+    description:
+      "Our digital marketing professionals are trained across the full funnel—strategy, execution, and analytics.",
     tags: [
       "Digital Marketing Intern",
       "Digital Marketing Executive",
@@ -15,10 +17,14 @@ const categories = [
   },
   {
     title: "SEO (Search Engine Optimization)",
+    description:
+      "Specialists skilled in on-page, off-page, and technical SEO to help brands improve rankings and organic visibility.",
     tags: ["SEO Intern", "SEO Executive", "SEO Analyst", "SEO Specialist"],
   },
   {
     title: "Social MediaSocial Media Marketing (SMM & SMO)",
+    description:
+      "Creative minds who can build communities, engage audiences, and grow brand presence across platforms.",
     tags: [
       "Social Media Intern",
       "Social Media Executive",
@@ -28,6 +34,8 @@ const categories = [
   },
   {
     title: "Performance Marketing (SEM & Paid Ads)",
+    description:
+      "Data-driven professionals trained in Google Ads, Meta Ads, and programmatic campaigns to maximize ROI.",
     tags: [
       "Performance Marketing Intern",
       "Performance Marketing Executive",
@@ -62,6 +70,7 @@ const RecruitSkills = () => {
               {categories.map((category, idx) => (
                 <div className={styles.card} key={idx}>
                   <h3>{category.title}</h3>
+                  <p>{category.description}</p>
                   <div className={styles.tagList}>
                     {category.tags.map((tag, index) => (
                       <span className={styles.tag} key={index}>
