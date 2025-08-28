@@ -3,6 +3,8 @@ import styles from "./style.module.scss";
 import Image from "next/image";
 import React from "react";
 import LeadCaptureForm from "@components/widgets/leadCaptureForm";
+import ApplyForm from "@components/widgets/popups/ApplyForm";
+import { usePopup } from "@components/widgets/popup/PopupContext";
 import Link from "next/link";
 
 interface LeadCaptureSectionProps {
@@ -34,6 +36,19 @@ const LeadCaptureSection: React.FC<LeadCaptureSectionProps> = ({
   collageSrc = "/images/s-vyasa.png",
   showCollageItemsBox = false,
 }) => {
+  const handleApplyClick = () => {
+    if (onApplyClick) {
+      onApplyClick();
+    } else {
+      // only open ApplyForm if label is "Apply Now"
+      if ((applyLabel || "Apply Now").toLowerCase() === "apply now") {
+        openPopup(<ApplyForm title="Apply Now" />, {});
+      }
+    }
+  };
+
+  const { openPopup } = usePopup();
+
   return (
     <section className={`${styles.leadCaptureSection}`}>
       <div className="container">
@@ -106,7 +121,7 @@ const LeadCaptureSection: React.FC<LeadCaptureSectionProps> = ({
                 </Link>
               ) : (
                 <button
-                  onClick={onApplyClick}
+                  onClick={handleApplyClick}
                   className={`${styles.btnRed} btnRed`}
                 >
                   {applyLabel || "Apply Now"}
