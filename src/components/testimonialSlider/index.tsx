@@ -14,11 +14,11 @@ const testimonials = [
       image: "/images/brand/zomato.png",
     },
     quote:
-      "Partnering with creators through Passionfroot has been a game-changer for Intercom's Startup program. By collaborating with top newsletters, we’ve reached thousands of founders.",
+      "This place was more than just a learning institute. Happy with placement support and guidance i got through out my journey at DA 360. This could be your wise choice to start your carrier in the field of Digital Marketing.",
     author: {
-      name: "John Roche",
-      title: "Digital Marketing Head",
-      image: "/images/avatars/akshita.png",
+      name: "Pooja M Reddy",
+      title: "Digital Marketing",
+      image: "/images/Ambitious/default-avatar.svg",
     },
   },
   {
@@ -26,11 +26,49 @@ const testimonials = [
       image: "/images/brand/upgrad.png",
     },
     quote:
-      "Partnering with creators through Passionfroot has been a game-changer for Intercom's Startup program. By collaborating with top newsletters, we’ve reached thousands of founders.",
+      "Learning at Digital Academy 360 was a great experience. The training was practical, the mentors were supportive, and I got hands-on exposure to real digital marketing tools and campaigns. It really helped me grow and I made some amazing friends along the way.",
     author: {
-      name: "John Roche",
-      title: "Digital Marketing Head",
-      image: "/images/avatars/akshita.png",
+      name: "Aswin J Prakash",
+      title: "Digital Marketing",
+      image: "/images/Ambitious/default-avatar.svg",
+    },
+  },
+  {
+    company: {
+      image: "/images/brand/upgrad.png",
+    },
+    quote:
+      "I have completed digital marketing course at digital academy 360 and it was greatful experience. The trainers provided hands on guidence that helped me to build strong practical skills in SEO, Google ads, and social media marketing. Thank you, Digital Academy 360, for such a valuable learning experience.",
+    author: {
+      name: "Parimitha A Pari",
+      title: "Digital Marketing",
+      image: "/images/Ambitious/default-avatar.svg",
+    },
+  },
+
+  {
+    company: {
+      image: "/images/brand/upgrad.png",
+    },
+    quote:
+      "I joined Digital Academy 360 for a Digital Marketing course after doing a lot of research. During the course, I got the chance to work on freelancing projects with the help of the trainers. After completing the course, I gained more experience and became a freelancer. I am thankful to Digital Academy 360 for their support.",
+    author: {
+      name: "Darshana Das",
+      title: "Digital Marketing",
+      image: "/images/Ambitious/default-avatar.svg",
+    },
+  },
+
+  {
+    company: {
+      image: "/images/brand/upgrad.png",
+    },
+    quote:
+      "Digital Academy 360 is one of the best digital marketing courses in Bangalore. It has the superb learning experience for Digital Marketing. It has the best staff and is very helpful. It is the great place to build your career according to your interest .",
+    author: {
+      name: "Kaushik Yadav",
+      title: "Digital Marketing",
+      image: "/images/Ambitious/default-avatar.svg",
     },
   },
   // Add more testimonials if needed
@@ -47,13 +85,13 @@ const TestimonialSlider = () => {
         {testimonials.map((item, index) => (
           <SwiperSlide key={index}>
             <div className={styles.testimonial}>
-              <Image
+              {/* <Image
                 src={item.company.image}
                 alt={item.author.name}
                 width={210}
                 height={100}
                 className={styles.avatar}
-              />
+              /> */}
               <p className={styles.quote}>&quot;{item.quote}&quot;</p>
               <div className={styles.profile}>
                 <Image
