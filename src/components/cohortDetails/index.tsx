@@ -7,7 +7,7 @@ import styles from "./style.module.scss";
 
 export interface Cohort {
   date: string;
-  mode: "Offline" | "Online";
+  mode: "Offline" | "Online" | "On Campus";
   weekday: string;
   capacity: string;
   campus: string;

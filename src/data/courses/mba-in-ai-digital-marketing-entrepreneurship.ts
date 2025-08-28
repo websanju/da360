@@ -170,13 +170,13 @@ const mbaInAiDigitalMarketingEntrepreneurship: CoursesType = {
     titleTwo: "Marketing &  AI",
     subtitleOne: "",
     subtitleTwo: "",
-    tags: ["Type: Degree", "Admission Deadline: 31-Aug-2025", "Duration: 24 Months"],
+    tags: ["Masters Degree", "24 Months Duration", "31st October Admission Deadline"],
   },
   cohortSectionHeading: "On Campuse Immersion Program for MBA Digital Marketing Cohort Details",
   Cohort: [
     {
-      date: "Mar 28th",
-      mode: "Offline",
+      date: "Nov 24th",
+      mode: "On Campus",
       weekday: "(Mon-Fri)",
       capacity: "120 Seats",
       campus: "Satvva Global City Campus, Bangalore",
