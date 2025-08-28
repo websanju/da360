@@ -48,19 +48,7 @@ export const coursesData: Record<string, CourseItem[]> = {
         "15+ Certifications",
       ],
     },
-    // {
-    //   title: "PGCP in Social Media & Influencer Marketing",
-    //   duration: "6 Months",
-    //   mode: "Online",
-    //   onClick: "/social-media-and-Influencer-marketing",
-    //   list: [
-    //     "PG Level Certification",
-    //     "240+ Hours of Learning",
-    //     "20+ Case Studies",
-    //     "18+ Specialised Tools",
-    //     "15+ Certifications",
-    //   ],
-    // },
+    
     {
       title: "PGCP in Performance Marketing & Media Buying",
       duration: "6 Months",
@@ -129,9 +117,9 @@ export const coursesData: Record<string, CourseItem[]> = {
       ],
     },
   ],
-    college: [
+ college: [
     {
-      title: "MBA in AI Digital Marketing & Entrepreneurship",
+      title: "MBA in Digital Marketing & AI",
       duration: "2 Years",
       mode: "Classroom",
       onClick: "/mba-in-ai-digital-marketing-entrepreneurship",
@@ -156,18 +144,5 @@ export const coursesData: Record<string, CourseItem[]> = {
         "Job Guarantee Program*",
       ],
     },
-    // {
-    //   title: "LinkedIn & Personal Branding",
-    //   duration: "2 Months",
-    //   mode: "Online",
-    //   onClick: "/linkedIn-and-personal-branding",
-    //   list: [
-    //     "Advance Specialist Certification",
-    //     "80+ Hours of Learning",
-    //     "8+ Case Studies",
-    //     "10+ Tools",
-    //     "2 Linkedin Outreach Flow",
-    //   ],
-    // },
   ],
 };

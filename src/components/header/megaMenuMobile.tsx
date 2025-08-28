@@ -208,7 +208,7 @@ const MobileMenu: React.FC<Props> = ({ onClose }) => {
             }
             className={styles.navbarDropdownColumn}
           >
-            <h4>MBA in AI Digital Marketing & Entrepreneurship</h4>
+            <h4> MBA in Digital Marketing and AI </h4>
 
             <div className={styles.navbarTags}>
               <span className={styles.dropdownTag}>2 Years</span>
