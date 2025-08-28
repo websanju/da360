@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./style.module.scss";
 
-// import AIDigital from "@components/aIDigital";
+import AIDigital from "@components/aIDigital";
 import DigitalMarketingTools from "@components/digitalMarketingTools";
 import AiTools from "@components/aiTools";
 import Certifications from "@components/certifications";
@@ -9,6 +9,7 @@ import Curriculum from "@components/curriculum";
 import { curriculumData } from "./curriculumData";
 import { toolCategories } from "./aiToolsData";
 import { certificationsData } from "./certificationsData";
+import { specialisationData } from "./specialisationData";
 
 interface HighlightsProps {
   section?: string;
@@ -21,7 +22,7 @@ const Highlights = ({ section }: HighlightsProps) => {
           <div className="col-lg-12">
             <div className={styles.highlightBox}>
               <Curriculum {...curriculumData} />
-              {/* <AIDigital /> */}
+              <AIDigital {...specialisationData} />
               <DigitalMarketingTools />
               <AiTools
                 heading="Next-Gen AI-Powered Tools"

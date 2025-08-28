@@ -185,20 +185,32 @@ const mbaInAiDigitalMarketingEntrepreneurship: CoursesType = {
   ],
   highlights: [
     { icon: "/images/icons/calendar.png", title: "Months", value: "24" },
+    { icon: "/images/icons/clock.png", title: "Upskilling Support", value: "Lifetime" },
     {
-      icon: "/images/icons/template.png",
-      title: "Learning Mode",
-      value: "On Campus",
+      icon: "/images/icons/courses.png",
+      title: "Guest Lecturers",
+      value: "20+",
     },
     {
-      icon: "/images/icons/ai.png",
-      title: "AI-Powered Learning Tools",
-      value: "50+"
+      icon: "/images/icons/template.png",
+      title: "Industry Visits",
+      value: "2+ per Sem",
+    },
+    { icon: "/images/icons/ai.png", title: "AI-Powered Learning Tools", value: "50+" },
+    {
+      icon: "/images/icons/hourglass.png",
+      title: "Learning Mode",
+      value: "On Campus",
     },
     {
       icon: "/images/icons/case-study.png",
       title: "Live Case Studies",
       value: "100+",
+    },
+    {
+      icon: "/images/icons/interview.png",
+      title: "Interactive Activities",
+      value: " 5+ per Sem",
     },
     {
       icon: "/images/icons/internship.png",
@@ -207,18 +219,28 @@ const mbaInAiDigitalMarketingEntrepreneurship: CoursesType = {
     },
     {
       icon: "/images/icons/project.png",
-      title: "Capstone Project",
+      title: "Capstone Projects",
       value: "Included",
+    },
+    {
+      icon: "/images/icons/certificate.png",
+      title: "Bring your own Product model",
+      value: "",
     },
     {
       icon: "/images/icons/specialisation.png",
       title: "Specialisations",
-      value: "4",
+      value: "6",
     },
     {
       icon: "/images/icons/trainer.png",
-      title: "Domain Specialist Trainers",
+      title: "Domain Specialist Trainer",
       value: "15+",
+    },
+    {
+      icon: "/images/icons/trainer.png",
+      title: "Integrated Internship",
+      value: "",
     },
   ],
   StoryHeader: {
