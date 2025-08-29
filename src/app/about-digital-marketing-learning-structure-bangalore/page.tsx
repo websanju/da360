@@ -12,31 +12,37 @@ import VisionMissionStats from "@components/visionMissionStats";
 import styles from "./style.module.scss";
 
 export const metadata = {
-  title: "Digital Academy 360 | Industry Leaders Since 2015",
+  title: "Digital Academy 360 | Industry Leaders in Digital Marketing",
   description:
-    "Digital Academy 360 Pvt Ltd is India's Largest Digital Learning Center Located in Bangalore, India. Enroll today for certification and career growth",
+    "Digital Academy 360 Pvt Ltd, Founded In 2015, Is India’s Largest Digital Marketing Learning Center. AI Tools, Live Projects & 100% Placement. Know More!",
   keywords: [
-    "About Digital Academy 360, Digital Academy 360 Pvt Ltd, DA360, Digital Academy 360 Structure",
+    "Digital Marketing Learning Center",
+    "Digital Marketing Learning Center in Bangalore",
+    "About Digital Academy 360",
+    "Digital Academy 360 Pvt Ltd",
+    "Digital Academy 360 Structure",
+    "DA360",
   ],
   robots:
     "index, follow, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
   alternates: {
-    canonical: "https://digitalacademy360.com/about-us",
+    canonical:
+      "https://digitalacademy360.com/about-digital-marketing-learning-structure-bangalore",
   },
   openGraph: {
-    title: "Digital Academy 360 | Industry Leaders Since 2015",
+    title: "Digital Academy 360 | Industry Leaders in Digital Marketing",
     description:
-      "Digital Academy 360 Pvt Ltd is India's Largest Digital Learning Center Located in Bangalore, India. Enroll today for certification and career growth",
-    url: "https://digitalacademy360.com/about-us",
+      "Digital Academy 360 Pvt Ltd, Founded In 2015, Is India’s Largest Digital Marketing Learning Center. AI Tools, Live Projects & 100% Placement. Know More!",
+    url: "https://digitalacademy360.com/about-digital-marketing-learning-structure-bangalore",
     siteName: "Digital Academy 360",
     locale: "en_US",
     type: "website",
   },
   twitter: {
-    card: "summary_large_image",
-    title: "Digital Academy 360 | Industry Leaders Since 2015",
+    card: "Digital Academy",
+    title: "Digital Academy 360 | Industry Leaders in Digital Marketing",
     description:
-      "Digital Academy 360 Pvt Ltd is India's Largest Digital Learning Center Located in Bangalore, India. Enroll today for certification and career growth",
+      "Digital Academy 360 Pvt Ltd, Founded In 2015, Is India’s Largest Digital Marketing Learning Center. AI Tools, Live Projects & 100% Placement. Know More!",
   },
 };
 

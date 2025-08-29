@@ -168,7 +168,7 @@ const Footer = () => {
                     <ul>
                       <li>
                         <Link
-                          href="/about-us"
+                          href="/about-digital-marketing-learning-structure-bangalore"
                           className="text-white text-decoration-none"
                         >
                           About Us

@@ -60,7 +60,10 @@ const MobileMenu: React.FC<Props> = ({ onClose }) => {
           </Link>
         </li>
         <li>
-          <Link href="/about-us" onClick={handleClose}>
+          <Link
+            href="/about-digital-marketing-learning-structure-bangalore"
+            onClick={handleClose}
+          >
             About Us
           </Link>
         </li>

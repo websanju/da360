@@ -13,7 +13,7 @@ const QuickMenu: React.FC<{ toggleQuickMenu: () => void }> = ({
     <div className={styles.quickMenu}>
       <div className={styles.links}>
         <Link
-          href="/about-us"
+          href="/about-digital-marketing-learning-structure-bangalore"
           className={styles.linkItem}
           onClick={toggleQuickMenu}
         >
