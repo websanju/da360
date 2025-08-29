@@ -187,9 +187,11 @@ export default function Header() {
                   </li>
                   <li>
                     <Link
-                      href="/trainers"
+                      href="/digital-marketing-trainers-da360"
                       className={`${styles.navItem} ${
-                        pathname === "/trainers" ? styles.active : ""
+                        pathname === "/digital-marketing-trainers-da360"
+                          ? styles.active
+                          : ""
                       }`}
                     >
                       Trainers
