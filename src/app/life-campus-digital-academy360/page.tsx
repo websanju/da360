@@ -13,6 +13,41 @@ import ToobGrid from "@components/toobGrid";
 // import FreelancerSteps from "@components/freelancerSteps";
 import BottomNav from "@components/bottomNav";
 
+export const metadata = {
+  title: "Classroom Experience, Life & Learning at Digital Academy 360",
+  description:
+    "Life@DA360 & Culture Is More Than A Course - Real-World Project, Mentor-Led Classes, Internship, Campus Events, Peer Collaboration, Mentor Support & More",
+  keywords: [
+    "Life at Digital Academy 360",
+    "DA360 classroom experience",
+    "Learning at DA360",
+    "Digital Academy 360 culture",
+    "DA360 learning journey",
+  ],
+  robots:
+    "index, follow, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
+  alternates: {
+    canonical: "https://digitalacademy360.com/",
+  },
+  openGraph: {
+    title: "Classroom Experience, Life & Learning at Digital Academy 360",
+    description:
+      "Life@DA360 & Culture Is More Than A Course - Real-World Project, Mentor-Led Classes, Internship, Campus Events, Peer Collaboration, Mentor Support & More",
+    url: "https://digitalacademy360.com/",
+    siteName: "Digital Academy 360",
+    locale: "en_US",
+    type: "website",
+    images: ["https://digitalacademy360.com/og-image.jpg"],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Classroom Experience, Life & Learning at Digital Academy 360",
+    description:
+      "Life@DA360 & Culture Is More Than A Course - Real-World Project, Mentor-Led Classes, Internship, Campus Events, Peer Collaboration, Mentor Support & More",
+    images: ["https://digitalacademy360.com/og-image.jpg"],
+  },
+};
+
 export default function Lifeda360() {
   const sections = [
     { id: "section1", label: "Overview" },
