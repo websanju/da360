@@ -4,28 +4,20 @@ import SectionHeader from "@components/widgets/sectionHeader";
 
 const programs = [
   {
-    title: "Leadership in Digital Marketing, AI & Entrepreneurship",
-    duration: "6 Months",
-    mode: "Classroom / Online",
-    bonus: "₹3000",
+    title: "Leadership Course referral Program",
+    duration: "",
+    mode: "",
+    bonus: "15,000",
     imageDesktop: "/images/skill-1.png",
     imageMobile: "/images/skill-m-1.png",
   },
   {
     title: "PGCP In Digital Marketing & ECommerce",
-    duration: "6 Months",
-    mode: "Classroom / Online",
-    bonus: "₹3000",
+    duration: "",
+    mode: "",
+    bonus: "7,500",
     imageDesktop: "/images/skill-2.png",
     imageMobile: "/images/skill-m-2.png",
-  },
-  {
-    title: "Skill Diploma in Digital Marketing & Analytics",
-    duration: "6 Months",
-    mode: "Classroom / Online",
-    bonus: "₹3000",
-    imageDesktop: "/images/skill-3.png",
-    imageMobile: "/images/skill-m-3.png",
   },
 ];
 
@@ -54,12 +46,12 @@ const LearningPrograms = () => {
                 <div className={`${styles.programCard} `}>
                   <div className={styles.programCardDetails}>
                     <h5>{program.title}</h5>
-                    <div className={styles.programInfo}>
+                    {/* <div className={styles.programInfo}>
                       <span className={styles.badge}>{program.duration}</span>
                       <span className={styles.badge}>{program.mode}</span>
-                    </div>
+                    </div> */}
                     <p className={styles.programBonus}>
-                      Earn Bonus Upto <span>{program.bonus}</span>
+                      Earn upto INR <span>{program.bonus}</span>
                     </p>
                   </div>
                   <div className={styles.imageCol}>
