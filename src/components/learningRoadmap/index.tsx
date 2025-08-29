@@ -1,9 +1,12 @@
+"use client";
 import React from "react";
 import styles from "./style.module.scss";
 import LeftArrow from "@/components/Ui/svg/leftArrow";
 import Image from "next/image";
 import marker from "../../../public/images/mapToadmap.svg";
 import marker2 from "../../../public/images/roadmap-mobile.svg";
+import { usePopup } from "@components/widgets/popup/PopupContext";
+import ApplyForm from "../widgets/popups/ApplyForm";
 
 interface LearningRoadmapProps {
   headerTitle?: string;
@@ -14,6 +17,8 @@ const LearningRoadmap = ({
   headerTitle = "Your 6-Month Learning Roadmap",
   description = "Your journey is strategically designed for maximum growth at every stage.",
 }: LearningRoadmapProps) => {
+  const { openPopup } = usePopup();
+
   return (
     <section className={styles.roadmapSection}>
       <div className={`container`}>
@@ -36,9 +41,19 @@ const LearningRoadmap = ({
                 <h2>{headerTitle}</h2>
                 <p>{description}</p>
                 <div className={styles.btnAction}>
-                  <a href="#" className="btnWhite">
+                  <button
+                    className="btnWhite"
+                    onClick={() =>
+                      openPopup(
+                        <ApplyForm title="Download your Journey Plan" />,
+                        {
+                          title: `"Download your Journey Plan"`,
+                        }
+                      )
+                    }
+                  >
                     Download your Journey Plan <LeftArrow color="#000" />
-                  </a>
+                  </button>
                 </div>
               </div>
             </div>

@@ -2,8 +2,10 @@
 "use client";
 // import Image from "next/image";
 import React, { useEffect, useState } from "react";
-import Link from "next/link";
+// import Link from "next/link";
 import styles from "./style.module.scss";
+import { usePopup } from "@components/widgets/popup/PopupContext";
+import ApplyForm from "../widgets/popups/ApplyForm";
 
 export interface Cohort {
   date: string;
@@ -25,7 +27,7 @@ export default function CohortDetails({
   section,
 }: CohortDetailsProps) {
   const [isMobile, setIsMobile] = useState(false);
-
+  const { openPopup } = usePopup();
   useEffect(() => {
     const checkScreen = () => {
       setIsMobile(window.innerWidth < 991);
@@ -81,9 +83,9 @@ export default function CohortDetails({
                             <span>{cohort.campus}</span>
                           </div>
                           <div className={`${styles.enrollBtn} `}>
-                            <Link href="#" className="btn btn-danger">
+                            <button className="btn btn-danger">
                               Enroll Now
-                            </Link>
+                            </button>
                             <span>Limited Seats</span>
                           </div>
                         </div>
@@ -127,9 +129,16 @@ export default function CohortDetails({
                         </div>
                       </div>
                       <div className={styles.enrollBtn}>
-                        <Link href="#" className="btn btn-danger">
+                        <button
+                          onClick={() =>
+                            openPopup(<ApplyForm title="Enroll Now" />, {
+                              title: `"Enroll Now"`,
+                            })
+                          }
+                          className="btn btn-danger"
+                        >
                           Enroll Now
-                        </Link>
+                        </button>
                         <span>Limited Seats</span>
                       </div>
                     </div>

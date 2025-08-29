@@ -69,7 +69,7 @@ export default function About() {
       <div className={styles.careerWidget}>
         <div className="container">
           <div className={`${styles.careerWidgetRow} row`}>
-            <div className="col-lg-6">
+            <div className="col-lg-12">
               <CareerWidget
                 variant="red"
                 title="Careers at <br/> Digital Academy 360"
@@ -77,7 +77,7 @@ export default function About() {
                 buttonText="Apply Now"
               />
             </div>
-            <div className="col-lg-6">
+            {/* <div className="col-lg-6">
               <CareerWidget
                 variant="yellow"
                 variantColor="blackColor"
@@ -85,7 +85,7 @@ export default function About() {
                 description="Fill out the form below or connect with our placement cell directly to start hiring from our trained talent pool."
                 buttonText="Join Now"
               />
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

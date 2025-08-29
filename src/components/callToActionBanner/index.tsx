@@ -25,7 +25,11 @@ const CallToActionBanner: React.FC<CallToActionBannerProps> = ({ section }) => {
               </p>
               <div className={styles.buttons}>
                 <button
-                  onClick={() => openPopup(<ApplyForm title="Apply" />, {})}
+                  onClick={() =>
+                    openPopup(<ApplyForm title=" Book Campus Visit" />, {
+                      title: `"Book Campus Visit"`,
+                    })
+                  }
                   className={styles.btn}
                 >
                   Book Campus Visit

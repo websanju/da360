@@ -1,7 +1,7 @@
 import ReferHero from "@components/referHero";
 import HowToEarn from "@components/howToEarn";
 import CallToActionBanner from "@components/callToActionBanner";
-import LearningPrograms from "@components/learningPrograms";
+// import LearningPrograms from "@components/learningPrograms";
 import Faq from "@components/faq";
 
 export const metadata = {
@@ -36,7 +36,7 @@ export default function ReferEarn() {
     <main>
       <ReferHero />
       <HowToEarn />
-      <LearningPrograms />
+      {/* <LearningPrograms /> */}
       <Faq />
       <CallToActionBanner />
     </main>

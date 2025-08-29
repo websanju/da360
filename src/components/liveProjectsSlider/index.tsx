@@ -13,6 +13,8 @@ import TickBlack from "@/components/Ui/svg/tickBlack";
 import ArrowUp from "@/components/Ui/svg/arrowUp";
 import SectionHeader from "@components/widgets/sectionHeader";
 import { auto } from "@popperjs/core";
+import { usePopup } from "@components/widgets/popup/PopupContext";
+import ApplyForm from "../widgets/popups/ApplyForm";
 
 export interface Project {
   id: number;
@@ -46,6 +48,8 @@ export default function LiveProjectsSlider({
   const handleTabClick = (index: number) => {
     swiperRef.current?.slideTo(index);
   };
+
+  const { openPopup } = usePopup();
 
   return (
     <section className={styles.liveProjectsSlider} id={section}>
@@ -232,7 +236,14 @@ export default function LiveProjectsSlider({
 
       {/* Call to Action */}
       <div className="container text-center mt-4">
-        <button className="btnWhite">
+        <button
+          className="btnWhite"
+          onClick={() =>
+            openPopup(<ApplyForm title="Download The Project Report" />, {
+              title: `"Download The Project Report"`,
+            })
+          }
+        >
           Download The Project Report <ArrowUp />
         </button>
       </div>

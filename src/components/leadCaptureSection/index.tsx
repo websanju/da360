@@ -127,7 +127,14 @@ const LeadCaptureSection: React.FC<LeadCaptureSectionProps> = ({
                   {applyLabel || "Apply Now"}
                 </button>
               )}
-              <button className={`${styles.btnWhite} btnWhite`}>
+              <button
+                onClick={() =>
+                  openPopup(<ApplyForm title="Download Brochure" />, {
+                    title: `"Download Brochure"`,
+                  })
+                }
+                className={`${styles.btnWhite} btnWhite`}
+              >
                 Download Brochure
               </button>
             </div>

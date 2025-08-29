@@ -4,6 +4,8 @@ import React, { useState } from "react";
 import styles from "./style.module.scss";
 import Image from "next/image";
 import LeftArrow from "@/components/Ui/svg/leftArrow";
+import ApplyForm from "@components/widgets/popups/ApplyForm";
+import { usePopup } from "@components/widgets/popup/PopupContext";
 
 export interface Certification {
   name: string;
@@ -25,7 +27,7 @@ export default function Certifications({
   const [activeTab, setActiveTab] = useState<string>(
     certifications?.[0]?.name ?? ""
   );
-
+  const { openPopup } = usePopup();
   // Handle case if certifications is empty or undefined
   if (!certifications || certifications.length === 0) {
     return " ";
@@ -70,12 +72,19 @@ export default function Certifications({
         )}
 
         <div className={styles.btnAction}>
-          <a href="#" className="btnRed">
-            Download Detail Curriculum{" "}
+          <button
+            className="btnRed"
+            onClick={() =>
+              openPopup(<ApplyForm title=" Download Detail Curriculum" />, {
+                title: `" Download Detail Curriculum{"`,
+              })
+            }
+          >
+            Download Detail Curriculum
             <span>
               <LeftArrow />
             </span>
-          </a>
+          </button>
         </div>
       </div>
     </section>
