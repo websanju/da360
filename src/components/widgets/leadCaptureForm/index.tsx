@@ -149,8 +149,9 @@ const LeadCaptureForm: React.FC<LeadCaptureFormProps> = ({
             required
           />
           <label className="form-check-label small" htmlFor="updates">
-            I authorize Digital Academy 360 and its associates to contact me
-            with updates & notifications.
+            I authorize Digital Academy 360 and its associates to contact me via
+            Call, Email, WhatsApp & SMS. I accept to Terms of Use & Privacy
+            Policy .
           </label>
         </div>
         <button type="submit" className="btn btn-black w-100 rounded-pill">
