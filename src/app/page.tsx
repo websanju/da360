@@ -39,12 +39,14 @@ export const metadata = {
     siteName: "Digital Academy 360",
     locale: "en_US",
     type: "website",
+    images: ["https://digitalacademy360.com/og-image.jpg"],
   },
   twitter: {
     card: "summary_large_image",
     title: "Digital Marketing Academy | #1 AI School & Coaching Institute",
     description:
       "Asia's Leading Digital Marketing, AI School. Academy With 50K+ Alumni. NSDC & Skill India Approved Coaching, Internship, Certification & 100% Placement*",
+    images: ["https://digitalacademy360.com/og-image.jpg"],
   },
 };
 
