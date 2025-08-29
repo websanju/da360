@@ -175,9 +175,11 @@ export default function Header() {
                 <ul>
                   <li>
                     <Link
-                      href="/life@da360"
+                      href="/life-campus-digital-academy360"
                       className={`${styles.navItem} ${
-                        pathname === "/life@da360" ? styles.active : ""
+                        pathname === "/life-campus-digital-academy360"
+                          ? styles.active
+                          : ""
                       }`}
                     >
                       Life@da360

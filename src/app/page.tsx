@@ -18,13 +18,15 @@ import PaddingWrapper from "@components/widgets/PaddingWrapper";
 import GuestFacultySlider from "@components/guestFacultySlider";
 
 export const metadata = {
-  title: "Digital Marketing Academy | #1 AI School & Coaching Institute",
+  title: "Classroom Experience, Life & Learning at Digital Academy 360",
   description:
-    "Asia's Leading Digital Marketing, AI School. Academy With 50K+ Alumni. NSDC & Skill India Approved Coaching, Internship, Certification & 100% Placement*",
+    "Life@DA360 & Culture Is More Than A Course - Real-World Project, Mentor-Led Classes, Internship, Campus Events, Peer Collaboration, Mentor Support & More",
   keywords: [
-    "digital marketing school",
-    "digital marketing academy",
-    "digital marketing coaching",
+    "Life at Digital Academy 360",
+    "DA360 classroom experience",
+    "Learning at DA360",
+    "Digital Academy 360 culture",
+    "DA360 learning journey",
   ],
   robots:
     "index, follow, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
@@ -32,9 +34,9 @@ export const metadata = {
     canonical: "https://digitalacademy360.com/",
   },
   openGraph: {
-    title: "Digital Marketing Academy | #1 AI School & Coaching Institute",
+    title: "Classroom Experience, Life & Learning at Digital Academy 360",
     description:
-      "Asia's Leading Digital Marketing, AI School. Academy With 50K+ Alumni. NSDC & Skill India Approved Coaching, Internship, Certification & 100% Placement*",
+      "Life@DA360 & Culture Is More Than A Course - Real-World Project, Mentor-Led Classes, Internship, Campus Events, Peer Collaboration, Mentor Support & More",
     url: "https://digitalacademy360.com/",
     siteName: "Digital Academy 360",
     locale: "en_US",
@@ -43,9 +45,9 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Digital Marketing Academy | #1 AI School & Coaching Institute",
+    title: "Classroom Experience, Life & Learning at Digital Academy 360",
     description:
-      "Asia's Leading Digital Marketing, AI School. Academy With 50K+ Alumni. NSDC & Skill India Approved Coaching, Internship, Certification & 100% Placement*",
+      "Life@DA360 & Culture Is More Than A Course - Real-World Project, Mentor-Led Classes, Internship, Campus Events, Peer Collaboration, Mentor Support & More",
     images: ["https://digitalacademy360.com/og-image.jpg"],
   },
 };
