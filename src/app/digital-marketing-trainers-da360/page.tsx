@@ -1,4 +1,3 @@
-"use client";
 import TrainersHeroSection from "@components/trainersHeroSection";
 import CareerBanner from "@/components/careerBanner";
 import TrainersFacultyCard from "@components/widgets/trainersFacultyCard";
@@ -7,7 +6,47 @@ import styles from "./style.module.scss";
 import SectionHeader from "@/components/widgets/sectionHeader";
 import CaseStudyPopup, { Study } from "@components/widgets/popups/gurstFaculty";
 import TrainersFacultyPopup from "@components/widgets/popups/trainersFaculty";
-import { usePopup } from "@components/widgets/popup/PopupContext";
+import PopupTrigger from "./popupTrigger";
+
+export const metadata = {
+  title:
+    "Classroom Experience, Life & Learning at Digital Academy 360Certified Digital Marketing Mentors | DA360 Trainer & Expert",
+  description:
+    "Best Digital Marketing Trainers. Industry Certified Mentors & Guest Faculties From Global Brands, 10 Level Methodology, 5 Tier Team Support. Learn Form Best!",
+  keywords: [
+    "Digital Marketing Trainers",
+    "Digital Marketing Experts",
+    "DA360 Trainers",
+    "Best Trainers at DA360",
+    "DA360 Certified Trainers",
+    "Digital Marketing Trainers & Coaches",
+  ],
+  robots:
+    "index, follow, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
+  alternates: {
+    canonical: "https://digitalacademy360.com/",
+  },
+  openGraph: {
+    title:
+      "Classroom Experience, Life & Learning at Digital Academy 360Certified Digital Marketing Mentors | DA360 Trainer & Expert",
+    description:
+      "Best Digital Marketing Trainers. Industry Certified Mentors & Guest Faculties From Global Brands, 10 Level Methodology, 5 Tier Team Support. Learn Form Best!",
+    url: "https://digitalacademy360.com/",
+    siteName: "Digital Academy 360",
+    locale: "en_US",
+    type: "website",
+    images: ["https://digitalacademy360.com/og-image.jpg"],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title:
+      "Classroom Experience, Life & Learning at Digital Academy 360Certified Digital Marketing Mentors | DA360 Trainer & Expert",
+    description:
+      "Best Digital Marketing Trainers. Industry Certified Mentors & Guest Faculties From Global Brands, 10 Level Methodology, 5 Tier Team Support. Learn Form Best!",
+    images: ["https://digitalacademy360.com/og-image.jpg"],
+  },
+};
+
 const dataItem: Study[] = [
   {
     name: "Rajesh Choudhury",
@@ -244,8 +283,7 @@ const data: TrainerType = [
       "Deputy General Manager – Digital Marketing at Puravankara Ltd. with 18+ years of experience in digital strategy across real estate, retail & e-commerce sectors.",
   },
 ];
-export default function Career() {
-  const { openPopup } = usePopup();
+export default function Trainer() {
   return (
     <main>
       <TrainersHeroSection />
@@ -266,15 +304,12 @@ export default function Career() {
           <div className={`${styles.row} row d-md-flex`}>
             {dataItem.map((item, index) => (
               <div className="col-md-4 col-lg-4 col-6" key={index}>
-                <div
-                  onClick={() =>
-                    openPopup(<CaseStudyPopup study={item} />, {
-                      className: `${styles.guestFacultyPopup}`,
-                    })
-                  }
+                <PopupTrigger
+                  popup={<CaseStudyPopup study={item} />}
+                  className={styles.guestFacultyPopup}
                 >
                   <GuestFacultyCard bgColor={""} {...item} />
-                </div>
+                </PopupTrigger>
               </div>
             ))}
           </div>
@@ -294,15 +329,12 @@ export default function Career() {
           <div className={`${styles.row} row d-md-flex`}>
             {data.map((item, index) => (
               <div className="col-md-4 col-lg-4 col-6" key={index}>
-                <div
-                  onClick={() =>
-                    openPopup(<TrainersFacultyPopup study={item} />, {
-                      className: `${styles.guestFacultyPopup}`,
-                    })
-                  }
+                <PopupTrigger
+                  popup={<TrainersFacultyPopup study={item} />}
+                  className={styles.guestFacultyPopup}
                 >
                   <TrainersFacultyCard {...item} />
-                </div>
+                </PopupTrigger>
               </div>
             ))}
           </div>
