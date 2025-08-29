@@ -10,11 +10,14 @@ import StudentShowcase from "@components/studentShowcase";
 import PlacementsBanner from "@components/placementsBanner";
 
 export const metadata = {
-  title: "Digital Marketing Course Placements Report & Career Paths",
+  title: "Digital Marketing Career & Placements | DA360 Success Story ",
   description:
-    "50K+ Learners Career Path Transformed Into Digital Marketers & Marketing Specialist. Explore Digital Marketing Career & Placement Record Of Digital Academy 360",
+    "50K+ DA360 Learners Became Digital Marketers. Read Alumni Success Stories. View Placement Rate, Career Trajectorie, Top Hiring Partners & Real Success stories.",
   keywords: [
-    "Digital Marketing Career, Digital Marketing Specialists, Digital Marketing Career Path, Digital Marketing Placement",
+    "Digital Marketing Placement",
+    "Digital Marketing Career",
+    "Digital Marketing Career Path",
+    "Digital Marketing Specialists",
   ],
   robots:
     "index, follow, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
@@ -22,19 +25,21 @@ export const metadata = {
     canonical: "https://digitalacademy360.com/contact-us",
   },
   openGraph: {
-    title: "Digital Marketing Course Placements Report & Career Path",
+    title: "Digital Marketing Career & Placements | DA360 Success Story ",
     description:
-      "50K+ Learners Career Path Transformed Into Digital Marketers & Marketing Specialist. Explore Digital Marketing Career & Placement Record Of Digital Academy 360",
+      "50K+ DA360 Learners Became Digital Marketers. Read Alumni Success Stories. View Placement Rate, Career Trajectorie, Top Hiring Partners & Real Success stories.",
     url: "https://digitalacademy360.com/contact-us",
     siteName: "Digital Academy 360",
     locale: "en_US",
     type: "website",
+    images: ["https://digitalacademy360.com/og-image.jpg"],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Help & Support Details Of Digital Academy 360 | Contact Us",
+    title: "Digital Marketing Career & Placements | DA360 Success Story ",
     description:
-      "Toll Free Number To Get In Touch With Digital Academy 360 Dedicated Team For Enquiry, Admission, Help Or Support. You Are Just A Click Away. Contact Us Now!",
+      "50K+ DA360 Learners Became Digital Marketers. Read Alumni Success Stories. View Placement Rate, Career Trajectorie, Top Hiring Partners & Real Success stories.",
+    images: ["https://digitalacademy360.com/og-image.jpg"],
   },
 };
 
