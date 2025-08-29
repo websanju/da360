@@ -22,7 +22,10 @@ const HireTalentBanner = () => {
                   directly to start hiring from our trained talent pool.
                 </p>
                 <div className={styles.buttonAction}>
-                  <Link href={"/hire-from-da360"} className={styles.hireButton}>
+                  <Link
+                    href={"/hire-digital-marketer-fresher-intern"}
+                    className={styles.hireButton}
+                  >
                     Hire Now
                   </Link>
                 </div>

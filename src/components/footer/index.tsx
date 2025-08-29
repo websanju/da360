@@ -232,7 +232,7 @@ const Footer = () => {
                     <ul>
                       <li>
                         <Link
-                          href="/hire-from-da360"
+                          href="/hire-digital-marketer-fresher-intern"
                           className="text-white text-decoration-none"
                         >
                           Hire From Us

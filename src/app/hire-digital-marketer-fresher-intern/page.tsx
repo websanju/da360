@@ -10,11 +10,11 @@ import Faq from "@components/faq";
 // import styles from "./style.module.scss";
 
 export const metadata = {
-  title: "Hire Digital Marketing Freshers & Interns In Bangalore",
+  title: "Hire Digital Marketing Freshers, Interns & Freelancers in Bangalore",
   description:
-    "Hire Full Time or Freelance Digital Marketing Freshers & Interns For Free. Get Fresh Digital Marketers With Hands On Project Knowledge & Real Time Experience",
+    "Hire Full-Time & Freelance Digital Marketing Freshers and Interns In Bangalore. Get Industry-Ready Marketers With Hands-On Project Experience. Connect Today!",
   keywords: [
-    "Hire Digital Marketing Freshers in Bangalore, Hire Digital Marketing Interns in Bangalore, Hire Digital Marketers in Bangalore, Hire Freelancer For Digital Marketer In Bangalore",
+    "Hire Digital Marketing Freshers, Hire Digital Marketing Interns, Hire Digital Marketer, Hire Freelancer For Digital Marketer",
   ],
   robots:
     "index, follow, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
@@ -22,19 +22,23 @@ export const metadata = {
     canonical: "https://digitalacademy360.com/contact-us",
   },
   openGraph: {
-    title: "Hire Digital Marketing Freshers & Interns In Bangalore",
+    title:
+      "Hire Digital Marketing Freshers, Interns & Freelancers in Bangalore",
     description:
-      "Hire Full Time or Freelance Digital Marketing Freshers & Interns For Free. Get Fresh Digital Marketers With Hands On Project Knowledge & Real Time Experience",
+      "Hire Full-Time & Freelance Digital Marketing Freshers and Interns In Bangalore. Get Industry-Ready Marketers With Hands-On Project Experience. Connect Today!",
     url: "https://digitalacademy360.com/contact-uss",
     siteName: "Digital Academy 360",
     locale: "en_US",
     type: "website",
+    images: ["https://digitalacademy360.com/og-image.jpg"],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Hire Digital Marketing Freshers & Interns In Bangalore",
+    title:
+      "Hire Digital Marketing Freshers, Interns & Freelancers in Bangalore",
     description:
-      "Hire Full Time or Freelance Digital Marketing Freshers & Interns For Free. Get Fresh Digital Marketers With Hands On Project Knowledge & Real Time Experience",
+      "Hire Full-Time & Freelance Digital Marketing Freshers and Interns In Bangalore. Get Industry-Ready Marketers With Hands-On Project Experience. Connect Today!",
+    images: ["https://digitalacademy360.com/og-image.jpg"],
   },
 };
 

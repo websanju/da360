@@ -44,12 +44,14 @@ export const metadata = {
     siteName: "Digital Academy 360",
     locale: "en_US",
     type: "website",
+    images: ["https://digitalacademy360.com/og-image.jpg"],
   },
   twitter: {
     card: "summary_large_image",
     title: "Best Digital Marketing Training Institute Online & Classroom",
     description:
       "Enroll In Job-Oriented Diploma Certification In Digital Marketing Training With Project & Interview Assistance From Best Online Digital Marketing Institute",
+    images: ["https://digitalacademy360.com/og-image.jpg"],
   },
 };
 

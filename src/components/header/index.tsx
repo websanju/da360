@@ -209,9 +209,11 @@ export default function Header() {
                   </li> */}
                   <li>
                     <Link
-                      href="/hire-from-da360"
+                      href="/hire-digital-marketer-fresher-intern"
                       className={`${styles.navItem} ${
-                        pathname === "/hire-from-da360" ? styles.active : ""
+                        pathname === "/hire-digital-marketer-fresher-intern"
+                          ? styles.active
+                          : ""
                       }`}
                     >
                       Hire From Us

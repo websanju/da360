@@ -35,7 +35,7 @@ const HeroSection = () => {
                   </p>
                   <div className={styles.applyAction}>
                     <Link
-                      href="/hire-from-da360"
+                      href="/hire-digital-marketer-fresher-intern"
                       className="btn btn-danger btn-lg px-4"
                     >
                       Hire from DA360
