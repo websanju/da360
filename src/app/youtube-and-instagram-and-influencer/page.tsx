@@ -25,11 +25,13 @@ import BottomNav from "@components/bottomNav";
 import youtubeAndInstagramInfluencer from "@/data/courses/youtubeAndInstagramInfluencer";
 
 export const metadata = {
-  title: "Best Digital Marketing Training Institute Online & Classroom",
+  title: "Youtube & Instagram Influencer Certification Course Online",
   description:
-    "Enroll In Job-Oriented Diploma Certification In Digital Marketing Training With Project & Interview Assistance From Best Online Digital Marketing Institute",
+    "Enroll in Youtube & Instagram Influencer Certification Course. 80+ Hours Training, Case Study, AI Tool, Influencer Strategy & Certification. Apply Now!",
   keywords: [
-    "Digital Marketing Institute, Institute of Digital Marketing, Digital Marketing Training, Digital Marketing Training Institute, Best Online Digital Marketing Training",
+    "instagram courses, youtube courses, instagram training, youtube training, youtube certification courses",
+    "instagram classes",
+    "youtube classes",
   ],
   robots:
     "index, follow, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
@@ -37,9 +39,9 @@ export const metadata = {
     canonical: "https://digitalacademy360.com/",
   },
   openGraph: {
-    title: "Best Digital Marketing Training Institute Online & Classroom",
+    title: "Youtube & Instagram Influencer Certification Course Online",
     description:
-      "Enroll In Job-Oriented Diploma Certification In Digital Marketing Training With Project & Interview Assistance From Best Online Digital Marketing Institute",
+      "Enroll in Youtube & Instagram Influencer Certification Course. 80+ Hours Training, Case Study, AI Tool, Influencer Strategy & Certification. Apply Now!",
     url: "https://digitalacademy360.com/",
     siteName: "Digital Academy 360",
     locale: "en_US",
@@ -47,9 +49,9 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Best Digital Marketing Training Institute Online & Classroom",
+    title: "Youtube & Instagram Influencer Certification Course Online",
     description:
-      "Enroll In Job-Oriented Diploma Certification In Digital Marketing Training With Project & Interview Assistance From Best Online Digital Marketing Institute",
+      "Enroll in Youtube & Instagram Influencer Certification Course. 80+ Hours Training, Case Study, AI Tool, Influencer Strategy & Certification. Apply Now!",
   },
 };
 

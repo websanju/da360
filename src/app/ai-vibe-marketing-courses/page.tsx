@@ -45,12 +45,14 @@ export const metadata = {
     siteName: "Digital Academy 360",
     locale: "en_US",
     type: "website",
+    images: ["https://digitalacademy360.com/og-image.jpg"],
   },
   twitter: {
     card: "summary_large_image",
     title: "Digital Marketing Certification In AI & Vibe Marketing",
     description:
       "Digital Marketing Certification Course With AI & Vibe Marketing. Get 10+ Tools, 8+ Case Study, 2 AI Flow, Certification, Paid Internship & Secure Your Career",
+    images: ["https://digitalacademy360.com/og-image.jpg"],
   },
 };
 
