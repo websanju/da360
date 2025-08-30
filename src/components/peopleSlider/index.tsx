@@ -221,7 +221,7 @@ const PeopleSlider: React.FC<PeopleSliderProps> = ({ title, description }) => {
                             className={styles.viewMoreCard}
                             style={{ backgroundColor: person.bgColor }}
                           >
-                            <Link href={"/testimonial"}>View all</Link>
+                            <Link href={"/review-testimonial"}>View all</Link>
                           </div>
                         ) : (
                           <Image
