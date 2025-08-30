@@ -221,9 +221,11 @@ export default function Header() {
                   </li>
                   <li>
                     <Link
-                      href="/placements"
+                      href="/digital-marketing-placement-report-da360"
                       className={`${styles.navItem} ${
-                        pathname === "/placements" ? styles.active : ""
+                        pathname === "/digital-marketing-placement-report-da360"
+                          ? styles.active
+                          : ""
                       }`}
                     >
                       Placements

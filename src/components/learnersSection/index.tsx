@@ -176,7 +176,7 @@ export default function LearnersSection() {
           </div>
 
           {/* <div className="container position-relative">
-            <Link href="/placements" className={styles.viewAllBtn}>
+            <Link href="/digital-marketing-placement-report-da360" className={styles.viewAllBtn}>
               View All <UpArrow color="#fff" />
             </Link>
           </div> */}

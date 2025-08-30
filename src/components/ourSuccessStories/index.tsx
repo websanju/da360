@@ -201,7 +201,7 @@ const SuccessStories: React.FC<StoryHeader & {}> = ({
                           Want to see more inspiring stories?
                         </p>
                         <Link
-                          href="/placements"
+                          href="/digital-marketing-placement-report-da360"
                           className={`${styles.downloadBtn} btn-white rounded-pill`}
                         >
                           View All Success Stories <ArrowUp />
