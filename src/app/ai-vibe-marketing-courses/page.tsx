@@ -26,11 +26,11 @@ import aiVibeMarketing from "@/data/courses/aiVibeMarketing";
 import AiVibeMarketing from "@/data/courses/aiVibeMarketing";
 
 export const metadata = {
-  title: "Best Digital Marketing Training Institute Online & Classroom",
+  title: "Digital Marketing Certification In AI & Vibe Marketing",
   description:
-    "Enroll In Job-Oriented Diploma Certification In Digital Marketing Training With Project & Interview Assistance From Best Online Digital Marketing Institute",
+    "Digital Marketing Certification Course With AI & Vibe Marketing. Get 10+ Tools, 8+ Case Study, 2 AI Flow, Certification, Paid Internship & Secure Your Career",
   keywords: [
-    "Digital Marketing Institute, Institute of Digital Marketing, Digital Marketing Training, Digital Marketing Training Institute, Best Online Digital Marketing Training",
+    "Vibe Marketing Courses, Vibe Marketing Certification Courses, AI Vibe Marketing Courses, AI Vibe Marketing Certification Courses",
   ],
   robots:
     "index, follow, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
@@ -38,9 +38,9 @@ export const metadata = {
     canonical: "https://digitalacademy360.com/",
   },
   openGraph: {
-    title: "Best Digital Marketing Training Institute Online & Classroom",
+    title: "Digital Marketing Certification In AI & Vibe Marketing",
     description:
-      "Enroll In Job-Oriented Diploma Certification In Digital Marketing Training With Project & Interview Assistance From Best Online Digital Marketing Institute",
+      "Digital Marketing Certification Course With AI & Vibe Marketing. Get 10+ Tools, 8+ Case Study, 2 AI Flow, Certification, Paid Internship & Secure Your Career",
     url: "https://digitalacademy360.com/",
     siteName: "Digital Academy 360",
     locale: "en_US",
@@ -48,9 +48,9 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Best Digital Marketing Training Institute Online & Classroom",
+    title: "Digital Marketing Certification In AI & Vibe Marketing",
     description:
-      "Enroll In Job-Oriented Diploma Certification In Digital Marketing Training With Project & Interview Assistance From Best Online Digital Marketing Institute",
+      "Digital Marketing Certification Course With AI & Vibe Marketing. Get 10+ Tools, 8+ Case Study, 2 AI Flow, Certification, Paid Internship & Secure Your Career",
   },
 };
 

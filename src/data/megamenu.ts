@@ -68,7 +68,7 @@ export const coursesData: Record<string, CourseItem[]> = {
       title: "AI Vibe Marketing",
       duration: "2 Months",
       mode: "Online",
-      onClick: "/ai-vibe-marketing",
+      onClick: "/ai-vibe-marketing-courses",
       list: [
         "Advance Specialist Certification",
         "80+ Hours of Learning",

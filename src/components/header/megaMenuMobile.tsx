@@ -141,7 +141,7 @@ const MobileMenu: React.FC<Props> = ({ onClose }) => {
           <h3>Certification Courses</h3>
 
           <div
-            onClick={() => handleClick("/ai-vibe-marketing")}
+            onClick={() => handleClick("/ai-vibe-marketing-courses")}
             className={styles.navbarDropdownColumn}
           >
             <h4> AI Vibe Marketing</h4>

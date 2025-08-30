@@ -136,7 +136,7 @@ const Footer = () => {
                       </li>
                       <li>
                         <Link
-                          href="/ai-vibe-marketing"
+                          href="/ai-vibe-marketing-courses"
                           className="text-white text-decoration-none"
                         >
                           AI Vibe Marketing

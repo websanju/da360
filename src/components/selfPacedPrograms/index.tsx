@@ -17,7 +17,7 @@ const courses = [
     ],
     bgColor: "#8BBAE3",
     imgSrc: "/images/bootcamps/ai-vibe-marketing.jpg",
-    link: "/ai-vibe-marketing",
+    link: "/ai-vibe-marketing-courses",
   },
   {
     title: "Youtube & Instagram Influencer",
