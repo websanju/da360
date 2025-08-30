@@ -24,7 +24,7 @@ export const coursesData: Record<string, CourseItem[]> = {
     {
       title: "Leadership in Social Content Creator & Video Production",
       duration: "Coming Soon",
-      onClick: "/social-content-creator-and-video-production",
+      onClick: "/social-media-content-video-creator-course",
       list: [
         "3 Months Internship Included",
         "1920+ Hours of Learning",

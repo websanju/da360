@@ -74,7 +74,7 @@ const MobileMenu: React.FC<Props> = ({ onClose }) => {
 
           <div
             onClick={() =>
-              handleClick("/social-content-creator-and-video-production")
+              handleClick("/social-media-content-video-creator-course")
             }
             className={styles.navbarDropdownColumn}
           >

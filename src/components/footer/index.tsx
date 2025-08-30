@@ -111,7 +111,7 @@ const Footer = () => {
                       </li>
                       <li>
                         <Link
-                          href="/social-content-creator-and-video-production"
+                          href="/social-media-content-video-creator-course"
                           className="text-white text-decoration-none"
                         >
                           Leadership in Social Content Creator & Video
