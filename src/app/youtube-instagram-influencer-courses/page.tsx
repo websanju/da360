@@ -36,13 +36,14 @@ export const metadata = {
   robots:
     "index, follow, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
   alternates: {
-    canonical: "https://digitalacademy360.com/",
+    canonical:
+      "https://digitalacademy360.com/youtube-instagram-influencer-courses",
   },
   openGraph: {
     title: "Youtube & Instagram Influencer Certification Course Online",
     description:
       "Enroll in Youtube & Instagram Influencer Certification Course. 80+ Hours Training, Case Study, AI Tool, Influencer Strategy & Certification. Apply Now!",
-    url: "https://digitalacademy360.com/",
+    url: "https://digitalacademy360.com/youtube-instagram-influencer-courses",
     siteName: "Digital Academy 360",
     locale: "en_US",
     type: "website",
