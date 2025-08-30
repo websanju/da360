@@ -18,11 +18,11 @@ import UniversityGallery from "@/components/universityGallery";
 import ReasonsToJoin from "@/components/reasonsToJoin";
 
 export const metadata = {
-  title: "Best Digital Marketing Training Institute Online & Classroom",
+  title: "BBA in Digital Marketing With University Degree & Placement",
   description:
-    "Enroll In Job-Oriented Diploma Certification In Digital Marketing Training With Project & Interview Assistance From Best Online Digital Marketing Institute",
+    "3 Years Bachelors in Digital Marketing & AI. NAAC Grade A+ & AICTE Approved. Get BBA University Degree With 100% Guaranteed Placement*",
   keywords: [
-    "Digital Marketing Institute, Institute of Digital Marketing, Digital Marketing Training, Digital Marketing Training Institute, Best Online Digital Marketing Training",
+    "BBA In Digital Marketing, Bachelors Degree In Digital Marketing, BBA In Digital Marketing and AI, BBA In Digital Marketing With Placement Guarantee",
   ],
   robots:
     "index, follow, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
@@ -30,19 +30,21 @@ export const metadata = {
     canonical: "https://digitalacademy360.com/",
   },
   openGraph: {
-    title: "Best Digital Marketing Training Institute Online & Classroom",
+    title: "BBA in Digital Marketing With University Degree & Placement",
     description:
-      "Enroll In Job-Oriented Diploma Certification In Digital Marketing Training With Project & Interview Assistance From Best Online Digital Marketing Institute",
+      "3 Years Bachelors in Digital Marketing & AI. NAAC Grade A+ & AICTE Approved. Get BBA University Degree With 100% Guaranteed Placement*",
     url: "https://digitalacademy360.com/",
     siteName: "Digital Academy 360",
     locale: "en_US",
     type: "website",
+    images: ["https://digitalacademy360.com/og-image.jpg"],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Best Digital Marketing Training Institute Online & Classroom",
+    title: "BBA in Digital Marketing With University Degree & Placement",
     description:
-      "Enroll In Job-Oriented Diploma Certification In Digital Marketing Training With Project & Interview Assistance From Best Online Digital Marketing Institute",
+      "3 Years Bachelors in Digital Marketing & AI. NAAC Grade A+ & AICTE Approved. Get BBA University Degree With 100% Guaranteed Placement*",
+    images: ["https://digitalacademy360.com/og-image.jpg"],
   },
 };
 
