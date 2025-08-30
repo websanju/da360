@@ -27,7 +27,7 @@ const CareerWidget: React.FC<CareerWidgetProps> = ({
         <h2 dangerouslySetInnerHTML={{ __html: title }} />
         <p>{description}</p>
         <Link
-          href={"/career"}
+          href={"/career-jobs"}
           className={styles.button}
           aria-label={buttonText}
         >

@@ -240,7 +240,7 @@ const Footer = () => {
                       </li>
                       <li>
                         <Link
-                          href="/career"
+                          href="/career-jobs"
                           className="text-white text-decoration-none"
                         >
                           Work With Us
