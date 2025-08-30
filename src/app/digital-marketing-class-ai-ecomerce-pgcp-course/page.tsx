@@ -25,11 +25,11 @@ import BottomNav from "@components/bottomNav";
 import digitalNarketingTrainingInstitute from "@/data/courses/digitalNarketingTrainingInstitute";
 
 export const metadata = {
-  title: "Best Digital Marketing Training Institute Online & Classroom",
+  title: "PGCP Digital Marketing Class With Ecommerce, AI & Internship",
   description:
-    "Enroll In Job-Oriented Diploma Certification In Digital Marketing Training With Project & Interview Assistance From Best Online Digital Marketing Institute",
+    "Transform Your Career With PG Certification In AI-Powered Digital Marketing & E-Commerce Class. 100% Placement Guaranteed*. Approved by MESC & Skill India",
   keywords: [
-    "Digital Marketing Institute, Institute of Digital Marketing, Digital Marketing Training, Digital Marketing Training Institute, Best Online Digital Marketing Training",
+    "digital marketing class, digital marketing with ai course, ai digital marketing course, digital marketing and ecommerce course, ecommerce marketing course, digital marketing Ai course, digital marketing ecommerce course, ecommerce digital marketing course, pg digital marketing",
   ],
   robots:
     "index, follow, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
@@ -37,9 +37,9 @@ export const metadata = {
     canonical: "https://digitalacademy360.com/",
   },
   openGraph: {
-    title: "Best Digital Marketing Training Institute Online & Classroom",
+    title: "PGCP Digital Marketing Class With Ecommerce, AI & Internship",
     description:
-      "Enroll In Job-Oriented Diploma Certification In Digital Marketing Training With Project & Interview Assistance From Best Online Digital Marketing Institute",
+      "Transform Your Career With PG Certification In AI-Powered Digital Marketing & E-Commerce Class. 100% Placement Guaranteed*. Approved by MESC & Skill India",
     url: "https://digitalacademy360.com/",
     siteName: "Digital Academy 360",
     locale: "en_US",
@@ -48,9 +48,9 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Best Digital Marketing Training Institute Online & Classroom",
+    title: "PGCP Digital Marketing Class With Ecommerce, AI & Internship",
     description:
-      "Enroll In Job-Oriented Diploma Certification In Digital Marketing Training With Project & Interview Assistance From Best Online Digital Marketing Institute",
+      "Transform Your Career With PG Certification In AI-Powered Digital Marketing & E-Commerce Class. 100% Placement Guaranteed*. Approved by MESC & Skill India",
     images: ["https://digitalacademy360.com/og-image.jpg"],
   },
 };

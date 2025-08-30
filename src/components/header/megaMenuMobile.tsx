@@ -97,7 +97,9 @@ const MobileMenu: React.FC<Props> = ({ onClose }) => {
         >
           <h3>PGCP Courses</h3>
           <div
-            onClick={() => handleClick("/digital-marketing-training-institute")}
+            onClick={() =>
+              handleClick("/digital-marketing-class-ai-ecomerce-pgcp-course")
+            }
             className={styles.navbarDropdownColumn}
           >
             <h4>PGCP in Digital Marketing, E‑Comm & AI</h4>

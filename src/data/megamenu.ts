@@ -39,7 +39,7 @@ export const coursesData: Record<string, CourseItem[]> = {
       title: "PGCP in Digital Marketing, E‑Comm & AI",
       duration: "6 Months",
       mode: "Online / Classroom",
-      onClick: "/digital-marketing-training-institute",
+      onClick: "/digital-marketing-class-ai-ecomerce-pgcp-course",
       list: [
         "PG Level Certification",
         "240+ Hours of Learning",

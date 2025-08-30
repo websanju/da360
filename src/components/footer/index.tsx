@@ -120,7 +120,7 @@ const Footer = () => {
                       </li>
                       <li>
                         <Link
-                          href="/digital-marketing-training-institute"
+                          href="/digital-marketing-class-ai-ecomerce-pgcp-course"
                           className="text-white text-decoration-none"
                         >
                           PGCP in Digital Marketing, E‑Comm & AI

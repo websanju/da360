@@ -145,7 +145,7 @@ const ProgramsShowcase: React.FC = () => {
                   },
                 ]}
                 buttonText="View Course"
-                courseLink="/digital-marketing-training-institute"
+                courseLink="/digital-marketing-class-ai-ecomerce-pgcp-course"
                 expertText="Avail Scholarship"
                 image="/images/course-list/PGCP-in-digital-marketing-e‑comm-aI.jpg"
               />
