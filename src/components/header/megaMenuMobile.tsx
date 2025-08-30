@@ -160,7 +160,7 @@ const MobileMenu: React.FC<Props> = ({ onClose }) => {
           </div>
 
           <div
-            onClick={() => handleClick("/youtube-and-instagram-and-influencer")}
+            onClick={() => handleClick("/youtube-instagram-influencer-courses")}
             className={styles.navbarDropdownColumn}
           >
             <h4>Youtube & Instagram Influencer</h4>

@@ -144,7 +144,7 @@ const Footer = () => {
                       </li>
                       <li>
                         <Link
-                          href="/youtube-and-instagram-and-influencer"
+                          href="/youtube-instagram-influencer-courses"
                           className="text-white text-decoration-none"
                         >
                           Youtube & Instagram Influencer

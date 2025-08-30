@@ -81,7 +81,7 @@ export const coursesData: Record<string, CourseItem[]> = {
       title: "Youtube & Instagram Influencer",
       duration: "2 Months",
       mode: "Online",
-      onClick: "/youtube-and-instagram-and-influencer",
+      onClick: "/youtube-instagram-influencer-courses",
       list: [
         "Advance Specialist Certification",
         "80+ Hours of Learning",

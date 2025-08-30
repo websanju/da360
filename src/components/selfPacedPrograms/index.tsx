@@ -31,7 +31,7 @@ const courses = [
     ],
     bgColor: "#93EABF",
     imgSrc: "/images/bootcamps/youtube-instagram-Influencer.jpg",
-    link: "/youtube-and-instagram-and-influencer",
+    link: "/youtube-instagram-influencer-courses",
   },
   {
     title: "Performance Marketing & MarTech",
