@@ -25,31 +25,34 @@ import BottomNav from "@components/bottomNav";
 import performanceMarketingAndMartech from "@/data/courses/performanceMarketingAndMartech";
 
 export const metadata = {
-  title: "Best Digital Marketing Training Institute Online & Classroom",
+  title: "MarTech, Automation & Performance Marketing Courses Online",
   description:
-    "Enroll In Job-Oriented Diploma Certification In Digital Marketing Training With Project & Interview Assistance From Best Online Digital Marketing Institute",
+    "Boost Your Career By Mastering Performance Marketing Course Online: Google Ads, Meta Ads, AI-powered MarTech, Marketing Automation & More. Apply Now!",
   keywords: [
-    "Digital Marketing Institute, Institute of Digital Marketing, Digital Marketing Training, Digital Marketing Training Institute, Best Online Digital Marketing Training",
+    "performance marketing course online, marketing automation courses, Digital Ads Course , google ads course online, Meta Ads Course Online, Digital Ads Course Online , Marketing Automation Course Online",
   ],
   robots:
     "index, follow, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
   alternates: {
-    canonical: "https://digitalacademy360.com/",
+    canonical:
+      "https://digitalacademy360.com/performance-marketing-automation-courses-online",
   },
   openGraph: {
-    title: "Best Digital Marketing Training Institute Online & Classroom",
+    title: "MarTech, Automation & Performance Marketing Courses Online",
     description:
       "Enroll In Job-Oriented Diploma Certification In Digital Marketing Training With Project & Interview Assistance From Best Online Digital Marketing Institute",
-    url: "https://digitalacademy360.com/",
+    url: "https://digitalacademy360.com/performance-marketing-automation-courses-online",
     siteName: "Digital Academy 360",
     locale: "en_US",
     type: "website",
+    images: ["https://digitalacademy360.com/og-image.jpg"],
   },
   twitter: {
     card: "summary_large_image",
     title: "Best Digital Marketing Training Institute Online & Classroom",
     description:
       "Enroll In Job-Oriented Diploma Certification In Digital Marketing Training With Project & Interview Assistance From Best Online Digital Marketing Institute",
+    images: ["https://digitalacademy360.com/og-image.jpg"],
   },
 };
 

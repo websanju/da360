@@ -107,7 +107,7 @@ export const coursesData: Record<string, CourseItem[]> = {
       title: "Performance Marketing & MarTech",
       duration: "2 Months",
       mode: "Online",
-      onClick: "/performance-marketing-and-martech",
+      onClick: "/performance-marketing-automation-courses-online",
       list: [
         "Advance Specialist Certification",
         "80+ Hours of Learning",

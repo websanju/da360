@@ -45,7 +45,7 @@ const courses = [
     ],
     bgColor: "#FFD6DA",
     imgSrc: "/images/bootcamps/performance-marketing-marTech.jpg",
-    link: "/performance-marketing-and-martech",
+    link: "/performance-marketing-automation-courses-online",
   },
 ];
 

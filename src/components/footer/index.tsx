@@ -152,7 +152,7 @@ const Footer = () => {
                       </li>
                       <li>
                         <Link
-                          href="/performance-marketing-and-martech"
+                          href="/performance-marketing-automation-courses-online"
                           className="text-white text-decoration-none"
                         >
                           Performance Marketing & MarTech
