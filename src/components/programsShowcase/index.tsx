@@ -179,7 +179,7 @@ const ProgramsShowcase: React.FC = () => {
                   },
                 ]}
                 buttonText="View Course"
-                courseLink="/performance-marketing-and-media-buying"
+                courseLink="/digital-marketing-training-institute"
                 //
                 expertText="Avail Scholarship"
                 image="/images/course-list/performance-marketing-and-media-buying.jpg"

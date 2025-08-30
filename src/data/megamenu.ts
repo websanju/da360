@@ -53,7 +53,7 @@ export const coursesData: Record<string, CourseItem[]> = {
       title: "PGCP in Performance Marketing & Media Buying",
       duration: "6 Months",
       mode: "Online",
-      onClick: "/performance-marketing-and-media-buying",
+      onClick: "/digital-marketing-training-institute",
       list: [
         "PG Level Certification",
         "240+ Hours of Learning",

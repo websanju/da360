@@ -25,31 +25,34 @@ import BottomNav from "@components/bottomNav";
 import performanceMarketingAndMediaBuying from "@/data/courses/performanceMarketingAndMediaBuying";
 
 export const metadata = {
-  title: "Best Digital Marketing Training Institute Online & Classroom",
+  title: "Performance Marketing & Digital Marketing Training Institute",
   description:
-    "Enroll In Job-Oriented Diploma Certification In Digital Marketing Training With Project & Interview Assistance From Best Online Digital Marketing Institute",
+    "Join the Digital Marketing Training Institute For Performance Marketing & Media Buying Course. 100% Placement Guaranteed*. Approved by MESC & Skill India",
   keywords: [
-    "Digital Marketing Institute, Institute of Digital Marketing, Digital Marketing Training, Digital Marketing Training Institute, Best Online Digital Marketing Training",
+    "digital marketing institute, performance marketing course, digital marketing training, digital marketing training institute, media buying course",
   ],
   robots:
     "index, follow, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
   alternates: {
-    canonical: "https://digitalacademy360.com/",
+    canonical:
+      "https://digitalacademy360.com/digital-marketing-training-institute",
   },
   openGraph: {
-    title: "Best Digital Marketing Training Institute Online & Classroom",
+    title: "Performance Marketing & Digital Marketing Training Institute",
     description:
-      "Enroll In Job-Oriented Diploma Certification In Digital Marketing Training With Project & Interview Assistance From Best Online Digital Marketing Institute",
-    url: "https://digitalacademy360.com/",
+      "Join the Digital Marketing Training Institute For Performance Marketing & Media Buying Course. 100% Placement Guaranteed*. Approved by MESC & Skill India",
+    url: "https://digitalacademy360.com/digital-marketing-training-institute",
     siteName: "Digital Academy 360",
     locale: "en_US",
     type: "website",
+    images: ["https://digitalacademy360.com/og-image.jpg"],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Best Digital Marketing Training Institute Online & Classroom",
+    title: "Performance Marketing & Digital Marketing Training Institute",
     description:
-      "Enroll In Job-Oriented Diploma Certification In Digital Marketing Training With Project & Interview Assistance From Best Online Digital Marketing Institute",
+      "Join the Digital Marketing Training Institute For Performance Marketing & Media Buying Course. 100% Placement Guaranteed*. Approved by MESC & Skill India",
+    images: ["https://digitalacademy360.com/og-image.jpg"],
   },
 };
 

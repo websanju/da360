@@ -128,7 +128,7 @@ const Footer = () => {
                       </li>
                       <li>
                         <Link
-                          href="/performance-marketing-and-media-buying"
+                          href="/digital-marketing-training-institute"
                           className="text-white text-decoration-none"
                         >
                           PGCP in Performance Marketing & Media Buying
