@@ -37,7 +37,7 @@ const QuickMenu: React.FC<{ toggleQuickMenu: () => void }> = ({
           <p>Proven success, real voices</p>
         </Link>
         <Link
-          href="/refer-and-earn"
+          href="/affiliate-admission-refer-earn"
           className={styles.linkItem}
           onClick={toggleQuickMenu}
         >

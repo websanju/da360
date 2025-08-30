@@ -184,7 +184,7 @@ const Footer = () => {
                       </li>
                       <li>
                         <Link
-                          href="/refer-and-earn"
+                          href="/affiliate-admission-refer-earn"
                           className="text-white text-decoration-none"
                         >
                           Refer & Earn
