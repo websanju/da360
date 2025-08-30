@@ -103,7 +103,7 @@ const Footer = () => {
                     <ul>
                       <li>
                         <Link
-                          href="/master-digital-marketing-leadership-course"
+                          href="/digital-marketing-leadership-entrepreneurship-program"
                           className="text-white text-decoration-none"
                         >
                           Leadership in Digital Marketing, AI & Entrepreneurship

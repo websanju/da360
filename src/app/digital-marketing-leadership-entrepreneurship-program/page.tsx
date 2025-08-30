@@ -25,31 +25,32 @@ import BottomNav from "@/components/bottomNav";
 import TrustedByLearners from "@/components/trustedByLearners";
 
 export const metadata = {
-  title: "Digital Marketing & AI Leadership Course | MBA Level Program",
+  title: "Digital Marketing Program With AI & Entrepreneurship",
   description:
-    "Leadership in Digital Marketing, AI & Entrepreneurship To Master Digital Marketing Projects & Strategies In 12 Mo With Interview & Paid Internship",
+    "100% Placement Guaranteed* Digital Marketing Leadership Program With AI & Entrepreneurship Course. Approved by MESC & Skill India. Upto 30K Scholarship",
   keywords: [
-    "Master Degree In Digital Marketing, Masters In Digital Marketing, Digital Marketing Masters Programs, Digital Marketing Master Course, Digital Marketing With AI Course",
+    "digital marketing leadership course, digital marketing programs, digital marketing course for entrepreneurs, digital marketing ai programs,",
   ],
   robots:
     "index, follow, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
   alternates: {
-    canonical: "https://digitalacademy360.com/",
+    canonical:
+      "https://digitalacademy360.com/digital-marketing-leadership-entrepreneurship-program",
   },
   openGraph: {
-    title: "Digital Marketing & AI Leadership Course | MBA Level Program",
+    title: "Digital Marketing Program With AI & Entrepreneurship",
     description:
-      "Leadership in Digital Marketing, AI & Entrepreneurship To Master Digital Marketing Projects & Strategies In 12 Mo With Interview & Paid Internship",
-    url: "https://digitalacademy360.com/",
+      "100% Placement Guaranteed* Digital Marketing Leadership Program With AI & Entrepreneurship Course. Approved by MESC & Skill India. Upto 30K Scholarship",
+    url: "https://digitalacademy360.com/digital-marketing-leadership-entrepreneurship-program",
     siteName: "Digital Academy 360",
     locale: "en_US",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Digital Marketing & AI Leadership Course | MBA Level Program",
+    title: "Digital Marketing Program With AI & Entrepreneurship",
     description:
-      "Leadership in Digital Marketing, AI & Entrepreneurship To Master Digital Marketing Projects & Strategies In 12 Mo With Interview & Paid Internship",
+      "100% Placement Guaranteed* Digital Marketing Leadership Program With AI & Entrepreneurship Course. Approved by MESC & Skill India. Upto 30K Scholarship",
   },
 };
 

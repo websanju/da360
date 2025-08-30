@@ -12,7 +12,7 @@ export const coursesData: Record<string, CourseItem[]> = {
     {
       title: "Leadership in Digital Marketing, AI & Entrepreneurship",
       duration: "12 Months",
-      onClick: "/master-digital-marketing-leadership-course",
+      onClick: "/digital-marketing-leadership-entrepreneurship-program",
       list: [
         "3 Months Internship Included",
         "1920+ Hours of Learning",

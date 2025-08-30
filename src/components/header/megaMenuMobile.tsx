@@ -52,7 +52,9 @@ const MobileMenu: React.FC<Props> = ({ onClose }) => {
           <h3>Leadership Courses</h3>
           <div
             onClick={() =>
-              handleClick("/master-digital-marketing-leadership-course")
+              handleClick(
+                "/digital-marketing-leadership-entrepreneurship-program"
+              )
             }
             className={styles.navbarDropdownColumn}
           >

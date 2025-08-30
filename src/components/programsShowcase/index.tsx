@@ -114,7 +114,7 @@ const ProgramsShowcase: React.FC = () => {
                   },
                 ]}
                 buttonText="View Course"
-                courseLink="/master-digital-marketing-leadership-course"
+                courseLink="/digital-marketing-leadership-entrepreneurship-program"
                 expertText="Avail Scholarship"
                 image="/images/course-list/leadeship-course-min.png"
               />
