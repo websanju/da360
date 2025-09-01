@@ -314,8 +314,8 @@ const Footer = () => {
                 <div
                   className={`${styles.footerCopyrightLink} d-flex align-items-center justify-content-lg-end`}
                 >
-                  <Link href={"#"}>Privacy Policy</Link>
-                  <Link href={"#"}>Term of Use</Link>
+                  <Link href={"/privacy-policy"}>Privacy Policy</Link>
+                  <Link href={"/terms-conditions"}>Term of Use</Link>
                 </div>
               </div>
             </div>

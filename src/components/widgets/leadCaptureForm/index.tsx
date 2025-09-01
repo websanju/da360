@@ -2,6 +2,7 @@
 
 import React, { useState } from "react";
 import styles from "@components/leadCaptureSection/style.module.scss";
+import Link from "next/link";
 
 interface LeadCaptureFormProps {
   title?: string;
@@ -150,8 +151,19 @@ const LeadCaptureForm: React.FC<LeadCaptureFormProps> = ({
           />
           <label className="form-check-label small" htmlFor="updates">
             I authorize Digital Academy 360 and its associates to contact me via
-            Call, Email, WhatsApp & SMS. I accept to Terms of Use & Privacy
-            Policy .
+            Call, Email, WhatsApp & SMS. I accept to{" "}
+            <Link target="_blank" className="fw-bold" href={"/privacy-policy"}>
+              Privacy Policy
+            </Link>{" "}
+            &{" "}
+            <Link
+              className="fw-bold"
+              target="_blank"
+              href={"/terms-conditions"}
+            >
+              Term of Use
+            </Link>
+            .
           </label>
         </div>
         <button type="submit" className="btn btn-black w-100 rounded-pill">

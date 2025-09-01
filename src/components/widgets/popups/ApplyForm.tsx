@@ -233,7 +233,23 @@ const ApplyForm = ({ title }: LeadCaptureFormProps) => {
               />
               <label className="form-check-label small" htmlFor="updates">
                 I authorize Digital Academy 360 and its associates to contact me
-                with updates & notifications.
+                via Call, Email, WhatsApp & SMS. I accept to{" "}
+                <Link
+                  target="_blank"
+                  className="fw-bold"
+                  href={"/privacy-policy"}
+                >
+                  Privacy Policy
+                </Link>{" "}
+                &{" "}
+                <Link
+                  className="fw-bold"
+                  target="_blank"
+                  href={"/terms-conditions"}
+                >
+                  Term of Use
+                </Link>
+                .
               </label>
             </div>
             <button type="submit" className="btn btn-black w-100 rounded-pill">
