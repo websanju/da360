@@ -74,8 +74,10 @@ export default function About() {
       <MediaAwards />
       <div className={styles.careerWidget}>
         <div className="container">
-          <div className={`${styles.careerWidgetRow} row`}>
-            <div className="col-lg-12">
+          <div
+            className={`${styles.careerWidgetRow} row flex justify-content-center`}
+          >
+            <div className="col-lg-7">
               <CareerWidget
                 variant="red"
                 title="Careers at <br/> Digital Academy 360"

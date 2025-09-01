@@ -5,6 +5,7 @@ import styles from "./style.module.scss";
 import { useRouter } from "next/navigation";
 import Image from "next/image";
 import { coursesData } from "@/data/megamenu";
+import Link from "next/link";
 type MegaMenuProps = {
   closeMenu: () => void;
 };
@@ -82,6 +83,11 @@ export default function MegaMenu({ closeMenu }: MegaMenuProps) {
               </li>
             );
           })}
+          <li>
+            <Link className={styles.menuItem} href={"/courses"}>
+              Explore Programs
+            </Link>
+          </li>
         </ul>
       </div>
 
