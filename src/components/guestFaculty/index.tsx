@@ -10,7 +10,7 @@ import "swiper/css";
 
 const data = [
   {
-    name: `Deepak <br/> Soni`,
+    name: `Deepak Soni`,
     title: "Digital Marketing Trainer",
     experience: "12+ years Experience",
     bgColor: "bgPink",
@@ -29,7 +29,7 @@ const data = [
     profileImage: "/images/guestMentor/riya-tiwari.png",
   },
   {
-    name: `Swanand <br/> Patwardhan`,
+    name: `Swanand`,
     title: "Digital Marketing Trainer",
     bgColor: "bgGreen",
     profileImage: "/images/guestMentor/riya-tiwari.png",

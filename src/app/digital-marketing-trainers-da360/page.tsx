@@ -185,11 +185,11 @@ export interface Trainer {
 export type TrainerType = Trainer[];
 const data: TrainerType = [
   {
-    name: `Deepak <br/> Soni`,
-    namePopup: "Deepak <br/> Soni",
+    name: `Deepak Soni`,
+    namePopup: "Deepak Soni",
     title: "Digital Marketing Trainer",
     experience: "12+ years Experience",
-    linkedinLink: "/images/devicon_linkedin.svg",
+    linkedinLink: "#",
     bgColor: "bgPink",
     profileImage: "/images/trainers/deepak.png",
     profileImagePopup: "/images/trainers/deepak.png",
@@ -255,7 +255,7 @@ const data: TrainerType = [
       "Deputy General Manager – Digital Marketing at Puravankara Ltd. with 18+ years of experience in digital strategy across real estate, retail & e-commerce sectors.",
   },
   {
-    name: `Swanand <br/> Patwardhan`,
+    name: `Swanand`,
     namePopup: "Swanand <br/> Patwardhan",
     title: "Sr. Trainer- Digital Marketing",
     experience: "8+ years Experience",

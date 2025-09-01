@@ -140,6 +140,7 @@ const TeamSlider = ({ members }: TeamSliderProps) => {
                         <Link
                           href={member.linkedinLink}
                           className={styles.companyLogo}
+                          target="_blank"
                         >
                           <Image
                             src={"/images/devicon_linkedin.svg"}

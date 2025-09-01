@@ -34,7 +34,7 @@ const GuestFacultyCard: React.FC<GuestFacultyCardProps> = ({
       <div className={`${styles.cardBody} cardBody`}>
         <div className={styles.facultyName}>
           <h5 dangerouslySetInnerHTML={{ __html: name }} />
-          <Link href={linkedinLink}>
+          <Link target="_blank" href={linkedinLink}>
             <Image
               width={100}
               height={100}
