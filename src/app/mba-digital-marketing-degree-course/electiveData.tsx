@@ -1,13 +1,13 @@
 // import Live from "@/components/Ui/svg/live";
 import Live from "@/components/Ui/svg/live";
-import type { SpecialisationProps } from "@/types/electiveData";
+import type { CurriculumProps } from "@/types/curriculum";
 
-export const electiveData: SpecialisationProps = {
-  specialisationHeading: "Electives",
-  specialisationDescription:
+export const electiveData: CurriculumProps = {
+  heading: "Electives",
+  description:
     "Select from 3 Industry Ready Electives with our MBA in Digital Marketing and AI course",
 
-  specialisationmodulesData: [
+  modules: [
     {
       number: 1,
       title: "AI in Digital Marketing & Business Strategy",
@@ -27,6 +27,7 @@ export const electiveData: SpecialisationProps = {
         "Governance, Ethics & Responsible AI in Marketing Strategy",
         "Case Studies: AI-Driven Strategic Transformations (B2B, B2C, D2C)",
       ],
+      moduleslable: "Elective",
     },
     {
       number: 2,
@@ -47,6 +48,7 @@ export const electiveData: SpecialisationProps = {
         "AI-Powered Feedback Loops: Sentiment, Reviews & User Data",
         "Case Studies: AI-Driven Product Launches & Innovations",
       ],
+      moduleslable: "Elective",
     },
     {
       number: 3,
@@ -67,6 +69,9 @@ export const electiveData: SpecialisationProps = {
         "AI-Powered Funnel Optimisation: Awareness → Conversion → Retention",
         "Case Studies: Global Social Selling Growth Powered by AI",
       ],
+      moduleslable: "Elective",
     },
   ],
+  learningMode: "",
+  batchTimings: [],
 };

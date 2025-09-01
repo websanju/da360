@@ -24,7 +24,7 @@ const Highlights = ({ section }: HighlightsProps) => {
             <div className={styles.highlightBox}>
               <Curriculum {...curriculumData} />
               <AIDigital {...specialisationData} />
-              <AIDigital {...electiveData} />
+              <Curriculum {...electiveData} />
               <DigitalMarketingTools />
               <AiTools
                 heading="Next-Gen AI-Powered Tools"
