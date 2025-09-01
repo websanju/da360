@@ -12,9 +12,10 @@ export const electiveData: SpecialisationProps = {
       number: 1,
       title: "AI in Digital Marketing & Business Strategy",
       badges: [
-        { icon: <Live />, label: "10 Live Sessions" },
-        { icon: <Live />, label: "2 Assignments" },
-        { icon: <Live />, label: "1 Case Study" },
+        { icon: <Live />, label: "360 Periods" },
+        { icon: <Live />, label: "3 Assignments" },
+        { icon: <Live />, label: "5 Case Studies" },
+        { icon: <Live />, label: "1 Assessment" },
       ],
       topics: [
         "Foundations of AI in Business Strategy",
@@ -31,9 +32,10 @@ export const electiveData: SpecialisationProps = {
       number: 2,
       title: "AI-Driven Product Innovation",
       badges: [
-        { icon: <Live />, label: "10 Live Sessions" },
-        { icon: <Live />, label: "2 Assignments" },
-        { icon: <Live />, label: "1 Case Study" },
+        { icon: <Live />, label: "360 Periods" },
+        { icon: <Live />, label: "3 Assignments" },
+        { icon: <Live />, label: "5 Case Studies" },
+        { icon: <Live />, label: "1 Assessment" },
       ],
       topics: [
         "Human-Centered Design Thinking with AI Enhancements",
@@ -50,9 +52,10 @@ export const electiveData: SpecialisationProps = {
       number: 3,
       title: "Social Selling and Growth Strategy",
       badges: [
-        { icon: <Live />, label: "10 Live Sessions" },
-        { icon: <Live />, label: "2 Assignments" },
-        { icon: <Live />, label: "1 Case Study" },
+        { icon: <Live />, label: "360 Periods" },
+        { icon: <Live />, label: "3 Assignments" },
+        { icon: <Live />, label: "5 Case Studies" },
+        { icon: <Live />, label: "1 Assessment" },
       ],
       topics: [
         "Social Listening, Lead Scoring & Engagement",
