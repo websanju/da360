@@ -323,7 +323,11 @@ const Footer = () => {
               <div
                 className={`${styles.footerLink} d-flex align-items-center justify-content-lg-end`}
               >
-                <Link href="#" className=" text-decoration-none">
+                <Link
+                  href="https://www.facebook.com/digitalacademy360"
+                  className="text-decoration-none"
+                  target="_blank"
+                >
                   <Image
                     src="/images/fb.svg"
                     alt="facebook"
@@ -331,7 +335,11 @@ const Footer = () => {
                     height={28}
                   />
                 </Link>
-                <Link href="#" className=" text-decoration-none">
+                <Link
+                  href="https://x.com/DA360Ind"
+                  className=" text-decoration-none"
+                  target="_blank"
+                >
                   <Image
                     src="/images/social/twitter.svg"
                     alt="facebook"
@@ -339,7 +347,11 @@ const Footer = () => {
                     height={28}
                   />
                 </Link>
-                <Link href="#" className=" text-decoration-none">
+                <Link
+                  href="https://www.instagram.com/digitalacademy360/"
+                  className=" text-decoration-none"
+                  target="_blank"
+                >
                   <Image
                     src="/images/social/instagram.svg"
                     alt="instagram"
@@ -347,10 +359,26 @@ const Footer = () => {
                     height={28}
                   />
                 </Link>
-                <Link href="#" className=" text-decoration-none">
+                <Link
+                  href="https://www.linkedin.com/school/digital-academy-360/"
+                  className=" text-decoration-none"
+                  target="_blank"
+                >
                   <Image
                     src="/images/social/linkedin.svg"
                     alt="instagram"
+                    width={28}
+                    height={28}
+                  />
+                </Link>
+                <Link
+                  href="https://www.youtube.com/@digitalacademy360"
+                  className=" text-decoration-none"
+                  target="_blank"
+                >
+                  <Image
+                    src="/images/social/youtube-icon.svg"
+                    alt="youtube"
                     width={28}
                     height={28}
                   />
