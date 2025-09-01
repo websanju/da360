@@ -190,6 +190,14 @@ const Footer = () => {
                           Refer & Earn
                         </Link>
                       </li>
+                      <li>
+                        <Link
+                          href="/courses"
+                          className="text-white text-decoration-none"
+                        >
+                          Explore Courses
+                        </Link>
+                      </li>
                     </ul>
                   </div>
                 </div>
@@ -260,7 +268,10 @@ const Footer = () => {
             <div className="col-lg-12">
               <h6>Digital Marketing Courses in India</h6>
               <p>
-                Digital Marketing Courses In Mumbai | Digital Marketing Courses
+                <Link href={"#"}>Digital Marketing Courses In Bangalore</Link>|
+                <Link href={"#"}>Digital Marketing Courses In Jayanagar</Link>|
+                <Link href={"#"}>Digital Marketing Courses In JP Nagar</Link>
+                {/* Digital Marketing Courses In Mumbai | Digital Marketing Courses
                 In Nepal | Digital Marketing Courses In Dubai | Digital
                 Marketing Courses In Bangalore | Digital Marketing Courses In
                 Pune |Digital Marketing Courses In Hyderabad | Digital Marketing
@@ -286,7 +297,7 @@ const Footer = () => {
                 | Digital Marketing Courses In Panvel | Digital Marketing
                 Courses In Mulund | Digital Marketing Courses In Virar | Digital
                 Marketing Courses In Bandra | Digital Marketing Courses In
-                Rohini | Digital Marketing Courses In Kozhikode
+                Rohini | Digital Marketing Courses In Kozhikode */}
               </p>
             </div>
           </div>
