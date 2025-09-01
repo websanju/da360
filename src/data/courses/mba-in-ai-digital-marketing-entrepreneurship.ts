@@ -185,22 +185,22 @@ const mbaInAiDigitalMarketingEntrepreneurship: CoursesType = {
   ],
   highlights: [
     { icon: "/images/icons/calendar.png", title: "Months", value: "24" },
-    { icon: "/images/icons/clock.png", title: "Upskilling Support", value: "Lifetime" },
+    { icon: "/images/icons/clock.png", title: "Time", value: "9PM to 10:30PM" },
     {
       icon: "/images/icons/courses.png",
-      title: "Guest Lecturers",
-      value: "20+",
+      title: "Learning Mode",
+      value: "On Campus",
     },
     {
       icon: "/images/icons/template.png",
-      title: "Industry Visits",
-      value: "2+ per Sem",
+      title: "Guest Lecturers",
+      value: "20+",
     },
     { icon: "/images/icons/ai.png", title: "AI-Powered Learning Tools", value: "50+" },
     {
       icon: "/images/icons/hourglass.png",
-      title: "Learning Mode",
-      value: "On Campus",
+      title: "Upskilling Support ",
+      value: "Lifetime",
     },
     {
       icon: "/images/icons/case-study.png",
@@ -209,23 +209,23 @@ const mbaInAiDigitalMarketingEntrepreneurship: CoursesType = {
     },
     {
       icon: "/images/icons/interview.png",
-      title: "Interactive Activities",
-      value: " 5+ per Sem",
+      title: "Industry Visits ",
+      value: "2+ per Sem",
     },
     {
       icon: "/images/icons/internship.png",
-      title: "Learning Methodologies",
-      value: "10",
+      title: "Interactive Activities",
+      value: "5+ per Sem",
     },
     {
       icon: "/images/icons/project.png",
-      title: "Capstone Projects",
+      title: "Capstone Project",
       value: "Included",
     },
     {
       icon: "/images/icons/certificate.png",
-      title: "Bring your own Product model",
-      value: "",
+      title: "Learning Methodologies",
+      value: "10",
     },
     {
       icon: "/images/icons/specialisation.png",
@@ -234,12 +234,22 @@ const mbaInAiDigitalMarketingEntrepreneurship: CoursesType = {
     },
     {
       icon: "/images/icons/trainer.png",
-      title: "Domain Specialist Trainer",
+      title: "Domain Specialist Trainers",
       value: "15+",
     },
-    {
+     {
+      icon: "/images/icons/trainer.png",
+      title: "Bring your own Product model",
+      value: "",
+    },
+      {
       icon: "/images/icons/trainer.png",
       title: "Integrated Internship",
+      value: "",
+    },
+        {
+      icon: "/images/icons/trainer.png",
+      title: "Industry Ready Electives",
       value: "",
     },
   ],

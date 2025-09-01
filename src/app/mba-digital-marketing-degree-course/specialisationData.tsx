@@ -1,16 +1,21 @@
 // import Live from "@/components/Ui/svg/live";
+import Live from "@/components/Ui/svg/live";
 import type { SpecialisationProps } from "@/types/specialisation";
 
 export const specialisationData: SpecialisationProps = {
-  specialisationHeading: "Specialisations and Electives",
+  specialisationHeading: "Specialisations",
   specialisationDescription:
     "Learn 6 distinct specialisations with our MBA in Digital Marketing and AI Program.",
 
   specialisationmodulesData: [
     {
       number: 1,
-      title: "AI-Enhanced Performance Marketing (Specialisation)",
-      badges: [],
+      title: "AI-Enhanced Performance Marketing ",
+      badges: [
+        { icon: <Live />, label: "10 Live Sessions" },
+        { icon: <Live />, label: "2 Assignments" },
+        { icon: <Live />, label: "1 Case Study" },
+      ],
       topics: [
         "Fundamentals of Performance Marketing & AI-driven KPIs",
         "AI-Powered Ad Targeting & Audience Segmentation",
@@ -24,8 +29,12 @@ export const specialisationData: SpecialisationProps = {
     },
     {
       number: 2,
-      title: "Entrepreneurship & AI-Powered Agency Setup (Specialisation)",
-      badges: [],
+      title: "Entrepreneurship & AI-Powered Agency Setup ",
+      badges: [
+        { icon: <Live />, label: "10 Live Sessions" },
+        { icon: <Live />, label: "2 Assignments" },
+        { icon: <Live />, label: "1 Case Study" },
+      ],
       topics: [
         "Foundations of Digital Agency Models in the AI Era",
         "AI-Powered Market Research & Business Opportunity Mapping",
@@ -39,8 +48,12 @@ export const specialisationData: SpecialisationProps = {
     },
     {
       number: 3,
-      title: "AI-Enhanced Influencer Marketing (Specialisation)",
-      badges: [],
+      title: "AI-Enhanced Influencer Marketing ",
+      badges: [
+        { icon: <Live />, label: "10 Live Sessions" },
+        { icon: <Live />, label: "2 Assignments" },
+        { icon: <Live />, label: "1 Case Study" },
+      ],
       topics: [
         "Evolution of Influencer Economy in the AI Age",
         "AI Tools for Influencer Discovery & Audience Authenticity Check",
@@ -54,9 +67,12 @@ export const specialisationData: SpecialisationProps = {
     },
     {
       number: 4,
-      title:
-        "Meme Marketing + AI Photography & AI Video Engineering (Specialisation)",
-      badges: [],
+      title: "Meme Marketing + AI Photography & AI Video Engineering ",
+      badges: [
+        { icon: <Live />, label: "10 Live Sessions" },
+        { icon: <Live />, label: "2 Assignments" },
+        { icon: <Live />, label: "1 Case Study" },
+      ],
       topics: [
         "Psychology of Virality: How Memes Spread in the AI Era",
         "AI Meme Generators & Trendspotting Algorithms",
@@ -70,8 +86,12 @@ export const specialisationData: SpecialisationProps = {
     },
     {
       number: 5,
-      title: "AI-Powered Sales & Marketing Automation (Specialisation)",
-      badges: [],
+      title: "AI-Powered Sales & Marketing Automation ",
+      badges: [
+        { icon: <Live />, label: "10 Live Sessions" },
+        { icon: <Live />, label: "2 Assignments" },
+        { icon: <Live />, label: "1 Case Study" },
+      ],
       topics: [
         "AI-Powered CRM & Sales Automation (HubSpot AI, Salesforce Einstein)",
         "AI Chatbots & Conversational Marketing (WhatsApp AI, Drift, Intercom)",
@@ -85,8 +105,12 @@ export const specialisationData: SpecialisationProps = {
     },
     {
       number: 6,
-      title: " AI-Enabled E-commerce & Branding (Specialisation)",
-      badges: [],
+      title: " AI-Enabled E-commerce & Branding ",
+      badges: [
+        { icon: <Live />, label: "10 Live Sessions" },
+        { icon: <Live />, label: "2 Assignments" },
+        { icon: <Live />, label: "1 Case Study" },
+      ],
       topics: [
         "AI in E-commerce Customer Journey Mapping",
         "AI Tools for Dynamic Pricing & Inventory Optimisation",

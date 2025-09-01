@@ -10,6 +10,7 @@ import { curriculumData } from "./curriculumData";
 import { toolCategories } from "./aiToolsData";
 import { certificationsData } from "./certificationsData";
 import { specialisationData } from "./specialisationData";
+import { electiveData } from "./electiveData";
 
 interface HighlightsProps {
   section?: string;
@@ -23,6 +24,7 @@ const Highlights = ({ section }: HighlightsProps) => {
             <div className={styles.highlightBox}>
               <Curriculum {...curriculumData} />
               <AIDigital {...specialisationData} />
+              <AIDigital {...electiveData} />
               <DigitalMarketingTools />
               <AiTools
                 heading="Next-Gen AI-Powered Tools"
