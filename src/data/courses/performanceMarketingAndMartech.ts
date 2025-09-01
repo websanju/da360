@@ -172,11 +172,11 @@ const PerformanceMarketingAndMediaBuying: CoursesType = {
       title: "Complete Ads Flows",
       value: "2+",
     },
-    {
-      icon: "/images/icons/template.png",
-      title: "",
-      value: "",
-    },
+    // {
+    //   icon: "/images/icons/template.png",
+    //   title: "",
+    //   value: "",
+    // },
     { icon: "/images/icons/ai.png", title: "AI Marketing Tools", value: "10+" },
     {
       icon: "/images/icons/hourglass.png",
@@ -188,16 +188,16 @@ const PerformanceMarketingAndMediaBuying: CoursesType = {
       title: "Case Studie",
       value: "8+",
     },
-    {
-      icon: "/images/icons/interview.png",
-      title: "Mentorship ",
-      value: "1:1",
-    },
-    {
-      icon: "/images/icons/internship.png",
-      title: "",
-      value: "",
-    },
+    // {
+    //   icon: "/images/icons/interview.png",
+    //   title: "Mentorship ",
+    //   value: "1:1",
+    // },
+    // {
+    //   icon: "/images/icons/internship.png",
+    //   title: "",
+    //   value: "",
+    // },
     {
       icon: "/images/icons/project.png",
       title: "Hands-On Projects",
@@ -208,16 +208,16 @@ const PerformanceMarketingAndMediaBuying: CoursesType = {
       title: "Certifications",
       value: "3+",
     },
-    {
-      icon: "/images/icons/specialisation.png",
-      title: "",
-      value: "",
-    },
-    {
-      icon: "/images/icons/trainer.png",
-      title: "",
-      value: "",
-    },
+    // {
+    //   icon: "/images/icons/specialisation.png",
+    //   title: "",
+    //   value: "",
+    // },
+    // {
+    //   icon: "/images/icons/trainer.png",
+    //   title: "",
+    //   value: "",
+    // },
   ],
   StoryHeader: {
     headerTitle: "Real Stories. Real Impact. Real Careers.",

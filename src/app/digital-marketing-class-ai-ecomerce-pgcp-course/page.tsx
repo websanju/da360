@@ -34,13 +34,14 @@ export const metadata = {
   robots:
     "index, follow, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
   alternates: {
-    canonical: "https://digitalacademy360.com/",
+    canonical:
+      "https://digitalacademy360.com/digital-marketing-class-ai-ecomerce-pgcp-course",
   },
   openGraph: {
     title: "PGCP Digital Marketing Class With Ecommerce, AI & Internship",
     description:
       "Transform Your Career With PG Certification In AI-Powered Digital Marketing & E-Commerce Class. 100% Placement Guaranteed*. Approved by MESC & Skill India",
-    url: "https://digitalacademy360.com/",
+    url: "https://digitalacademy360.com/digital-marketing-class-ai-ecomerce-pgcp-course",
     siteName: "Digital Academy 360",
     locale: "en_US",
     type: "website",

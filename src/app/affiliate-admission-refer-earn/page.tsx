@@ -18,13 +18,13 @@ export const metadata = {
   robots:
     "index, follow, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
   alternates: {
-    canonical: "https://digitalacademy360.com/refer-and-earn",
+    canonical: "https://digitalacademy360.com/affiliate-admission-refer-earn",
   },
   openGraph: {
     title: "Become Affiliate To Refer & Earn | Invite Student For Reward",
     description:
       "Become a DA360 Learning Ambassador. Join Our Affiliate Program To Refer Students & Earn Per Admission. Simple Sign-Up, Easy Tracking & Quick Payouts. Join Now!",
-    url: "https://digitalacademy360.com/refer-and-earn",
+    url: "https://digitalacademy360.com/affiliate-admission-refer-earn",
     siteName: "Digital Academy 360",
     locale: "en_US",
     type: "website",

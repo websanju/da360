@@ -19,14 +19,15 @@ export const metadata = {
   robots:
     "index, follow, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
   alternates: {
-    canonical: "https://digitalacademy360.com/contact-us",
+    canonical:
+      "https://digitalacademy360.com/hire-digital-marketer-fresher-intern",
   },
   openGraph: {
     title:
       "Hire Digital Marketing Freshers, Interns & Freelancers in Bangalore",
     description:
       "Hire Full-Time & Freelance Digital Marketing Freshers and Interns In Bangalore. Get Industry-Ready Marketers With Hands-On Project Experience. Connect Today!",
-    url: "https://digitalacademy360.com/contact-uss",
+    url: "https://digitalacademy360.com/hire-digital-marketer-fresher-intern",
     siteName: "Digital Academy 360",
     locale: "en_US",
     type: "website",

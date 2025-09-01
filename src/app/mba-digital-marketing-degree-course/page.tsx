@@ -27,13 +27,14 @@ export const metadata = {
   robots:
     "index, follow, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
   alternates: {
-    canonical: "https://digitalacademy360.com/",
+    canonical:
+      "https://digitalacademy360.com/mba-digital-marketing-degree-course",
   },
   openGraph: {
     title: "MBA in AI, Digital Marketing With University Degree",
     description:
       "2 Years Masters in AI, Digital Marketing & Entrepreneurship. NAAC Grade A+ & AICTE Approved. Get MBA University Degree With 100% Guaranteed Placement*",
-    url: "https://digitalacademy360.com/",
+    url: "https://digitalacademy360.com/mba-digital-marketing-degree-course",
     siteName: "Digital Academy 360",
     locale: "en_US",
     type: "website",

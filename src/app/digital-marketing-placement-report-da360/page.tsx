@@ -22,13 +22,14 @@ export const metadata = {
   robots:
     "index, follow, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
   alternates: {
-    canonical: "https://digitalacademy360.com/contact-us",
+    canonical:
+      "https://digitalacademy360.com/digital-marketing-placement-report-da360",
   },
   openGraph: {
     title: "Digital Marketing Career & Placements | DA360 Success Story ",
     description:
       "50K+ DA360 Learners Became Digital Marketers. Read Alumni Success Stories. View Placement Rate, Career Trajectorie, Top Hiring Partners & Real Success stories.",
-    url: "https://digitalacademy360.com/contact-us",
+    url: "https://digitalacademy360.com/digital-marketing-placement-report-da360",
     siteName: "Digital Academy 360",
     locale: "en_US",
     type: "website",

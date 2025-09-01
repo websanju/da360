@@ -34,22 +34,25 @@ export const metadata = {
   robots:
     "index, follow, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
   alternates: {
-    canonical: "https://digitalacademy360.com/",
+    canonical:
+      "https://digitalacademy360.com/social-media-and-Influencer-marketing",
   },
   openGraph: {
     title: "Best Digital Marketing Training Institute Online & Classroom",
     description:
       "Enroll In Job-Oriented Diploma Certification In Digital Marketing Training With Project & Interview Assistance From Best Online Digital Marketing Institute",
-    url: "https://digitalacademy360.com/",
+    url: "https://digitalacademy360.com/social-media-and-Influencer-marketing",
     siteName: "Digital Academy 360",
     locale: "en_US",
     type: "website",
+    images: ["https://digitalacademy360.com/og-image.jpg"],
   },
   twitter: {
     card: "summary_large_image",
     title: "Best Digital Marketing Training Institute Online & Classroom",
     description:
       "Enroll In Job-Oriented Diploma Certification In Digital Marketing Training With Project & Interview Assistance From Best Online Digital Marketing Institute",
+    images: ["https://digitalacademy360.com/og-image.jpg"],
   },
 };
 

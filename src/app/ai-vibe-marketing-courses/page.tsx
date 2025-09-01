@@ -35,13 +35,13 @@ export const metadata = {
   robots:
     "index, follow, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
   alternates: {
-    canonical: "https://digitalacademy360.com/",
+    canonical: "https://digitalacademy360.com/ai-vibe-marketing-courses",
   },
   openGraph: {
     title: "Digital Marketing Certification In AI & Vibe Marketing",
     description:
       "Digital Marketing Certification Course With AI & Vibe Marketing. Get 10+ Tools, 8+ Case Study, 2 AI Flow, Certification, Paid Internship & Secure Your Career",
-    url: "https://digitalacademy360.com/",
+    url: "https://digitalacademy360.com/ai-vibe-marketing-courses",
     siteName: "Digital Academy 360",
     locale: "en_US",
     type: "website",

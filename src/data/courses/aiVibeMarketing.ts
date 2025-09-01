@@ -190,11 +190,11 @@ const AiVibeMarketing: CoursesType = {
   highlights: [
     { icon: "/images/icons/calendar.png", title: "Months", value: "2" },
     { icon: "/images/icons/clock.png", title: "Time", value: "9PM to 10:30PM" },
-    {
-      icon: "/images/icons/courses.png",
-      title: "",
-      value: "",
-    },
+    // {
+    //   icon: "/images/icons/courses.png",
+    //   title: "",
+    //   value: "",
+    // },
     {
       icon: "/images/icons/template.png",
       title: "Complete AI Flows",
@@ -215,16 +215,16 @@ const AiVibeMarketing: CoursesType = {
       title: "Case Studies",
       value: "8+",
     },
-    {
-      icon: "/images/icons/interview.png",
-      title: "",
-      value: "",
-    },
-    {
-      icon: "/images/icons/internship.png",
-      title: "",
-      value: "",
-    },
+    // {
+    //   icon: "/images/icons/interview.png",
+    //   title: "",
+    //   value: "",
+    // },
+    // {
+    //   icon: "/images/icons/internship.png",
+    //   title: "",
+    //   value: "",
+    // },
     {
       icon: "/images/icons/project.png",
       title: "Hands-On Projects",
@@ -235,16 +235,16 @@ const AiVibeMarketing: CoursesType = {
       title: "Certifications",
       value: "3+",
     },
-    {
-      icon: "/images/icons/specialisation.png",
-      title: "Mentorship",
-      value: "1:1",
-    },
-    {
-      icon: "/images/icons/trainer.png",
-      title: "",
-      value: "",
-    },
+    // {
+    //   icon: "/images/icons/specialisation.png",
+    //   title: "Mentorship",
+    //   value: "1:1",
+    // },
+    // {
+    //   icon: "/images/icons/trainer.png",
+    //   title: "",
+    //   value: "",
+    // },
   ],
   StoryHeader: {
     headerTitle: "Real Stories. Real Impact. Real Careers.",

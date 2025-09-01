@@ -34,13 +34,13 @@ export const metadata = {
   robots:
     "index, follow, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
   alternates: {
-    canonical: "https://digitalacademy360.com/",
+    canonical: "https://digitalacademy360.com/linkedIn-and-personal-branding",
   },
   openGraph: {
     title: "Best Digital Marketing Training Institute Online & Classroom",
     description:
       "Enroll In Job-Oriented Diploma Certification In Digital Marketing Training With Project & Interview Assistance From Best Online Digital Marketing Institute",
-    url: "https://digitalacademy360.com/",
+    url: "https://digitalacademy360.com/linkedIn-and-personal-branding",
     siteName: "Digital Academy 360",
     locale: "en_US",
     type: "website",

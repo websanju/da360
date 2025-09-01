@@ -34,22 +34,25 @@ export const metadata = {
   robots:
     "index, follow, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
   alternates: {
-    canonical: "https://digitalacademy360.com/",
+    canonical:
+      "https://digitalacademy360.com/social-media-content-video-creator-course",
   },
   openGraph: {
     title: "AI-Driven Leadership In Social Media Content Creation Course",
     description:
       "100% Placement Guaranteed* Course In Social Content Creation, Video Production, Editing, AI, Brand Partnership. Approved by MESC & Skill India. Upto 30K Scholarship",
-    url: "https://digitalacademy360.com/",
+    url: "https://digitalacademy360.com/social-media-content-video-creator-course",
     siteName: "Digital Academy 360",
     locale: "en_US",
     type: "website",
+    images: ["https://digitalacademy360.com/og-image.jpg"],
   },
   twitter: {
     card: "summary_large_image",
     title: "AI-Driven Leadership In Social Media Content Creation Course",
     description:
       "100% Placement Guaranteed* Course In Social Content Creation, Video Production, Editing, AI, Brand Partnership. Approved by MESC & Skill India. Upto 30K Scholarship",
+    images: ["https://digitalacademy360.com/og-image.jpg"],
   },
 };
 

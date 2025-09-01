@@ -72,7 +72,7 @@ const QuickMenu: React.FC<{ toggleQuickMenu: () => void }> = ({
 
       <div className={styles.bottomButtons}>
         <div className={`${styles.button} ${styles.callButton}`}>
-          <Link href="#">
+          <Link href="tel:7353515515">
             <div className={styles.phoneIcon}>
               <Image
                 src={"/images/icons/phone.svg"}
@@ -86,7 +86,10 @@ const QuickMenu: React.FC<{ toggleQuickMenu: () => void }> = ({
         </div>
         <div className={`${styles.button} ${styles.whatsappButton}`}>
           {/* <FaWhatsapp /> */}
-          <Link href="#">
+          <Link
+            target="_blank"
+            href="https://api.whatsapp.com/send?phone=917353515515"
+          >
             <div className={styles.whatsapp}>
               <Image
                 src={"/images/icons/whatsapp.svg"}

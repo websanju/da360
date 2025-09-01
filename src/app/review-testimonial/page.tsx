@@ -12,13 +12,13 @@ export const metadata = {
   robots:
     "index, follow, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
   alternates: {
-    canonical: "https://digitalacademy360.com/testimonial",
+    canonical: "https://digitalacademy360.com/review-testimonial",
   },
   openGraph: {
     title: "Digital Academy 360 Student Reviews | Student Testimonials",
     description:
       "See Why 50,000+ Students Trust DA360. Read Testimonials On Career Transformations, Placement Success & Training Quality. Start Your Journey Today!",
-    url: "https://digitalacademy360.com/testimonial",
+    url: "https://digitalacademy360.com/review-testimonial",
     siteName: "Digital Academy 360",
     locale: "en_US",
     type: "website",

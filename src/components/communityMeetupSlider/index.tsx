@@ -240,8 +240,8 @@ const CommunityMeetupSlider = () => {
               </div>
 
               <div className={styles.meetupsCard}>
-                <span>20+</span>
-                <p>TECH ENABLED Campus </p>
+                <span>TECH ENABLED</span>
+                <p>Campus </p>
               </div>
             </div>
           </div>

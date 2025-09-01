@@ -214,22 +214,22 @@ const Footer = () => {
                           Blogs
                         </Link>
                       </li>
-                      <li>
+                      {/* <li>
                         <Link
                           href="#"
                           className="text-white text-decoration-none"
                         >
                           Case Studies
                         </Link>
-                      </li>
-                      <li>
+                      </li> */}
+                      {/* <li>
                         <Link
                           href="#"
                           className="text-white text-decoration-none"
                         >
                           Presentations
                         </Link>
-                      </li>
+                      </li> */}
                     </ul>
                   </div>
                 </div>

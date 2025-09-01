@@ -27,13 +27,13 @@ export const metadata = {
   robots:
     "index, follow, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
   alternates: {
-    canonical: "https://digitalacademy360.com/",
+    canonical: "https://digitalacademy360.com/life-campus-digital-academy360",
   },
   openGraph: {
     title: "Classroom Experience, Life & Learning at Digital Academy 360",
     description:
       "Life@DA360 & Culture Is More Than A Course - Real-World Project, Mentor-Led Classes, Internship, Campus Events, Peer Collaboration, Mentor Support & More",
-    url: "https://digitalacademy360.com/",
+    url: "https://digitalacademy360.com/life-campus-digital-academy360",
     siteName: "Digital Academy 360",
     locale: "en_US",
     type: "website",

@@ -24,14 +24,14 @@ export const metadata = {
   robots:
     "index, follow, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
   alternates: {
-    canonical: "https://digitalacademy360.com/",
+    canonical: "https://digitalacademy360.com/digital-marketing-trainers-da360",
   },
   openGraph: {
     title:
       "Classroom Experience, Life & Learning at Digital Academy 360Certified Digital Marketing Mentors | DA360 Trainer & Expert",
     description:
       "Best Digital Marketing Trainers. Industry Certified Mentors & Guest Faculties From Global Brands, 10 Level Methodology, 5 Tier Team Support. Learn Form Best!",
-    url: "https://digitalacademy360.com/",
+    url: "https://digitalacademy360.com/digital-marketing-trainers-da360",
     siteName: "Digital Academy 360",
     locale: "en_US",
     type: "website",

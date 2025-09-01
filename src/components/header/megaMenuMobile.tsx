@@ -126,7 +126,7 @@ const MobileMenu: React.FC<Props> = ({ onClose }) => {
 
             <div className={styles.navbarTags}>
               <span className={styles.dropdownTag}>6 Months</span>
-              <span className={styles.dropdownTag}>Online</span>
+              <span className={styles.dropdownTag}>Online / Classroom</span>
             </div>
             <ul className={styles.navbarDropdownList}>
               {renderListItem("PG Level Certification")}
@@ -232,7 +232,7 @@ const MobileMenu: React.FC<Props> = ({ onClose }) => {
 
             <div className={styles.navbarTags}>
               <span className={styles.dropdownTag}>3 Years</span>
-              <span className={styles.dropdownTag}>Classroom</span>
+              <span className={styles.dropdownTag}>Coming Soon</span>
             </div>
             <ul className={styles.navbarDropdownList}>
               {renderListItem("S-Vyasa Deemed to be University")}
