@@ -62,7 +62,7 @@ export default function GlobalCommunity() {
               title={
                 <>
                   Join Our Thriving Global <br />
-                  <span>Learning Community to 2,000</span>
+                  <span>Learning Community</span>
                 </>
               }
             />
@@ -77,7 +77,7 @@ export default function GlobalCommunity() {
                   />
                 </div>
                 <h3>50,000+</h3>
-                <p>Careers transformed</p>
+                <p>Careers Transformed</p>
               </div>
               <div className={styles.statItem}>
                 <div className={styles.icon + " " + styles.green}>

@@ -1,5 +1,5 @@
 .footerSection {
-  background-color: #1C1D21;
+  background-color: #1c1d21;
   padding-top: 80px;
 
   .footerTop {
@@ -68,7 +68,7 @@
       ul {
         li {
           padding-bottom: 5px;
-          max-width: 356px;
+          max-width: 100%;
 
           a {
             color: #f3f3f3;
@@ -85,8 +85,6 @@
         }
       }
     }
-
-
   }
 
   .footerMarketingCourses {
@@ -107,7 +105,7 @@
       font-size: 14px;
       line-height: 32px;
       letter-spacing: 2%;
-      color: #F3F3F3;
+      color: #f3f3f3;
       opacity: 60%;
       font-family: var(--font-inter);
       margin: 0;
@@ -129,7 +127,7 @@
       gap: 40px;
 
       a {
-        color: #F3F3F3;
+        color: #f3f3f3;
         opacity: 60%;
       }
     }
@@ -139,7 +137,7 @@
       font-size: 16px;
       line-height: 100%;
       letter-spacing: 0%;
-      color: #F3F3F3;
+      color: #f3f3f3;
       opacity: 60%;
       font-family: var(--font-inter);
     }
@@ -148,7 +146,7 @@
       gap: 47px;
 
       a {
-        color: #F3F3F3;
+        color: #f3f3f3;
         opacity: 60%;
       }
     }
@@ -173,9 +171,8 @@
   //     margin-bottom: 15px;
   //   }
   // }
-
 }
-@media (width <=1092px) { 
+@media (width <=1092px) {
   .footerSection {
     .footerBottom {
       .footerLink {
@@ -216,7 +213,6 @@
         gap: 20px;
       }
 
-
       .quickLink {
         h6 {
           margin-bottom: 10px;
@@ -242,9 +238,7 @@
           }
         }
       }
-
     }
-
 
     .footerMarketingCourses {
       padding: 30px 0;
@@ -258,15 +252,13 @@
       p {
         font-size: 12px;
         line-height: 24px;
-        color: #F3F3F3;
+        color: #f3f3f3;
       }
     }
 
-   
-
     .footerBottom {
       padding: 30px 0;
-      
+
       p {
         font-weight: 400;
         font-size: 12px;
@@ -284,33 +276,32 @@
         flex-wrap: wrap;
         flex-direction: column-reverse;
       }
-  
+
       .footerCopyrightLink {
         display: flex;
         gap: 20px;
-  
+
         a {
-          color: #F3F3F3;
+          color: #f3f3f3;
           opacity: 60%;
           font-size: 14px;
         }
       }
-  
+
       p {
         font-size: 14px;
-        color: #F3F3F3;
+        color: #f3f3f3;
       }
-  
+
       .footerLink {
         gap: 17px;
-  
+
         a {
-          color: #F3F3F3;
+          color: #f3f3f3;
           opacity: 60%;
           font-size: 14px;
         }
       }
     }
-
   }
 }

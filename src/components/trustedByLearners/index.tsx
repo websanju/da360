@@ -68,7 +68,9 @@ const TrustedByLearners = ({
                 </div>
                 <div className={styles.reviewDetails}>
                   <div className={styles.rating}>
-                    4.8*
+                    <div>
+                      4.8<span>*</span>
+                    </div>
                     <Image
                       alt="round"
                       width={24}
@@ -93,7 +95,10 @@ const TrustedByLearners = ({
                 </div>
                 <div className={styles.reviewDetails}>
                   <div className={styles.rating}>
-                    4.7*
+                    <div>
+                      {" "}
+                      4.7<span>*</span>
+                    </div>
                     <Image
                       alt="round"
                       width={24}
@@ -119,7 +124,9 @@ const TrustedByLearners = ({
                 </div>
                 <div className={styles.reviewDetails}>
                   <div className={styles.rating}>
-                    4.5*
+                    <div>
+                      4.5<span>*</span>
+                    </div>
                     <Image
                       alt="round"
                       width={24}

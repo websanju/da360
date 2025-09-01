@@ -6,7 +6,7 @@ const counters: CounterProps[] = [
     to: 50000,
     from: 40000,
     suffix: "+",
-    label: "Careers transformed",
+    label: "Careers Transformed",
   },
   {
     to: 30000,

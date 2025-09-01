@@ -34,7 +34,6 @@ const students: Student[] = [
   {
     name: "Vivek",
     designation: "SEO Topper",
-    // company: "INTELLIPAT",
     bgColor: "#4A6EE6",
     iconColor: "#4A6EE6",
     cardClass: "cardOne",
@@ -42,15 +41,13 @@ const students: Student[] = [
   {
     name: "Archie",
     designation: "SMM Topper",
-    // company: "VALUELEAF",
     bgColor: "#4CCE6D",
     iconColor: "#4CCE6D",
     cardClass: "cardTwo",
   },
   {
     name: "Diya",
-    designation: "SEO Topper",
-    // company: "INTELLIPAT",
+    designation: "SEO Star",
     bgColor: "#E53F43",
     iconColor: "#E53F43",
     cardClass: "cardThree",
@@ -227,7 +224,7 @@ export default function LearnersSection() {
                 <div className={styles.infoNumbers}>
                   <div className={styles.companies}>
                     <h5>50,000+</h5>
-                    <small>Careers transformed</small>
+                    <small>Careers Transformed</small>
                   </div>
                   <div className={styles.companies}>
                     <h5>30,000+</h5>

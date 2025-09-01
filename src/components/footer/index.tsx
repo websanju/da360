@@ -19,7 +19,7 @@ const Footer = () => {
         <div className={styles.footerTop}>
           <div className={`${styles.row} row gy-4`}>
             {/* Logo & Social */}
-            <div className="col-lg-4 col-md-4">
+            <div className="col-lg-3 col-md-3">
               <div className={styles.accredited}>
                 <h6>Accredited by</h6>
                 <div className={styles.accreditedImg}>
@@ -94,10 +94,10 @@ const Footer = () => {
                 </div>
               </div> */}
             </div>
-            <div className="col-lg-8 col-md-8">
+            <div className="col-lg-9 col-md-9">
               <div className={`${styles.quickrow} row`}>
                 {/* Quick Links */}
-                <div className={`${styles.quickLinkRow} col-lg-5 col-md-6`}>
+                <div className={`${styles.quickLinkRow} col-lg-6 col-md-6`}>
                   <div className={styles.quickLink}>
                     <h6>Digital Marketing Programmes</h6>
                     <ul>

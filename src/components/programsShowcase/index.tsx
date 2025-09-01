@@ -156,10 +156,7 @@ const ProgramsShowcase: React.FC = () => {
             <div className="card3">
               <WidgetCard
                 title="PGCP in Performance Marketing & Media Buying"
-                category={[
-                  "6-Month Certification Program",
-                  "Online / Classroom",
-                ]}
+                category={["6-Month PG Program", "Online / Classroom"]}
                 stats={[
                   {
                     icon: "/images/course-list/icons/icon01.svg",
