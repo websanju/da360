@@ -237,7 +237,7 @@ const ApplyForm = ({ title }: LeadCaptureFormProps) => {
                 <Link
                   target="_blank"
                   className="fw-bold"
-                  href={"/privacy-policy"}
+                  href={"/da360-privacy-policy"}
                 >
                   Privacy Policy
                 </Link>{" "}

@@ -322,8 +322,9 @@ const Footer = () => {
                 <div
                   className={`${styles.footerCopyrightLink} d-flex align-items-center justify-content-lg-end`}
                 >
-                  <Link href={"/privacy-policy"}>Privacy Policy</Link>
+                  <Link href={"/da360-privacy-policy"}>Privacy Policy</Link>
                   <Link href={"/terms-conditions"}>Term of Use</Link>
+                  <Link href={"/refund-policy"}>Refund Policy</Link>
                 </div>
               </div>
             </div>

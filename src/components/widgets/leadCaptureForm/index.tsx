@@ -152,7 +152,11 @@ const LeadCaptureForm: React.FC<LeadCaptureFormProps> = ({
           <label className="form-check-label small" htmlFor="updates">
             I authorize Digital Academy 360 and its associates to contact me via
             Call, Email, WhatsApp & SMS. I accept to{" "}
-            <Link target="_blank" className="fw-bold" href={"/privacy-policy"}>
+            <Link
+              target="_blank"
+              className="fw-bold"
+              href={"/da360-privacy-policy"}
+            >
               Privacy Policy
             </Link>{" "}
             &{" "}

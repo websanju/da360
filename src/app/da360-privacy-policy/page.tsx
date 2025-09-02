@@ -1,5 +1,35 @@
 // import JoinTeam from "@components/joinTeam";
 import styles from "./style.module.scss";
+
+export const metadata = {
+  title: "Digital Academy 360 | Privacy Policy",
+  description:
+    "The Privacy Policy document at Digital Academy 360 contains information that is collected and stored by Digital Academy 360 as well as how we utilize it",
+  keywords: ["Digital Academy 360 Privacy Policy,DA 360 Privacy Policy"],
+  robots:
+    "index, follow, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
+  alternates: {
+    canonical: "https://digitalacademy360.com/da360-privacy-policy",
+  },
+  openGraph: {
+    title: "Digital Academy 360 | Privacy Policy",
+    description:
+      "The Privacy Policy document at Digital Academy 360 contains information that is collected and stored by Digital Academy 360 as well as how we utilize it",
+    url: "https://digitalacademy360.com/da360-privacy-policy",
+    siteName: "Digital Academy 360",
+    locale: "en_US",
+    type: "website",
+    images: ["https://digitalacademy360.com/og-image.jpg"],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Digital Academy 360 | Privacy Policy",
+    description:
+      "The Privacy Policy document at Digital Academy 360 contains information that is collected and stored by Digital Academy 360 as well as how we utilize it",
+    images: ["https://digitalacademy360.com/og-image.jpg"],
+  },
+};
+
 export default function PrivacyPolicy() {
   return (
     <main>
