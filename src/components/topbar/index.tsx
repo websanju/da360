@@ -22,7 +22,9 @@ export default function Topbar() {
                 <div className={styles.newsInner}>
                   <p>
                     Admissions for Batch 2025 are Now Open! Visit our
-                    <Link href="/courses">Admissions page</Link>
+                    <Link href="/digital-marketing-courses">
+                      Admissions page
+                    </Link>
                   </p>
                 </div>
               </div>

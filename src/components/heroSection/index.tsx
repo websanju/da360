@@ -41,7 +41,10 @@ export default function HeroSection() {
                 Apply Now
               </span>
 
-              <Link href="/courses" className="btn btnWhite btn-lg px-4">
+              <Link
+                href="/digital-marketing-courses"
+                className="btn btnWhite btn-lg px-4"
+              >
                 Explore Programs
               </Link>
             </div>

@@ -17,7 +17,7 @@ const CareerBanner: React.FC = () => {
                 future-ready courses and programmes.
               </p>
               <div className={styles.actionBtn}>
-                <Link href="/courses" className={styles.cta}>
+                <Link href="/digital-marketing-courses" className={styles.cta}>
                   Explore Courses
                 </Link>
               </div>

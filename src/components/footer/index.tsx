@@ -192,7 +192,7 @@ const Footer = () => {
                       </li>
                       <li>
                         <Link
-                          href="/courses"
+                          href="/digital-marketing-courses"
                           className="text-white text-decoration-none"
                         >
                           Explore Courses

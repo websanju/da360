@@ -19,6 +19,37 @@ import PaddingWrapper from "@components/widgets/PaddingWrapper";
 import GuestFacultySlider from "@components/guestFacultySlider";
 import BrandLogos from "@components/brandLogos";
 
+export const metadata = {
+  title: "Digital Marketing Course Class/ Online | 100% Job-Guaranteed",
+  description:
+    "Learn Digital Marketing Courses In Classroom or Online or Near You. Live Project, Certification, Internship & 100% Guaranteed Placement To Secure Your Career",
+  keywords: [
+    "Digital Marketing Courses, Digital Marketing Course, Digital Marketing Course Near Me, Online Digital Marketing Course, Digital Marketing Certification Course, Digital Marketing Course With Placement",
+  ],
+  robots:
+    "index, follow, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
+  alternates: {
+    canonical: "https://digitalacademy360.com/digital-marketing-courses",
+  },
+  openGraph: {
+    title: "Digital Marketing Course Class/ Online | 100% Job-Guaranteed",
+    description:
+      "Learn Digital Marketing Courses In Classroom or Online or Near You. Live Project, Certification, Internship & 100% Guaranteed Placement To Secure Your Career",
+    url: "https://digitalacademy360.com/digital-marketing-courses",
+    siteName: "Digital Academy 360",
+    locale: "en_US",
+    type: "website",
+    images: ["https://digitalacademy360.com/og-image.jpg"],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Digital Marketing Course Class/ Online | 100% Job-Guaranteed",
+    description:
+      "Learn Digital Marketing Courses In Classroom or Online or Near You. Live Project, Certification, Internship & 100% Guaranteed Placement To Secure Your Career",
+    images: ["https://digitalacademy360.com/og-image.jpg"],
+  },
+};
+
 export default function About() {
   return (
     <main>
