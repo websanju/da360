@@ -1,0 +1,12 @@
+.careerWidget {
+  padding: 140px 0;
+}
+
+@media (width <=992px) {
+  .careerWidget {
+    padding: 60px 0;
+    .careerWidgetRow {
+      row-gap: 30px;
+    }
+  }
+ }

@@ -268,9 +268,17 @@ const Footer = () => {
             <div className="col-lg-12">
               <h6>Digital Marketing Courses in India</h6>
               <p>
-                <Link href={"#"}>Digital Marketing Courses In Bangalore</Link>|
-                <Link href={"#"}>Digital Marketing Courses In Jayanagar</Link>|
-                <Link href={"#"}>Digital Marketing Courses In JP Nagar</Link>
+                <Link href={"/digital-marketing-courses-bangalore"}>
+                  Digital Marketing Courses In Bangalore
+                </Link>
+                |
+                <Link href={"/digital-marketing-courses-jayanagar"}>
+                  Digital Marketing Courses In Jayanagar
+                </Link>
+                |
+                <Link href={"/digital-marketing-courses-jp-nagar"}>
+                  Digital Marketing Courses In JP Nagar
+                </Link>
                 {/* Digital Marketing Courses In Mumbai | Digital Marketing Courses
                 In Nepal | Digital Marketing Courses In Dubai | Digital
                 Marketing Courses In Bangalore | Digital Marketing Courses In
