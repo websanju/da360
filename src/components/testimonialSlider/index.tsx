@@ -18,7 +18,7 @@ const testimonials = [
     author: {
       name: "Pooja M Reddy",
       title: "Digital Marketing",
-      image: "/images/Ambitious/default-avatar.svg",
+      image: "/images/testimonials/student/pooja-min.jpg",
     },
   },
   {
@@ -30,7 +30,7 @@ const testimonials = [
     author: {
       name: "Aswin J Prakash",
       title: "Digital Marketing",
-      image: "/images/Ambitious/default-avatar.svg",
+      image: "/images/testimonials/student/ashwin-min.jpg",
     },
   },
   {
@@ -42,7 +42,7 @@ const testimonials = [
     author: {
       name: "Parimitha A Pari",
       title: "Digital Marketing",
-      image: "/images/Ambitious/default-avatar.svg",
+      image: "/images/testimonials/student/parimitha-min.jpg",
     },
   },
 
@@ -55,7 +55,7 @@ const testimonials = [
     author: {
       name: "Darshana Das",
       title: "Digital Marketing",
-      image: "/images/Ambitious/default-avatar.svg",
+      image: "/images/testimonials/student/dharsana-min.jpg",
     },
   },
 
@@ -68,7 +68,7 @@ const testimonials = [
     author: {
       name: "Kaushik Yadav",
       title: "Digital Marketing",
-      image: "/images/Ambitious/default-avatar.svg",
+      image: "/images/testimonials/student/kaushik-min.jpg",
     },
   },
   // Add more testimonials if needed
