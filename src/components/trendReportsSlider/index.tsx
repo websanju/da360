@@ -16,7 +16,7 @@ import SectionHeader from "@components/widgets/sectionHeader";
 const caseStudies = [
   {
     id: 1,
-    logo: "/images/mcdonalds-logo.png",
+    logo: "/images/case-studies/netflix-logo.png",
     title: "Netflix India — Driving Engagement with Short-Form Video",
     description:
       "Netflix India revolutionized its social media strategy by leveraging Reels and meme collaborations to connect with Gen Z and millennial audiences. Through witty short-form storytelling, trending audio, and influencer tie-ups, Netflix maximized engagement for show launches and campaigns like Sacred Games and Money Heist.",
@@ -30,7 +30,7 @@ const caseStudies = [
 
   {
     id: 2,
-    logo: "/images/oneplus.png",
+    logo: "/images/case-studies/zomato-logo.png",
     title: "Zomato — Using Humor & Meme Marketing for Virality",
     description:
       "Zomato redefined digital engagement by adopting a meme-first strategy. With witty tweets, meme-based creatives, and relatable Reels, the brand saw a 10x boost in social engagement. Their campaigns during IPL and cricket series showcased the power of humor in building viral momentum.",
@@ -43,7 +43,7 @@ const caseStudies = [
   },
   {
     id: 3,
-    logo: "/images/rolex.png",
+    logo: "/images/case-studies/cred-logo.png",
     title: "CRED — Creator-Driven Influencer Collaborations",
     description:
       "CRED built credibility and brand trust by collaborating with high-profile creators and celebrities. Their campaigns blended quirk, authority, and storytelling—turning influencer-led videos into national conversations. Creators like Rahul Dravid and Tanmay Bhat were instrumental in CRED’s viral brand recall.",
@@ -56,7 +56,7 @@ const caseStudies = [
   },
   {
     id: 4,
-    logo: "/images/cocacola.png",
+    logo: "/images/case-studies/mcdonalds-logo.png",
     title: "McDonald’s India – Localizing a Global Brand",
     description:
       "McDonald’s India adapted its global brand strategy to meet local market preferences—replacing beef-based offerings, introducing aloo tikki burgers, and launching value pricing to capture the price-sensitive Indian audience. Their digital marketing focused on regional content, hyper-local social media campaigns, and app-based loyalty programs.",
@@ -69,7 +69,7 @@ const caseStudies = [
   },
   {
     id: 5,
-    logo: "/images/nextflix.png",
+    logo: "/images/case-studies/motherdairy-logo.png",
     title: "Mother Dairy – Building Trust Through Content",
     description:
       "Mother Dairy strengthened its brand presence by focusing on emotional storytelling and purpose-driven marketing. Campaigns like 'Rishton Ka Swad Badhaiye' positioned the brand as a part of Indian family life. It leveraged SEO, blog content, influencer tie-ups, and YouTube storytelling to increase brand engagement and product awareness.",
@@ -83,7 +83,7 @@ const caseStudies = [
 
   {
     id: 6,
-    logo: "/images/durex.png",
+    logo: "/images/case-studies/zomato-logo.png",
     title: "Zomato – Data-Driven Performance Marketing",
     description:
       "Zomato scaled its customer acquisition by running high-performing campaigns during IPL seasons, using data-backed insights to target users based on cuisine preferences, location, and time of day. They executed geo-targeted Google and Meta ads, retargeting sequences, and meme-based creatives to boost engagement and app installs.",
@@ -96,7 +96,7 @@ const caseStudies = [
   },
   {
     id: 7,
-    logo: "/images/whatsup.png",
+    logo: "/images/case-studies/swiggy-logo.png",
     title: "Swiggy – Data-Driven Campaign Optimization",
     description:
       "Swiggy leveraged data analytics and AI-driven insights to optimize campaigns in real-time, increasing both conversions and order value.",
@@ -108,7 +108,7 @@ const caseStudies = [
   },
   {
     id: 8,
-    logo: "/images/cadbury.png",
+    logo: "/images/case-studies/nykka.png",
     title: "Nykaa – Influencer & Social Ads Funnel",
     description:
       "Nykaa executed a full-funnel influencer + paid ads strategy to launch a new beauty product line and boost online sales.",
@@ -120,7 +120,7 @@ const caseStudies = [
   },
   {
     id: 9,
-    logo: "/images/cadbury.png",
+    logo: "/images/case-studies/makeMyTrip.png",
     title: "MakeMyTrip – Seasonal PPC Campaign Strategy",
     description:
       "MakeMyTrip tapped into seasonal travel trends to design high-converting PPC campaigns across Google and Meta platforms.",
