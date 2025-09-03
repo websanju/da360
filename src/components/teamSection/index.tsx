@@ -164,6 +164,28 @@ const members = [
     design: "default",
     icon: "bolt",
   },
+  {
+    name: "Vidhi Bhulani",
+    role: "Sr. Trainer- Digital Marketing",
+    experience: "7+ years Experience",
+    img: "/images/trainers/deepak-1.png",
+    linkedinLink: "https://www.linkedin.com/in/vidhi-bhulani/",
+    textColor: "#9E89FF",
+    tab: "Project Advisors",
+    design: "default",
+    icon: "bolt",
+  },
+  {
+    name: "Pallavi Joshi",
+    role: "Sr. Trainer- Digital Marketing",
+    experience: "10+ years Experience",
+    img: "/images/trainers/deepak-1.png",
+    linkedinLink: "https://www.linkedin.com/in/pallavi-s-joshi/",
+    textColor: "#9E89FF",
+    tab: "Project Advisors",
+    design: "default",
+    icon: "bolt",
+  },
 ];
 
 interface TeamSectionProps {
