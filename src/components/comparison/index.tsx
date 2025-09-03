@@ -41,6 +41,12 @@ const Comparison = () => {
                   <li>
                     <span>Total Training Hours</span>
                   </li>
+                  <li>
+                    <span>Agency Internship</span>
+                  </li>
+                  <li>
+                    <span>Paid Campaign</span>
+                  </li>
                   {/* <li>
                     <span>Certifications Offered</span>
                   </li>
@@ -339,6 +345,28 @@ const Comparison = () => {
                     </span>{" "}
                     100–150 Hours (Mostly Theory-Based)
                   </li>
+                  <li>
+                    <span>
+                      <Image
+                        width={22}
+                        height={22}
+                        alt="close"
+                        src={"/images/icons/tick-close.svg"}
+                      />
+                    </span>{" "}
+                    Free or Not Provided
+                  </li>
+                  <li>
+                    <span>
+                      <Image
+                        width={22}
+                        height={22}
+                        alt="close"
+                        src={"/images/icons/tick-close.svg"}
+                      />
+                    </span>{" "}
+                    Not Provided
+                  </li>
                   {/* <li>
                     <span>
                       <Image
@@ -529,6 +557,28 @@ const Comparison = () => {
                       />
                     </span>{" "}
                     240–1900+ Hours (Hands-On Learning)
+                  </li>
+                  <li>
+                    <span>
+                      <Image
+                        width={30}
+                        height={30}
+                        alt="close"
+                        src={"/images/icons/tick-circle.svg"}
+                      />
+                    </span>{" "}
+                    Real Internship Projects
+                  </li>
+                  <li>
+                    <span>
+                      <Image
+                        width={30}
+                        height={30}
+                        alt="close"
+                        src={"/images/icons/tick-circle.svg"}
+                      />
+                    </span>{" "}
+                    Campaigns on Meta and Google
                   </li>
                   {/* <li>
                     <span>

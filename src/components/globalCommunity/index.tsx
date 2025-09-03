@@ -18,7 +18,7 @@ export default function GlobalCommunity() {
       left: "20%",
       count: "30,161",
       label: "Learners",
-      image: "/images/map-profile/profile01.jpg",
+      image: "/images/profiles/student1.png",
     },
     {
       top: "5%",
