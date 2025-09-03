@@ -49,7 +49,7 @@ const ContactButtons = () => {
           </button>
           <div className={styles.iconWrapper}>
             <div className={styles.phoneIcon} id="call">
-              <Link href="#">
+              <Link href="tel:7353515515">
                 <Image
                   src={"/images/icons/phone.svg"}
                   alt={"phone"}
@@ -59,7 +59,10 @@ const ContactButtons = () => {
               </Link>
             </div>
             <div className={styles.whatsappIcon} id="whatsapp">
-              <Link href="#">
+              <Link
+                target="_blank"
+                href="https://api.whatsapp.com/send?phone=917353515515"
+              >
                 <Image
                   src={"/images/icons/whatsapp.svg"}
                   alt={"whatsapp"}
