@@ -14,7 +14,7 @@ const LocationMap = () => {
                 <h2>Bangalore</h2>
                 <p>Head Office Jayanagar Digital Academy 360</p>
                 <address>
-                  No 46/1, 1st Main Rd, opposite Mini Forest, Near to Jayadeva
+                  No 46/1, 1st Main Rd, Opposite Mini Forest, Near to Jayadeva
                   Hospital,
                   <br />
                   J. P. Nagar 3rd Phase, Bangalore – 560 078

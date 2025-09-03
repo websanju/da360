@@ -48,7 +48,7 @@ export default function ContactUS() {
       <LocationCard
         city="Bangalore"
         addressLines={[
-          "No 46/A, 1st Main Rd, opposite Mini Forest,",
+          "No 46/A, 1st Main Rd, Opposite Mini Forest,",
           "Near to Jayadeva Hospital, J. P. Nagar 3rd Phase,",
           "Bangalore – 560 078",
         ]}

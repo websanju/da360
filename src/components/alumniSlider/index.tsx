@@ -23,27 +23,51 @@ type Slide = {
 const slides: Slide[] = [
   {
     id: 1,
-    videoUrl: "/images/videos/classroom-video-2.mp4",
+    videoUrl: "https://www.youtube.com/embed/X1vljuZ-Ua8?si=x6VO6ZKqIBrqyCAA",
     videoThumbnail: "/images/video-thumb-1.jpg",
     classTitle: "Paid Ads",
     classBtn: "Watch Now",
     feedback:
-      "The stakes I took were very high. So, I wanted the program tio be very strict and into us. And, thats what i got. Because there were long hours, 8-10 hours per day. It was very systematic and it was very well organised.",
-    name: "Preethi Sharma",
-    role: "Media Planner @ Madison world",
-    industry: "Madison World",
+      "As a B.Com graduate seeking an exciting career, Digital Academy 360's PG program was perfect. The hands-on experience from live projects gave me the confidence to become a freelancer, and I quickly landed my first social media marketing client. This course truly shaped my professional journey.",
+    name: "Ruchika",
+    role: "Digital Marketing",
+    industry: "",
   },
   {
     id: 2,
-    videoUrl: "/images/videos/classroom-video-2.mp4",
+    videoUrl: "https://www.youtube.com/embed/cvm8--I5waY?si=WXqmUs70NtBG4e5y",
     videoThumbnail: "/images/video-thumb-1.jpg",
     classTitle: "Alumni 2",
     classBtn: "Watch Now",
     feedback:
-      "The stakes I took were very high. So, I wanted the program tio be very strict and into us. And, thats what i got. Because there were long hours, 8-10 hours per day. It was very systematic and it was very well organised.",
-    name: "Rohan Mehta",
+      "As a diploma holder new to digital marketing, Digital Academy 360's PG program was a game-changer. The hands-on experience from live projects helped me master the necessary skills quickly. Thanks to their job-oriented approach, I landed a position as a digital marketing executive right after the course.",
+    name: "Khezar A",
     role: "Digital Marketer",
-    industry: "Zeno Group",
+    industry: "",
+  },
+  {
+    id: 3,
+    videoUrl: "https://www.youtube.com/embed/GCmz1yFkhDY?si=ZlCFExZSbE4csqNw",
+    videoThumbnail: "/images/video-thumb-1.jpg",
+    classTitle: "Alumni 2",
+    classBtn: "Watch Now",
+    feedback:
+      "After a seven-year career break, I found it difficult to restart my professional journey. Digital Academy 360's job-oriented program was the perfect solution. Through live projects, I gained the practical skills needed to secure multiple job offers. I highly recommend them for kickstarting a career in digital marketing.",
+    name: "Shruthi",
+    role: "Digital Marketer",
+    industry: "",
+  },
+  {
+    id: 4,
+    videoUrl: "https://www.youtube.com/embed/2M5pOCCKD1M?si=WCJJLIYz6GpXqKWG",
+    videoThumbnail: "/images/video-thumb-1.jpg",
+    classTitle: "Alumni 2",
+    classBtn: "Watch Now",
+    feedback:
+      "Digital Academy 360's PG program in digital marketing was a career-transforming experience. Transitioning from mechanical engineering, I gained immense practical knowledge through live projects. This job-oriented course directly led to my placement at War Performance Marketing. I highly recommend it for aspiring digital marketers.",
+    name: "Dnananjaya",
+    role: "Digital Marketer",
+    industry: "",
   },
 ];
 
@@ -84,6 +108,7 @@ export default function AlumniSlider() {
                         <VideoCard
                           thumbnail={slide.videoThumbnail}
                           videoUrl={slide.videoUrl}
+                          isYouTube={true}
                         />
                       </div>
                       <div className="col-lg-5 d-flex ">

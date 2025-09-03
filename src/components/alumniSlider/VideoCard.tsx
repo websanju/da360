@@ -15,7 +15,7 @@ const VideoCard = ({
   videoUrl,
   isYouTube = false,
 }: VideoCardProps) => {
-  const [isPlaying, setIsPlaying] = useState(false);
+  const [isPlaying, setIsPlaying] = useState(isYouTube); // ✅ Auto-play if YouTube
   const [hovering, setHovering] = useState(false);
 
   const handlePlay = () => {
@@ -33,7 +33,8 @@ const VideoCard = ({
       style={{ cursor: "pointer", minHeight: "432px" }}
       onMouseEnter={() => setHovering(true)}
       onMouseLeave={() => setHovering(false)}
-      onClick={!isPlaying ? handlePlay : undefined}
+      onClick={!isPlaying && !isYouTube ? handlePlay : undefined}
+      // ✅ Only clickable if NOT YouTube
     >
       {isPlaying ? (
         <div
@@ -59,11 +60,13 @@ const VideoCard = ({
               style={{ objectFit: "cover", minHeight: "432px" }}
             />
           )}
-          {hovering && (
+
+          {/* ✅ Hide back button for YouTube */}
+          {!isYouTube && hovering && (
             <div className="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center">
               <button className={styles.playBtn} onClick={handleBack}>
                 <Image
-                  alt="play icon"
+                  alt="back icon"
                   width={24}
                   height={28}
                   src="images/push-btn.svg"
@@ -82,18 +85,21 @@ const VideoCard = ({
             className="w-100"
             style={{ objectFit: "cover", height: "432px" }}
           />
-          <div
-            className={`${styles.videoBtn} position-absolute top-50 start-50 translate-middle`}
-          >
-            <button className={styles.playBtn}>
-              <Image
-                alt="play icon"
-                width={20}
-                height={20}
-                src="images/play-btn.svg"
-              />
-            </button>
-          </div>
+          {/* ✅ Hide play button overlay if YouTube */}
+          {!isYouTube && (
+            <div
+              className={`${styles.videoBtn} position-absolute top-50 start-50 translate-middle`}
+            >
+              <button className={styles.playBtn}>
+                <Image
+                  alt="play icon"
+                  width={20}
+                  height={20}
+                  src="images/play-btn.svg"
+                />
+              </button>
+            </div>
+          )}
         </>
       )}
 
