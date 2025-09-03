@@ -27,8 +27,8 @@ const Footer = () => {
                     <Image
                       src="/images/footer-skill.svg"
                       alt="Skill India"
-                      width={61}
-                      height={61}
+                      width={60}
+                      height={60}
                       className="mb-lg-3"
                     />
                   </div>
@@ -36,8 +36,17 @@ const Footer = () => {
                     <Image
                       src="/images/mesc.svg"
                       alt="Mesc"
-                      width={61}
-                      height={61}
+                      width={60}
+                      height={60}
+                      className="mb-lg-3"
+                    />
+                  </div>
+                  <div>
+                    <Image
+                      src="/images/nsdc.png"
+                      alt="nsdc"
+                      width={60}
+                      height={51}
                       className="mb-lg-3"
                     />
                   </div>
