@@ -5,6 +5,7 @@ export type Course = {
   features: string[];
   buttonText: string;
   thumb: string;
+  buttonLink: string;
 };
 
 export type CourseSection = {
@@ -18,7 +19,7 @@ const coursesData: CourseSection[] = [
   {
     sectionId: 'leadership-programs',
     sectionTitle: 'Digital Marketing Leadership Programs',
-        componentType: 'Leadership',
+    componentType: 'Leadership',
        
     courses: [
       {
@@ -34,6 +35,7 @@ const coursesData: CourseSection[] = [
          tags: [ '12 Months',],
         buttonText: 'View Course',
         thumb: '/images/course-list/digital-marketing-ai.jpg',
+        buttonLink: '/digital-marketing-leadership-entrepreneurship-program',
       },
       {
         id: 'social-content-creator-video-production',
@@ -48,6 +50,7 @@ const coursesData: CourseSection[] = [
         ],
         buttonText: 'View Course',
         thumb: '/images/course-list/social-content-creator.jpg',
+        buttonLink: '/social-media-content-video-creator-course',
       },
     ],
   },
@@ -69,21 +72,8 @@ const coursesData: CourseSection[] = [
         ],
         buttonText: 'View Course',
         thumb: '/images/course-list/digital-marketing-6.jpg',
+        buttonLink: '/digital-marketing-class-ai-ecomerce-pgcp-course',
       },
-      // {
-      //   id: 'social-media-influencer-marketing',
-      //     title: 'PGCP in Social Media & Influencer Marketing',
-      //    tags: [ '6 Months', 'Online',],
-      //   features: [
-      //     'PG Level Certification',
-      //     '240+ Hours of Learning',
-      //     '20+ Case Studies',
-      //     '18+ Specialised Tools',
-      //     '15+ Certifications',
-      //   ],
-      //   buttonText: 'View Course',
-      //   thumb: '/images/course-list/influencer-marketing.jpg',
-      // },
       {
         id: 'performance-marketing-media-buying',
           title: 'Performance Marketing & Media Buying',
@@ -97,6 +87,7 @@ const coursesData: CourseSection[] = [
         ],
         buttonText: 'View Course',
         thumb: '/images/course-list/performance-marketing.jpg',
+         buttonLink: '/digital-marketing-training-institute',
       },
     ],
   },
@@ -118,6 +109,7 @@ const coursesData: CourseSection[] = [
         ],
         buttonText: 'View Course',
         thumb: '/images/course-list/digital-marketing-5.jpg',
+         buttonLink: '/ai-vibe-marketing-courses',
       },
       {
         id: 'social-media-influencer-cert',
@@ -132,21 +124,8 @@ const coursesData: CourseSection[] = [
         ],
         buttonText: 'View Course',
         thumb: '/images/course-list/social-influencer-cert.jpg',
+         buttonLink: '/youtube-instagram-influencer-courses',
       },
-      // {
-      //   id: 'performance-marketing-cert',
-      //     title: 'LinkedIn & Personal Branding',
-      //    tags: [ '2 Months', 'Online'],
-      //   features: [
-      //     'Advance Specialist Certification',
-      //     '80+ Hours of Learning',
-      //     '8+ Case Studies',
-      //     '10+ Tools',
-      //     '2 Linkedin Outreach Flow',
-      //   ],
-      //   buttonText: 'View Course',
-      //   thumb: '/images/course-list/performance-cert.jpg',
-      // },
       {
         id: 'digital-marketing-ecomm-ai-cert',
         title: 'Performance Marketing & MarTech',
@@ -160,6 +139,7 @@ const coursesData: CourseSection[] = [
         ],
         buttonText: 'View Course',
         thumb: '/images/course-list/digital-marketing-4.jpg',
+        buttonLink: '/performance-marketing-automation-courses-online',
       },
     ],
   },

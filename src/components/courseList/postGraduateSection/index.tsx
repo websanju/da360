@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { CourseSection } from "../../../data/courseData";
 import styles from "../style.module.scss";
 import Image from "next/image";
@@ -14,7 +15,7 @@ const LeadershipSection = ({ section }: { section: CourseSection }) => (
           <div className="row">
             {section.courses.map((course) => (
               <div key={course.id} className={` col-12 col-md-6`}>
-                <div className={`${styles.courseListCard}`}>
+                <div key={course.id} className={`${styles.courseListCard}`}>
                   <div className={styles.courseImg}>
                     <Image
                       src={course.thumb}
@@ -48,6 +49,9 @@ const LeadershipSection = ({ section }: { section: CourseSection }) => (
                         </li>
                       ))}
                     </ul>
+                    <Link href={course.buttonLink} className={styles.btnCourse}>
+                      {course.buttonText}
+                    </Link>
                   </div>
                 </div>
               </div>

@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { CourseSection } from "../../../data/courseData";
 import styles from "../style.module.scss";
+import Link from "next/link";
 
 const LeadershipSection = ({ section }: { section: CourseSection }) => (
   <section className={styles.leadershipSection}>
@@ -47,9 +48,9 @@ const LeadershipSection = ({ section }: { section: CourseSection }) => (
                         </li>
                       ))}
                     </ul>
-                    <button className={styles.btnCourse}>
+                    <Link href={course.buttonLink} className={styles.btnCourse}>
                       {course.buttonText}
-                    </button>
+                    </Link>
                   </div>
                 </div>
               </div>

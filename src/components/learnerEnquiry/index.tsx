@@ -56,7 +56,7 @@ const LearnerEnquiry = () => {
                         width={15}
                         height={17}
                       />
-                      1800 210 2020
+                      +91 6360 006 736
                     </h5>
                   </div>
                 </div>
@@ -73,7 +73,7 @@ const LearnerEnquiry = () => {
                         width={15}
                         height={17}
                       />
-                      1800 210 2020
+                      +91 7353 515 515
                     </h5>
                   </div>
                 </div>
