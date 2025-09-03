@@ -1,6 +1,12 @@
+"use client";
 import styles from "./styles.module.scss";
+import { usePopup } from "@components/widgets/popup/PopupContext";
+import ApplyForm from "../widgets/popups/ApplyForm";
 
 export default function AiMarketingBanner() {
+  const { closePopup } = usePopup();
+  const { openPopup } = usePopup();
+
   return (
     <section className={styles.banner}>
       <div className="container">
@@ -15,7 +21,16 @@ export default function AiMarketingBanner() {
               <p className={styles.subtitle}>
                 Youtube & Instagram Influencer Certification Course
               </p>
-              <button className={`btn btn-danger btn-lg px-4 ${styles.btn}`}>
+              <button
+                onClick={() => {
+                  closePopup(); // close current popup first
+                  openPopup(
+                    <ApplyForm title="Apply & Learn From Case Study" />,
+                    {}
+                  );
+                }}
+                className={`btn btn-danger btn-lg px-4 ${styles.btn}`}
+              >
                 Start Learning
               </button>
             </div>
