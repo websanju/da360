@@ -189,7 +189,7 @@ const data: TrainerType = [
     namePopup: "Deepak Soni",
     title: "Digital Marketing Trainer",
     experience: "12+ years Experience",
-    linkedinLink: "#",
+    linkedinLink: "https://www.linkedin.com/in/deepakoddthinker/",
     bgColor: "bgPink",
     profileImage: "/images/trainers/deepak.png",
     profileImagePopup: "/images/trainers/deepak.png",

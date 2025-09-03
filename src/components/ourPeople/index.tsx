@@ -84,7 +84,7 @@ const people = [
     name: "Deepak Soni",
     designation: "Head - Academics",
     image: "/images/staff/deepak-soni.png",
-    profileLink: "",
+    profileLink: "https://www.linkedin.com/in/deepakoddthinker/",
   },
   {
     name: "Ashwini J",

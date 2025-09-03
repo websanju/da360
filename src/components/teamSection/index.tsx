@@ -19,7 +19,7 @@ const members = [
     role: "Head of Academics",
     experience: "12 years Experience",
     img: "/images/trainers/deepak.png",
-    linkedinLink: "#",
+    linkedinLink: "https://www.linkedin.com/in/deepakoddthinker/",
     tab: "DA360 Faculty",
     design: "default",
     icon: "star",
