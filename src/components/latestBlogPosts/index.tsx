@@ -12,17 +12,20 @@ const blogPosts = [
       "/images/blog/digital-marketing-as-career-in-2025-skills-salary.jpg",
     category: "Digital Marketing",
     title: "Digital Marketing as a Career in 2025 - Skills, Salary...",
+    link: "https://www.digitalacademy360.com/blogs/digital-marketing-as-a-career-in-2025-skills-salary-growth/",
   },
   {
     imgSrc: "/images/blog/top-digital-marketing-JobsinDemand-in2025.jpg",
     category: "Digital Marketing",
     title: "Top Digital Marketing Jobs in Demand in 2025",
+    link: "https://www.digitalacademy360.com/blogs/top-digital-marketing-jobs-in-demand-in-2025and-how-to-get-hired/",
   },
   {
     imgSrc:
       "/images/blog/AI-vs-human-creativity-what-the -future-holds-for-digital.jpg",
     category: "Digital Marketing",
     title: "AI vs Human Creativity - What the Future Holds for Digital...",
+    link: "https://www.digitalacademy360.com/blogs/ai-vs-human-creativity-what-the-future-holds-for-digital-marketing-careers/",
   },
 ];
 
@@ -58,9 +61,13 @@ const LatestBlogPosts = () => {
                   <span className={styles.category}>{post.category}</span>
                   <h5 className={styles.title}>{post.title}</h5>
                   <div className={styles.readMoreBtn}>
-                    <button className={styles.readMoreLink}>
+                    <Link
+                      target="_blank"
+                      href={post.link}
+                      className={styles.readMoreLink}
+                    >
                       <RightArrow />
-                    </button>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -71,7 +78,11 @@ const LatestBlogPosts = () => {
           <div
             className={`col-lg-12 d-flex align-items-center justify-content-center`}
           >
-            <Link href={"#"} className="btnWhite">
+            <Link
+              href={"https://www.digitalacademy360.com/blogs/"}
+              className="btnWhite"
+              target="_blank"
+            >
               Load More
             </Link>
           </div>

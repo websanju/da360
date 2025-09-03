@@ -96,8 +96,8 @@ const members = [
   },
   {
     name: "Roshan",
-    role: " ",
-    experience: "",
+    role: "Sr. Trainer- Digital Marketing ",
+    experience: "10+ years Experience ",
     img: "/images/trainers/monisha.png",
     tab: "Project Advisors",
     textColor: "#51FF74",
@@ -105,7 +105,7 @@ const members = [
     icon: "sparkle",
     iconImg: "/images/team/sparkle.png",
     iconPosition: "right",
-    linkedinLink: "#",
+    linkedinLink: "https://www.linkedin.com/in/kautilyaroshan/",
   },
   {
     name: "Asharufhi",
