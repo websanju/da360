@@ -17,22 +17,22 @@ const departments: Department[] = [
     iconSrc: "/images/icons/support.png",
     alt: "Support Icon",
     title: "Support",
-    phone: "+91 7353 515 515",
-    email: "support@digitalacademy360.com",
+    phone: "+91 6360 006 736",
+    email: "academics@da360.ai",
   },
   {
     iconSrc: "/images/icons/enquires.png",
     alt: "Enquiry Icon",
     title: "Enquires",
     phone: "+91 7353 515 515",
-    email: "info@digitalacademy360.com",
+    email: "info@da360.ai",
   },
   {
     iconSrc: "/images/icons/placements.png",
     alt: "Placement Icon",
     title: "Placements",
-    phone: "+91 7353 515 515",
-    email: "support@digitalacademy360.com",
+    phone: "+91 9071 428 133",
+    email: "placement@da360.ai",
   },
 ];
 
