@@ -333,6 +333,7 @@ const Footer = () => {
                 >
                   <Link href={"/da360-privacy-policy"}>Privacy Policy</Link>
                   <Link href={"/terms-conditions"}>Term of Use</Link>
+                  <Link href={"/disclaimer"}>Disclaimer</Link>
                   <Link href={"/refund-policy"}>Refund Policy</Link>
                 </div>
               </div>
