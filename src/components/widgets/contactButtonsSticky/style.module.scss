@@ -1,19 +1,20 @@
 .contactContainer {
-    position: relative;
-    width: 100%;
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  z-index: 111;
+  transition: transform 0.4s ease, opacity 0.4s ease;
+
+  .iconWrapper {
     display: flex;
+    align-items: center;
     justify-content: center;
-    z-index: 111;
-    transition: transform 0.4s ease, opacity 0.4s ease;
-  
-    .iconWrapper {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 12px;
-  
-      .phoneIcon {
-        width:41px;
+    gap: 12px;
+
+    .phoneIcon {
+      a {
+        width: 41px;
         height: 41px;
         border-radius: 60px;
         background-color: #000000;
@@ -21,75 +22,76 @@
         align-items: center;
         justify-content: center;
       }
-  
-      .whatsappIcon {
-        width: 41px;
-        height: 41px;
-        border-radius: 60px;
-        background-color: #60D669;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-      }
     }
-  
-    .contactButtons {
-      box-shadow: 0px 7px 4px 0px rgba(0, 0, 0, 0.1);
-      border: 1px solid #F0F0F0;
-      background-color: #FFFFFF;
+
+    .whatsappIcon {
+      width: 41px;
+      height: 41px;
+      border-radius: 60px;
+      background-color: #60d669;
       display: flex;
       align-items: center;
       justify-content: center;
-      gap: 12px;
-      width:auto;
-      height: 55px;
-      border-radius: 130px;
-      padding-left: 10px;
-      padding-right: 10px;
-  
+    }
+  }
+
+  .contactButtons {
+    box-shadow: 0px 7px 4px 0px rgba(0, 0, 0, 0.1);
+    border: 1px solid #f0f0f0;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    width: auto;
+    height: 55px;
+    border-radius: 130px;
+    padding-left: 10px;
+    padding-right: 10px;
+
+    .applyButton {
+      border: 2px solid #000000;
+      background: #e10f33;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 37px;
+      color: #fff;
+      border-radius: 100px;
+      min-width: 132px;
+      height: 41px;
+      transition: background 0.3s, color 0.3s;
+
+      &:hover {
+        background: #fff;
+        color: #000000;
+      }
+    }
+  }
+}
+@media (width <=991px) {
+  .contactContainer {
+    bottom: 6px;
+    .contactButtons {
+      height: auto;
+      padding: 6px 8px;
+      gap: 8px;
+      width: max-content;
       .applyButton {
-        border: 2px solid #000000;
-        background: #E10F33;
-        font-weight: 600;
-        font-size: 16px;
-        line-height: 37px;
-        color: #fff;
-        border-radius: 100px;
-        min-width: 132px;
-        height: 41px;
-        transition: background 0.3s, color 0.3s;
-  
-        &:hover {
-          background: #fff;
-          color: #000000;
-        }
+        height: 32px;
+        line-height: normal;
+        min-width: 120px;
+        font-size: 12px;
+      }
+    }
+    .iconWrapper {
+      .phoneIcon {
+        height: 32px;
+        width: 32px;
+      }
+      .whatsappIcon {
+        height: 32px;
+        width: 32px;
       }
     }
   }
-  @media (width <=991px) { 
-    .contactContainer { 
-      bottom: 6px;
-      .contactButtons {
-         height: auto;
-         padding: 6px 8px;
-         gap: 8px;
-         width: max-content;
-         .applyButton { 
-          height: 32px;
-          line-height: normal;
-          min-width: 120px;
-          font-size: 12px;
-         }
-      }
-      .iconWrapper { 
-        .phoneIcon {
-          height: 32px;
-          width: 32px;
-         }
-         .whatsappIcon {
-          height: 32px;
-          width: 32px;
-         }
-      }
-    }
-  }
+}
