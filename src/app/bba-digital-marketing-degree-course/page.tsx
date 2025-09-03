@@ -86,7 +86,7 @@ export default function courseDetail() {
       <Highlights section="section5" />
       <CampusTour
         section="section3"
-        videoUrl="/images/videos/classroom-video-3.mp4"
+        videoUrl="/images/videos/freecompress-campus-final.mp4"
       />
       <UniversityGallery />
       <TeamSection section="section4" />

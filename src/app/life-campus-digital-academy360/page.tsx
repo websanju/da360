@@ -70,7 +70,7 @@ export default function Lifeda360() {
       <CourseJourney section="section2" />
       <CampusTour
         section="section3"
-        videoUrl="/images/videos/classroom-video-3.mp4"
+        videoUrl="/images/videos/freecompress-campus-final.mp4"
       />
       <ToobGrid section="section9" />
       {/* <LiveProjectsSlider section="section4" /> */}
