@@ -104,7 +104,7 @@ const aiVibeCaseStudies: CaseStudiesSection = {
   items: [
     {
       id: 1,
-      logo: "/images/mcdonalds-logo.png",
+      logo: "/images/case-studies/mamaearth-logo.png",
       title: "Mamaearth – Influencer-Led Growth",
       description:
         "Mamaearth rapidly built its brand presence by leveraging micro and nano-influencers who created authentic user-generated content (UGC). This grassroots approach helped the brand gain trust among young consumers, especially in Tier 2 and Tier 3 cities. By encouraging real stories and reviews, Mamaearth turned everyday consumers into brand advocates.",
@@ -116,7 +116,7 @@ const aiVibeCaseStudies: CaseStudiesSection = {
     },
     {
       id: 2,
-      logo: "/images/motherdairy-logo.png",
+      logo: "/images/case-studies/nike-logo.png",
       title: "Nike India – YouTube Storytelling Series",
       description:
         "Nike India tapped into YouTube with a storytelling series that blended sports, lifestyle, and motivational narratives. Instead of traditional ads, they invested in long-form branded content featuring athletes and creators, positioning the brand as an enabler of dreams. Optimized with YouTube SEO, the series reached millions organically and fostered deep audience connection.",
@@ -128,7 +128,7 @@ const aiVibeCaseStudies: CaseStudiesSection = {
     },
     {
       id: 3,
-      logo: "/images/mcdonalds-logo.png",
+      logo: "/images/case-studies/mcdonalds-logo.png",
       title: "Zomato – Meme & Trend Hijacking",
       description:
         "Zomato became a master of internet culture by consistently using Instagram Reels and meme marketing. By quickly adapting to viral trends, their witty and relatable content drove massive spikes in engagement. Their playful brand voice and real-time content ensured Zomato stayed ahead of cultural conversations.",

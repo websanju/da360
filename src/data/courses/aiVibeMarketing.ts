@@ -104,7 +104,7 @@ const aiVibeCaseStudies: CaseStudiesSection = {
   items: [
     {
       id: 1,
-      logo: "/images/mcdonalds-logo.png",
+      logo: "/images/case-studies/mcdonalds-logo.png",
       title: "Spotify – AI-Personalized Playlists",
       description:
         "Spotify leveraged predictive AI to deliver hyper-personalized playlists for users, making music discovery seamless and unique to each listener. Viral campaigns like “Spotify Wrapped” turned user data into shareable stories, transforming personal insights into a global social media movement",
@@ -116,7 +116,7 @@ const aiVibeCaseStudies: CaseStudiesSection = {
     },
     {
       id: 2,
-      logo: "/images/motherdairy-logo.png",
+      logo: "/images/case-studies/motherdairy-logo.png",
       title: "Nike – AI in Social Storytelling",
       description:
         "Nike harnessed AI-powered insights to create emotion-driven campaigns that resonated deeply with their audience. During major product launches, AI was used for smart targeting—ensuring the right message reached the right audience at the right time. Their campaigns became cultural conversations rather than just advertisements.",
@@ -129,7 +129,7 @@ const aiVibeCaseStudies: CaseStudiesSection = {
     },
     {
       id: 3,
-      logo: "/images/mcdonalds-logo.png",
+      logo: "/images/case-studies/zomato.png",
       title: "Zomato – AI Meme Marketing",
       description:
         "Zomato pioneered AI-driven meme marketing by creating real-time, trend-jacking campaigns that resonated with India’s social media culture. With geo-targeted retargeting and quick-turnaround creatives, Zomato built a brand persona that was witty, relatable, and omnipresent across platforms.",

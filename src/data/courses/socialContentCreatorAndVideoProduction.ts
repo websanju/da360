@@ -109,7 +109,7 @@ const aiVibeCaseStudies: CaseStudiesSection = {
   items: [
     {
       id: 1,
-      logo: "/images/mcdonalds-logo.png",
+      logo: "/images/case-studies/netflix-logo.png",
       title: "Netflix India — Driving Engagement with Short-Form Video",
       description:
         "Netflix India revolutionized its social media strategy by leveraging Reels and meme collaborations to connect with Gen Z and millennial audiences. Through witty short-form storytelling, trending audio, and influencer tie-ups, Netflix maximized engagement for show launches and campaigns like Sacred Games and Money Heist.",
@@ -121,7 +121,7 @@ const aiVibeCaseStudies: CaseStudiesSection = {
     },
     {
       id: 2,
-      logo: "/images/motherdairy-logo.png",
+      logo: "/images/case-studies/zomato-logo.png",
       title: "Zomato — Using Humor & Meme Marketing for Virality",
       description:
         "Zomato redefined digital engagement by adopting a meme-first strategy. With witty tweets, meme-based creatives, and relatable Reels, the brand saw a 10x boost in social engagement. Their campaigns during IPL and cricket series showcased the power of humor in building viral momentum.",
@@ -133,7 +133,7 @@ const aiVibeCaseStudies: CaseStudiesSection = {
     },
     {
       id: 3,
-      logo: "/images/mcdonalds-logo.png",
+      logo: "/images/case-studies/cred-logo.png",
       title: "CRED — Creator-Driven Influencer Collaborations",
       description:
         "CRED built credibility and brand trust by collaborating with high-profile creators and celebrities. Their campaigns blended quirk, authority, and storytelling—turning influencer-led videos into national conversations. Creators like Rahul Dravid and Tanmay Bhat were instrumental in CRED’s viral brand recall.",

@@ -110,7 +110,7 @@ const aiVibeCaseStudies: CaseStudiesSection = {
   items: [
     {
       id: 1,
-      logo: "/images/mcdonalds-logo.png",
+      logo: "/images/case-studies/mcdonalds-logo.png",
       title: "McDonald’s India – Localizing a Global Brand",
       description:
         "McDonald’s India adapted its global brand strategy to meet local market preferences—replacing beef-based offerings, introducing aloo tikki burgers, and launching value pricing to capture the price-sensitive Indian audience. Their digital marketing focused on regional content, hyper-local social media campaigns, and app-based loyalty programs.",
@@ -123,7 +123,7 @@ const aiVibeCaseStudies: CaseStudiesSection = {
     },
     {
       id: 2,
-      logo: "/images/motherdairy-logo.png",
+      logo: "/images/case-studies/motherdairy-logo.png",
       title: "Mother Dairy – Building Trust Through Content",
       description:
         "Mother Dairy strengthened its brand presence by focusing on emotional storytelling and purpose-driven marketing. Campaigns like 'Rishton Ka Swad Badhaiye' positioned the brand as a part of Indian family life. It leveraged SEO, blog content, influencer tie-ups, and YouTube storytelling to increase brand engagement and product awareness.",

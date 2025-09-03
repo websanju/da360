@@ -110,7 +110,7 @@ const aiVibeCaseStudies: CaseStudiesSection = {
   items: [
     {
       id: 1,
-      logo: "/images/mcdonalds-logo.png",
+      logo: "/images/case-studies/mcdonalds-logo.png",
       title: "McDonald’s India – Localizing a Global Brand",
       description:
         "McDonald’s India adapted its global brand strategy to meet local market preferences—replacing beef-based offerings, introducing aloo tikki burgers, and launching value pricing to capture the price-sensitive",
@@ -123,7 +123,7 @@ const aiVibeCaseStudies: CaseStudiesSection = {
     },
     {
       id: 2,
-      logo: "/images/motherdairy-logo.png",
+      logo: "/images/case-studies/motherdairy-logo.png",
       title: "Mother Dairy – Building Trust Through Content",
       description:
         "Mother Dairy strengthened its brand presence by focusing on emotional storytelling and purpose-driven marketing. Campaigns like `Rishton Ka Swad Badhaiye` positioned the brand as a part of Indian family life.",
@@ -136,7 +136,7 @@ const aiVibeCaseStudies: CaseStudiesSection = {
     },
     {
       id: 3,
-      logo: "/images/mcdonalds-logo.png",
+      logo: "/images/case-studies/zomato.png",
       title: "Zomato – Data-Driven Performance Marketing",
       description:
         "Zomato scaled its customer acquisition by running high-performing campaigns during IPL seasons, using data-backed insights to target users based on cuisine preferences, location, and time of day.",

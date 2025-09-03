@@ -89,7 +89,7 @@ const aiVibeCaseStudies: CaseStudiesSection = {
   items: [
     {
       id: 1,
-      logo: "/images/mcdonalds-logo.png",
+      logo: "/images/case-studies/swiggy-logo.png",
       title: "Swiggy – Data-Driven Campaign Optimization",
       description:
         "Swiggy leveraged advanced data analytics and AI-driven insights to continuously optimize campaigns in real-time. By tracking user journeys across channels and applying hyper-local targeting, Swiggy improved ad relevance, increased conversion rates, and boosted average order value. Their approach showcased how AI can turn performance marketing into a precision-driven growth engine.",
@@ -100,7 +100,7 @@ const aiVibeCaseStudies: CaseStudiesSection = {
     },
     {
       id: 2,
-      logo: "/images/motherdairy-logo.png",
+      logo: "/images/case-studies/nykka.png",
       title: "Nykaa – Influencer & Social Ads Funnel   ",
       description:
         "Nykaa successfully launched a new beauty product line by integrating influencer-led awareness campaigns with performance-driven paid ads. By using shoppable posts, social commerce, and dynamic creative testing, Nykaa built a full-funnel strategy that moved audiences from awareness to purchase seamlessly, resulting in higher engagement and sales growth.",
@@ -111,7 +111,7 @@ const aiVibeCaseStudies: CaseStudiesSection = {
     },
     {
       id: 3,
-      logo: "/images/mcdonalds-logo.png",
+      logo: "/images/case-studies/makeMyTrip.png",
       title: "MakeMyTrip – Seasonal PPC Campaign Strategy",
       description:
         "MakeMyTrip capitalized on seasonal travel trends by executing high-performing PPC campaigns across Google and Meta. By combining keyword-driven search ads with display remarketing funnels and limited-time offers, MakeMyTrip maximized bookings during peak travel seasons and optimized ad spends for ROI.",
