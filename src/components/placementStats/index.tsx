@@ -2,14 +2,13 @@
 "use client";
 import React from "react";
 import styles from "./styles.module.scss";
-import Image from "next/image";
+// import Image from "next/image";
 
 const stats = [
-  { label: "95% Placement Rate" },
-  { label: "10,000+ Students Placed" },
-  { label: "200+ Hiring Partners" },
-  { label: "Avg Salary: ₹5.2 LPA" },
-  { label: "Students Placed In India & Abroad" },
+  { label: "Placement Rate", value: "95% " },
+  { label: "Students Placed", value: "10,000+ " },
+  { label: "Hiring Partners", value: "200+ " },
+  { label: "Avg Salary", value: "₹5.2 LPA" },
 ];
 
 const PlacementStats = () => {
@@ -20,14 +19,15 @@ const PlacementStats = () => {
           {stats.map((stat, index) => (
             <div className="col-6 col-md-4 col-lg" key={index}>
               <div className={styles.statBox}>
-                <Image
+                {/* <Image
                   src="/images/icons/handSnake.png"
                   alt="Handshake Icon"
                   width={80}
                   height={70}
                   unoptimized
                   className={styles.icon}
-                />
+                /> */}
+                <h2>{stat.value}</h2>
                 <p className={styles.label}>{stat.label}</p>
               </div>
             </div>
