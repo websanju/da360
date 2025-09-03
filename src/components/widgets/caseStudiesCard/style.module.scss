@@ -8,10 +8,16 @@
 
   .cardImg {
     margin-bottom: 20px;
-
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 62px;
+    width: 80px;
     img {
       height: 62px;
-      width: auto;
+      max-width: max-content;
+      object-fit: contain;
+      width: 100px;
     }
   }
 
