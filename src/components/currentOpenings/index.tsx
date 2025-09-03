@@ -13,34 +13,46 @@ type Opening = {
 
 const openings: Opening[] = [
   {
-    title: "PPC Manager",
-    slug: "ppc-manager",
-    location: "7+ years of experience | Bangalore",
+    title: "Academic Counsellor",
+    slug: "https://docs.google.com/forms/u/0/d/1omETymjgq8O0bKSFAcGOHuJr5LLtFT3dYprMWXvyUfc/viewform?edit_requested=true",
+    location: "1+ years of experience | Bangalore",
     style: "yellow",
   },
   {
-    title: "Counsellor",
-    slug: "counsellor",
-    location: "7+ years of experience | Bangalore",
+    title: "SEO TL",
+    slug: "https://docs.google.com/forms/d/14Hn4T-bDtQsxCEvqDOctiRrkZxy1JyojRV6V__BVUgY/edit",
+    location: "5-8+ years of experience | Bangalore",
     style: "white",
   },
   {
-    title: "DM Trainer",
-    slug: "dm-trainer",
-    location: "7+ years of experience | Bangalore",
+    title: "Business Development Manager",
+    slug: "https://docs.google.com/forms/d/13Cdg5adRPVqZ55QG1stQYyUhI8_MSPlbzTrcxts7ExU/edit",
+    location: "2+ years of experience | Bangalore",
     style: "blue",
   },
   {
-    title: "Sr Placement Ofc",
-    slug: "sr-placement-ofc",
-    location: "7+ years of experience | Bangalore",
+    title: "Content write",
+    slug: "https://docs.google.com/forms/d/1eqC-5d_tu4IRcCWNluWo8b5iYiUKTaMEkgxjXiaFMrA/edit",
+    location: "2+  years of experience | Bangalore",
+    style: "white",
+  },
+  {
+    title: "Video Editor",
+    slug: "https://docs.google.com/forms/d/14EwHIq5ofVzFMegHCjRWFdNsfSuogRcitDI1NZBMJp0/edit",
+    location: "2+ years of experience | Bangalore",
+    style: "white",
+  },
+  {
+    title: "Digital Marketing Trainer",
+    slug: "https://docs.google.com/forms/d/1HUpENGhm496E4WWTQl-hCqy8tQ3ayHpnvrBArESw3p8/edit",
+    location: "2+ years of experience | Bangalore",
     style: "white",
   },
 ];
 
 const CurrentOpenings = () => {
   return (
-    <section className={`${styles.openingsSection}`}>
+    <section className={`${styles.openingsSection}`} id="openingsSection">
       <div className="container">
         <div className="row">
           <div className="col-lg-12">
@@ -52,7 +64,7 @@ const CurrentOpenings = () => {
         <div className={`${styles.row} row`}>
           {openings.map((job, index) => (
             <div className="col-md-6" key={index}>
-              <Link href={`/career/${job.slug}`}>
+              <Link target="_black" href={job.slug}>
                 <div
                   className={`${styles.jobCard} ${
                     styles[job.style || "white"]
