@@ -5,7 +5,7 @@ import GuestFacultyCard from "@components/widgets/guestFacultyCard";
 import styles from "./style.module.scss";
 import SectionHeader from "@/components/widgets/sectionHeader";
 import CaseStudyPopup, { Study } from "@components/widgets/popups/gurstFaculty";
-import TrainersFacultyPopup from "@components/widgets/popups/trainersFaculty";
+// import TrainersFacultyPopup from "@components/widgets/popups/trainersFaculty";
 import PopupTrigger from "./popupTrigger";
 
 export const metadata = {
@@ -329,12 +329,7 @@ export default function Trainer() {
           <div className={`${styles.row} row d-md-flex`}>
             {data.map((item, index) => (
               <div className="col-md-4 col-lg-4 col-6" key={index}>
-                <PopupTrigger
-                  popup={<TrainersFacultyPopup study={item} />}
-                  className={styles.guestFacultyPopup}
-                >
-                  <TrainersFacultyCard {...item} />
-                </PopupTrigger>
+                <TrainersFacultyCard {...item} />
               </div>
             ))}
           </div>
