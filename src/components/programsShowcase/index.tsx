@@ -33,7 +33,9 @@ const ProgramsShowcase: React.FC = () => {
     if (isMobile) return; // 🚫 Skip animation on mobile
 
     const wrappers = gsap.utils.toArray<HTMLElement>(".card-wrapper");
-    const cards = gsap.utils.toArray<HTMLElement>(".card1, .card2, .card3");
+    const cards = gsap.utils.toArray<HTMLElement>(
+      ".card1, .card2, .card3, .card4"
+    );
 
     wrappers.forEach((wrapper, i) => {
       const card = cards[i];
@@ -117,6 +119,38 @@ const ProgramsShowcase: React.FC = () => {
                 courseLink="/digital-marketing-leadership-entrepreneurship-program"
                 expertText="Avail Scholarship"
                 image="/images/course-list/leadeship-course-min.png"
+              />
+            </div>
+          </div>
+
+          <div className="card-wrapper">
+            <div className="card4">
+              <WidgetCard
+                title="Leadership in Social Content Creator & Video Production"
+                category={["Coming Soon"]}
+                stats={[
+                  {
+                    icon: "/images/course-list/icons/icon01.svg",
+                    label: "50+ Case Studies",
+                  },
+                  {
+                    icon: "/images/course-list/icons/icon02.svg",
+                    label: "1920+ Hours of Learning",
+                  },
+                  {
+                    icon: "/images/course-list/icons/icon03.svg",
+                    label: "55+ Specialised Tools",
+                  },
+                  {
+                    icon: "/images/course-list/icons/icon04.svg",
+                    label: "20+ Certifications",
+                  },
+                ]}
+                buttonText="View Course"
+                courseLink="/digital-marketing-training-institute"
+                //
+                expertText="Avail Scholarship"
+                image="/images/course-list/performance-marketing-and-media-buying.jpg"
               />
             </div>
           </div>
