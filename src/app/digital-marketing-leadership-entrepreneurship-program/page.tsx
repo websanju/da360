@@ -115,7 +115,10 @@ export default function courseDetail() {
         projects={digitalMarketingLeadership.liveProjects!.projects}
       />
       <CaseStudies data={digitalMarketingLeadership.caseStudies} />
-      <Banner />
+      <Banner
+        desktopSrc={"/images/scholarship/leadership-min.jpg"}
+        mobileSrc={"/images/scholarship/leadership-min.jpg"}
+      />
       <PeopleSlider />
       <AlumniSlider />
       <BrandLogos />

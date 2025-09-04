@@ -127,7 +127,10 @@ export default function courseDetail() {
         projects={digitalNarketingTrainingInstitute.liveProjects!.projects}
       />
       <CaseStudies data={digitalNarketingTrainingInstitute.caseStudies} />
-      <Banner />
+      <Banner
+        desktopSrc={"/images/scholarship/pgcp-min.jpg"}
+        mobileSrc={"/images/scholarship/pgcp-min.jpg"}
+      />
       <PeopleSlider />
       <AlumniSlider />
       <BrandLogos />

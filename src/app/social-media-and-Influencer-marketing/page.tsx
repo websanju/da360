@@ -127,7 +127,10 @@ export default function courseDetail() {
         projects={SocialMediaAndInfluencerMarketing.liveProjects!.projects}
       />
       <CaseStudies data={SocialMediaAndInfluencerMarketing.caseStudies} />
-      <Banner />
+      <Banner
+        desktopSrc="/images/scholarship/leadership-min.jpg"
+        mobileSrc="/images/scholarship/leadership-min.jpg"
+      />
       <PeopleSlider />
       <AlumniSlider />
       <BrandLogos />
