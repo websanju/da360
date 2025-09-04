@@ -9,14 +9,10 @@ import styles from "./style.module.scss";
 import SectionHeader from "@components/widgets/sectionHeader";
 
 const mediaLogos = [
-  { src: "/images/business-stanard.png", alt: "Business Stanard" },
-  { src: "/images/brandequity.png", alt: "Brandequity" },
-  { src: "/images/timesofindia.png", alt: "The Times of India" },
-  { src: "/images/timesofindia.png", alt: "The Times of India" },
-  { src: "/images/hindustantimes.png", alt: "Hindustan Times" },
-  { src: "/images/your-story.png", alt: "Your Story" },
-  { src: "/images/bloomberg.png", alt: "Bloomberg" },
-  { src: "/images/financial-express.png", alt: "Financial Express" },
+  { src: "/images/media/timesOf-india-min.jpg", alt: "The Times of India" },
+  { src: "/images/media/yourStory-min.jpg", alt: "Your Story" },
+  { src: "/images/media/hindustantimes-min.jpg", alt: "hindustantimes" },
+  { src: "/images/media/economictimes-min.jpg", alt: "Economictimes" },
 ];
 
 const MediaAwards = () => {
