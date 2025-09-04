@@ -65,7 +65,7 @@ export default function Lifeda360() {
 
   return (
     <main>
-      <HeroVideoSection videoUrl="/images/videos/classroom-video-3.mp4" />
+      <HeroVideoSection videoUrl="/images/videos/classroom.mp4" />
       <TextContent section="section1" />
       <CourseJourney section="section2" />
       <CampusTour
