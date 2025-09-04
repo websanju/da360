@@ -150,7 +150,7 @@ const ProgramsShowcase: React.FC = () => {
                 courseLink="/digital-marketing-training-institute"
                 //
                 expertText="Avail Scholarship"
-                image="/images/course-list/performance-marketing-and-media-buying.jpg"
+                image="/images/course-list/pgcp-in-digital-marketing.jpg"
               />
             </div>
           </div>
