@@ -136,7 +136,7 @@ const aiVibeCaseStudies: CaseStudiesSection = {
     },
     {
       id: 3,
-      logo: "/images/mcdonalds-logo.png",
+      logo: "/images/case-studies/zomato-logo.png",
       title: "Zomato – Data-Driven Performance Marketing",
       description:
         "Zomato scaled its customer acquisition by running high-performing campaigns during IPL seasons, using data-backed insights to target users based on cuisine preferences, location, and time of day. They executed geo-targeted Google and Meta ads, retargeting sequences, and meme-based creatives to boost engagement and app installs.",
