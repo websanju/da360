@@ -25,13 +25,15 @@
     }
 
     .whatsappIcon {
-      width: 41px;
-      height: 41px;
-      border-radius: 60px;
-      background-color: #60d669;
-      display: flex;
-      align-items: center;
-      justify-content: center;
+      a {
+        width: 41px;
+        height: 41px;
+        border-radius: 60px;
+        background-color: #60d669;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
     }
   }
 
@@ -85,12 +87,16 @@
     }
     .iconWrapper {
       .phoneIcon {
-        height: 32px;
-        width: 32px;
+        a {
+          height: 32px;
+          width: 32px;
+        }
       }
       .whatsappIcon {
-        height: 32px;
-        width: 32px;
+        a {
+          height: 32px;
+          width: 32px;
+        }
       }
     }
   }
