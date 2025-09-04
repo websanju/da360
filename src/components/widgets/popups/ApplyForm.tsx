@@ -76,7 +76,7 @@ const ApplyForm = ({ title }: LeadCaptureFormProps) => {
               width={338}
               height={488}
               alt="apply-1"
-              src="/images/mba.jpg"
+              src="/images/applyForm/mba.jpg"
             />
           </SwiperSlide>
           <SwiperSlide>
@@ -84,15 +84,7 @@ const ApplyForm = ({ title }: LeadCaptureFormProps) => {
               width={338}
               height={488}
               alt="apply-2"
-              src="/images/mba.jpg"
-            />
-          </SwiperSlide>
-          <SwiperSlide>
-            <Image
-              width={338}
-              height={488}
-              alt="apply-3"
-              src="/images/mba.jpg"
+              src="/images/applyForm/courses.jpg"
             />
           </SwiperSlide>
         </Swiper>
