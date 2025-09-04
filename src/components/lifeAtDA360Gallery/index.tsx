@@ -36,7 +36,7 @@ const meetups: MeetupGroup[] = [
     items: [
       {
         id: 1,
-        image: "/images/community-metup/9-min.jpg",
+        image: "/images/life-and-da360/01-min.jpg",
         title: "Gen-AI Meet Up",
         location: "Bengaluru",
         highlight: true,
@@ -45,13 +45,13 @@ const meetups: MeetupGroup[] = [
       },
       {
         id: 2,
-        image: "/images/community-metup/12-min.jpg",
+        image: "/images/life-and-da360/1A-min.jpg",
         title: "ML Meetup",
         location: "Chennai",
       },
       {
         id: 3,
-        image: "/images/community-metup/18-min.jpg",
+        image: "/images/life-and-da360/1B-min.jpg",
         title: "Vision Meetup",
         location: "Delhi",
       },
@@ -63,7 +63,7 @@ const meetups: MeetupGroup[] = [
       {
         id: 4,
         title: "Join our next offline event!",
-        image: "/images/community-metup/10-min.jpg",
+        image: "/images/life-and-da360/1-min.jpg",
         location: "Mumbai",
       },
     ],
@@ -73,21 +73,47 @@ const meetups: MeetupGroup[] = [
     items: [
       {
         id: 5,
-        image: "/images/community-metup/15-min.jpg",
+        image: "/images/life-and-da360/2A-min.jpg",
         title: "Robotics Meetup",
         location: "Mumbai",
       },
       {
         id: 6,
-        image: "/images/community-metup/13-min.jpg",
+        image: "/images/life-and-da360/2-min.jpg",
         title: "Edge AI Meetup",
         location: "Hyderabad",
       },
       {
         id: 7,
-        image: "/images/community-metup/17-min.jpg",
+        image: "/images/life-and-da360/4-min.jpg",
         title: "Deep Learning Meetup",
         location: "Pune",
+      },
+    ],
+  },
+  {
+    type: "firstItems",
+    items: [
+      {
+        id: 8,
+        image: "/images/life-and-da360/5-min.jpg",
+        title: "Gen-AI Meet Up",
+        location: "Bengaluru",
+        highlight: true,
+        bgColor: "#E10F33",
+        textColor: "#ffffff",
+      },
+      {
+        id: 9,
+        image: "/images/life-and-da360/6-min.jpg",
+        title: "ML Meetup",
+        location: "Chennai",
+      },
+      {
+        id: 10,
+        image: "/images/life-and-da360/7-min.jpg",
+        title: "Vision Meetup",
+        location: "Delhi",
       },
     ],
   },
@@ -95,9 +121,9 @@ const meetups: MeetupGroup[] = [
     type: "secondItems",
     items: [
       {
-        id: 8,
+        id: 11,
         title: "Join our next offline event!",
-        image: "/images/community-metup/19-min.jpg",
+        image: "/images/life-and-da360/5-min.jpg",
       },
     ],
   },
@@ -106,21 +132,126 @@ const meetups: MeetupGroup[] = [
     items: [
       {
         id: 12,
-        image: "/images/community-metup/14-min.jpg",
+        image: "/images/life-and-da360/6-min.jpg",
         title: "Robotics Meetup",
         location: "Mumbai",
       },
       {
         id: 13,
-        image: "/images/community-metup/11-min.jpg",
+        image: "/images/life-and-da360/7-min.jpg",
         title: "Edge AI Meetup",
         location: "Hyderabad",
       },
       {
         id: 14,
-        image: "/images/community-metup/16-min.jpg",
+        image: "/images/life-and-da360/9A-min.jpg",
         title: "Deep Learning Meetup",
         location: "Pune",
+      },
+    ],
+  },
+  {
+    type: "firstItems",
+    items: [
+      {
+        id: 15,
+        image: "/images/life-and-da360/10-min.jpg",
+        title: "Gen-AI Meet Up",
+        location: "Bengaluru",
+        highlight: true,
+        bgColor: "#E10F33",
+        textColor: "#ffffff",
+      },
+      {
+        id: 16,
+        image: "/images/life-and-da360/11A-min.jpg",
+        title: "ML Meetup",
+        location: "Chennai",
+      },
+      {
+        id: 17,
+        image: "/images/life-and-da360/11-min.jpg",
+        title: "Vision Meetup",
+        location: "Delhi",
+      },
+    ],
+  },
+  {
+    type: "secondItems",
+    items: [
+      {
+        id: 18,
+        title: "Join our next offline event!",
+        image: "/images/life-and-da360/12-min.jpg",
+      },
+    ],
+  },
+  {
+    type: "thirdItems",
+    items: [
+      {
+        id: 19,
+        image: "/images/life-and-da360/14A-min.jpg",
+        title: "Robotics Meetup",
+        location: "Mumbai",
+      },
+      {
+        id: 20,
+        image: "/images/life-and-da360/14-min.jpg",
+        title: "Edge AI Meetup",
+        location: "Hyderabad",
+      },
+      {
+        id: 21,
+        image: "/images/life-and-da360/16-min.jpg",
+        title: "Deep Learning Meetup",
+        location: "Pune",
+      },
+    ],
+  },
+  {
+    type: "firstItems",
+    items: [
+      {
+        id: 22,
+        image: "/images/life-and-da360/18-min.jpg",
+        title: "Gen-AI Meet Up",
+        location: "Bengaluru",
+        highlight: true,
+        bgColor: "#E10F33",
+        textColor: "#ffffff",
+      },
+      {
+        id: 23,
+        image: "/images/life-and-da360/19A-min.jpg",
+        title: "ML Meetup",
+        location: "Chennai",
+      },
+      {
+        id: 24,
+        image: "/images/life-and-da360/Ashwini02-min.jpg",
+        title: "Vision Meetup",
+        location: "Delhi",
+      },
+    ],
+  },
+  {
+    type: "secondItems",
+    items: [
+      {
+        id: 25,
+        title: "Join our next offline event!",
+        image: "/images/life-and-da360/Sales-2-min.jpg",
+      },
+    ],
+  },
+  {
+    type: "secondItems",
+    items: [
+      {
+        id: 26,
+        title: "Join our next offline event!",
+        image: "/images/life-and-da360/shrimoy02-min.jpg",
       },
     ],
   },
