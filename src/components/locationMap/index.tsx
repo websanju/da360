@@ -35,7 +35,7 @@ const LocationMap = () => {
             <div className={styles.mapWrapper}>
               <iframe
                 title="Digital Academy 360 Bangalore Location"
-                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d243.0589987031042!2d77.59902186347314!3d12.911322136634196!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae16256e8bd415%3A0x85acd49abea04935!2sDigital%20Academy%20360!5e0!3m2!1sen!2sin!4v1750935793883!5m2!1sen!2sin"
+                src="https://maps.app.goo.gl/wdhAeJvwPaVBA45D7"
                 width="100%"
                 height="450"
                 style={{ border: 0 }}

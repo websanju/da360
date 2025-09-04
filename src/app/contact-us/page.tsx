@@ -5,6 +5,7 @@ import CallToActionBanner from "@/components/callToActionBanner";
 import LocationCard from "@/components/locationCard";
 import TrustedByLearners from "@/components/trustedByLearners";
 import PaddingWrapper from "@/components/widgets/PaddingWrapper";
+import styles from "./style.module.scss";
 
 export const metadata = {
   title: "Digital Academy 360 Help & Support | Toll Free & Contact Info",
@@ -53,9 +54,23 @@ export default function ContactUS() {
           "Bangalore – 560 078",
         ]}
         phone="+91 7353 515 515"
-        imageSrc="/images/building.png"
+        imageSrc="/images/contactus-min.jpg"
         directionLink="https://maps.google.com/?q=Digital+Academy+360"
       />
+      <div className={styles.mapSection}>
+        <div className="container">
+          <div className="row">
+            <div className="col-lg-12">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4957.392669314062!2d77.59650277507545!3d12.91122928739861!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae14910b5208e9%3A0x30ccd3b0a7414ca9!2sDigital%20Academy%20360!5e1!3m2!1sen!2sin!4v1736928950748!5m2!1sen!2sin"
+                width="100%"
+                height="380"
+                loading="lazy"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
       <CallToActionBanner />
     </main>
   );
