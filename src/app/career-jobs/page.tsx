@@ -2,7 +2,7 @@
 import JoinTeam from "@components/joinTeam";
 import CurrentOpenings from "@components/currentOpenings";
 import WhyWorkWithUs from "@components/whyWorkWithUs";
-import TeamSpeaksSlider from "@components/teamSpeaksSlider";
+// import TeamSpeaksSlider from "@components/teamSpeaksSlider";
 import LifeAtDA360Gallery from "@components/lifeAtDA360Gallery";
 
 export const metadata = {
@@ -42,7 +42,7 @@ export default function Career() {
       <JoinTeam />
       <CurrentOpenings />
       <WhyWorkWithUs />
-      <TeamSpeaksSlider />
+      {/* <TeamSpeaksSlider /> */}
       <LifeAtDA360Gallery
         paddingBottom={{ desktop: "140px", mobile: "60px" }}
       />
