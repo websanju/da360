@@ -153,7 +153,7 @@ export const testimonials: Testimonial[] = [
         <p>I was an introvert and wanted to learn Digital Marketing, so I joined the 6 month course at Digital Academy 360. In the beginning, it was very difficult for me when the trainers asked us to present in class. I had no hope of completing the course because I used to get very nervous. But later, the trainers encouraged me a lot, and with their support, I improved. Eventually, I even won the Best Performer for Presentation award. After completing the course, I got placed as a Performance Marketer. It was a life changing experience for me.</p>
       `,
     rating: 5,
-    avatar: "/images/Ambitious/default-avatar.svg",
+    avatar: "/images/testimonial_profile/anjali.jpg",
     source: "Digital Marketing",
   },
    {
@@ -173,7 +173,7 @@ export const testimonials: Testimonial[] = [
         <p>Thank you, Digital Academy 360, for such a valuable learning experience.</p>
       `,
     rating: 5,
-    avatar: "/images/Ambitious/default-avatar.svg",
+    avatar: "/images/testimonial_profile/parimitha.jpg",
     source: "Digital Marketing",
   },{
     id: 20,
@@ -183,7 +183,7 @@ export const testimonials: Testimonial[] = [
       `<p>I joined Digital Academy 360 for a Digital Marketing course after doing a lot of research. During the course, I got the chance to work on freelancing projects with the help of the trainers. After completing the course, I gained more experience and became a freelancer. I am thankful to Digital Academy 360 for their support.</p>
       `,
     rating: 5,
-    avatar: "/images/Ambitious/default-avatar.svg",
+    avatar: "/images/testimonial_profile/darshan.jpg",
     source: "Digital Marketing",
   },
      {
@@ -195,7 +195,7 @@ export const testimonials: Testimonial[] = [
       <p>I also like to thank Sandhya ma'am and Ashwin sir as both was so helpful and kind throughout the admission process to internship & placements.</p>
       `,
     rating: 5,
-    avatar: "/images/Ambitious/default-avatar.svg",
+    avatar: "/images/testimonial_profile/athul.jpg",
        source: "Digital Marketing",
     brand: "Facebook"
   },
@@ -216,7 +216,7 @@ export const testimonials: Testimonial[] = [
       <p>Thank you Digital Academy 360 Jayanagar branch.</p>
       `,
     rating: 5,
-    avatar: "/images/Ambitious/default-avatar.svg",
+    avatar: "/images/testimonial_profile/sunil.jpg",
          source: "Digital Marketing",
     brand:"Facebook"
   },
