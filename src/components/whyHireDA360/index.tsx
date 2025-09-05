@@ -6,19 +6,19 @@ import SectionHeader from "@/components/widgets/sectionHeader";
 
 const features = [
   {
-    icon: "/images/whyhireDa360/palcement-success-rate.svg",
+    icon: "/images/whyhireDa360/Icon01.svg",
     title: "95% Placement Success Rate",
   },
   {
-    icon: "/images/whyhireDa360/trained-by-industry-experts.svg",
+    icon: "/images/whyhireDa360/Icon02.svg",
     title: "Trained By Industry Experts",
   },
   {
-    icon: "/images/whyhireDa360/real-time-projects.svg",
+    icon: "/images/whyhireDa360/Icon03.svg",
     title: "Real-Time Projects & Hands-On Experience",
   },
   {
-    icon: "/images/whyhireDa360/strong-soft-skills-presentation.svg",
+    icon: "/images/whyhireDa360/Icon04.svg",
     title: "Strong Soft Skills & Presentation Skills",
   },
 ];
