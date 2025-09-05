@@ -1,0 +1,29 @@
+.certificationSingle {
+  h2 {
+    font-weight: 700;
+    font-style: italic;
+    font-size: 48px;
+    line-height: 60px;
+    color: #000;
+    max-width: 705px;
+    margin-bottom: 24px;
+
+    span {
+      font-weight: 400;
+      font-size: 32px;
+      line-height: 60px;
+      color: #000;
+      min-width: max-content;
+    }
+  }
+}
+
+.certificatePreview {
+  min-height: 500px;
+  max-width: 840px;
+  margin-bottom: 80px;
+  img {
+    width: 100%;
+    border: solid 1px #000;
+  }
+}

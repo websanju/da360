@@ -5,11 +5,12 @@ import Curriculum from "@components/curriculum";
 // import AIDigital from "@components/aIDigital";
 import DigitalMarketingTools from "@components/digitalMarketingTools";
 import AiTools from "@components/aiTools";
-import Certifications from "@components/certifications";
+// import Certifications from "@components/certifications";
 import performanceMarketingAndMartech from "@/data/courses/performanceMarketingAndMartech";
 import { curriculumData } from "./curriculumData";
 import { toolCategories } from "./aiToolsData";
-import { certificationsData } from "./certificationsData";
+import CertificationSingle from "@/components/certificationSingle";
+// import { certificationsData } from "./certificationsData";
 interface HighlightsProps {
   section?: string;
 }
@@ -40,11 +41,16 @@ const Highlights = ({ section }: HighlightsProps) => {
                 description="Use AI to write viral LinkedIn posts, design branded carousels, optimize video hooks, and forecast audience engagement — all while saving hours every week."
                 categories={toolCategories}
               />
-              <Certifications
+              <CertificationSingle
+                title="Get Industry-Recognised Certifications"
+                subtitle="(Government of India)"
+                imageSrc="/images/certificates/short-courses/performance-marketing-martech.png"
+              />
+              {/* <Certifications
                 heading="Get Industry-Recognised Certifications"
                 subheading="(Government of India)"
                 certifications={certificationsData}
-              />
+              /> */}
             </div>
           </div>
         </div>

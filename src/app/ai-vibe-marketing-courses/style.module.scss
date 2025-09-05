@@ -8,6 +8,28 @@
   }
 }
 
+.certificationSingle {
+  h2 {
+    font-weight: 700;
+    font-style: italic;
+    font-size: 48px;
+    line-height: 60px;
+    letter-spacing: 0%;
+    color: rgb(0, 0, 0);
+    max-width: 705px;
+    margin-bottom: 24px;
+
+    span {
+      font-weight: 400;
+      font-size: 32px;
+      line-height: 60px;
+      letter-spacing: 0%;
+      color: rgb(0, 0, 0);
+      min-width: max-content;
+    }
+  }
+}
+
 @media (width <=991px) {
   .highlight {
     margin-top: 0px;
