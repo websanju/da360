@@ -7,7 +7,7 @@ type PersonCardProps = {
   name: string;
   image: string;
   designation: string;
-  profileLink: string;
+  profileLink?: string;
 };
 
 const PersonCard: React.FC<PersonCardProps> = ({
@@ -26,19 +26,22 @@ const PersonCard: React.FC<PersonCardProps> = ({
           <span>{name}</span>
           <p>{designation}</p>
         </div>
-        <Link
-          href={profileLink}
-          className={styles.button}
-          target="_blank"
-          aria-label={`View ${name}'s LinkedIn`}
-        >
-          <Image
-            src="images/icons/devicon_linkedin.svg"
-            alt={name}
-            width={32}
-            height={32}
-          />
-        </Link>
+
+        {profileLink && (
+          <Link
+            href={profileLink}
+            className={styles.button}
+            target="_blank"
+            aria-label={`View ${name}'s LinkedIn`}
+          >
+            <Image
+              src="/images/icons/devicon_linkedin.svg"
+              alt={`${name} LinkedIn`}
+              width={32}
+              height={32}
+            />
+          </Link>
+        )}
       </div>
     </div>
   );

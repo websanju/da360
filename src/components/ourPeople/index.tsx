@@ -9,31 +9,30 @@ const people = [
     name: "Abhishek",
     designation: "Board of directors",
     image: "/images/staff/abhishek.png",
-    profileLink: "#",
+    profileLink: "",
   },
   {
     name: "Himanshu",
     designation: "Board of directors",
     image: "/images/staff/himanshu.png",
-    profileLink: "#",
+    profileLink: "",
   },
   {
     name: "Ashish",
     designation: "Board of directors",
     image: "/images/staff/ashish.png",
-    profileLink: "#",
+    profileLink: "",
   },
   {
     name: "Amit Singh",
     designation: "coo",
     image: "/images/staff/amit-singh.png",
-    profileLink: "#",
+    profileLink: "",
   },
   {
     name: "Deepika R",
     designation: "Director - Sales",
     image: "/images/staff/deepika-r.png",
-    profileLink: "#",
   },
   {
     name: "Lalit Agarwalla",
@@ -48,12 +47,12 @@ const people = [
     image: "/images/staff/mayank-swaroop.png",
     profileLink: "https://www.linkedin.com/in/askmayanks/",
   },
-  {
-    name: "Darshan S",
-    designation: "Senior Marketing Manager",
-    image: "/images/staff/darshan-s.png",
-    profileLink: "https://www.linkedin.com/in/-darshan-bafna-ppc-manager/",
-  },
+  // {
+  //   name: "Darshan S",
+  //   designation: "Senior Marketing Manager",
+  //   image: "/images/staff/darshan-s.png",
+  //   profileLink: "https://www.linkedin.com/in/-darshan-bafna-ppc-manager/",
+  // },
   {
     name: "Ashwin Satheesh",
     designation: "Manager - Student Success",
@@ -158,13 +157,13 @@ const people = [
     image: "/images/staff/jyotsna-rani.png",
     profileLink: "",
   },
-  {
-    name: "Bhavyansh Jain",
-    designation: "Executive Learning Advisor",
-    image: "/images/staff/bhavyansh.png",
-    profileLink:
-      "https://www.linkedin.com/in/bhavyansh-jain-8aa154250?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
-  },
+  // {
+  //   name: "Bhavyansh Jain",
+  //   designation: "Executive Learning Advisor",
+  //   image: "/images/staff/bhavyansh.png",
+  //   profileLink:
+  //     "https://www.linkedin.com/in/bhavyansh-jain-8aa154250?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
+  // },
   {
     name: "Harshita Agarwal",
     designation: "Executive Learning Advisor",
@@ -178,39 +177,39 @@ const people = [
     image: "/images/staff/vishwajeet-b.png",
     profileLink: "https://www.linkedin.com/in/vishwajeet-biradar-3b812624b",
   },
-  {
-    name: "Aishwarya Raj",
-    designation: "Senior Learning Advisor",
-    image: "/images/staff/aishwarya-raj.png",
-    profileLink: "",
-  },
-  {
-    name: "Shravya K M",
-    designation: "Executive Learning Advisor",
-    image: "/images/staff/shravya-km.png",
-    profileLink:
-      "https://www.linkedin.com/in/shravya-k-m-709189247?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
-  },
-  {
-    name: "Pranav PB",
-    designation: "Executive Learning Advisor",
-    image: "/images/staff/pranav-pb.png",
-    profileLink:
-      "https://www.linkedin.com/in/pranav-pb-521a30236?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
-  },
+  // {
+  //   name: "Aishwarya Raj",
+  //   designation: "Senior Learning Advisor",
+  //   image: "/images/staff/aishwarya-raj.png",
+  //   profileLink: "",
+  // },
+  // {
+  //   name: "Shravya K M",
+  //   designation: "Executive Learning Advisor",
+  //   image: "/images/staff/shravya-km.png",
+  //   profileLink:
+  //     "https://www.linkedin.com/in/shravya-k-m-709189247?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
+  // },
+  // {
+  //   name: "Pranav PB",
+  //   designation: "Executive Learning Advisor",
+  //   image: "/images/staff/pranav-pb.png",
+  //   profileLink:
+  //     "https://www.linkedin.com/in/pranav-pb-521a30236?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
+  // },
   {
     name: "Fahad P A",
     designation: "Senior Learning Advisor",
     image: "/images/staff/fahad-p-a.png",
     profileLink: "https://www.linkedin.com/in/hvr26/",
   },
-  {
-    name: "Ameena zaffar",
-    designation: "Inquiry Management Executive",
-    image: "/images/staff/ameena-zaffar.png",
-    profileLink:
-      "https://www.linkedin.com/in/ameena-zaffar-05a68b213?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-  },
+  // {
+  //   name: "Ameena zaffar",
+  //   designation: "Inquiry Management Executive",
+  //   image: "/images/staff/ameena-zaffar.png",
+  //   profileLink:
+  //     "https://www.linkedin.com/in/ameena-zaffar-05a68b213?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+  // },
   {
     name: "Harshita Taranalli",
     designation: "Account Manager",
