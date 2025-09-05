@@ -123,7 +123,7 @@ const ProgramsShowcase: React.FC = () => {
             </div>
           </div>
 
-          <div className="card-wrapper">
+          {/* <div className="card-wrapper">
             <div className="card4">
               <WidgetCard
                 title="Leadership in Social Content Creator & Video Production"
@@ -153,7 +153,7 @@ const ProgramsShowcase: React.FC = () => {
                 image="/images/course-list/pgcp-in-digital-marketing.jpg"
               />
             </div>
-          </div>
+          </div> */}
 
           <div className="card-wrapper">
             <div className="card2">
