@@ -4,20 +4,44 @@ import SectionHeader from "@components/widgets/sectionHeader";
 
 const programs = [
   {
-    title: "Leadership Course referral Program",
+    title: "Leadership in Digital Marketing, AI & Entrepreneurship",
     duration: "",
     mode: "",
-    bonus: "15,000",
-    imageDesktop: "/images/skill-1.png",
-    imageMobile: "/images/skill-m-1.png",
+    bonus: "20,000",
+    imageDesktop: "/images/course-list/leadeship-course-min.png",
+    imageMobile: "/images/course-list/leadeship-course-min.png",
   },
   {
-    title: "PGCP In Digital Marketing & ECommerce",
+    title: "PGCP in Digital Marketing, E‑Comm & AI",
     duration: "",
     mode: "",
-    bonus: "7,500",
-    imageDesktop: "/images/skill-2.png",
-    imageMobile: "/images/skill-m-2.png",
+    bonus: "10,000",
+    imageDesktop: "/images/course-list/PGCP-in-digital-marketing-e‑comm-aI.jpg",
+    imageMobile: "/images/course-list/PGCP-in-digital-marketing-e‑comm-aI.jpg",
+  },
+  {
+    title: "AI Vibe Marketing",
+    duration: "",
+    mode: "",
+    bonus: "5,000",
+    imageDesktop: "/images/course-list/skill-diploma-in-digital-marketing.png",
+    imageMobile: "/images/course-list/skill-diploma-in-digital-marketing.png",
+  },
+  {
+    title: "MBA in Digital Marketing & AI",
+    duration: "",
+    mode: "",
+    bonus: " 75,000",
+    imageDesktop: "/images/course-list/skill-diploma-in-digital-marketing.png",
+    imageMobile: "/images/course-list/skill-diploma-in-digital-marketing.png",
+  },
+  {
+    title: "BBA in Digital Marketing & AI",
+    duration: "",
+    mode: "",
+    bonus: "50,000",
+    imageDesktop: "/images/course-list/skill-diploma-in-digital-marketing.png",
+    imageMobile: "/images/course-list/skill-diploma-in-digital-marketing.png",
   },
 ];
 
