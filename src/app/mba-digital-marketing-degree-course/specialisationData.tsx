@@ -1,4 +1,7 @@
 // import Live from "@/components/Ui/svg/live";
+import Assesment from "@/components/Ui/svg/assesment";
+import Assignment from "@/components/Ui/svg/assignment";
+import CaseStudy from "@/components/Ui/svg/caseStudy";
 import Live from "@/components/Ui/svg/live";
 import type { SpecialisationProps } from "@/types/specialisation";
 
@@ -12,10 +15,10 @@ export const specialisationData: SpecialisationProps = {
       number: 1,
       title: "AI-Enhanced Performance Marketing ",
       badges: [
-        { icon: <Live />, label: "360 Periods" },
-        { icon: <Live />, label: "3 Assignments" },
-        { icon: <Live />, label: "5 Case Studies" },
-        { icon: <Live />, label: "1 Assessment" },
+        { icon: <Live />, label: "10 Live Sessions" },
+        { icon: <Assignment />, label: "2 Assignments" },
+        { icon: <CaseStudy />, label: "1 Case Study" },
+        { icon: <Assesment />, label: "2 Assessments" },
       ],
       topics: [
         "Fundamentals of Performance Marketing & AI-driven KPIs",
@@ -32,10 +35,10 @@ export const specialisationData: SpecialisationProps = {
       number: 2,
       title: "Entrepreneurship & AI-Powered Agency Setup ",
       badges: [
-        { icon: <Live />, label: "360 Periods" },
-        { icon: <Live />, label: "3 Assignments" },
-        { icon: <Live />, label: "5 Case Studies" },
-        { icon: <Live />, label: "1 Assessment" },
+        { icon: <Live />, label: "10 Live Sessions" },
+        { icon: <Assignment />, label: "2 Assignments" },
+        { icon: <CaseStudy />, label: "1 Case Study" },
+        { icon: <Assesment />, label: "2 Assessments" },
       ],
       topics: [
         "Foundations of Digital Agency Models in the AI Era",
@@ -52,10 +55,10 @@ export const specialisationData: SpecialisationProps = {
       number: 3,
       title: "AI-Enhanced Influencer Marketing ",
       badges: [
-        { icon: <Live />, label: "360 Periods" },
-        { icon: <Live />, label: "3 Assignments" },
-        { icon: <Live />, label: "5 Case Studies" },
-        { icon: <Live />, label: "1 Assessment" },
+        { icon: <Live />, label: "10 Live Sessions" },
+        { icon: <Assignment />, label: "2 Assignments" },
+        { icon: <CaseStudy />, label: "1 Case Study" },
+        { icon: <Assesment />, label: "2 Assessments" },
       ],
       topics: [
         "Evolution of Influencer Economy in the AI Age",
@@ -72,10 +75,10 @@ export const specialisationData: SpecialisationProps = {
       number: 4,
       title: "Meme Marketing + AI Photography & AI Video Engineering ",
       badges: [
-        { icon: <Live />, label: "360 Periods" },
-        { icon: <Live />, label: "3 Assignments" },
-        { icon: <Live />, label: "5 Case Studies" },
-        { icon: <Live />, label: "1 Assessment" },
+        { icon: <Live />, label: "10 Live Sessions" },
+        { icon: <Assignment />, label: "2 Assignments" },
+        { icon: <CaseStudy />, label: "1 Case Study" },
+        { icon: <Assesment />, label: "2 Assessments" },
       ],
       topics: [
         "Psychology of Virality: How Memes Spread in the AI Era",
@@ -92,10 +95,10 @@ export const specialisationData: SpecialisationProps = {
       number: 5,
       title: "AI-Powered Sales & Marketing Automation ",
       badges: [
-        { icon: <Live />, label: "360 Periods" },
-        { icon: <Live />, label: "3 Assignments" },
-        { icon: <Live />, label: "5 Case Studies" },
-        { icon: <Live />, label: "1 Assessment" },
+        { icon: <Live />, label: "10 Live Sessions" },
+        { icon: <Assignment />, label: "2 Assignments" },
+        { icon: <CaseStudy />, label: "1 Case Study" },
+        { icon: <Assesment />, label: "2 Assessments" },
       ],
       topics: [
         "AI-Powered CRM & Sales Automation (HubSpot AI, Salesforce Einstein)",
@@ -112,10 +115,10 @@ export const specialisationData: SpecialisationProps = {
       number: 6,
       title: " AI-Enabled E-commerce & Branding ",
       badges: [
-        { icon: <Live />, label: "360 Periods" },
-        { icon: <Live />, label: "3 Assignments" },
-        { icon: <Live />, label: "5 Case Studies" },
-        { icon: <Live />, label: "1 Assessment" },
+        { icon: <Live />, label: "10 Live Sessions" },
+        { icon: <Assignment />, label: "2 Assignments" },
+        { icon: <CaseStudy />, label: "1 Case Study" },
+        { icon: <Assesment />, label: "2 Assessments" },
       ],
       topics: [
         "AI in E-commerce Customer Journey Mapping",

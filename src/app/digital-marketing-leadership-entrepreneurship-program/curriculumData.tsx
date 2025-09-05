@@ -1,3 +1,6 @@
+import Assesment from "@/components/Ui/svg/assesment";
+import Assignment from "@/components/Ui/svg/assignment";
+import CaseStudy from "@/components/Ui/svg/caseStudy";
 import Live from "@/components/Ui/svg/live";
 import type { CurriculumProps } from "@/types/curriculum";
 
@@ -21,10 +24,10 @@ export const curriculumData: CurriculumProps = {
       number: 1,
       title: "Digital Marketing 360°: From Basics to Mastery",
       badges: [
-        { icon: <Live />, label: "8 Live Sessions" },
-        { icon: <Live />, label: "3 Assignments" },
-        { icon: <Live />, label: "2 Case Studies" },
-        { icon: <Live />, label: "1 Assessment" },
+        { icon: <Live />, label: "10 Live Sessions" },
+        { icon: <Assignment />, label: "2 Assignments" },
+        { icon: <CaseStudy />, label: "1 Case Study" },
+        { icon: <Assesment />, label: "2 Assessments" },
       ],
       topics: [
         "Marketing & Principles of Marketing",
@@ -45,10 +48,10 @@ export const curriculumData: CurriculumProps = {
       number: 2,
       title: "Digital Entrepreneurship & Footprint",
       badges: [
-        { icon: <Live />, label: "8 Live Sessions" },
-        { icon: <Live />, label: "3 Assignments" },
-        { icon: <Live />, label: "2 Case Studies" },
-        { icon: <Live />, label: "1 Assessment" },
+        { icon: <Live />, label: "10 Live Sessions" },
+        { icon: <Assignment />, label: "2 Assignments" },
+        { icon: <CaseStudy />, label: "1 Case Study" },
+        { icon: <Assesment />, label: "2 Assessments" },
       ],
       topics: [
         "WordPress Website Designing - Personal Website Building",
@@ -74,10 +77,10 @@ export const curriculumData: CurriculumProps = {
       number: 3,
       title: "Next-Gen SEO & AI-Driven Content Strategy",
       badges: [
-        { icon: <Live />, label: "8 Live Sessions" },
-        { icon: <Live />, label: "3 Assignments" },
-        { icon: <Live />, label: "2 Case Studies" },
-        { icon: <Live />, label: "1 Assessment" },
+        { icon: <Live />, label: "10 Live Sessions" },
+        { icon: <Assignment />, label: "2 Assignments" },
+        { icon: <CaseStudy />, label: "1 Case Study" },
+        { icon: <Assesment />, label: "2 Assessments" },
       ],
       topics: [
         "On-Page SEO",
@@ -113,10 +116,10 @@ export const curriculumData: CurriculumProps = {
       number: 4,
       title: "Social Media Intelligence & Brand Impact",
       badges: [
-        { icon: <Live />, label: "8 Live Sessions" },
-        { icon: <Live />, label: "3 Assignments" },
-        { icon: <Live />, label: "2 Case Studies" },
-        { icon: <Live />, label: "1 Assessment" },
+        { icon: <Live />, label: "10 Live Sessions" },
+        { icon: <Assignment />, label: "2 Assignments" },
+        { icon: <CaseStudy />, label: "1 Case Study" },
+        { icon: <Assesment />, label: "2 Assessments" },
       ],
       topics: [
         "Social Media Marketing & Personal Branding",
@@ -138,10 +141,10 @@ export const curriculumData: CurriculumProps = {
       number: 5,
       title: "Strategic Influence & Social Virality",
       badges: [
-        { icon: <Live />, label: "8 Live Sessions" },
-        { icon: <Live />, label: "3 Assignments" },
-        { icon: <Live />, label: "2 Case Studies" },
-        { icon: <Live />, label: "1 Assessment" },
+        { icon: <Live />, label: "10 Live Sessions" },
+        { icon: <Assignment />, label: "2 Assignments" },
+        { icon: <CaseStudy />, label: "1 Case Study" },
+        { icon: <Assesment />, label: "2 Assessments" },
       ],
       topics: [
         "Understanding Meme Culture",
@@ -160,10 +163,10 @@ export const curriculumData: CurriculumProps = {
       number: 6,
       title: "Advanced PPC & High-Performance Ad Strategy",
       badges: [
-        { icon: <Live />, label: "8 Live Sessions" },
-        { icon: <Live />, label: "3 Assignments" },
-        { icon: <Live />, label: "2 Case Studies" },
-        { icon: <Live />, label: "1 Assessment" },
+        { icon: <Live />, label: "10 Live Sessions" },
+        { icon: <Assignment />, label: "2 Assignments" },
+        { icon: <CaseStudy />, label: "1 Case Study" },
+        { icon: <Assesment />, label: "2 Assessments" },
       ],
       topics: [
         "Google Search Ads",
@@ -179,10 +182,10 @@ export const curriculumData: CurriculumProps = {
       number: 7,
       title: "ROI-Driven Growth & Performance Ad Optimization",
       badges: [
-        { icon: <Live />, label: "8 Live Sessions" },
-        { icon: <Live />, label: "3 Assignments" },
-        { icon: <Live />, label: "2 Case Studies" },
-        { icon: <Live />, label: "1 Assessment" },
+        { icon: <Live />, label: "10 Live Sessions" },
+        { icon: <Assignment />, label: "2 Assignments" },
+        { icon: <CaseStudy />, label: "1 Case Study" },
+        { icon: <Assesment />, label: "2 Assessments" },
       ],
       topics: [
         "Conversion Rate Optimization",
@@ -203,10 +206,10 @@ export const curriculumData: CurriculumProps = {
       number: 8,
       title: "Media Influence & Automated Ad Buying",
       badges: [
-        { icon: <Live />, label: "8 Live Sessions" },
-        { icon: <Live />, label: "3 Assignments" },
-        { icon: <Live />, label: "2 Case Studies" },
-        { icon: <Live />, label: "1 Assessment" },
+        { icon: <Live />, label: "10 Live Sessions" },
+        { icon: <Assignment />, label: "2 Assignments" },
+        { icon: <CaseStudy />, label: "1 Case Study" },
+        { icon: <Assesment />, label: "2 Assessments" },
       ],
       topics: [
         "Media Planning Fundamentals",
@@ -226,10 +229,10 @@ export const curriculumData: CurriculumProps = {
       number: 9,
       title: "Advanced Digital Analytics & Marketing Data Science",
       badges: [
-        { icon: <Live />, label: "8 Live Sessions" },
-        { icon: <Live />, label: "3 Assignments" },
-        { icon: <Live />, label: "2 Case Studies" },
-        { icon: <Live />, label: "1 Assessment" },
+        { icon: <Live />, label: "10 Live Sessions" },
+        { icon: <Assignment />, label: "2 Assignments" },
+        { icon: <CaseStudy />, label: "1 Case Study" },
+        { icon: <Assesment />, label: "2 Assessments" },
       ],
       topics: [
         "Understanding Google Analytics",
@@ -248,10 +251,10 @@ export const curriculumData: CurriculumProps = {
       number: 10,
       title: "Strategic Brand Positioning & Digital PR Mastery",
       badges: [
-        { icon: <Live />, label: "8 Live Sessions" },
-        { icon: <Live />, label: "3 Assignments" },
-        { icon: <Live />, label: "2 Case Studies" },
-        { icon: <Live />, label: "1 Assessment" },
+        { icon: <Live />, label: "10 Live Sessions" },
+        { icon: <Assignment />, label: "2 Assignments" },
+        { icon: <CaseStudy />, label: "1 Case Study" },
+        { icon: <Assesment />, label: "2 Assessments" },
       ],
       topics: [
         "Brand Identity and Positioning",
@@ -270,10 +273,10 @@ export const curriculumData: CurriculumProps = {
       number: 11,
       title: "Business Growth & Digital Marketing Agency Mastery",
       badges: [
-        { icon: <Live />, label: "8 Live Sessions" },
-        { icon: <Live />, label: "3 Assignments" },
-        { icon: <Live />, label: "2 Case Studies" },
-        { icon: <Live />, label: "1 Assessment" },
+        { icon: <Live />, label: "10 Live Sessions" },
+        { icon: <Assignment />, label: "2 Assignments" },
+        { icon: <CaseStudy />, label: "1 Case Study" },
+        { icon: <Assesment />, label: "2 Assessments" },
       ],
       topics: [
         "Freelancing Basics and Platforms",
@@ -292,10 +295,10 @@ export const curriculumData: CurriculumProps = {
       number: 12,
       title: "Digital Strategy & High-Impact Marketing Presentations",
       badges: [
-        { icon: <Live />, label: "8 Live Sessions" },
-        { icon: <Live />, label: "3 Assignments" },
-        { icon: <Live />, label: "2 Case Studies" },
-        { icon: <Live />, label: "1 Assessment" },
+        { icon: <Live />, label: "10 Live Sessions" },
+        { icon: <Assignment />, label: "2 Assignments" },
+        { icon: <CaseStudy />, label: "1 Case Study" },
+        { icon: <Assesment />, label: "2 Assessments" },
       ],
       topics: [
         "Understanding Client Needs and Goals",
@@ -313,10 +316,10 @@ export const curriculumData: CurriculumProps = {
       number: 13,
       title: "AI-Powered Ecommerce & Data-Driven Sales",
       badges: [
-        { icon: <Live />, label: "8 Live Sessions" },
-        { icon: <Live />, label: "3 Assignments" },
-        { icon: <Live />, label: "2 Case Studies" },
-        { icon: <Live />, label: "1 Assessment" },
+        { icon: <Live />, label: "10 Live Sessions" },
+        { icon: <Assignment />, label: "2 Assignments" },
+        { icon: <CaseStudy />, label: "1 Case Study" },
+        { icon: <Assesment />, label: "2 Assessments" },
       ],
       topics: [
         "Introduction to E-Commerce",
@@ -343,10 +346,10 @@ export const curriculumData: CurriculumProps = {
       number: 14,
       title: "Martech, Automation & Data-Driven Marketing Execution",
       badges: [
-        { icon: <Live />, label: "8 Live Sessions" },
-        { icon: <Live />, label: "3 Assignments" },
-        { icon: <Live />, label: "2 Case Studies" },
-        { icon: <Live />, label: "1 Assessment" },
+        { icon: <Live />, label: "10 Live Sessions" },
+        { icon: <Assignment />, label: "2 Assignments" },
+        { icon: <CaseStudy />, label: "1 Case Study" },
+        { icon: <Assesment />, label: "2 Assessments" },
       ],
       topics: [
         "What is Project & Project Management?",
@@ -375,10 +378,10 @@ export const curriculumData: CurriculumProps = {
       number: 15,
       title: "Digital Aesthetics & Video Engineering",
       badges: [
-        { icon: <Live />, label: "8 Live Sessions" },
-        { icon: <Live />, label: "3 Assignments" },
-        { icon: <Live />, label: "2 Case Studies" },
-        { icon: <Live />, label: "1 Assessment" },
+        { icon: <Live />, label: "10 Live Sessions" },
+        { icon: <Assignment />, label: "2 Assignments" },
+        { icon: <CaseStudy />, label: "1 Case Study" },
+        { icon: <Assesment />, label: "2 Assessments" },
       ],
       topics: [
         "Branding and Identity Design",

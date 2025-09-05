@@ -1,3 +1,6 @@
+import Assesment from "@/components/Ui/svg/assesment";
+import Assignment from "@/components/Ui/svg/assignment";
+import CaseStudy from "@/components/Ui/svg/caseStudy";
 import Live from "@/components/Ui/svg/live";
 import type { CurriculumProps } from "@/types/curriculum";
 
@@ -22,7 +25,9 @@ export const curriculumData: CurriculumProps = {
       title: "Digital Marketing Introduction & Fundamentals",
       badges: [
         { icon: <Live />, label: "10 Live Sessions" },
-        { icon: <Live />, label: "3 Assignments" },
+        { icon: <Assignment />, label: "2 Assignments" },
+        { icon: <CaseStudy />, label: "1 Case Study" },
+        { icon: <Assesment />, label: "2 Assessments" },
       ],
       topics: [
         "Marketing & Principles of Marketing",
@@ -42,7 +47,9 @@ export const curriculumData: CurriculumProps = {
       title: "WordPress Website Designing – Personal & Business",
       badges: [
         { icon: <Live />, label: "10 Live Sessions" },
-        { icon: <Live />, label: "3 Assignments" },
+        { icon: <Assignment />, label: "2 Assignments" },
+        { icon: <CaseStudy />, label: "1 Case Study" },
+        { icon: <Assesment />, label: "2 Assessments" },
       ],
       topics: [
         "Domain & Hosting Purchase & Setup",
@@ -61,8 +68,10 @@ export const curriculumData: CurriculumProps = {
       number: 3,
       title: "SEO & Content Marketing",
       badges: [
-        { icon: <Live />, label: "9 Live Sessions" },
-        { icon: <Live />, label: "3 Assignments" },
+        { icon: <Live />, label: "10 Live Sessions" },
+        { icon: <Assignment />, label: "2 Assignments" },
+        { icon: <CaseStudy />, label: "1 Case Study" },
+        { icon: <Assesment />, label: "2 Assessments" },
       ],
       topics: [
         "Search Engine Optimization (SEO) Fundamentals",
@@ -80,8 +89,10 @@ export const curriculumData: CurriculumProps = {
       number: 4,
       title: "Social Media Marketing & Personal Branding",
       badges: [
-        { icon: <Live />, label: "9 Live Sessions" },
-        { icon: <Live />, label: "3 Assignments" },
+        { icon: <Live />, label: "10 Live Sessions" },
+        { icon: <Assignment />, label: "2 Assignments" },
+        { icon: <CaseStudy />, label: "1 Case Study" },
+        { icon: <Assesment />, label: "2 Assessments" },
       ],
       topics: [
         "Social Business Profile Creation & Optimization",
@@ -99,8 +110,10 @@ export const curriculumData: CurriculumProps = {
       number: 5,
       title: "Advanced Paid Ads & Analytics",
       badges: [
-        { icon: <Live />, label: "8 Live Sessions" },
-        { icon: <Live />, label: "2 Assignments" },
+        { icon: <Live />, label: "10 Live Sessions" },
+        { icon: <Assignment />, label: "2 Assignments" },
+        { icon: <CaseStudy />, label: "1 Case Study" },
+        { icon: <Assesment />, label: "2 Assessments" },
       ],
       topics: [
         "Google Ads Campaign Creation & Optimization",
@@ -118,8 +131,10 @@ export const curriculumData: CurriculumProps = {
       number: 6,
       title: "Email & Automation Marketing",
       badges: [
-        { icon: <Live />, label: "7 Live Sessions" },
-        { icon: <Live />, label: "2 Assignments" },
+        { icon: <Live />, label: "10 Live Sessions" },
+        { icon: <Assignment />, label: "2 Assignments" },
+        { icon: <CaseStudy />, label: "1 Case Study" },
+        { icon: <Assesment />, label: "2 Assessments" },
       ],
       topics: [
         "Email Marketing Fundamentals",
@@ -136,8 +151,10 @@ export const curriculumData: CurriculumProps = {
       number: 7,
       title: "E-commerce & Affiliate Marketing",
       badges: [
-        { icon: <Live />, label: "7 Live Sessions" },
-        { icon: <Live />, label: "2 Assignments" },
+        { icon: <Live />, label: "10 Live Sessions" },
+        { icon: <Assignment />, label: "2 Assignments" },
+        { icon: <CaseStudy />, label: "1 Case Study" },
+        { icon: <Assesment />, label: "2 Assessments" },
       ],
       topics: [
         "Setting up an E-commerce Store (Shopify/WooCommerce)",
@@ -154,8 +171,10 @@ export const curriculumData: CurriculumProps = {
       number: 8,
       title: "Capstone Project & Career Preparation",
       badges: [
-        { icon: <Live />, label: "6 Live Sessions" },
-        { icon: <Live />, label: "Final Project" },
+        { icon: <Live />, label: "10 Live Sessions" },
+        { icon: <Assignment />, label: "2 Assignments" },
+        { icon: <CaseStudy />, label: "1 Case Study" },
+        { icon: <Assesment />, label: "2 Assessments" },
       ],
       topics: [
         "Capstone Project Briefing & Guidelines",

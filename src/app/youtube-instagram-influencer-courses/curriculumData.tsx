@@ -1,3 +1,6 @@
+import Assesment from "@/components/Ui/svg/assesment";
+import Assignment from "@/components/Ui/svg/assignment";
+import CaseStudy from "@/components/Ui/svg/caseStudy";
 import Live from "@/components/Ui/svg/live";
 import type { CurriculumProps } from "@/types/curriculum";
 
@@ -26,9 +29,9 @@ export const curriculumData: CurriculumProps = {
       title: "Foundation of Influencer Marketing",
       badges: [
         { icon: <Live />, label: "10 Live Sessions" },
-        { icon: <Live />, label: "2 Assignments" },
-        { icon: <Live />, label: "1 Case Study" },
-        { icon: <Live />, label: "2 Assessments" },
+        { icon: <Assignment />, label: "2 Assignments" },
+        { icon: <CaseStudy />, label: "1 Case Study" },
+        { icon: <Assesment />, label: "2 Assessments" },
       ],
       topics: [
         "Introduction to Influencer Ecosystem (Instagram & YouTube)",
@@ -46,10 +49,10 @@ export const curriculumData: CurriculumProps = {
       number: 2,
       title: "Instagram Mastery & Personal Branding",
       badges: [
-        { icon: <Live />, label: "8 Live Sessions" },
-        { icon: <Live />, label: "3 Assignments" },
-        { icon: <Live />, label: "2 Case Studies" },
-        { icon: <Live />, label: "1 Assessment" },
+        { icon: <Live />, label: "10 Live Sessions" },
+        { icon: <Assignment />, label: "2 Assignments" },
+        { icon: <CaseStudy />, label: "1 Case Study" },
+        { icon: <Assesment />, label: "2 Assessments" },
       ],
       topics: [
         "Creating a Business/Creator Account on Instagram",
@@ -67,10 +70,10 @@ export const curriculumData: CurriculumProps = {
       number: 3,
       title: "YouTube Channel Creation & Optimization",
       badges: [
-        { icon: <Live />, label: "8 Live Sessions" },
-        { icon: <Live />, label: "3 Assignments" },
-        { icon: <Live />, label: "2 Case Studies" },
-        { icon: <Live />, label: "1 Assessment" },
+        { icon: <Live />, label: "10 Live Sessions" },
+        { icon: <Assignment />, label: "2 Assignments" },
+        { icon: <CaseStudy />, label: "1 Case Study" },
+        { icon: <Assesment />, label: "2 Assessments" },
       ],
       topics: [
         "Creating & Verifying a YouTube Channel",
@@ -88,10 +91,10 @@ export const curriculumData: CurriculumProps = {
       number: 4,
       title: "Content Creation Tools & Video Production",
       badges: [
-        { icon: <Live />, label: "8 Live Sessions" },
-        { icon: <Live />, label: "3 Assignments" },
-        { icon: <Live />, label: "2 Case Studies" },
-        { icon: <Live />, label: "1 Assessment" },
+        { icon: <Live />, label: "10 Live Sessions" },
+        { icon: <Assignment />, label: "2 Assignments" },
+        { icon: <CaseStudy />, label: "1 Case Study" },
+        { icon: <Assesment />, label: "2 Assessments" },
       ],
       topics: [
         "Using Canva AI, CapCut, VN & InShot for Video Editing",
@@ -109,10 +112,10 @@ export const curriculumData: CurriculumProps = {
       number: 5,
       title: "Influencer Campaign Strategy & Collaboration",
       badges: [
-        { icon: <Live />, label: "8 Live Sessions" },
-        { icon: <Live />, label: "3 Assignments" },
-        { icon: <Live />, label: "2 Case Studies" },
-        { icon: <Live />, label: "1 Assessment" },
+        { icon: <Live />, label: "10 Live Sessions" },
+        { icon: <Assignment />, label: "2 Assignments" },
+        { icon: <CaseStudy />, label: "1 Case Study" },
+        { icon: <Assesment />, label: "2 Assessments" },
       ],
       topics: [
         "How to Attract Brand Collaborations",
@@ -130,10 +133,10 @@ export const curriculumData: CurriculumProps = {
       number: 6,
       title: "Growth Hacking & Platform Algorithms",
       badges: [
-        { icon: <Live />, label: "8 Live Sessions" },
-        { icon: <Live />, label: "3 Assignments" },
-        { icon: <Live />, label: "2 Case Studies" },
-        { icon: <Live />, label: "1 Assessment" },
+        { icon: <Live />, label: "10 Live Sessions" },
+        { icon: <Assignment />, label: "2 Assignments" },
+        { icon: <CaseStudy />, label: "1 Case Study" },
+        { icon: <Assesment />, label: "2 Assessments" },
       ],
       topics: [
         "Understanding Instagram & YouTube Algorithms",
@@ -151,10 +154,10 @@ export const curriculumData: CurriculumProps = {
       number: 7,
       title: "Monetization & Revenue Strategies",
       badges: [
-        { icon: <Live />, label: "8 Live Sessions" },
-        { icon: <Live />, label: "3 Assignments" },
-        { icon: <Live />, label: "2 Case Studies" },
-        { icon: <Live />, label: "1 Assessment" },
+        { icon: <Live />, label: "10 Live Sessions" },
+        { icon: <Assignment />, label: "2 Assignments" },
+        { icon: <CaseStudy />, label: "1 Case Study" },
+        { icon: <Assesment />, label: "2 Assessments" },
       ],
       topics: [
         "YouTube Partner Program: Ads, Super Chats, Subscriptions",
@@ -172,10 +175,10 @@ export const curriculumData: CurriculumProps = {
       number: 8,
       title: "Personal Branding, Soft Skills & On-Camera Presence",
       badges: [
-        { icon: <Live />, label: "8 Live Sessions" },
-        { icon: <Live />, label: "3 Assignments" },
-        { icon: <Live />, label: "2 Case Studies" },
-        { icon: <Live />, label: "1 Assessment" },
+        { icon: <Live />, label: "10 Live Sessions" },
+        { icon: <Assignment />, label: "2 Assignments" },
+        { icon: <CaseStudy />, label: "1 Case Study" },
+        { icon: <Assesment />, label: "2 Assessments" },
       ],
       topics: [
         "Enhancing On - Camera Confidence",

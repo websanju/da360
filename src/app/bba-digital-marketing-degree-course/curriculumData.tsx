@@ -1,3 +1,6 @@
+import Assesment from "@/components/Ui/svg/assesment";
+import Assignment from "@/components/Ui/svg/assignment";
+import CaseStudy from "@/components/Ui/svg/caseStudy";
 import Live from "@/components/Ui/svg/live";
 import type { CurriculumProps } from "@/types/curriculum";
 
@@ -22,9 +25,9 @@ export const curriculumData: CurriculumProps = {
       title: "Business & Marketing Foundations",
       badges: [
         { icon: <Live />, label: "10 Live Sessions" },
-        { icon: <Live />, label: "2 Assignments" },
-        { icon: <Live />, label: "1 Case Study" },
-        { icon: <Live />, label: "2 Assessments" },
+        { icon: <Assignment />, label: "2 Assignments" },
+        { icon: <CaseStudy />, label: "1 Case Study" },
+        { icon: <Assesment />, label: "2 Assessments" },
       ],
       topics: [
         "Fundamentals of Marketing",
@@ -40,10 +43,10 @@ export const curriculumData: CurriculumProps = {
       number: 2,
       title: "Strategic Business Essentials & Digital Foundations",
       badges: [
-        { icon: <Live />, label: "8 Live Sessions" },
-        { icon: <Live />, label: "3 Assignments" },
-        { icon: <Live />, label: "2 Case Studies" },
-        { icon: <Live />, label: "1 Assessment" },
+        { icon: <Live />, label: "10 Live Sessions" },
+        { icon: <Assignment />, label: "2 Assignments" },
+        { icon: <CaseStudy />, label: "1 Case Study" },
+        { icon: <Assesment />, label: "2 Assessments" },
       ],
       topics: [
         "Traditional vs Digital Marketing",
@@ -59,10 +62,10 @@ export const curriculumData: CurriculumProps = {
       number: 3,
       title: "Creative Communication & Business Applications",
       badges: [
-        { icon: <Live />, label: "8 Live Sessions" },
-        { icon: <Live />, label: "3 Assignments" },
-        { icon: <Live />, label: "2 Case Studies" },
-        { icon: <Live />, label: "1 Assessment" },
+        { icon: <Live />, label: "10 Live Sessions" },
+        { icon: <Assignment />, label: "2 Assignments" },
+        { icon: <CaseStudy />, label: "1 Case Study" },
+        { icon: <Assesment />, label: "2 Assessments" },
       ],
       topics: [
         "LinkedIn Personal Branding",
@@ -78,10 +81,10 @@ export const curriculumData: CurriculumProps = {
       number: 4,
       title: "AI-Driven Marketing & Data Insights",
       badges: [
-        { icon: <Live />, label: "8 Live Sessions" },
-        { icon: <Live />, label: "3 Assignments" },
-        { icon: <Live />, label: "2 Case Studies" },
-        { icon: <Live />, label: "1 Assessment" },
+        { icon: <Live />, label: "10 Live Sessions" },
+        { icon: <Assignment />, label: "2 Assignments" },
+        { icon: <CaseStudy />, label: "1 Case Study" },
+        { icon: <Assesment />, label: "2 Assessments" },
       ],
       topics: [
         "AI in Digital Marketing",
@@ -97,10 +100,10 @@ export const curriculumData: CurriculumProps = {
       number: 5,
       title: "AI-Driven Marketing & Data Insights",
       badges: [
-        { icon: <Live />, label: "8 Live Sessions" },
-        { icon: <Live />, label: "3 Assignments" },
-        { icon: <Live />, label: "2 Case Studies" },
-        { icon: <Live />, label: "1 Assessment" },
+        { icon: <Live />, label: "10 Live Sessions" },
+        { icon: <Assignment />, label: "2 Assignments" },
+        { icon: <CaseStudy />, label: "1 Case Study" },
+        { icon: <Assesment />, label: "2 Assessments" },
       ],
       topics: [
         "YouTube Marketing",
@@ -116,10 +119,10 @@ export const curriculumData: CurriculumProps = {
       number: 6,
       title: "Leadership, Specialisations & Industry Readiness",
       badges: [
-        { icon: <Live />, label: "8 Live Sessions" },
-        { icon: <Live />, label: "3 Assignments" },
-        { icon: <Live />, label: "2 Case Studies" },
-        { icon: <Live />, label: "1 Assessment" },
+        { icon: <Live />, label: "10 Live Sessions" },
+        { icon: <Assignment />, label: "2 Assignments" },
+        { icon: <CaseStudy />, label: "1 Case Study" },
+        { icon: <Assesment />, label: "2 Assessments" },
       ],
       topics: [
         "Email Marketing & Affiliate Marketing",

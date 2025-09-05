@@ -1,3 +1,6 @@
+import Assesment from "@/components/Ui/svg/assesment";
+import Assignment from "@/components/Ui/svg/assignment";
+import CaseStudy from "@/components/Ui/svg/caseStudy";
 import Live from "@/components/Ui/svg/live";
 import type { CurriculumProps } from "@/types/curriculum";
 
@@ -22,9 +25,9 @@ export const curriculumData: CurriculumProps = {
       title: "Foundations of Management and Digital Marketing",
       badges: [
         { icon: <Live />, label: "10 Live Sessions" },
-        { icon: <Live />, label: "2 Assignments" },
-        { icon: <Live />, label: "1 Case Study" },
-        { icon: <Live />, label: "2 Assessments" },
+        { icon: <Assignment />, label: "2 Assignments" },
+        { icon: <CaseStudy />, label: "1 Case Study" },
+        { icon: <Assesment />, label: "2 Assessments" },
       ],
       topics: [
         "Principles of Management & Organizational Behaviour",
@@ -42,10 +45,10 @@ export const curriculumData: CurriculumProps = {
       number: 2,
       title: "Strategic Digital Marketing Platforms & Paid Media",
       badges: [
-        { icon: <Live />, label: "8 Live Sessions" },
-        { icon: <Live />, label: "3 Assignments" },
-        { icon: <Live />, label: "2 Case Studies" },
-        { icon: <Live />, label: "1 Assessment" },
+        { icon: <Live />, label: "10 Live Sessions" },
+        { icon: <Assignment />, label: "2 Assignments" },
+        { icon: <CaseStudy />, label: "1 Case Study" },
+        { icon: <Assesment />, label: "2 Assessments" },
       ],
       topics: [
         "Digital Research Methodology & Data Analysis",
@@ -64,10 +67,10 @@ export const curriculumData: CurriculumProps = {
       number: 3,
       title: "AI, Analytics & Creative Digital Strategies",
       badges: [
-        { icon: <Live />, label: "8 Live Sessions" },
-        { icon: <Live />, label: "3 Assignments" },
-        { icon: <Live />, label: "2 Case Studies" },
-        { icon: <Live />, label: "1 Assessment" },
+        { icon: <Live />, label: "10 Live Sessions" },
+        { icon: <Assignment />, label: "2 Assignments" },
+        { icon: <CaseStudy />, label: "1 Case Study" },
+        { icon: <Assesment />, label: "2 Assessments" },
       ],
       topics: [
         "AI in Digital Marketing",
@@ -85,10 +88,10 @@ export const curriculumData: CurriculumProps = {
       number: 4,
       title: "Leadership, Automation & Digital Entrepreneurship",
       badges: [
-        { icon: <Live />, label: "8 Live Sessions" },
-        { icon: <Live />, label: "3 Assignments" },
-        { icon: <Live />, label: "2 Case Studies" },
-        { icon: <Live />, label: "1 Assessment" },
+        { icon: <Live />, label: "10 Live Sessions" },
+        { icon: <Assignment />, label: "2 Assignments" },
+        { icon: <CaseStudy />, label: "1 Case Study" },
+        { icon: <Assesment />, label: "2 Assessments" },
       ],
       topics: [
         "Marketing Automation (Specialisation)",

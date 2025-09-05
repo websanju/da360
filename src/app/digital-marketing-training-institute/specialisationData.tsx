@@ -1,3 +1,6 @@
+import Assesment from "@/components/Ui/svg/assesment";
+import Assignment from "@/components/Ui/svg/assignment";
+import CaseStudy from "@/components/Ui/svg/caseStudy";
 import Live from "@/components/Ui/svg/live";
 import type { SpecialisationProps } from "@/types/specialisation";
 
@@ -11,9 +14,10 @@ export const specialisationData: SpecialisationProps = {
       number: 1,
       title: "Media Buying & Planning",
       badges: [
-        { icon: <Live />, label: "8 Live Sessions" },
-        { icon: <Live />, label: "3 Assignments" },
-        { icon: <Live />, label: "1 Case Study" },
+        { icon: <Live />, label: "10 Live Sessions" },
+        { icon: <Assignment />, label: "2 Assignments" },
+        { icon: <CaseStudy />, label: "1 Case Study" },
+        { icon: <Assesment />, label: "2 Assessments" },
       ],
       topics: [
         "4 Pillars of Media Buying Strategy",
@@ -32,9 +36,10 @@ export const specialisationData: SpecialisationProps = {
       number: 2,
       title: "MarCom & Automation",
       badges: [
-        { icon: <Live />, label: "7 Live Sessions" },
-        { icon: <Live />, label: "2 Assignments" },
-        { icon: <Live />, label: "1 Project" },
+        { icon: <Live />, label: "10 Live Sessions" },
+        { icon: <Assignment />, label: "2 Assignments" },
+        { icon: <CaseStudy />, label: "1 Case Study" },
+        { icon: <Assesment />, label: "2 Assessments" },
       ],
       topics: [
         "Introduction to MarTech Ecosystem",
@@ -53,9 +58,10 @@ export const specialisationData: SpecialisationProps = {
       number: 3,
       title: "AI & Vibe Marketing",
       badges: [
-        { icon: <Live />, label: "6 Live Sessions" },
-        { icon: <Live />, label: "2 Assignments" },
-        { icon: <Live />, label: "1 Case Study" },
+        { icon: <Live />, label: "10 Live Sessions" },
+        { icon: <Assignment />, label: "2 Assignments" },
+        { icon: <CaseStudy />, label: "1 Case Study" },
+        { icon: <Assesment />, label: "2 Assessments" },
       ],
       topics: [
         "What is Vibe Marketing & Psychology in Ad Design",
@@ -73,9 +79,10 @@ export const specialisationData: SpecialisationProps = {
       number: 4,
       title: "Photo & Video Generation with AI",
       badges: [
-        { icon: <Live />, label: "8 Live Sessions" },
-        { icon: <Live />, label: "3 Assignments" },
-        { icon: <Live />, label: "1 Project" },
+        { icon: <Live />, label: "10 Live Sessions" },
+        { icon: <Assignment />, label: "2 Assignments" },
+        { icon: <CaseStudy />, label: "1 Case Study" },
+        { icon: <Assesment />, label: "2 Assessments" },
       ],
       topics: [
         "Text to Video AI: Pictory, Runway, Synthesia",

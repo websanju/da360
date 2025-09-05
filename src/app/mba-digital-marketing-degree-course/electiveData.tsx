@@ -1,4 +1,7 @@
 // import Live from "@/components/Ui/svg/live";
+import Assesment from "@/components/Ui/svg/assesment";
+import Assignment from "@/components/Ui/svg/assignment";
+import CaseStudy from "@/components/Ui/svg/caseStudy";
 import Live from "@/components/Ui/svg/live";
 import type { CurriculumProps } from "@/types/curriculum";
 
@@ -12,10 +15,10 @@ export const electiveData: CurriculumProps = {
       number: 1,
       title: "AI in Digital Marketing & Business Strategy",
       badges: [
-        { icon: <Live />, label: "360 Periods" },
-        { icon: <Live />, label: "3 Assignments" },
-        { icon: <Live />, label: "5 Case Studies" },
-        { icon: <Live />, label: "1 Assessment" },
+        { icon: <Live />, label: "10 Live Sessions" },
+        { icon: <Assignment />, label: "2 Assignments" },
+        { icon: <CaseStudy />, label: "1 Case Study" },
+        { icon: <Assesment />, label: "2 Assessments" },
       ],
       topics: [
         "Foundations of AI in Business Strategy",
@@ -33,10 +36,10 @@ export const electiveData: CurriculumProps = {
       number: 2,
       title: "AI-Driven Product Innovation",
       badges: [
-        { icon: <Live />, label: "360 Periods" },
-        { icon: <Live />, label: "3 Assignments" },
-        { icon: <Live />, label: "5 Case Studies" },
-        { icon: <Live />, label: "1 Assessment" },
+        { icon: <Live />, label: "10 Live Sessions" },
+        { icon: <Assignment />, label: "2 Assignments" },
+        { icon: <CaseStudy />, label: "1 Case Study" },
+        { icon: <Assesment />, label: "2 Assessments" },
       ],
       topics: [
         "Human-Centered Design Thinking with AI Enhancements",
@@ -54,10 +57,10 @@ export const electiveData: CurriculumProps = {
       number: 3,
       title: "Social Selling and Growth Strategy",
       badges: [
-        { icon: <Live />, label: "360 Periods" },
-        { icon: <Live />, label: "3 Assignments" },
-        { icon: <Live />, label: "5 Case Studies" },
-        { icon: <Live />, label: "1 Assessment" },
+        { icon: <Live />, label: "10 Live Sessions" },
+        { icon: <Assignment />, label: "2 Assignments" },
+        { icon: <CaseStudy />, label: "1 Case Study" },
+        { icon: <Assesment />, label: "2 Assessments" },
       ],
       topics: [
         "Social Listening, Lead Scoring & Engagement",

@@ -1,4 +1,7 @@
 import Live from "@/components/Ui/svg/live";
+import Assignment from "@/components/Ui/svg/assignment";
+import CaseStudy from "@/components/Ui/svg/caseStudy";
+import Assesment from "@/components/Ui/svg/assesment";
 import type { CurriculumProps } from "@/types/curriculum";
 
 export const curriculumData: CurriculumProps = {
@@ -26,9 +29,9 @@ export const curriculumData: CurriculumProps = {
       title: "Introduction to AI in Modern Marketing",
       badges: [
         { icon: <Live />, label: "10 Live Sessions" },
-        { icon: <Live />, label: "2 Assignments" },
-        { icon: <Live />, label: "1 Case Study" },
-        { icon: <Live />, label: "2 Assessments" },
+        { icon: <Assignment />, label: "2 Assignments" },
+        { icon: <CaseStudy />, label: "1 Case Study" },
+        { icon: <Assesment />, label: "2 Assessments" },
       ],
       topics: [
         "Evolution of Marketing: From Traditional to AI - Powered",
@@ -46,10 +49,10 @@ export const curriculumData: CurriculumProps = {
       number: 2,
       title: "AI Tools for Content & Campaign Creation",
       badges: [
-        { icon: <Live />, label: "8 Live Sessions" },
-        { icon: <Live />, label: "3 Assignments" },
-        { icon: <Live />, label: "2 Case Studies" },
-        { icon: <Live />, label: "1 Assessment" },
+        { icon: <Live />, label: "10 Live Sessions" },
+        { icon: <Assignment />, label: "2 Assignments" },
+        { icon: <CaseStudy />, label: "1 Case Study" },
+        { icon: <Assesment />, label: "2 Assessments" },
       ],
       topics: [
         "AI Copywriting Tools (ChatGPT, Jasper, Copy.ai)",
@@ -67,10 +70,10 @@ export const curriculumData: CurriculumProps = {
       number: 3,
       title: "AI-Driven SEO & Smart Content Discovery",
       badges: [
-        { icon: <Live />, label: "8 Live Sessions" },
-        { icon: <Live />, label: "3 Assignments" },
-        { icon: <Live />, label: "2 Case Studies" },
-        { icon: <Live />, label: "1 Assessment" },
+        { icon: <Live />, label: "10 Live Sessions" },
+        { icon: <Assignment />, label: "2 Assignments" },
+        { icon: <CaseStudy />, label: "1 Case Study" },
+        { icon: <Assesment />, label: "2 Assessments" },
       ],
       topics: [
         "Advanced Keyword Research with AI Tools",
@@ -87,10 +90,10 @@ export const curriculumData: CurriculumProps = {
       number: 4,
       title: "Social Media & Influencer Marketing with AI",
       badges: [
-        { icon: <Live />, label: "8 Live Sessions" },
-        { icon: <Live />, label: "3 Assignments" },
-        { icon: <Live />, label: "2 Case Studies" },
-        { icon: <Live />, label: "1 Assessment" },
+        { icon: <Live />, label: "10 Live Sessions" },
+        { icon: <Assignment />, label: "2 Assignments" },
+        { icon: <CaseStudy />, label: "1 Case Study" },
+        { icon: <Assesment />, label: "2 Assessments" },
       ],
       topics: [
         "Smart Scheduling & AI",
@@ -110,10 +113,10 @@ export const curriculumData: CurriculumProps = {
       number: 5,
       title: "Conversational Marketing & AI Chatbots",
       badges: [
-        { icon: <Live />, label: "8 Live Sessions" },
-        { icon: <Live />, label: "3 Assignments" },
-        { icon: <Live />, label: "2 Case Studies" },
-        { icon: <Live />, label: "1 Assessment" },
+        { icon: <Live />, label: "10 Live Sessions" },
+        { icon: <Assignment />, label: "2 Assignments" },
+        { icon: <CaseStudy />, label: "1 Case Study" },
+        { icon: <Assesment />, label: "2 Assessments" },
       ],
       topics: [
         "Introduction to Chatbots & Conversational AI",
@@ -130,10 +133,10 @@ export const curriculumData: CurriculumProps = {
       number: 6,
       title: "Paid Media & AI-Powered Ad Campaigns",
       badges: [
-        { icon: <Live />, label: "8 Live Sessions" },
-        { icon: <Live />, label: "3 Assignments" },
-        { icon: <Live />, label: "2 Case Studies" },
-        { icon: <Live />, label: "1 Assessment" },
+        { icon: <Live />, label: "10 Live Sessions" },
+        { icon: <Assignment />, label: "2 Assignments" },
+        { icon: <CaseStudy />, label: "1 Case Study" },
+        { icon: <Assesment />, label: "2 Assessments" },
       ],
       topics: [
         "AI in PPC: Google Performance Max, Meta Advantage+",
@@ -151,10 +154,10 @@ export const curriculumData: CurriculumProps = {
       number: 7,
       title: "Marketing Automation & Analytics with AI",
       badges: [
-        { icon: <Live />, label: "8 Live Sessions" },
-        { icon: <Live />, label: "3 Assignments" },
-        { icon: <Live />, label: "2 Case Studies" },
-        { icon: <Live />, label: "1 Assessment" },
+        { icon: <Live />, label: "10 Live Sessions" },
+        { icon: <Assignment />, label: "2 Assignments" },
+        { icon: <CaseStudy />, label: "1 Case Study" },
+        { icon: <Assesment />, label: "2 Assessments" },
       ],
       topics: [
         "Powered CRMs (HubSpot, Zoho AI)",

@@ -1,3 +1,6 @@
+import Assesment from "@/components/Ui/svg/assesment";
+import Assignment from "@/components/Ui/svg/assignment";
+import CaseStudy from "@/components/Ui/svg/caseStudy";
 import Live from "@/components/Ui/svg/live";
 import type { CurriculumProps } from "@/types/curriculum";
 
@@ -26,8 +29,9 @@ export const curriculumData: CurriculumProps = {
       title: "Digital Marketing Introduction & Fundamentals",
       badges: [
         { icon: <Live />, label: "10 Live Sessions" },
-        { icon: <Live />, label: "2 Assignments" },
-        { icon: <Live />, label: "1 Case Study" },
+        { icon: <Assignment />, label: "2 Assignments" },
+        { icon: <CaseStudy />, label: "1 Case Study" },
+        { icon: <Assesment />, label: "2 Assessments" },
       ],
       topics: [
         "Marketing Principles & Digital Evolution",
@@ -45,8 +49,10 @@ export const curriculumData: CurriculumProps = {
       number: 2,
       title: "Portfolio Website & Landing Page Creation",
       badges: [
-        { icon: <Live />, label: "8 Live Sessions" },
-        { icon: <Live />, label: "2 Assignments" },
+        { icon: <Live />, label: "10 Live Sessions" },
+        { icon: <Assignment />, label: "2 Assignments" },
+        { icon: <CaseStudy />, label: "1 Case Study" },
+        { icon: <Assesment />, label: "2 Assessments" },
       ],
       topics: [
         "Domain, Hosting & Email Setup",
@@ -63,8 +69,10 @@ export const curriculumData: CurriculumProps = {
       number: 3,
       title: "SEO & Content Marketing Foundations",
       badges: [
-        { icon: <Live />, label: "8 Live Sessions" },
-        { icon: <Live />, label: "2 Assignments" },
+        { icon: <Live />, label: "10 Live Sessions" },
+        { icon: <Assignment />, label: "2 Assignments" },
+        { icon: <CaseStudy />, label: "1 Case Study" },
+        { icon: <Assesment />, label: "2 Assessments" },
       ],
       topics: [
         "Introduction to SEO & SERP Structure",
@@ -82,8 +90,10 @@ export const curriculumData: CurriculumProps = {
       number: 4,
       title: "Social Media Strategy & Organic Planning",
       badges: [
-        { icon: <Live />, label: "8 Live Sessions" },
-        { icon: <Live />, label: "2 Assignments" },
+        { icon: <Live />, label: "10 Live Sessions" },
+        { icon: <Assignment />, label: "2 Assignments" },
+        { icon: <CaseStudy />, label: "1 Case Study" },
+        { icon: <Assesment />, label: "2 Assessments" },
       ],
       topics: [
         "Platform-Specific Strategy (Meta, LinkedIn, YouTube)",
@@ -102,7 +112,9 @@ export const curriculumData: CurriculumProps = {
       title: "Paid Ads & Campaign Management",
       badges: [
         { icon: <Live />, label: "10 Live Sessions" },
-        { icon: <Live />, label: "2 Assignments" },
+        { icon: <Assignment />, label: "2 Assignments" },
+        { icon: <CaseStudy />, label: "1 Case Study" },
+        { icon: <Assesment />, label: "2 Assessments" },
       ],
       topics: [
         "Paid, Earned, and Owned Media Models",
@@ -119,8 +131,10 @@ export const curriculumData: CurriculumProps = {
       number: 6,
       title: "Analytics, Attribution & CRO",
       badges: [
-        { icon: <Live />, label: "6 Live Sessions" },
-        { icon: <Live />, label: "1 Assignment" },
+        { icon: <Live />, label: "10 Live Sessions" },
+        { icon: <Assignment />, label: "2 Assignments" },
+        { icon: <CaseStudy />, label: "1 Case Study" },
+        { icon: <Assesment />, label: "2 Assessments" },
       ],
       topics: [
         "GA4 Deep Dive & Funnel Tracking",
@@ -138,8 +152,10 @@ export const curriculumData: CurriculumProps = {
       number: 7,
       title: "Communication, Agency Collaboration & Soft Skills",
       badges: [
-        { icon: <Live />, label: "4 Live Sessions" },
-        { icon: <Live />, label: "1 Assignment" },
+        { icon: <Live />, label: "10 Live Sessions" },
+        { icon: <Assignment />, label: "2 Assignments" },
+        { icon: <CaseStudy />, label: "1 Case Study" },
+        { icon: <Assesment />, label: "2 Assessments" },
       ],
       topics: [
         "Client Communication Templates & Pitching",
@@ -157,8 +173,10 @@ export const curriculumData: CurriculumProps = {
       number: 8,
       title: "Freelancing & Growth Planning",
       badges: [
-        { icon: <Live />, label: "4 Live Sessions" },
-        { icon: <Live />, label: "1 Assignment" },
+        { icon: <Live />, label: "10 Live Sessions" },
+        { icon: <Assignment />, label: "2 Assignments" },
+        { icon: <CaseStudy />, label: "1 Case Study" },
+        { icon: <Assesment />, label: "2 Assessments" },
       ],
       topics: [
         "How to Set Up as a Freelance Media Buyer",

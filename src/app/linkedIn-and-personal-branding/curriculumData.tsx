@@ -1,3 +1,6 @@
+import Assesment from "@/components/Ui/svg/assesment";
+import Assignment from "@/components/Ui/svg/assignment";
+import CaseStudy from "@/components/Ui/svg/caseStudy";
 import Live from "@/components/Ui/svg/live";
 import type { CurriculumProps } from "@/types/curriculum";
 
@@ -21,9 +24,10 @@ export const curriculumData: CurriculumProps = {
       number: 1,
       title: "Foundations of Personal Branding & LinkedIn",
       badges: [
-        { icon: <Live />, label: "8 Live Sessions" },
-        { icon: <Live />, label: "2 Assignments" },
-        { icon: <Live />, label: "1 Case Study" },
+        { icon: <Live />, label: "10 Live Sessions" },
+        { icon: <Assignment />, label: "2 Assignments" },
+        { icon: <CaseStudy />, label: "1 Case Study" },
+        { icon: <Assesment />, label: "2 Assessments" },
       ],
       topics: [
         "Understanding the Power of Personal Branding",
@@ -41,9 +45,10 @@ export const curriculumData: CurriculumProps = {
       number: 2,
       title: "LinkedIn Profile Optimization",
       badges: [
-        { icon: <Live />, label: "6 Live Sessions" },
-        { icon: <Live />, label: "2 Assignments" },
-        { icon: <Live />, label: "1 Assessment" },
+        { icon: <Live />, label: "10 Live Sessions" },
+        { icon: <Assignment />, label: "2 Assignments" },
+        { icon: <CaseStudy />, label: "1 Case Study" },
+        { icon: <Assesment />, label: "2 Assessments" },
       ],
       topics: [
         "Creating a Professional All-Star Profile",
@@ -61,8 +66,10 @@ export const curriculumData: CurriculumProps = {
       number: 3,
       title: "Content Creation & Thought Leadership",
       badges: [
-        { icon: <Live />, label: "7 Live Sessions" },
-        { icon: <Live />, label: "3 Assignments" },
+        { icon: <Live />, label: "10 Live Sessions" },
+        { icon: <Assignment />, label: "2 Assignments" },
+        { icon: <CaseStudy />, label: "1 Case Study" },
+        { icon: <Assesment />, label: "2 Assessments" },
       ],
       topics: [
         "Types of LinkedIn Posts: Text, Carousel, Polls, Articles, Video",
@@ -80,8 +87,10 @@ export const curriculumData: CurriculumProps = {
       number: 4,
       title: "Video Creation & Visual Branding",
       badges: [
-        { icon: <Live />, label: "6 Live Sessions" },
-        { icon: <Live />, label: "2 Assignments" },
+        { icon: <Live />, label: "10 Live Sessions" },
+        { icon: <Assignment />, label: "2 Assignments" },
+        { icon: <CaseStudy />, label: "1 Case Study" },
+        { icon: <Assesment />, label: "2 Assessments" },
       ],
       topics: [
         "On-Camera Confidence & Scripting for LinkedIn Video",
@@ -99,8 +108,10 @@ export const curriculumData: CurriculumProps = {
       number: 5,
       title: "Audience Building, Engagement & Growth Hacks",
       badges: [
-        { icon: <Live />, label: "7 Live Sessions" },
-        { icon: <Live />, label: "2 Assignments" },
+        { icon: <Live />, label: "10 Live Sessions" },
+        { icon: <Assignment />, label: "2 Assignments" },
+        { icon: <CaseStudy />, label: "1 Case Study" },
+        { icon: <Assesment />, label: "2 Assessments" },
       ],
       topics: [
         "How the LinkedIn Algorithm Works in 2025",
@@ -118,8 +129,10 @@ export const curriculumData: CurriculumProps = {
       number: 6,
       title: "Lead Generation, Offers & Monetization",
       badges: [
-        { icon: <Live />, label: "8 Live Sessions" },
-        { icon: <Live />, label: "3 Assignments" },
+        { icon: <Live />, label: "10 Live Sessions" },
+        { icon: <Assignment />, label: "2 Assignments" },
+        { icon: <CaseStudy />, label: "1 Case Study" },
+        { icon: <Assesment />, label: "2 Assessments" },
       ],
       topics: [
         "Creating a Personal Landing Page for Lead Capture",
@@ -137,8 +150,10 @@ export const curriculumData: CurriculumProps = {
       number: 7,
       title: "Personal Development, Soft Skills & Influence",
       badges: [
-        { icon: <Live />, label: "6 Live Sessions" },
-        { icon: <Live />, label: "2 Assignments" },
+        { icon: <Live />, label: "10 Live Sessions" },
+        { icon: <Assignment />, label: "2 Assignments" },
+        { icon: <CaseStudy />, label: "1 Case Study" },
+        { icon: <Assesment />, label: "2 Assessments" },
       ],
       topics: [
         "Enhancing Communication & Storytelling",
@@ -156,8 +171,10 @@ export const curriculumData: CurriculumProps = {
       number: 8,
       title: "Freelancing, Career Growth & Business Expansion",
       badges: [
-        { icon: <Live />, label: "6 Live Sessions" },
-        { icon: <Live />, label: "2 Assignments" },
+        { icon: <Live />, label: "10 Live Sessions" },
+        { icon: <Assignment />, label: "2 Assignments" },
+        { icon: <CaseStudy />, label: "1 Case Study" },
+        { icon: <Assesment />, label: "2 Assessments" },
       ],
       topics: [
         "Becoming a Personal Brand Strategist",
