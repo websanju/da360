@@ -64,7 +64,7 @@ export const slides: SlideContent[] = [
       name: "Pooja M Reddy",
       designation: "Digital Marketing",
       image: "/images/Ambitious/text-2.png",
-      profileImage: "/images/Ambitious/default-avatar.svg",
+      profileImage: "/images/testimonial_profile/pooja.jpg",
       type: "text",
       modalHTML: `
         <p>This place was more than just a learning institute. Happy with placement support and guidance i got through out my journey at DA 360. This could be your wise choice to start your carrier in the field of Digital Marketing.</p>
@@ -108,7 +108,7 @@ export const slides: SlideContent[] = [
       name: "Aswin J Prakash",
       designation: "Digital Marketing",
       image: "/images/Ambitious/text-4.png",
-      profileImage: "/images/Ambitious/default-avatar.svg",
+      profileImage: "/images/testimonial_profile/ashwin.jpg",
       type: "text",
       modalHTML: `
         <p>Learning at Digital Academy 360 was a great experience. The training was practical, the mentors were supportive, and I got hands-on exposure to real digital marketing tools and campaigns. It really helped me grow and I made some amazing friends along the way.</p>
@@ -135,7 +135,7 @@ export const slides: SlideContent[] = [
       name: "Megha Jain",
       designation: "Digital Marketing",
       image: "/images/Ambitious/text-2.png",
-      profileImage: "/images/Ambitious/default-avatar.svg",
+      profileImage: "/images/testimonial_profile/megha.jpg",
       type: "text",
       modalHTML: `
         <p>Digital Academy 360 is the best place to learn and grow in digital marketing! I joined their new Leadership & AI program, a 9-month course with an internship opportunity, and it has been an amazing experience. The trainers are highly knowledgeable, supportive, and teach everything from scratch, making it easy for beginners to understand.</p>
@@ -188,7 +188,7 @@ export const slides: SlideContent[] = [
       name: "Anjali B",
       designation: "Digital Marketing",
       image: "/images/Ambitious/text-2.png",
-      profileImage: "/images/Ambitious/default-avatar.svg",
+      profileImage: "/images/testimonial_profile/anjali.jpg",
       type: "text",
       modalHTML: `
         <p>I was an introvert and wanted to learn Digital Marketing, so I joined the 6 month course at Digital Academy 360. In the beginning, it was very difficult for me when the trainers asked us to present in class. I had no hope of completing the course because I used to get very nervous. But later, the trainers encouraged me a lot, and with their support, I improved. Eventually, I even won the Best Performer for Presentation award. After completing the course, I got placed as a Performance Marketer. It was a life changing experience for me.</p>
@@ -216,7 +216,7 @@ export const slides: SlideContent[] = [
       name: "Parimitha A Pari",
       designation: "Digital Marketing",
       image: "/images/Ambitious/text-3.png",
-      profileImage: "/images/Ambitious/default-avatar.svg",
+      profileImage: "/images/testimonial_profile/parimitha.jpg",
       type: "text",
       modalHTML: `
         <p>I have completed digital marketing course at digital academy 360 and it was greatful experience. The trainers provided hands on guidence that helped me to build strong practical skills in SEO, Google ads, and social media marketing.</p>
@@ -232,7 +232,7 @@ export const slides: SlideContent[] = [
       name: "Darshana Das",
       designation: "Digital Marketing",
       image: "/images/Ambitious/text-4.png",
-      profileImage: "/images/Ambitious/default-avatar.svg",
+      profileImage: "/images/testimonial_profile/darshan.jpg",
       type: "text",
       modalHTML: `
         <p>I joined Digital Academy 360 for a Digital Marketing course after doing a lot of research. During the course, I got the chance to work on freelancing projects with the help of the trainers. After completing the course, I gained more experience and became a freelancer. I am thankful to Digital Academy 360 for their support.</p>
@@ -259,7 +259,7 @@ export const slides: SlideContent[] = [
       name: "Atul Kumar",
       designation: "SEO Analyst",
       image: "/images/Ambitious/text-2.png",
-      profileImage: "/images/Ambitious/default-avatar.svg",
+      profileImage: "/images/testimonial_profile/athul.jpg",
       type: "text",
       modalHTML: `
         <p>Digital academy 360 is the best institute for digital marketing training. The trainers are well versed to provide you a quality training with real-time examples. They are always ready to clear even the basic doubt about what we ask them. They are very friendly and experienced trainers. I would like to thank my trainer Rohith sir, Kamlesh sir & Subash sir for helping and supporting me throughout the learning period.</p>
@@ -284,7 +284,7 @@ export const slides: SlideContent[] = [
       name: "Sunil Sharma",
       designation: "Digital Marketing",
       image: "/images/Ambitious/text-1.png",
-      profileImage: "/images/Ambitious/default-avatar.svg",
+      profileImage: "/images/testimonial_profile/sunil.jpg",
       type: "text",
       modalHTML: `
         <p>My experience with Digital Academy 360 was amazing . The Faculty was an expert and was very good in communicating and even  the method of teaching. They help you a lot with the placements and internships. I am working with a good organization now just because  Digital Academy 360 Jayanagar branch. Special thanks teachers and faculties I'm extremely happy !!</p>
