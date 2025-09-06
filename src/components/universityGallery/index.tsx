@@ -4,9 +4,9 @@ import Image from "next/image";
 import styles from "./styles.module.scss";
 
 const images = [
-  "/images/universityGallery/photo-1.avif",
-  "/images/universityGallery/photo-2.avif",
-  "/images/universityGallery/photo-3.avif",
+  "/images/universityGallery/photo-1.jpg",
+  "/images/universityGallery/photo-2.jpg",
+  "/images/universityGallery/photo-3.jpg",
   "/images/universityGallery/photo-4.avif",
   "/images/universityGallery/photo-5.avif",
   "/images/universityGallery/photo-6.avif",
