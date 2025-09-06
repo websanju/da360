@@ -55,7 +55,7 @@ export default function ContactUS() {
         ]}
         phone="+91 7353 515 515"
         imageSrc="/images/contactus-min.jpg"
-        directionLink="https://maps.google.com/?q=Digital+Academy+360"
+        directionLink="https://maps.app.goo.gl/8sUTmVew8vEKA88e6"
       />
       <div className={styles.mapSection}>
         <div className="container">

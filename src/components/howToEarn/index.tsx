@@ -57,7 +57,7 @@ const HowToEarn = () => {
         </div>
         <div className={`${styles.tncLinkBox} text-end`}>
           Referral T&C{" "}
-          <a href="#" className={styles.tncLink}>
+          <a href="/terms-conditions" className={styles.tncLink}>
             Click here
           </a>
         </div>
