@@ -128,6 +128,9 @@
           font-weight: 700;
         }
       }
+      &:last-child:hover {
+        background-color: transparent;
+      }
 
       &:hover {
         background-color: #fff;
@@ -652,4 +655,9 @@
   .menu {
     position: static !important;
   }
+}
+
+.exploremenuItem {
+  border-radius: 10px !important;
+  width: 100%;
 }

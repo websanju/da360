@@ -85,7 +85,7 @@ export default function MegaMenu({ closeMenu }: MegaMenuProps) {
           })}
           <li>
             <Link
-              className={styles.menuItem}
+              className={`btn btnRed ${styles.exploremenuItem}`}
               href={"/digital-marketing-courses"}
             >
               Explore Programs
