@@ -32,16 +32,16 @@ const programs = [
     duration: "",
     mode: "",
     bonus: " 75,000",
-    imageDesktop: "/images/course-list/skill-diploma-in-digital-marketing.png",
-    imageMobile: "/images/course-list/skill-diploma-in-digital-marketing.png",
+    imageDesktop: "/images/svavsa-vertical.jpg",
+    imageMobile: "/images/svavsa-vertical.jpg",
   },
   {
     title: "BBA in Digital Marketing & AI",
     duration: "",
     mode: "",
     bonus: "50,000",
-    imageDesktop: "/images/course-list/skill-diploma-in-digital-marketing.png",
-    imageMobile: "/images/course-list/skill-diploma-in-digital-marketing.png",
+    imageDesktop: "/images/svavsa-vertical.jpg",
+    imageMobile: "/images/svavsa-vertical.jpg",
   },
 ];
 
