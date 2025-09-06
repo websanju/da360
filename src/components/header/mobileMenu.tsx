@@ -98,11 +98,11 @@ const MobileMenu: React.FC<Props> = ({ onClose }) => {
             Contact Us
           </Link>
         </li>
-        <li>
+        {/* <li>
           <Link href="/webinars" onClick={handleClose}>
             Webinars
           </Link>
-        </li>
+        </li> */}
       </ul>
     </div>
   );
