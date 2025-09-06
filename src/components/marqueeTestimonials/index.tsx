@@ -6,7 +6,7 @@ import SectionHeader from "@components/widgets/sectionHeader";
 
 const MarqueeTestimonials = () => {
   return (
-    <section className={styles.testimonialSection}>
+    <section className={styles.testimonialSection} id="testimonialSection">
       <SectionHeader title={<>What our students say</>} maxWidth="560px" />
       {/* Row 1: Right to Left */}
       <div className={styles.marquee}>

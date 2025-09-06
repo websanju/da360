@@ -8,31 +8,39 @@ const ReviewHighlights = () => {
   const platforms = [
     {
       icon: "images/testimonials/facebook.svg",
-      rating: "4.9",
-      reviews: "700+",
+      rating: "4.8",
+      reviews: "143+",
     },
-    { icon: "/images/testimonials/google.svg", rating: "4.8", reviews: "700+" },
+    { icon: "/images/testimonials/google.svg", rating: "4.7", reviews: "750+" },
     {
       icon: "/images/testimonials/trustpilot.svg",
-      rating: "5",
-      reviews: "700+",
+      rating: "4.5",
+      reviews: "30+",
     },
     {
       icon: "/images/testimonials/sulekha.svg",
-      rating: "4.9",
-      reviews: "700+",
+      rating: "4.8",
+      reviews: "80+",
     },
     {
       icon: "/images/testimonials/justdial.svg",
       rating: "4.8",
-      reviews: "700+",
+      reviews: "770+",
     },
     {
       icon: "/images/testimonials/glassdoor.svg",
-      rating: "5",
-      reviews: "700+",
+      rating: "4.4",
+      reviews: "100+",
     },
   ];
+
+  const handleScroll = (e: { preventDefault: () => void }) => {
+    e.preventDefault();
+    const section = document.getElementById("testimonialSection");
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+  };
 
   return (
     <section className={styles.reviewHighlightsSection}>
@@ -74,7 +82,11 @@ const ReviewHighlights = () => {
                       </span>
                     </div>
                   </div>
-                  <Link className={styles.link} href={""}>
+                  <Link
+                    className={styles.link}
+                    href={"#testimonialSection"}
+                    onClick={handleScroll}
+                  >
                     <span>
                       Read All <br /> Reviews
                     </span>
