@@ -101,7 +101,7 @@ export default function ReasonsToJoin({
           <div className="col-lg-12">
             <SectionHeader
               wrapperMarginBottom={{ desktop: "60px", mobile: "40px" }}
-              maxWidthTitle="650px"
+              maxWidthTitle="850px"
               title={
                 sectionTitle ||
                 "20 Reasons to Join the S-VYASA MBA in Digital Marketing"
@@ -113,7 +113,7 @@ export default function ReasonsToJoin({
                 <div className="col-lg-5">
                   <div className={styles.studentImg}>
                     <Image
-                      src="/images/student.jpg" // Replace with your actual image
+                      src="/images/svavsa-vertical.jpg" // Replace with your actual image
                       alt="Students holding books"
                       width={400}
                       height={500}
