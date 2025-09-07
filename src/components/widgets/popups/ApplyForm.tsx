@@ -1,5 +1,4 @@
 "use client";
-import { useState } from "react";
 import { usePopup } from "@components/widgets/popup/PopupContext";
 import styles from "@components/leadCaptureSection/style.module.scss";
 import style from "./style.module.scss";
@@ -9,6 +8,13 @@ import Link from "next/link";
 // ✅ Swiper imports
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination } from "swiper/modules";
+import { Controller, useForm } from "react-hook-form";
+import { yupResolver } from "@hookform/resolvers/yup";
+import {
+  slotBookingValidationDefaultValues,
+  slotBookingValidationSchema,
+} from "@/utils/validations";
+import useLeadCaptureForm from "@/components/widgets/leadCaptureForm/useLeadCaptureForm";
 
 interface LeadCaptureFormProps {
   title?: string;
@@ -17,30 +23,19 @@ interface LeadCaptureFormProps {
 const ApplyForm = ({ title }: LeadCaptureFormProps) => {
   const { closePopup } = usePopup();
 
-  const [formData, setFormData] = useState({
-    fullName: "",
-    email: "",
-    title: "",
-    phoneCode: "+91",
-    phone: "",
-    experience: "",
-    mode2: "",
-    consent: false,
+  const methods = useForm({
+    resolver: yupResolver(slotBookingValidationSchema),
+    defaultValues: slotBookingValidationDefaultValues,
+    mode: "onSubmit",
   });
 
-  const handleChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>
-  ) => {
-    const { name, value, type } = e.target;
-    const newValue =
-      type === "checkbox" ? (e.target as HTMLInputElement).checked : value;
-    setFormData((prev) => ({ ...prev, [name]: newValue }));
-  };
+  const {
+    handleSubmit,
+    control,
+    formState: { errors },
+  } = methods;
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    console.log("Submitted data:", formData);
-  };
+  const { loading, onSubmit } = useLeadCaptureForm({courseId: "pgp_dm", closePopup});
 
   const experienceOptions = ["Fresher", "1-2 Years", "3+ Years"];
 
@@ -111,117 +106,151 @@ const ApplyForm = ({ title }: LeadCaptureFormProps) => {
           </button>
         </div>
 
-        <form onSubmit={handleSubmit}>
-          <div>
-            <h3>{title}</h3>
-            <div className="form-field">
-              <input
-                type="text"
-                name="fullName"
-                className="form-control"
-                placeholder="Full Name*"
-                required
-                value={formData.fullName}
-                onChange={handleChange}
-              />
-            </div>
-            <div className="form-field">
-              <input
-                type="email"
-                name="email"
-                className="form-control"
-                placeholder="Email*"
-                required
-                value={formData.email}
-                onChange={handleChange}
-              />
-            </div>
-            <div className={`${styles.phoneCodefield} form-field d-flex`}>
+        <form onSubmit={handleSubmit(onSubmit)} style={{pointerEvents: loading ? "none" : "auto", opacity: loading ? 0.5 : 1}}>
+          <h3>{title}</h3>
+          <div className="form-field">
+            <Controller
+              name="name"
+              control={control}
+              render={({ field }) => (
+                <input
+                  {...field}
+                  type="text"
+                  className="form-control"
+                  placeholder="Full Name*"
+                />
+              )}
+            />
+            {errors.name && (
+              <p className={style.error}>{errors.name.message}</p>
+            )}
+          </div>
+          <div className="form-field">
+            <Controller
+              name="email"
+              control={control}
+              render={({ field }) => (
+                <input
+                  {...field}
+                  type="email"
+                  className="form-control"
+                  placeholder="Email*"
+                />
+              )}
+            />
+            {errors.email && (
+              <p className={style.error}>{errors.email.message}</p>
+            )}
+          </div>
+          <div className="form-field">
+            <div className={`${styles.phoneCodefield} d-flex`}>
               <span className={styles.phoneCode}>
-                <select
-                  name="phoneCode"
-                  className="form-select"
-                  required
-                  value={formData.phoneCode}
-                  onChange={handleChange}
-                >
+                <select name="phoneCode" className="form-select" required>
                   <option value="+91">+91 IN</option>
                   <option value="+1">+1 US</option>
                   <option value="+44">+44 UK</option>
                   <option value="+61">+61 AU</option>
                 </select>
               </span>
-              <input
-                type="tel"
-                name="phone"
-                className="form-control"
-                placeholder="Mobile Number*"
-                required
-                value={formData.phone}
-                onChange={handleChange}
+              <Controller
+                name="phone_number"
+                control={control}
+                render={({ field }) => (
+                  <input
+                    {...field}
+                    type="tel"
+                    className="form-control"
+                    placeholder="Mobile Number*"
+                  />
+                )}
               />
             </div>
-            <div className="form-field">
-              <select
-                name="experience"
-                className="form-select"
-                value={formData.experience}
-                onChange={handleChange}
-                required
-              >
-                <option value="">Work Experience</option>
-                {experienceOptions.map((item) => (
-                  <option
-                    key={item}
-                    value={item.toLowerCase().replace(/\s/g, "-")}
-                  >
-                    {item}
-                  </option>
-                ))}
-              </select>
-            </div>
-            <div className={`${styles.formRadio} form-field form-radio`}>
+            {errors.phone_number && (
+              <p className={style.error}>{errors.phone_number.message}</p>
+            )}
+          </div>
+          <div className="form-field">
+            <Controller
+              name="education"
+              control={control}
+              render={({ field }) => (
+                <select {...field} className="form-select">
+                  <option value="">Work Experience</option>
+                  {experienceOptions.map((item) => (
+                    <option
+                      key={item}
+                      value={item.toLowerCase().replace(/\s/g, "-")}
+                    >
+                      {item}
+                    </option>
+                  ))}
+                </select>
+              )}
+            />
+            {errors.education && (
+              <p className={style.error}>{errors.education.message}</p>
+            )}
+          </div>
+          <div className="form-field">
+            <div className={`${styles.formRadio} form-radio`}>
               <label>Learning Mode:</label>
               <div className="form-radio-inline">
-                <input
-                  className="form-radio-input"
-                  type="radio"
-                  name="mode2"
-                  value="online"
-                  checked={formData.mode2 === "online"}
-                  onChange={handleChange}
-                  id="online"
+                <Controller
+                  name="learning_mode"
+                  control={control}
+                  render={({ field }) => (
+                    <input
+                      {...field}
+                      className="form-radio-input"
+                      type="radio"
+                      name="mode"
+                      value="online"
+                      id="online"
+                    />
+                  )}
                 />
                 <label className="form-radio-label" htmlFor="online">
                   Online
                 </label>
               </div>
               <div className="form-radio-inline">
-                <input
-                  className="form-radio-input"
-                  type="radio"
-                  name="mode2"
-                  value="offline"
-                  checked={formData.mode2 === "offline"}
-                  onChange={handleChange}
-                  id="offline"
+                <Controller
+                  name="learning_mode"
+                  control={control}
+                  render={({ field }) => (
+                    <input
+                      {...field}
+                      className="form-radio-input"
+                      type="radio"
+                      name="mode"
+                      value="offline"
+                      id="offline"
+                    />
+                  )}
                 />
                 <label className="form-radio-label" htmlFor="offline">
                   Offline
                 </label>
               </div>
             </div>
+            {errors.learning_mode && (
+              <p className={style.error}>{errors.learning_mode.message}</p>
+            )}
           </div>
-          <div>
-            <div className="form-field form-check">
-              <input
-                className="form-check-input"
-                type="checkbox"
-                name="consent"
-                id="updates"
-                checked={formData.consent}
-                onChange={handleChange}
-                required
+          <div className="form-field">
+            <div className="form-check">
+              <Controller
+                name="termsCondition"
+                control={control}
+                render={({ field }) => (
+                  <input
+                    {...field}
+                    className="form-check-input"
+                    type="checkbox"
+                    name="termsCondition"
+                    id="updates"
+                  />
+                )}
               />
               <label className="form-check-label small" htmlFor="updates">
                 I authorize Digital Academy 360 and its associates to contact me
@@ -244,10 +273,17 @@ const ApplyForm = ({ title }: LeadCaptureFormProps) => {
                 .
               </label>
             </div>
-            <button type="submit" className="btn btn-black w-100 rounded-pill">
-              Submit
-            </button>
+            {errors.termsCondition && (
+              <p className={style.error}>{errors.termsCondition.message}</p>
+            )}
           </div>
+          <button
+            type="submit"
+            className="btn btn-black w-100 rounded-pill"
+            disabled={loading}
+          >
+            {loading ? "Submitting..." : "Submit"}
+          </button>
         </form>
       </div>
     </div>

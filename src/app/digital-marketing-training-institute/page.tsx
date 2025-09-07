@@ -79,6 +79,7 @@ export default function courseDetail() {
           performanceMarketingAndMediaBuying.leadCapture.subtitleTwo
         }
         tags={performanceMarketingAndMediaBuying.leadCapture.tags || []}
+        courseId={performanceMarketingAndMediaBuying.courseId}
       />
       <CohortDetails
         section="section1"

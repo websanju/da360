@@ -69,6 +69,7 @@ export default function courseDetail() {
         descriptionLineTow={BBAInDigitalMarketingAndAi.leadCapture.subtitleTwo}
         tags={BBAInDigitalMarketingAndAi.leadCapture.tags || []}
         showCollageItemsBox={true}
+        courseId={BBAInDigitalMarketingAndAi.courseId}
       />
       <CohortDetails
         section="section1"

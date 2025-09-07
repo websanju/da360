@@ -79,6 +79,7 @@ export default function courseDetail() {
           youtubeAndInstagramInfluencer.leadCapture.subtitleTwo
         }
         tags={youtubeAndInstagramInfluencer.leadCapture.tags || []}
+        courseId={youtubeAndInstagramInfluencer.courseId}
       />
       <CohortDetails
         section="section1"

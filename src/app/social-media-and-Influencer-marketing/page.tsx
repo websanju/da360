@@ -79,6 +79,7 @@ export default function courseDetail() {
           SocialMediaAndInfluencerMarketing.leadCapture.subtitleTwo
         }
         tags={SocialMediaAndInfluencerMarketing.leadCapture.tags || []}
+        courseId={SocialMediaAndInfluencerMarketing.courseId}
       />
       <CohortDetails
         section="section1"

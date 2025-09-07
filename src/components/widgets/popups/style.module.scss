@@ -10,6 +10,13 @@
 
   form {
     height: 100%;
+
+    .error {
+      color: red;
+      font-size: 12px;
+      margin-left: 4px;
+      margin-top: 4px;
+    }
   }
 
   h3 {

@@ -72,6 +72,7 @@ export default function courseDetail() {
         descriptionLineOne={linkedInAndPersonalBranding.leadCapture.subtitleOne}
         descriptionLineTow={linkedInAndPersonalBranding.leadCapture.subtitleTwo}
         tags={linkedInAndPersonalBranding.leadCapture.tags || []}
+        courseId={linkedInAndPersonalBranding.courseId}
       />
       <CohortDetails
         section="section1"

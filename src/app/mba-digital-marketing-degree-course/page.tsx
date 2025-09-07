@@ -77,6 +77,7 @@ export default function courseDetail() {
         }
         tags={mbaInAiDigitalMarketingEntrepreneurship.leadCapture.tags || []}
         showCollageItemsBox={true}
+        courseId={mbaInAiDigitalMarketingEntrepreneurship.courseId}
       />
       <CohortDetails
         section="section1"

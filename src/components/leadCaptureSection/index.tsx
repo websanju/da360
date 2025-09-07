@@ -20,6 +20,7 @@ interface LeadCaptureSectionProps {
   collageSrc?: string;
   onApplyClick?: () => void;
   showCollageItemsBox?: boolean;
+  courseId?: string;
 }
 
 const LeadCaptureSection: React.FC<LeadCaptureSectionProps> = ({
@@ -35,6 +36,7 @@ const LeadCaptureSection: React.FC<LeadCaptureSectionProps> = ({
   gifSrc = "/images/face.gif",
   collageSrc = "/images/s-vyasa.png",
   showCollageItemsBox = false,
+  courseId,
 }) => {
   const handleApplyClick = () => {
     if (onApplyClick) {
@@ -144,7 +146,7 @@ const LeadCaptureSection: React.FC<LeadCaptureSectionProps> = ({
           <div
             className={`col-lg-5 d-flex justify-content-end align-items-start ${styles.collg5}`}
           >
-            <LeadCaptureForm />
+            <LeadCaptureForm courseId={courseId} />
           </div>
         </div>
       </div>

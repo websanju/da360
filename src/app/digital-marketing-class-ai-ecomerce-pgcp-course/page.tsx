@@ -79,6 +79,7 @@ export default function courseDetail() {
           digitalNarketingTrainingInstitute.leadCapture.subtitleTwo
         }
         tags={digitalNarketingTrainingInstitute.leadCapture.tags || []}
+        courseId={digitalNarketingTrainingInstitute.courseId}
       />
       <CohortDetails
         section="section1"

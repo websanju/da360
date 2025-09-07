@@ -163,6 +163,7 @@ const PerformanceMarketingAndMediaBuying: CoursesType = {
     subtitleTwo: "",
     tags: ["2-Month Specialist Program |", "80+ Hours of Learning ", "8+ Case Studies","10+ Tools"],
   },
+  courseId: "pgp_dm",
   cohortSectionHeading: "LinkedIn & Personal Branding Cohort Details",
   Cohort: [
     {

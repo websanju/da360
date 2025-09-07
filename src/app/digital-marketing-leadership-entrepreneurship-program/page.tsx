@@ -73,6 +73,7 @@ export default function courseDetail() {
         descriptionLineOne={digitalMarketingLeadership.leadCapture.subtitleOne}
         descriptionLineTow={digitalMarketingLeadership.leadCapture.subtitleTwo}
         tags={digitalMarketingLeadership.leadCapture.tags || []}
+        courseId={digitalMarketingLeadership.courseId}
       />
       <CohortDetails
         section="section1"

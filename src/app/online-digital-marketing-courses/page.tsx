@@ -75,6 +75,7 @@ export default function courseDetail() {
           onlineDigitalMarketingCourses.leadCapture.subtitleTwo
         }
         tags={onlineDigitalMarketingCourses.leadCapture.tags || []}
+        courseId={onlineDigitalMarketingCourses.courseId}
       />
       <CohortDetails
         section="section1"

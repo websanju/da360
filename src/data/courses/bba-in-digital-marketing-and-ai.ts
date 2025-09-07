@@ -172,6 +172,7 @@ const BBAInDigitalMarketingAndAi: CoursesType = {
     subtitleTwo: "",
     tags: ["Degree", "Admission Deadline: 31-Aug-2025", "Duration: 36 Months"],
   },
+  courseId: "pgp_dm",
   cohortSectionHeading: "On Campuse Immersion Program for BBA Digital Marketing Cohort Details",
   Cohort: [
     {

@@ -172,6 +172,7 @@ const mbaInAiDigitalMarketingEntrepreneurship: CoursesType = {
     subtitleTwo: "",
     tags: ["Masters Degree", "24 Months Duration", "31st October Admission Deadline"],
   },
+  courseId: "pgp_dm",
   cohortSectionHeading: "On Campuse Immersion Program for MBA Digital Marketing Cohort Details",
   Cohort: [
     {
