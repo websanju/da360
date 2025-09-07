@@ -172,6 +172,7 @@ const digitalMarketingLeadership: CoursesType = {
     subtitleTwo: "",
     tags: ["12-Month Intensive Program", "Includes 3-Month Agency Internship"],
   },
+  courseId: "dm_ai",
   cohortSectionHeading: "Leadership in Social Content Creator & Video Production",
   Cohort: [
     {

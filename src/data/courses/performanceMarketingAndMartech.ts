@@ -147,6 +147,7 @@ const PerformanceMarketingAndMediaBuying: CoursesType = {
     subtitleTwo: "",
     tags: ["2-Month Specialist Program", "80+ Hours of Hands-On Learning","8+ Industry Projects"],
   },
+  courseId: "pgp_dm",
   cohortSectionHeading: "PGCP In Performance Marketing & MarTech Certification Course",
   Cohort: [
     {

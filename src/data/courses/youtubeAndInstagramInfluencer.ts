@@ -168,6 +168,7 @@ const PerformanceMarketingAndMediaBuying: CoursesType = {
     subtitleTwo: "",
     tags: ["2-Month Specialist Program", "80+ Hours of Learning","8+ Case Studies"],
   },
+  courseId: "pgp_dm",
   cohortSectionHeading: "PGCP In Social Media & Influencer Marketing",
   Cohort: [
     {

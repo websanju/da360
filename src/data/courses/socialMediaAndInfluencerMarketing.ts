@@ -174,6 +174,7 @@ const PerformanceMarketingAndMediaBuying: CoursesType = {
     subtitleTwo: "Fast-Track Your Career with Future-Ready Expertise",
     tags: ["6-Month Intensive Program", "Includes Capstone Projects & Live Brand Campaigns"],
   },
+  courseId: "pgp_dm",
   cohortSectionHeading: "PGCP In Social Media & Influencer Marketing",
   Cohort: [
     {

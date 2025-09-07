@@ -84,6 +84,7 @@ export default function courseDetail() {
         }
         tags={socialContentCreatorAndVideoProduction.leadCapture.tags || []}
         applyLabel="Launching soon"
+        courseId={socialContentCreatorAndVideoProduction.courseId}
       />
       <CohortDetails
         section="section1"

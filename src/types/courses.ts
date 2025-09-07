@@ -41,5 +41,14 @@ export interface CoursesType {
     subheading?: string;
     skills: HighlightSkill[];
   };
+  courseId: string;
 }
 
+export interface SlotBookingFormType {
+    name: string;
+    email: string;
+    phone_number: string;
+    education: string;
+    learning_mode: string;
+    termsCondition: string;
+}

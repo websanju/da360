@@ -170,6 +170,7 @@ const AiVibeMarketing: CoursesType = {
     subtitleTwo: "",
     tags: ["2-Month Specialist Program", "80+ Hours of Practical Learning", "8+ Case Studies"],
   },
+  courseId: "pgp_dm",
   cohortSectionHeading: "AI Vibe Marketing Cohort Details",
   Cohort: [
     {

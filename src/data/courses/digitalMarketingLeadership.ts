@@ -185,6 +185,7 @@ const digitalMarketingLeadership: CoursesType = {
     subtitleTwo: "",
     tags: ["9-Month Intensive Program", "Includes 3-Month Agency Internship"],
   },
+  courseId: "dm_ai",
   cohortSectionHeading: "Leadership in Digital Marketing, AI & Entrepreneurship Cohort Details",
   Cohort: [
     {

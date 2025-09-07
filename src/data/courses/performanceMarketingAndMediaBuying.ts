@@ -171,6 +171,7 @@ const PerformanceMarketingAndMediaBuying: CoursesType = {
     subtitleTwo: "",
     tags: ["6-Month Intensive Program", " Includes Real-World Agency Projects"],
   },
+  courseId: "pgp_dm",
   cohortSectionHeading: "PGCP In Performance Marketing & Media Buying",
   Cohort: [
     {

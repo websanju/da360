@@ -185,6 +185,7 @@ const onlineDigitalMarketingCourses: CoursesType = {
     subtitleTwo: "Fast-Track Your Career with Future-Ready Skills",
     tags: ["6-Month Intensive Program", "Includes 1-Month Agency Internship"],
   },
+  courseId: "pgp_dm",
   cohortSectionHeading: "PG in Digital Marketing 2025 Cohort Details",
   Cohort: [
     {

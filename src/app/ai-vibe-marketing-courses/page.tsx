@@ -75,6 +75,7 @@ export default function courseDetail() {
         descriptionLineOne={aiVibeMarketing.leadCapture.subtitleOne}
         descriptionLineTow={aiVibeMarketing.leadCapture.subtitleTwo}
         tags={aiVibeMarketing.leadCapture.tags || []}
+        courseId={aiVibeMarketing.courseId}
       />
       <CohortDetails
         section="section1"

@@ -182,8 +182,9 @@ const digitalNarketingTrainingInstitute: CoursesType = {
     titleTwo: "Certification in AI-Powered Digital Marketing & E-Commerce",
     subtitleOne: "AI-Driven Curriculum Designed for the Next Generation of Digital Marketers Fast-Track Your Career with Future-Ready Skills",
     subtitleTwo: "",
-    tags: ["6-Month Intensive Program", "Includes 1-Month Agency Internship"],
+    tags: ["6-Month Intensive Program", "Includes 1-Month Agency Internship"]
   },
+  courseId: "pgp_dm",
   cohortSectionHeading: "Post Graduate Certification in AI-Powered Digital Marketing & E-Commerce Cohort Details",
   Cohort: [
     {
