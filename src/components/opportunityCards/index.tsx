@@ -2,20 +2,41 @@
 import React from "react";
 import styles from "./styles.module.scss";
 import RightArrow from "../Ui/svg/rightArrow";
+import BecomChannelPartnerForm from "@components/widgets/popups/BecomChannelPartnerForm";
+import BecomeCampusAmbassador from "@components/widgets/popups/BecomeCampusAmbassador";
+import BecomeContentCreator from "@components/widgets/popups/BecomeContentCreator";
+import { usePopup } from "@components/widgets/popup/PopupContext";
 
 const OpportunityButtons: React.FC = () => {
+  const { closePopup } = usePopup();
+  const { openPopup } = usePopup();
   const buttons = [
     {
       label: "Become Channel Partner",
-      onClick: () => alert("Channel Partner clicked!"),
+      onClick: () => {
+        closePopup();
+        openPopup(
+          <BecomChannelPartnerForm title="Become Channel Partner" />,
+          {}
+        );
+      },
     },
     {
       label: "Become Campus Ambassador",
-      onClick: () => alert("Campus Ambassador clicked!"),
+      onClick: () => {
+        closePopup();
+        openPopup(
+          <BecomeCampusAmbassador title="Become Campus Ambassador" />,
+          {}
+        );
+      },
     },
     {
       label: "Become Content Creator",
-      onClick: () => alert("Content Creator clicked!"),
+      onClick: () => {
+        closePopup();
+        openPopup(<BecomeContentCreator title="Become Content Creator" />, {});
+      },
     },
   ];
 

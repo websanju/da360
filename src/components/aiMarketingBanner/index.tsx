@@ -23,7 +23,7 @@ export default function AiMarketingBanner() {
               </p>
               <button
                 onClick={() => {
-                  closePopup(); // close current popup first
+                  closePopup();
                   openPopup(
                     <ApplyForm title="Apply & Learn From Case Study" />,
                     {}
