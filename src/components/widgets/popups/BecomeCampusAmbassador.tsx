@@ -19,8 +19,10 @@ const ApplyForm = ({ title }: LeadCaptureFormProps) => {
     title: "",
     phoneCode: "+91",
     phone: "",
-    experience: "",
-    mode2: "",
+    college: "",
+    stream: "",
+    followers: "",
+    profileLink: "",
     consent: false,
   });
 
@@ -37,8 +39,6 @@ const ApplyForm = ({ title }: LeadCaptureFormProps) => {
     e.preventDefault();
     console.log("Submitted data:", formData);
   };
-
-  const experienceOptions = ["Fresher", "1-2 Years", "3+ Years"];
 
   return (
     <div className={style.applyForm}>
@@ -133,88 +133,51 @@ const ApplyForm = ({ title }: LeadCaptureFormProps) => {
               />
             </div>
             <div className="form-field">
-              <select
-                name="experience"
-                className="form-select"
-                value={formData.experience}
-                onChange={handleChange}
+              <input
+                type="text"
+                name="college"
+                className="form-control"
+                placeholder="College"
                 required
-              >
-                <option value="">Work Experience</option>
-                {experienceOptions.map((item) => (
-                  <option
-                    key={item}
-                    value={item.toLowerCase().replace(/\s/g, "-")}
-                  >
-                    {item}
-                  </option>
-                ))}
-              </select>
+                value={formData.college}
+                onChange={handleChange}
+              />
             </div>
-            <div className={`${styles.formRadio} form-field form-radio`}>
-              <label>Learning Mode:</label>
-              <div className="form-radio-inline">
-                <input
-                  className="form-radio-input"
-                  type="radio"
-                  name="mode2"
-                  value="online"
-                  checked={formData.mode2 === "online"}
-                  onChange={handleChange}
-                  id="online"
-                />
-                <label className="form-radio-label" htmlFor="online">
-                  Online
-                </label>
-              </div>
-              <div className="form-radio-inline">
-                <input
-                  className="form-radio-input"
-                  type="radio"
-                  name="mode2"
-                  value="offline"
-                  checked={formData.mode2 === "offline"}
-                  onChange={handleChange}
-                  id="offline"
-                />
-                <label className="form-radio-label" htmlFor="offline">
-                  Offline
-                </label>
-              </div>
+            <div className="form-field">
+              <input
+                type="text"
+                name="stream"
+                className="form-control"
+                placeholder="Stream*"
+                required
+                value={formData.stream}
+                onChange={handleChange}
+              />
+            </div>
+            <div className="form-field">
+              <input
+                type="text"
+                name="min adm. per month"
+                className="form-control"
+                placeholder="Followers"
+                required
+                value={formData.followers}
+                onChange={handleChange}
+              />
+            </div>
+            <div className="form-field">
+              <input
+                type="text"
+                name="profileLink"
+                className="form-control"
+                placeholder="Profile Link"
+                required
+                value={formData.profileLink}
+                onChange={handleChange}
+              />
             </div>
           </div>
           <div>
-            <div className="form-field form-check">
-              <input
-                className="form-check-input"
-                type="checkbox"
-                name="consent"
-                id="updates"
-                checked={formData.consent}
-                onChange={handleChange}
-                required
-              />
-              <label className="form-check-label small" htmlFor="updates">
-                I authorize Digital Academy 360 and its associates to contact me
-                via Call, Email, WhatsApp & SMS. I accept to{" "}
-                <Link
-                  target="_blank"
-                  className="fw-bold"
-                  href={"/da360-privacy-policy"}
-                >
-                  Privacy Policy
-                </Link>{" "}
-                &{" "}
-                <Link
-                  className="fw-bold"
-                  target="_blank"
-                  href={"/terms-conditions"}
-                >
-                  Term of Use
-                </Link>
-                .
-              </label>
-            </div>
             <button type="submit" className="btn btn-black w-100 rounded-pill">
               Submit
             </button>
