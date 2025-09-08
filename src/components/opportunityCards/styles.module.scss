@@ -1,0 +1,49 @@
+.opportunityCards {
+  margin-bottom: 140px;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.button {
+  box-shadow: 3px 3px 0px 0px #000000;
+  min-height: 133px;
+  font-size: 20px;
+  line-height: 27px;
+  min-width: 290px;
+  text-align: center;
+
+  &:hover {
+    box-shadow: 3px 3px 0px 0px #000000;
+  }
+
+  span {
+    max-width: 200px;
+    display: flex;
+    margin: 0 auto;
+    font-weight: 600;
+  }
+
+  .icon {
+    font-size: 1.2rem;
+    color: white;
+    border: solid 2px #fff;
+    min-width: 40px;
+    height: 40px;
+    width: 40px;
+    border-radius: 100px;
+    margin: 0 auto;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    svg {
+      transform: rotate(30deg);
+    }
+  }
+}
