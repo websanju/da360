@@ -163,7 +163,7 @@ const Comparison = () => {
                         src={"/images/icons/tick-circle.svg"}
                       />
                     </span>{" "}
-                    5 to 20+ (Incl. Google, Meta, HubSpot, etc.)
+                    Real Internship Projects
                   </li>
                   <li>
                     <span>
@@ -174,9 +174,9 @@ const Comparison = () => {
                         src={"/images/icons/tick-circle.svg"}
                       />
                     </span>{" "}
-                    5–15 Advanced Career Tracks
+                    Campaigns on Meta and Google
                   </li>
-
+                  {/* 
                   <li>
                     <span>
                       <Image
@@ -283,7 +283,7 @@ const Comparison = () => {
                       />
                     </span>{" "}
                     50,000+ Careers Transformed + Proof of offer Letters
-                  </li>
+                  </li> */}
                 </ul>
               </div>
               <div className={styles.card}>
